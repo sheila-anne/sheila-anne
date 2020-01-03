@@ -1,10 +1,38 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import React from "react";
+import { Link, graphql } from "gatsby";
+import styled from "styled-components";
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import { Layout } from "../components/layout";
+import Features from "../components/Features";
+import BlogRoll from "../components/BlogRoll";
+
+const FullWidthImage = styled.div`
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+`;
+
+const ImageHeadlineContainer = styled.h1`
+  display: flex;
+  height: 150px;
+  line-height: 1;
+  justify-content: space-around;
+  flex-direction: column;
+`;
+
+const FlexColumns = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+`;
 
 export const IndexPageTemplate = ({
   image,
@@ -13,38 +41,35 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro,
+  intro
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
+    <FullWidthImage
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        })`
       }}
     >
-      <div
+      <ImageHeadlineContainer
         style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
+          display: "flex",
+          height: "150px",
+          lineHeight: "1",
+          justifyContent: "space-around",
+          alignItems: "left",
+          flexDirection: "column"
         }}
       >
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            boxShadow: "#4d80e4 0.5rem 0px 0px, #4d80e4 -0.5rem 0px 0px",
+            backgroundColor: "#4d80e4",
+            color: "white",
+            lineHeight: "1",
+            padding: "0.25em",
+            width: "50%"
           }}
         >
           {title}
@@ -52,22 +77,21 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            boxShadow: "#4d80e4 0.5rem 0px 0px, #4d80e4 -0.5rem 0px 0px",
+            backgroundColor: "#4d80e4",
+            color: "white",
+            lineHeight: "1",
+            padding: "0.25em"
           }}
         >
           {subheading}
         </h3>
-      </div>
-    </div>
+      </ImageHeadlineContainer>
+    </FullWidthImage>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
+          <FlexColumns>
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
@@ -107,30 +131,18 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </div>
-          </div>
+          </FlexColumns>
         </div>
       </div>
     </section>
   </div>
-)
+);
 
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-}
-
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const IndexPage = ({ data, location }) => {
+  const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -141,18 +153,10 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
-
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -190,4 +194,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
