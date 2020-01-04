@@ -1,26 +1,39 @@
 import React from "react";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import styled from "styled-components";
+
+import { CenteredText } from "./centered-text";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
+
+const FlexCenteredText = styled(CenteredText)`
+  display: inline-block;
+  width: 240px;
+`;
+
+const FlexArea = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+`;
+
+const FlexColumn = styled.div`
+  flex: none;
+  width: 50%;
+`;
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <FlexArea>
     {gridItems.map(item => (
-      <div key={item.text} className="column is-6">
+      <FlexColumn key={item.text}>
         <section className="section">
-          <div className="has-text-centered">
-            <div
-              style={{
-                width: "240px",
-                display: "inline-block"
-              }}
-            >
+          <CenteredText>
+            <FlexCenteredText>
               <PreviewCompatibleImage imageInfo={item} />
-            </div>
-          </div>
+            </FlexCenteredText>
+          </CenteredText>
           <p>{item.text}</p>
         </section>
-      </div>
+      </FlexColumn>
     ))}
-  </div>
+  </FlexArea>
 );
 
 export default FeatureGrid;

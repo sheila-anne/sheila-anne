@@ -1,10 +1,10 @@
-import React from "react";
-import { kebabCase } from "lodash.kebabcase";
+import React, { FC } from "react";
+import kebabCase from "lodash.kebabcase";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import { Layout } from "../../components/layout";
 
-const TagsPage = ({
+const TagsPage: FC<GatsbyPage> = ({
   data: {
     allMarkdownRemark: { group },
     site: {

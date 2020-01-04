@@ -3,7 +3,7 @@ templateKey: index-page
 title: Welcome to Sheila Anne
 image: "/img/home-jumbotron.jpg"
 heading: Welcome to Sheila Anne
-subheading: If you are looking to navigate your life path, start here.
+subheading: Looking to navigate your life path? Start here.
 mainpitch:
   title: It’s time to harness your energy, recognize your purpose, and live your most authentic & bold life.
   description: >

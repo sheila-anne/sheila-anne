@@ -1,5 +1,5 @@
 import React from "react";
-import { kebabCase } from "lodash";
+import kebabCase from "lodash.kebabcase";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import { Layout } from "../components/layout";

@@ -22,7 +22,7 @@ const MainWrapper = styled.main`
     font-weight: 400;
   }
 
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   max-width: ${rhythm(50)};
   padding: ${rhythm(0.5)} ${rhythm(3 / 4)};
   z-index: 100;

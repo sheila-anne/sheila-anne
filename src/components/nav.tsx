@@ -49,7 +49,7 @@ const StyledNav = styled.nav`
 const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
   ${({ location, to }) =>
     location && location.pathname === to
-      ? `color: ${Constants.Colors.headerTheme};`
+      ? `color: ${Constants.Colors.backgroundDarkest};`
       : ""}
   display: inline;
   font-family: Inria Serif;

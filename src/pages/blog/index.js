@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Layout } from "../../components/layout";
-import BlogRoll from "../../components/BlogRoll";
+import { BlogRoll } from "../../components/BlogRoll";
 
 const FullWidthImage = styled.div`
   width: 100vw;
