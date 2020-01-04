@@ -1,6 +1,9 @@
-declare type GatsbyPage = {
-  data?: any;
+declare type GatsbyPage = GatsbyComponent & {
   location: Location;
+};
+
+declare type GatsbyComponent = {
+  data?: any;
 };
 
 declare module "*.svg" {

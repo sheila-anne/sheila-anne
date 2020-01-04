@@ -1,17 +1,22 @@
+import colors from "./config/colors.json";
+
+type Colors = {
+  lightestBlue: string;
+  lighterBlue: string;
+  blue: string;
+  darkBlue: string;
+  gray: string;
+  linkColors: string;
+  navLinkText: string;
+  featuredPost: string;
+};
+
 const mobileBreakpoint = 768;
 
 const Constants = {
   mobileBreakpoint,
   mobileWidth: mobileBreakpoint + "px",
-  Colors: {
-    background: "#46b3e6",
-    backgroundDark: "#4d80e4",
-    backgroundDarkest: "#2e279d",
-    headerTheme: "#dff6f0",
-    headerGray: "#82849e",
-    internalLinks: "#007acc",
-    navLinkText: "#4f4f4f"
-  },
+  Colors: colors as Colors,
   baseUrl: "https://www.sheilaanne.com"
 };
 

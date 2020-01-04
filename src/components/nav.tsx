@@ -16,7 +16,7 @@ type NavHeaderProps = NavProps & {
 
 const CenteredText = styled.div<{ isOpen: boolean; isMobile: boolean }>`
   background: ${({ isOpen, isMobile }) =>
-    isOpen && isMobile ? Constants.Colors.background : "inherit"};
+    isOpen && isMobile ? Constants.Colors.blue : "inherit"};
 
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen, isMobile }) =>
@@ -49,7 +49,7 @@ const StyledNav = styled.nav`
 const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
   ${({ location, to }) =>
     location && location.pathname === to
-      ? `color: ${Constants.Colors.backgroundDarkest};`
+      ? `color: ${Constants.Colors.darkBlue};`
       : ""}
   display: inline;
   font-family: Inria Serif;
@@ -70,7 +70,7 @@ const Headline = styled.h1`
   margin: 5px 0;
 
   :hover {
-    color: ${Constants.Colors.headerGray};
+    color: ${Constants.Colors.gray};
   }
 
   @media (max-width: ${Constants.mobileWidth}) {
@@ -97,7 +97,7 @@ const NavListItem = styled.li`
 `;
 
 const MobileMenu = styled.div<{ isOpen: boolean }>`
-  background: ${Constants.Colors.background};
+  background: ${Constants.Colors.blue};
   height: 100vh;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   padding: 0.5rem;
@@ -165,7 +165,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
             <InternalLink
               aria-label="Sheila Anne logo, click to visit homepage"
               color={
-                isOpen && isMobile ? Constants.Colors.headerTheme : undefined
+                isOpen && isMobile ? Constants.Colors.lightestBlue : undefined
               }
               title={`Sheila Anne homepage`}
               to="/"

@@ -16,7 +16,7 @@ const InternalLink = styled(Link)<InternalLinkProps>`
   text-decoration: none;
 
   :hover {
-    color: ${Constants.Colors.internalLinks};
+    color: ${Constants.Colors.gray};
   }
 `;
 

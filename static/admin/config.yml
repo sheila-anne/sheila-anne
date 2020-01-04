@@ -56,17 +56,14 @@ collections:
               widget: "hidden",
               default: "color",
             }
-          - { label: Background, name: background, widget: string }
-          - { label: Background Dark, name: backgroundDark, widget: string }
-          - {
-              label: Background Darkest,
-              name: backgroundDarkest,
-              widget: string,
-            }
-          - { label: White, name: white, widget: string }
+          - { label: Blue, name: blue, widget: string }
+          - { label: Dark Blue, name: darkBlue, widget: string }
+          - { label: Lighter Blue, name: lightBlue, widget: string }
+          - { label: Lightest Blue, name: lightestBlue, widget: string }
           - { label: Gray, name: gray, widget: string }
           - { label: Link Colors, name: linkColors, widget: string }
           - { label: Nav Link Text, name: navLinkText, widget: string }
+          - { label: Featured Post, name: featuredPost, widget: string }
 
   - name: "pages"
     label: "Pages"

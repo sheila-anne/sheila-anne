@@ -1,17 +1,18 @@
 import { Link, graphql, StaticQuery } from "gatsby";
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { FlexContainer } from "../components/flex-container";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import { InternalLink } from "./internal-link";
+import { Constants } from "../constants";
 
 type ArticleProps = {
   isFeatured: boolean;
 };
 
 const Article = styled.article<ArticleProps>`
-  background-color: ${({ isFeatured }) => (isFeatured ? "#d74100" : "#f5f5f5")};
+  background-color: ${({ isFeatured }) => (isFeatured ? "#fafdcb" : "#f5f5f5")};
   border-radius: 4px;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative;
@@ -40,9 +41,13 @@ const Button = styled(InternalLink)`
 const FlexColumn = styled.div`
   flex: none;
   width: 50%;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    width: 100%;
+  }
 `;
 
-const BlogRollInner = ({ data }) => {
+const BlogRollInner: FC<GatsbyComponent> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
