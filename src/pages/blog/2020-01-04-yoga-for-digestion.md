@@ -7,7 +7,7 @@ description: >-
   last thing you want to do. Inhale, exhale, and trust me on this one.  Time to
   relieve symptoms and restore energy and clarity.  
 featuredpost: false
-featuredimage: /img/chemex.jpg
+featuredimage: /img/d-13.png
 tags:
   - yoga
   - poses
@@ -15,7 +15,9 @@ tags:
   - restorative
   - yoga poses
 ---
-When you have an upset stomach or trouble digesting, yoga might feel like the last thing you want to do. Inhale, exhale, and trust me on this one.
+When you have an upset stomach or trouble digesting, yoga might feel like the last thing you want to do. Inhale, exhale, and trust me on this one.  You can move through these poses as a flow, or simply pick one or two to do on it's own.
+
+**Side body stretch**
 
 Lay down on the flat of your back on a yoga mat or blanket. Inhale and stretch your arms over your head and your legs as long as you possibly can.  Exhale and move your upper body and lower body over to the right, keeping your core body glued to the mat.  You should feel yourself in a "C" shape here.  If your lower back is a little uncomfortable here, you can make some adjustments in your hips -- I sometimes find it helpful to pick up my hips and set them back down, allowing my lower back to come to rest on the floor.  
 
@@ -33,6 +35,6 @@ Hug knees toward chest, deep inhale here, exhale release left leg down so it lie
 
 What does this pose do? This pose compresses the ascending colon on the right side and descending colon on the left, stimulating the nerves to aid elimination.
 
-**Child's pose**
+**Balasana** (Child's pose)
 
 Inhale knees together at the chest and begin to roll up and down the spine, creating some momentum.  Roll all the way up to sitting at the front of your mat.
