@@ -27,10 +27,12 @@ Breathe in this shape, in and out of your low belly for 2-3 minutes.  Once again
 
 On an inhale bring everything back to center and stretch long once again, then release arms down to hips on an exhale.  
 
+**Ardha Pawamuktasana** (Half Gas Release Pose)
+
 Hug knees toward chest, deep inhale here, exhale release left leg down so it lies flat on the mat. Continue to hug right knee into rib cage.  Head can be heavy on the ground,  chin tilted toward chest so that your spine feels like it's in one long line.  Breathe here for as short as 10 breaths or as long as 2 minutes.  After, inhale left knee back up to meet right, exhale right leg down so that is lies flat on the mat, and move through the same steps on this side.
 
 What does this pose do? This pose compresses the ascending colon on the right side and descending colon on the left, stimulating the nerves to aid elimination.
 
-Child's pose
+**Child's pose**
 
 Inhale knees together at the chest and begin to roll up and down the spine, creating some momentum.  Roll all the way up to sitting at the front of your mat.
