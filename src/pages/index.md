@@ -1,24 +1,28 @@
 ---
 templateKey: index-page
 title: Welcome to Sheila Anne
-image: "/img/sheila-anne-coaching-header.jpg"
+image: /img/sheila-anne-coaching-header.jpg
 heading: Welcome to Sheila Anne
 subheading: Looking to navigate your life path? Start here.
 mainpitch:
-  title: It’s time to harness your energy, recognize your purpose, and live your most authentic & bold life.
+  title: >-
+    It’s time to harness your energy, recognize your purpose, and live your most
+    authentic & bold life.
   description: >
-    Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind, and spirit, creating a place where you can grow as a person.
+    Sheila Anne is a combination of life coaching, intentional movement, and
+    story curation. Join Sheila as she nourishes your mind, and spirit, creating
+    a place where you can grow as a person.
 description: >-
-  Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences.
+  Tap into your inner compass. Stoke your inner fire. Ignite personal growth in
+  your relationships, professional life, and activities. Create nourishing
+  spaces & experiences.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/sheila-anne-tree.png
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Sheila Anne curates flows meant to realign & rejuvenate the body.  With
+        a focus on breathwork, mental alignment occurs at the intersection
+        between presence and present-tense.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
@@ -62,3 +66,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
