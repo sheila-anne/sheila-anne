@@ -10,3 +10,17 @@ export const FlexContainer = styled.div`
     margin: 0;
   }
 `;
+
+export const FlexColumn = styled.div`
+  flex: none;
+  width: 50%;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    width: 100%;
+  }
+`;
+
+export const FlexHeader = styled.header`
+  display: flex;
+  margin-bottom: 1rem;
+`;

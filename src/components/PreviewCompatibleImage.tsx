@@ -1,13 +1,24 @@
-import React from "react";
+import React, { FC } from "react";
 import Img from "gatsby-image";
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
+type PreviewCompatibleImageProps = {
+  imageInfo: PreviewImage;
+};
+
+const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
+  imageInfo
+}) => {
   const imageStyle = { borderRadius: "5px" };
   const { alt = "", childImageSharp, image } = imageInfo;
+  const potentialImage = image as NestedImage;
 
-  if (!!image && !!image.childImageSharp) {
+  if (!!image && !!potentialImage.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      <Img
+        style={imageStyle}
+        fluid={potentialImage.childImageSharp.fluid}
+        alt={alt}
+      />
     );
   }
 

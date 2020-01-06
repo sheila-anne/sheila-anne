@@ -6,5 +6,6 @@
   "gray": "#82849e",
   "linkColors": "#007acc",
   "navLinkText": "#4f4f4f",
-  "featuredPost": "#fafdcb"
+  "featuredPost": "#fafdcb",
+  "readMore": "#cc3700"
 }

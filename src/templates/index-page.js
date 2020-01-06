@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 
 import { Button } from "../components/button";
+import { CenteredText } from "../components/centered-text";
 import { Constants } from "../constants";
 import { Container } from "../components/container";
 import { FlexContainer } from "../components/flex-container";
@@ -63,45 +64,41 @@ export const IndexPageTemplate = ({
         <BannerHeadline as="h3">{subheading}</BannerHeadline>
       </ImageHeadlineContainer>
     </FullWidthImage>
-    <section className="section section--gradient">
+    <section>
       <Container>
-        <div className="section">
-          <FlexContainer>
-            <div className="column is-10 is-offset-1">
+        <FlexContainer>
+          <div className="column is-10 is-offset-1">
+            <div className="content">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
+                <div className="tile">
+                  <h1 className="title">{mainpitch.title}</h1>
                 </div>
-                <FlexContainer>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </FlexContainer>
-                <Features gridItems={intro.blurbs} />
-                <FlexContainer>
-                  <Button to="/products">See all products</Button>
-                </FlexContainer>
-                <FlexContainer>
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Button to="/blog">Read more</Button>
-                  </div>
-                </FlexContainer>
+                <div className="tile">
+                  <h3 className="subtitle">{mainpitch.description}</h3>
+                </div>
               </div>
+              <FlexContainer>
+                <div className="column is-12">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    {heading}
+                  </h3>
+                  <p>{description}</p>
+                </div>
+              </FlexContainer>
+              <Features gridItems={intro.blurbs} />
+              <CenteredText>
+                <Button to="/products">See all products</Button>
+              </CenteredText>
+              <FlexContainer>
+                <h3>Latest stories</h3>
+                <BlogRoll />
+              </FlexContainer>
+              <CenteredText>
+                <Button to="/blog">Read more from the blog</Button>
+              </CenteredText>
             </div>
-          </FlexContainer>
-        </div>
+          </div>
+        </FlexContainer>
       </Container>
     </section>
   </>
@@ -135,7 +132,7 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

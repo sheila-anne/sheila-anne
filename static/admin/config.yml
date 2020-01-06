@@ -58,7 +58,7 @@ collections:
             }
           - { label: Blue, name: blue, widget: string }
           - { label: Dark Blue, name: darkBlue, widget: string }
-          - { label: Lighter Blue, name: lightBlue, widget: string }
+          - { label: Lighter Blue, name: lighterBlue, widget: string }
           - { label: Lightest Blue, name: lightestBlue, widget: string }
           - { label: Gray, name: gray, widget: string }
           - { label: Link Colors, name: linkColors, widget: string }

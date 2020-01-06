@@ -1,29 +1,28 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { CenteredText } from "./centered-text";
+import { FlexColumn, FlexContainer } from "./flex";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+
+type FeaturedProps = {
+  gridItems: FeaturedGridItem[];
+};
+
+type FeaturedGridItem = PreviewImage & {
+  text: string;
+};
 
 const FlexCenteredText = styled(CenteredText)`
   display: inline-block;
   width: 240px;
 `;
 
-const FlexArea = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-`;
-
-const FlexColumn = styled.div`
-  flex: none;
-  width: 50%;
-`;
-
-const FeatureGrid = ({ gridItems }) => (
-  <FlexArea>
+const FeatureGrid: FC<FeaturedProps> = ({ gridItems }) => (
+  <FlexContainer>
     {gridItems.map(item => (
       <FlexColumn key={item.text}>
-        <section className="section">
+        <section>
           <CenteredText>
             <FlexCenteredText>
               <PreviewCompatibleImage imageInfo={item} />
@@ -33,7 +32,7 @@ const FeatureGrid = ({ gridItems }) => (
         </section>
       </FlexColumn>
     ))}
-  </FlexArea>
+  </FlexContainer>
 );
 
 export default FeatureGrid;

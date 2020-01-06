@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { Constants } from "../constants";
 import { InternalLink } from "../components/internal-link";
 
 export const Button = styled(InternalLink)`
@@ -12,9 +13,9 @@ export const Button = styled(InternalLink)`
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 700;
-  color: #cc3700;
+  color: ${Constants.Colors.readMore};
   text-align: center;
-  box-shadow: inset 0 0 0 2px #f40;
+  box-shadow: inset 0 0 0 2px ${Constants.Colors.readMore};
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 `;

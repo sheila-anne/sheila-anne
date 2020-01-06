@@ -2,17 +2,30 @@ import { Link, graphql, StaticQuery } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";
 
-import { FlexContainer } from "../components/flex-container";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import { InternalLink } from "./internal-link";
+import { Button } from "./button";
 import { Constants } from "../constants";
+import { FlexContainer, FlexColumn, FlexHeader } from "../components/flex";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import { CenteredText } from "./centered-text";
 
 type ArticleProps = {
   isFeatured: boolean;
 };
 
+const FeaturedThumbnail = styled.div`
+  flex-basis: 35%;
+  margin: 0 1.5em 0 0;
+`;
+
+const OffsetButton = styled(Button)`
+  box-shadow: none;
+  color: ${Constants.Colors.darkBlue};
+  margin-top: 1rem;
+`;
+
 const Article = styled.article<ArticleProps>`
-  background-color: ${({ isFeatured }) => (isFeatured ? "#fafdcb" : "#f5f5f5")};
+  background-color: ${({ isFeatured }) =>
+    isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
   border-radius: 4px;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative;
@@ -26,27 +39,6 @@ const Article = styled.article<ArticleProps>`
   margin: 1rem;
 `;
 
-const Button = styled(InternalLink)`
-  background-color: #fff;
-  border-color: #dbdbdb;
-  border-width: 1px;
-  color: #363636;
-  cursor: pointer;
-  justify-content: center;
-  padding: calc(0.5em - 1px) 1em;
-  text-align: center;
-  white-space: nowrap;
-`;
-
-const FlexColumn = styled.div`
-  flex: none;
-  width: 50%;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    width: 100%;
-  }
-`;
-
 const BlogRollInner: FC<GatsbyComponent> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
@@ -56,35 +48,30 @@ const BlogRollInner: FC<GatsbyComponent> = ({ data }) => {
         posts.map(({ node: post }) => (
           <FlexColumn key={post.id}>
             <Article isFeatured={post.frontmatter.featuredpost}>
-              <header>
+              <FlexHeader>
                 {post.frontmatter.featuredimage ? (
-                  <div className="featured-thumbnail">
+                  <FeaturedThumbnail>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
                         alt: `featured image thumbnail for post ${post.frontmatter.title}`
                       }}
                     />
-                  </div>
+                  </FeaturedThumbnail>
                 ) : null}
-                <p className="post-meta">
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
+                <p>
+                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
                   <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
+                  <span>{post.frontmatter.date}</span>
                 </p>
-              </header>
+              </FlexHeader>
               <p>
                 {post.excerpt}
-                <br />
-                <br />
-                <Button to={post.fields.slug}>Keep Reading →</Button>
+                <CenteredText>
+                  <OffsetButton to={post.fields.slug}>
+                    Keep Reading →
+                  </OffsetButton>
+                </CenteredText>
               </p>
             </Article>
           </FlexColumn>

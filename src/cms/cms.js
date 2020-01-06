@@ -6,6 +6,7 @@ import { StyleSheetManager } from "styled-components";
 
 import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
+import ColorsPreview from "./preview-templates/ColorsPreview";
 import ProductPagePreview from "./preview-templates/ProductPagePreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
 
@@ -38,8 +39,12 @@ CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerPreviewTemplate("index", withStyledComponents(IndexPagePreview));
 CMS.registerPreviewTemplate("about", withStyledComponents(AboutPagePreview));
+CMS.registerPreviewTemplate("blog", withStyledComponents(BlogPostPreview));
+CMS.registerPreviewTemplate(
+  "color-config",
+  withStyledComponents(ColorsPreview)
+);
 CMS.registerPreviewTemplate(
   "products",
   withStyledComponents(ProductPagePreview)
 );
-CMS.registerPreviewTemplate("blog", withStyledComponents(BlogPostPreview));

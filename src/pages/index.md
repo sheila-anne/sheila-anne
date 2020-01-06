@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Welcome to Sheila Anne
-image: "/img/home-jumbotron.jpg"
+image: "/img/sheila-anne-coaching-header.jpg"
 heading: Welcome to Sheila Anne
 subheading: Looking to navigate your life path? Start here.
 mainpitch:

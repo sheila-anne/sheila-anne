@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 
-export const FlexContainer = styled.div`
-  display: flex;
-  flex-flow: row wrap;
+export const FlexColumn = styled.div`
+  width: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin: 0;
+    width: 100%;
   }
 `;
