@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import { InternalLink } from "./internal-link";
 import sheilaLogo from "../img/sheilaLogo.svg";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
+import { SmartLink } from "./smart-link";
 
 const StyledFooter = styled.footer`
   background-color: #2b2523;
@@ -29,7 +29,7 @@ const FooterList = styled.ul`
   text-align: left;
 `;
 
-const FooterNavItem = styled.a`
+const FooterNavItem = styled(SmartLink)`
   flex-grow: 0;
   flex-shrink: 0;
   align-items: center;
@@ -54,7 +54,7 @@ const SocialFooterColumn = styled(FooterColumn)`
   }
 `;
 
-const FooterLink = styled(InternalLink)`
+const FooterLink = styled(SmartLink)`
   display: block;
   :hover {
     background-color: #fafafa;
@@ -102,14 +102,14 @@ const Footer = () => {
           </FooterList>
         </FooterColumn>
         <SocialFooterColumn>
-          <FooterNavItem title="facebook" href="https://facebook.com">
+          <FooterNavItem title="facebook" to="https://facebook.com">
             <FooterImage
               src={facebook}
               alt="Facebook"
               style={{ width: "1em", height: "1em" }}
             />
           </FooterNavItem>
-          <FooterNavItem title="instagram" href="https://instagram.com">
+          <FooterNavItem title="instagram" to="https://instagram.com">
             <FooterImage
               src={instagram}
               alt="Instagram"

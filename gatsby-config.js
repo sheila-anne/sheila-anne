@@ -9,9 +9,6 @@ module.exports = {
     }
   },
   plugins: [
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-helmet",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
@@ -36,6 +33,9 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-typescript",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-transformer-remark",
       options: {

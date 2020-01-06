@@ -65,14 +65,14 @@ const BlogRollInner: FC<GatsbyComponent> = ({ data }) => {
                   <span>{post.frontmatter.date}</span>
                 </p>
               </FlexHeader>
-              <p>
-                {post.excerpt}
+              <div>
+                <p>{post.excerpt}</p>
                 <CenteredText>
                   <OffsetButton to={post.fields.slug}>
                     Keep Reading →
                   </OffsetButton>
                 </CenteredText>
-              </p>
+              </div>
             </Article>
           </FlexColumn>
         ))}
