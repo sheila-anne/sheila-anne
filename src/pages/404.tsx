@@ -1,12 +1,23 @@
 import React, { FC } from "react";
+
 import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
 const NotFoundPage: FC<GatsbyPage> = ({ location }) => (
   <Layout location={location}>
-    <div>
+    <SEO
+      type="website"
+      description="404: Not found."
+      title="Sheila Anne: Not found"
+    />
+    <section>
       <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
+      <p>
+        Unfortunately, the place you were trying to go either no longer exists
+        or never existed at all. Please try re-navigating to one of the existing
+        Sheila Anne links using the navigation at the top of the page
+      </p>
+    </section>
   </Layout>
 );
 

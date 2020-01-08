@@ -1,14 +1,28 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
+import styled from "styled-components";
+
 import { Layout } from "../components/layout";
+
+const TagList = styled.ul`
+  list-style: none;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  li {
+    padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+`;
 
 const TagRoute = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   const postLinks = posts.map(post => (
     <li key={post.node.fields.slug}>
-      <Link to={post.node.fields.slug}>
-        <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+      <Link to={post.node.fields.slug} title={post.node.frontmatter.title}>
+        <h2>{post.node.frontmatter.title}</h2>
       </Link>
     </li>
   ));
@@ -17,26 +31,17 @@ const TagRoute = ({ data, location, pageContext }) => {
   const totalCount = data.allMarkdownRemark.totalCount;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with “${tag}”`;
+  } tagged with “${tag}”:`;
 
   return (
     <Layout location={location}>
-      <section className="section">
+      <section>
         <Helmet title={`${tag} | ${title}`} />
-        <div className="container content">
-          <div className="columns">
-            <div
-              className="column is-10 is-offset-1"
-              style={{ marginBottom: "6rem" }}
-            >
-              <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-              <ul className="taglist">{postLinks}</ul>
-              <p>
-                <Link to="/tags/">Browse all tags</Link>
-              </p>
-            </div>
-          </div>
-        </div>
+        <h3>{tagHeader}</h3>
+        <TagList>{postLinks}</TagList>
+        <Link to="/tags/" title="Browse all tags">
+          Browse all tags
+        </Link>
       </section>
     </Layout>
   );

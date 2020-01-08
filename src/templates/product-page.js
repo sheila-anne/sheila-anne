@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Layout } from "../components/layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
+import { Features } from "../components/features";
+import { Testimonials } from "../components/testimonials";
 import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { PreviewCompatibleImage } from "../components/preview-compatiable-image";
 
 export const ProductPageTemplate = ({
   image,

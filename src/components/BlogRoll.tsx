@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Button } from "./button";
 import { Constants } from "../constants";
 import { FlexContainer, FlexColumn, FlexHeader } from "../components/flex";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import { PreviewCompatibleImage } from "./preview-compatiable-image";
 import { CenteredText } from "./centered-text";
 
 type ArticleProps = {
@@ -15,6 +15,10 @@ type ArticleProps = {
 const FeaturedThumbnail = styled.div`
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    margin: 1rem;
+  }
 `;
 
 const OffsetButton = styled(Button)`

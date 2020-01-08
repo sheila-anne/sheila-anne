@@ -3,13 +3,14 @@ import styled from "styled-components";
 
 import { CenteredText } from "./centered-text";
 import { FlexColumn, FlexContainer } from "./flex";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import { PreviewCompatibleImage } from "./preview-compatiable-image";
 
 type FeaturedProps = {
   gridItems: FeaturedGridItem[];
 };
 
 type FeaturedGridItem = PreviewImage & {
+  imageAlt?: string;
   text: string;
 };
 
@@ -18,14 +19,17 @@ const FlexCenteredText = styled(CenteredText)`
   width: 240px;
 `;
 
-const FeatureGrid: FC<FeaturedProps> = ({ gridItems }) => (
+const Features: FC<FeaturedProps> = ({ gridItems }) => (
   <FlexContainer>
     {gridItems.map(item => (
       <FlexColumn key={item.text}>
         <section>
           <CenteredText>
             <FlexCenteredText>
-              <PreviewCompatibleImage imageInfo={item} />
+              <PreviewCompatibleImage
+                imageInfo={item}
+                imageAlt={item.imageAlt}
+              />
             </FlexCenteredText>
           </CenteredText>
           <p>{item.text}</p>
@@ -35,4 +39,4 @@ const FeatureGrid: FC<FeaturedProps> = ({ gridItems }) => (
   </FlexContainer>
 );
 
-export default FeatureGrid;
+export { Features };

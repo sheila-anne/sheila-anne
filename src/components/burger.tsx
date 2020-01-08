@@ -12,7 +12,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
   align-items: center;
   position: absolute;
   top: 28%;
-  left: 4%;
+  right: 4%;
   display: none;
   flex-direction: column;
   justify-content: space-around;

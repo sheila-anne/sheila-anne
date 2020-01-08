@@ -44,12 +44,8 @@ const BlogIndexPage = ({ location }) => {
           Latest Stories
         </ImageHeadlineContainer>
       </FullWidthImage>
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <BlogRoll />
-          </div>
-        </div>
+      <section>
+        <BlogRoll />
       </section>
     </Layout>
   );

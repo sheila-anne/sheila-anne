@@ -20,7 +20,7 @@ const CenteredText = styled.div<{ isOpen: boolean; isMobile: boolean }>`
 
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen, isMobile }) =>
-    isOpen && isMobile ? "translateX(15%)" : ""};
+    isOpen && isMobile ? "translateX(-16%)" : ""};
   padding-top: 5px;
   text-align: center;
 `;
@@ -131,6 +131,11 @@ const getNavLinkItems = (location: Location, show = false) => {
     {
       to: "/the-grove/",
       text: "The Grove",
+      title: "Life coaching help from Sheila Anne"
+    },
+    {
+      to: "/blog/",
+      text: "Writing Desk",
       title: "Writing samples from Sheila Anne"
     },
 

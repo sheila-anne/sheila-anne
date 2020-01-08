@@ -5,10 +5,11 @@ import styled from "styled-components";
 import { Button } from "../components/button";
 import { CenteredText } from "../components/centered-text";
 import { Constants } from "../constants";
+import { SubscribeForm } from "../components/subscribe-form";
 import { Container } from "../components/container";
 import { FlexContainer } from "../components/flex";
 import { Layout } from "../components/layout";
-import Features from "../components/Features";
+import { Features } from "../components/features";
 import { BlogRoll } from "../components/BlogRoll";
 import { useWindow } from "../hooks/useWindow";
 
@@ -37,13 +38,14 @@ const ImageHeadlineContainer = styled.div`
   width: 100%;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
 `;
 
 const BannerHeadline = styled.h1`
-  box-shadow: #4d80e4 0.5rem 0px 0px, #4d80e4 -0.5rem 0px 0px;
-  background-color: #4d80e4;
+  box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
+    ${Constants.Colors.blue} -0.5rem 0px 0px;
+  background-color: ${Constants.Colors.blue};
   color: #fff;
   padding: 0.5rem;
 
@@ -66,7 +68,7 @@ export const IndexPageTemplate = ({
     <FullWidthImage
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp && !!image.childImageSharp.fluid
+          !!image && !!image.childImageSharp
             ? image.childImageSharp.fluid.src
             : image
         })`
@@ -89,23 +91,28 @@ export const IndexPageTemplate = ({
     )}
     <section>
       <Container>
+        <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
+          <h1>{mainpitch.title}</h1>
+          <h3>{mainpitch.description}</h3>
+        </FlexContainer>
+        <FlexContainer
+          backgroundColor={Constants.Colors.featuredPost}
+          margin="1rem 0"
+        >
+          <SubscribeForm />
+        </FlexContainer>
+        <CenteredText>
+          <BannerHeadline as="h3" lessMargin={true}>
+            {heading}
+          </BannerHeadline>
+          <p>{description}</p>
+        </CenteredText>
         <FlexContainer>
-          <h1 className="title">{mainpitch.title}</h1>
-          <div className="tile">
-            <h3 className="subtitle">{mainpitch.description}</h3>
-          </div>
-          <FlexContainer>
-            <div className="column is-12">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
-            </div>
-          </FlexContainer>
           <Features gridItems={intro.blurbs} />
-          <CenteredText>
-            <Button to="/products">See all products</Button>
-          </CenteredText>
           <FlexContainer>
-            <h3>Latest stories</h3>
+            <BannerHeadline as="h3" lessMargin={true}>
+              Latest from the Writing Desk
+            </BannerHeadline>
             <BlogRoll />
           </FlexContainer>
           <CenteredText>
@@ -167,6 +174,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            imageAlt
             text
           }
           heading

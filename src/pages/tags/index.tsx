@@ -1,12 +1,14 @@
 import React, { FC } from "react";
 import kebabCase from "lodash.kebabcase";
-import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
+
+import { FlexContainer, FlexColumn } from "../../components/flex";
 import { Layout } from "../../components/layout";
+import { SEO } from "../../components/seo";
 
 const TagsPage: FC<GatsbyPage> = ({
   data: {
-    allMarkdownRemark: { group },
+    allMarkdownRemark: { tags },
     site: {
       siteMetadata: { title }
     }
@@ -14,27 +16,30 @@ const TagsPage: FC<GatsbyPage> = ({
   location
 }) => (
   <Layout location={location}>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: "6rem" }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+    <section>
+      <SEO
+        description="Sheila Anne | Producing inspirational life coaching and yoga content."
+        title={`Tags | ${title}`}
+        type="website"
+      />
+      <FlexContainer>
+        <FlexColumn>
+          <h1>Blog Tags</h1>
+          <p>
+            Feel free to browse the topics I've written about, and let me know
+            if there's something you'd like to hear more about!
+          </p>
+          <ul>
+            {tags.map(tag => (
+              <li key={tag.fieldValue}>
+                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </FlexColumn>
+      </FlexContainer>
     </section>
   </Layout>
 );
@@ -49,7 +54,7 @@ export const tagPageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
+      tags: group(field: frontmatter___tags) {
         fieldValue
         totalCount
       }

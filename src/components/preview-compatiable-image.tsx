@@ -3,33 +3,47 @@ import Img from "gatsby-image";
 
 type PreviewCompatibleImageProps = {
   imageInfo: PreviewImage;
+  imageAlt?: string;
+  loading?: "eager" | "lazy" | "auto";
 };
 
 const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
-  imageInfo
+  imageAlt,
+  imageInfo,
+  loading
 }) => {
   const imageStyle = { borderRadius: "5px" };
-  const { alt = "", childImageSharp, image } = imageInfo;
+  let { alt = "", childImageSharp, image } = imageInfo;
+  const altText = alt || imageAlt;
   const potentialImage = image as NestedImage;
+  const loadType = loading || "auto";
 
   if (!!image && !!potentialImage.childImageSharp) {
     return (
       <Img
+        alt={altText}
+        loading={loadType}
         style={imageStyle}
         fluid={potentialImage.childImageSharp.fluid}
-        alt={alt}
       />
     );
   }
 
   if (!!childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />;
+    return (
+      <Img
+        loading={loadType}
+        style={imageStyle}
+        fluid={childImageSharp.fluid}
+        alt={altText}
+      />
+    );
   }
 
   if (!!image && typeof image === "string")
-    return <img style={imageStyle} src={image} alt={alt} />;
+    return <img style={imageStyle} src={image} alt={altText} />;
 
   return null;
 };
 
-export default PreviewCompatibleImage;
+export { PreviewCompatibleImage };
