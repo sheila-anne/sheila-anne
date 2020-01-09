@@ -139,6 +139,12 @@ const getNavLinkItems = (location: Location, show = false) => {
       title: "Writing samples from Sheila Anne"
     },
 
+    {
+      to: "/the-mat/",
+      text: "The Mat",
+      title: "Yoga & Intentional Movement"
+    },
+
     { to: "/about/", text: "About", title: "About Sheila Anne" }
   ];
   show &&

@@ -78,10 +78,10 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: Title, name: title, widget: string }
+          - { label: Banner Title, name: bannerTitle, widget: string }
+          - { label: Banner Subtitle, name: bannerSubtitle, widget: "markdown" }
           - { label: Image, name: image, widget: image }
           - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
           - {
               label: Mainpitch,
               name: mainpitch,
@@ -163,6 +163,30 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/the-grove/index.md"
+        label: "The Grove"
+        name: "the-grove"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "the-grove",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/the-mat/index.md"
+        label: "The Mat"
+        name: "the-mat"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "the-mat",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }

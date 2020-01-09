@@ -1,21 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
-import styled from "styled-components";
 
 import { Layout } from "../components/layout";
-
-const TagList = styled.ul`
-  list-style: none;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  li {
-    padding: 0 2rem 1rem 0;
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-  }
-`;
+import { TagList } from "../components/tag-list";
 
 const TagRoute = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;

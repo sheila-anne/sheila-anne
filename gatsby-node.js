@@ -39,27 +39,22 @@ exports.createPages = ({ actions, graphql }) => {
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`
         ),
-        // additional data can be passed via context
         context: {
           id
         }
       });
     });
 
-    // Tag pages:
     let tags = [];
-    // Iterate through each post, putting all found tags into `tags`
     posts.forEach(edge => {
       if (get(edge, `node.frontmatter.tags`)) {
         tags = tags.concat(edge.node.frontmatter.tags);
       }
     });
-    // Eliminate duplicate tags
     tags = uniq(tags);
 
-    // Make tag pages
     tags.forEach(tag => {
       const tagPath = `/tags/${kebabCase(tag)}/`;
 

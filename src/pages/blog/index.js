@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Layout } from "../../components/layout";
+import { Constants } from "../../constants";
 import { BlogRoll } from "../../components/BlogRoll";
+import { Layout } from "../../components/layout";
 
 const FullWidthImage = styled.div`
-  width: 100vw;
   height: 400px;
   background-attachment: fixed;
   background-size: cover;
@@ -17,11 +17,16 @@ const FullWidthImage = styled.div`
 `;
 
 const ImageHeadlineContainer = styled.h1`
+  box-shadow: 0.5rem 0 0 ${Constants.Colors.lighterBlue},
+    -0.5rem 0 0 ${Constants.Colors.lighterBlue};
+  background-color: ${Constants.Colors.lighterBlue};
+  color: #fff;
   display: flex;
-  height: 150px;
-  line-height: 1;
-  justify-content: space-around;
   flex-direction: column;
+  height: 150px;
+  justify-content: space-around;
+  line-height: 1;
+  padding: 1rem;
 `;
 
 const BlogIndexPage = ({ location }) => {
@@ -32,17 +37,7 @@ const BlogIndexPage = ({ location }) => {
           backgroundImage: `url('/img/blog-index.jpg')`
         }}
       >
-        <ImageHeadlineContainer
-          className="has-text-weight-bold is-size-1"
-          style={{
-            boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-            backgroundColor: "#f40",
-            color: "white",
-            padding: "1rem"
-          }}
-        >
-          Latest Stories
-        </ImageHeadlineContainer>
+        <ImageHeadlineContainer>Latest Stories</ImageHeadlineContainer>
       </FullWidthImage>
       <section>
         <BlogRoll />

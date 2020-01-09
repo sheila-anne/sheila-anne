@@ -11,7 +11,12 @@ import { FlexContainer } from "../components/flex";
 import { Layout } from "../components/layout";
 import { Features } from "../components/features";
 import { BlogRoll } from "../components/BlogRoll";
+import { SEO } from "../components/seo";
 import { useWindow } from "../hooks/useWindow";
+
+type HeadlineProps = {
+  lessMargin?: boolean;
+};
 
 const FullWidthImage = styled.div`
   height: 400px;
@@ -21,6 +26,7 @@ const FullWidthImage = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 0;
+  margin-bottom: 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
     height: 200px;
@@ -42,7 +48,7 @@ const ImageHeadlineContainer = styled.div`
   }
 `;
 
-const BannerHeadline = styled.h1`
+const BannerHeadline = styled.h1<HeadlineProps>`
   box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
     ${Constants.Colors.blue} -0.5rem 0px 0px;
   background-color: ${Constants.Colors.blue};
@@ -109,16 +115,16 @@ export const IndexPageTemplate = ({
         </CenteredText>
         <FlexContainer>
           <Features gridItems={intro.blurbs} />
-          <FlexContainer>
-            <BannerHeadline as="h3" lessMargin={true}>
-              Latest from the Writing Desk
-            </BannerHeadline>
-            <BlogRoll />
-          </FlexContainer>
-          <CenteredText>
-            <Button to="/blog">Read more from the blog</Button>
-          </CenteredText>
         </FlexContainer>
+        <CenteredText>
+          <BannerHeadline as="h3" lessMargin={true}>
+            Latest from the Writing Desk
+          </BannerHeadline>
+        </CenteredText>
+        <BlogRoll />
+        <CenteredText>
+          <Button to="/blog">Read more from the blog</Button>
+        </CenteredText>
       </Container>
     </section>
   </>
@@ -130,12 +136,16 @@ const IndexPage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      <SEO
+        title="Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement"
+        description="Life coach, yoga teacher, and writer Sheila Anne welcomes those looking to take their life to the next level"
+      />
       <IndexPageTemplate
         isMobile={isMobile}
         image={frontmatter.image}
-        title={frontmatter.title}
+        title={frontmatter.bannerTitle}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        subheading={frontmatter.bannerSubtitle}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -150,7 +160,8 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
+        bannerTitle
+        bannerSubtitle
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -159,7 +170,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
         mainpitch {
           title
           description

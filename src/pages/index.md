@@ -1,9 +1,10 @@
 ---
 templateKey: index-page
-title: Welcome to Sheila Anne
+bannerTitle: Meet your new life coach
+bannerSubtitle: >
+  Looking to navigate your life path? Start here.
 image: /img/sheila-anne-coaching-header.jpg
 heading: More about Sheila Anne
-subheading: Looking to navigate your life path? Start here.
 mainpitch:
   title: It’s time to harness your energy, recognize your purpose, and live your most authentic & bold life.
   description: >

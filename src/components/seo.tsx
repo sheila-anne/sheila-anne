@@ -6,7 +6,7 @@ type SEOProps = {
   image?: string;
   imageAlt?: string;
   title: string;
-  type: "article" | "website";
+  type?: "article" | "website";
 };
 
 type MetaProperties = {
@@ -40,7 +40,7 @@ const getMetaList = ({
     },
     {
       property: `og:type`,
-      content: type
+      content: !!type ? type : "website"
     }
   ] as MetaProperties[];
   image &&
