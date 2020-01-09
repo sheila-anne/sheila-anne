@@ -14,6 +14,7 @@ tags:
   - digestion
   - restorative
   - yoga poses
+  - the mat
 ---
 When you have an upset stomach or trouble digesting, yoga might feel like the last thing you want to do. Inhale, exhale, and trust me on this one.  You can move through these poses as a flow, or simply pick one or two to do on it's own.
 
