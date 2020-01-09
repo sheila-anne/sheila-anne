@@ -14,10 +14,6 @@ import { BlogRoll } from "../components/BlogRoll";
 import { SEO } from "../components/seo";
 import { useWindow } from "../hooks/useWindow";
 
-type HeadlineProps = {
-  lessMargin?: boolean;
-};
-
 const FullWidthImage = styled.div`
   height: 400px;
   background-attachment: fixed;
@@ -48,7 +44,7 @@ const ImageHeadlineContainer = styled.div`
   }
 `;
 
-const BannerHeadline = styled.h1<HeadlineProps>`
+const BannerHeadline = styled.h1`
   box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
     ${Constants.Colors.blue} -0.5rem 0px 0px;
   background-color: ${Constants.Colors.blue};
