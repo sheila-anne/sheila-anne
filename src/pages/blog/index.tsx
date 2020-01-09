@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../../constants";
-import { BlogRoll } from "../../components/BlogRoll";
+import { BlogRollAll } from "../../components/blog-roll-all";
 import { Layout } from "../../components/layout";
 
 const FullWidthImage = styled.div`
@@ -40,7 +40,7 @@ const BlogIndexPage = ({ location }) => {
         <ImageHeadlineContainer>Latest Stories</ImageHeadlineContainer>
       </FullWidthImage>
       <section>
-        <BlogRoll />
+        <BlogRollAll />
       </section>
     </Layout>
   );

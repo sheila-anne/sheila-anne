@@ -1,10 +1,10 @@
-import { Link, graphql, StaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Button } from "./button";
 import { Constants } from "../constants";
-import { FlexContainer, FlexColumn, FlexHeader } from "../components/flex";
+import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatiable-image";
 import { CenteredText } from "./centered-text";
 
@@ -43,7 +43,7 @@ const Article = styled.article<ArticleProps>`
   margin: 1rem;
 `;
 
-const BlogRollInner: FC<GatsbyComponent> = ({ data }) => {
+export const BlogRoll: FC<GatsbyComponent> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
@@ -83,42 +83,3 @@ const BlogRollInner: FC<GatsbyComponent> = ({ data }) => {
     </FlexContainer>
   );
 };
-
-export const BlogRoll = () => (
-  <StaticQuery
-    query={BlogRollQuery}
-    render={data => <BlogRollInner data={data} />}
-  />
-);
-
-const BlogRollQuery = graphql`
-  query BlogRollQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            featuredpost
-            featuredimage {
-              childImageSharp {
-                fluid(maxWidth: 120, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;

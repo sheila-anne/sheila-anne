@@ -10,9 +10,13 @@ import { Container } from "../components/container";
 import { FlexContainer } from "../components/flex";
 import { Layout } from "../components/layout";
 import { Features } from "../components/features";
-import { BlogRoll } from "../components/BlogRoll";
+import { BlogRollAll } from "../components/blog-roll-all";
 import { SEO } from "../components/seo";
 import { useWindow } from "../hooks/useWindow";
+
+type HeadlineProps = {
+  lessMargin?: boolean;
+};
 
 const FullWidthImage = styled.div`
   height: 400px;
@@ -44,7 +48,7 @@ const ImageHeadlineContainer = styled.div`
   }
 `;
 
-const BannerHeadline = styled.h1`
+const BannerHeadline = styled.h1<HeadlineProps>`
   box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
     ${Constants.Colors.blue} -0.5rem 0px 0px;
   background-color: ${Constants.Colors.blue};
@@ -117,7 +121,7 @@ export const IndexPageTemplate = ({
             Latest from the Writing Desk
           </BannerHeadline>
         </CenteredText>
-        <BlogRoll />
+        <BlogRollAll />
         <CenteredText>
           <Button to="/blog">Read more from the blog</Button>
         </CenteredText>
