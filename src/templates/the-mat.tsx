@@ -11,7 +11,9 @@ export const TheMatTemplate = ({ content, contentComponent, data }) => {
   return (
     <section>
       <PageContent content={content} />
-      {data.allMarkdownRemark.edges.length > 0 && <BlogRoll data={data} />}
+      {data.allMarkdownRemark.edges.length > 0 && (
+        <BlogRoll posts={data.allMarkdownRemark.edges} />
+      )}
     </section>
   );
 };

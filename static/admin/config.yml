@@ -165,7 +165,14 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Banner Image", name: "bannerImage", widget: "image" }
+          - {
+              label: "Banner Image Headline",
+              name: "imageHeadline",
+              widget: "string",
+            }
           - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - file: "src/pages/the-grove/index.md"
         label: "The Grove"
         name: "the-grove"
@@ -177,7 +184,34 @@ collections:
               default: "the-grove",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Banner Image", name: "bannerImage", widget: "image" }
+          - {
+              label: "Banner Image Headline",
+              name: "imageHeadline",
+              widget: "string",
+            }
           - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - file: "src/pages/blog/index.md"
+        label: "The Writing Desk"
+        name: "the-writing-desk"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "the-writing-desk",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Banner Image", name: "bannerImage", widget: "image" }
+          - {
+              label: "Banner Image Headline",
+              name: "imageHeadline",
+              widget: "string",
+            }
+          - { label: "Featured Image", name: "featuredImage", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
       - file: "src/pages/the-mat/index.md"
         label: "The Mat"
         name: "the-mat"
@@ -189,7 +223,14 @@ collections:
               default: "the-mat",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Banner Image", name: "bannerImage", widget: "image" }
+          - {
+              label: "Banner Image Headline",
+              name: "imageHeadline",
+              widget: "string",
+            }
           - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Featured Image", name: "featuredImage", widget: "image" }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

@@ -135,7 +135,7 @@ const getNavLinkItems = (location: Location, show = false) => {
     },
     {
       to: "/blog/",
-      text: "Writing Desk",
+      text: "The Writing Desk",
       title: "Writing samples from Sheila Anne"
     },
 
@@ -149,7 +149,7 @@ const getNavLinkItems = (location: Location, show = false) => {
   ];
   show &&
     location.pathname !== "/" &&
-    navLinks.push({ to: "/", text: "HOME", title: "Sheila Anne" });
+    navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
     <NavListItem key={navLink.to}>
       <SideLinkWrapper location={location} to={navLink.to}>

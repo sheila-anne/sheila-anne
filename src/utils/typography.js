@@ -47,16 +47,20 @@ const theme = {
     li: {
       padding: "5px"
     },
+    "h1,h2,h3,h4,h5,h6": {
+      marginBottom: rhythm(1 / 2),
+      marginTop: rhythm(2)
+    },
     "@media only screen and (max-width:480px)": {
       blockquote: {
         marginLeft: rhythm(-3 / 4),
         marginRight: 0,
         paddingLeft: rhythm(9 / 16)
+      },
+      "h1,h2,h3,h4,h5,h6": {
+        marginBottom: rhythm(1 / 2),
+        marginTop: "1rem"
       }
-    },
-    "h1,h2,h3,h4,h5,h6": {
-      marginBottom: rhythm(1 / 2),
-      marginTop: rhythm(2)
     },
     h4: {
       letterSpacing: "0.140625em",

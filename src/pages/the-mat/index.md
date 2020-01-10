@@ -1,6 +1,6 @@
 ---
-templateKey: "the-mat"
 path: /the-mat
+templateKey: "the-mat"
 title: The Mat
 ---
 

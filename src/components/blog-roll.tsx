@@ -8,6 +8,10 @@ import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatiable-image";
 import { CenteredText } from "./centered-text";
 
+type BlogRollProps = {
+  posts: any;
+};
+
 type ArticleProps = {
   isFeatured: boolean;
 };
@@ -43,9 +47,7 @@ const Article = styled.article<ArticleProps>`
   margin: 1rem;
 `;
 
-export const BlogRoll: FC<GatsbyComponent> = ({ data }) => {
-  const { edges: posts } = data.allMarkdownRemark;
-
+export const BlogRoll: FC<BlogRollProps> = ({ posts }) => {
   return (
     <FlexContainer>
       {posts &&

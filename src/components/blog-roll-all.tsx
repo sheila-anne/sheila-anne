@@ -6,7 +6,7 @@ import { BlogRoll } from "./blog-roll";
 export const BlogRollAll = () => (
   <StaticQuery
     query={BlogRollQuery}
-    render={data => <BlogRoll data={data} />}
+    render={data => <BlogRoll posts={data.allMarkdownRemark.edges} />}
   />
 );
 

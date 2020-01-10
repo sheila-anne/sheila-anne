@@ -8,32 +8,16 @@ import { Constants } from "../constants";
 import { SubscribeForm } from "../components/subscribe-form";
 import { Container } from "../components/container";
 import { FlexContainer } from "../components/flex";
+import { FullWidthImage } from "../components/banner-image";
 import { Layout } from "../components/layout";
 import { Features } from "../components/features";
-import { BlogRollAll } from "../components/blog-roll-all";
+import { BlogRoll } from "../components/blog-roll";
 import { SEO } from "../components/seo";
 import { useWindow } from "../hooks/useWindow";
 
 type HeadlineProps = {
   lessMargin?: boolean;
 };
-
-const FullWidthImage = styled.div`
-  height: 400px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 1rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    height: 200px;
-    background-size: contain;
-    background-position: unset;
-  }
-`;
 
 const ImageHeadlineContainer = styled.div`
   align-items: flex-start;
@@ -68,17 +52,16 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro
+  intro,
+  posts
 }) => (
   <>
     <FullWidthImage
-      style={{
-        backgroundImage: `url(${
-          !!image && !!image.childImageSharp
-            ? image.childImageSharp.fluid.src
-            : image
-        })`
-      }}
+      fluid={
+        !!image && !!image.childImageSharp ? image.childImageSharp.fluid : image
+      }
+      moveHeadlineOnMobile={true}
+      title="Sheila Anne Life Coaching cover photo"
     >
       {!isMobile && (
         <ImageHeadlineContainer>
@@ -108,9 +91,7 @@ export const IndexPageTemplate = ({
           <SubscribeForm />
         </FlexContainer>
         <CenteredText>
-          <BannerHeadline as="h3" lessMargin={true}>
-            {heading}
-          </BannerHeadline>
+          <BannerHeadline as="h3">{heading}</BannerHeadline>
           <p>{description}</p>
         </CenteredText>
         <FlexContainer>
@@ -121,7 +102,7 @@ export const IndexPageTemplate = ({
             Latest from the Writing Desk
           </BannerHeadline>
         </CenteredText>
-        <BlogRollAll />
+        <BlogRoll posts={posts} />
         <CenteredText>
           <Button to="/blog">Read more from the blog</Button>
         </CenteredText>
@@ -149,6 +130,7 @@ const IndexPage = ({ data, location }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        posts={data.allMarkdownRemark.posts}
       />
     </Layout>
   );
@@ -189,6 +171,35 @@ export const pageQuery = graphql`
           }
           heading
           description
+        }
+      }
+    }
+
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      limit: 2
+    ) {
+      posts: edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            featuredpost
+            featuredimage {
+              childImageSharp {
+                fluid(maxWidth: 120, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }
