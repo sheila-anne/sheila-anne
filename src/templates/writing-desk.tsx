@@ -11,6 +11,8 @@ export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
   const imageData = data.desktop;
   const imageHeadline = data.markdownRemark.frontmatter.imageHeadline;
 
+  console.log(imageHeadline);
+
   return (
     <section>
       <BannerImage

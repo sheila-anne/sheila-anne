@@ -74,7 +74,7 @@ export const BannerImage: FC<BannerImageProps> = ({
         moveHeadlineOnMobile={moveHeadlineOnMobile}
         title={title}
       >
-        {moveHeadlineOnMobile && !isMobile && (
+        {((moveHeadlineOnMobile && !isMobile) || !moveHeadlineOnMobile) && (
           <ImageHeadlineContainer>{imageHeadline}</ImageHeadlineContainer>
         )}
       </FullWidthImage>
