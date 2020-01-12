@@ -1,4 +1,5 @@
 require("dotenv").config();
+var proxy = require("http-proxy-middleware");
 
 module.exports = {
   siteMetadata: {
@@ -116,5 +117,16 @@ module.exports = {
         mergeCachingHeaders: true
       }
     }
-  ]
+  ],
+  developMiddleware: app => {
+    app.use(
+      "/.netlify/functions/",
+      proxy({
+        target: "http://localhost:34567",
+        pathRewrite: {
+          "/.netlify/functions/": ""
+        }
+      })
+    );
+  }
 };

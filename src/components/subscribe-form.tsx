@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Dispatch, FormEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
@@ -63,45 +63,82 @@ const Submit = styled.button`
   }
 `;
 
+const handleSubmit = async (
+  e: FormEvent<HTMLFormElement>,
+  setButtonText: Dispatch<SetStateAction<string>>
+) => {
+  e.preventDefault();
+  setButtonText("Submitting...");
+
+  const formValues = {};
+  const formElements = (Array.from(
+    e.currentTarget.elements
+  ) as unknown) as HTMLInputElement[];
+  for (let element of formElements) {
+    if (element.value === element.defaultValue || !element.value) {
+      continue;
+    }
+    formValues[element.name] = element.value;
+  }
+
+  const res = await fetch(".netlify/functions/form-handler", {
+    method: "POST",
+    body: JSON.stringify(formValues)
+  })
+    .then(res => res.json())
+    .catch(() => {
+      success: false;
+    });
+
+  const success = !!res?.success;
+
+  setButtonText(success ? "Success!" : "Error");
+};
+
 const SubscribeForm = () => {
+  const [buttonText, setButtonText] = useState("Submit!");
+
   return (
     <FormWrapperSection centerText={true}>
       <h2>Let's get to know one another</h2>
       <p>Don't wait to change your life, connect with me today!</p>
-      <form
-        id="#contact-sheila"
-        name="contact-sheila"
-        onSubmit={e => console.log}
-      >
-        <input
-          style={{ display: "none" }}
-          name="form-name"
-          value="contact-sheila"
-          readOnly={true}
-        />
+      <form onSubmit={e => handleSubmit(e, setButtonText)}>
         <p>
           <Input
+            autoComplete="name"
             backgroundColor={Constants.Colors.featuredPost}
             type="text"
             id="name"
             name="name"
-            defaultValue="Name"
             required={true}
+            placeholder="Name"
           />
         </p>
         <p>
           <Input
+            autoComplete="email"
             backgroundColor={Constants.Colors.featuredPost}
             type="email"
             id="email"
             inputMode="email"
-            defaultValue="Email"
             name="email"
             required={true}
+            placeholder="Email"
+          />
+        </p>
+        <p>
+          <Input
+            autoComplete="tel"
+            backgroundColor={Constants.Colors.featuredPost}
+            type="text"
+            id="phone"
+            inputMode="tel"
+            name="phone"
+            placeholder="Phone (Optional)"
           />
         </p>
         <Submit name="SendMessage" type="submit">
-          <SubmitSpan>Submit!</SubmitSpan>
+          <SubmitSpan>{buttonText}</SubmitSpan>
         </Submit>
       </form>
     </FormWrapperSection>
