@@ -1,7 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
+
 import { Layout } from "../components/layout";
 import Content, { HTMLContent } from "../components/Content";
+import { SEO } from "../components/seo";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -19,6 +21,10 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      <SEO
+        title="About | Sheila Anne"
+        description="Learn more about Life Coach, Yoga Instructor, and Content Creator - Sheila Anne Murray"
+      />
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

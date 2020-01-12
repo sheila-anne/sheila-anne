@@ -19,6 +19,12 @@ type HeadlineProps = {
   lessMargin?: boolean;
 };
 
+const MainHeadline = styled.h1`
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+`;
+
 const ImageHeadlineContainer = styled.div`
   align-items: flex-start;
   display: flex;
@@ -81,8 +87,7 @@ export const IndexPageTemplate = ({
     <section>
       <Container>
         <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-          <h1>{mainpitch.title}</h1>
-          <h3>{mainpitch.description}</h3>
+          <MainHeadline>{mainpitch.description}</MainHeadline>
         </FlexContainer>
         <FlexContainer
           backgroundColor={Constants.Colors.featuredPost}
@@ -91,7 +96,8 @@ export const IndexPageTemplate = ({
           <SubscribeForm />
         </FlexContainer>
         <CenteredText>
-          <BannerHeadline as="h3">{heading}</BannerHeadline>
+          <BannerHeadline as="h2">{heading}</BannerHeadline>
+          <h3>{mainpitch.title}</h3>
           <p>{description}</p>
         </CenteredText>
         <FlexContainer>
@@ -192,7 +198,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             featuredpost
-            featuredimage {
+            featuredImage {
               childImageSharp {
                 fluid(maxWidth: 120, quality: 100) {
                   ...GatsbyImageSharpFluid

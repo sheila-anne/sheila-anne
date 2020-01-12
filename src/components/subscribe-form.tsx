@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
+import { FormWrapperSection, Input } from "../components/forms";
 
 const SubmitSpan = styled.span`
   display: block;
@@ -13,6 +14,11 @@ const SubmitSpan = styled.span`
   background-size: 100% 200%;
   background-position: top;
   transition: all 0.3s ease;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    -webkit-text-fill-color: inherit;
+    -webkit-background-clip: inherit;
+  }
 `;
 
 const Submit = styled.button`
@@ -50,52 +56,32 @@ const Submit = styled.button`
     &::before {
       height: 100%;
     }
-`;
-
-const SubscribeInput = styled.input`
-  background-color: ${Constants.Colors.featuredPost};
+  }
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin-left: 1rem;
-  }
-`;
-
-const ContactUsSection = styled.div`
-  margin: 1rem auto;
-  text-align: center;
-
-  & > * ${SubscribeInput} {
-    display: block;
-    border: 1px solid ${Constants.Colors.gray};
-    border-radius: 5px;
+    color: #fff;
   }
 `;
 
 const SubscribeForm = () => {
   return (
-    <ContactUsSection>
+    <FormWrapperSection centerText={true}>
       <h2>Let's get to know one another</h2>
-      <p>Don't wait to change your life, connect with me today.</p>
+      <p>Don't wait to change your life, connect with me today!</p>
       <form
         id="#contact-sheila"
         name="contact-sheila"
-        data-netlify="true"
         onSubmit={e => console.log}
       >
-        <p style={{ display: "none" }}>
-          <label>
-            Don’t fill this out.
-            <input name="bot-field" value="" readOnly />
-          </label>
-        </p>
-        <SubscribeInput
+        <input
           style={{ display: "none" }}
           name="form-name"
           value="contact-sheila"
           readOnly={true}
         />
         <p>
-          <SubscribeInput
+          <Input
+            backgroundColor={Constants.Colors.featuredPost}
             type="text"
             id="name"
             name="name"
@@ -104,19 +90,21 @@ const SubscribeForm = () => {
           />
         </p>
         <p>
-          <SubscribeInput
+          <Input
+            backgroundColor={Constants.Colors.featuredPost}
             type="email"
             id="email"
+            inputMode="email"
             defaultValue="Email"
             name="email"
             required={true}
           />
         </p>
         <Submit name="SendMessage" type="submit">
-          <SubmitSpan>Sign me up!</SubmitSpan>
+          <SubmitSpan>Submit!</SubmitSpan>
         </Submit>
       </form>
-    </ContactUsSection>
+    </FormWrapperSection>
   );
 };
 

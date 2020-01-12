@@ -28,7 +28,7 @@ const BlogRollQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             featuredpost
-            featuredimage {
+            featuredImage {
               childImageSharp {
                 fluid(maxWidth: 120, quality: 100) {
                   ...GatsbyImageSharpFluid

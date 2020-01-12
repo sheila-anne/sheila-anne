@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: `Sheila Anne`,
@@ -31,11 +33,20 @@ module.exports = {
         name: "images"
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        exclude: ["localhost:**"],
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        head: false
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-typescript",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -79,7 +90,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/img/mountain.jpg`
+        icon: `static/img/sheila-anne-favicon-32x32.png`
       }
     },
     {

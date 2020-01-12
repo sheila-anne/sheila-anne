@@ -1,6 +1,4 @@
 import CMS from "netlify-cms-app";
-import uploadcare from "netlify-cms-media-library-uploadcare";
-import cloudinary from "netlify-cms-media-library-cloudinary";
 import React, { useState, useEffect } from "react";
 import { StyleSheetManager } from "styled-components";
 
@@ -8,7 +6,6 @@ import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
 import ColorsPreview from "./preview-templates/ColorsPreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
-import ProductPagePreview from "./preview-templates/ProductPagePreview";
 import TheGrovePagePreview from "./preview-templates/TheGrovePagePreview";
 import TheMatPagePreview from "./preview-templates/TheMatPagePreview";
 
@@ -36,9 +33,6 @@ export default function withStyledComponents(Comp) {
   );
 }
 
-CMS.registerMediaLibrary(uploadcare);
-CMS.registerMediaLibrary(cloudinary);
-
 CMS.registerPreviewTemplate("about", withStyledComponents(AboutPagePreview));
 CMS.registerPreviewTemplate("blog", withStyledComponents(BlogPostPreview));
 CMS.registerPreviewTemplate(
@@ -46,10 +40,6 @@ CMS.registerPreviewTemplate(
   withStyledComponents(ColorsPreview)
 );
 CMS.registerPreviewTemplate("index", withStyledComponents(IndexPagePreview));
-CMS.registerPreviewTemplate(
-  "products",
-  withStyledComponents(ProductPagePreview)
-);
 CMS.registerPreviewTemplate(
   "the-grove",
   withStyledComponents(TheGrovePagePreview)

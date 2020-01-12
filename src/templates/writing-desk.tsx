@@ -5,13 +5,12 @@ import { BannerImage } from "../components/banner-image";
 import { BlogRollAll } from "../components/blog-roll-all";
 import Content, { HTMLContent } from "../components/Content";
 import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
 export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
   const imageData = data.desktop;
   const imageHeadline = data.markdownRemark.frontmatter.imageHeadline;
-
-  console.log(imageHeadline);
 
   return (
     <section>
@@ -29,6 +28,10 @@ export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
 const BlogIndexPage = ({ location, data }) => {
   return (
     <Layout location={location}>
+      <SEO
+        title={`${data.markdownRemark.frontmatter.title} | Sheila Anne`}
+        description="Excerpts from the Writing Desk of Sheila Anne"
+      />
       <BlogIndexPageTemplate
         contentComponent={HTMLContent}
         content={data.markdownRemark.html}

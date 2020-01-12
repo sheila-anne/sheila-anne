@@ -7,6 +7,7 @@ import { BlogRoll } from "../components/blog-roll";
 import Content, { HTMLContent } from "../components/Content";
 import { FlexContainer, FlexColumn } from "../components/flex";
 import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
 export const TheGroveTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
@@ -53,6 +54,10 @@ const TheGrove = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      <SEO
+        title="Life Coaching In The Grove | Sheila Anne"
+        description="Discover how to supercharge your life, focus your mental clarity, and balance your ambitions with the ability to be present with Sheila Anne Life Coaching"
+      />
       <TheGroveTemplate
         contentComponent={HTMLContent}
         content={post.html}
@@ -104,7 +109,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             featuredpost
-            featuredimage {
+            featuredImage {
               childImageSharp {
                 fluid(maxWidth: 120, quality: 100) {
                   ...GatsbyImageSharpFluid

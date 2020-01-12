@@ -55,11 +55,11 @@ export const BlogRoll: FC<BlogRollProps> = ({ posts }) => {
           <FlexColumn key={post.id}>
             <Article isFeatured={post.frontmatter.featuredpost}>
               <FlexHeader>
-                {post.frontmatter.featuredimage ? (
+                {post.frontmatter.featuredImage ? (
                   <FeaturedThumbnail>
                     <PreviewCompatibleImage
                       imageInfo={{
-                        image: post.frontmatter.featuredimage,
+                        image: post.frontmatter.featuredImage,
                         alt: `featured image thumbnail for post ${post.frontmatter.title}`
                       }}
                     />

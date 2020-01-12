@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import { BlogRoll } from "../components/blog-roll";
 import Content, { HTMLContent } from "../components/Content";
 import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
 export const TheMatTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
@@ -23,6 +24,10 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      <SEO
+        title="Yoga On The Mat | Sheila Anne"
+        description="Learn more about Sheila Anne's connection to yoga and how that can help you flow through life"
+      />
       <TheMatTemplate
         contentComponent={HTMLContent}
         content={post.html}
@@ -59,7 +64,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             featuredpost
-            featuredimage {
+            featuredImage {
               childImageSharp {
                 fluid(maxWidth: 120, quality: 100) {
                   ...GatsbyImageSharpFluid

@@ -83,9 +83,6 @@ const Footer = () => {
             <li>
               <FooterLink to="/about">About</FooterLink>
             </li>
-            <li>
-              <FooterLink to="/products">Products</FooterLink>
-            </li>
           </FooterList>
         </FooterColumn>
         <FooterColumn>
@@ -106,7 +103,7 @@ const Footer = () => {
               style={{ width: "1em", height: "1em" }}
             />
           </FooterNavItem>
-          <FooterNavItem title="instagram" to="https://instagram.com">
+          <FooterNavItem title="instagram" to="https://instagram.com/shetravls">
             <FooterImage
               src={instagram}
               alt="Instagram"
