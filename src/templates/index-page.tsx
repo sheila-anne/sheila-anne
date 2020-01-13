@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 
+import { BasicHeadline } from "../components/headlines";
 import { Button } from "../components/button";
 import { CenteredText } from "../components/centered-text";
 import { Constants } from "../constants";
@@ -20,12 +21,6 @@ type HeadlineProps = {
   lessMargin?: boolean;
   inline?: boolean;
 };
-
-const MainHeadline = styled.h1`
-  font-size: 1.5rem;
-  margin: 1rem;
-  padding: 1rem;
-`;
 
 const ImageHeadlineContainer = styled.div`
   align-items: flex-start;
@@ -97,7 +92,7 @@ export const IndexPageTemplate = ({
     <section>
       <Container>
         <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-          <MainHeadline>{mainpitch.description}</MainHeadline>
+          <BasicHeadline>{mainpitch.description}</BasicHeadline>
         </FlexContainer>
         <FlexContainer
           backgroundColor={Constants.Colors.featuredPost}
@@ -203,7 +198,7 @@ export const pageQuery = graphql`
     ) {
       posts: edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 150)
           id
           fields {
             slug

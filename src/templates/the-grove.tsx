@@ -31,13 +31,16 @@ export const TheGroveTemplate = ({ content, contentComponent, data }) => {
               data.markdownRemark.frontmatter.featuredImage.childImageSharp
                 .fluid
             }
+            title="Schedule a discovery call today!"
+            alt="Sheila Anne Murray in the mountains of Switzerland"
           />
         </FlexColumn>
         <FlexColumn>
           <SubscribeForm
             backgroundColor="#fff"
-            formDescription="Connect with me today"
-            formTitle="Schedule a discovery call"
+            formDescription="Setup your free exploration call."
+            formParagraph="This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
+            formTitle="Let's get started!"
             page="theGrove"
           />
         </FlexColumn>
@@ -57,6 +60,8 @@ const TheGrove = ({ data, location }) => {
       <SEO
         title="Life Coaching In The Grove | Sheila Anne"
         description="Discover how to supercharge your life, focus your mental clarity, and balance your ambitions with the ability to be present with Sheila Anne Life Coaching"
+        image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
+        imageAlt={post.frontmatter.imageHeadline}
       />
       <TheGroveTemplate
         contentComponent={HTMLContent}

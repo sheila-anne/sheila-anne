@@ -2,14 +2,26 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 
-type FlexContainerProps = {
+type BackgroundColorProps = {
   backgroundColor?: string;
+};
+
+type FlexContainerProps = BackgroundColorProps & {
   margin?: string;
 };
 
-export const FlexContainer = styled.div<FlexContainerProps>`
+type FlexColumnProps = BackgroundColorProps & {
+  alignSelf?: string;
+  backgroundColor?: string;
+  padding?: string;
+};
+
+const BackgroundColorDiv = styled.div<BackgroundColorProps>`
   ${({ backgroundColor }) =>
     !!backgroundColor && `background-color: ${backgroundColor};`}
+`;
+
+export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
   flex-flow: row wrap;
   ${({ margin }) => !!margin && `margin: ${margin};`}
@@ -19,12 +31,15 @@ export const FlexContainer = styled.div<FlexContainerProps>`
   }
 `;
 
-export const FlexColumn = styled.div`
+export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
+  ${({ alignSelf }) => !!alignSelf && `align-self: ${alignSelf}`}
   flex: none;
+  ${({ padding }) => !!padding && `padding: ${padding};`}
   width: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {
     width: 100%;
+    padding: inherit;
   }
 `;
 

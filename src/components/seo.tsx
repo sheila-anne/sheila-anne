@@ -12,36 +12,41 @@ type SEOProps = {
 };
 
 const SEO: FC<SEOProps> = ({ description, image, imageAlt, title, type }) => {
-  const ogImage = `${Constants.baseUrl}/img/sheila-anne-og-image.png`;
+  const fallbackImage = `${Constants.baseUrl}/img/sheila-anne-og-image.png`;
+  const ogImage = !!image ? Constants.baseUrl + image : fallbackImage;
 
   return (
     <Helmet htmlAttributes={{ lang: `en` }} title={title}>
       <link
         rel="mask-icon"
-        href="/static/img/safari-pinned-tab.svg"
+        href="/img/safari-pinned-tab.svg"
         color={Constants.Colors.lightestBlue}
       />
-      <meta name="theme-color" content="#fff" />
-      <meta name="og:image" content={image ? image : ogImage} />
+      <meta property="theme-color" content="#fff" />
+      <meta property="og:image" content={ogImage} />
       <meta
         itemProp="image"
         itemScope={true}
         itemType="https://schema.org/ImageObject"
-        name="og:image"
-        content={image ? image : ogImage}
+        property="og:image"
+        content={ogImage}
       />
       <meta
-        name="og:image:alt"
+        property="og:image:alt"
         content={
-          imageAlt
+          !!imageAlt
             ? imageAlt
             : "Sheila Anne - lifecoaching, yoga, inspirational writing and more."
         }
       />
-      <meta name="og:type" content={!!type ? type : "business.business"} />
-      <meta name="description" itemProp="description" content={description} />
-      <meta name="og:description" content={description} />
-      <meta name="og:title" content={title} />
+      <meta property="og:type" content={!!type ? type : "business.business"} />
+      <meta
+        property="description"
+        itemProp="description"
+        content={description}
+      />
+      <meta property="og:description" content={description} />
+      <meta property="og:title" content={title} />
     </Helmet>
   );
 };

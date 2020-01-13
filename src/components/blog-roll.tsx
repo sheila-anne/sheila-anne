@@ -16,6 +16,10 @@ type ArticleProps = {
   isFeatured: boolean;
 };
 
+const FlexParagraph = styled.p`
+  align-self: center;
+`;
+
 const FeaturedThumbnail = styled.div`
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
@@ -65,11 +69,11 @@ export const BlogRoll: FC<BlogRollProps> = ({ posts }) => {
                     />
                   </FeaturedThumbnail>
                 ) : null}
-                <p>
+                <FlexParagraph>
                   <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
                   <span> &bull; </span>
                   <span>{post.frontmatter.date}</span>
-                </p>
+                </FlexParagraph>
               </FlexHeader>
               <div>
                 <p>{post.excerpt}</p>

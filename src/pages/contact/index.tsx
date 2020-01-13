@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { BasicHeadline } from "../../components/headlines";
 import {
   FormWrapperSection,
   Input,
@@ -7,6 +8,7 @@ import {
   TextArea
 } from "../../components/forms";
 import { Layout } from "../../components/layout";
+import { SEO } from "../../components/seo";
 
 const onSubmit = async (event, setSubmitText) => {
   event.preventDefault();
@@ -49,8 +51,12 @@ export default ({ location }) => {
   const [submitText, setSubmitText] = useState("Send!");
   return (
     <Layout location={location}>
+      <SEO
+        title="Contact | Sheila Anne"
+        description="Get in touch with Sheila Anne today"
+      />
       <FormWrapperSection>
-        <h1>Contact Sheila Anne</h1>
+        <BasicHeadline>Contact Sheila Anne</BasicHeadline>
         <p>
           Drop me a little note by filling out the form below, I'd love to hear
           from you. Alternatively, feel free to reach out to me by email:{" "}

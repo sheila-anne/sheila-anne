@@ -29,8 +29,10 @@ const BlogIndexPage = ({ location, data }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={`${data.markdownRemark.frontmatter.title} | Sheila Anne`}
         description="Excerpts from the Writing Desk of Sheila Anne"
+        image={data.desktop.childImageSharp.fluid.src}
+        imageAlt="Notes from the Writing Desk"
+        title={`${data.markdownRemark.frontmatter.title} | Sheila Anne`}
       />
       <BlogIndexPageTemplate
         contentComponent={HTMLContent}

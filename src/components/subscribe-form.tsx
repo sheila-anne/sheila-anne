@@ -16,8 +16,13 @@ type SubscribeFormProps = {
   backgroundColor: string;
   formTitle: string;
   formDescription: string;
+  formParagraph?: string;
   page: PageNames;
 };
+
+const PaddedParagraph = styled.p`
+  padding: 5px;
+`;
 
 const SubmitSpan = styled.span`
   display: block;
@@ -71,6 +76,7 @@ const Submit = styled.button`
 
   @media (max-width: ${Constants.mobileWidth}) {
     color: #fff;
+    margin-top: 1rem;
   }
 `;
 
@@ -110,6 +116,7 @@ const handleSubmit = async (
 const SubscribeForm: FC<SubscribeFormProps> = ({
   backgroundColor,
   formDescription,
+  formParagraph,
   formTitle,
   page
 }) => {
@@ -119,6 +126,7 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
     <FormWrapperSection centerText={true}>
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
+      {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
       <form onSubmit={e => handleSubmit(e, setButtonText, page)}>
         <p>
           <Input
