@@ -1,23 +1,27 @@
 import React, { FC } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import BackgroundImage from "gatsby-background-image";
 import { Constants } from "../constants";
 import { useWindow } from "../hooks/useWindow";
 
-type BannerImageProps = {
-  image: PreviewImage;
-  imageHeadline: string;
-  title: string;
+type FullWidthImageProps = {
+  containImage?: boolean;
   moveHeadlineOnMobile?: boolean;
 };
 
-export const FullWidthImage = styled(BackgroundImage)<{
-  moveHeadlineOnMobile?: boolean;
-}>`
+type BannerImageProps = FullWidthImageProps & {
+  color?: string;
+  image: PreviewImage;
+  imageHeadline: string;
+  title: string;
+};
+
+export const FullWidthImage = styled(BackgroundImage)<FullWidthImageProps>`
   height: 400px;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: ${({ containImage }) =>
+    !!containImage ? "contain" : "cover"};
   background-position: center;
   display: flex;
   justify-content: center;
@@ -35,16 +39,17 @@ export const FullWidthImage = styled(BackgroundImage)<{
         height: 200px!important;
         background-size: contain!important;
         background-position: unset!important;
-        margin-bottom: 0;
         `}
     }
   }
 `;
 
-const ImageHeadlineContainer = styled.h1<{ moveHeadlineOnMobile?: boolean }>`
-  box-shadow: 0.5rem 0 0 ${Constants.Colors.lighterBlue},
-    -0.5rem 0 0 ${Constants.Colors.lighterBlue};
-  background-color: ${Constants.Colors.lighterBlue};
+const ImageHeadlineContainer = styled.h1<{
+  color: string;
+  moveHeadlineOnMobile?: boolean;
+}>`
+  box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
+  background-color: ${({ color }) => color};
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -59,28 +64,37 @@ const ImageHeadlineContainer = styled.h1<{ moveHeadlineOnMobile?: boolean }>`
 `;
 
 export const BannerImage: FC<BannerImageProps> = ({
+  containImage,
+  color,
   image,
   imageHeadline,
   moveHeadlineOnMobile,
   title
 }) => {
   const imageData = image.childImageSharp?.fluid;
+  const headlineColor = !!color ? color : Constants.Colors.lighterBlue;
   const { isMobile } = useWindow();
   return (
     <>
       <FullWidthImage
         alt={title}
+        containImage={containImage}
         critical={true}
         fluid={imageData}
         moveHeadlineOnMobile={moveHeadlineOnMobile}
         title={title}
       >
         {((moveHeadlineOnMobile && !isMobile) || !moveHeadlineOnMobile) && (
-          <ImageHeadlineContainer>{imageHeadline}</ImageHeadlineContainer>
+          <ImageHeadlineContainer color={headlineColor}>
+            {imageHeadline}
+          </ImageHeadlineContainer>
         )}
       </FullWidthImage>
       {!!isMobile && !!moveHeadlineOnMobile && (
-        <ImageHeadlineContainer moveHeadlineOnMobile={moveHeadlineOnMobile}>
+        <ImageHeadlineContainer
+          color={headlineColor}
+          moveHeadlineOnMobile={moveHeadlineOnMobile}
+        >
           {imageHeadline}
         </ImageHeadlineContainer>
       )}

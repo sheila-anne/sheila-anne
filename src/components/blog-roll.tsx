@@ -25,7 +25,7 @@ const FlexSpan = styled.span`
   margin-top: 1rem;
 `;
 
-const FlexLink = styled(SmartLink)`
+const FlexLink = styled.h3`
   background-color: ${Constants.Colors.theGroveTeal};
   border-radius: 10px;
   color: white;
@@ -56,6 +56,7 @@ const Article = styled.article<ArticleProps>`
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
   border-radius: 4px;
+  color: #000;
   position: relative;
   padding: 0 1rem 1rem 1rem;
 
@@ -82,9 +83,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
         </FeaturedThumbnail>
       ) : null}
       <FlexParagraph>
-        <FlexLink to={post.fields.slug} title={post.frontmatter.title}>
-          {post.frontmatter.title}
-        </FlexLink>
+        <FlexLink>{post.frontmatter.title}</FlexLink>
         <FlexSpan>Published {post.frontmatter.date}</FlexSpan>
       </FlexParagraph>
     </FlexHeader>
@@ -98,19 +97,14 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
 );
 
 export const BlogRoll: FC<BlogPosts> = ({ posts }) => {
-  const { isMobile } = useWindow();
   return (
     <FlexContainer>
       {posts &&
         posts.map(({ node: post }) => (
           <FlexColumn key={post.id}>
-            {isMobile ? (
-              <SmartLink to={post.fields.slug} title={post.frontmatter.title}>
-                {<BlogRollInner post={post} />}
-              </SmartLink>
-            ) : (
+            <SmartLink to={post.fields.slug} title={post.frontmatter.title}>
               <BlogRollInner post={post} />
-            )}
+            </SmartLink>
           </FlexColumn>
         ))}
     </FlexContainer>

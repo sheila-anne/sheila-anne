@@ -9,15 +9,17 @@ import {
   Layout,
   SEO
 } from "../components";
+import { Constants } from "../constants";
 
 export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
   const imageData = data.desktop;
-  const imageHeadline = data.markdownRemark.frontmatter.imageHeadline;
+  const imageHeadline = data.markdownRemark.frontmatter.bannerImageHeadline;
 
   return (
     <section>
       <BannerImage
+        color={Constants.Colors.theGroveTeal}
         image={imageData}
         title="Welcome to The Writing Desk"
         imageHeadline={imageHeadline}
@@ -51,7 +53,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        imageHeadline
+        bannerImageHeadline
         title
       }
     }

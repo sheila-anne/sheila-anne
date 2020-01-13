@@ -13,7 +13,8 @@ import {
   Layout,
   SubscribeForm,
   SEO,
-  SmartLink
+  SmartLink,
+  PreviewCompatibleImage
 } from "../components";
 import { Constants } from "../constants";
 import { useWindow } from "../hooks/useWindow";
@@ -38,8 +39,6 @@ type IndexFrontmatterProps = {
   image: PreviewImage;
   intro: Intro;
   mainpitch: MainPitch;
-  subheading: string;
-  title: string;
 };
 
 type IndexFrontmatterProperty = {
@@ -47,6 +46,7 @@ type IndexFrontmatterProperty = {
 };
 
 type PreviewTemplateProps = IndexFrontmatterProperty & {
+  isPreview?: boolean;
   isMobile: boolean;
   posts: BlogPost[];
 };
@@ -110,12 +110,23 @@ const BannerHeadline = styled.h1<HeadlineProps>`
 `;
 
 const BannerLink = styled(SmartLink)`
+  color: #fff;
   text-decoration: underline;
 `;
+
+const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
+  <ImageHeadlineContainer>
+    <BannerHeadline>{bannerTitle}</BannerHeadline>
+    <BannerHeadline as="h3" inline={!isMobile} lessMargin={isMobile}>
+      {bannerSubtitle} <BannerLink to="/the-grove">Start here.</BannerLink>
+    </BannerHeadline>
+  </ImageHeadlineContainer>
+);
 
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
   isMobile,
+  isPreview,
   posts
 }) => {
   const {
@@ -128,40 +139,44 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     image,
     intro,
     mainpitch,
-    heading,
-    subheading,
-    title
+    heading
   } = frontmatter;
+
+  const banners = (
+    <BannerHeadlines
+      bannerSubtitle={bannerSubtitle}
+      bannerTitle={bannerTitle}
+      isMobile={isMobile}
+    />
+  );
 
   return (
     <>
-      <FullWidthImage
-        fluid={
-          !!image && !!image.childImageSharp
-            ? image.childImageSharp.fluid
-            : image
-        }
-        moveHeadlineOnMobile={true}
-        title="Sheila Anne Life Coaching cover photo"
-      >
-        {!isMobile && (
-          <ImageHeadlineContainer>
-            <BannerHeadline>{bannerTitle}</BannerHeadline>
-            <BannerHeadline inline={true} as="h3">
-              {bannerSubtitle}
-              <BannerLink to="/the-grove">Start here.</BannerLink>
-            </BannerHeadline>
-          </ImageHeadlineContainer>
-        )}
-      </FullWidthImage>
-      {isMobile && (
-        <ImageHeadlineContainer>
-          <BannerHeadline>{title}</BannerHeadline>
-          <BannerHeadline as="h3" lessMargin={true}>
-            {subheading}
-          </BannerHeadline>
-        </ImageHeadlineContainer>
+      {isPreview && (
+        <div
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundPosition: `center`,
+            backgroundAttachment: `fixed`
+          }}
+        >
+          {banners}
+        </div>
       )}
+      {!isPreview && (
+        <FullWidthImage
+          fluid={
+            !!image && !!image.childImageSharp
+              ? image.childImageSharp.fluid
+              : image
+          }
+          moveHeadlineOnMobile={true}
+          title="Sheila Anne Life Coaching cover photo"
+        >
+          {!isMobile && banners}
+        </FullWidthImage>
+      )}
+      {isMobile && banners}
       <section>
         <Container>
           <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>

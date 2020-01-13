@@ -12,7 +12,11 @@ const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   imageInfo,
   loading
 }) => {
-  const imageStyle = { borderRadius: "5px" };
+  const imageStyle = {
+    borderRadius: "5px",
+    maxWidth: "inherit",
+    maxHeight: "inherit"
+  };
   let { alt = "", childImageSharp, image } = imageInfo;
   const altText = alt || imageAlt;
   const potentialImage = image as NestedImage;
@@ -40,8 +44,9 @@ const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
     );
   }
 
-  if (!!image && typeof image === "string")
+  if (!!image && typeof image === "string") {
     return <img style={imageStyle} src={image} alt={altText} />;
+  }
 
   return null;
 };

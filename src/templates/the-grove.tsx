@@ -23,9 +23,10 @@ export const TheGroveTemplate = ({ content, contentComponent, data }) => {
   return (
     <section>
       <BannerImage
+        color={Constants.Colors.theGroveGreen}
         image={frontmatter.bannerImage}
         title="Life Coaching in The Grove"
-        imageHeadline={frontmatter.imageHeadline}
+        imageHeadline={frontmatter.bannerImageHeadline}
         moveHeadlineOnMobile={true}
       />
       <PageContent
@@ -68,7 +69,7 @@ const TheGrove = ({ data, location }) => {
         title="Life Coaching In The Grove | Sheila Anne"
         description="Discover how to supercharge your life, focus your mental clarity, and balance your ambitions with the ability to be present with Sheila Anne Life Coaching"
         image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
-        imageAlt={post.frontmatter.imageHeadline}
+        imageAlt={post.frontmatter.bannerImageHeadline}
       />
       <TheGroveTemplate
         contentComponent={HTMLContent}
@@ -86,6 +87,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        bannerImageHeadline
         bannerImage {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
@@ -103,7 +105,6 @@ export const pageQuery = graphql`
         formHeadline
         formSubHeadline
         formParagraph
-        imageHeadline
         title
       }
     }

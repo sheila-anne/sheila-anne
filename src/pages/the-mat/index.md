@@ -2,11 +2,17 @@
 path: /the-mat
 templateKey: "the-mat"
 title: The Mat
+bannerImage: /img/sheila-anne-the-mat-yoga.jpg
+bannerImageHeadline: "The Mat | Yoga"
 ---
 
 ### Yoga & Inspirational Movement
 
 Sheila Anne curates flows to empower others on their individual path and to create a platform for an hour of unapologetic self care and exploration. Sheila aims to help students develop a powerful toolkit they can take with them off the mat.
+
+### The Mat ❤ The Grove
+
+While growing through coaching in [The Grove](/the-grove/), you can expect that Sheila will draw in themes related to **The Mat**. This means that you’ll experience a full-human approach -- linking mind, body, and universe, by experimenting with mindfulness, meditation, and intentional movement. All this so you can tune in to your inner compass, then transform into the most empowered expression of you.
 
 ### Sheila's Yoga Journey
 

@@ -1,7 +1,7 @@
 ---
 templateKey: "about-page"
 bannerImage: /img/sheila-anne-about.jpg
-imageHeadline: "Get to know Sheila"
+bannerImageHeadline: "Get to know Sheila"
 path: /about
 title: About Sheila Anne
 ---

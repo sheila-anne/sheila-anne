@@ -56,7 +56,7 @@ const AboutPage = ({ data, location }) => {
         title="About | Sheila Anne"
         description="Learn more about Life Coach, Yoga Instructor, and Content Creator - Sheila Anne Murray"
         image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
-        imageAlt="Sheila hiking in the Alps"
+        imageAlt={post.frontmatter.bannerImageHeadline}
       />
       <AboutPageTemplate
         bannerImage={post.frontmatter.bannerImage}
@@ -76,7 +76,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        imageHeadline
+        bannerImageHeadline
         bannerImage {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {

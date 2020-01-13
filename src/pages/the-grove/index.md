@@ -1,10 +1,10 @@
 ---
 bannerImage: /img/the-grove-sheila-anne.jpg
+bannerImageHeadline: "Life Coaching in The Grove"
 featuredImage: /img/sheila-in-the-alps.jpg
 formHeadline: "Let's get started!"
 formParagraph: "This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
 formSubHeadline: "Setup your free exploration call."
-imageHeadline: "Life Coaching in The Grove"
 path: /the-grove
 templateKey: "the-grove"
 title: The Grove

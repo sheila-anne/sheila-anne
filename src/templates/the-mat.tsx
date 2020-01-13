@@ -1,7 +1,14 @@
 import React, { FC } from "react";
 import { graphql } from "gatsby";
 
-import { BlogRoll, Content, HTMLContent, Layout, SEO } from "../components/";
+import {
+  BannerImage,
+  BlogRoll,
+  Content,
+  HTMLContent,
+  Layout,
+  SEO
+} from "../components/";
 
 export const TheMatTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
@@ -9,6 +16,13 @@ export const TheMatTemplate = ({ content, contentComponent, data }) => {
 
   return (
     <section>
+      <BannerImage
+        containImage={true}
+        image={data.markdownRemark.frontmatter.bannerImage}
+        title="The Mat | Yoga With Sheila Anne"
+        imageHeadline={data.markdownRemark.frontmatter.bannerImageHeadline}
+        moveHeadlineOnMobile={true}
+      />
       <PageContent content={content} />
       {allMarkdownRemark.posts.length > 0 && (
         <BlogRoll posts={allMarkdownRemark.posts} />
@@ -42,6 +56,14 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        bannerImage {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        bannerImageHeadline
         title
       }
     }

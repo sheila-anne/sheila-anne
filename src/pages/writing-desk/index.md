@@ -1,5 +1,5 @@
 ---
-imageHeadline: "Latest Stories"
+bannerImageHeadline: "Latest Stories"
 templateKey: "writing-desk"
 path: /blog
 title: The Writing Desk

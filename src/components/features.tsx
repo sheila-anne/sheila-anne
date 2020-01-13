@@ -11,6 +11,8 @@ type FeaturedProps = {
 
 const FlexCenteredText = styled(CenteredText)`
   display: inline-block;
+  max-height: 240px;
+  max-width: 240px;
   width: 240px;
 `;
 

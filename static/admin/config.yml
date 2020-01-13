@@ -178,7 +178,7 @@ collections:
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
-              name: "imageHeadline",
+              name: "bannerImageHeadline",
               widget: "string",
             }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -198,7 +198,7 @@ collections:
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
-              name: "imageHeadline",
+              name: "bannerImageHeadline",
               widget: "string",
             }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -225,7 +225,7 @@ collections:
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
-              name: "imageHeadline",
+              name: "bannerImageHeadline",
               widget: "string",
             }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
@@ -245,7 +245,7 @@ collections:
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
-              name: "imageHeadline",
+              name: "bannerImageHeadline",
               widget: "string",
             }
           - { label: "Body", name: "body", widget: "markdown" }
