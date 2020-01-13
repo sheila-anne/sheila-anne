@@ -30,6 +30,9 @@ export const Input = styled.input<InputProps>`
 `;
 
 export const FormWrapperSection = styled.section<FormWrapperProps>`
+  align-items: center;
+  display: flex;
+  flex-flow: column;
   margin: 1rem auto;
   ${({ centerText }) => !!centerText && `text-align: center;`}
 

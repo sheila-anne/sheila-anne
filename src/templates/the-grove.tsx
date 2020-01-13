@@ -8,6 +8,7 @@ import Content, { HTMLContent } from "../components/Content";
 import { FlexContainer, FlexColumn } from "../components/flex";
 import { Layout } from "../components/layout";
 import { SEO } from "../components/seo";
+import { SubscribeForm } from "../components/subscribe-form";
 
 export const TheGroveTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
@@ -33,12 +34,11 @@ export const TheGroveTemplate = ({ content, contentComponent, data }) => {
           />
         </FlexColumn>
         <FlexColumn>
-          <div
-            style={{
-              backgroundColor: "black",
-              height: "500px",
-              marginLeft: "3rem"
-            }}
+          <SubscribeForm
+            backgroundColor="#fff"
+            formDescription="Connect with me today"
+            formTitle="Schedule a discovery call"
+            page="theGrove"
           />
         </FlexColumn>
       </FlexContainer>

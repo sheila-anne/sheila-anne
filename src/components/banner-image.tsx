@@ -70,6 +70,7 @@ export const BannerImage: FC<BannerImageProps> = ({
     <>
       <FullWidthImage
         alt={title}
+        critical={true}
         fluid={imageData}
         moveHeadlineOnMobile={moveHeadlineOnMobile}
         title={title}

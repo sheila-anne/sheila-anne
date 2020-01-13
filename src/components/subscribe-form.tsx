@@ -1,23 +1,33 @@
-import React, { Dispatch, FormEvent, SetStateAction, useState } from "react";
+import React, {
+  Dispatch,
+  FC,
+  FormEvent,
+  SetStateAction,
+  useState
+} from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { FormWrapperSection, Input } from "../components/forms";
 
+type PageNames = keyof typeof Constants.formNames;
+
+type SubscribeFormProps = {
+  backgroundColor: string;
+  formTitle: string;
+  formDescription: string;
+  page: PageNames;
+};
+
 const SubmitSpan = styled.span`
   display: block;
   position: relative;
   padding: 17px 28px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to bottom, #29292a, #29292a 50%, #fff 50%);
   background-size: 100% 200%;
   background-position: top;
-  transition: all 0.3s ease;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    -webkit-text-fill-color: inherit;
-    -webkit-background-clip: inherit;
+    background-color: #000;
   }
 `;
 
@@ -49,6 +59,7 @@ const Submit = styled.button`
 
   &:hover,
   &:focus {
+    color: #fff;
     transition: all 0.3s ease;
     span {
       background-position: bottom;
@@ -65,12 +76,13 @@ const Submit = styled.button`
 
 const handleSubmit = async (
   e: FormEvent<HTMLFormElement>,
-  setButtonText: Dispatch<SetStateAction<string>>
+  setButtonText: Dispatch<SetStateAction<string>>,
+  page: PageNames
 ) => {
   e.preventDefault();
   setButtonText("Submitting...");
 
-  const formValues = {};
+  const formValues = { page };
   const formElements = (Array.from(
     e.currentTarget.elements
   ) as unknown) as HTMLInputElement[];
@@ -95,18 +107,23 @@ const handleSubmit = async (
   setButtonText(success ? "Success!" : "Error");
 };
 
-const SubscribeForm = () => {
+const SubscribeForm: FC<SubscribeFormProps> = ({
+  backgroundColor,
+  formDescription,
+  formTitle,
+  page
+}) => {
   const [buttonText, setButtonText] = useState("Submit!");
 
   return (
     <FormWrapperSection centerText={true}>
-      <h2>Let's get to know one another</h2>
-      <p>Don't wait to change your life, connect with me today!</p>
-      <form onSubmit={e => handleSubmit(e, setButtonText)}>
+      <h1>{formTitle}</h1>
+      <p>{formDescription}</p>
+      <form onSubmit={e => handleSubmit(e, setButtonText, page)}>
         <p>
           <Input
             autoComplete="name"
-            backgroundColor={Constants.Colors.featuredPost}
+            backgroundColor={backgroundColor}
             type="text"
             id="name"
             name="name"
@@ -117,7 +134,7 @@ const SubscribeForm = () => {
         <p>
           <Input
             autoComplete="email"
-            backgroundColor={Constants.Colors.featuredPost}
+            backgroundColor={backgroundColor}
             type="email"
             id="email"
             inputMode="email"
@@ -129,7 +146,7 @@ const SubscribeForm = () => {
         <p>
           <Input
             autoComplete="tel"
-            backgroundColor={Constants.Colors.featuredPost}
+            backgroundColor={backgroundColor}
             type="text"
             id="phone"
             inputMode="tel"

@@ -14,9 +14,11 @@ import { Features } from "../components/features";
 import { BlogRoll } from "../components/blog-roll";
 import { SEO } from "../components/seo";
 import { useWindow } from "../hooks/useWindow";
+import { SmartLink } from "../components/smart-link";
 
 type HeadlineProps = {
   lessMargin?: boolean;
+  inline?: boolean;
 };
 
 const MainHeadline = styled.h1`
@@ -43,11 +45,16 @@ const BannerHeadline = styled.h1<HeadlineProps>`
     ${Constants.Colors.blue} -0.5rem 0px 0px;
   background-color: ${Constants.Colors.blue};
   color: #fff;
+  ${({ inline }) => !!inline && `display: inline;`}
   padding: 0.5rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ lessMargin }) => !!lessMargin && "margin: 0;"}
   }
+`;
+
+const BannerLink = styled(SmartLink)`
+  text-decoration: underline;
 `;
 
 export const IndexPageTemplate = ({
@@ -72,7 +79,10 @@ export const IndexPageTemplate = ({
       {!isMobile && (
         <ImageHeadlineContainer>
           <BannerHeadline>{title}</BannerHeadline>
-          <BannerHeadline as="h3">{subheading}</BannerHeadline>
+          <BannerHeadline inline={true} as="h3">
+            {subheading}
+            <BannerLink to="/the-grove">Start here.</BannerLink>
+          </BannerHeadline>
         </ImageHeadlineContainer>
       )}
     </FullWidthImage>
@@ -93,7 +103,12 @@ export const IndexPageTemplate = ({
           backgroundColor={Constants.Colors.featuredPost}
           margin="1rem 0"
         >
-          <SubscribeForm />
+          <SubscribeForm
+            backgroundColor={Constants.Colors.featuredPost}
+            formDescription="Don't wait to change your life, connect with me today!"
+            formTitle="Let's get to know one another"
+            page="homepage"
+          />
         </FlexContainer>
         <CenteredText>
           <BannerHeadline as="h2">{heading}</BannerHeadline>
@@ -125,7 +140,7 @@ const IndexPage = ({ data, location }) => {
     <Layout location={location}>
       <SEO
         title="Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement"
-        description="Life coach, yoga teacher, and writer Sheila Anne welcomes those looking to take their life to the next level"
+        description="Life coach, yoga teacher, and writer Sheila Anne Murray welcomes those looking to take their life to the next level"
       />
       <IndexPageTemplate
         isMobile={isMobile}

@@ -2,7 +2,7 @@
 templateKey: index-page
 bannerTitle: Meet your new life coach
 bannerSubtitle: >
-  Looking to navigate your life path? Start here.
+  Looking to navigate your life path?
 image: /img/sheila-anne-coaching-header.jpg
 heading: More about Sheila Anne
 mainpitch:
@@ -10,7 +10,7 @@ mainpitch:
   description: >
     Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind, and spirit, creating a place where you can grow as a person.
 description: >-
-  Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences. Discover a life coach who works to integrate your deepest desires into actionable and attainable goals. Sheila Anne is an IFC registered life coach ready to take your life to the next level.
+  Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences. Discover a life coach who works to integrate your deepest desires into actionable and attainable goals. Sheila Anne is the coach ready to take your life to the next level.
 intro:
   blurbs:
     - image: /img/sheila-anne-tree.png

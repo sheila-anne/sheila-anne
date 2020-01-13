@@ -1,9 +1,13 @@
 require("dotenv").config();
 const fetch = require("node-fetch");
 
-const { HUBSPOT_PORTAL, HUBSPOT_FORM_GUID } = process.env;
+const {
+  HUBSPOT_PORTAL,
+  HUBSPOT_HOMEPAGE_FORM_GUID,
+  HUBSPOT_GROVE_FORM_GUID
+} = process.env;
 
-const hubSpotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/${HUBSPOT_FORM_GUID}`;
+const hubSpotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/`;
 
 exports.handler = async function(event, context) {
   if (!event.body) {
@@ -15,6 +19,11 @@ exports.handler = async function(event, context) {
   console.log(`Received form submission event: ${event.body}`);
 
   const eventProperties = JSON.parse(event.body);
+  let formGuid =
+    eventProperties.page === "homepage"
+      ? HUBSPOT_HOMEPAGE_FORM_GUID
+      : HUBSPOT_GROVE_FORM_GUID;
+
   const data = {
     submittedAt: new Date().getTime(),
     fields: [
@@ -28,12 +37,12 @@ exports.handler = async function(event, context) {
       },
       {
         name: "phone",
-        value: eventProperties.phone
+        value: eventProperties.phone || ""
       }
     ]
   };
 
-  return fetch(hubSpotUrl, {
+  return fetch(hubSpotUrl + formGuid, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
