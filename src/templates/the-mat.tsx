@@ -1,19 +1,17 @@
 import React, { FC } from "react";
 import { graphql } from "gatsby";
 
-import { BlogRoll } from "../components/blog-roll";
-import Content, { HTMLContent } from "../components/Content";
-import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
+import { BlogRoll, Content, HTMLContent, Layout, SEO } from "../components/";
 
 export const TheMatTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;
+  const { allMarkdownRemark } = data as BlogPostsGraphql;
 
   return (
     <section>
       <PageContent content={content} />
-      {data.allMarkdownRemark.edges.length > 0 && (
-        <BlogRoll posts={data.allMarkdownRemark.edges} />
+      {allMarkdownRemark.posts.length > 0 && (
+        <BlogRoll posts={allMarkdownRemark.posts} />
       )}
     </section>
   );
@@ -40,7 +38,7 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
 export default TheMat;
 
 export const pageQuery = graphql`
-  query TheGrovePage($id: String!) {
+  query TheMatPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -52,28 +50,7 @@ export const pageQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { tags: { eq: "the mat" } } }
     ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            featuredpost
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 120, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
+      ...BlogPosts
     }
   }
 `;

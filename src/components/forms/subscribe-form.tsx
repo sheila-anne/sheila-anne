@@ -7,8 +7,8 @@ import React, {
 } from "react";
 import styled from "styled-components";
 
-import { Constants } from "../constants";
-import { FormWrapperSection, Input } from "../components/forms";
+import { Constants } from "../../constants";
+import { FormWrapperSection, Input } from "./form-elements";
 
 type PageNames = keyof typeof Constants.formNames;
 

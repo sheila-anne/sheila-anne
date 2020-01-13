@@ -1,6 +1,9 @@
 ---
 bannerImage: /img/the-grove-sheila-anne.jpg
 featuredImage: /img/sheila-in-the-alps.jpg
+formHeadline: "Let's get started!"
+formParagraph: "This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
+formSubHeadline: "Setup your free exploration call."
 imageHeadline: "Life Coaching in The Grove"
 path: /the-grove
 templateKey: "the-grove"
@@ -10,3 +13,7 @@ title: The Grove
 ## The Grove
 
 The grove is a space to nourish your natural power & soul, and to grow into your limitless potential. Together we’ll focus on maximizing your superhero strengths, tuning in to your inner balance, overcoming limiting beliefs, and finding freedom in your own thriving grove.
+
+Not confident in your career path? Looking to make a pivot in your life and unsure where to start? Having trouble navigating changes happening in your world? Hey -- I’m here for you!
+
+Sheila Anne is all about stoking your inner fire, harnessing your own power, confidently strutting down your individual life path.

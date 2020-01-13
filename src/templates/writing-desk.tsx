@@ -1,11 +1,14 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import { BannerImage } from "../components/banner-image";
-import { BlogRollAll } from "../components/blog-roll-all";
-import Content, { HTMLContent } from "../components/Content";
-import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
+import {
+  BannerImage,
+  BlogRollAll,
+  Content,
+  HTMLContent,
+  Layout,
+  SEO
+} from "../components";
 
 export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
   const PageContent = contentComponent || Content;

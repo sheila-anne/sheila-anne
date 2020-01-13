@@ -6,7 +6,7 @@ import { BlogRoll } from "./blog-roll";
 export const BlogRollAll = () => (
   <StaticQuery
     query={BlogRollQuery}
-    render={data => <BlogRoll posts={data.allMarkdownRemark.edges} />}
+    render={data => <BlogRoll posts={data.allMarkdownRemark.posts} />}
   />
 );
 
@@ -16,7 +16,7 @@ const BlogRollQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
-      edges {
+      posts: edges {
         node {
           excerpt(pruneLength: 400)
           id

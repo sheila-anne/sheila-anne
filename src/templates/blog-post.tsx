@@ -3,11 +3,8 @@ import kebabCase from "lodash.kebabcase";
 import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
-import { Layout } from "../components/layout";
-import Content, { HTMLContent } from "../components/Content";
+import { Content, Layout, HTMLContent, SEO, TagList } from "../components";
 import { Constants } from "../constants";
-import { SEO } from "../components/seo";
-import { TagList } from "../components/tag-list";
 
 const Smalltext = styled.small`
   margin-bottom: 1rem;

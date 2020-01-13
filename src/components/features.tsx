@@ -9,11 +9,6 @@ type FeaturedProps = {
   gridItems: FeaturedGridItem[];
 };
 
-type FeaturedGridItem = PreviewImage & {
-  imageAlt?: string;
-  text: string;
-};
-
 const FlexCenteredText = styled(CenteredText)`
   display: inline-block;
   width: 240px;

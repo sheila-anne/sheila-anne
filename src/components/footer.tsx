@@ -4,6 +4,8 @@ import styled from "styled-components";
 import sheilaLogo from "../img/sheilaLogo.svg";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
+
+import { InternalLink } from "./internal-link";
 import { SmartLink } from "./smart-link";
 
 const StyledFooter = styled.footer`
@@ -35,7 +37,6 @@ const FooterNavItem = styled(SmartLink)`
   align-items: center;
   cursor: pointer;
   border-radius: 2px;
-  color: #f5f5f5;
   display: block;
   padding: 0.75rem;
   text-decoration: none;
@@ -55,6 +56,7 @@ const SocialFooterColumn = styled(FooterColumn)`
 `;
 
 const FooterLink = styled(SmartLink)`
+  color: white;
   display: block;
   :hover {
     background-color: #fafafa;
@@ -81,29 +83,32 @@ const Footer = () => {
               <FooterLink to="/">Home</FooterLink>
             </li>
             <li>
-              <FooterLink to="/about">About</FooterLink>
+              <FooterLink to="/about/">About</FooterLink>
             </li>
           </FooterList>
         </FooterColumn>
         <FooterColumn>
           <FooterList>
             <li>
-              <FooterLink to="/blog">Latest Stories</FooterLink>
+              <FooterLink to="/writing-desk/">Latest Stories</FooterLink>
             </li>
             <li>
-              <FooterLink to="/contact">Contact</FooterLink>
+              <FooterLink to="/contact/">Contact</FooterLink>
             </li>
           </FooterList>
         </FooterColumn>
         <SocialFooterColumn>
-          <FooterNavItem title="facebook" to="https://facebook.com">
+          <FooterNavItem title="Facebook" to="https://facebook.com">
             <FooterImage
               src={facebook}
               alt="Facebook"
               style={{ width: "1em", height: "1em" }}
             />
           </FooterNavItem>
-          <FooterNavItem title="instagram" to="https://instagram.com/shetravls">
+          <FooterNavItem
+            title="Follow Sheila Anne on Instagram"
+            to="https://instagram.com/shetravls"
+          >
             <FooterImage
               src={instagram}
               alt="Instagram"

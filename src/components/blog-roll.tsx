@@ -1,31 +1,48 @@
-import { Link } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Button } from "./button";
 import { Constants } from "../constants";
+import { CenteredText } from "./centered-text";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatiable-image";
-import { CenteredText } from "./centered-text";
-
-type BlogRollProps = {
-  posts: any;
-};
+import { SmartLink } from "./smart-link";
+import { useWindow } from "../hooks/useWindow";
 
 type ArticleProps = {
   isFeatured: boolean;
 };
 
 const FlexParagraph = styled.p`
-  align-self: center;
+  flex-basis: 65%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const FlexSpan = styled.span`
+  margin-top: 1rem;
+`;
+
+const FlexLink = styled(SmartLink)`
+  background-color: ${Constants.Colors.theGroveTeal};
+  border-radius: 10px;
+  color: white;
+  margin: 2rem 0;
+  padding: 2rem 4rem;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    padding: 2rem;
+    margin: 1rem 0;
+  }
 `;
 
 const FeaturedThumbnail = styled.div`
   flex-basis: 35%;
-  margin: 0 1.5em 0 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin: 1rem;
+    margin: 0;
   }
 `;
 
@@ -39,8 +56,8 @@ const Article = styled.article<ArticleProps>`
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
   border-radius: 4px;
-  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative;
+  padding: 0 1rem 1rem 1rem;
 
   align-items: stretch;
   display: block;
@@ -51,39 +68,49 @@ const Article = styled.article<ArticleProps>`
   margin: 1rem;
 `;
 
-export const BlogRoll: FC<BlogRollProps> = ({ posts }) => {
+const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
+  <Article isFeatured={post.frontmatter.featuredpost}>
+    <FlexHeader>
+      {post.frontmatter.featuredImage ? (
+        <FeaturedThumbnail>
+          <PreviewCompatibleImage
+            imageInfo={{
+              image: post.frontmatter.featuredImage,
+              alt: `featured image thumbnail for post ${post.frontmatter.title}`
+            }}
+          />
+        </FeaturedThumbnail>
+      ) : null}
+      <FlexParagraph>
+        <FlexLink to={post.fields.slug} title={post.frontmatter.title}>
+          {post.frontmatter.title}
+        </FlexLink>
+        <FlexSpan>Published {post.frontmatter.date}</FlexSpan>
+      </FlexParagraph>
+    </FlexHeader>
+    <div>
+      <p>{post.excerpt}</p>
+      <CenteredText>
+        <OffsetButton to={post.fields.slug}>Keep Reading →</OffsetButton>
+      </CenteredText>
+    </div>
+  </Article>
+);
+
+export const BlogRoll: FC<BlogPosts> = ({ posts }) => {
+  const { isMobile } = useWindow();
   return (
     <FlexContainer>
       {posts &&
         posts.map(({ node: post }) => (
           <FlexColumn key={post.id}>
-            <Article isFeatured={post.frontmatter.featuredpost}>
-              <FlexHeader>
-                {post.frontmatter.featuredImage ? (
-                  <FeaturedThumbnail>
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredImage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`
-                      }}
-                    />
-                  </FeaturedThumbnail>
-                ) : null}
-                <FlexParagraph>
-                  <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-                  <span> &bull; </span>
-                  <span>{post.frontmatter.date}</span>
-                </FlexParagraph>
-              </FlexHeader>
-              <div>
-                <p>{post.excerpt}</p>
-                <CenteredText>
-                  <OffsetButton to={post.fields.slug}>
-                    Keep Reading →
-                  </OffsetButton>
-                </CenteredText>
-              </div>
-            </Article>
+            {isMobile ? (
+              <SmartLink to={post.fields.slug} title={post.frontmatter.title}>
+                {<BlogRollInner post={post} />}
+              </SmartLink>
+            ) : (
+              <BlogRollInner post={post} />
+            )}
           </FlexColumn>
         ))}
     </FlexContainer>

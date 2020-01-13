@@ -11,6 +11,9 @@ mainpitch:
     Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind, and spirit, creating a place where you can grow as a person.
 description: >-
   Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences. Discover a life coach who works to integrate your deepest desires into actionable and attainable goals. Sheila Anne is the coach ready to take your life to the next level.
+formHeadline: "Let's get to know one another"
+formParagraph: ""
+formSubHeadline: "Don't wait to change your life, connect with me today!"
 intro:
   blurbs:
     - image: /img/sheila-anne-tree.png

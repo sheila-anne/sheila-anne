@@ -4,19 +4,18 @@ import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
-import Content, { HTMLContent } from "../components/Content";
-import { FlexContainer, FlexColumn } from "../components/flex";
-import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
+import {
+  Content,
+  FlexContainer,
+  FlexColumn,
+  FlexImage,
+  HTMLContent,
+  Layout,
+  SEO
+} from "../components";
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(FlexImage)`
   margin-top: 4rem;
-  margin-right: 1rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
 `;
 
 export const AboutPageTemplate = ({

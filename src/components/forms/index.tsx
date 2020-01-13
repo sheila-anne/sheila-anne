@@ -1,3 +1,4 @@
-import { FormWrapperSection, Input, Submit, TextArea } from "./form-elements";
+import { ContactForm } from "./contact-form";
+import { SubscribeForm } from "./subscribe-form";
 
-export { FormWrapperSection, Input, Submit, TextArea };
+export { ContactForm, SubscribeForm };

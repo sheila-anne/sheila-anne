@@ -1,10 +1,14 @@
 import React, { FC } from "react";
 import kebabCase from "lodash.kebabcase";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
-import { FlexContainer, FlexColumn } from "../../components/flex";
-import { Layout } from "../../components/layout";
-import { SEO } from "../../components/seo";
+import {
+  FlexContainer,
+  FlexColumn,
+  Layout,
+  SEO,
+  SmartLink
+} from "../../components";
 
 const TagsPage: FC<GatsbyPage> = ({
   data: {
@@ -18,8 +22,8 @@ const TagsPage: FC<GatsbyPage> = ({
   <Layout location={location}>
     <section>
       <SEO
-        description="Sheila Anne | Producing inspirational life coaching and yoga content."
-        title={`Tags | ${title}`}
+        description={`Sheila Anne | Find blogs produced by Life Coach and writer Sheila Anne for the subject: ${title}`}
+        title={`Tags | ${title} | Sheila Anne`}
         type="website"
       />
       <FlexContainer>
@@ -32,9 +36,12 @@ const TagsPage: FC<GatsbyPage> = ({
           <ul>
             {tags.map(tag => (
               <li key={tag.fieldValue}>
-                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                <SmartLink
+                  title={tag.fieldValue}
+                  to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                >
                   {tag.fieldValue} ({tag.totalCount})
-                </Link>
+                </SmartLink>
               </li>
             ))}
           </ul>

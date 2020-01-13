@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 
-import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
+import { Layout, SEO } from "../components";
 
 const NotFoundPage: FC<GatsbyPage> = ({ location }) => (
   <Layout location={location}>

@@ -1,17 +1,21 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
-import { Layout } from "../components/layout";
-import { TagList } from "../components/tag-list";
+import { Layout, SmartLink, TagList } from "../components/";
+
+const TagLink = styled(SmartLink)`
+  text-decoration: underline;
+`;
 
 const TagRoute = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   const postLinks = posts.map(post => (
     <li key={post.node.fields.slug}>
-      <Link to={post.node.fields.slug} title={post.node.frontmatter.title}>
+      <TagLink to={post.node.fields.slug} title={post.node.frontmatter.title}>
         <h2>{post.node.frontmatter.title}</h2>
-      </Link>
+      </TagLink>
     </li>
   ));
   const tag = pageContext.tag;
@@ -25,11 +29,11 @@ const TagRoute = ({ data, location, pageContext }) => {
     <Layout location={location}>
       <section>
         <Helmet title={`${tag} | ${title}`} />
-        <h3>{tagHeader}</h3>
+        <h1>{tagHeader}</h1>
         <TagList>{postLinks}</TagList>
-        <Link to="/tags/" title="Browse all tags">
+        <SmartLink to="/tags/" title="Browse all tags">
           Browse all tags
-        </Link>
+        </SmartLink>
       </section>
     </Layout>
   );

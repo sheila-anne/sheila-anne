@@ -13,9 +13,9 @@ export const Button = styled(InternalLink)`
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 700;
-  color: ${Constants.Colors.readMore};
+  color: ${Constants.Colors.theGroveGreen};
   text-align: center;
-  box-shadow: inset 0 0 0 2px ${Constants.Colors.readMore};
+  box-shadow: inset 0 0 0 2px ${Constants.Colors.theGroveGreen};
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 `;

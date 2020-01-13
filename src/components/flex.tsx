@@ -1,3 +1,4 @@
+import Image from "gatsby-image";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
@@ -49,5 +50,15 @@ export const FlexHeader = styled.header`
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
+  }
+`;
+
+export const FlexImage = styled(Image)`
+  margin-right: 1rem;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 `;

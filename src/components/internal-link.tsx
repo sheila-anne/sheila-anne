@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import styled from "styled-components";
 
+import { applyStyle } from "../utils";
 import { Constants } from "../constants";
 
 type InternalLinkProps = {
@@ -11,7 +12,7 @@ type InternalLinkProps = {
 
 const InternalLink = styled(Link)<InternalLinkProps>`
   box-shadow: none;
-  color: ${({ color }) => (color ? color : "inherit")};
+  color: ${({ color }) => applyStyle("color", color)};
   display: ${({ display }) => (display ? display : "inline")};
   text-decoration: none;
 

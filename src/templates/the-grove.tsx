@@ -1,52 +1,59 @@
-import Image from "gatsby-image";
 import { graphql } from "gatsby";
 import React from "react";
 
-import { BannerImage } from "../components/banner-image";
-import { BlogRoll } from "../components/blog-roll";
-import Content, { HTMLContent } from "../components/Content";
-import { FlexContainer, FlexColumn } from "../components/flex";
-import { Layout } from "../components/layout";
-import { SEO } from "../components/seo";
-import { SubscribeForm } from "../components/subscribe-form";
+import { Constants } from "../constants";
+import {
+  BannerImage,
+  BlogRoll,
+  Content,
+  FlexContainer,
+  FlexColumn,
+  FlexImage,
+  HTMLContent,
+  Layout,
+  SEO,
+  SubscribeForm
+} from "../components";
 
 export const TheGroveTemplate = ({ content, contentComponent, data }) => {
+  const { frontmatter } = data.markdownRemark;
   const PageContent = contentComponent || Content;
-  const bannerImage = data.markdownRemark.frontmatter.bannerImage;
-  const imageHeadline = data.markdownRemark.frontmatter.imageHeadline;
+  const { allMarkdownRemark } = data as BlogPostsGraphql;
 
   return (
     <section>
       <BannerImage
-        image={bannerImage}
+        image={frontmatter.bannerImage}
         title="Life Coaching in The Grove"
-        imageHeadline={imageHeadline}
+        imageHeadline={frontmatter.imageHeadline}
         moveHeadlineOnMobile={true}
       />
-      <PageContent content={content} />
+      <PageContent
+        backgroundColor={Constants.Colors.theGroveGreenGray}
+        content={content}
+        margin="0 0 1rem 0"
+        padding="5px"
+      />
       <FlexContainer>
         <FlexColumn>
-          <Image
-            fluid={
-              data.markdownRemark.frontmatter.featuredImage.childImageSharp
-                .fluid
-            }
-            title="Schedule a discovery call today!"
+          <FlexImage
+            fluid={frontmatter.featuredImage.childImageSharp.fluid}
+            title="Schedule a free discovery call today!"
             alt="Sheila Anne Murray in the mountains of Switzerland"
           />
         </FlexColumn>
-        <FlexColumn>
+        <FlexColumn backgroundColor={Constants.Colors.theGroveLightGreen}>
           <SubscribeForm
             backgroundColor="#fff"
-            formDescription="Setup your free exploration call."
-            formParagraph="This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
-            formTitle="Let's get started!"
+            formDescription={frontmatter.formSubHeadline}
+            formParagraph={frontmatter.formParagraph}
+            formTitle={frontmatter.formHeadline}
             page="theGrove"
           />
         </FlexColumn>
       </FlexContainer>
-      {data.allMarkdownRemark.edges.length > 0 && (
-        <BlogRoll posts={data.allMarkdownRemark.edges} />
+      {allMarkdownRemark.posts.length > 0 && (
+        <BlogRoll posts={allMarkdownRemark.posts} />
       )}
     </section>
   );
@@ -75,19 +82,10 @@ const TheGrove = ({ data, location }) => {
 export default TheGrove;
 
 export const pageQuery = graphql`
-  query TheMatPage($id: String!) {
+  query TheGrovePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
-        imageHeadline
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 300, quality: 95) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         bannerImage {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
@@ -95,6 +93,18 @@ export const pageQuery = graphql`
             }
           }
         }
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 300, quality: 95) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        formHeadline
+        formSubHeadline
+        formParagraph
+        imageHeadline
+        title
       }
     }
 
@@ -102,28 +112,7 @@ export const pageQuery = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { tags: { eq: "the grove" } } }
     ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            featuredpost
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 120, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
+      ...BlogPosts
     }
   }
 `;

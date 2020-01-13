@@ -35,6 +35,10 @@ const Header = styled.header`
   top: 0;
   width: 100%;
   z-index: 1000;
+
+  ${InternalLink} {
+    color: inherit;
+  }
 `;
 
 const StyledNav = styled.nav`
@@ -134,7 +138,7 @@ const getNavLinkItems = (location: Location, show = false) => {
       title: "Life coaching help from Sheila Anne"
     },
     {
-      to: "/blog/",
+      to: "/writing-desk/",
       text: "The Writing Desk",
       title: "Writing samples from Sheila Anne"
     },

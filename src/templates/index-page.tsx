@@ -1,26 +1,87 @@
-import React from "react";
+import React, { FC } from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 
-import { BasicHeadline } from "../components/headlines";
-import { Button } from "../components/button";
-import { CenteredText } from "../components/centered-text";
+import {
+  BasicHeadline,
+  BlogRoll,
+  Button,
+  CenteredText,
+  Features,
+  FlexContainer,
+  FullWidthImage,
+  Layout,
+  SubscribeForm,
+  SEO,
+  SmartLink
+} from "../components";
 import { Constants } from "../constants";
-import { SubscribeForm } from "../components/subscribe-form";
-import { Container } from "../components/container";
-import { FlexContainer } from "../components/flex";
-import { FullWidthImage } from "../components/banner-image";
-import { Layout } from "../components/layout";
-import { Features } from "../components/features";
-import { BlogRoll } from "../components/blog-roll";
-import { SEO } from "../components/seo";
 import { useWindow } from "../hooks/useWindow";
-import { SmartLink } from "../components/smart-link";
+
+type MainPitch = {
+  description: string;
+  title: string;
+};
+
+type Intro = {
+  blurbs: FeaturedGridItem[];
+};
+
+type IndexFrontmatterProps = {
+  bannerSubtitle: string;
+  bannerTitle: string;
+  description: string;
+  formHeadline: string;
+  formSubHeadline: string;
+  formParagraph: string;
+  heading: string;
+  image: PreviewImage;
+  intro: Intro;
+  mainpitch: MainPitch;
+  subheading: string;
+  title: string;
+};
+
+type IndexFrontmatterProperty = {
+  frontmatter: IndexFrontmatterProps;
+};
+
+type PreviewTemplateProps = IndexFrontmatterProperty & {
+  isMobile: boolean;
+  posts: BlogPost[];
+};
+
+type IndexPageData = BlogPostsGraphql & {
+  markdownRemark: IndexFrontmatterProperty;
+};
+
+type IndexPageProps = {
+  data: IndexPageData;
+} & BaseGatsbyPage;
 
 type HeadlineProps = {
   lessMargin?: boolean;
   inline?: boolean;
 };
+
+const Container = styled.div`
+  flex-grow: 1;
+  margin: 0 1rem;
+  position: relative;
+  width: auto;
+
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1216px) {
+    max-width: 1152;
+  }
+
+  @media (min-width: 1408px) {
+    max-width: 1344px;
+  }
+`;
 
 const ImageHeadlineContainer = styled.div`
   align-items: flex-start;
@@ -52,100 +113,108 @@ const BannerLink = styled(SmartLink)`
   text-decoration: underline;
 `;
 
-export const IndexPageTemplate = ({
-  image,
+export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
+  frontmatter,
   isMobile,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
   posts
-}) => (
-  <>
-    <FullWidthImage
-      fluid={
-        !!image && !!image.childImageSharp ? image.childImageSharp.fluid : image
-      }
-      moveHeadlineOnMobile={true}
-      title="Sheila Anne Life Coaching cover photo"
-    >
-      {!isMobile && (
+}) => {
+  const {
+    bannerTitle,
+    bannerSubtitle,
+    description,
+    formHeadline,
+    formParagraph,
+    formSubHeadline,
+    image,
+    intro,
+    mainpitch,
+    heading,
+    subheading,
+    title
+  } = frontmatter;
+
+  return (
+    <>
+      <FullWidthImage
+        fluid={
+          !!image && !!image.childImageSharp
+            ? image.childImageSharp.fluid
+            : image
+        }
+        moveHeadlineOnMobile={true}
+        title="Sheila Anne Life Coaching cover photo"
+      >
+        {!isMobile && (
+          <ImageHeadlineContainer>
+            <BannerHeadline>{bannerTitle}</BannerHeadline>
+            <BannerHeadline inline={true} as="h3">
+              {bannerSubtitle}
+              <BannerLink to="/the-grove">Start here.</BannerLink>
+            </BannerHeadline>
+          </ImageHeadlineContainer>
+        )}
+      </FullWidthImage>
+      {isMobile && (
         <ImageHeadlineContainer>
           <BannerHeadline>{title}</BannerHeadline>
-          <BannerHeadline inline={true} as="h3">
+          <BannerHeadline as="h3" lessMargin={true}>
             {subheading}
-            <BannerLink to="/the-grove">Start here.</BannerLink>
           </BannerHeadline>
         </ImageHeadlineContainer>
       )}
-    </FullWidthImage>
-    {isMobile && (
-      <ImageHeadlineContainer>
-        <BannerHeadline>{title}</BannerHeadline>
-        <BannerHeadline as="h3" lessMargin={true}>
-          {subheading}
-        </BannerHeadline>
-      </ImageHeadlineContainer>
-    )}
-    <section>
-      <Container>
-        <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-          <BasicHeadline>{mainpitch.description}</BasicHeadline>
-        </FlexContainer>
-        <FlexContainer
-          backgroundColor={Constants.Colors.featuredPost}
-          margin="1rem 0"
-        >
-          <SubscribeForm
+      <section>
+        <Container>
+          <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
+            <BasicHeadline>{mainpitch.description}</BasicHeadline>
+          </FlexContainer>
+          <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
-            formDescription="Don't wait to change your life, connect with me today!"
-            formTitle="Let's get to know one another"
-            page="homepage"
-          />
-        </FlexContainer>
-        <CenteredText>
-          <BannerHeadline as="h2">{heading}</BannerHeadline>
-          <h3>{mainpitch.title}</h3>
-          <p>{description}</p>
-        </CenteredText>
-        <FlexContainer>
-          <Features gridItems={intro.blurbs} />
-        </FlexContainer>
-        <CenteredText>
-          <BannerHeadline as="h3" lessMargin={true}>
-            Latest from the Writing Desk
-          </BannerHeadline>
-        </CenteredText>
-        <BlogRoll posts={posts} />
-        <CenteredText>
-          <Button to="/blog">Read more from the blog</Button>
-        </CenteredText>
-      </Container>
-    </section>
-  </>
-);
+            margin="1rem 0"
+          >
+            <SubscribeForm
+              backgroundColor={Constants.Colors.featuredPost}
+              formDescription={formSubHeadline}
+              formParagraph={formParagraph}
+              formTitle={formHeadline}
+              page="homepage"
+            />
+          </FlexContainer>
+          <CenteredText>
+            <BannerHeadline as="h2">{heading}</BannerHeadline>
+            <h3>{mainpitch.title}</h3>
+            <p>{description}</p>
+          </CenteredText>
+          <FlexContainer>
+            <Features gridItems={intro.blurbs} />
+          </FlexContainer>
+          <CenteredText>
+            <BannerHeadline as="h3" lessMargin={true}>
+              Latest from the Writing Desk
+            </BannerHeadline>
+          </CenteredText>
+          <BlogRoll posts={posts} />
+          <CenteredText>
+            <Button to="/writing-desk/">Read more from the blog</Button>
+          </CenteredText>
+        </Container>
+      </section>
+    </>
+  );
+};
 
-const IndexPage = ({ data, location }) => {
+const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
   const { isMobile } = useWindow();
 
   return (
     <Layout location={location}>
       <SEO
-        title="Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement"
+        title={`Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement`}
         description="Life coach, yoga teacher, and writer Sheila Anne Murray welcomes those looking to take their life to the next level"
       />
       <IndexPageTemplate
         isMobile={isMobile}
-        image={frontmatter.image}
-        title={frontmatter.bannerTitle}
-        heading={frontmatter.heading}
-        subheading={frontmatter.bannerSubtitle}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
       />
     </Layout>
@@ -160,6 +229,10 @@ export const pageQuery = graphql`
       frontmatter {
         bannerTitle
         bannerSubtitle
+        description
+        formHeadline
+        formSubHeadline
+        formParagraph
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -168,11 +241,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        mainpitch {
-          title
-          description
-        }
-        description
         intro {
           blurbs {
             image {
@@ -188,6 +256,10 @@ export const pageQuery = graphql`
           heading
           description
         }
+        mainpitch {
+          title
+          description
+        }
       }
     }
 
@@ -196,28 +268,7 @@ export const pageQuery = graphql`
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 2
     ) {
-      posts: edges {
-        node {
-          excerpt(pruneLength: 150)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            featuredpost
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 120, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
+      ...BlogPosts
     }
   }
 `;

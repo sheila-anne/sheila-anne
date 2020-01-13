@@ -13,9 +13,9 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "writing-desk"
+    label: "Writing Desk Blog"
+    folder: "src/pages/writing-desk"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -82,6 +82,15 @@ collections:
           - { label: Banner Subtitle, name: bannerSubtitle, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Heading, name: heading, widget: string }
+
+          - { label: "Form Headline", name: "formHeadline", widet: "string" }
+          - {
+              label: "Form Subheadline",
+              name: "formSubHeadline",
+              widet: "string",
+            }
+          - { label: "Form Paragraph", name: "formParagraph", widet: "string" }
+
           - {
               label: Mainpitch,
               name: mainpitch,
@@ -154,6 +163,7 @@ collections:
                   },
                 ],
             }
+
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -173,6 +183,7 @@ collections:
             }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
+
       - file: "src/pages/the-grove/index.md"
         label: "The Grove"
         name: "the-grove"
@@ -192,7 +203,15 @@ collections:
             }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
-      - file: "src/pages/blog/index.md"
+          - { label: "Form Headline", name: "formHeadline", widet: "string" }
+          - {
+              label: "Form Subheadline",
+              name: "formSubHeadline",
+              widet: "string",
+            }
+          - { label: "Form Paragraph", name: "formParagraph", widet: "string" }
+
+      - file: "src/pages/writing-desk/index.md"
         label: "The Writing Desk"
         name: "the-writing-desk"
         fields:
