@@ -47,7 +47,7 @@ const Header = styled.header<{ flipColors: boolean }>`
 
   ${ColoredInternalLink} {
     ${({ flipColors }) =>
-      applyStyle("color", !!flipColors ? "#FFF!important" : "inherit")}
+      applyStyle("color", !!flipColors ? "#FFF" : "inherit")}
   }
 `;
 
@@ -127,7 +127,6 @@ const MobileMenu = styled.div<{ isOpen: boolean }>`
     display: block;
     padding: 0.5rem 0;
     font-weight: bold;
-    color: ${Constants.Colors.navLinkText};
     text-decoration: none;
     transition: color 0.3s linear;
 
