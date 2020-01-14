@@ -2,13 +2,8 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { InternalLink } from "./internal-link";
-import { applyStyle } from "../utils";
 
-type ButtonProps = {
-  mobileMargin?: string;
-};
-
-export const Button = styled(InternalLink)<ButtonProps>`
+export const Button = styled(InternalLink)`
   display: inline-block;
   padding: 12px 16px 10px;
   font-size: 1rem;
@@ -22,6 +17,6 @@ export const Button = styled(InternalLink)<ButtonProps>`
   transition: all 0.15s ease;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ mobileMargin }) => applyStyle("margin", mobileMargin)};
+    margin: 0 0 1rem 0;
   }
 `;

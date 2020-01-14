@@ -1,8 +1,11 @@
 ---
-bannerImageHeadline: "Latest Stories"
+bannerImage: /img/blog-index.jpg
+bannerImageHeadline: "Latest Stories | Writing Desk"
 templateKey: writing-desk
 path: /writing-desk
-title: The Writing Desk
+pageTitle: The Writing Desk | Sheila Anne
+pageDescription: >
+  Excerpts from the Writing Desk of Sheila Anne
 ---
 
 ## Notes from my writing desk.

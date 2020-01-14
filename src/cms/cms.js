@@ -8,7 +8,6 @@ import ColorsPreview from "./preview-templates/ColorsPreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
 import TheGrovePagePreview from "./preview-templates/TheGrovePagePreview";
 import TheMatPagePreview from "./preview-templates/TheMatPagePreview";
-import TheWritingDeskPagePreview from "./preview-templates/TheWritingDeskPagePreview";
 
 function StyleInjector({ children }) {
   const [iframeRef, setIframeRef] = useState(null);
@@ -46,7 +45,3 @@ CMS.registerPreviewTemplate(
   withStyledComponents(TheGrovePagePreview)
 );
 CMS.registerPreviewTemplate("the-mat", withStyledComponents(TheMatPagePreview));
-CMS.registerPreviewTemplate(
-  "writing-desk",
-  withStyledComponents(TheWritingDeskPagePreview)
-);

@@ -1,3 +1,8 @@
+declare type BaseFrontmatter = {
+  pageDescription: string;
+  pageTitle: string;
+};
+
 declare type BaseGatsbyPage = {
   location: Location;
 };

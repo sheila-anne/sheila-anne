@@ -68,18 +68,19 @@ export const BlogPostTemplate = ({
   featuredImage,
   logo,
   tags,
+  pageTitle,
   title
 }) => {
   const PostContent = contentComponent || Content;
 
+  const navTitle = !!title
+    ? `${title} | The Writing Desk | Sheila Anne`
+    : pageTitle;
+
   return (
     <section>
       <article itemType="https://schema.org/BlogPosting" itemScope={true}>
-        <SEO
-          description={description}
-          title={`${title} | The Writing Desk | Sheila Anne`}
-          type="article"
-        />
+        <SEO description={description} title={navTitle} type="article" />
         <BlogPostMeta logo={logo} featuredImage={featuredImage} />
         <h1 itemProp="name headline">{title}</h1>
         <Smalltext>
@@ -125,6 +126,7 @@ const BlogPost = ({ data, location }) => {
         description={post.frontmatter.description}
         featuredImage={post.frontmatter.featuredImage}
         logo={logo}
+        pageTitle={post.frontmatter.pageTitle}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -141,6 +143,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        pageTitle
         title
         description
         tags

@@ -99,8 +99,8 @@ const TheGrove = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title="Life Coaching In The Grove | Sheila Anne"
-        description="Discover how to supercharge your life, focus your mental clarity, and balance your ambitions with the ability to be present with Sheila Anne Life Coaching"
+        title={post.frontmatter.pageTitle}
+        description={post.frontmatter.pageDescription}
         image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
         imageAlt={post.frontmatter.bannerImageHeadline}
       />
@@ -141,7 +141,8 @@ export const pageQuery = graphql`
         formHeadline
         formSubHeadline
         formParagraph
-        title
+        pageDescription
+        pageTitle
       }
     }
 

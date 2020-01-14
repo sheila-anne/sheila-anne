@@ -26,7 +26,8 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Title", name: "pageTitle", widget: "string" }
+      - { label: "Page Description", name: "pageDescription", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - {
@@ -80,6 +81,8 @@ collections:
               default: "index-page",
             }
           - { label: Banner Title, name: bannerTitle, widget: string }
+          - { label: Page Title, name: pageTitle, widget: string }
+          - { label: Page Description, name: pageDescription, widget: string }
           - { label: Banner Subtitle, name: bannerSubtitle, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Description, name: description, widget: string }
@@ -173,7 +176,12 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "pageTitle", widget: "string" }
+          - {
+              label: "Page Description",
+              name: "pageDescription",
+              widget: "string",
+            }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
@@ -193,7 +201,12 @@ collections:
               widget: "hidden",
               default: "the-grove",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "pageTitle", widget: "string" }
+          - {
+              label: "Page Description",
+              name: "pageDescription",
+              widget: "string",
+            }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
@@ -220,14 +233,18 @@ collections:
               widget: "hidden",
               default: "the-writing-desk",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "pageTitle", widget: "string" }
+          - {
+              label: "Page Description",
+              name: "pageDescription",
+              widget: "string",
+            }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
               name: "bannerImageHeadline",
               widget: "string",
             }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
 
       - file: "src/pages/the-mat/index.md"
@@ -240,7 +257,12 @@ collections:
               widget: "hidden",
               default: "the-mat",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "pageTitle", widget: "string" }
+          - {
+              label: "Page Description",
+              name: "pageDescription",
+              widget: "string",
+            }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
           - {
               label: "Banner Image Headline",
@@ -248,4 +270,3 @@ collections:
               widget: "string",
             }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }

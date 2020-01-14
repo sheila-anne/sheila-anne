@@ -47,15 +47,15 @@ const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title="About | Sheila Anne"
-        description="Learn more about Life Coach, Yoga Instructor, and Content Creator - Sheila Anne Murray"
+        title={post.frontmatter.pageTitle}
+        description={post.frontmatter.pageDescription}
         image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
         imageAlt={post.frontmatter.bannerImageHeadline}
       />
       <AboutPageTemplate
         bannerImage={post.frontmatter.bannerImage}
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
+        title={post.frontmatter.pageTitle}
         content={post.html}
       />
     </Layout>
@@ -69,7 +69,6 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         bannerImageHeadline
         bannerImage {
           childImageSharp {
@@ -78,6 +77,8 @@ export const aboutPageQuery = graphql`
             }
           }
         }
+        pageDescription
+        pageTitle
       }
     }
   }

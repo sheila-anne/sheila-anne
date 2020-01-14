@@ -32,7 +32,7 @@ export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
           <BannerImage
             containImage={true}
             image={safeImage}
-            title="The Mat | Yoga With Sheila Anne"
+            title={frontmatter.pageTitle}
             imageHeadline={frontmatter.bannerImageHeadline}
             moveHeadlineOnMobile={true}
           />
@@ -60,8 +60,8 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title="Yoga On The Mat | Sheila Anne"
-        description="Learn more about Sheila Anne's connection to yoga and how that can help you flow through life"
+        title={post.frontmatter.pageTitle}
+        description={post.frontmatter.pageDescription}
       />
       <TheMatTemplate
         contentComponent={HTMLContent}
@@ -90,7 +90,8 @@ export const pageQuery = graphql`
           }
         }
         bannerImageHeadline
-        title
+        pageDescription
+        pageTitle
       }
     }
 

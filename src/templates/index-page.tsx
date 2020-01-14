@@ -28,7 +28,7 @@ type Intro = {
   blurbs: FeaturedGridItem[];
 };
 
-type IndexFrontmatterProps = {
+type IndexFrontmatterProps = BaseFrontmatter & {
   bannerSubtitle: string;
   bannerTitle: string;
   description: string;
@@ -214,11 +214,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <Features gridItems={intro.blurbs} />
           </FlexContainer>
           <FlexLinkContainer>
-            <Button
-              mobileMargin="0 0 1rem 0"
-              to="/the-grove/"
-              title="Learn more in the Grove"
-            >
+            <Button to="/the-grove/" title="Learn more in the Grove">
               Life Coaching in The Grove
             </Button>
             <Button to="/about/" title="More about Sheila Anne">
@@ -247,8 +243,8 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={`Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement`}
-        description="Life coach, yoga teacher, and writer Sheila Anne Murray welcomes those looking to take their life to the next level"
+        title={frontmatter.pageTitle}
+        description={frontmatter.pageDescription}
       />
       <IndexPageTemplate
         isMobile={isMobile}
@@ -296,6 +292,8 @@ export const pageQuery = graphql`
           title
           description
         }
+        pageDescription
+        pageTitle
       }
     }
 

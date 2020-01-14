@@ -7,60 +7,33 @@ import {
   Content,
   HTMLContent,
   Layout,
-  SEO,
-  PreviewCompatibleBanner,
-  PreviewCompatibleBannerHeadline
+  SEO
 } from "../components";
 import { Constants } from "../constants";
 
 type WritingDeskProps = BannerImagePreviewPage & {
   content: string;
   contentComponent?: FC<any>;
+  frontmatter: any;
 };
-
-const WritingDeskBannerImage = ({
-  safeImage,
-  imageHeadline
-}: {
-  safeImage: NestedImage;
-  imageHeadline: string;
-}) => (
-  <BannerImage
-    color={Constants.Colors.theGroveTeal}
-    image={safeImage}
-    title="Welcome to The Writing Desk"
-    imageHeadline={imageHeadline}
-  />
-);
 
 export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   content,
   contentComponent,
+  frontmatter,
   image,
-  imageHeadline,
-  isPreview
+  imageHeadline
 }) => {
   const PageContent = contentComponent || Content;
   const safeImage = image as NestedImage;
 
   return (
     <section>
-      <PreviewCompatibleBanner
-        Component={
-          <WritingDeskBannerImage
-            safeImage={safeImage}
-            imageHeadline={imageHeadline}
-          />
-        }
-        ComponentChildren={
-          <PreviewCompatibleBannerHeadline
-            color={Constants.Colors.theGroveTeal}
-            imageHeadline={imageHeadline}
-            isPreview={isPreview}
-          />
-        }
-        image={image}
-        isPreview={isPreview}
+      <BannerImage
+        color={Constants.Colors.theGroveTeal}
+        image={safeImage}
+        title={frontmatter.title}
+        imageHeadline={imageHeadline}
       />
       <PageContent content={content} />
       <BlogRollAll />
@@ -69,20 +42,22 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
 };
 
 const WritingDeskPage = ({ location, data }) => {
-  const imageData = data.image;
-  const imageHeadline = data.markdownRemark.frontmatter.bannerImageHeadline;
+  const { frontmatter } = data.markdownRemark;
+  const imageHeadline = frontmatter.bannerImageHeadline;
+  const bannerImage = frontmatter.bannerImage;
   return (
     <Layout location={location}>
       <SEO
-        description="Excerpts from the Writing Desk of Sheila Anne"
-        image={data.image.childImageSharp.fluid.src}
+        description={frontmatter.pageDescription}
+        image={bannerImage.childImageSharp.fluid.src}
         imageAlt="Notes from the Writing Desk"
-        title={`${data.markdownRemark.frontmatter.title} | Sheila Anne`}
+        title={frontmatter.pageTitle}
       />
       <WritingDeskPageTemplate
         contentComponent={HTMLContent}
         content={data.markdownRemark.html}
-        image={imageData}
+        frontmatter={frontmatter}
+        image={bannerImage}
         imageHeadline={imageHeadline}
       />
     </Layout>
@@ -94,16 +69,16 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        bannerImageHeadline
-        title
-      }
-    }
-
-    image: file(relativePath: { eq: "blog-index.jpg" }) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
+        bannerImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
+        bannerImageHeadline
+        pageDescription
+        pageTitle
       }
     }
   }
