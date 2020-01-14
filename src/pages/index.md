@@ -4,37 +4,39 @@ bannerTitle: Meet your new life coach
 bannerSubtitle: >
   Looking to navigate your life path?
 image: /img/sheila-anne-coaching-header.jpg
-heading: More about Sheila Anne
-mainpitch:
-  title: It’s time to harness your energy, recognize your purpose, and live your most authentic & bold life.
-  description: >
-    Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind, and spirit, creating a place where you can grow as a person.
 description: >-
-  Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences. Discover a life coach who works to integrate your deepest desires into actionable and attainable goals. Sheila Anne is the coach ready to take your life to the next level.
+  Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind, and spirit, creating a place where you can grow as a person.
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"
+
+mainpitch:
+  title: It’s time to harness your energy, recognize your purpose, and live your most authentic & bold life.
+  description: >
+    Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences. Discover a life coach who works to integrate your deepest desires into actionable and attainable goals. Sheila Anne is the coach ready to take your life to the next level.
+
 intro:
   blurbs:
-    - image: /img/sheila-anne-tree.png
-      imageAlt: Yoga lets you grow the right roots and experience inner grounding.
+    - image: /img/sheila-anne-explore.png
+      imageAlt: Explore how Sheila Anne can help you improve your life.
+      title: Explore
       text: >
-        Sheila Anne curates flows meant to realign & rejuvenate the body.  With a focus on breathwork, mental alignment occurs at the intersection between presence and present-tense.
-    - image: /img/sheila-anne-upwards.png
-      imageAlt: Guided meditation gives you the tools you need to focus.
+        Join Sheila here and share your story!  Explore how coaching can help you achieve the life you envision.
+    - image: /img/sheila-anne-discover.png
+      imageAlt: Discover what it's like to work with Sheila.
+      title: Discover
       text: >
-        It's not just about the destination; how you do something is just as important as getting it done. In the middle of a quarter-life crisis? Sheila Anne has the tools you need to emerge stronger on the other side of adversity, be it in business or in your personal life.
-    - image: /img/sheila-anne-side-plank.png
-      imageAlt: Sheila Anne Coaching helps you balance your goals by listening to your body.
+        Let's get to know you! Together, we'll discover your strengths, biggest desires for growth, and create a blueprint for the future.
+    - image: /img/sheila-anne-grow.png
+      imageAlt: Sheila Anne Coaching helps you grow into your own strength.
+      title: Grow
       text: >
-        Achieving balance doesn't just happen. Balance is the result of constant effort; checking in with your body; checking in with your heart. Let Sheila Anne show you how to achieve your own inner balance more frequently and with less effort.
-    - image: /img/sheila-anne-half-lunge.png
-      imageAlt: Sheila Anne is the lifecoach that builds your personal strength into your own brand.
+        Through ongoing 1:1 coaching sessions with Sheila, you will nurture your power, release limiting beliefs, and start to grow into your own.
+    - image: /img/sheila-anne-transform.png
+      imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
+      title: Transform
       text: >
-        Strength comes from within. Manifest the power we all hold inside of ourselves. Radiate your own inner beauty, kindness, and strength. Sheila Anne helps you stoke that fire within yourself, so you can shine it out in the world.
-  heading: Not in use at this time
-  description: >
-    Also not in use at this time
+        Your world is changing, you’re standing tall in your power, and you're becoming the most bold & authentic version of you!
 
 main:
   heading: Not in use

@@ -12,19 +12,24 @@ type ArticleProps = {
   isFeatured: boolean;
 };
 
-const FlexParagraph = styled.p`
+const FlexTextContainer = styled.div`
   flex-basis: 65%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    display: block;
+    text-align: center;
+  }
 `;
 
 const FlexSpan = styled.span`
   margin-top: 1rem;
 `;
 
-const FlexLink = styled.h3`
+const FlexTitle = styled.h3`
   background-color: ${Constants.Colors.theGroveTeal};
   border-radius: 10px;
   color: white;
@@ -81,15 +86,15 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
           />
         </FeaturedThumbnail>
       ) : null}
-      <FlexParagraph>
-        <FlexLink>{post.frontmatter.title}</FlexLink>
+      <FlexTextContainer>
+        <FlexTitle>{post.frontmatter.title}</FlexTitle>
         <FlexSpan>Published {post.frontmatter.date}</FlexSpan>
-      </FlexParagraph>
+      </FlexTextContainer>
     </FlexHeader>
     <div>
       <p>{post.excerpt}</p>
       <CenteredText>
-        <OffsetButton to={post.fields.slug}>Keep Reading →</OffsetButton>
+        <OffsetButton as="div">Keep Reading →</OffsetButton>
       </CenteredText>
     </div>
   </Article>

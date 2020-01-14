@@ -16,6 +16,7 @@ collections:
   - name: "writing-desk"
     label: "Writing Desk Blog"
     folder: "src/pages/writing-desk"
+    filter: { field: templateKey, value: "blog-post" }
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -81,7 +82,7 @@ collections:
           - { label: Banner Title, name: bannerTitle, widget: string }
           - { label: Banner Subtitle, name: bannerSubtitle, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
+          - { label: Description, name: description, widget: string }
 
           - { label: "Form Headline", name: "formHeadline", widet: "string" }
           - {
@@ -101,15 +102,12 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
-          - { label: Description, name: description, widget: string }
           - {
               label: Intro,
               name: intro,
               widget: object,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
                   {
                     label: Blurbs,
                     name: blurbs,
@@ -118,6 +116,7 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: ImageAlt, name: imageAlt, widget: string },
+                        { label: Title, name: title, widget: text },
                         { label: Text, name: text, widget: text },
                       ],
                   },

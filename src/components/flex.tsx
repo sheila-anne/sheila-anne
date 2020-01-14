@@ -2,6 +2,7 @@ import Image from "gatsby-image";
 import styled, { css } from "styled-components";
 
 import { Constants } from "../constants";
+import { applyStyle } from "../utils";
 
 type BackgroundColorProps = {
   backgroundColor?: string;
@@ -25,17 +26,17 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
   flex-flow: row wrap;
-  ${({ margin }) => !!margin && `margin: ${margin};`}
+  ${({ margin }) => applyStyle("margin", margin)}
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin: ${({ margin }) => (!!margin ? margin : "0")};
+    ${({ margin }) => applyStyle("margin", margin || "0")};
   }
 `;
 
 export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
-  ${({ alignSelf }) => !!alignSelf && `align-self: ${alignSelf}`}
+  ${({ alignSelf }) => applyStyle("align-self", alignSelf)}
   flex: none;
-  ${({ padding }) => !!padding && `padding: ${padding};`}
+  ${({ padding }) => applyStyle("padding", padding)}
   width: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {

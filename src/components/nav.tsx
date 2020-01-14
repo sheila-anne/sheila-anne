@@ -192,7 +192,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
         {isMobile ? (
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
-            <MobileMenu isOpen={isOpen} aria-hidden={!isMobile}>
+            <MobileMenu isOpen={isOpen} aria-hidden={!isOpen}>
               <NavLinkList
                 id="mobileNavLinks"
                 show={isMobile}

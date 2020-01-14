@@ -62,6 +62,7 @@ declare type Colors = {
 type FeaturedGridItem = PreviewImage & {
   imageAlt?: string;
   text: string;
+  title: string;
 };
 
 declare type GatsbyPage = GatsbyComponent & BaseGatsbyPage;

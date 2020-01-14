@@ -1,9 +1,7 @@
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React, { FC } from "react";
-import styled from "styled-components";
 
 import { InternalLink } from "./internal-link";
-
-const ExternalLink = styled.a``;
 
 type CustomLinkType = {
   className?: string;
@@ -26,7 +24,7 @@ export const SmartLink: FC<CustomLinkType> = ({
     );
   } else {
     return (
-      <ExternalLink
+      <OutboundLink
         className={className}
         href={to}
         target="_blank"
@@ -34,7 +32,7 @@ export const SmartLink: FC<CustomLinkType> = ({
         title={title}
       >
         {children}
-      </ExternalLink>
+      </OutboundLink>
     );
   }
 };

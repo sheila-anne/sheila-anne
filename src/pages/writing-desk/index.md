@@ -1,7 +1,7 @@
 ---
 bannerImageHeadline: "Latest Stories"
 templateKey: "writing-desk"
-path: /blog
+path: /writing-desk
 title: The Writing Desk
 ---
 

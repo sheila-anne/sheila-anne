@@ -114,11 +114,26 @@ const BannerLink = styled(SmartLink)`
   text-decoration: underline;
 `;
 
+const FlexLinkContainer = styled(FlexContainer)`
+  border: 2px solid ${Constants.Colors.theGroveGreen};
+  border-radius: 2rem;
+  margin: 1rem;
+  justify-content: space-around;
+  padding: 1rem;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    margin-bottom: 2rem;
+  }
+`;
+
 const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
   <ImageHeadlineContainer>
     <BannerHeadline>{bannerTitle}</BannerHeadline>
     <BannerHeadline as="h3" inline={!isMobile} lessMargin={isMobile}>
-      {bannerSubtitle} <BannerLink to="/the-grove">Start here.</BannerLink>
+      {bannerSubtitle}{" "}
+      <BannerLink to="/the-grove" title="Life Coaching in The Grove">
+        Start here.
+      </BannerLink>
     </BannerHeadline>
   </ImageHeadlineContainer>
 );
@@ -138,8 +153,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     formSubHeadline,
     image,
     intro,
-    mainpitch,
-    heading
+    mainpitch
   } = frontmatter;
 
   const safeImage = image as NestedImage;
@@ -177,7 +191,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       <section>
         <Container>
           <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-            <BasicHeadline>{mainpitch.description}</BasicHeadline>
+            <BasicHeadline>{description}</BasicHeadline>
           </FlexContainer>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
@@ -192,13 +206,24 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             />
           </FlexContainer>
           <CenteredText>
-            <BannerHeadline as="h2">{heading}</BannerHeadline>
             <h3>{mainpitch.title}</h3>
-            <p>{description}</p>
+            <p>{mainpitch.description}</p>
           </CenteredText>
           <FlexContainer>
             <Features gridItems={intro.blurbs} />
           </FlexContainer>
+          <FlexLinkContainer>
+            <Button
+              mobileMargin="0 0 1rem 0"
+              to="/the-grove/"
+              title="Learn more in the Grove"
+            >
+              Life Coaching in The Grove
+            </Button>
+            <Button to="/about/" title="More about Sheila Anne">
+              About
+            </Button>
+          </FlexLinkContainer>
           <CenteredText>
             <BannerHeadline as="h3" lessMargin={true}>
               Latest from the Writing Desk
@@ -252,7 +277,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
         intro {
           blurbs {
             image {
@@ -264,9 +288,8 @@ export const pageQuery = graphql`
             }
             imageAlt
             text
+            title
           }
-          heading
-          description
         }
         mainpitch {
           title
