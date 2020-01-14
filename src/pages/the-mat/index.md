@@ -1,6 +1,6 @@
 ---
 bannerImage: /img/sheila-anne-the-mat-yoga.jpg
-bannerImageHeadline: "The Mat | Yoga"
+bannerImageHeadline: "Yoga | The Mat"
 pageDescription: >
   Learn more about Sheila Anne's connection to yoga and how that can help you flow through life
 pageTitle: Yoga On The Mat | Sheila Anne

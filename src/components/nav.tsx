@@ -18,9 +18,7 @@ type NavHeaderProps = NavProps & {
 
 const ColoredInternalLink = styled(InternalLink)<{
   "aria-current"?: boolean;
-  isOpen?: boolean;
 }>`
-  ${({ isOpen }) => applyStyle("color", isOpen ? "#FFF!important" : "inherit")};
   ${props =>
     !!props["aria-current"] && "border: 1px solid white; border-radius: 5rem;"}
 `;
@@ -49,7 +47,7 @@ const Header = styled.header<{ flipColors: boolean }>`
 
   ${ColoredInternalLink} {
     ${({ flipColors }) =>
-      applyStyle("color", !flipColors ? "inherit" : undefined)}
+      applyStyle("color", !!flipColors ? "#FFF!important" : "inherit")}
   }
 `;
 
@@ -171,7 +169,6 @@ const getNavLinkItems = (location: Location, show = false) => {
           to={navLink.to}
           aria-current={location && location.pathname === navLink.to}
           title={navLink.title}
-          isOpen={!!show}
         >
           {navLink.text}{" "}
         </ColoredInternalLink>
@@ -190,7 +187,6 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
           <Headline>
             <ColoredInternalLink
               aria-label="Sheila Anne logo, click to visit homepage"
-              isOpen={isMobile && isOpen}
               title={`Sheila Anne homepage`}
               to="/"
             >
