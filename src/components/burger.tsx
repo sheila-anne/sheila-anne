@@ -11,8 +11,8 @@ type BurgerProps = {
 const StyledBurger = styled.button<{ isOpen: boolean }>`
   align-items: center;
   position: absolute;
-  top: 28%;
-  right: 4%;
+  top: calc(2vh);
+  right: calc(1.5vh);
   display: none;
   flex-direction: column;
   justify-content: space-around;

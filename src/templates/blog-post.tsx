@@ -68,14 +68,11 @@ export const BlogPostTemplate = ({
   featuredImage,
   logo,
   tags,
-  pageTitle,
   title
 }) => {
   const PostContent = contentComponent || Content;
 
-  const navTitle = !!title
-    ? `${title} | The Writing Desk | Sheila Anne`
-    : pageTitle;
+  const navTitle = `${title} | The Writing Desk | Sheila Anne`;
 
   return (
     <section>
@@ -126,7 +123,6 @@ const BlogPost = ({ data, location }) => {
         description={post.frontmatter.description}
         featuredImage={post.frontmatter.featuredImage}
         logo={logo}
-        pageTitle={post.frontmatter.pageTitle}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -143,7 +139,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        pageTitle
         title
         description
         tags

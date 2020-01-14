@@ -26,6 +26,8 @@ const MainWrapper = styled.main`
   max-width: ${rhythm(50)};
   padding: ${rhythm(0.5)} ${rhythm(3 / 4)};
   z-index: 100;
+  height: 100%;
+  max-height: 100%;
 `;
 
 const Layout: FC<GatsbyPage> = ({ children, location }) => {

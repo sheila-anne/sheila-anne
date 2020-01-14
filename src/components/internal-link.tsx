@@ -12,8 +12,8 @@ type InternalLinkProps = {
 
 const InternalLink = styled(Link)<InternalLinkProps>`
   box-shadow: none;
-  color: ${({ color }) => applyStyle("color", color)};
-  display: ${({ display }) => (display ? display : "inline")};
+  ${({ color }) => applyStyle("color", color)}
+  ${({ display }) => applyStyle("display", display || "inline")};
   text-decoration: none;
 
   :hover {

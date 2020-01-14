@@ -5,6 +5,8 @@ import { Burger } from "./burger";
 import { Constants } from "../constants";
 import { InternalLink } from "./internal-link";
 import { useWindow } from "../hooks/useWindow";
+import { applyStyle } from "../utils";
+import { Social } from "./social";
 
 type NavProps = {
   location: Location;
@@ -14,9 +16,18 @@ type NavHeaderProps = NavProps & {
   isMobile: boolean;
 };
 
+const ColoredInternalLink = styled(InternalLink)<{
+  "aria-current"?: boolean;
+  isOpen?: boolean;
+}>`
+  ${({ isOpen }) => applyStyle("color", isOpen ? "#FFF!important" : "inherit")};
+  ${props =>
+    !!props["aria-current"] && "border: 1px solid white; border-radius: 5rem;"}
+`;
+
 const CenteredText = styled.div<{ isOpen: boolean; isMobile: boolean }>`
   background: ${({ isOpen, isMobile }) =>
-    isOpen && isMobile ? Constants.Colors.blue : "inherit"};
+    !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
 
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen, isMobile }) =>
@@ -25,7 +36,7 @@ const CenteredText = styled.div<{ isOpen: boolean; isMobile: boolean }>`
   text-align: center;
 `;
 
-const Header = styled.header`
+const Header = styled.header<{ flipColors: boolean }>`
   display: flex;
   left: 0;
   letter-spacing: 0.1em;
@@ -36,8 +47,9 @@ const Header = styled.header`
   width: 100%;
   z-index: 1000;
 
-  ${InternalLink} {
-    color: inherit;
+  ${ColoredInternalLink} {
+    ${({ flipColors }) =>
+      applyStyle("color", !flipColors ? "inherit" : undefined)}
   }
 `;
 
@@ -84,13 +96,12 @@ const Headline = styled.h1`
   }
 `;
 
-const NavLinkList = styled.ol<{ isOpen?: boolean; show?: boolean }>`
+const NavLinkList = styled.ol<{ isOpen?: boolean }>`
   list-style-type: none;
   margin: 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    display: ${({ isOpen, show }) =>
-      show && isOpen && show ? "block" : "none"};
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
   }
 `;
 
@@ -103,9 +114,8 @@ const NavListItem = styled.li`
 const MobileMenu = styled.div<{ isOpen: boolean }>`
   background: ${Constants.Colors.blue};
   height: 100vh;
-  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  opacity: ${({ isOpen }) => (!!isOpen ? "1" : "0")};
   padding: 0.5rem;
-  position: relative;
   bottom: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
@@ -115,7 +125,7 @@ const MobileMenu = styled.div<{ isOpen: boolean }>`
     width: 100%;
   }
 
-  ${InternalLink} {
+  ${ColoredInternalLink} {
     display: block;
     padding: 0.5rem 0;
     font-weight: bold;
@@ -151,19 +161,20 @@ const getNavLinkItems = (location: Location, show = false) => {
 
     { to: "/about/", text: "About", title: "About Sheila Anne" }
   ];
-  show &&
+  !!show &&
     location.pathname !== "/" &&
     navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
     <NavListItem key={navLink.to}>
       <SideLinkWrapper location={location} to={navLink.to}>
-        <InternalLink
+        <ColoredInternalLink
           to={navLink.to}
           aria-current={location && location.pathname === navLink.to}
           title={navLink.title}
+          isOpen={!!show}
         >
           {navLink.text}{" "}
-        </InternalLink>
+        </ColoredInternalLink>
       </SideLinkWrapper>{" "}
     </NavListItem>
   ));
@@ -173,20 +184,18 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Header>
+    <Header flipColors={!!isOpen && !!isMobile}>
       <StyledNav>
         <CenteredText isMobile={isMobile} isOpen={isOpen}>
           <Headline>
-            <InternalLink
+            <ColoredInternalLink
               aria-label="Sheila Anne logo, click to visit homepage"
-              color={
-                isOpen && isMobile ? Constants.Colors.lightestBlue : undefined
-              }
+              isOpen={isMobile && isOpen}
               title={`Sheila Anne homepage`}
               to="/"
             >
               Sheila Anne
-            </InternalLink>
+            </ColoredInternalLink>
           </Headline>
         </CenteredText>
         {!!isMobile ? (
@@ -195,16 +204,15 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
             <MobileMenu isOpen={isOpen} aria-hidden={!isOpen}>
               <NavLinkList
                 id="mobileNavLinks"
-                show={isMobile}
                 isOpen={isOpen}
                 aria-current={isOpen}
               >
-                {getNavLinkItems(location, isMobile)}
+                {getNavLinkItems(location, isMobile && isOpen)}
               </NavLinkList>{" "}
+              <Social />
             </MobileMenu>
           </>
-        ) : null}
-        {!!isMobile ? null : (
+        ) : (
           <NavLinkList id="desktopNavLinks">
             {getNavLinkItems(location)}
           </NavLinkList>

@@ -26,8 +26,7 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Page Title", name: "pageTitle", widget: "string" }
-      - { label: "Page Description", name: "pageDescription", widget: "string" }
+      - { label: "Title", name: "Title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - {
@@ -65,7 +64,18 @@ collections:
           - { label: Gray, name: gray, widget: string }
           - { label: Link Colors, name: linkColors, widget: string }
           - { label: Nav Link Text, name: navLinkText, widget: string }
-          - { label: Featured Post, name: featuredPost, widget: string }
+          - { label: The Grove Green, name: theGroveGreen, widget: string }
+          - { label: The Grove Teal, name: theGroveTeal, widget: string }
+          - {
+              label: The Grove Light Green,
+              name: theGroveLightGreen,
+              widget: string,
+            }
+          - {
+              label: The Grove Green-Gray,
+              name: theGroveGreenGray,
+              widget: string,
+            }
 
   - name: "pages"
     label: "Pages"
