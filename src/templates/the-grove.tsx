@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import React, { FC } from "react";
-import styled, { css } from "styled-components";
 
 import { Constants } from "../constants";
 import {
@@ -9,27 +8,32 @@ import {
   Content,
   FlexContainer,
   FlexColumn,
-  FlexImageCSS,
   HTMLContent,
   Layout,
   SEO,
   SubscribeForm,
   PreviewCompatibleBanner,
-  PreviewCompatibleImage
+  PreviewCompatibleBannerHeadline,
+  PreviewCompatibleFlexImage
 } from "../components";
 
-type TheGrovePreviewProps = BannerImagePreviewPage & {
-  content: string;
-  contentComponent?: FC<any>;
-  frontmatter: any;
-  posts: BlogPost[];
-};
+const TheGroveBannerImage = ({
+  safeImage,
+  imageHeadline
+}: {
+  safeImage: NestedImage;
+  imageHeadline: string;
+}) => (
+  <BannerImage
+    color={Constants.Colors.theGroveGreen}
+    image={safeImage}
+    title="Life Coaching in The Grove"
+    imageHeadline={imageHeadline}
+    moveHeadlineOnMobile={true}
+  />
+);
 
-const FlexPreviewCompatibleImage = styled(PreviewCompatibleImage)`
-  ${FlexImageCSS}
-`;
-
-export const TheGroveTemplate: FC<TheGrovePreviewProps> = ({
+export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
   content,
   contentComponent,
   frontmatter,
@@ -41,22 +45,22 @@ export const TheGroveTemplate: FC<TheGrovePreviewProps> = ({
   const PageContent = contentComponent || Content;
   const safeImage = image as NestedImage;
 
-  const bannerImage = (
-    <BannerImage
-      color={Constants.Colors.theGroveGreen}
-      image={safeImage}
-      title="Life Coaching in The Grove"
-      imageHeadline={imageHeadline}
-      moveHeadlineOnMobile={true}
-    />
-  );
-
-  console.log(!!isPreview);
-
   return (
     <section>
       <PreviewCompatibleBanner
-        Component={bannerImage}
+        Component={
+          <TheGroveBannerImage
+            safeImage={safeImage}
+            imageHeadline={imageHeadline}
+          />
+        }
+        ComponentChildren={
+          <PreviewCompatibleBannerHeadline
+            color={Constants.Colors.theGroveGreen}
+            imageHeadline={imageHeadline}
+            isPreview={isPreview}
+          />
+        }
         image={image}
         isPreview={isPreview}
       />
@@ -68,7 +72,7 @@ export const TheGroveTemplate: FC<TheGrovePreviewProps> = ({
       />
       <FlexContainer>
         <FlexColumn>
-          <FlexPreviewCompatibleImage
+          <PreviewCompatibleFlexImage
             imageInfo={frontmatter.featuredImage}
             title="Schedule a free discovery call today!"
             imageAlt="Sheila Anne Murray in the mountains of Switzerland"

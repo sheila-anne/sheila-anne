@@ -1,6 +1,6 @@
 ---
 bannerImageHeadline: "Latest Stories"
-templateKey: "writing-desk"
+templateKey: writing-desk
 path: /writing-desk
 title: The Writing Desk
 ---

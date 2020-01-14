@@ -1,5 +1,22 @@
-import React, { FC } from "react";
+import React, { FC, ReactElement } from "react";
 import Img from "gatsby-image";
+import styled from "styled-components";
+
+import { ImageHeadlineContainer } from "./banner-image";
+import { FlexImageCSS } from "./flex";
+
+type PreviewCompatibleBannerProps = {
+  Component: ReactElement;
+  ComponentChildren?: ReactElement;
+  image: string | NestedImage;
+  isPreview?: boolean;
+};
+
+type PreviewCompatibleBannerHeadlineProps = {
+  color: string;
+  imageHeadline: string;
+  isPreview?: boolean;
+};
 
 type PreviewCompatibleImageProps = {
   className?: string;
@@ -9,7 +26,44 @@ type PreviewCompatibleImageProps = {
   title?: string;
 };
 
-const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
+export const PreviewCompatibleBanner: FC<PreviewCompatibleBannerProps> = ({
+  Component,
+  ComponentChildren,
+  image,
+  isPreview
+}) => {
+  return !!isPreview ? (
+    <div
+      style={{
+        backgroundAttachment: `fixed`,
+        backgroundImage: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: `contain`,
+        height: "200px"
+      }}
+    >
+      {ComponentChildren}
+    </div>
+  ) : (
+    Component
+  );
+};
+
+export const PreviewCompatibleBannerHeadline: FC<PreviewCompatibleBannerHeadlineProps> = ({
+  color,
+  imageHeadline,
+  isPreview
+}) => (
+  <ImageHeadlineContainer
+    color={color}
+    isPreview={isPreview}
+    moveHeadlineOnMobile={true}
+  >
+    {imageHeadline}
+  </ImageHeadlineContainer>
+);
+
+export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   className,
   imageAlt,
   imageInfo,
@@ -74,4 +128,6 @@ const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   return null;
 };
 
-export { PreviewCompatibleImage };
+export const PreviewCompatibleFlexImage = styled(PreviewCompatibleImage)`
+  ${FlexImageCSS}
+`;

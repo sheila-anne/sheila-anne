@@ -8,6 +8,13 @@ declare type BannerImagePreviewPage = {
   isPreview?: boolean;
 };
 
+declare type BasePreviewWithBannerImage = BannerImagePreviewPage & {
+  content: string;
+  contentComponent?: any;
+  frontmatter: any;
+  posts: BlogPost[];
+};
+
 declare type BlogPost = {
   node: BlogPostInner;
 };

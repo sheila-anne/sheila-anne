@@ -1,16 +1,14 @@
-import Image from "gatsby-image";
 import { graphql } from "gatsby";
 import React from "react";
-import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
   Content,
   FlexContainer,
   FlexColumn,
-  FlexImage,
   HTMLContent,
   Layout,
+  PreviewCompatibleFlexImage,
   SEO
 } from "../components";
 
@@ -26,10 +24,10 @@ export const AboutPageTemplate = ({
     <section>
       <FlexContainer>
         <FlexColumn>
-          <FlexImage
-            fluid={bannerImage.childImageSharp.fluid}
+          <PreviewCompatibleFlexImage
+            imageInfo={bannerImage}
             title={title}
-            alt="Sheila hiking in Chamonix"
+            imageAlt="Sheila hiking in Chamonix"
           />
         </FlexColumn>
         <FlexColumn

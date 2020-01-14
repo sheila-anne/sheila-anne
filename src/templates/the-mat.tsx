@@ -7,26 +7,49 @@ import {
   Content,
   HTMLContent,
   Layout,
+  PreviewCompatibleBanner,
+  PreviewCompatibleBannerHeadline,
   SEO
 } from "../components/";
+import { Constants } from "../constants";
 
-export const TheMatTemplate = ({ content, contentComponent, data }) => {
+export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
+  content,
+  contentComponent,
+  frontmatter,
+  image,
+  imageHeadline,
+  isPreview,
+  posts
+}) => {
   const PageContent = contentComponent || Content;
-  const { allMarkdownRemark } = data as BlogPostsGraphql;
+  const safeImage = image as NestedImage;
 
   return (
     <section>
-      <BannerImage
-        containImage={true}
-        image={data.markdownRemark.frontmatter.bannerImage}
-        title="The Mat | Yoga With Sheila Anne"
-        imageHeadline={data.markdownRemark.frontmatter.bannerImageHeadline}
-        moveHeadlineOnMobile={true}
+      <PreviewCompatibleBanner
+        Component={
+          <BannerImage
+            containImage={true}
+            image={safeImage}
+            title="The Mat | Yoga With Sheila Anne"
+            imageHeadline={frontmatter.bannerImageHeadline}
+            moveHeadlineOnMobile={true}
+          />
+        }
+        ComponentChildren={
+          <PreviewCompatibleBannerHeadline
+            color={Constants.Colors.lighterBlue}
+            imageHeadline={imageHeadline}
+            isPreview={isPreview}
+          />
+        }
+        image={image}
+        isPreview={isPreview}
       />
+
       <PageContent content={content} />
-      {allMarkdownRemark.posts.length > 0 && (
-        <BlogRoll posts={allMarkdownRemark.posts} />
-      )}
+      {posts.length > 0 && <BlogRoll posts={posts} />}
     </section>
   );
 };
@@ -43,7 +66,10 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
       <TheMatTemplate
         contentComponent={HTMLContent}
         content={post.html}
-        data={data}
+        frontmatter={post.frontmatter}
+        image={post.frontmatter.bannerImage}
+        imageHeadline={post.frontmatter.bannerImageHeadline}
+        posts={data.allMarkdownRemark.posts}
       />
     </Layout>
   );

@@ -185,6 +185,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       <PreviewCompatibleBanner
         isPreview={isPreview}
         Component={bannerImage}
+        ComponentChildren={banners}
         image={image}
       />
       {isMobile && banners}

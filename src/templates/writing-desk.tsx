@@ -8,7 +8,8 @@ import {
   HTMLContent,
   Layout,
   SEO,
-  PreviewCompatibleBanner
+  PreviewCompatibleBanner,
+  PreviewCompatibleBannerHeadline
 } from "../components";
 import { Constants } from "../constants";
 
@@ -16,6 +17,21 @@ type WritingDeskProps = BannerImagePreviewPage & {
   content: string;
   contentComponent?: FC<any>;
 };
+
+const WritingDeskBannerImage = ({
+  safeImage,
+  imageHeadline
+}: {
+  safeImage: NestedImage;
+  imageHeadline: string;
+}) => (
+  <BannerImage
+    color={Constants.Colors.theGroveTeal}
+    image={safeImage}
+    title="Welcome to The Writing Desk"
+    imageHeadline={imageHeadline}
+  />
+);
 
 export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   content,
@@ -27,19 +43,22 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   const PageContent = contentComponent || Content;
   const safeImage = image as NestedImage;
 
-  const bannerImage = (
-    <BannerImage
-      color={Constants.Colors.theGroveTeal}
-      image={safeImage}
-      title="Welcome to The Writing Desk"
-      imageHeadline={imageHeadline}
-    />
-  );
-
   return (
     <section>
       <PreviewCompatibleBanner
-        Component={bannerImage}
+        Component={
+          <WritingDeskBannerImage
+            safeImage={safeImage}
+            imageHeadline={imageHeadline}
+          />
+        }
+        ComponentChildren={
+          <PreviewCompatibleBannerHeadline
+            color={Constants.Colors.theGroveTeal}
+            imageHeadline={imageHeadline}
+            isPreview={isPreview}
+          />
+        }
         image={image}
         isPreview={isPreview}
       />

@@ -1,12 +1,11 @@
 import React from "react";
-import { TheGroveTemplate } from "../../templates/the-grove";
+import { WritingDeskPageTemplate } from "../../templates/writing-desk";
 
-const TheGrovePagePreview = ({ entry, widgetFor }) => {
+const TheWritingDeskPagePreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(["data"]).toJS();
   return (
-    <TheGroveTemplate
+    <WritingDeskPageTemplate
       content={widgetFor("body")}
-      frontmatter={data}
       isPreview={true}
       image={data.bannerImage}
       imageHeadline={data.bannerImageHeadline}
@@ -15,4 +14,4 @@ const TheGrovePagePreview = ({ entry, widgetFor }) => {
   );
 };
 
-export default TheGrovePagePreview;
+export default TheWritingDeskPagePreview;

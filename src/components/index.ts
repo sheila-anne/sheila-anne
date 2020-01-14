@@ -16,8 +16,12 @@ import {
 import { Footer } from "./footer";
 import { Layout } from "./layout";
 import { Nav } from "./nav";
-import { PreviewCompatibleBanner } from "./preview-compatible-banner";
-import { PreviewCompatibleImage } from "./preview-compatible-image";
+import {
+  PreviewCompatibleBanner,
+  PreviewCompatibleBannerHeadline,
+  PreviewCompatibleFlexImage,
+  PreviewCompatibleImage
+} from "./preview-compatible";
 import { SEO } from "./seo";
 import { SmartLink } from "./smart-link";
 import { TagList } from "./tag-list";
@@ -38,13 +42,14 @@ export {
   FlexColumn,
   FlexHeader,
   FlexImage,
-  FlexImageCSS,
   Footer,
   FullWidthImage,
   Layout,
   HTMLContent,
   Nav,
   PreviewCompatibleBanner,
+  PreviewCompatibleBannerHeadline,
+  PreviewCompatibleFlexImage,
   PreviewCompatibleImage,
   SEO,
   SmartLink,

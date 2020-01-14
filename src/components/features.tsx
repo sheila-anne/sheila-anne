@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { CenteredText } from "./centered-text";
 import { FlexColumn, FlexContainer } from "./flex";
-import { PreviewCompatibleImage } from "./preview-compatible-image";
+import { PreviewCompatibleImage } from "./preview-compatible";
 import { Constants } from "../constants";
 
 type FeaturedProps = {

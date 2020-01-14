@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import BackgroundImage from "gatsby-background-image";
 import { Constants } from "../constants";
 import { useWindow } from "../hooks/useWindow";
+import { applyStyle } from "../utils";
 
 type FullWidthImageProps = {
   containImage?: boolean;
@@ -44,8 +45,9 @@ export const FullWidthImage = styled(BackgroundImage)<FullWidthImageProps>`
   }
 `;
 
-const ImageHeadlineContainer = styled.h1<{
+export const ImageHeadlineContainer = styled.h1<{
   color: string;
+  isPreview?: boolean;
   moveHeadlineOnMobile?: boolean;
 }>`
   box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
@@ -57,6 +59,7 @@ const ImageHeadlineContainer = styled.h1<{
   justify-content: space-around;
   line-height: 1;
   padding: 1rem;
+  ${({ isPreview }) => !!isPreview && "position: fixed; height: 50px;"}
 
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ moveHeadlineOnMobile }) => !!moveHeadlineOnMobile && `margin-top: 0;`}

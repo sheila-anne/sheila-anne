@@ -13,7 +13,7 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 collections:
-  - name: "writing-desk"
+  - name: "blog"
     label: "Writing Desk Blog"
     folder: "src/pages/writing-desk"
     filter: { field: templateKey, value: "blog-post" }

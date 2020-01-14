@@ -5,7 +5,7 @@ import { Button } from "./button";
 import { Constants } from "../constants";
 import { CenteredText } from "./centered-text";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
-import { PreviewCompatibleImage } from "./preview-compatible-image";
+import { PreviewCompatibleImage } from "./preview-compatible";
 import { SmartLink } from "./smart-link";
 
 type ArticleProps = {
@@ -94,7 +94,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
     <div>
       <p>{post.excerpt}</p>
       <CenteredText>
-        <OffsetButton as="div">Keep Reading →</OffsetButton>
+        <OffsetButton as="button">Keep Reading →</OffsetButton>
       </CenteredText>
     </div>
   </Article>
