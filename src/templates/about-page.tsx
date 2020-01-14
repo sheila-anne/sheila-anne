@@ -14,10 +14,6 @@ import {
   SEO
 } from "../components";
 
-const StyledImage = styled(FlexImage)`
-  margin-top: 4rem;
-`;
-
 export const AboutPageTemplate = ({
   title,
   content,
@@ -30,7 +26,7 @@ export const AboutPageTemplate = ({
     <section>
       <FlexContainer>
         <FlexColumn>
-          <StyledImage
+          <FlexImage
             fluid={bannerImage.childImageSharp.fluid}
             title={title}
             alt="Sheila hiking in Chamonix"
