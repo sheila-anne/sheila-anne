@@ -1,5 +1,5 @@
 import Image from "gatsby-image";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { Constants } from "../constants";
 
@@ -53,7 +53,7 @@ export const FlexHeader = styled.header`
   }
 `;
 
-export const FlexImage = styled(Image)`
+export const FlexImageCSS = css`
   margin-right: 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
@@ -61,4 +61,8 @@ export const FlexImage = styled(Image)`
     margin-top: 0;
     margin-bottom: 1rem;
   }
+`;
+
+export const FlexImage = styled(Image)`
+  ${FlexImageCSS}
 `;

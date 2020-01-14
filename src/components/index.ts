@@ -6,11 +6,18 @@ import { Button } from "./button";
 import Content, { HTMLContent } from "./content";
 import { CenteredText } from "./centered-text";
 import { Features } from "./features";
-import { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";
+import {
+  FlexContainer,
+  FlexColumn,
+  FlexHeader,
+  FlexImage,
+  FlexImageCSS
+} from "./flex";
 import { Footer } from "./footer";
 import { Layout } from "./layout";
 import { Nav } from "./nav";
-import { PreviewCompatibleImage } from "./preview-compatiable-image";
+import { PreviewCompatibleBanner } from "./preview-compatible-banner";
+import { PreviewCompatibleImage } from "./preview-compatible-image";
 import { SEO } from "./seo";
 import { SmartLink } from "./smart-link";
 import { TagList } from "./tag-list";
@@ -31,11 +38,13 @@ export {
   FlexColumn,
   FlexHeader,
   FlexImage,
+  FlexImageCSS,
   Footer,
   FullWidthImage,
   Layout,
   HTMLContent,
   Nav,
+  PreviewCompatibleBanner,
   PreviewCompatibleImage,
   SEO,
   SmartLink,

@@ -5,14 +5,7 @@ const IndexPagePreview = ({ entry }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
-    return (
-      <IndexPageTemplate
-        isMobile={false}
-        isPreview={true}
-        frontmatter={data}
-        posts={[]}
-      />
-    );
+    return <IndexPageTemplate isPreview={true} frontmatter={data} posts={[]} />;
   } else {
     return <div>Loading...</div>;
   }

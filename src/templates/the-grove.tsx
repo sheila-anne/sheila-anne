@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
-import React from "react";
+import React, { FC } from "react";
+import styled, { css } from "styled-components";
 
 import { Constants } from "../constants";
 import {
@@ -8,26 +9,56 @@ import {
   Content,
   FlexContainer,
   FlexColumn,
-  FlexImage,
+  FlexImageCSS,
   HTMLContent,
   Layout,
   SEO,
-  SubscribeForm
+  SubscribeForm,
+  PreviewCompatibleBanner,
+  PreviewCompatibleImage
 } from "../components";
 
-export const TheGroveTemplate = ({ content, contentComponent, data }) => {
-  const { frontmatter } = data.markdownRemark;
+type TheGrovePreviewProps = BannerImagePreviewPage & {
+  content: string;
+  contentComponent?: FC<any>;
+  frontmatter: any;
+  posts: BlogPost[];
+};
+
+const FlexPreviewCompatibleImage = styled(PreviewCompatibleImage)`
+  ${FlexImageCSS}
+`;
+
+export const TheGroveTemplate: FC<TheGrovePreviewProps> = ({
+  content,
+  contentComponent,
+  frontmatter,
+  image,
+  imageHeadline,
+  isPreview,
+  posts
+}) => {
   const PageContent = contentComponent || Content;
-  const { allMarkdownRemark } = data as BlogPostsGraphql;
+  const safeImage = image as NestedImage;
+
+  const bannerImage = (
+    <BannerImage
+      color={Constants.Colors.theGroveGreen}
+      image={safeImage}
+      title="Life Coaching in The Grove"
+      imageHeadline={imageHeadline}
+      moveHeadlineOnMobile={true}
+    />
+  );
+
+  console.log(!!isPreview);
 
   return (
     <section>
-      <BannerImage
-        color={Constants.Colors.theGroveGreen}
-        image={frontmatter.bannerImage}
-        title="Life Coaching in The Grove"
-        imageHeadline={frontmatter.bannerImageHeadline}
-        moveHeadlineOnMobile={true}
+      <PreviewCompatibleBanner
+        Component={bannerImage}
+        image={image}
+        isPreview={isPreview}
       />
       <PageContent
         backgroundColor={Constants.Colors.theGroveGreenGray}
@@ -37,10 +68,10 @@ export const TheGroveTemplate = ({ content, contentComponent, data }) => {
       />
       <FlexContainer>
         <FlexColumn>
-          <FlexImage
-            fluid={frontmatter.featuredImage.childImageSharp.fluid}
+          <FlexPreviewCompatibleImage
+            imageInfo={frontmatter.featuredImage}
             title="Schedule a free discovery call today!"
-            alt="Sheila Anne Murray in the mountains of Switzerland"
+            imageAlt="Sheila Anne Murray in the mountains of Switzerland"
           />
         </FlexColumn>
         <FlexColumn backgroundColor={Constants.Colors.theGroveLightGreen}>
@@ -53,9 +84,7 @@ export const TheGroveTemplate = ({ content, contentComponent, data }) => {
           />
         </FlexColumn>
       </FlexContainer>
-      {allMarkdownRemark.posts.length > 0 && (
-        <BlogRoll posts={allMarkdownRemark.posts} />
-      )}
+      {posts.length > 0 && <BlogRoll posts={posts} />}
     </section>
   );
 };
@@ -74,7 +103,10 @@ const TheGrove = ({ data, location }) => {
       <TheGroveTemplate
         contentComponent={HTMLContent}
         content={post.html}
-        data={data}
+        frontmatter={post.frontmatter}
+        image={post.frontmatter.bannerImage}
+        imageHeadline={post.frontmatter.bannerImageHeadline}
+        posts={data.allMarkdownRemark.posts}
       />
     </Layout>
   );

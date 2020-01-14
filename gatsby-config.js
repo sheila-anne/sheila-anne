@@ -91,7 +91,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/img/sheila-anne-favicon-32x32.png`
+        icon: `static/img/sheila-anne-favicon.png`
       }
     },
     {

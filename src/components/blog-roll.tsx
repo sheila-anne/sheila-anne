@@ -5,9 +5,8 @@ import { Button } from "./button";
 import { Constants } from "../constants";
 import { CenteredText } from "./centered-text";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
-import { PreviewCompatibleImage } from "./preview-compatiable-image";
+import { PreviewCompatibleImage } from "./preview-compatible-image";
 import { SmartLink } from "./smart-link";
-import { useWindow } from "../hooks/useWindow";
 
 type ArticleProps = {
   isFeatured: boolean;

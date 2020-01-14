@@ -2,6 +2,12 @@ declare type BaseGatsbyPage = {
   location: Location;
 };
 
+declare type BannerImagePreviewPage = {
+  image: string | NestedImage;
+  imageHeadline: string;
+  isPreview?: boolean;
+};
+
 declare type BlogPost = {
   node: BlogPostInner;
 };

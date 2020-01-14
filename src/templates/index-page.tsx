@@ -11,10 +11,10 @@ import {
   FlexContainer,
   FullWidthImage,
   Layout,
+  PreviewCompatibleBanner,
   SubscribeForm,
   SEO,
-  SmartLink,
-  PreviewCompatibleImage
+  SmartLink
 } from "../components";
 import { Constants } from "../constants";
 import { useWindow } from "../hooks/useWindow";
@@ -36,7 +36,7 @@ type IndexFrontmatterProps = {
   formSubHeadline: string;
   formParagraph: string;
   heading: string;
-  image: PreviewImage;
+  image: PreviewImage | string;
   intro: Intro;
   mainpitch: MainPitch;
 };
@@ -142,6 +142,8 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     heading
   } = frontmatter;
 
+  const safeImage = image as NestedImage;
+
   const banners = (
     <BannerHeadlines
       bannerSubtitle={bannerSubtitle}
@@ -150,32 +152,27 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     />
   );
 
+  const bannerImage = (
+    <FullWidthImage
+      fluid={
+        !!safeImage && !!safeImage.childImageSharp
+          ? safeImage.childImageSharp.fluid
+          : safeImage
+      }
+      moveHeadlineOnMobile={true}
+      title="Sheila Anne Life Coaching cover photo"
+    >
+      {!isMobile && banners}
+    </FullWidthImage>
+  );
+
   return (
     <>
-      {isPreview && (
-        <div
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundPosition: `center`,
-            backgroundAttachment: `fixed`
-          }}
-        >
-          {banners}
-        </div>
-      )}
-      {!isPreview && (
-        <FullWidthImage
-          fluid={
-            !!image && !!image.childImageSharp
-              ? image.childImageSharp.fluid
-              : image
-          }
-          moveHeadlineOnMobile={true}
-          title="Sheila Anne Life Coaching cover photo"
-        >
-          {!isMobile && banners}
-        </FullWidthImage>
-      )}
+      <PreviewCompatibleBanner
+        isPreview={isPreview}
+        Component={bannerImage}
+        image={image}
+      />
       {isMobile && banners}
       <section>
         <Container>

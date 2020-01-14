@@ -1,5 +1,5 @@
+import React, { FC } from "react";
 import { graphql } from "gatsby";
-import React from "react";
 
 import {
   BannerImage,
@@ -7,22 +7,41 @@ import {
   Content,
   HTMLContent,
   Layout,
-  SEO
+  SEO,
+  PreviewCompatibleBanner
 } from "../components";
 import { Constants } from "../constants";
 
-export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
+type WritingDeskProps = BannerImagePreviewPage & {
+  content: string;
+  contentComponent?: FC<any>;
+};
+
+export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
+  content,
+  contentComponent,
+  image,
+  imageHeadline,
+  isPreview
+}) => {
   const PageContent = contentComponent || Content;
-  const imageData = data.desktop;
-  const imageHeadline = data.markdownRemark.frontmatter.bannerImageHeadline;
+  const safeImage = image as NestedImage;
+
+  const bannerImage = (
+    <BannerImage
+      color={Constants.Colors.theGroveTeal}
+      image={safeImage}
+      title="Welcome to The Writing Desk"
+      imageHeadline={imageHeadline}
+    />
+  );
 
   return (
     <section>
-      <BannerImage
-        color={Constants.Colors.theGroveTeal}
-        image={imageData}
-        title="Welcome to The Writing Desk"
-        imageHeadline={imageHeadline}
+      <PreviewCompatibleBanner
+        Component={bannerImage}
+        image={image}
+        isPreview={isPreview}
       />
       <PageContent content={content} />
       <BlogRollAll />
@@ -30,19 +49,22 @@ export const BlogIndexPageTemplate = ({ content, contentComponent, data }) => {
   );
 };
 
-const BlogIndexPage = ({ location, data }) => {
+const WritingDeskPage = ({ location, data }) => {
+  const imageData = data.image;
+  const imageHeadline = data.markdownRemark.frontmatter.bannerImageHeadline;
   return (
     <Layout location={location}>
       <SEO
         description="Excerpts from the Writing Desk of Sheila Anne"
-        image={data.desktop.childImageSharp.fluid.src}
+        image={data.image.childImageSharp.fluid.src}
         imageAlt="Notes from the Writing Desk"
         title={`${data.markdownRemark.frontmatter.title} | Sheila Anne`}
       />
-      <BlogIndexPageTemplate
+      <WritingDeskPageTemplate
         contentComponent={HTMLContent}
         content={data.markdownRemark.html}
-        data={data}
+        image={imageData}
+        imageHeadline={imageHeadline}
       />
     </Layout>
   );
@@ -58,7 +80,7 @@ export const pageQuery = graphql`
       }
     }
 
-    desktop: file(relativePath: { eq: "blog-index.jpg" }) {
+    image: file(relativePath: { eq: "blog-index.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
@@ -68,4 +90,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default BlogIndexPage;
+export default WritingDeskPage;

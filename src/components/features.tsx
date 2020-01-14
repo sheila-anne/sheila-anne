@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { CenteredText } from "./centered-text";
 import { FlexColumn, FlexContainer } from "./flex";
-import { PreviewCompatibleImage } from "./preview-compatiable-image";
+import { PreviewCompatibleImage } from "./preview-compatible-image";
 
 type FeaturedProps = {
   gridItems: FeaturedGridItem[];

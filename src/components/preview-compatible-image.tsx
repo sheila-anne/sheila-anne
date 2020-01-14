@@ -2,15 +2,19 @@ import React, { FC } from "react";
 import Img from "gatsby-image";
 
 type PreviewCompatibleImageProps = {
+  className?: string;
   imageInfo: PreviewImage;
   imageAlt?: string;
   loading?: "eager" | "lazy" | "auto";
+  title?: string;
 };
 
 const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
+  className,
   imageAlt,
   imageInfo,
-  loading
+  loading,
+  title
 }) => {
   const imageStyle = {
     borderRadius: "5px",
@@ -26,9 +30,11 @@ const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
     return (
       <Img
         alt={altText}
+        className={className}
+        fluid={potentialImage.childImageSharp.fluid}
         loading={loadType}
         style={imageStyle}
-        fluid={potentialImage.childImageSharp.fluid}
+        title={title}
       />
     );
   }
@@ -36,16 +42,33 @@ const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   if (!!childImageSharp) {
     return (
       <Img
+        alt={altText}
+        className={className}
+        fluid={childImageSharp.fluid}
         loading={loadType}
         style={imageStyle}
-        fluid={childImageSharp.fluid}
-        alt={altText}
+        title={title}
       />
     );
   }
 
-  if (!!image && typeof image === "string") {
-    return <img style={imageStyle} src={image} alt={altText} />;
+  const rawImg =
+    typeof imageInfo === "string"
+      ? imageInfo
+      : !!image && typeof image === "string"
+      ? image
+      : "";
+
+  if (!!rawImg) {
+    return (
+      <img
+        alt={altText}
+        className={className}
+        style={imageStyle}
+        src={rawImg}
+        title={title}
+      />
+    );
   }
 
   return null;

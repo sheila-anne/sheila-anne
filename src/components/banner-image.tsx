@@ -12,7 +12,7 @@ type FullWidthImageProps = {
 
 type BannerImageProps = FullWidthImageProps & {
   color?: string;
-  image: PreviewImage;
+  image: NestedImage;
   imageHeadline: string;
   title: string;
 };
