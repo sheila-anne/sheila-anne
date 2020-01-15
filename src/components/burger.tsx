@@ -1,5 +1,6 @@
 import React, { Dispatch, FC, SetStateAction } from "react";
 import styled from "styled-components";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { Constants } from "../constants";
 
@@ -56,8 +57,21 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
   }
 `;
 
+const onClick = (
+  isOpen: boolean,
+  setIsOpen: Dispatch<SetStateAction<boolean>>
+) => {
+  const newOpenValue = !isOpen;
+  setIsOpen(newOpenValue);
+  trackCustomEvent({
+    action: "navigation",
+    category: `Mobile Menu`,
+    label: `$Toggle ${newOpenValue ? "closed" : "open"}`
+  });
+};
+
 const Burger: FC<BurgerProps> = ({ isOpen, setIsOpen }) => (
-  <StyledBurger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+  <StyledBurger isOpen={isOpen} onClick={() => onClick(isOpen, setIsOpen)}>
     <div />
     <div />
     <div />

@@ -4,8 +4,8 @@ type FormName = "Contact" | "Homepage Hubspot" | "The Grove Hubspot";
 
 export const trackOnClick = (formName: FormName) => {
   trackCustomEvent({
-    action: "Form Submit",
-    category: `Form submission from: ${formName}`,
-    label: "Form"
+    action: "submit",
+    category: `Form Submission`,
+    label: formName
   });
 };

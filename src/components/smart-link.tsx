@@ -15,9 +15,9 @@ const getLinkType = (to: string) =>
 const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
   const to = event.currentTarget.href;
   trackCustomEvent({
-    action: "Click",
-    category: `Link Click to: ${to}`,
-    label: "Navigation"
+    action: "click",
+    category: `Internal Link`,
+    label: to
   });
 };
 
@@ -44,7 +44,6 @@ export const SmartLink: FC<CustomLinkType> = ({
       <OutboundLink
         className={className}
         href={to}
-        onClick={onClick}
         rel="noopener noreferrer"
         target="_blank"
         title={title}
