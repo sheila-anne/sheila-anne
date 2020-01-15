@@ -84,7 +84,7 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
             formDescription={frontmatter.formSubHeadline}
             formParagraph={frontmatter.formParagraph}
             formTitle={frontmatter.formHeadline}
-            page={Constants.formNames.theGrove}
+            page="theGrove"
           />
         </FlexColumn>
       </FlexContainer>

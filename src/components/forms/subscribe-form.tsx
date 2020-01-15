@@ -10,7 +10,7 @@ import styled from "styled-components";
 import { Constants } from "../../constants";
 import { FormWrapperSection, Input } from "./form-elements";
 
-type PageNames = keyof typeof Constants.formNames;
+type PageNames = "theGrove" | "homepage";
 
 type SubscribeFormProps = {
   backgroundColor: string;

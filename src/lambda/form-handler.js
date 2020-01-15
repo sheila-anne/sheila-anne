@@ -1,6 +1,5 @@
 require("dotenv").config();
 const fetch = require("node-fetch");
-const formNames = require("../constants/formNames");
 
 const {
   HUBSPOT_PORTAL,
@@ -9,6 +8,11 @@ const {
 } = process.env;
 
 const hubSpotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/`;
+
+const formNames = {
+  homepage: "homepage",
+  theGrove: "theGrove"
+};
 
 const pagePathMap = {
   [formNames.theGrove]: "the-grove",
