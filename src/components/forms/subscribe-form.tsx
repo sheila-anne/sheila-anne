@@ -85,6 +85,8 @@ const handleSubmit = async (
   setButtonText: Dispatch<SetStateAction<string>>,
   page: PageNames
 ) => {
+  e.stopPropagation();
+  e.persist();
   e.preventDefault();
   setButtonText("Submitting...");
 
@@ -99,12 +101,12 @@ const handleSubmit = async (
     formValues[element.name] = element.value;
   }
 
-  const res = await fetch(".netlify/functions/form-handler", {
+  const res = await fetch("/.netlify/functions/form-handler", {
     method: "POST",
     body: JSON.stringify(formValues)
   })
     .then(res => res.json())
-    .catch(() => {
+    .catch(err => {
       success: false;
     });
 

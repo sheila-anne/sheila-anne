@@ -4,7 +4,7 @@ import styled from "styled-components";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 
-import { FooterImage } from "./footer/footer-image";
+import { FooterImage } from "./footer/";
 import { SmartLink } from "./smart-link";
 
 const FooterNavItem = styled(SmartLink)`

@@ -203,7 +203,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               formDescription={formSubHeadline}
               formParagraph={formParagraph}
               formTitle={formHeadline}
-              page="homepage"
+              page={Constants.formNames.homepage}
             />
           </FlexContainer>
           <CenteredText>

@@ -77,7 +77,8 @@ module.exports = {
               domainRegex: /http[s]*:\/\/[www.]*sheilaanne\.com[/]?/
             }
           },
-          `gatsby-remark-external-links`
+          `gatsby-remark-external-links`,
+          `gatsby-remark-emojis`
         ]
       }
     },

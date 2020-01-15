@@ -1,5 +1,6 @@
 require("dotenv").config();
 const fetch = require("node-fetch");
+const formNames = require("../constants/formNames");
 
 const {
   HUBSPOT_PORTAL,
@@ -8,6 +9,16 @@ const {
 } = process.env;
 
 const hubSpotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/`;
+
+const pagePathMap = {
+  [formNames.theGrove]: "the-grove",
+  [formNames.homepage]: ""
+};
+
+const formGuidMap = {
+  [formNames.theGrove]: HUBSPOT_GROVE_FORM_GUID,
+  [formNames.homepage]: HUBSPOT_HOMEPAGE_FORM_GUID
+};
 
 exports.handler = async function(event, context) {
   if (!event.body) {
@@ -19,10 +30,6 @@ exports.handler = async function(event, context) {
   console.log(`Received form submission event: ${event.body}`);
 
   const eventProperties = JSON.parse(event.body);
-  let formGuid =
-    eventProperties.page === "homepage"
-      ? HUBSPOT_HOMEPAGE_FORM_GUID
-      : HUBSPOT_GROVE_FORM_GUID;
 
   const data = {
     submittedAt: new Date().getTime(),
@@ -39,10 +46,18 @@ exports.handler = async function(event, context) {
         name: "phone",
         value: eventProperties.phone || ""
       }
-    ]
+    ],
+    context: {
+      pageUri: `https://www.sheilaanne.com/${
+        pagePathMap[eventProperties.page]
+      }`,
+      pageName: eventProperties.page
+    }
   };
 
-  return fetch(hubSpotUrl + formGuid, {
+  const fullUrl = hubSpotUrl + formGuidMap[eventProperties.page];
+
+  return fetch(fullUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
