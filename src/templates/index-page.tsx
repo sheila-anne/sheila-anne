@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 
 import {
-  BasicHeadline,
   BlogRoll,
   Button,
   CenteredText,
@@ -83,17 +82,9 @@ const Container = styled.div`
   }
 `;
 
-const ImageHeadlineContainer = styled.div`
-  align-items: flex-start;
-  display: flex;
-  height: 150px;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 100%;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-bottom: 4rem;
-  }
+const BannerLink = styled(SmartLink)`
+  color: #fff;
+  text-decoration: underline;
 `;
 
 const BannerHeadline = styled.h1<HeadlineProps>`
@@ -109,11 +100,6 @@ const BannerHeadline = styled.h1<HeadlineProps>`
   }
 `;
 
-const BannerLink = styled(SmartLink)`
-  color: #fff;
-  text-decoration: underline;
-`;
-
 const FlexLinkContainer = styled(FlexContainer)`
   border: 2px solid ${Constants.Colors.theGroveGreen};
   border-radius: 2rem;
@@ -123,6 +109,25 @@ const FlexLinkContainer = styled(FlexContainer)`
 
   @media (max-width: ${Constants.mobileWidth}) {
     margin-bottom: 2rem;
+  }
+`;
+
+const HomepageHeadline = styled.h1`
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+`;
+
+const ImageHeadlineContainer = styled.div`
+  align-items: flex-start;
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    margin-bottom: 4rem;
   }
 `;
 
@@ -192,7 +197,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       <section>
         <Container>
           <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-            <BasicHeadline>{description}</BasicHeadline>
+            <HomepageHeadline>{description}</HomepageHeadline>
           </FlexContainer>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}

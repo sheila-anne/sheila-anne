@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 import { Burger } from "./burger";
 import { Constants } from "../constants";
-import { InternalLink } from "./internal-link";
 import { useWindow } from "../hooks/useWindow";
 import { applyStyle } from "../utils";
 import { Social } from "./social";
+import { SmartLink } from "./smart-link";
 
 type NavProps = {
   location: Location;
@@ -16,7 +16,7 @@ type NavHeaderProps = NavProps & {
   isMobile: boolean;
 };
 
-const ColoredInternalLink = styled(InternalLink)<{
+const ColoredInternalLink = styled(SmartLink)<{
   "aria-current"?: boolean;
 }>`
   ${props =>
@@ -29,7 +29,7 @@ const CenteredText = styled.div<{ isOpen: boolean; isMobile: boolean }>`
 
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen, isMobile }) =>
-    isOpen && isMobile ? "translateX(-16%)" : ""};
+    !!isOpen && !!isMobile ? "translateX(-16%)" : ""};
   padding-top: 5px;
   text-align: center;
 `;
@@ -117,7 +117,8 @@ const MobileMenu = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ isOpen }) => (isOpen ? "translateY(0)" : "translateY(50%)")};
+  transform: ${({ isOpen }) =>
+    isOpen ? "translate(0,0)" : "translate(-100%,-50%)"};
 
   @media (max-width: ${Constants.mobileWidth}) {
     width: 100%;

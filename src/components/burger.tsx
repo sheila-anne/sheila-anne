@@ -10,23 +10,20 @@ type BurgerProps = {
 
 const StyledBurger = styled.button<{ isOpen: boolean }>`
   align-items: center;
-  position: absolute;
-  top: calc(2vh);
-  right: calc(1.5vh);
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
   background: transparent;
   border: none;
   cursor: pointer;
+  display: none;
+  flex-direction: column;
+  height: 2rem;
+  justify-content: space-around;
+  outline: none;
   padding: 0;
+  position: absolute;
+  right: calc(1.5vh);
+  top: calc(2vh);
+  width: 2rem;
   z-index: 10;
-
-  &:focus {
-    outline: none;
-  }
 
   div {
     width: 2rem;
@@ -43,6 +40,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
 
     :nth-child(2) {
       opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
+      height: ${({ isOpen }) => !!isOpen && "0"};
       transform: ${({ isOpen }) =>
         isOpen ? "translateX(20px)" : "translateX(0)"};
     }
@@ -54,7 +52,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: flex;
-    height: 30px;
+    height: 35px;
   }
 `;
 

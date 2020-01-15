@@ -1,7 +1,7 @@
 import React, { Dispatch, FormEvent, SetStateAction, useState } from "react";
 
-import { BasicHeadline } from "../headlines";
 import { FormWrapperSection, Input, Submit, TextArea } from "./form-elements";
+import { trackOnClick } from "./track-on-click";
 
 const onSubmit = async (
   event: FormEvent<HTMLFormElement>,
@@ -9,12 +9,14 @@ const onSubmit = async (
 ) => {
   event.preventDefault();
   setSubmitText("Submitting ...");
+  trackOnClick("Contact");
+
   const formElements = (Array.from(
     event.currentTarget.elements
   ) as unknown) as HTMLInputElement[];
+
   const isValid =
     formElements.filter(elem => elem.name === "bot-field")[0].value === "";
-
   const validFormElements = isValid ? formElements : [];
 
   if (validFormElements.length < 1) {
@@ -40,7 +42,9 @@ const onSubmit = async (
         return Promise.resolve();
       })
       .catch(_ => {
-        setSubmitText("Failed to submit");
+        setSubmitText(
+          `Failed to submit, try emailing me:  <a href="mailto: sheila@shielaanne.com">sheila@sheilaanne.com </a>`
+        );
       });
   }
 };
@@ -48,8 +52,8 @@ const onSubmit = async (
 export const ContactForm = () => {
   const [submitText, setSubmitText] = useState("Send!");
   return (
-    <FormWrapperSection>
-      <BasicHeadline>Contact Sheila Anne</BasicHeadline>
+    <FormWrapperSection alignItems="flex-start">
+      <h1>Contact Sheila Anne</h1>
       <p>
         Drop me a little note by filling out the form below, I'd love to hear
         from you. Alternatively, feel free to reach out to me by email:{" "}
@@ -63,9 +67,9 @@ export const ContactForm = () => {
         onSubmit={e => onSubmit(e, setSubmitText)}
       >
         <p style={{ display: "none" }}>
-          <label>
+          <label htmlFor="bot-field">
             Don’t fill this out if you expect to hear from us!
-            <input name="bot-field" value="" readOnly={true} />
+            <input id="bot-field" name="bot-field" value="" readOnly={true} />
           </label>
         </p>
         <Input
@@ -93,7 +97,7 @@ export const ContactForm = () => {
           </label>
         </p>
         <Submit name="SendMessage" type="submit">
-          {submitText}
+          <div dangerouslySetInnerHTML={{ __html: submitText }} />
         </Submit>
       </form>
     </FormWrapperSection>

@@ -8,7 +8,7 @@ bannerSubtitle: >
   Looking to navigate your life path?
 image: /img/sheila-anne-coaching-header.jpg
 description: >-
-  Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind, and spirit, creating a place where you can grow as a person.
+  Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind and spirit, creating a place where you can grow as a person.
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"

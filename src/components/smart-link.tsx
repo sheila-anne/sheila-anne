@@ -1,5 +1,5 @@
-import { OutboundLink } from "gatsby-plugin-google-analytics";
-import React, { FC } from "react";
+import { OutboundLink, trackCustomEvent } from "gatsby-plugin-google-analytics";
+import React, { FC, MouseEvent } from "react";
 
 import { InternalLink } from "./internal-link";
 
@@ -9,16 +9,33 @@ type CustomLinkType = {
   title?: string;
 };
 
+const getLinkType = (to: string) =>
+  to.indexOf("http") > -1 ? "External" : "Internal";
+
+const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
+  const to = event.currentTarget.href;
+  trackCustomEvent({
+    action: "Click",
+    category: `Link Click to: ${to}`,
+    label: "Navigation"
+  });
+};
+
 export const SmartLink: FC<CustomLinkType> = ({
   className,
   to,
   title,
   children
 }) => {
-  const linkType = to.indexOf("http") > -1 ? "external" : "internal";
-  if (linkType === "internal") {
+  const linkType = getLinkType(to);
+  if (linkType === "Internal") {
     return (
-      <InternalLink className={className} to={to} title={title}>
+      <InternalLink
+        className={className}
+        onClick={onClick}
+        to={to}
+        title={title}
+      >
         {children}
       </InternalLink>
     );
@@ -27,8 +44,9 @@ export const SmartLink: FC<CustomLinkType> = ({
       <OutboundLink
         className={className}
         href={to}
-        target="_blank"
+        onClick={onClick}
         rel="noopener noreferrer"
+        target="_blank"
         title={title}
       >
         {children}

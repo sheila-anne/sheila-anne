@@ -1,18 +1,11 @@
 import { BannerImage, FullWidthImage } from "./banner-image";
-import { BasicHeadline } from "./headlines";
 import { BlogRollAll } from "./blog-roll-all";
 import { BlogRoll } from "./blog-roll";
 import { Button } from "./button";
 import Content, { HTMLContent } from "./content";
 import { CenteredText } from "./centered-text";
 import { Features } from "./features";
-import {
-  FlexContainer,
-  FlexColumn,
-  FlexHeader,
-  FlexImage,
-  FlexImageCSS
-} from "./flex";
+import { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";
 import { Footer } from "./footer";
 import { Layout } from "./layout";
 import { Nav } from "./nav";
@@ -30,7 +23,6 @@ import { ContactForm, SubscribeForm } from "./forms/";
 
 export {
   BannerImage,
-  BasicHeadline,
   BlogRoll,
   BlogRollAll,
   Button,

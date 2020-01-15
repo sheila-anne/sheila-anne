@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        exclude: ["localhost:**"],
+        exclude: ["localhost:**", "/admin/**"],
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
         head: false
       }

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 import { Constants } from "../constants";
-import { InternalLink } from "./internal-link";
+import { SmartLink } from "./smart-link";
 
-export const Button = styled(InternalLink)`
+export const Button = styled(SmartLink)`
   display: inline-block;
   padding: 12px 16px 10px;
   font-size: 1rem;

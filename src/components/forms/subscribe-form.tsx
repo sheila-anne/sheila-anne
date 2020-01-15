@@ -9,6 +9,7 @@ import styled from "styled-components";
 
 import { Constants } from "../../constants";
 import { FormWrapperSection, Input } from "./form-elements";
+import { trackOnClick } from "./track-on-click";
 
 type PageNames = "theGrove" | "homepage";
 
@@ -88,7 +89,9 @@ const handleSubmit = async (
   e.stopPropagation();
   e.persist();
   e.preventDefault();
+
   setButtonText("Submitting...");
+  trackOnClick(page === "homepage" ? "Homepage Hubspot" : "The Grove Hubspot");
 
   const formValues = { page };
   const formElements = (Array.from(
@@ -157,11 +160,12 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
           <Input
             autoComplete="tel"
             backgroundColor={backgroundColor}
-            type="text"
             id="phone"
             inputMode="tel"
+            maxLength={11}
             name="phone"
-            placeholder="Phone (Optional)"
+            placeholder="Phone (optional)"
+            type="tel"
           />
         </p>
         <Submit name="SendMessage" type="submit">
