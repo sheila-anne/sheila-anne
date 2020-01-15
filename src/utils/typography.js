@@ -37,12 +37,10 @@ const theme = {
     p: {
       marginBottom: "1rem"
     },
-    ul: {
-      listStyle: "disc"
-    },
     "ul,ol": {
       marginBottom: "1rem",
-      marginLeft: rhythm(1)
+      marginLeft: rhythm(1),
+      listStyle: "none"
     },
     li: {
       padding: "5px"
@@ -70,7 +68,6 @@ const theme = {
       fontStyle: "italic"
     },
     a: {
-      boxShadow: "0 1px 0 0 currentColor",
       color: "#007acc",
       textDecoration: "none"
     },

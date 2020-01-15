@@ -28,6 +28,19 @@ const MainWrapper = styled.main`
   z-index: 100;
   height: 100%;
   max-height: 100%;
+
+  & > * li {
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      background-image: url(/img/pine-tree.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 0.5rem;
+    }
+  }
 `;
 
 const Layout: FC<GatsbyPage> = ({ children, location }) => {
