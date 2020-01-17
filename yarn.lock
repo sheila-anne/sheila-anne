@@ -6115,10 +6115,10 @@ gatsby-remark-footnotes@0.0.7:
     mdast-util-to-hast "5.0.0"
     unist-util-visit "1.4.0"
 
-gatsby-remark-google-analytics-track-links@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-google-analytics-track-links/-/gatsby-remark-google-analytics-track-links-0.0.2.tgz#8d13053aad78ede94ac016002a908720e44ada0d"
-  integrity sha512-gwN3js75EOADmtb2ZMre/cJ9iwoTwSC2mQnv2pwOw+FALGM+H4R/KhuSfnQdphI/SRSW1qjs3PfPCOimw1Nr6w==
+gatsby-remark-google-analytics-track-links@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-google-analytics-track-links/-/gatsby-remark-google-analytics-track-links-0.0.3.tgz#997065d7274e7d83f7401cf5ed90d791d833e5e9"
+  integrity sha512-toUxxacObBxW5susI5INhSNoFb3Ardtvu/Nyk/gPEYAoavqNTBDvXNkx9s7Vvno2ayxQdTEbVvO5GxctbID90g==
   dependencies:
     unist-util-visit "2.0.1"
 
