@@ -77,7 +77,12 @@ module.exports = {
               domainRegex: /http[s]*:\/\/[www.]*sheilaanne\.com[/]?/
             }
           },
-          `gatsby-remark-google-analytics-track-links`
+          {
+            resolve: `gatsby-remark-google-analytics-track-links`,
+            options: {
+              localLinkMatch: "https://www.sheilaanne.com"
+            }
+          }
         ]
       }
     },
