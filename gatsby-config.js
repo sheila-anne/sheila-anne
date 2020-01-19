@@ -80,7 +80,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-google-analytics-track-links`,
             options: {
-              localLinkMatch: "https://www.sheilaanne.com"
+              localLinkMatch: "sheilaanne.com"
             }
           }
         ]
