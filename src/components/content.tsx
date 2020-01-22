@@ -36,8 +36,6 @@ export const HTMLContent: FC<ContentProps> = ({
   />
 );
 
-const Content: FC<ContentProps> = ({ content, itemProp }) => (
+export const Content: FC<ContentProps> = ({ content, itemProp }) => (
   <ContentContainer itemProp={itemProp}>{content}</ContentContainer>
 );
-
-export default Content;

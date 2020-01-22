@@ -26,21 +26,6 @@ export const Input = styled.input<InputProps>`
     !!backgroundColor && `background-color: ${backgroundColor};`}
 `;
 
-export const FormWrapperSection = styled.section<FormWrapperProps>`
-  ${({ alignItems }) =>
-    applyStyle("align-items", !!alignItems ? alignItems : "center")}
-  display: flex;
-  flex-flow: column;
-  margin: 1rem auto;
-  ${({ centerText }) => !!centerText && `text-align: center;`}
-
-  & > * ${Input} {
-    display: block;
-    border: 1px solid ${Constants.Colors.gray};
-    border-radius: 5px;
-  }
-`;
-
 export const TextArea = styled.textarea`
   display: block;
   min-height: 150px;
@@ -49,5 +34,20 @@ export const TextArea = styled.textarea`
   @media (max-width: ${Constants.mobileWidth}) {
     margin-top: 1rem;
     min-width: 290px;
+  }
+`;
+
+export const FormWrapperSection = styled.section<FormWrapperProps>`
+  ${({ alignItems }) =>
+    applyStyle("align-items", !!alignItems ? alignItems : "center")}
+  display: flex;
+  flex-flow: column;
+  margin: 1rem auto;
+  ${({ centerText }) => !!centerText && `text-align: center;`}
+
+  & > * ${Input},${TextArea} {
+    display: block;
+    border: 1px solid ${Constants.Colors.gray};
+    border-radius: 5px;
   }
 `;

@@ -17,11 +17,6 @@ const SEO: FC<SEOProps> = ({ description, image, imageAlt, title, type }) => {
 
   return (
     <Helmet htmlAttributes={{ lang: `en` }} title={title}>
-      <link
-        rel="mask-icon"
-        href="/img/safari-pinned-tab.svg"
-        color={Constants.Colors.lightestBlue}
-      />
       <meta property="theme-color" content="#fff" />
       <meta property="og:image" content={ogImage} />
       <meta

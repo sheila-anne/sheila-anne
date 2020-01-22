@@ -117,7 +117,9 @@ module.exports = {
         headers: {
           "/*.woff2": ["Cache-Control:  max-age=31536000"],
           "/*.png": ["Cache-Control:  max-age=31536000"],
-          "/*.svg": ["Cache-Control:  max-age=31536000"]
+          "/*.svg": ["Cache-Control:  max-age=31536000"],
+          "/*.jpg": ["Cache-Control:  max-age=31536000"],
+          "/*.webp": ["Cache-Control:  max-age=31536000"]
         },
         mergeCachingHeaders: true
       }

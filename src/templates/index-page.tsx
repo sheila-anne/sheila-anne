@@ -1,5 +1,6 @@
-import React, { FC } from "react";
+import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import {
@@ -171,14 +172,15 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     />
   );
 
+  const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
+
   const bannerImage = (
     <FullWidthImage
-      fluid={
-        !!safeImage && !!safeImage.childImageSharp
-          ? safeImage.childImageSharp.fluid
-          : safeImage
-      }
+      critical={true}
+      fadeIn="soft"
+      fluid={safeImage?.childImageSharp?.fluid || safeImage}
       moveHeadlineOnMobile={true}
+      preserveStackingContext={true}
       title="Sheila Anne Life Coaching cover photo"
     >
       {!isMobile && banners}
@@ -187,6 +189,19 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
   return (
     <>
+      {!!bannerImagesrc && (
+        <Helmet>
+          <link
+            href={bannerImagesrc}
+            rel="preload"
+            as="image"
+            key={bannerImagesrc}
+            crossOrigin="anoynmous"
+            type="jpg"
+          />
+        </Helmet>
+      )}
+
       <PreviewCompatibleBanner
         isPreview={isPreview}
         Component={bannerImage}

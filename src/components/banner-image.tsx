@@ -83,7 +83,9 @@ export const BannerImage: FC<BannerImageProps> = ({
         alt={title}
         containImage={containImage}
         critical={true}
+        fadeIn="soft"
         fluid={imageData}
+        preserveStackingContext={true}
         moveHeadlineOnMobile={moveHeadlineOnMobile}
         title={title}
       >
