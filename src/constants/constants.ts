@@ -8,13 +8,7 @@ const Constants = {
   Colors: ConstantColors,
   baseUrl: "https://www.sheilaanne.com",
   mobileBreakpoint,
-  mobileWidth: mobileBreakpoint + "px",
-  social: {
-    facebook: "https://facebook.com/sheilaannecoaching",
-    facebookTitle: "Sheila Anne on Facebook",
-    instagram: "https://instagram.com/shetravls",
-    instagramTitle: "Follow Sheila Anne on Instagram"
-  }
+  mobileWidth: mobileBreakpoint + "px"
 };
 
 export { Constants };

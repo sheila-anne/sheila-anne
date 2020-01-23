@@ -1,15 +1,37 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Emoji } from "./emoji";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
-
-import { Constants } from "../constants";
-import { FooterImage } from "./footer/";
 import { SmartLink } from "./smart-link";
-import { Emoji } from "./emoji";
 
-const FooterNavItem = styled(SmartLink)`
+type SocialLinks = {
+  image: string;
+  url: string;
+  title: string;
+};
+
+const SocialItems = [
+  {
+    image: facebook,
+    title: "Follow Sheila Anne on Facebook",
+    url: "https://facebook.com/sheilaannecoaching"
+  },
+  {
+    image: instagram,
+    title: "Follow Sheila Anne on Instagram",
+    url: "https://instagram.com/shetravls"
+  }
+] as SocialLinks[];
+
+const SocialImage = styled.img`
+  height: 1em;
+  margin-bottom: -0.2rem;
+  width: 1em;
+`;
+
+const SocialLink = styled(SmartLink)`
   color: #000;
   border-radius: 2px;
   cursor: pointer;
@@ -18,8 +40,8 @@ const FooterNavItem = styled(SmartLink)`
   text-decoration: none;
 `;
 
-const SocialDiv = styled.div`
-  ${FooterNavItem} {
+export const SocialWrapper = styled.div`
+  ${SocialLink} {
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: #f5f5f5;
@@ -31,22 +53,25 @@ const SocialDiv = styled.div`
   }
 `;
 
+export const FixedSocialItems = () => (
+  <>
+    {SocialItems.map(socialItem => (
+      <SocialLink
+        key={socialItem.url}
+        title={socialItem.title}
+        to={socialItem.url}
+      >
+        <SocialImage src={socialItem.image} alt={socialItem.title} />
+      </SocialLink>
+    ))}
+  </>
+);
+
 export const Social = () => (
-  <SocialDiv>
-    <FooterNavItem
-      title={Constants.social.facebookTitle}
-      to={Constants.social.facebook}
-    >
-      <FooterImage src={facebook} alt={Constants.social.facebookTitle} />
-    </FooterNavItem>
-    <FooterNavItem
-      title={Constants.social.instagramTitle}
-      to={Constants.social.instagram}
-    >
-      <FooterImage src={instagram} alt={Constants.social.instagramTitle} />
-    </FooterNavItem>
-    <FooterNavItem title="Contact Sheila Anne" to="/contact/">
+  <SocialWrapper>
+    <FixedSocialItems />
+    <SocialLink title="Contact Sheila Anne" to="/contact/">
       <Emoji symbol={`\u2709`} label="Email" />
-    </FooterNavItem>
-  </SocialDiv>
+    </SocialLink>
+  </SocialWrapper>
 );

@@ -140,6 +140,7 @@ const MobileMenu = styled.div<{ isOpen: boolean }>`
 
 const getNavLinkItems = (location: Location, show = false) => {
   const navLinks = [
+    { to: "/about/", text: "About", title: "About Sheila Anne" },
     {
       to: "/the-grove/",
       text: "The Grove",
@@ -155,9 +156,7 @@ const getNavLinkItems = (location: Location, show = false) => {
       to: "/the-mat/",
       text: "The Mat",
       title: "Yoga & Intentional Movement"
-    },
-
-    { to: "/about/", text: "About", title: "About Sheila Anne" }
+    }
   ];
   !!show &&
     location.pathname !== "/" &&

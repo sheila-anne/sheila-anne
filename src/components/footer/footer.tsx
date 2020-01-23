@@ -4,8 +4,6 @@ import styled from "styled-components";
 import sheilaLogo from "../../img/sheilaLogo.svg";
 
 import { Constants } from "../../constants";
-import { FooterColumn } from "./footer-column";
-import { FooterImage } from "./footer-image";
 import { SmartLink } from "../smart-link";
 import { FooterSocial } from "./footer-social";
 
@@ -17,6 +15,20 @@ const StyledFooter = styled.footer`
 
 const FlexFooter = styled.div`
   display: flex;
+`;
+
+const FooterColumn = styled.div`
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  width: 33.33%;
+`;
+
+const FooterImage = styled.img`
+  height: 1em;
+  margin-bottom: -0.2rem;
+  width: 1em;
 `;
 
 const FooterList = styled.ul`
