@@ -27,11 +27,8 @@ const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
   flex: none;
   padding: 10px;
   margin: 1rem auto;
+  text-align: center;
   width: 45%;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    padding: 10px;
-  }
 `;
 
 const FlexCenteredText = styled(CenteredText)`

@@ -1,35 +1,39 @@
 import React, { FC, useState } from "react";
 import styled from "styled-components";
 
+import { applyStyle } from "../utils";
 import { Burger } from "./burger";
 import { Constants } from "../constants";
-import { useWindow } from "../hooks/useWindow";
-import { applyStyle } from "../utils";
 import { Social } from "./social";
 import { SmartLink } from "./smart-link";
+import { useWindow } from "../hooks/useWindow";
 
 type NavProps = {
   location: Location;
 };
 
-type NavHeaderProps = NavProps & {
+type NavHeaderProps = NavProps & MobileNavProps;
+
+type OpenNavProps = {
+  isOpen?: boolean;
+};
+
+type MobileNavProps = {
   isMobile: boolean;
 };
+
+type OpenAndMobile = OpenNavProps & MobileNavProps;
 
 const ColoredInternalLink = styled(SmartLink)<{
   "aria-current"?: boolean;
 }>`
   ${props =>
-    !!props["aria-current"] && "border: 1px solid white; border-radius: 5rem;"}
+    !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
-const CenteredText = styled.div<{ isOpen: boolean; isMobile: boolean }>`
+const CenteredText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
     !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
-
-  transition: transform 0.3s ease-in-out;
-  transform: ${({ isOpen, isMobile }) =>
-    !!isOpen && !!isMobile ? "translateX(-16%)" : ""};
   padding-top: 5px;
   text-align: center;
 `;
@@ -51,8 +55,9 @@ const Header = styled.header<{ flipColors: boolean }>`
   }
 `;
 
-const StyledNav = styled.nav`
-  background-color: #fff;
+const StyledNav = styled.nav<OpenNavProps>`
+  background-color: ${({ isOpen }) =>
+    !!isOpen ? Constants.Colors.blue : "#FFF"};
   width: 100%;
 
   @media (max-width: ${Constants.mobileWidth}) {
@@ -90,11 +95,11 @@ const Headline = styled.h1`
   @media (max-width: ${Constants.mobileWidth}) {
     font-size: 35px;
     margin: 0;
-    padding: 5px;
+    padding: 0;
   }
 `;
 
-const NavLinkList = styled.ol<{ isOpen?: boolean }>`
+const NavLinkList = styled.ol<OpenNavProps>`
   list-style-type: none;
   margin: 0;
 
@@ -109,20 +114,15 @@ const NavListItem = styled.li`
   padding-top: 10px;
 `;
 
-const MobileMenu = styled.div<{ isOpen: boolean }>`
+const MobileMenu = styled.div<OpenNavProps>`
   background: ${Constants.Colors.blue};
   height: 100vh;
   opacity: ${({ isOpen }) => (!!isOpen ? "1" : "0")};
   padding: 0.5rem;
-  bottom: 0;
-  left: 0;
+  position: relative;
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen }) =>
-    isOpen ? "translate(0,0)" : "translate(-100%,-50%)"};
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    width: 100%;
-  }
+    isOpen ? "translate(0,0)" : "translate(0, -120%)"};
 
   ${ColoredInternalLink} {
     display: block;
@@ -138,7 +138,7 @@ const MobileMenu = styled.div<{ isOpen: boolean }>`
   }
 `;
 
-const getNavLinkItems = (location: Location, show = false) => {
+const getNavLinkItems = (location: Location, showHomeLink = false) => {
   const navLinks = [
     { to: "/about/", text: "About", title: "About Sheila Anne" },
     {
@@ -158,7 +158,7 @@ const getNavLinkItems = (location: Location, show = false) => {
       title: "Yoga & Intentional Movement"
     }
   ];
-  !!show &&
+  !!showHomeLink &&
     location.pathname !== "/" &&
     navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
@@ -181,7 +181,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
 
   return (
     <Header flipColors={!!isOpen && !!isMobile}>
-      <StyledNav>
+      <StyledNav isOpen={isOpen}>
         <CenteredText isMobile={isMobile} isOpen={isOpen}>
           <Headline>
             <ColoredInternalLink

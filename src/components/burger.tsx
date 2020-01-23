@@ -14,7 +14,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
   background: transparent;
   border: none;
   cursor: pointer;
-  display: none;
+  display: flex;
   flex-direction: column;
   height: 2rem;
   justify-content: space-around;
@@ -29,7 +29,8 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${Constants.Colors.navLinkText};
+    background: ${({ isOpen }) =>
+      !!isOpen ? "#FFF" : Constants.Colors.navLinkText};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -49,11 +50,6 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
     :nth-child(3) {
       transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "rotate(0)")};
     }
-  }
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    display: flex;
-    height: 35px;
   }
 `;
 

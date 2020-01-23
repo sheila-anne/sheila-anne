@@ -68,7 +68,7 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
         backgroundColor={Constants.Colors.theGroveGreenGray}
         content={content}
         margin="0 0 1rem 0"
-        padding="5px"
+        padding="5px 2rem"
       />
       <FlexContainer>
         <FlexColumn>

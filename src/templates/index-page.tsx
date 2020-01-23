@@ -109,7 +109,11 @@ const FlexLinkContainer = styled(FlexContainer)`
   padding: 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
 `;
 

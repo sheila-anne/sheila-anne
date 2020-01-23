@@ -31,7 +31,7 @@ const FlexSpan = styled.span`
 
 const FlexTitle = styled.h3`
   background-color: ${Constants.Colors.theGroveTeal};
-  border-radius: 10px;
+  border-radius: 1rem;
   color: white;
   margin: 2rem 0;
   padding: 2rem 4rem;
@@ -59,7 +59,7 @@ const OffsetButton = styled(Button)`
 const Article = styled.article<ArticleProps>`
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
-  border-radius: 4px;
+  border-radius: 1rem;
   color: #000;
   position: relative;
   padding: 0 1rem 1rem 1rem;

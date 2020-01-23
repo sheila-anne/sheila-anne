@@ -12,10 +12,9 @@ type FlexContainerProps = BackgroundColorProps & {
   margin?: string;
 };
 
-type FlexColumnProps = BackgroundColorProps & {
-  alignSelf?: string;
-  backgroundColor?: string;
+type FlexColumnProps = FlexContainerProps & {
   padding?: string;
+  alignSelf?: string;
 };
 
 const BackgroundColorDiv = styled.div<BackgroundColorProps>`
@@ -24,6 +23,7 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 `;
 
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
+border-radius: 1rem;
   display: flex;
   flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
@@ -35,13 +35,13 @@ export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
 
 export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
   ${({ alignSelf }) => applyStyle("align-self", alignSelf)}
+  border-radius: 1rem;
   flex: none;
   ${({ padding }) => applyStyle("padding", padding)}
   width: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {
     width: 100%;
-    padding: inherit;
   }
 `;
 

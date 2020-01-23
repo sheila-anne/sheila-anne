@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styled from "styled-components";
 
 import { applyStyle } from "../utils/";
+import { Constants } from "../constants";
 
 type ContentContainerProps = {
   backgroundColor?: string;
@@ -18,6 +19,10 @@ const ContentContainer = styled.div<ContentContainerProps>`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
   ${({ margin }) => applyStyle("margin", margin)}
   ${({ padding }) => applyStyle("padding", padding)}
+
+  @media(max-width: ${Constants.mobileWidth}) {
+    border-radius: 1rem;
+  }
 `;
 
 export const HTMLContent: FC<ContentProps> = ({
