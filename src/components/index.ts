@@ -1,4 +1,8 @@
-export { BannerImage, FullWidthImage } from "./banner-image";
+export {
+  BannerImage,
+  FullWidthImage,
+  ImageHeadlineContainer
+} from "./banner-image";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
 export { Button } from "./button";

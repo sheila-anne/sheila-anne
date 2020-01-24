@@ -34,17 +34,28 @@ const ColoredInternalLink = styled(SmartLink)<{
 const CenteredText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
     !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
+  display: flex;
+  flex-basis: 33%;
   padding-top: 5px;
-  text-align: center;
+  margin: 0 -2rem 0 2rem;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    flex-basis: 100%;
+    height: 50px;
+  }
+`;
+
+const DesktopSocialWrapper = styled.div`
+  display: flex;
+  flex-basis: 33%;
+  align-self: center;
+  justify-content: flex-end;
 `;
 
 const Header = styled.header<{ flipColors: boolean }>`
-  display: flex;
   left: 0;
   letter-spacing: 0.1em;
-  justify-content: center;
   position: sticky;
-  text-align: center;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -56,11 +67,15 @@ const Header = styled.header<{ flipColors: boolean }>`
 `;
 
 const StyledNav = styled.nav<OpenNavProps>`
+  align-items: center;
   background-color: ${({ isOpen }) =>
     !!isOpen ? Constants.Colors.blue : "#FFF"};
+  display: flex;
+  height: 75px;
   width: 100%;
 
   @media (max-width: ${Constants.mobileWidth}) {
+    display: block;
     height: 50px;
   }
 `;
@@ -83,7 +98,6 @@ const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
 `;
 
 const Headline = styled.h1`
-  display: block;
   font-size: 45px;
   font-weight: 100;
   margin: 5px 0;
@@ -94,17 +108,18 @@ const Headline = styled.h1`
 
   @media (max-width: ${Constants.mobileWidth}) {
     font-size: 35px;
-    margin: 0;
     padding: 0;
   }
 `;
 
 const NavLinkList = styled.ol<OpenNavProps>`
+  flex-basis: 33%;
   list-style-type: none;
   margin: 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "flex")}
+    flex-basis: 100%;
   }
 `;
 
@@ -117,9 +132,9 @@ const NavListItem = styled.li`
 const MobileMenu = styled.div<OpenNavProps>`
   background: ${Constants.Colors.blue};
   height: 100vh;
-  opacity: ${({ isOpen }) => (!!isOpen ? "1" : "0")};
   padding: 0.5rem;
   position: relative;
+  text-align: center;
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen }) =>
     isOpen ? "translate(0,0)" : "translate(0, -120%)"};
@@ -208,9 +223,14 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
             </MobileMenu>
           </>
         ) : (
-          <NavLinkList id="desktopNavLinks">
-            {getNavLinkItems(location)}
-          </NavLinkList>
+          <>
+            <NavLinkList id="desktopNavLinks">
+              {getNavLinkItems(location)}
+            </NavLinkList>
+            <DesktopSocialWrapper>
+              <Social />
+            </DesktopSocialWrapper>
+          </>
         )}
       </StyledNav>
     </Header>

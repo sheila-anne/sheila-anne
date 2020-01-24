@@ -10,6 +10,7 @@ import {
   Features,
   FlexContainer,
   FullWidthImage,
+  ImageHeadlineContainer,
   Layout,
   PreviewCompatibleBanner,
   SubscribeForm,
@@ -88,13 +89,8 @@ const BannerLink = styled(SmartLink)`
   text-decoration: underline;
 `;
 
-const BannerHeadline = styled.h1<HeadlineProps>`
-  box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
-    ${Constants.Colors.blue} -0.5rem 0px 0px;
-  background-color: ${Constants.Colors.blue};
-  color: #fff;
+const BannerHeadline = styled(ImageHeadlineContainer)<HeadlineProps>`
   ${({ inline }) => !!inline && `display: inline;`}
-  padding: 0.5rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ lessMargin }) => !!lessMargin && "margin: 0;"}
@@ -123,7 +119,7 @@ const HomepageHeadline = styled.h1`
   padding: 1rem;
 `;
 
-const ImageHeadlineContainer = styled.div`
+const BannerHeadlineWrapper = styled.div`
   align-items: flex-start;
   display: flex;
   height: 150px;
@@ -132,20 +128,26 @@ const ImageHeadlineContainer = styled.div`
   width: 100%;
 
   @media (max-width: ${Constants.mobileWidth}) {
+    margin-top: 3rem;
     margin-bottom: 4rem;
   }
 `;
 
 const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
-  <ImageHeadlineContainer>
-    <BannerHeadline>{bannerTitle}</BannerHeadline>
-    <BannerHeadline as="h3" inline={!isMobile} lessMargin={isMobile}>
+  <BannerHeadlineWrapper>
+    <BannerHeadline color={Constants.Colors.blue}>{bannerTitle}</BannerHeadline>
+    <BannerHeadline
+      color={Constants.Colors.blue}
+      as="h3"
+      inline={!isMobile}
+      lessMargin={isMobile}
+    >
       {bannerSubtitle}{" "}
       <BannerLink to="/the-grove" title="Life Coaching in The Grove">
         Start here.
       </BannerLink>
     </BannerHeadline>
-  </ImageHeadlineContainer>
+  </BannerHeadlineWrapper>
 );
 
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
@@ -246,7 +248,12 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             </Button>
           </FlexLinkContainer>
           <CenteredText>
-            <BannerHeadline as="h3" lessMargin={true}>
+            <BannerHeadline
+              as="h3"
+              color={Constants.Colors.blue}
+              height="4rem"
+              lessMargin={true}
+            >
               Latest from the Writing Desk
             </BannerHeadline>
           </CenteredText>

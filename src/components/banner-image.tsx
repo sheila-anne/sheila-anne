@@ -47,22 +47,25 @@ export const FullWidthImage = styled(BackgroundImage)<FullWidthImageProps>`
 
 export const ImageHeadlineContainer = styled.h1<{
   color: string;
+  height?: string;
   isPreview?: boolean;
   moveHeadlineOnMobile?: boolean;
 }>`
-  box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
   background-color: ${({ color }) => color};
+  border-radius: 1rem;
+  box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 150px;
-  justify-content: space-around;
+  height: ${({ height }) => (!!height ? height : "150px")};
+  justify-content: center;
   line-height: 1;
   padding: 1rem;
   ${({ isPreview }) => !!isPreview && "position: fixed; height: 50px;"}
 
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ moveHeadlineOnMobile }) => !!moveHeadlineOnMobile && `margin-top: 0;`}
+    text-align: center;
   }
 `;
 

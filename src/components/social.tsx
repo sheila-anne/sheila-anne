@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Constants } from "../constants";
 import { Emoji } from "./emoji";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
@@ -41,15 +42,18 @@ const SocialLink = styled(SmartLink)`
 `;
 
 export const SocialWrapper = styled.div`
+  margin-right: 2rem;
   ${SocialLink} {
-    padding: 0.5rem;
+    background-color: #fff;
     border-radius: 1rem;
-    background-color: #f5f5f5;
-    margin: 0.5rem;
-    width: 1rem;
-    height: 1rem;
-    vertical-align: middle;
     display: inline;
+    height: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 1rem;
+  }
+  @media (max-width: ${Constants.mobileWidth}) {
+    margin-right: 0;
   }
 `;
 
@@ -71,7 +75,7 @@ export const Social = () => (
   <SocialWrapper>
     <FixedSocialItems />
     <SocialLink title="Contact Sheila Anne" to="/contact/">
-      <Emoji symbol={`\u2709`} label="Email" />
+      <Emoji symbol={`\u2709`} label="Contact Sheila Anne" />
     </SocialLink>
   </SocialWrapper>
 );
