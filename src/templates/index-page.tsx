@@ -138,7 +138,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
   const safeImage = image as NestedImage;
 
-  const banners = (
+  const Banners = () => (
     <BannerHeadlines
       bannerSubtitle={bannerSubtitle}
       bannerTitle={bannerTitle}
@@ -157,7 +157,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       preserveStackingContext={true}
       title="Sheila Anne Life Coaching cover photo"
     >
-      {!isMobile && banners}
+      {!isMobile && <Banners />}
     </FullWidthImage>
   );
 
@@ -179,10 +179,10 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       <PreviewCompatibleBanner
         isPreview={isPreview}
         Component={bannerImage}
-        ComponentChildren={banners}
+        ComponentChildren={<Banners />}
         image={image}
       />
-      {isMobile && banners}
+      {isMobile && <Banners />}
       <section>
         <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
           <HomepageHeadline>{description}</HomepageHeadline>

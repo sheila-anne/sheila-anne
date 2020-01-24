@@ -23,7 +23,7 @@ export const FullWidthImage = styled(BackgroundImage)<FullWidthImageProps>`
   background-attachment: fixed;
   background-size: ${({ containImage }) =>
     !!containImage ? "contain" : "cover"};
-  background-position: center;
+  background-position: bottom;
   display: flex;
   justify-content: center;
   align-items: center;
