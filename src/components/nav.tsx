@@ -33,7 +33,7 @@ const ColoredInternalLink = styled(SmartLink)<{
 
 const CenteredText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
-    !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
+    !!isOpen && isMobile ? Constants.Colors.blue : "inherit"};
   display: flex;
   flex-basis: 33%;
   padding-top: 5px;
@@ -66,7 +66,6 @@ const Header = styled.header<{ flipColors: boolean }>`
   letter-spacing: 0.1em;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 1000;
 
   ${ColoredInternalLink} {
@@ -81,7 +80,6 @@ const StyledNav = styled.nav<OpenNavProps>`
     !!isOpen ? Constants.Colors.blue : "#FFF"};
   display: flex;
   height: 75px;
-  width: 100%;
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
@@ -141,10 +139,8 @@ const NavListItem = styled.li`
 
 const MobileMenu = styled.div<OpenNavProps>`
   background: ${Constants.Colors.blue};
-  height: 100vh;
+  height: 110vh;
   padding: 0.5rem;
-  position: relative;
-  text-align: center;
   transition: transform 0.3s ease-in-out;
   transform: ${({ isOpen }) =>
     isOpen ? "translate(0,0)" : "translate(0, -120%)"};
@@ -205,7 +201,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Header flipColors={!!isOpen && !!isMobile}>
+    <Header flipColors={!!isOpen && isMobile}>
       <StyledNav isOpen={isOpen}>
         <CenteredText isMobile={isMobile} isOpen={isOpen}>
           <Headline>
