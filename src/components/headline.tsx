@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { applyStyle } from "../utils";
 import { Constants } from "../constants";
 
 type HeadlineProps = {
@@ -18,10 +19,13 @@ export const Headline = styled.h1<HeadlineProps>`
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: ${({ height }) => (!!height ? height : "150px")};
+    ${({ height }) => applyStyle("height", height)}
     justify-content: center;
     line-height: 1;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     ${({ isPreview }) => !!isPreview && "position: fixed; height: 50px;"}
 
     ${({ inline }) => !!inline && `display: inline;`}
