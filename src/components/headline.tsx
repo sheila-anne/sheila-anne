@@ -14,6 +14,7 @@ type HeadlineProps = {
 
 export const Headline = styled.h1<HeadlineProps>`
     background-color: ${({ color }) => color};
+    border: 5px ${({ color }) => color} solid;
     border-radius: 1rem;
     box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
     color: #fff;
