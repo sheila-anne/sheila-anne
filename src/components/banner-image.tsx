@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import BackgroundImage from "gatsby-background-image";
 import { Constants } from "../constants";
+import { Headline } from "./headline";
 import { useWindow } from "../hooks/useWindow";
-import { applyStyle } from "../utils";
 
 type FullWidthImageProps = {
   containImage?: boolean;
@@ -45,30 +45,6 @@ export const FullWidthImage = styled(BackgroundImage)<FullWidthImageProps>`
   }
 `;
 
-export const ImageHeadlineContainer = styled.h1<{
-  color: string;
-  height?: string;
-  isPreview?: boolean;
-  moveHeadlineOnMobile?: boolean;
-}>`
-  background-color: ${({ color }) => color};
-  border-radius: 1rem;
-  box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: ${({ height }) => (!!height ? height : "150px")};
-  justify-content: center;
-  line-height: 1;
-  padding: 1rem;
-  ${({ isPreview }) => !!isPreview && "position: fixed; height: 50px;"}
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    ${({ moveHeadlineOnMobile }) => !!moveHeadlineOnMobile && `margin-top: 0;`}
-    text-align: center;
-  }
-`;
-
 export const BannerImage: FC<BannerImageProps> = ({
   containImage,
   color,
@@ -93,18 +69,16 @@ export const BannerImage: FC<BannerImageProps> = ({
         title={title}
       >
         {((moveHeadlineOnMobile && !isMobile) || !moveHeadlineOnMobile) && (
-          <ImageHeadlineContainer color={headlineColor}>
-            {imageHeadline}
-          </ImageHeadlineContainer>
+          <Headline color={headlineColor}>{imageHeadline}</Headline>
         )}
       </FullWidthImage>
       {!!isMobile && !!moveHeadlineOnMobile && (
-        <ImageHeadlineContainer
+        <Headline
           color={headlineColor}
           moveHeadlineOnMobile={moveHeadlineOnMobile}
         >
           {imageHeadline}
-        </ImageHeadlineContainer>
+        </Headline>
       )}
     </>
   );

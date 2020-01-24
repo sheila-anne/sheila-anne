@@ -1,8 +1,4 @@
-export {
-  BannerImage,
-  FullWidthImage,
-  ImageHeadlineContainer
-} from "./banner-image";
+export { BannerImage, FullWidthImage } from "./banner-image";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
 export { Button } from "./button";
@@ -12,6 +8,7 @@ export { CenteredText } from "./centered-text";
 export { Features } from "./features";
 export { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";
 export { Footer } from "./footer";
+export { Headline } from "./headline";
 export { Layout } from "./layout";
 export { Nav } from "./nav";
 export {

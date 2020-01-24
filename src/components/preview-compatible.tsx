@@ -2,7 +2,7 @@ import React, { FC, ReactElement } from "react";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
-import { ImageHeadlineContainer } from "./banner-image";
+import { Headline } from "./headline";
 import { FlexImageCSS } from "./flex";
 
 type PreviewCompatibleBannerProps = {
@@ -54,13 +54,9 @@ export const PreviewCompatibleBannerHeadline: FC<PreviewCompatibleBannerHeadline
   imageHeadline,
   isPreview
 }) => (
-  <ImageHeadlineContainer
-    color={color}
-    isPreview={isPreview}
-    moveHeadlineOnMobile={true}
-  >
+  <Headline color={color} isPreview={isPreview} moveHeadlineOnMobile={true}>
     {imageHeadline}
-  </ImageHeadlineContainer>
+  </Headline>
 );
 
 export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({

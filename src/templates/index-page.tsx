@@ -10,7 +10,7 @@ import {
   Features,
   FlexContainer,
   FullWidthImage,
-  ImageHeadlineContainer,
+  Headline,
   Layout,
   PreviewCompatibleBanner,
   SubscribeForm,
@@ -60,41 +60,9 @@ type IndexPageProps = {
   data: IndexPageData;
 } & BaseGatsbyPage;
 
-type HeadlineProps = {
-  lessMargin?: boolean;
-  inline?: boolean;
-};
-
-const Container = styled.div`
-  flex-grow: 1;
-  margin: 0 1rem;
-  position: relative;
-  width: auto;
-
-  @media (min-width: 1024px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1216px) {
-    max-width: 1152;
-  }
-
-  @media (min-width: 1408px) {
-    max-width: 1344px;
-  }
-`;
-
 const BannerLink = styled(SmartLink)`
   color: #fff;
   text-decoration: underline;
-`;
-
-const BannerHeadline = styled(ImageHeadlineContainer)<HeadlineProps>`
-  ${({ inline }) => !!inline && `display: inline;`}
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    ${({ lessMargin }) => !!lessMargin && "margin: 0;"}
-  }
 `;
 
 const FlexLinkContainer = styled(FlexContainer)`
@@ -135,8 +103,8 @@ const BannerHeadlineWrapper = styled.div`
 
 const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
   <BannerHeadlineWrapper>
-    <BannerHeadline color={Constants.Colors.blue}>{bannerTitle}</BannerHeadline>
-    <BannerHeadline
+    <Headline color={Constants.Colors.blue}>{bannerTitle}</Headline>
+    <Headline
       color={Constants.Colors.blue}
       as="h3"
       inline={!isMobile}
@@ -146,7 +114,7 @@ const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
       <BannerLink to="/the-grove" title="Life Coaching in The Grove">
         Start here.
       </BannerLink>
-    </BannerHeadline>
+    </Headline>
   </BannerHeadlineWrapper>
 );
 
@@ -216,52 +184,50 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       />
       {isMobile && banners}
       <section>
-        <Container>
-          <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-            <HomepageHeadline>{description}</HomepageHeadline>
-          </FlexContainer>
-          <FlexContainer
+        <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
+          <HomepageHeadline>{description}</HomepageHeadline>
+        </FlexContainer>
+        <FlexContainer
+          backgroundColor={Constants.Colors.featuredPost}
+          margin="1rem 0"
+        >
+          <SubscribeForm
             backgroundColor={Constants.Colors.featuredPost}
-            margin="1rem 0"
+            formDescription={formSubHeadline}
+            formParagraph={formParagraph}
+            formTitle={formHeadline}
+            page="homepage"
+          />
+        </FlexContainer>
+        <CenteredText>
+          <h3>{mainpitch.title}</h3>
+          <p>{mainpitch.description}</p>
+        </CenteredText>
+        <FlexContainer>
+          <Features gridItems={intro.blurbs} />
+        </FlexContainer>
+        <FlexLinkContainer>
+          <Button to="/the-grove/" title="Learn more in the Grove">
+            Life Coaching in The Grove
+          </Button>
+          <Button to="/about/" title="More about Sheila Anne">
+            About
+          </Button>
+        </FlexLinkContainer>
+        <CenteredText>
+          <Headline
+            as="h3"
+            color={Constants.Colors.blue}
+            height="4rem"
+            lessMargin={true}
           >
-            <SubscribeForm
-              backgroundColor={Constants.Colors.featuredPost}
-              formDescription={formSubHeadline}
-              formParagraph={formParagraph}
-              formTitle={formHeadline}
-              page="homepage"
-            />
-          </FlexContainer>
-          <CenteredText>
-            <h3>{mainpitch.title}</h3>
-            <p>{mainpitch.description}</p>
-          </CenteredText>
-          <FlexContainer>
-            <Features gridItems={intro.blurbs} />
-          </FlexContainer>
-          <FlexLinkContainer>
-            <Button to="/the-grove/" title="Learn more in the Grove">
-              Life Coaching in The Grove
-            </Button>
-            <Button to="/about/" title="More about Sheila Anne">
-              About
-            </Button>
-          </FlexLinkContainer>
-          <CenteredText>
-            <BannerHeadline
-              as="h3"
-              color={Constants.Colors.blue}
-              height="4rem"
-              lessMargin={true}
-            >
-              Latest from the Writing Desk
-            </BannerHeadline>
-          </CenteredText>
-          <BlogRoll posts={posts} />
-          <CenteredText>
-            <Button to="/writing-desk/">Read more from the blog</Button>
-          </CenteredText>
-        </Container>
+            Latest from the Writing Desk
+          </Headline>
+        </CenteredText>
+        <BlogRoll posts={posts} />
+        <CenteredText>
+          <Button to="/writing-desk/">Read more from the blog</Button>
+        </CenteredText>
       </section>
     </>
   );
