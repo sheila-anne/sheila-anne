@@ -41,8 +41,13 @@ const SocialLink = styled(SmartLink)`
   text-decoration: none;
 `;
 
-export const SocialWrapper = styled.div`
+export const SocialWrapper = styled.ul`
+  align-self: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin-right: 2rem;
+
   ${SocialLink} {
     background-color: #fff;
     border-radius: 1rem;
@@ -52,14 +57,11 @@ export const SocialWrapper = styled.div`
     padding: 0.5rem;
     width: 1rem;
   }
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-right: 0;
-  }
 `;
 
-export const FixedSocialItems = () => (
-  <>
-    {SocialItems.map(socialItem => (
+export const FixedSocialItems = () =>
+  SocialItems.map(socialItem => (
+    <li>
       <SocialLink
         key={socialItem.url}
         title={socialItem.title}
@@ -67,15 +69,16 @@ export const FixedSocialItems = () => (
       >
         <SocialImage src={socialItem.image} alt={socialItem.title} />
       </SocialLink>
-    ))}
-  </>
-);
+    </li>
+  ));
 
-export const Social = () => (
-  <SocialWrapper>
-    <FixedSocialItems />
-    <SocialLink title="Contact Sheila Anne" to="/contact/">
-      <Emoji symbol={`\u2709`} label="Contact Sheila Anne" />
-    </SocialLink>
+export const Social = ({ id }: { id?: string }) => (
+  <SocialWrapper id={id}>
+    {FixedSocialItems()}
+    <li>
+      <SocialLink title="Contact Sheila Anne" to="/contact/">
+        <Emoji symbol={`\u2709`} label="Contact Sheila Anne" />
+      </SocialLink>
+    </li>
   </SocialWrapper>
 );

@@ -46,10 +46,19 @@ const CenteredText = styled.div<OpenAndMobile>`
 `;
 
 const DesktopSocialWrapper = styled.div`
+  align-items: center;
   display: flex;
   flex-basis: 33%;
-  align-self: center;
   justify-content: flex-end;
+
+  & * {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    display: none;
+  }
 `;
 
 const Header = styled.header<{ flipColors: boolean }>`
@@ -113,12 +122,13 @@ const Headline = styled.h1`
 `;
 
 const NavLinkList = styled.ol<OpenNavProps>`
+  display: flex;
   flex-basis: 33%;
   list-style-type: none;
   margin: 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "flex")}
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
     flex-basis: 100%;
   }
 `;
@@ -218,8 +228,8 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
                 aria-current={isOpen}
               >
                 {getNavLinkItems(location, isMobile && isOpen)}
-              </NavLinkList>{" "}
-              <Social />
+              </NavLinkList>
+              <Social id="socialMobile" />
             </MobileMenu>
           </>
         ) : (
@@ -228,7 +238,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
               {getNavLinkItems(location)}
             </NavLinkList>
             <DesktopSocialWrapper>
-              <Social />
+              <Social id="socialDesktop" />
             </DesktopSocialWrapper>
           </>
         )}
