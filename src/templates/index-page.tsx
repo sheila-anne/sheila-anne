@@ -148,7 +148,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
   const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
 
-  const bannerImage = (
+  const BannerImage = () => (
     <FullWidthImage
       critical={true}
       fadeIn="soft"
@@ -178,7 +178,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
       <PreviewCompatibleBanner
         isPreview={isPreview}
-        Component={bannerImage}
+        Component={<BannerImage />}
         ComponentChildren={<Banners />}
         image={image}
       />

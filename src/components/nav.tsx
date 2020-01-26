@@ -35,7 +35,7 @@ const CenteredText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
     !!isOpen && isMobile ? Constants.Colors.blue : "inherit"};
   display: flex;
-  flex-basis: 33%;
+  flex-basis: 25%;
   padding-top: 5px;
   margin: 0 -2rem 0 2rem;
 
@@ -43,12 +43,16 @@ const CenteredText = styled.div<OpenAndMobile>`
     flex-basis: 100%;
     height: 50px;
   }
+
+  @media (max-width: 1024px) {
+    flex-basis: 30%;
+  }
 `;
 
 const DesktopSocialWrapper = styled.div`
   align-items: center;
   display: flex;
-  flex-basis: 33%;
+  flex-basis: 20%;
   justify-content: flex-end;
 
   & * {
@@ -121,7 +125,8 @@ const Headline = styled.h1`
 
 const NavLinkList = styled.ol<OpenNavProps>`
   display: flex;
-  flex-basis: 33%;
+  flex-basis: 50%;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
 
