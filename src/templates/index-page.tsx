@@ -10,7 +10,6 @@ import {
   Features,
   FlexContainer,
   FullWidthImage,
-  ImageHeadlineContainer,
   Layout,
   PreviewCompatibleBanner,
   SubscribeForm,
@@ -89,11 +88,16 @@ const BannerLink = styled(SmartLink)`
   text-decoration: underline;
 `;
 
-const BannerHeadline = styled(ImageHeadlineContainer)<HeadlineProps>`
-  ${({ inline }) => !!inline && `display: inline;`}
+const BannerHeadline = styled.h1<HeadlineProps>`
+  background-color: ${Constants.Colors.blue};
+  border-radius: 1rem;
+  box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
+    ${Constants.Colors.blue} -0.5rem 0px 0px;
+  color: #fff;
+  padding: 0.5rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ lessMargin }) => !!lessMargin && "margin: 0;"}
+    margin-top: 0;
   }
 `;
 
@@ -119,35 +123,36 @@ const HomepageHeadline = styled.h1`
   padding: 1rem;
 `;
 
-const BannerHeadlineWrapper = styled.div`
-  align-items: flex-start;
+const ImageHeadlineContainer = styled.div`
+  align-items: center;
+  background-color: ${Constants.Colors.blue};
+  border-radius: 4rem;
   display: flex;
-  height: 150px;
-  justify-content: space-around;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin-top: 3rem;
-    margin-bottom: 4rem;
+    background-color: #fff;
+    border-radius: 0;
+    width: 100%;
   }
 `;
 
 const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
-  <BannerHeadlineWrapper>
-    <BannerHeadline color={Constants.Colors.blue}>{bannerTitle}</BannerHeadline>
-    <BannerHeadline
-      color={Constants.Colors.blue}
-      as="h3"
-      inline={!isMobile}
-      lessMargin={isMobile}
-    >
+  <ImageHeadlineContainer>
+    <BannerHeadline>{bannerTitle}</BannerHeadline>
+    <BannerHeadline as="h3" inline={!isMobile} lessMargin={isMobile}>
       {bannerSubtitle}{" "}
       <BannerLink to="/the-grove" title="Life Coaching in The Grove">
         Start here.
       </BannerLink>
     </BannerHeadline>
-  </BannerHeadlineWrapper>
+  </ImageHeadlineContainer>
 );
 
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
@@ -170,28 +175,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
   const safeImage = image as NestedImage;
 
-  const banners = (
-    <BannerHeadlines
-      bannerSubtitle={bannerSubtitle}
-      bannerTitle={bannerTitle}
-      isMobile={isMobile}
-    />
-  );
-
   const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
-
-  const bannerImage = (
-    <FullWidthImage
-      critical={true}
-      fadeIn="soft"
-      fluid={safeImage?.childImageSharp?.fluid || safeImage}
-      moveHeadlineOnMobile={true}
-      preserveStackingContext={true}
-      title="Sheila Anne Life Coaching cover photo"
-    >
-      {!isMobile && banners}
-    </FullWidthImage>
-  );
 
   return (
     <>
@@ -210,11 +194,22 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
       <PreviewCompatibleBanner
         isPreview={isPreview}
-        Component={bannerImage}
-        ComponentChildren={banners}
+        Component={
+          <FullWidthImage
+            critical={true}
+            fadeIn="soft"
+            fluid={safeImage?.childImageSharp?.fluid || safeImage}
+            preserveStackingContext={true}
+            title="Sheila Anne Life Coaching cover photo"
+          />
+        }
         image={image}
       />
-      {isMobile && banners}
+      <BannerHeadlines
+        bannerSubtitle={bannerSubtitle}
+        bannerTitle={bannerTitle}
+        isMobile={isMobile}
+      />
       <section>
         <Container>
           <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
@@ -248,12 +243,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             </Button>
           </FlexLinkContainer>
           <CenteredText>
-            <BannerHeadline
-              as="h3"
-              color={Constants.Colors.blue}
-              height="4rem"
-              lessMargin={true}
-            >
+            <BannerHeadline as="h3" lessMargin={true}>
               Latest from the Writing Desk
             </BannerHeadline>
           </CenteredText>

@@ -16,7 +16,6 @@ export { Layout } from "./layout";
 export { Nav } from "./nav";
 export {
   PreviewCompatibleBanner,
-  PreviewCompatibleBannerHeadline,
   PreviewCompatibleFlexImage,
   PreviewCompatibleImage
 } from "./preview-compatible";
