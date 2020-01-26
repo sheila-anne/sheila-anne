@@ -13,16 +13,26 @@ type BannerImageProps = {
 
 export const FullWidthImage = styled(BackgroundImage)`
   height: 400px;
-  background-attachment: fixed;
   background-size: contain;
-  margin-top: 0;
-  margin-bottom: 1rem;
+
+  &,
+  &::before,
+  &::after {
+    margin-bottom: 1rem;
+  }
 
   @media (max-width: ${Constants.mobileWidth}) {
     &,
     &::before,
     &::after {
-      background-position: unset !important;
+      height: 250px !important;
+    }
+  }
+
+  @media (max-width: 360px) {
+    &,
+    &::before,
+    &::after {
       height: 200px !important;
     }
   }
@@ -39,6 +49,10 @@ export const ImageHeadlineContainer = styled.div<{
   margin-bottom: 1rem;
   padding: 1rem;
   text-align: center;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    margin-top: 1rem;
+  }
 `;
 
 export const BannerImage: FC<BannerImageProps> = ({

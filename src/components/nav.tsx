@@ -31,7 +31,7 @@ const ColoredInternalLink = styled(SmartLink)<{
     !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
-const CenteredText = styled.div<OpenAndMobile>`
+const LogoText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
     !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
   display: flex;
@@ -42,6 +42,7 @@ const CenteredText = styled.div<OpenAndMobile>`
   @media (max-width: ${Constants.mobileWidth}) {
     flex-basis: 100%;
     height: 50px;
+    max-width: 90%;
   }
 `;
 
@@ -57,7 +58,6 @@ const Header = styled.header<{ flipColors: boolean }>`
   letter-spacing: 0.1em;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 1000;
 
   ${ColoredInternalLink} {
@@ -72,7 +72,7 @@ const StyledNav = styled.nav<OpenNavProps>`
     !!isOpen ? Constants.Colors.blue : "#FFF"};
   display: flex;
   height: 75px;
-  width: 100%;
+  justify-content: center;
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
@@ -131,6 +131,7 @@ const NavListItem = styled.li`
 
 const MobileMenu = styled.div<OpenNavProps>`
   background: ${Constants.Colors.blue};
+  border: 1px solid ${Constants.Colors.blue};
   height: 100vh;
   padding: 0.5rem;
   position: relative;
@@ -197,7 +198,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
   return (
     <Header flipColors={!!isOpen && !!isMobile}>
       <StyledNav isOpen={isOpen}>
-        <CenteredText isMobile={isMobile} isOpen={isOpen}>
+        <LogoText isMobile={isMobile} isOpen={isOpen}>
           <Headline>
             <ColoredInternalLink
               aria-label="Sheila Anne logo, click to visit homepage"
@@ -207,7 +208,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
               Sheila Anne
             </ColoredInternalLink>
           </Headline>
-        </CenteredText>
+        </LogoText>
         {!!isMobile ? (
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
