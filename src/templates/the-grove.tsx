@@ -9,11 +9,11 @@ import {
   FlexContainer,
   FlexColumn,
   HTMLContent,
+  ImageHeadlineContainer,
   Layout,
   SEO,
   SubscribeForm,
   PreviewCompatibleBanner,
-  PreviewCompatibleBannerHeadline,
   PreviewCompatibleFlexImage
 } from "../components";
 
@@ -29,7 +29,6 @@ const TheGroveBannerImage = ({
     image={safeImage}
     title="Life Coaching in The Grove"
     imageHeadline={imageHeadline}
-    moveHeadlineOnMobile={true}
   />
 );
 
@@ -55,11 +54,9 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
           />
         }
         ComponentChildren={
-          <PreviewCompatibleBannerHeadline
-            color={Constants.Colors.theGroveGreen}
-            imageHeadline={imageHeadline}
-            isPreview={isPreview}
-          />
+          <ImageHeadlineContainer color={Constants.Colors.theGroveGreen}>
+            {imageHeadline}
+          </ImageHeadlineContainer>
         }
         image={image}
         isPreview={isPreview}

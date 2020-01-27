@@ -6,9 +6,9 @@ import {
   BlogRoll,
   Content,
   HTMLContent,
+  ImageHeadlineContainer,
   Layout,
   PreviewCompatibleBanner,
-  PreviewCompatibleBannerHeadline,
   SEO
 } from "../components/";
 import { Constants } from "../constants";
@@ -30,19 +30,15 @@ export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
       <PreviewCompatibleBanner
         Component={
           <BannerImage
-            containImage={true}
             image={safeImage}
             title={frontmatter.pageTitle}
             imageHeadline={frontmatter.bannerImageHeadline}
-            moveHeadlineOnMobile={true}
           />
         }
         ComponentChildren={
-          <PreviewCompatibleBannerHeadline
-            color={Constants.Colors.lighterBlue}
-            imageHeadline={imageHeadline}
-            isPreview={isPreview}
-          />
+          <ImageHeadlineContainer color={Constants.Colors.lighterBlue}>
+            {imageHeadline}
+          </ImageHeadlineContainer>
         }
         image={image}
         isPreview={isPreview}

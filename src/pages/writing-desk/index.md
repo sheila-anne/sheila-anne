@@ -1,5 +1,5 @@
 ---
-bannerImage: /img/blog-index.jpg
+bannerImage: /img/sheila-anne-writing-desk.jpg
 bannerImageHeadline: "Latest Stories | Writing Desk"
 templateKey: writing-desk
 path: /writing-desk

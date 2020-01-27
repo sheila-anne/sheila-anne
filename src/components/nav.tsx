@@ -31,7 +31,7 @@ const ColoredInternalLink = styled(SmartLink)<{
     !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
-const CenteredText = styled.div<OpenAndMobile>`
+const LogoText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
     !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
   display: flex;
@@ -42,14 +42,19 @@ const CenteredText = styled.div<OpenAndMobile>`
   @media (max-width: ${Constants.mobileWidth}) {
     flex-basis: 100%;
     height: 50px;
+    max-width: 90%;
   }
 `;
 
-const DesktopSocialWrapper = styled.div`
+const DesktopSocialWrapper = styled.div<OpenNavProps>`
   display: flex;
   flex-basis: 33%;
   align-self: center;
   justify-content: flex-end;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+  }
 `;
 
 const Header = styled.header<{ flipColors: boolean }>`
@@ -57,7 +62,6 @@ const Header = styled.header<{ flipColors: boolean }>`
   letter-spacing: 0.1em;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 1000;
 
   ${ColoredInternalLink} {
@@ -72,7 +76,7 @@ const StyledNav = styled.nav<OpenNavProps>`
     !!isOpen ? Constants.Colors.blue : "#FFF"};
   display: flex;
   height: 75px;
-  width: 100%;
+  justify-content: center;
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
@@ -118,8 +122,14 @@ const NavLinkList = styled.ol<OpenNavProps>`
   margin: 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "flex")}
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
     flex-basis: 100%;
+  }
+`;
+
+const NavSocialList = styled.div<OpenNavProps>`
+  @media (max-width: ${Constants.mobileWidth}) {
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
   }
 `;
 
@@ -131,6 +141,7 @@ const NavListItem = styled.li`
 
 const MobileMenu = styled.div<OpenNavProps>`
   background: ${Constants.Colors.blue};
+  border: 1px solid ${Constants.Colors.blue};
   height: 100vh;
   padding: 0.5rem;
   position: relative;
@@ -141,8 +152,8 @@ const MobileMenu = styled.div<OpenNavProps>`
 
   ${ColoredInternalLink} {
     display: block;
-    padding: 0.5rem 0;
     font-weight: bold;
+    padding: 0.5rem 0;
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -197,7 +208,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
   return (
     <Header flipColors={!!isOpen && !!isMobile}>
       <StyledNav isOpen={isOpen}>
-        <CenteredText isMobile={isMobile} isOpen={isOpen}>
+        <LogoText isMobile={isMobile} isOpen={isOpen}>
           <Headline>
             <ColoredInternalLink
               aria-label="Sheila Anne logo, click to visit homepage"
@@ -207,7 +218,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
               Sheila Anne
             </ColoredInternalLink>
           </Headline>
-        </CenteredText>
+        </LogoText>
         {!!isMobile ? (
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -218,8 +229,10 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
                 aria-current={isOpen}
               >
                 {getNavLinkItems(location, isMobile && isOpen)}
-              </NavLinkList>{" "}
-              <Social />
+              </NavLinkList>
+              <NavSocialList isOpen={isOpen}>
+                <Social id="mobileSocial" />
+              </NavSocialList>
             </MobileMenu>
           </>
         ) : (
@@ -227,8 +240,8 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
             <NavLinkList id="desktopNavLinks">
               {getNavLinkItems(location)}
             </NavLinkList>
-            <DesktopSocialWrapper>
-              <Social />
+            <DesktopSocialWrapper isOpen={isMobile}>
+              <Social id="desktopSocial" />
             </DesktopSocialWrapper>
           </>
         )}

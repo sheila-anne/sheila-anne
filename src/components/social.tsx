@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
@@ -11,6 +11,10 @@ type SocialLinks = {
   image: string;
   url: string;
   title: string;
+};
+
+type SocialProps = {
+  id: string;
 };
 
 const SocialItems = [
@@ -41,7 +45,7 @@ const SocialLink = styled(SmartLink)`
   text-decoration: none;
 `;
 
-export const SocialWrapper = styled.div`
+export const SocialWrapper = styled.div<{ dontShow?: boolean }>`
   margin-right: 2rem;
   ${SocialLink} {
     background-color: #fff;
@@ -57,11 +61,11 @@ export const SocialWrapper = styled.div`
   }
 `;
 
-export const FixedSocialItems = () => (
+export const FixedSocialItems = ({ id }: { id: string }) => (
   <>
     {SocialItems.map(socialItem => (
       <SocialLink
-        key={socialItem.url}
+        key={id + "-" + socialItem.url}
         title={socialItem.title}
         to={socialItem.url}
       >
@@ -71,9 +75,9 @@ export const FixedSocialItems = () => (
   </>
 );
 
-export const Social = () => (
-  <SocialWrapper>
-    <FixedSocialItems />
+export const Social: FC<SocialProps> = ({ id }) => (
+  <SocialWrapper key={id} id={id}>
+    <FixedSocialItems id={id} />
     <SocialLink title="Contact Sheila Anne" to="/contact/">
       <Emoji symbol={`\u2709`} label="Contact Sheila Anne" />
     </SocialLink>

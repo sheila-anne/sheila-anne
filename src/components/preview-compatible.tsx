@@ -12,12 +12,6 @@ type PreviewCompatibleBannerProps = {
   isPreview?: boolean;
 };
 
-type PreviewCompatibleBannerHeadlineProps = {
-  color: string;
-  imageHeadline: string;
-  isPreview?: boolean;
-};
-
 type PreviewCompatibleImageProps = {
   className?: string;
   imageInfo: PreviewImage;
@@ -33,35 +27,23 @@ export const PreviewCompatibleBanner: FC<PreviewCompatibleBannerProps> = ({
   isPreview
 }) => {
   return !!isPreview ? (
-    <div
-      style={{
-        backgroundAttachment: `fixed`,
-        backgroundImage: `url(${image})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: `contain`,
-        height: "200px"
-      }}
-    >
+    <div>
+      <div
+        style={{
+          backgroundAttachment: `inherit`,
+          backgroundImage: `url(${image})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: `contain`,
+          height: "200px"
+        }}
+      />
       {ComponentChildren}
     </div>
   ) : (
     Component
   );
 };
-
-export const PreviewCompatibleBannerHeadline: FC<PreviewCompatibleBannerHeadlineProps> = ({
-  color,
-  imageHeadline,
-  isPreview
-}) => (
-  <ImageHeadlineContainer
-    color={color}
-    isPreview={isPreview}
-    moveHeadlineOnMobile={true}
-  >
-    {imageHeadline}
-  </ImageHeadlineContainer>
-);
 
 export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   className,
