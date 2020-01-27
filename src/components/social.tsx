@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
@@ -11,6 +11,10 @@ type SocialLinks = {
   image: string;
   url: string;
   title: string;
+};
+
+type SocialProps = {
+  dontShow?: boolean;
 };
 
 const SocialItems = [
@@ -41,7 +45,7 @@ const SocialLink = styled(SmartLink)`
   text-decoration: none;
 `;
 
-export const SocialWrapper = styled.div`
+export const SocialWrapper = styled.div<{ dontShow?: boolean }>`
   margin-right: 2rem;
   ${SocialLink} {
     background-color: #fff;
@@ -53,6 +57,7 @@ export const SocialWrapper = styled.div`
     width: 1rem;
   }
   @media (max-width: ${Constants.mobileWidth}) {
+    display: ${({ dontShow }) => (dontShow ? "none" : "block")};
     margin-right: 0;
   }
 `;
@@ -71,8 +76,8 @@ export const FixedSocialItems = () => (
   </>
 );
 
-export const Social = () => (
-  <SocialWrapper>
+export const Social: FC<SocialProps> = ({ dontShow }) => (
+  <SocialWrapper dontShow={dontShow}>
     <FixedSocialItems />
     <SocialLink title="Contact Sheila Anne" to="/contact/">
       <Emoji symbol={`\u2709`} label="Contact Sheila Anne" />

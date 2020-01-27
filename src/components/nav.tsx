@@ -118,7 +118,7 @@ const NavLinkList = styled.ol<OpenNavProps>`
   margin: 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "flex")}
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
     flex-basis: 100%;
   }
 `;
@@ -219,8 +219,8 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
                 aria-current={isOpen}
               >
                 {getNavLinkItems(location, isMobile && isOpen)}
-              </NavLinkList>{" "}
-              <Social />
+              </NavLinkList>
+              <Social dontShow={!isOpen} />
             </MobileMenu>
           </>
         ) : (

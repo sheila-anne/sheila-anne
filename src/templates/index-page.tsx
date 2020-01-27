@@ -139,12 +139,8 @@ const ImageHeadlineContainer = styled.div`
   @media (max-width: ${Constants.mobileWidth}) {
     background-color: #fff;
     border-radius: 0;
-    margin-top: -4.5rem;
+    margin-top: 0;
     width: 100%;
-  }
-
-  @media (max-width: 360px) {
-    margin-top: -7.5rem;
   }
 `;
 
