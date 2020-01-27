@@ -46,11 +46,15 @@ const LogoText = styled.div<OpenAndMobile>`
   }
 `;
 
-const DesktopSocialWrapper = styled.div`
+const DesktopSocialWrapper = styled.div<OpenNavProps>`
   display: flex;
   flex-basis: 33%;
   align-self: center;
   justify-content: flex-end;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+  }
 `;
 
 const Header = styled.header<{ flipColors: boolean }>`
@@ -123,6 +127,12 @@ const NavLinkList = styled.ol<OpenNavProps>`
   }
 `;
 
+const NavSocialList = styled.div<OpenNavProps>`
+  @media (max-width: ${Constants.mobileWidth}) {
+    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+  }
+`;
+
 const NavListItem = styled.li`
   display: inline;
   margin-bottom: 0;
@@ -142,8 +152,8 @@ const MobileMenu = styled.div<OpenNavProps>`
 
   ${ColoredInternalLink} {
     display: block;
-    padding: 0.5rem 0;
     font-weight: bold;
+    padding: 0.5rem 0;
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -220,7 +230,9 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
               >
                 {getNavLinkItems(location, isMobile && isOpen)}
               </NavLinkList>
-              <Social dontShow={!isOpen} />
+              <NavSocialList isOpen={isOpen}>
+                <Social id="mobileSocial" />
+              </NavSocialList>
             </MobileMenu>
           </>
         ) : (
@@ -228,8 +240,8 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
             <NavLinkList id="desktopNavLinks">
               {getNavLinkItems(location)}
             </NavLinkList>
-            <DesktopSocialWrapper>
-              <Social />
+            <DesktopSocialWrapper isOpen={isMobile}>
+              <Social id="desktopSocial" />
             </DesktopSocialWrapper>
           </>
         )}

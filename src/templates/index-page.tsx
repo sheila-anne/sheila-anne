@@ -188,7 +188,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             as="image"
             key={bannerImagesrc}
             crossOrigin="anoynmous"
-            type="jpg"
           />
         </Helmet>
       )}

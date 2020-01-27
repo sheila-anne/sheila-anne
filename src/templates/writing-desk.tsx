@@ -32,7 +32,7 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
       <BannerImage
         color={Constants.Colors.theGroveTeal}
         image={safeImage}
-        title={frontmatter.title}
+        title={frontmatter.pageTitle}
         imageHeadline={imageHeadline}
       />
       <PageContent content={content} />
