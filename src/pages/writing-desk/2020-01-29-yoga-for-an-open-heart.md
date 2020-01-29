@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Yoga For An Open Heart
+title: Yoga for an Open Heart
 date: 2020-01-29T20:27:59.579Z
 description: >-
   Heart-opening asanas can be a wonderfully effective way to tap into your heart
