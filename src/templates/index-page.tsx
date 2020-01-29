@@ -66,7 +66,7 @@ type HeadlineProps = {
 
 const Container = styled.div`
   flex-grow: 1;
-  margin: 0 1rem;
+  margin: 0 auto;
   position: relative;
   width: auto;
 

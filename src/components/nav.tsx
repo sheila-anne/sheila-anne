@@ -223,25 +223,19 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
             <MobileMenu isOpen={isOpen} aria-hidden={!isOpen}>
-              <NavLinkList
-                id="mobileNavLinks"
-                isOpen={isOpen}
-                aria-current={isOpen}
-              >
+              <NavLinkList isOpen={isOpen} aria-current={isOpen}>
                 {getNavLinkItems(location, isMobile && isOpen)}
               </NavLinkList>
               <NavSocialList isOpen={isOpen}>
-                <Social id="mobileSocial" />
+                <Social />
               </NavSocialList>
             </MobileMenu>
           </>
         ) : (
           <>
-            <NavLinkList id="desktopNavLinks">
-              {getNavLinkItems(location)}
-            </NavLinkList>
+            <NavLinkList>{getNavLinkItems(location)}</NavLinkList>
             <DesktopSocialWrapper isOpen={isMobile}>
-              <Social id="desktopSocial" />
+              <Social />
             </DesktopSocialWrapper>
           </>
         )}

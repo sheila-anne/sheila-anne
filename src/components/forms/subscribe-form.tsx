@@ -168,7 +168,7 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
             type="tel"
           />
         </p>
-        <Submit name="SendMessage" type="submit">
+        <Submit type="submit">
           <SubmitSpan>{buttonText}</SubmitSpan>
         </Submit>
       </form>
