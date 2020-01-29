@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Self Care For The Hectic Life
+title: Self Care for the Hectic Life
 date: 2020-01-29T18:15:50.197Z
 description: >-
   In order to share our superpowers with the world, we must prioritize our love
