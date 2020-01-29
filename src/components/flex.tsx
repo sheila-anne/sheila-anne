@@ -51,6 +51,7 @@ export const FlexHeader = styled.header`
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
+    padding-top: 10px;
   }
 `;
 

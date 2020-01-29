@@ -44,6 +44,7 @@ const FlexTitle = styled.h3`
 
 const FeaturedThumbnail = styled.div`
   flex-basis: 35%;
+  margin: 1rem 1rem 0 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
     margin: 0;
