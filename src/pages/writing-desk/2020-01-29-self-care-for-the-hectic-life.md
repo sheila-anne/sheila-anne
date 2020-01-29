@@ -7,19 +7,15 @@ description: >-
   and care for ourselves and make it part of our daily life!
 featuredpost: false
 tags:
-  - The Grove
+  - the grove
+  - self care
+  - stress management
 ---
 Stress has always been a part of the human experience. Newer innovations, such as modern technology and the disconnectedness it creates, has only increased our exposure to stress-inducing triggers. What’s more, many people face lofty expectations of what being a successful human looks like (ie. having it all / doing it all / earning money while making it look easy and fun!) which negatively impacts the ability to properly name and deal with stress in the way the body/brain might need. It becomes very easy to get wrapped up in the routine, the to-do list, and in the fulfilling the needs / expectations of others… but what are you doing for yourself?
 
-
-
-As you read this, are you thinking to yourself, “Oh I *definitely* prioritize my me time!” Most likely you are reviewing your attempts to prioritize self care and the consistent roadblocks to make it happen. Today I’m reminding you just how important making time for yourself is, as well as how easy it can be!
-
-
+As you read this, are you thinking to yourself, “Oh I *definitely* prioritize my me time!” Most likely you are reviewing your attempts to prioritize self care and the consistent roadblocks to make it happen. Today I’m reminding you just how important stress management is, by sharing ideas so that you can easily incorporate it into your life!
 
 *"Self-care for me is always being there for myself and treating myself like I would someone I love" — Amy Kurtz.* Here are a few ways to be your own BFF:
-
-
 
 1. Take a new route to work or to another place you frequent. This keeps you healthy by developing new neural pathways and stimulating your brain.
 2. Spend an hour reading fiction. I’m guilty of filling my reading list with non-fiction books and tend to forget how good fiction reads can send you into another world.
