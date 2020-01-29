@@ -4,8 +4,11 @@ title: Self Care For The Hectic Life
 date: 2020-01-29T18:15:50.197Z
 description: >-
   In order to share our superpowers with the world, we must prioritize our love
-  and care for ourselves and make it part of our daily life!
+  and care for ourselves and make it part of our daily life!  I'm sharing 15
+  ideas on stress management, inviting you to stay committed to self care, even
+  during the craziest of weeks.
 featuredpost: false
+featuredImage: /img/945ED63C-3DD8-4AF0-88D3-208FF090D86E-5115-0000011B2E0BFDC1.JPG
 tags:
   - the grove
   - self care
@@ -29,8 +32,8 @@ As you read this, are you thinking to yourself, “Oh I *definitely* prioritize 
 10. Write a thank you note … to yourself. We write notes of gratitude to others but have you ever written one to yourself? Have fun with it and think of specific examples from the week or what you’d like to thank yourself for by the end of the week. If you don’t know what else to say, thank yourself for showing self compassion, for believing in yourself, for being kind to others, and then make sure you continue to do those things.
 11. Take a “designated down day.” A friend taught me this term and I love it! When you need a little me time, think about turning down a social invitation and gifting yourself with a designated down day. Make sure you stick to it (or find someone to hold you accountable)! Even better if you pick the day out a week in advance, so it’s officially on the calendar.
 12. Sneak veggies into breakfast. I like to get crafty in the kitchen, and one of my favorite things to make for breakfast is overnight oats. A few years back I created an adventurous version — overnight zotes. The oats become “zotes” when you toss in a zucchini! If you’ve never tried it, it may sound crazy ... but get ready to fall in love. Look up a recipe or craft your own! It can be simple — 1/2 cup old fashioned oats/muesli, 1 small shaved zucchini, cinnamon & salt to taste, then fill jar/ bowl with milk of choice until it’s just above the oat mix. Option to add nuts, protein powder, flax/chia seeds!
-13. Self massage. Using just your hands a tennis/massage ball, you can work certain trigger points and break up myofascial tissue for a nice release this week![Get your guide here](https://backintelligence.com/self-massage-techniques/)!
-14. Power Pose Like a Bada$$: Have you tried power posing? Evidence suggests that standing in a position of power, even in moments of perceived weakness, can impact your feelings of confidence and power.[Amy Cuddy](https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are?language=en) gave a TED Talk on this and, though findings are mixed, I’ll leave it to you to test if it works on you as an individual. That’s all that matters!
+13. Self massage. Using just your hands a tennis/massage ball, you can work certain trigger points and break up myofascial tissue for a nice release this week! [Get your guide here!](https://backintelligence.com/self-massage-techniques/)
+14. [](https://backintelligence.com/self-massage-techniques/)Power Pose Like a Bada$$: Have you tried power posing? Evidence suggests that standing in a position of power, even in moments of perceived weakness, can impact your feelings of confidence and power.[Amy Cuddy](https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are?language=en) gave a TED Talk on this and, though findings are mixed, I’ll leave it to you to test if it works on you as an individual. That’s all that matters!
 15. Mantra-it-out: Do you know that mantras can actually be a very [powerful tool](https://www.huffpost.com/entry/mantras-for-anxiety_n_5b8570c0e4b0162f471cdfda) in calming anxiety and offering powerful energy? Choose a mantra and repeat it to yourself for a day, or for a week and see how you feel! Examples: *Everything is unfolding exactly how it should; I am powerful and bold; I am my own inspiration; I am appreciating the little joys today; I bring light wherever I go.*
 
 Does this get you excited? Are you ready to take the next step and invest in yourself and in your future, more balanced life? While working with me 1:1 in The Grove, we’ll be able to do a full assessment and evaluate all aspects of your life. We’ll identify what areas you are absolutely killing, and what you might want to tackle next.
