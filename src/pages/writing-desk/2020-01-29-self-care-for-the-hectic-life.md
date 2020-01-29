@@ -4,7 +4,7 @@ title: Self Care For The Hectic Life
 date: 2020-01-29T18:15:50.197Z
 description: >-
   In order to share our superpowers with the world, we must prioritize our love
-  and care for ourselves and make it part of our daily life!  I'm sharing 15
+  and care for ourselves and make it part of our daily life!  I'm sharing 20
   ideas on stress management, inviting you to stay committed to self care, even
   during the craziest of weeks.
 featuredpost: false
