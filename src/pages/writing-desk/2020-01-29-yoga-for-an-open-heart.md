@@ -8,6 +8,7 @@ description: >-
   this practice if you are feeling boxed in, stuck in your head, or if you are
   simply looking to draw a deeper connection to the good energy around you.
 featuredpost: false
+featuredImage: /img/open-heart.png
 tags:
   - yoga
   - poses
