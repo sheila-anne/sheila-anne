@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import { Button } from "./button";
 import { Constants } from "../constants";
-import { CenteredText } from "./centered-text";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { SmartLink } from "./smart-link";
@@ -16,8 +15,7 @@ const FlexTextContainer = styled.div`
   flex-basis: 65%;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
@@ -25,16 +23,10 @@ const FlexTextContainer = styled.div`
   }
 `;
 
-const FlexSpan = styled.span`
-  margin-top: 1rem;
-`;
+const FlexSpan = styled.span``;
 
 const FlexTitle = styled.h3`
-  background-color: ${Constants.Colors.theGroveTeal};
-  border-radius: 1rem;
-  color: white;
-  margin: 2rem 0;
-  padding: 2rem 4rem;
+  padding: 1rem 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
     padding: 2rem;
@@ -51,16 +43,9 @@ const FeaturedThumbnail = styled.div`
   }
 `;
 
-const OffsetButton = styled(Button)`
-  box-shadow: none;
-  color: ${Constants.Colors.darkBlue};
-  margin-top: 1rem;
-`;
-
 const Article = styled.article<ArticleProps>`
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
-  border-radius: 1rem;
   color: #000;
   position: relative;
   padding: 0 1rem 1rem 1rem;
@@ -70,8 +55,9 @@ const Article = styled.article<ArticleProps>`
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  min-height: min-content;
+  height: 250px;
   margin: 1rem;
+  overflow: hidden;
 `;
 
 const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
@@ -94,9 +80,6 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
     </FlexHeader>
     <div>
       <p>{post.excerpt}</p>
-      <CenteredText>
-        <OffsetButton as="button">Keep Reading →</OffsetButton>
-      </CenteredText>
     </div>
   </Article>
 );

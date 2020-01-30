@@ -5,7 +5,7 @@ export {
 } from "./banner-image";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
-export { Button } from "./button";
+export { Button, SquareButton } from "./button";
 export { ContactForm, SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered-text";

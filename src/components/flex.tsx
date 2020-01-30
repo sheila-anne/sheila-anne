@@ -10,6 +10,7 @@ type BackgroundColorProps = {
 
 type FlexContainerProps = BackgroundColorProps & {
   margin?: string;
+  justifyContent?: string;
 };
 
 type FlexColumnProps = FlexContainerProps & {
@@ -23,10 +24,10 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 `;
 
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
-border-radius: 1rem;
   display: flex;
   flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
+  ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
 
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ margin }) => applyStyle("margin", margin || "0")};
@@ -35,7 +36,6 @@ border-radius: 1rem;
 
 export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
   ${({ alignSelf }) => applyStyle("align-self", alignSelf)}
-  border-radius: 1rem;
   flex: none;
   ${({ padding }) => applyStyle("padding", padding)}
   width: 50%;

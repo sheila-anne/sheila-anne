@@ -17,7 +17,6 @@ import {
   SmartLink
 } from "../components";
 import { Constants } from "../constants";
-import { useWindow } from "../hooks/useWindow";
 
 type MainPitch = {
   description: string;
@@ -60,6 +59,8 @@ type IndexPageProps = {
 } & BaseGatsbyPage;
 
 type HeadlineProps = {
+  color?: string;
+  fontColor?: string;
   lessMargin?: boolean;
   inline?: boolean;
 };
@@ -84,26 +85,26 @@ const Container = styled.div`
 `;
 
 const BannerLink = styled(SmartLink)`
+  background-color: ${Constants.Colors.blue};
+  border: 1px solid ${Constants.Colors.blue};
+  border-radius: 1rem;
   color: #fff;
-  text-decoration: underline;
+  margin-bottom: 1rem;
+  padding: 20px;
 `;
 
 const BannerHeadline = styled.h1<HeadlineProps>`
-  background-color: ${Constants.Colors.blue};
-  border-radius: 1rem;
-  box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
-    ${Constants.Colors.blue} -0.5rem 0px 0px;
-  color: #fff;
+  background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
+  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem
+      0px 0px,
+    ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
+  color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
+  margin-top: 0;
   padding: 0.5rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-top: 0;
-  }
 `;
 
 const FlexLinkContainer = styled(FlexContainer)`
   border: 2px solid ${Constants.Colors.theGroveGreen};
-  border-radius: 2rem;
   margin: 1rem;
   justify-content: space-around;
   padding: 1rem;
@@ -123,42 +124,8 @@ const HomepageHeadline = styled.h1`
   padding: 1rem;
 `;
 
-const ImageHeadlineContainer = styled.div`
-  align-items: center;
-  background-color: ${Constants.Colors.blue};
-  border-radius: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1rem;
-
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    background-color: #fff;
-    border-radius: 0;
-    margin-top: 0;
-    width: 100%;
-  }
-`;
-
-const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
-  <ImageHeadlineContainer>
-    <BannerHeadline>{bannerTitle}</BannerHeadline>
-    <BannerHeadline as="h3" inline={!isMobile} lessMargin={isMobile}>
-      {bannerSubtitle}{" "}
-      <BannerLink to="/the-grove" title="Life Coaching in The Grove">
-        Start here.
-      </BannerLink>
-    </BannerHeadline>
-  </ImageHeadlineContainer>
-);
-
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
-  isMobile,
   isPreview,
   posts
 }) => {
@@ -191,7 +158,9 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           />
         </Helmet>
       )}
-
+      <CenteredText>
+        <BannerHeadline>{bannerTitle}</BannerHeadline>
+      </CenteredText>
       <PreviewCompatibleBanner
         isPreview={isPreview}
         Component={
@@ -205,15 +174,25 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         }
         image={image}
       />
-      <BannerHeadlines
-        bannerSubtitle={bannerSubtitle}
-        bannerTitle={bannerTitle}
-        isMobile={isMobile}
-      />
       <section>
         <Container>
-          <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-            <HomepageHeadline>{description}</HomepageHeadline>
+          <FlexContainer
+            backgroundColor={Constants.Colors.lightestBlue}
+            justifyContent="center"
+          >
+            <HomepageHeadline>
+              {description} {bannerSubtitle}
+            </HomepageHeadline>
+            <BannerLink to="/the-grove" title="Life Coaching in The Grove">
+              Start here.
+            </BannerLink>
+          </FlexContainer>
+          <CenteredText>
+            <h3>{mainpitch.title}</h3>
+            <p>{mainpitch.description}</p>
+          </CenteredText>
+          <FlexContainer>
+            <Features gridItems={intro.blurbs} />
           </FlexContainer>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
@@ -226,13 +205,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               formTitle={formHeadline}
               page="homepage"
             />
-          </FlexContainer>
-          <CenteredText>
-            <h3>{mainpitch.title}</h3>
-            <p>{mainpitch.description}</p>
-          </CenteredText>
-          <FlexContainer>
-            <Features gridItems={intro.blurbs} />
           </FlexContainer>
           <FlexLinkContainer>
             <Button to="/the-grove/" title="Learn more in the Grove">
@@ -259,7 +231,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 
 const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
-  const { isMobile } = useWindow();
 
   return (
     <Layout location={location}>
@@ -268,7 +239,6 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
         description={frontmatter.pageDescription}
       />
       <IndexPageTemplate
-        isMobile={isMobile}
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
       />

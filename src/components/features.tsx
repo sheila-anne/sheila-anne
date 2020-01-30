@@ -23,7 +23,6 @@ const ColorsMap = {
 
 const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
   background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
-  border-radius: 2rem;
   flex: none;
   padding: 10px;
   margin: 1rem auto;

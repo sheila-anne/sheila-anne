@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
-import { Emoji } from "./emoji";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import { SmartLink } from "./smart-link";
@@ -34,7 +33,6 @@ const SocialImage = styled.img`
 
 const SocialLink = styled(SmartLink)`
   color: #000;
-  border-radius: 2px;
   cursor: pointer;
   display: block;
   padding: 0.75rem;
@@ -75,7 +73,7 @@ export const Social = () => (
   <SocialWrapper>
     <FixedSocialItems />
     <SocialLink title="Contact Sheila Anne" to="/contact/">
-      <Emoji symbol={`\u2709`} label="Contact Sheila Anne" />
+      Contact
     </SocialLink>
   </SocialWrapper>
 );
