@@ -116,26 +116,6 @@ collections:
                 ],
             }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: ImageAlt, name: imageAlt, widget: string },
-                        { label: Title, name: title, widget: text },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
               label: Main,
               name: main,
               widget: object,
@@ -232,6 +212,26 @@ collections:
               widet: "string",
             }
           - { label: "Form Paragraph", name: "formParagraph", widet: "string" }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: ImageAlt, name: imageAlt, widget: string },
+                        { label: Title, name: title, widget: text },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
 
       - file: "src/pages/writing-desk/index.md"
         label: "The Writing Desk"

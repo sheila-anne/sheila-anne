@@ -27,11 +27,7 @@ Sheila earned her 200 hour certification in yoga from [South Boston Yoga](https:
 - [Pointe Barre Studios](https://www.pointebarrestudios.com/)
 - [EVO Rock + Fitness](https://www.evorock.com/concord-nh/)
 
-Sheila has also done a handful of one-off classes including:
+Sheila has also done a handful of one-off classes, including:
 
 - Black Light Yoga
 - Charity Yoga. [One class](https://www.threegoodthingsproject.com/yoga-event/) of which raised over \$600 for [Comfort Zone Camp](https://comfortzonecamp.org/)
-
-## Sheila's Yoga Blog Posts
-
-Enjoy a curated selection of Sheila's blog posts on yoga, below:

@@ -5,6 +5,7 @@ import {
   BannerImage,
   BlogRollAll,
   Content,
+  FixedSection,
   HTMLContent,
   Layout,
   SEO
@@ -28,16 +29,16 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   const safeImage = image as NestedImage;
 
   return (
-    <section>
+    <FixedSection>
+      <PageContent content={content} />
       <BannerImage
         color={Constants.Colors.theGroveTeal}
         image={safeImage}
         title={frontmatter.pageTitle}
         imageHeadline={imageHeadline}
       />
-      <PageContent content={content} />
       <BlogRollAll />
-    </section>
+    </FixedSection>
   );
 };
 

@@ -14,7 +14,8 @@ import {
   PreviewCompatibleBanner,
   SubscribeForm,
   SEO,
-  SmartLink
+  SmartLink,
+  FixedSection
 } from "../components";
 import { Constants } from "../constants";
 
@@ -46,7 +47,6 @@ type IndexFrontmatterProperty = {
 
 type PreviewTemplateProps = IndexFrontmatterProperty & {
   isPreview?: boolean;
-  isMobile: boolean;
   posts: BlogPost[];
 };
 
@@ -62,7 +62,6 @@ type HeadlineProps = {
   color?: string;
   fontColor?: string;
   lessMargin?: boolean;
-  inline?: boolean;
 };
 
 const Container = styled.div`
@@ -85,12 +84,9 @@ const Container = styled.div`
 `;
 
 const BannerLink = styled(SmartLink)`
-  background-color: ${Constants.Colors.blue};
-  border: 1px solid ${Constants.Colors.blue};
-  border-radius: 1rem;
   color: #fff;
-  margin-bottom: 1rem;
-  padding: 20px;
+  display: inline;
+  text-decoration: underline;
 `;
 
 const BannerHeadline = styled.h1<HeadlineProps>`
@@ -99,12 +95,12 @@ const BannerHeadline = styled.h1<HeadlineProps>`
       0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
   color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
+  font-size: 1.5rem;
   margin-top: 0;
   padding: 0.5rem;
 `;
 
 const FlexLinkContainer = styled(FlexContainer)`
-  border: 2px solid ${Constants.Colors.theGroveGreen};
   margin: 1rem;
   justify-content: space-around;
   padding: 1rem;
@@ -130,14 +126,12 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   posts
 }) => {
   const {
-    bannerTitle,
     bannerSubtitle,
     description,
     formHeadline,
     formParagraph,
     formSubHeadline,
     image,
-    intro,
     mainpitch
   } = frontmatter;
 
@@ -158,9 +152,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           />
         </Helmet>
       )}
-      <CenteredText>
-        <BannerHeadline>{bannerTitle}</BannerHeadline>
-      </CenteredText>
       <PreviewCompatibleBanner
         isPreview={isPreview}
         Component={
@@ -174,26 +165,25 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         }
         image={image}
       />
-      <section>
+      <FixedSection>
+        <CenteredText>
+          <BannerHeadline>{mainpitch.title}</BannerHeadline>
+        </CenteredText>
         <Container>
-          <FlexContainer
-            backgroundColor={Constants.Colors.lightestBlue}
-            justifyContent="center"
-          >
-            <HomepageHeadline>
-              {description} {bannerSubtitle}
-            </HomepageHeadline>
-            <BannerLink to="/the-grove" title="Life Coaching in The Grove">
-              Start here.
-            </BannerLink>
+          <FlexContainer backgroundColor="#FFF" justifyContent="center">
+            <HomepageHeadline>{description}</HomepageHeadline>
           </FlexContainer>
+          <CenteredText margin="1rem 0 0 0">
+            <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
+              {bannerSubtitle}{" "}
+              <BannerLink to="/the-grove" title="Life Coaching in The Grove">
+                Start here.
+              </BannerLink>
+            </BannerHeadline>
+          </CenteredText>
           <CenteredText>
-            <h3>{mainpitch.title}</h3>
             <p>{mainpitch.description}</p>
           </CenteredText>
-          <FlexContainer>
-            <Features gridItems={intro.blurbs} />
-          </FlexContainer>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
             margin="1rem 0"
@@ -206,25 +196,17 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               page="homepage"
             />
           </FlexContainer>
-          <FlexLinkContainer>
-            <Button to="/the-grove/" title="Learn more in the Grove">
-              Life Coaching in The Grove
-            </Button>
-            <Button to="/about/" title="More about Sheila Anne">
-              About
-            </Button>
-          </FlexLinkContainer>
           <CenteredText>
             <BannerHeadline as="h3" lessMargin={true}>
-              Latest from the Writing Desk
+              Latest from my blog
             </BannerHeadline>
           </CenteredText>
           <BlogRoll posts={posts} />
           <CenteredText>
-            <Button to="/writing-desk/">Read more from the blog</Button>
+            <Button to="/writing-desk/">Read more on the blog!</Button>
           </CenteredText>
         </Container>
-      </section>
+      </FixedSection>
     </>
   );
 };
@@ -265,20 +247,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            imageAlt
-            text
-            title
-          }
-        }
         mainpitch {
           title
           description
@@ -291,7 +259,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-      limit: 2
+      limit: 3
     ) {
       ...BlogPosts
     }

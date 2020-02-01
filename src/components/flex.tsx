@@ -25,23 +25,24 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   ${({ margin }) => applyStyle("margin", margin)}
   ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
 
   @media (max-width: ${Constants.mobileWidth}) {
+    flex-flow: row wrap;
     ${({ margin }) => applyStyle("margin", margin || "0")};
   }
 `;
 
 export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
   ${({ alignSelf }) => applyStyle("align-self", alignSelf)}
-  flex: none;
   ${({ padding }) => applyStyle("padding", padding)}
-  width: 50%;
+  flex-basis: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    width: 100%;
+    ${({ margin }) => applyStyle("margin", margin)}
+    flex-basis: 100%;
   }
 `;
 

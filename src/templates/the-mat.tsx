@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 
 import {
   BannerImage,
-  BlogRoll,
   Content,
   HTMLContent,
   ImageHeadlineContainer,
@@ -19,8 +18,7 @@ export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
   frontmatter,
   image,
   imageHeadline,
-  isPreview,
-  posts
+  isPreview
 }) => {
   const PageContent = contentComponent || Content;
   const safeImage = image as NestedImage;
@@ -40,12 +38,11 @@ export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
             {imageHeadline}
           </ImageHeadlineContainer>
         }
-        image={image}
+        image={safeImage}
         isPreview={isPreview}
       />
 
       <PageContent content={content} />
-      {posts.length > 0 && <BlogRoll posts={posts} />}
     </section>
   );
 };
@@ -65,7 +62,6 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
         frontmatter={post.frontmatter}
         image={post.frontmatter.bannerImage}
         imageHeadline={post.frontmatter.bannerImageHeadline}
-        posts={data.allMarkdownRemark.posts}
       />
     </Layout>
   );
@@ -89,13 +85,6 @@ export const pageQuery = graphql`
         pageDescription
         pageTitle
       }
-    }
-
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { eq: "the mat" } } }
-    ) {
-      ...BlogPosts
     }
   }
 `;

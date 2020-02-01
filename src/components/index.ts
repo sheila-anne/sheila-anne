@@ -11,6 +11,7 @@ export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered-text";
 export { Features } from "./features";
 export { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";
+export { FixedSection } from "./fixed-section";
 export { Footer } from "./footer";
 export { Layout } from "./layout";
 export { Nav } from "./nav";

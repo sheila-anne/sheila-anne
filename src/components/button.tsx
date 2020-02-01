@@ -10,20 +10,21 @@ type PillButtonProps = {
 };
 
 export const Button = styled(SmartLink)`
-  display: inline-block;
-  padding: 12px 16px 10px;
-  font-size: 1rem;
-  line-height: 1.25;
-  background-color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  color: ${Constants.Colors.theGroveGreen};
-  text-align: center;
+  background-color: ${Constants.Colors.theGroveGreen};
   box-shadow: inset 0 0 0 2px ${Constants.Colors.theGroveGreen};
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
   transition: all 0.15s ease;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin: 0 0 1rem 0;
+    margin: 1rem 0;
   }
 `;
 

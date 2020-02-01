@@ -8,7 +8,7 @@ declare type BaseGatsbyPage = {
 };
 
 declare type BannerImagePreviewPage = {
-  image: string | NestedImage;
+  image?: string | NestedImage;
   imageHeadline: string;
   isPreview?: boolean;
 };
@@ -17,7 +17,7 @@ declare type BasePreviewWithBannerImage = BannerImagePreviewPage & {
   content: string;
   contentComponent?: any;
   frontmatter: any;
-  posts: BlogPost[];
+  posts?: BlogPost[];
 };
 
 declare type BlogPost = {

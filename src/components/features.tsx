@@ -23,11 +23,10 @@ const ColorsMap = {
 
 const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
   background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
-  flex: none;
+  flex-basis: 45%;
   padding: 10px;
   margin: 1rem auto;
   text-align: center;
-  width: 45%;
 `;
 
 const FlexCenteredText = styled(CenteredText)`

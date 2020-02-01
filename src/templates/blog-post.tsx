@@ -3,20 +3,21 @@ import kebabCase from "lodash.kebabcase";
 import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
-import { Content, Layout, HTMLContent, SEO, TagList } from "../components";
+import {
+  Content,
+  FixedSection,
+  Layout,
+  HTMLContent,
+  SEO,
+  TagList
+} from "../components";
 import { Constants } from "../constants";
-import { rhythm } from "../utils/typography";
 
 const Smalltext = styled.small`
   margin-bottom: 1rem;
   @media (max-width: ${Constants.mobileWidth}) {
     font-size: 12px;
   }
-`;
-
-const BlogPostSection = styled.section`
-  margin: 0 auto;
-  max-width: ${rhythm(35)};
 `;
 
 const BlogPostMeta = ({ featuredImage, logo }) => (
@@ -81,7 +82,7 @@ export const BlogPostTemplate = ({
   const navTitle = `${title} | The Writing Desk | Sheila Anne`;
 
   return (
-    <BlogPostSection>
+    <FixedSection>
       <article itemType="https://schema.org/BlogPosting" itemScope={true}>
         <SEO description={description} title={navTitle} type="article" />
         <BlogPostMeta logo={logo} featuredImage={featuredImage} />
@@ -113,7 +114,7 @@ export const BlogPostTemplate = ({
           </div>
         ) : null}
       </article>
-    </BlogPostSection>
+    </FixedSection>
   );
 };
 

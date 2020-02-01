@@ -3,71 +3,34 @@ import React, { FC } from "react";
 
 import { Constants } from "../constants";
 import {
-  BannerImage,
-  BlogRoll,
   Content,
+  Features,
+  FixedSection,
   FlexContainer,
   FlexColumn,
   HTMLContent,
-  ImageHeadlineContainer,
   Layout,
   SEO,
   SubscribeForm,
-  PreviewCompatibleBanner,
-  PreviewCompatibleFlexImage
+  PreviewCompatibleFlexImage,
+  CenteredText
 } from "../components";
-
-const TheGroveBannerImage = ({
-  safeImage,
-  imageHeadline
-}: {
-  safeImage: NestedImage;
-  imageHeadline: string;
-}) => (
-  <BannerImage
-    color={Constants.Colors.theGroveGreen}
-    image={safeImage}
-    title="Life Coaching in The Grove"
-    imageHeadline={imageHeadline}
-  />
-);
 
 export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
   content,
   contentComponent,
-  frontmatter,
-  image,
-  imageHeadline,
-  isPreview,
-  posts
+  frontmatter
 }) => {
   const PageContent = contentComponent || Content;
-  const safeImage = image as NestedImage;
 
   return (
-    <section>
-      <PreviewCompatibleBanner
-        Component={
-          <TheGroveBannerImage
-            safeImage={safeImage}
-            imageHeadline={imageHeadline}
-          />
-        }
-        ComponentChildren={
-          <ImageHeadlineContainer color={Constants.Colors.theGroveGreen}>
-            {imageHeadline}
-          </ImageHeadlineContainer>
-        }
-        image={image}
-        isPreview={isPreview}
-      />
-      <PageContent
-        backgroundColor={Constants.Colors.theGroveGreenGray}
-        content={content}
-        margin="0 0 1rem 0"
-        padding="5px 2rem"
-      />
+    <FixedSection>
+      <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
+      <CenteredText>
+        <h2>How Does It Work?</h2>
+      </CenteredText>
       <FlexContainer>
+        <Features gridItems={frontmatter.intro.blurbs} />
         <FlexColumn>
           <PreviewCompatibleFlexImage
             imageInfo={frontmatter.featuredImage}
@@ -85,8 +48,7 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
           />
         </FlexColumn>
       </FlexContainer>
-      {posts.length > 0 && <BlogRoll posts={posts} />}
-    </section>
+    </FixedSection>
   );
 };
 
@@ -98,16 +60,13 @@ const TheGrove = ({ data, location }) => {
       <SEO
         title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
-        image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
         imageAlt={post.frontmatter.bannerImageHeadline}
       />
       <TheGroveTemplate
         contentComponent={HTMLContent}
         content={post.html}
         frontmatter={post.frontmatter}
-        image={post.frontmatter.bannerImage}
         imageHeadline={post.frontmatter.bannerImageHeadline}
-        posts={data.allMarkdownRemark.posts}
       />
     </Layout>
   );
@@ -121,13 +80,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         bannerImageHeadline
-        bannerImage {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 300, quality: 95) {
@@ -138,16 +90,23 @@ export const pageQuery = graphql`
         formHeadline
         formSubHeadline
         formParagraph
+        intro {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            imageAlt
+            text
+            title
+          }
+        }
         pageDescription
         pageTitle
       }
-    }
-
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { eq: "the grove" } } }
-    ) {
-      ...BlogPosts
     }
   }
 `;

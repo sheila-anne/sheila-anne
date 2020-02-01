@@ -1,15 +1,19 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
-import { Button } from "./button";
 import { Constants } from "../constants";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { SmartLink } from "./smart-link";
+import { CenteredText } from "./centered-text";
 
 type ArticleProps = {
   isFeatured: boolean;
 };
+
+const BlogRollFlexColumn = styled(FlexColumn)`
+  flex-basis: 33%;
+`;
 
 const FlexTextContainer = styled.div`
   flex-basis: 65%;
@@ -23,41 +27,52 @@ const FlexTextContainer = styled.div`
   }
 `;
 
-const FlexSpan = styled.span``;
+const Paragraph = styled.p`
+  padding-bottom: 1rem;
+`;
 
 const FlexTitle = styled.h3`
   padding: 1rem 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
+    margin: 0.25rem 0;
     padding: 2rem;
-    margin: 1rem 0;
   }
 `;
 
 const FeaturedThumbnail = styled.div`
+  align-self: center;
   flex-basis: 35%;
   margin: 1rem 1rem 0 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    margin: 0;
+    margin: 1rem auto 0 auto;
   }
 `;
 
 const Article = styled.article<ArticleProps>`
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
+  border-radius: 1rem;
   color: #000;
-  position: relative;
-  padding: 0 1rem 1rem 1rem;
-
-  align-items: stretch;
-  display: block;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-  height: 250px;
   margin: 1rem;
   overflow: hidden;
+  padding: 0 1rem 1rem 1rem;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    height: 100%;
+    margin: 0;
+  }
+`;
+
+const PillButton = styled.button`
+  background-color: ${Constants.Colors.blue};
+  border-radius: 1rem;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
 `;
 
 const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
@@ -75,12 +90,8 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
       ) : null}
       <FlexTextContainer>
         <FlexTitle>{post.frontmatter.title}</FlexTitle>
-        <FlexSpan>Published {post.frontmatter.date}</FlexSpan>
       </FlexTextContainer>
     </FlexHeader>
-    <div>
-      <p>{post.excerpt}</p>
-    </div>
   </Article>
 );
 
@@ -89,11 +100,11 @@ export const BlogRoll: FC<BlogPosts> = ({ posts }) => {
     <FlexContainer>
       {posts &&
         posts.map(({ node: post }) => (
-          <FlexColumn key={post.id}>
+          <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>
             <SmartLink to={post.fields.slug} title={post.frontmatter.title}>
               <BlogRollInner post={post} />
             </SmartLink>
-          </FlexColumn>
+          </BlogRollFlexColumn>
         ))}
     </FlexContainer>
   );

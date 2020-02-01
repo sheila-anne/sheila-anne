@@ -166,21 +166,21 @@ const MobileMenu = styled.div<OpenNavProps>`
 
 const getNavLinkItems = (location: Location, showHomeLink = false) => {
   const navLinks = [
-    { to: "/about/", text: "About", title: "About Sheila Anne" },
+    { to: "/about/", text: "About Me", title: "About Sheila Anne" },
     {
       to: "/the-grove/",
-      text: "The Grove",
+      text: "Working Together",
       title: "Life coaching help from Sheila Anne"
     },
     {
       to: "/writing-desk/",
-      text: "The Writing Desk",
+      text: "My Blog",
       title: "Writing samples from Sheila Anne"
     },
 
     {
       to: "/the-mat/",
-      text: "The Mat",
+      text: "Yoga",
       title: "Yoga & Intentional Movement"
     }
   ];

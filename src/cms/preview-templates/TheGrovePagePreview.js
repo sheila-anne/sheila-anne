@@ -10,7 +10,6 @@ const TheGrovePagePreview = ({ entry, widgetFor }) => {
       isPreview={true}
       image={data.bannerImage}
       imageHeadline={data.bannerImageHeadline}
-      posts={[]}
     />
   );
 };
