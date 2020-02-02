@@ -1,8 +1,8 @@
 import Image from "gatsby-image";
 import styled, { css } from "styled-components";
 
-import { Constants } from "../constants";
 import { applyStyle } from "../utils";
+import { Constants } from "../constants";
 
 type BackgroundColorProps = {
   backgroundColor?: string;

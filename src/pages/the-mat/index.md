@@ -16,6 +16,8 @@ Sheila Anne curates flows to empower others on their individual path and to crea
 
 While growing through coaching in [The Grove](/the-grove/), you can expect that Sheila will draw in themes related to **The Mat**. This means that you’ll experience a full-human approach -- linking mind, body, and universe, by experimenting with mindfulness, meditation, and intentional movement. All this so you can tune in to your inner compass, then transform into the most empowered expression of you.
 
+![Intentional movement on the mat with Sheila Anne](/img/sheila-anne-the-mat-yoga.jpg)
+
 ## Sheila's Yoga Journey
 
 Sheila initially picked up yoga as a cross training activity for other sports, and it evolved into a powerful tool for building inner strength, physical strength, and thoughtful self-study. Now, Sheila teaches yoga to empower others on their individual path, and to create a platform for an hour of unapologetic self-care and exploration. Her classes invite yogis to check in mentally, physically, and emotionally, and also to flex the muscles of mindfulness on and off the mat.

@@ -2,7 +2,7 @@
 templateKey: index-page
 pageTitle: Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement
 pageDescription: >
-  Life coach, yoga teacher, and writer Sheila Anne Murray welcomes those looking to take their life to the next level
+  Lifecoach, yoga teacher, and content creator Sheila Anne Murray welcomes those looking to take their life to the next level.
 bannerTitle: Meet your new life coach
 bannerSubtitle: >
   Looking to navigate your life path?
@@ -40,9 +40,4 @@ intro:
       title: Transform
       text: >
         Your world is changing, you’re standing tall in your power, and you're becoming the most bold & authentic version of you!
-
-main:
-  heading: Not in use
-  description: >
-    Plans to use this section in the future
 ---

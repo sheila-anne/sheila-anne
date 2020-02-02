@@ -37,6 +37,11 @@ const theme = {
     p: {
       marginBottom: "1rem"
     },
+    hr: {
+      height: "1px",
+      width: "100%",
+      marginTop: `calc(${rhythm(0.5)} - 1px)`
+    },
     "ul,ol": {
       marginBottom: "1rem",
       marginLeft: rhythm(1),

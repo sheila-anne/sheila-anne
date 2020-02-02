@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import React, { FC } from "react";
+import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
@@ -16,6 +17,8 @@ import {
   CenteredText
 } from "../components";
 
+const LifeCoachingFlexColumn = styled(FlexColumn)``;
+
 export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
   content,
   contentComponent,
@@ -31,22 +34,26 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
       </CenteredText>
       <FlexContainer>
         <Features gridItems={frontmatter.intro.blurbs} />
-        <FlexColumn>
+        <hr />
+        <LifeCoachingFlexColumn>
           <PreviewCompatibleFlexImage
             imageInfo={frontmatter.featuredImage}
             title="Schedule a free discovery call today!"
             imageAlt="Sheila Anne Murray in the mountains of Switzerland"
           />
-        </FlexColumn>
-        <FlexColumn backgroundColor={Constants.Colors.theGroveLightGreen}>
+        </LifeCoachingFlexColumn>
+        <LifeCoachingFlexColumn
+          backgroundColor={Constants.Colors.theGroveLightGreen}
+        >
           <SubscribeForm
             backgroundColor="#fff"
             formDescription={frontmatter.formSubHeadline}
             formParagraph={frontmatter.formParagraph}
             formTitle={frontmatter.formHeadline}
+            id="#theGroveSubscribe"
             page="theGrove"
           />
-        </FlexColumn>
+        </LifeCoachingFlexColumn>
       </FlexContainer>
     </FixedSection>
   );
