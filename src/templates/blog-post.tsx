@@ -4,8 +4,8 @@ import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
 import {
+  CenteredSection,
   Content,
-  FixedSection,
   Layout,
   HTMLContent,
   SEO,
@@ -82,7 +82,7 @@ export const BlogPostTemplate = ({
   const navTitle = `${title} | The Writing Desk | Sheila Anne`;
 
   return (
-    <FixedSection>
+    <CenteredSection>
       <article itemType="https://schema.org/BlogPosting" itemScope={true}>
         <SEO description={description} title={navTitle} type="article" />
         <BlogPostMeta logo={logo} featuredImage={featuredImage} />
@@ -114,7 +114,7 @@ export const BlogPostTemplate = ({
           </div>
         ) : null}
       </article>
-    </FixedSection>
+    </CenteredSection>
   );
 };
 

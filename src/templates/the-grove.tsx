@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
+  CenteredSection,
   Content,
   Features,
-  FixedSection,
   FlexContainer,
   FlexColumn,
   HTMLContent,
@@ -27,7 +27,7 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
   const PageContent = contentComponent || Content;
 
   return (
-    <FixedSection>
+    <CenteredSection>
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
       <CenteredText>
         <h2>How Does It Work?</h2>
@@ -55,7 +55,7 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
           />
         </LifeCoachingFlexColumn>
       </FlexContainer>
-    </FixedSection>
+    </CenteredSection>
   );
 };
 

@@ -2,8 +2,8 @@ import { graphql } from "gatsby";
 import React from "react";
 
 import {
+  CenteredSection,
   Content,
-  FixedSection,
   HTMLContent,
   Layout,
   PreviewCompatibleImage,
@@ -19,14 +19,14 @@ export const AboutPageTemplate = ({
   const PageContent = contentComponent || Content;
 
   return (
-    <FixedSection>
+    <CenteredSection>
       <PageContent content={content} />
       <PreviewCompatibleImage
         imageInfo={bannerImage}
         title={title}
         imageAlt="Sheila hiking in Chamonix"
       />
-    </FixedSection>
+    </CenteredSection>
   );
 };
 

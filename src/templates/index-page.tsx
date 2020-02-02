@@ -6,26 +6,21 @@ import styled from "styled-components";
 import {
   BlogRoll,
   Button,
+  CenteredSection,
   CenteredText,
-  Features,
   FlexContainer,
   FullWidthImage,
   Layout,
   PreviewCompatibleBanner,
   SubscribeForm,
   SEO,
-  SmartLink,
-  FixedSection
+  SmartLink
 } from "../components";
 import { Constants } from "../constants";
 
 type MainPitch = {
   description: string;
   title: string;
-};
-
-type Intro = {
-  blurbs: FeaturedGridItem[];
 };
 
 type IndexFrontmatterProps = BaseFrontmatter & {
@@ -37,7 +32,6 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   formParagraph: string;
   heading: string;
   image: PreviewImage | string;
-  intro: Intro;
   mainpitch: MainPitch;
 };
 
@@ -165,7 +159,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         }
         image={image}
       />
-      <FixedSection>
+      <CenteredSection>
         <CenteredText>
           <BannerHeadline>{mainpitch.title}</BannerHeadline>
         </CenteredText>
@@ -206,7 +200,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <Button to="/writing-desk/">Read more on the blog!</Button>
           </CenteredText>
         </Container>
-      </FixedSection>
+      </CenteredSection>
     </>
   );
 };
