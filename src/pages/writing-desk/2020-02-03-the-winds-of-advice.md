@@ -32,6 +32,8 @@ Time after time you harness the wind of advice, and suddenly you’ve forgotten 
 
 If this resonates, I invite you to ask this question (“am I going toward my truth?”) next time the winds of advice offer a persuasive direction. Think about yourself as that ship, and identify what you have already on board to guide you -- such as your strengths, unique experiences, and internal compass -- and make sure those powerful tools being utilized.
 
+![a sailboat being pushed in different directions by winds that represent advice from others](/img/sheila-anne-winds-of-advice.png)
+
 **Ok, so where do we go from here?**
 
 Typically we label the winds as helpful and that’s why we let them guide us. So let’s re-frame what “helpfulness” looks like. While someone might be advising (or forcefully guiding) you from a place of **love**,their presence and opinion actually may **not be helpful**.You can still honor their perspective but continue forging your own way -- it doesn’t mean you love them any less! Only you can tap into your internal compass, and only you are going to be the one living in the waters of the wind you follow. In the end, you know you best!
