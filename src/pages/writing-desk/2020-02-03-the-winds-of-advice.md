@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: The Winds of Advice
+title: The Winds Of Advice
 date: 2020-02-03T04:34:40.726Z
 description: >-
   Support systems are the best! … But they can also get in the way of living
