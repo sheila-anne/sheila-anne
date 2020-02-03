@@ -1,5 +1,6 @@
 import React, { FC, Reducer, useReducer } from "react";
 import styled from "styled-components";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 type Action = {
   type: string;
@@ -64,7 +65,15 @@ const getInitialState = (faq: FAQ[]) =>
 const reducer: Reducer<State, Action> = (
   state: State,
   action: Action
-): State => ({ ...state, [action.type]: !state[action.type] });
+): State => {
+  const isExpanded = !state[action.type];
+  trackCustomEvent({
+    action: "click",
+    category: `FAQ`,
+    label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`
+  });
+  return { ...state, [action.type]: isExpanded };
+};
 
 export const FAQ: FC<FAQProps> = ({ faq }) => {
   const initialState = getInitialState(faq);
