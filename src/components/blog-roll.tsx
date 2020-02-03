@@ -5,7 +5,6 @@ import { Constants } from "../constants";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { SmartLink } from "./smart-link";
-import { CenteredText } from "./centered-text";
 
 type ArticleProps = {
   isFeatured: boolean;
@@ -63,16 +62,6 @@ const Article = styled.article<ArticleProps>`
     height: 100%;
     margin: 0;
   }
-`;
-
-const PillButton = styled.button`
-  background-color: ${Constants.Colors.blue};
-  border-radius: 1rem;
-  border-style: none;
-  color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 10px;
 `;
 
 const BlogRollInner = ({ post }: { post: BlogPostInner }) => (

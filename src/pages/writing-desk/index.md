@@ -15,6 +15,6 @@ Each individual has a way of expressing their deep thoughts, dreams, and passion
 My work:
 
 - [She & Jim](https://www.sheandjim.com/) -- my adventure travel blog
-- [Thorn Alexander -- There She Goes](https://thornalexanderstyle.com/there-she-goes) -- curated weekly uplifting news for this inspirational contemporary needlepoint brand
+- [Thorn Alexander -- There She Goes](https://thornalexanderstyle.com/there-she-goes) -- curated weekly uplifting news for [Thorn Alexander](https://www.thornalexander.com/), the inspirational contemporary needlepoint brand
 
-I hope you'll enjoy the content I create here and elsewhere.
+I hope you'll enjoy the content I create here and elsewhere -- feel free to browse my blog posts below!

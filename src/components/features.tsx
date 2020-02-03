@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
-import { CenteredText } from "./centered-text";
+import { CenteredText } from "./centered";
 import { FlexColumn, FlexContainer } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { Constants } from "../constants";

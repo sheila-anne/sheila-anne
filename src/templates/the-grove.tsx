@@ -1,11 +1,12 @@
 import { graphql } from "gatsby";
-import React, { FC } from "react";
-import styled from "styled-components";
+import React from "react";
 
 import { Constants } from "../constants";
 import {
   CenteredSection,
+  CenteredText,
   Content,
+  FAQ,
   Features,
   FlexContainer,
   FlexColumn,
@@ -13,13 +14,10 @@ import {
   Layout,
   SEO,
   SubscribeForm,
-  PreviewCompatibleFlexImage,
-  CenteredText
+  PreviewCompatibleFlexImage
 } from "../components";
 
-const LifeCoachingFlexColumn = styled(FlexColumn)``;
-
-export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
+export const TheGroveTemplate = ({
   content,
   contentComponent,
   frontmatter
@@ -35,16 +33,14 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
       <FlexContainer>
         <Features gridItems={frontmatter.intro.blurbs} />
         <hr />
-        <LifeCoachingFlexColumn>
+        <FlexColumn>
           <PreviewCompatibleFlexImage
             imageInfo={frontmatter.featuredImage}
             title="Schedule a free discovery call today!"
             imageAlt="Sheila Anne Murray in the mountains of Switzerland"
           />
-        </LifeCoachingFlexColumn>
-        <LifeCoachingFlexColumn
-          backgroundColor={Constants.Colors.theGroveLightGreen}
-        >
+        </FlexColumn>
+        <FlexColumn backgroundColor={Constants.Colors.theGroveLightGreen}>
           <SubscribeForm
             backgroundColor="#fff"
             formDescription={frontmatter.formSubHeadline}
@@ -53,7 +49,9 @@ export const TheGroveTemplate: FC<BasePreviewWithBannerImage> = ({
             id="#theGroveSubscribe"
             page="theGrove"
           />
-        </LifeCoachingFlexColumn>
+        </FlexColumn>
+        <hr />
+        <FAQ faq={frontmatter.faq} />
       </FlexContainer>
     </CenteredSection>
   );
@@ -73,7 +71,6 @@ const TheGrove = ({ data, location }) => {
         contentComponent={HTMLContent}
         content={post.html}
         frontmatter={post.frontmatter}
-        imageHeadline={post.frontmatter.bannerImageHeadline}
       />
     </Layout>
   );
@@ -87,6 +84,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         bannerImageHeadline
+        faq {
+          question
+          answer
+        }
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 300, quality: 95) {

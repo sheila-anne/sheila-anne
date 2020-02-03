@@ -94,21 +94,7 @@ const BannerHeadline = styled.h1<HeadlineProps>`
   padding: 0.5rem;
 `;
 
-const FlexLinkContainer = styled(FlexContainer)`
-  margin: 1rem;
-  justify-content: space-around;
-  padding: 1rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-bottom: 1rem;
-
-    > :last-child {
-      margin-bottom: 0;
-    }
-  }
-`;
-
-const HomepageHeadline = styled.h1`
+const Subheadline = styled.h2`
   font-size: 1.5rem;
   margin: 1rem;
   padding: 1rem;
@@ -164,18 +150,14 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           <BannerHeadline>{mainpitch.title}</BannerHeadline>
         </CenteredText>
         <Container>
-          <FlexContainer backgroundColor="#FFF" justifyContent="center">
-            <HomepageHeadline>{description}</HomepageHeadline>
-          </FlexContainer>
-          <CenteredText margin="1rem 0 0 0">
+          <CenteredText>
+            <Subheadline>{description}</Subheadline>
             <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
               {bannerSubtitle}{" "}
               <BannerLink to="/the-grove" title="Life Coaching in The Grove">
                 Start here.
               </BannerLink>
             </BannerHeadline>
-          </CenteredText>
-          <CenteredText>
             <p>{mainpitch.description}</p>
           </CenteredText>
           <FlexContainer
