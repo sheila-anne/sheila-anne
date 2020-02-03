@@ -1,7 +1,6 @@
 ---
 templateKey: "about-page"
 bannerImage: /img/sheila-anne-about.jpg
-bannerImageHeadline: "Get to know Sheila"
 path: /about
 pageTitle: About | Sheila Anne
 pageDescription: >
@@ -14,4 +13,6 @@ Sheila is a yogi, writer, travel enthusiast, and life coach originally from New 
 
 The common thread through career pivots, location changes, loss, and successes, has been Sheila’s love for and great ability to help others find their inner compass and navigate their own way. Sheila started Sheila Anne at the end of 2019, just before making big moves to Colorado! If the idea of building confidence, making positive changes, and stepping into your power excites you, you’re in the right spot!
 
-Looking to get in touch with Sheila? [Request a free exploration call](/the-grove), or check out her [Contact Page](/contact)!
+Looking to get in touch with Sheila? [Request a free exploration call](/the-grove/), or check out her [Contact Page](/contact)!
+
+![Get to know Sheila](/img/sheila-anne-about.jpg)

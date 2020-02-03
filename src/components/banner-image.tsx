@@ -63,7 +63,7 @@ export const BannerImage: FC<BannerImageProps> = ({
   const imageData = image.childImageSharp?.fluid;
   const headlineColor = !!color ? color : Constants.Colors.lighterBlue;
   return (
-    <>
+    <section>
       <FullWidthImage
         alt={title}
         critical={true}
@@ -75,6 +75,6 @@ export const BannerImage: FC<BannerImageProps> = ({
       <ImageHeadlineContainer color={headlineColor}>
         <h1>{imageHeadline}</h1>
       </ImageHeadlineContainer>
-    </>
+    </section>
   );
 };

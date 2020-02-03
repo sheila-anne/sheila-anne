@@ -139,7 +139,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             critical={true}
             fadeIn="soft"
             fluid={safeImage?.childImageSharp?.fluid || safeImage}
-            preserveStackingContext={true}
             title="Sheila Anne Life Coaching cover photo"
           />
         }

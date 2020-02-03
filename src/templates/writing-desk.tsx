@@ -73,7 +73,7 @@ export const pageQuery = graphql`
         bannerImage {
           childImageSharp {
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid
             }
           }
         }

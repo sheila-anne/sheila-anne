@@ -54,6 +54,8 @@ Sheila Anne’s mission is to help her clients recognize their own superpowers, 
 
 Through life coaching you can expect a deep dive into what makes you, you. From there, I’ll assist you in learning to trust inner compass and maximize your strengths. Together, we’ll develop a clear vision for your future and design a personalized, actionable plan to achieve it!
 
+![At peace in the security of your own grove](/img/sheila-anne-life-coaching.jpg)
+
 ## The Grove
 
 The Grove is my 1:1 coaching program, created to nourish your natural power & soul. Think of it as your new space to cultivate your dreams, to celebrate growth, to trim the weeds that don’t serve you, and to find freedom in your own thriving grove. It all begins with exploration...

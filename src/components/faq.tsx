@@ -1,10 +1,8 @@
 import React, { FC, Reducer, useReducer } from "react";
 import styled from "styled-components";
 
-import { Constants } from "../constants";
-
-type StateAction = {
-  [key in string]: boolean;
+type Action = {
+  type: string;
 };
 
 type FAQ = {
@@ -16,7 +14,9 @@ type FAQProps = {
   faq: FAQ[];
 };
 
-type State = StateAction;
+type State = {
+  [key in string]: boolean;
+};
 
 const Clickable = styled.div`
   cursor: pointer;
@@ -32,21 +32,21 @@ const HiddenText = styled.small<{ isExpanded: boolean }>`
 
 const SmallHeadline = styled.h2`
   font-size: 1.25rem;
+  position: relative;
+  text-decoration: underline;
 `;
 
-const reducer: Reducer<State, StateAction> = (
-  state: State,
-  action: StateAction
-): State => {
-  const newState = { ...state };
-  const name = Object.keys(action)[0];
-  const newValue = !action[name] as boolean;
-  newState[name] = newValue;
-  return newState;
-};
+const RotateOnOpen = styled.span<{ isExpanded: boolean }>`
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  transform: rotate(${({ isExpanded }) => (!!isExpanded ? 90 : 0)}deg);
+  transition: ease 0.3s;
+`;
 
-export const FAQ: FC<FAQProps> = ({ faq }) => {
-  const initialState = faq
+const getInitialState = (faq: FAQ[]) =>
+  faq
     .map(frequentlyAsked => ({
       name: frequentlyAsked.question,
       isExpanded: false
@@ -60,6 +60,14 @@ export const FAQ: FC<FAQProps> = ({ faq }) => {
       },
       { base: false }
     );
+
+const reducer: Reducer<State, Action> = (
+  state: State,
+  action: Action
+): State => ({ ...state, [action.type]: !state[action.type] });
+
+export const FAQ: FC<FAQProps> = ({ faq }) => {
+  const initialState = getInitialState(faq);
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
@@ -70,11 +78,16 @@ export const FAQ: FC<FAQProps> = ({ faq }) => {
           key={frequentlyAsked.question}
           onClick={() =>
             dispatch({
-              [frequentlyAsked.question]: state[frequentlyAsked.question]
+              type: frequentlyAsked.question
             })
           }
         >
-          <SmallHeadline>{frequentlyAsked.question} →</SmallHeadline>
+          <SmallHeadline>
+            {frequentlyAsked.question}{" "}
+            <RotateOnOpen isExpanded={state[frequentlyAsked.question]}>
+              →
+            </RotateOnOpen>
+          </SmallHeadline>
           <HiddenText isExpanded={state[frequentlyAsked.question]}>
             {frequentlyAsked.answer}
           </HiddenText>

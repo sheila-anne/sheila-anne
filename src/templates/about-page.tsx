@@ -6,26 +6,15 @@ import {
   Content,
   HTMLContent,
   Layout,
-  PreviewCompatibleImage,
   SEO
 } from "../components";
 
-export const AboutPageTemplate = ({
-  title,
-  content,
-  contentComponent,
-  bannerImage
-}) => {
+export const AboutPageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <CenteredSection>
       <PageContent content={content} />
-      <PreviewCompatibleImage
-        imageInfo={bannerImage}
-        title={title}
-        imageAlt="Sheila hiking in Chamonix"
-      />
     </CenteredSection>
   );
 };
@@ -38,15 +27,10 @@ const AboutPage = ({ data, location }) => {
       <SEO
         title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
-        image={post.frontmatter.bannerImage.childImageSharp.fluid.src}
+        image={post.frontmatter.bannerImage.childImageSharp.original.src}
         imageAlt={post.frontmatter.bannerImageHeadline}
       />
-      <AboutPageTemplate
-        bannerImage={post.frontmatter.bannerImage}
-        contentComponent={HTMLContent}
-        title={post.frontmatter.pageTitle}
-        content={post.html}
-      />
+      <AboutPageTemplate contentComponent={HTMLContent} content={post.html} />
     </Layout>
   );
 };
@@ -61,8 +45,8 @@ export const aboutPageQuery = graphql`
         bannerImageHeadline
         bannerImage {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
+            original {
+              src
             }
           }
         }
