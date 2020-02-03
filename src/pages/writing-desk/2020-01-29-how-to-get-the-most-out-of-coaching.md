@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'How to get the most out of coaching '
+title: 'How To Get The Most Out Of Coaching '
 date: 2020-02-02T20:37:12.649Z
 description: >-
 
