@@ -1,8 +1,8 @@
 import Image from "gatsby-image";
 import styled, { css } from "styled-components";
 
-import { Constants } from "../constants";
 import { applyStyle } from "../utils";
+import { Constants } from "../constants";
 
 type BackgroundColorProps = {
   backgroundColor?: string;
@@ -10,6 +10,7 @@ type BackgroundColorProps = {
 
 type FlexContainerProps = BackgroundColorProps & {
   margin?: string;
+  justifyContent?: string;
 };
 
 type FlexColumnProps = FlexContainerProps & {
@@ -23,25 +24,25 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 `;
 
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
-border-radius: 1rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   ${({ margin }) => applyStyle("margin", margin)}
+  ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
 
   @media (max-width: ${Constants.mobileWidth}) {
+    flex-flow: row wrap;
     ${({ margin }) => applyStyle("margin", margin || "0")};
   }
 `;
 
 export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
   ${({ alignSelf }) => applyStyle("align-self", alignSelf)}
-  border-radius: 1rem;
-  flex: none;
   ${({ padding }) => applyStyle("padding", padding)}
-  width: 50%;
+  flex-basis: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    width: 100%;
+    ${({ margin }) => applyStyle("margin", margin)}
+    flex-basis: 100%;
   }
 `;
 

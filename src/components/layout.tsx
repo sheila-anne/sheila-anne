@@ -23,7 +23,7 @@ const MainWrapper = styled.main`
   }
 
   margin: 0 auto;
-  max-width: ${rhythm(50)};
+  max-width: ${rhythm(35)};
   padding: ${rhythm(0.5)} ${rhythm(3 / 4)};
   z-index: 100;
   height: 100%;
@@ -35,6 +35,7 @@ const MainWrapper = styled.main`
       display: inline-block;
       height: 1rem;
       width: 1rem;
+      background-image: initial;
       background-image: url(/img/pine-tree.svg);
       background-size: contain;
       background-repeat: no-repeat;

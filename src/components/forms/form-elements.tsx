@@ -45,7 +45,7 @@ export const FormWrapperSection = styled.section<FormWrapperProps>`
   margin: 1rem auto;
   ${({ centerText }) => !!centerText && `text-align: center;`}
 
-  & > * ${Input},${TextArea} {
+  & > * ${Input}, ${TextArea} {
     display: block;
     border: 1px solid ${Constants.Colors.gray};
     border-radius: 5px;

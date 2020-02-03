@@ -3,6 +3,7 @@ import kebabCase from "lodash.kebabcase";
 import { graphql } from "gatsby";
 
 import {
+  CenteredSection,
   FlexContainer,
   FlexColumn,
   Layout,
@@ -20,7 +21,7 @@ const TagsPage: FC<GatsbyPage> = ({
   location
 }) => (
   <Layout location={location}>
-    <section>
+    <CenteredSection>
       <SEO
         description={`Sheila Anne | Find blogs produced by Life Coach and writer Sheila Anne for the subject: ${title}`}
         title={`Tags | ${title} | Sheila Anne`}
@@ -30,7 +31,10 @@ const TagsPage: FC<GatsbyPage> = ({
         <FlexColumn>
           <h1>Blog Tags</h1>
           <p>
-            Feel free to browse the topics I've written about, and let me know
+            Feel free to browse the topics I've written about, and{" "}
+            <SmartLink title="Contact" to="/contact/">
+              let me know{" "}
+            </SmartLink>
             if there's something you'd like to hear more about!
           </p>
           <ul>
@@ -47,7 +51,7 @@ const TagsPage: FC<GatsbyPage> = ({
           </ul>
         </FlexColumn>
       </FlexContainer>
-    </section>
+    </CenteredSection>
   </Layout>
 );
 

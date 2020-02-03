@@ -1,51 +1,17 @@
-import React, { FC } from "react";
 import { graphql } from "gatsby";
+import React, { FC } from "react";
 
-import {
-  BannerImage,
-  BlogRoll,
-  Content,
-  HTMLContent,
-  ImageHeadlineContainer,
-  Layout,
-  PreviewCompatibleBanner,
-  SEO
-} from "../components/";
-import { Constants } from "../constants";
+import { Content, HTMLContent, Layout, SEO } from "../components/";
 
 export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
   content,
-  contentComponent,
-  frontmatter,
-  image,
-  imageHeadline,
-  isPreview,
-  posts
+  contentComponent
 }) => {
   const PageContent = contentComponent || Content;
-  const safeImage = image as NestedImage;
 
   return (
     <section>
-      <PreviewCompatibleBanner
-        Component={
-          <BannerImage
-            image={safeImage}
-            title={frontmatter.pageTitle}
-            imageHeadline={frontmatter.bannerImageHeadline}
-          />
-        }
-        ComponentChildren={
-          <ImageHeadlineContainer color={Constants.Colors.lighterBlue}>
-            {imageHeadline}
-          </ImageHeadlineContainer>
-        }
-        image={image}
-        isPreview={isPreview}
-      />
-
       <PageContent content={content} />
-      {posts.length > 0 && <BlogRoll posts={posts} />}
     </section>
   );
 };
@@ -65,7 +31,6 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
         frontmatter={post.frontmatter}
         image={post.frontmatter.bannerImage}
         imageHeadline={post.frontmatter.bannerImageHeadline}
-        posts={data.allMarkdownRemark.posts}
       />
     </Layout>
   );
@@ -78,24 +43,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        bannerImage {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        bannerImageHeadline
         pageDescription
         pageTitle
       }
-    }
-
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { eq: "the mat" } } }
-    ) {
-      ...BlogPosts
     }
   }
 `;

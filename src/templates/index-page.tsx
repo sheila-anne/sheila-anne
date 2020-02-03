@@ -6,8 +6,8 @@ import styled from "styled-components";
 import {
   BlogRoll,
   Button,
+  CenteredSection,
   CenteredText,
-  Features,
   FlexContainer,
   FullWidthImage,
   Layout,
@@ -17,15 +17,10 @@ import {
   SmartLink
 } from "../components";
 import { Constants } from "../constants";
-import { useWindow } from "../hooks/useWindow";
 
 type MainPitch = {
   description: string;
   title: string;
-};
-
-type Intro = {
-  blurbs: FeaturedGridItem[];
 };
 
 type IndexFrontmatterProps = BaseFrontmatter & {
@@ -37,7 +32,6 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   formParagraph: string;
   heading: string;
   image: PreviewImage | string;
-  intro: Intro;
   mainpitch: MainPitch;
 };
 
@@ -47,7 +41,6 @@ type IndexFrontmatterProperty = {
 
 type PreviewTemplateProps = IndexFrontmatterProperty & {
   isPreview?: boolean;
-  isMobile: boolean;
   posts: BlogPost[];
 };
 
@@ -60,8 +53,9 @@ type IndexPageProps = {
 } & BaseGatsbyPage;
 
 type HeadlineProps = {
+  color?: string;
+  fontColor?: string;
   lessMargin?: boolean;
-  inline?: boolean;
 };
 
 const Container = styled.div`
@@ -85,92 +79,39 @@ const Container = styled.div`
 
 const BannerLink = styled(SmartLink)`
   color: #fff;
+  display: inline;
   text-decoration: underline;
 `;
 
 const BannerHeadline = styled.h1<HeadlineProps>`
-  background-color: ${Constants.Colors.blue};
-  border-radius: 1rem;
-  box-shadow: ${Constants.Colors.blue} 0.5rem 0px 0px,
-    ${Constants.Colors.blue} -0.5rem 0px 0px;
-  color: #fff;
+  background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
+  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem
+      0px 0px,
+    ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
+  color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
+  font-size: 1.5rem;
+  margin-top: 0;
   padding: 0.5rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-top: 0;
-  }
 `;
 
-const FlexLinkContainer = styled(FlexContainer)`
-  border: 2px solid ${Constants.Colors.theGroveGreen};
-  border-radius: 2rem;
-  margin: 1rem;
-  justify-content: space-around;
-  padding: 1rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    margin-bottom: 1rem;
-
-    > :last-child {
-      margin-bottom: 0;
-    }
-  }
-`;
-
-const HomepageHeadline = styled.h1`
+const Subheadline = styled.h2`
   font-size: 1.5rem;
   margin: 1rem;
   padding: 1rem;
 `;
 
-const ImageHeadlineContainer = styled.div`
-  align-items: center;
-  background-color: ${Constants.Colors.blue};
-  border-radius: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1rem;
-
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    background-color: #fff;
-    border-radius: 0;
-    margin-top: 0;
-    width: 100%;
-  }
-`;
-
-const BannerHeadlines = ({ bannerTitle, bannerSubtitle, isMobile }) => (
-  <ImageHeadlineContainer>
-    <BannerHeadline>{bannerTitle}</BannerHeadline>
-    <BannerHeadline as="h3" inline={!isMobile} lessMargin={isMobile}>
-      {bannerSubtitle}{" "}
-      <BannerLink to="/the-grove" title="Life Coaching in The Grove">
-        Start here.
-      </BannerLink>
-    </BannerHeadline>
-  </ImageHeadlineContainer>
-);
-
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
-  isMobile,
   isPreview,
   posts
 }) => {
   const {
-    bannerTitle,
     bannerSubtitle,
     description,
     formHeadline,
     formParagraph,
     formSubHeadline,
     image,
-    intro,
     mainpitch
   } = frontmatter;
 
@@ -191,7 +132,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           />
         </Helmet>
       )}
-
       <PreviewCompatibleBanner
         isPreview={isPreview}
         Component={
@@ -205,16 +145,21 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         }
         image={image}
       />
-      <BannerHeadlines
-        bannerSubtitle={bannerSubtitle}
-        bannerTitle={bannerTitle}
-        isMobile={isMobile}
-      />
-      <section>
+      <CenteredSection>
+        <CenteredText>
+          <BannerHeadline>{mainpitch.title}</BannerHeadline>
+        </CenteredText>
         <Container>
-          <FlexContainer backgroundColor={Constants.Colors.lightestBlue}>
-            <HomepageHeadline>{description}</HomepageHeadline>
-          </FlexContainer>
+          <CenteredText>
+            <Subheadline>{description}</Subheadline>
+            <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
+              {bannerSubtitle}{" "}
+              <BannerLink to="/the-grove" title="Life Coaching in The Grove">
+                Start here.
+              </BannerLink>
+            </BannerHeadline>
+            <p>{mainpitch.description}</p>
+          </CenteredText>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
             margin="1rem 0"
@@ -228,38 +173,22 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             />
           </FlexContainer>
           <CenteredText>
-            <h3>{mainpitch.title}</h3>
-            <p>{mainpitch.description}</p>
-          </CenteredText>
-          <FlexContainer>
-            <Features gridItems={intro.blurbs} />
-          </FlexContainer>
-          <FlexLinkContainer>
-            <Button to="/the-grove/" title="Learn more in the Grove">
-              Life Coaching in The Grove
-            </Button>
-            <Button to="/about/" title="More about Sheila Anne">
-              About
-            </Button>
-          </FlexLinkContainer>
-          <CenteredText>
             <BannerHeadline as="h3" lessMargin={true}>
-              Latest from the Writing Desk
+              Latest from my blog
             </BannerHeadline>
           </CenteredText>
           <BlogRoll posts={posts} />
           <CenteredText>
-            <Button to="/writing-desk/">Read more from the blog</Button>
+            <Button to="/writing-desk/">Read more on the blog!</Button>
           </CenteredText>
         </Container>
-      </section>
+      </CenteredSection>
     </>
   );
 };
 
 const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
-  const { isMobile } = useWindow();
 
   return (
     <Layout location={location}>
@@ -268,7 +197,6 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
         description={frontmatter.pageDescription}
       />
       <IndexPageTemplate
-        isMobile={isMobile}
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
       />
@@ -295,20 +223,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            imageAlt
-            text
-            title
-          }
-        }
         mainpitch {
           title
           description
@@ -321,7 +235,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-      limit: 2
+      limit: 3
     ) {
       ...BlogPosts
     }

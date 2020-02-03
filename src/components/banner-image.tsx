@@ -43,7 +43,6 @@ export const ImageHeadlineContainer = styled.div<{
 }>`
   background-color: ${({ color }) => color};
   box-shadow: ${({ color }) => `0.5rem 0 0 ${color}, -0.5rem 0 0 ${color}`};
-  border-radius: 1rem;
   color: #fff;
   line-height: 1;
   margin-bottom: 1rem;

@@ -1,14 +1,12 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import { Constants } from "../constants";
 import {
+  CenteredSection,
   Content,
-  FlexContainer,
-  FlexColumn,
   HTMLContent,
   Layout,
-  PreviewCompatibleFlexImage,
+  PreviewCompatibleImage,
   SEO
 } from "../components";
 
@@ -21,23 +19,14 @@ export const AboutPageTemplate = ({
   const PageContent = contentComponent || Content;
 
   return (
-    <section>
-      <FlexContainer>
-        <FlexColumn>
-          <PreviewCompatibleFlexImage
-            imageInfo={bannerImage}
-            title={title}
-            imageAlt="Sheila hiking in Chamonix"
-          />
-        </FlexColumn>
-        <FlexColumn
-          backgroundColor={Constants.Colors.lightestBlue}
-          padding="0 1rem"
-        >
-          <PageContent content={content} />
-        </FlexColumn>
-      </FlexContainer>
-    </section>
+    <CenteredSection>
+      <PageContent content={content} />
+      <PreviewCompatibleImage
+        imageInfo={bannerImage}
+        title={title}
+        imageAlt="Sheila hiking in Chamonix"
+      />
+    </CenteredSection>
   );
 };
 

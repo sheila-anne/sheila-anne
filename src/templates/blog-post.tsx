@@ -3,7 +3,14 @@ import kebabCase from "lodash.kebabcase";
 import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
-import { Content, Layout, HTMLContent, SEO, TagList } from "../components";
+import {
+  CenteredSection,
+  Content,
+  Layout,
+  HTMLContent,
+  SEO,
+  TagList
+} from "../components";
 import { Constants } from "../constants";
 
 const Smalltext = styled.small`
@@ -75,7 +82,7 @@ export const BlogPostTemplate = ({
   const navTitle = `${title} | The Writing Desk | Sheila Anne`;
 
   return (
-    <section>
+    <CenteredSection>
       <article itemType="https://schema.org/BlogPosting" itemScope={true}>
         <SEO description={description} title={navTitle} type="article" />
         <BlogPostMeta logo={logo} featuredImage={featuredImage} />
@@ -107,7 +114,7 @@ export const BlogPostTemplate = ({
           </div>
         ) : null}
       </article>
-    </section>
+    </CenteredSection>
   );
 };
 

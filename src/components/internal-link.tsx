@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 import { applyStyle } from "../utils";
-import { Constants } from "../constants";
 
 type InternalLinkProps = {
   "aria-current"?: boolean;
@@ -17,7 +16,7 @@ const InternalLink = styled(Link)<InternalLinkProps>`
   text-decoration: none;
 
   :hover {
-    color: ${Constants.Colors.gray};
+    color: #000;
   }
 `;
 

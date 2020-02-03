@@ -16,7 +16,6 @@ type ContentProps = ContentContainerProps & {
 
 const ContentContainer = styled.div<ContentContainerProps>`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
-  border-radius: 1rem;
   ${({ margin }) => applyStyle("margin", margin)}
   ${({ padding }) => applyStyle("padding", padding)}
 `;

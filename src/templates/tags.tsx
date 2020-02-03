@@ -1,12 +1,26 @@
-import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import React from "react";
 import styled from "styled-components";
 
-import { Layout, SmartLink, TagList } from "../components/";
+import {
+  Button,
+  CenteredText,
+  Layout,
+  SmartLink,
+  TagList
+} from "../components/";
 
 const TagLink = styled(SmartLink)`
   text-decoration: underline;
+
+  > * {
+    display: inline;
+  }
+`;
+
+const Headline = styled.h1`
+  margin-bottom: 2rem;
 `;
 
 const TagRoute = ({ data, location, pageContext }) => {
@@ -28,12 +42,15 @@ const TagRoute = ({ data, location, pageContext }) => {
   return (
     <Layout location={location}>
       <section>
-        <Helmet title={`${tag} | ${title}`} />
-        <h1>{tagHeader}</h1>
+        <Helmet title={`Tags for "${tag}" | ${title}`} />
+        <Headline>{tagHeader}</Headline>
         <TagList>{postLinks}</TagList>
-        <SmartLink to="/tags/" title="Browse all tags">
-          Browse all tags
-        </SmartLink>
+        <hr />
+        <CenteredText>
+          <Button to="/tags/" title="Browse all tags">
+            Browse more posts by tag!
+          </Button>
+        </CenteredText>
       </section>
     </Layout>
   );

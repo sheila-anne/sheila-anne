@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
-import { CenteredText } from "./centered-text";
+import { CenteredText } from "./centered";
 import { FlexColumn, FlexContainer } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { Constants } from "../constants";
@@ -23,12 +23,10 @@ const ColorsMap = {
 
 const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
   background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
-  border-radius: 2rem;
-  flex: none;
+  flex-basis: 45%;
   padding: 10px;
   margin: 1rem auto;
   text-align: center;
-  width: 45%;
 `;
 
 const FlexCenteredText = styled(CenteredText)`

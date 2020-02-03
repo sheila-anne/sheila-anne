@@ -2,7 +2,6 @@ import React, { FC, ReactElement } from "react";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
-import { ImageHeadlineContainer } from "./banner-image";
 import { FlexImageCSS } from "./flex";
 
 type PreviewCompatibleBannerProps = {
@@ -53,7 +52,6 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   title
 }) => {
   const imageStyle = {
-    borderRadius: "5px",
     maxWidth: "inherit",
     maxHeight: "inherit"
   };

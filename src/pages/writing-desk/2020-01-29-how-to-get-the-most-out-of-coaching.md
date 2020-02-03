@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'How to get the most out of coaching '
+title: "How To Get The Most Out Of Coaching"
 date: 2020-02-02T20:37:12.649Z
 description: >-
 
@@ -15,15 +15,16 @@ tags:
   - tips
   - advice
 ---
-Coaching is a partnership between the client (you!) and the coach (me!).  The more that you put into your sessions, the more you’ll get out of them.  Remember, the 1:1 sessions are a dedicated block of time for us to focus in on you, helping you to: 
 
-* embrace your inner power 
-* release limiting beliefs
-* transform your life!
+Coaching is a partnership between the client (you!) and the coach (me!). The more that you put into your sessions, the more you’ll get out of them. Remember, the 1:1 sessions are a dedicated block of time for us to focus in on you, helping you to:
+
+- embrace your inner power
+- release limiting beliefs
+- transform your life!
 
 ![How to get the most out of life coaching](/img/sheila-anne-how-to-get-the-most-out-of-coaching.JPG)
 
-With all that in mind, I want to help you maximize our time together.  Sharing a few tips & tricks below!
+With all that in mind, I want to help you maximize our time together. Sharing a few tips & tricks below!
 
 **Make sure you have a good connection**
 

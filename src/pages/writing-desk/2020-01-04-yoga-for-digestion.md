@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Yoga for Digestion
+title: Yoga For Digestion
 date: 2020-01-04T14:44:31.698Z
 description: >-
   When you have an upset stomach or trouble digesting, yoga might feel like the

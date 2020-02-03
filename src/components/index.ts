@@ -5,10 +5,11 @@ export {
 } from "./banner-image";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
-export { Button } from "./button";
+export { Button, SquareButton } from "./button";
 export { ContactForm, SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
-export { CenteredText } from "./centered-text";
+export { CenteredSection, CenteredText } from "./centered";
+export { FAQ } from "./faq";
 export { Features } from "./features";
 export { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";
 export { Footer } from "./footer";
