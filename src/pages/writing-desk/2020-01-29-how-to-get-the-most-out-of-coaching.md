@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'How to get the most out of coaching '
-date: 2020-01-29T20:37:12.649Z
+date: 2020-02-02T20:37:12.649Z
 description: >-
 
   Preparing for your first session or wondering what to expect?  I'm sharing
@@ -20,6 +20,8 @@ Coaching is a partnership between the client (you!) and the coach (me!).  The mo
 * embrace your inner power 
 * release limiting beliefs
 * transform your life!
+
+![How to get the most out of life coaching](/img/sheila-anne-how-to-get-the-most-out-of-coaching.JPG)
 
 With all that in mind, I want to help you maximize our time together.  Sharing a few tips & tricks below!
 
