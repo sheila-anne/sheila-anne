@@ -1,7 +1,7 @@
 import React, { Dispatch, FormEvent, SetStateAction, useState } from "react";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { FormWrapperSection, Input, Submit, TextArea } from "./form-elements";
-import { trackOnClick } from "./track-on-click";
 
 const onSubmit = async (
   event: FormEvent<HTMLFormElement>,
@@ -9,7 +9,11 @@ const onSubmit = async (
 ) => {
   event.preventDefault();
   setSubmitText("Submitting ...");
-  trackOnClick("Contact");
+  trackCustomEvent({
+    action: "submit",
+    category: `Form Submission`,
+    label: "Contact"
+  });
 
   const formElements = (Array.from(
     event.currentTarget.elements

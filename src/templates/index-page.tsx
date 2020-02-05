@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import {
   BlogRoll,
+  BookingSection,
   Button,
   CenteredSection,
   CenteredText,
@@ -12,7 +13,6 @@ import {
   FullWidthImage,
   Layout,
   PreviewCompatibleBanner,
-  SubscribeForm,
   SEO,
   SmartLink
 } from "../components";
@@ -161,14 +161,15 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           </CenteredText>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
+            justifyContent="center"
             margin="1rem 0"
           >
-            <SubscribeForm
+            <BookingSection
               backgroundColor={Constants.Colors.featuredPost}
               formDescription={formSubHeadline}
               formParagraph={formParagraph}
               formTitle={formHeadline}
-              page="homepage"
+              page="Homepage"
             />
           </FlexContainer>
           <CenteredText>

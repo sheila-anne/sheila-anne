@@ -4,18 +4,16 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
+  BookingSection,
   CenteredSection,
   CenteredText,
   Content,
   FAQ,
   Features,
   FlexContainer,
-  FlexColumn,
   HTMLContent,
   Layout,
-  SEO,
-  PreviewCompatibleFlexImage,
-  SquareButton
+  SEO
 } from "../components";
 
 const BookingIframe = styled.iframe`
@@ -42,15 +40,13 @@ export const TheGroveTemplate = ({
         <Features gridItems={frontmatter.intro.blurbs} />
       </FlexContainer>
       <hr />
-      <CenteredText
+      <BookingSection
+        page="The Grove"
         backgroundColor={Constants.Colors.theGroveLightGreen}
-        padding="1rem"
-      >
-        <h1>{frontmatter.formHeadline}</h1>
-        <h2>{frontmatter.formSubHeadline}</h2>
-        <p>{frontmatter.formParagraph}</p>
-      </CenteredText>
-      <BookingIframe src="https://squareup.com/appointments/buyer/widget/1qzur19rxgxq5g/T2G1BPTFKKDBJ" />
+        formTitle={frontmatter.formHeadline}
+        formDescription={frontmatter.formSubHeadline}
+        formParagraph={frontmatter.formParagraph}
+      />
       <hr />
       <FAQ faq={frontmatter.faq} />
     </CenteredSection>

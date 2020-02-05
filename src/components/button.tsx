@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React, { FC, MouseEvent } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
 
 type PillButtonProps = {
-  text: string;
+  onClick?: (e: MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   type?: "submit" | undefined;
 };
 
@@ -84,8 +84,12 @@ const StyledSquareButton = styled.button`
   }
 `;
 
-export const SquareButton: FC<PillButtonProps> = ({ text, type }) => (
-  <StyledSquareButton type={type}>
-    <ButtonSpan>{text}</ButtonSpan>
+export const SquareButton: FC<PillButtonProps> = ({
+  children,
+  onClick,
+  type
+}) => (
+  <StyledSquareButton onClick={onClick} type={type}>
+    <ButtonSpan>{children}</ButtonSpan>
   </StyledSquareButton>
 );
