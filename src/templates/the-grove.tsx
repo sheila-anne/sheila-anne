@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
@@ -13,9 +14,16 @@ import {
   HTMLContent,
   Layout,
   SEO,
-  SubscribeForm,
-  PreviewCompatibleFlexImage
+  PreviewCompatibleFlexImage,
+  SquareButton
 } from "../components";
+
+const BookingIframe = styled.iframe`
+  border: none;
+  height: 100%;
+  min-height: 600px;
+  width: 100%;
+`;
 
 export const TheGroveTemplate = ({
   content,
@@ -32,27 +40,19 @@ export const TheGroveTemplate = ({
       </CenteredText>
       <FlexContainer>
         <Features gridItems={frontmatter.intro.blurbs} />
-        <hr />
-        <FlexColumn>
-          <PreviewCompatibleFlexImage
-            imageInfo={frontmatter.featuredImage}
-            title="Schedule a free discovery call today!"
-            imageAlt="Sheila Anne Murray in the mountains of Switzerland"
-          />
-        </FlexColumn>
-        <FlexColumn backgroundColor={Constants.Colors.theGroveLightGreen}>
-          <SubscribeForm
-            backgroundColor="#fff"
-            formDescription={frontmatter.formSubHeadline}
-            formParagraph={frontmatter.formParagraph}
-            formTitle={frontmatter.formHeadline}
-            id="#theGroveSubscribe"
-            page="theGrove"
-          />
-        </FlexColumn>
-        <hr />
-        <FAQ faq={frontmatter.faq} />
       </FlexContainer>
+      <hr />
+      <CenteredText
+        backgroundColor={Constants.Colors.theGroveLightGreen}
+        padding="1rem"
+      >
+        <h1>{frontmatter.formHeadline}</h1>
+        <h2>{frontmatter.formSubHeadline}</h2>
+        <p>{frontmatter.formParagraph}</p>
+      </CenteredText>
+      <BookingIframe src="https://squareup.com/appointments/buyer/widget/1qzur19rxgxq5g/T2G1BPTFKKDBJ" />
+      <hr />
+      <FAQ faq={frontmatter.faq} />
     </CenteredSection>
   );
 };
