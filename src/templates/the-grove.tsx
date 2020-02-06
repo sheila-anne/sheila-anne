@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import React from "react";
-import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
@@ -15,13 +14,6 @@ import {
   Layout,
   SEO
 } from "../components";
-
-const BookingIframe = styled.iframe`
-  border: none;
-  height: 100%;
-  min-height: 600px;
-  width: 100%;
-`;
 
 export const TheGroveTemplate = ({
   content,

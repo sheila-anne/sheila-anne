@@ -5,9 +5,9 @@ export {
 } from "./banner-image";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
-export { BookingSection } from "./booking-section";
+export { BookingIframe, BookingSection } from "./booking";
 export { Button, SquareButton } from "./button";
-export { ContactForm } from "./forms/";
+export { SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredSection, CenteredText } from "./centered";
 export { FAQ } from "./faq";

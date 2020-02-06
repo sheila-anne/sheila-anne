@@ -72,8 +72,11 @@ export const FixedSocialItems = () => (
 export const Social = () => (
   <SocialWrapper>
     <FixedSocialItems />
-    <SocialLink title="Contact Sheila Anne" to="/contact/">
-      Contact
+    <SocialLink
+      title="Book Your Free Life Coaching Session With Sheila Anne"
+      to="/book/"
+    >
+      Book
     </SocialLink>
   </SocialWrapper>
 );

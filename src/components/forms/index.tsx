@@ -1,1 +1,1 @@
-export { ContactForm } from "./contact-form";
+export { SubscribeForm } from "./subscribe-form";

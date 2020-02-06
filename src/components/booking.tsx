@@ -9,6 +9,7 @@ import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { CenteredText } from "./centered";
+import { Constants } from "../constants";
 import { SquareButton } from "./button";
 
 type PageNames = "The Grove" | "Homepage";
@@ -26,11 +27,14 @@ const PaddedParagraph = styled.p`
   padding: 5px;
 `;
 
-const BookingIframe = styled.iframe<{ showBookingSection: boolean }>`
+export const BookingIframe = styled.iframe<{
+  height?: string;
+  showBookingSection: boolean;
+}>`
   border: none;
   display: ${({ showBookingSection }) =>
     showBookingSection ? "block" : "none"};
-  min-height: 500px;
+  min-height: ${({ height }) => (height ? height : "500px")};
   width: 100%;
 `;
 
@@ -51,7 +55,7 @@ const handleSubmit = (
   setShowBookingSection(!showBookingSection);
 };
 
-const BookingSection: FC<BookingSectionProps> = ({
+export const BookingSection: FC<BookingSectionProps> = ({
   backgroundColor,
   formDescription,
   formParagraph,
@@ -76,13 +80,10 @@ const BookingSection: FC<BookingSectionProps> = ({
           {showBookingSection ? "Hide" : "Tap To Schedule With Sheila Anne"}
         </SquareButton>
       </CenteredText>
-
       <BookingIframe
         showBookingSection={showBookingSection}
-        src="https://squareup.com/appointments/buyer/widget/vlggwbtks6vh2m/T2G1BPTFKKDBJ"
+        src={Constants.schedulingUrl}
       />
     </section>
   );
 };
-
-export { BookingSection };
