@@ -25,7 +25,7 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
   ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
 

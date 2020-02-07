@@ -1,20 +1,7 @@
 import { graphql } from "gatsby";
 import React, { FC } from "react";
 
-import { Content, HTMLContent, Layout, SEO } from "../components/";
-
-export const TheMatTemplate: FC<BasePreviewWithBannerImage> = ({
-  content,
-  contentComponent
-}) => {
-  const PageContent = contentComponent || Content;
-
-  return (
-    <section>
-      <PageContent content={content} />
-    </section>
-  );
-};
+import { BaseTemplate, HTMLContent, Layout, SEO } from "../components/";
 
 const TheMat: FC<GatsbyPage> = ({ data, location }) => {
   const { markdownRemark: post } = data;
@@ -22,16 +9,13 @@ const TheMat: FC<GatsbyPage> = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
+        image={post.frontmatter.bannerImage.childImageSharp.original.src}
+        imageAlt={post.frontmatter.bannerImageHeadline}
+        location={location}
+        title={post.frontmatter.pageTitle}
       />
-      <TheMatTemplate
-        contentComponent={HTMLContent}
-        content={post.html}
-        frontmatter={post.frontmatter}
-        image={post.frontmatter.bannerImage}
-        imageHeadline={post.frontmatter.bannerImageHeadline}
-      />
+      <BaseTemplate contentComponent={HTMLContent} content={post.html} />
     </Layout>
   );
 };
@@ -43,6 +27,14 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        bannerImage {
+          childImageSharp {
+            original {
+              src
+            }
+          }
+        }
+        bannerImageHeadline
         pageDescription
         pageTitle
       }

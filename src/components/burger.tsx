@@ -67,7 +67,11 @@ const onClick = (
 };
 
 const Burger: FC<BurgerProps> = ({ isOpen, setIsOpen }) => (
-  <StyledBurger isOpen={isOpen} onClick={() => onClick(isOpen, setIsOpen)}>
+  <StyledBurger
+    aria-haspopup={true}
+    isOpen={isOpen}
+    onClick={() => onClick(isOpen, setIsOpen)}
+  >
     <div />
     <div />
     <div />

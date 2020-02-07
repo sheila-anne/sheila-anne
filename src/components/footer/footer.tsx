@@ -80,7 +80,10 @@ const Footer = () => (
           <StyledListItem>
             <FooterLink to="/writing-desk/">Latest Stories</FooterLink>
           </StyledListItem>
-          <StyledListItem>
+          <StyledListItem
+            itemType="https://schema.org/SiteNavigationElement"
+            itemScope={true}
+          >
             <FooterLink to="/contact/">Contact</FooterLink>
           </StyledListItem>
         </FooterList>

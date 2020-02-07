@@ -1,27 +1,16 @@
 require("dotenv").config();
 const fetch = require("node-fetch");
 
-const {
-  HUBSPOT_PORTAL,
-  HUBSPOT_HOMEPAGE_FORM_GUID,
-  HUBSPOT_GROVE_FORM_GUID
-} = process.env;
+const { HUBSPOT_PORTAL, HUBSPOT_HOMEPAGE_FORM_GUID } = process.env;
 
 const hubSpotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/`;
 
 const formNames = {
-  homepage: "homepage",
-  theGrove: "theGrove"
-};
-
-const pagePathMap = {
-  [formNames.theGrove]: "the-grove",
-  [formNames.homepage]: ""
+  contact: "contact"
 };
 
 const formGuidMap = {
-  [formNames.theGrove]: HUBSPOT_GROVE_FORM_GUID,
-  [formNames.homepage]: HUBSPOT_HOMEPAGE_FORM_GUID
+  [formNames.contact]: HUBSPOT_HOMEPAGE_FORM_GUID
 };
 
 exports.handler = async function(event, context) {
@@ -49,12 +38,14 @@ exports.handler = async function(event, context) {
       {
         name: "phone",
         value: eventProperties.phone || ""
+      },
+      {
+        name: "message",
+        value: eventProperties.message || ""
       }
     ],
     context: {
-      pageUri: `https://www.sheilaanne.com/${
-        pagePathMap[eventProperties.page]
-      }`,
+      pageUri: `https://www.sheilaanne.com/${eventProperties.page}`,
       pageName: eventProperties.page
     }
   };

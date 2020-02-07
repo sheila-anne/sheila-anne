@@ -44,12 +44,17 @@ const MainWrapper = styled.main`
   }
 `;
 
-const Layout: FC<GatsbyPage> = ({ children, location }) => {
+const Layout: FC<GatsbyPage> = ({ children, location, itemType }) => {
   useScrollHandler(location);
   return (
     <>
       <Nav location={location} />
-      <MainWrapper>{children}</MainWrapper>
+      <MainWrapper
+        itemType={itemType}
+        itemScope={!!itemType ? true : undefined}
+      >
+        {children}
+      </MainWrapper>
       <Footer />
     </>
   );

@@ -5,14 +5,13 @@ import styled from "styled-components";
 
 import {
   BlogRoll,
+  BookingSection,
   Button,
-  CenteredSection,
   CenteredText,
   FlexContainer,
   FullWidthImage,
   Layout,
   PreviewCompatibleBanner,
-  SubscribeForm,
   SEO,
   SmartLink
 } from "../components";
@@ -144,7 +143,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         }
         image={image}
       />
-      <CenteredSection>
+      <section>
         <CenteredText>
           <BannerHeadline>{mainpitch.title}</BannerHeadline>
         </CenteredText>
@@ -153,7 +152,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <Subheadline>{description}</Subheadline>
             <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
               {bannerSubtitle}{" "}
-              <BannerLink to="/the-grove" title="Life Coaching in The Grove">
+              <BannerLink to="/the-grove/" title="Life Coaching in The Grove">
                 Start here.
               </BannerLink>
             </BannerHeadline>
@@ -161,14 +160,15 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           </CenteredText>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
+            justifyContent="center"
             margin="1rem 0"
           >
-            <SubscribeForm
+            <BookingSection
               backgroundColor={Constants.Colors.featuredPost}
               formDescription={formSubHeadline}
               formParagraph={formParagraph}
               formTitle={formHeadline}
-              page="homepage"
+              page="Homepage"
             />
           </FlexContainer>
           <CenteredText>
@@ -181,7 +181,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <Button to="/writing-desk/">Read more on the blog!</Button>
           </CenteredText>
         </Container>
-      </CenteredSection>
+      </section>
     </>
   );
 };
@@ -192,8 +192,9 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={frontmatter.pageTitle}
         description={frontmatter.pageDescription}
+        location={location}
+        title={frontmatter.pageTitle}
       />
       <IndexPageTemplate
         frontmatter={frontmatter}

@@ -5,6 +5,7 @@ declare type BaseFrontmatter = {
 
 declare type BaseGatsbyPage = {
   location: Location;
+  itemType?: string;
 };
 
 declare type BannerImagePreviewPage = {
@@ -29,7 +30,7 @@ declare type BlogPostFields = {
 };
 
 declare type BlogPostFrontmatter = {
-  date: Date;
+  date: string;
   featuredImage?: NestedImage;
   featuredpost: boolean;
   title: string;
@@ -37,7 +38,6 @@ declare type BlogPostFrontmatter = {
 
 declare type BlogPostInner = {
   id: string;
-  excerpt: string;
   fields: BlogPostFields;
   frontmatter: BlogPostFrontmatter;
 };

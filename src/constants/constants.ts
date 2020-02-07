@@ -8,7 +8,9 @@ const Constants = {
   Colors: ConstantColors,
   baseUrl: "https://www.sheilaanne.com",
   mobileBreakpoint,
-  mobileWidth: mobileBreakpoint + "px"
+  mobileWidth: mobileBreakpoint + "px",
+  schedulingUrl:
+    "https://squareup.com/appointments/buyer/widget/vlggwbtks6vh2m/T2G1BPTFKKDBJ"
 };
 
 export { Constants };

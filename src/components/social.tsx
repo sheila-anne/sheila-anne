@@ -59,6 +59,7 @@ export const FixedSocialItems = () => (
   <>
     {SocialItems.map(socialItem => (
       <SocialLink
+        ariaLabel={socialItem.title}
         key={socialItem.url}
         title={socialItem.title}
         to={socialItem.url}
@@ -72,8 +73,14 @@ export const FixedSocialItems = () => (
 export const Social = () => (
   <SocialWrapper>
     <FixedSocialItems />
-    <SocialLink title="Contact Sheila Anne" to="/contact/">
-      Contact
-    </SocialLink>
+    <span itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
+      <SocialLink
+        ariaLabel="Book Your Free Life Coaching Session With Sheila Anne"
+        title="Book Your Free Life Coaching Session With Sheila Anne"
+        to="/book/"
+      >
+        Book
+      </SocialLink>
+    </span>
   </SocialWrapper>
 );

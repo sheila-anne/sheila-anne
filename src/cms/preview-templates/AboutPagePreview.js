@@ -1,9 +1,8 @@
 import React from "react";
-import { AboutPageTemplate } from "../../templates/about-page";
+import { BaseTemplate } from "../../components/base-template";
 
-const AboutPagePreview = ({ entry, widgetFor }) => {
-  const data = entry.getIn(["data"]).toJS();
-  return <AboutPageTemplate content={widgetFor("body")} title={data.title} />;
+const AboutPagePreview = ({ widgetFor }) => {
+  return <BaseTemplate content={widgetFor("body")} />;
 };
 
 export default AboutPagePreview;

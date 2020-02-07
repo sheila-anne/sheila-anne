@@ -7,13 +7,22 @@ type SEOProps = {
   description: string;
   image?: string;
   imageAlt?: string;
+  location: Location;
   title: string;
   type?: "article" | "website";
 };
 
-const SEO: FC<SEOProps> = ({ description, image, imageAlt, title, type }) => {
+const SEO: FC<SEOProps> = ({
+  description,
+  image,
+  imageAlt,
+  location,
+  title,
+  type
+}) => {
   const fallbackImage = `${Constants.baseUrl}/img/sheila-anne-og-image.png`;
   const ogImage = !!image ? Constants.baseUrl + image : fallbackImage;
+  const pathname = location && location.pathname;
 
   const schemaGraph = [
     {
@@ -32,15 +41,18 @@ const SEO: FC<SEOProps> = ({ description, image, imageAlt, title, type }) => {
         caption: "Life coaching with Sheila Anne."
       },
       image: {
-        "@id": `${Constants.baseUrl}/#logo`
+        "@type": "ImageObject",
+        "@id": `${ogImage}/#image`,
+        url: ogImage,
+        caption: !!imageAlt ? imageAlt : "Life coaching with Sheila Anne."
       }
     },
 
     {
       "@type": "WebSite",
-      "@id": `${Constants.baseUrl}/#website`,
-      url: `${Constants.baseUrl}`,
-      name: "Sheila Anne",
+      "@id": `${Constants.baseUrl}${pathname}#website`,
+      url: `${Constants.baseUrl}${pathname}`,
+      name: title,
       publisher: {
         "@id": `${Constants.baseUrl}/#organization`
       }
@@ -49,16 +61,13 @@ const SEO: FC<SEOProps> = ({ description, image, imageAlt, title, type }) => {
 
   schemaGraph.push({
     "@type": "WebPage",
-    "@id": `${Constants.baseUrl}/#webpage`,
-    url: `${Constants.baseUrl}/`,
+    "@id": `${Constants.baseUrl}${pathname}#webpage`,
+    url: `${Constants.baseUrl}${pathname}`,
     inLanguage: `en-US`,
-    isPartOf: { "@id": `${Constants.baseUrl}/#website` },
     about: { "@id": `${Constants.baseUrl}/#organization` },
-    mainEntityOfPage: Constants.baseUrl,
     description: description,
     headline: title,
-    primaryimageOfPage: { "@id": `${Constants.baseUrl}/#logo` },
-    datePublished: "2020-01-15T10:30:00+00:00"
+    primaryimageOfPage: { "@id": `${ogImage}/#image` }
   });
 
   const schemaOrgWebPage = {
@@ -85,6 +94,7 @@ const SEO: FC<SEOProps> = ({ description, image, imageAlt, title, type }) => {
             : "Sheila Anne - lifecoaching, yoga, inspirational writing and more."
         }
       />
+      <meta property="canonical" content={Constants.baseUrl + pathname} />
       <meta property="og:type" content={!!type ? type : "business.business"} />
       <meta
         property="description"

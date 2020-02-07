@@ -3,18 +3,15 @@ import React from "react";
 
 import { Constants } from "../constants";
 import {
-  CenteredSection,
+  BookingSection,
   CenteredText,
   Content,
   FAQ,
   Features,
   FlexContainer,
-  FlexColumn,
   HTMLContent,
   Layout,
-  SEO,
-  SubscribeForm,
-  PreviewCompatibleFlexImage
+  SEO
 } from "../components";
 
 export const TheGroveTemplate = ({
@@ -25,35 +22,25 @@ export const TheGroveTemplate = ({
   const PageContent = contentComponent || Content;
 
   return (
-    <CenteredSection>
+    <section>
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
       <CenteredText>
         <h2>How Does It Work?</h2>
       </CenteredText>
       <FlexContainer>
         <Features gridItems={frontmatter.intro.blurbs} />
-        <hr />
-        <FlexColumn>
-          <PreviewCompatibleFlexImage
-            imageInfo={frontmatter.featuredImage}
-            title="Schedule a free discovery call today!"
-            imageAlt="Sheila Anne Murray in the mountains of Switzerland"
-          />
-        </FlexColumn>
-        <FlexColumn backgroundColor={Constants.Colors.theGroveLightGreen}>
-          <SubscribeForm
-            backgroundColor="#fff"
-            formDescription={frontmatter.formSubHeadline}
-            formParagraph={frontmatter.formParagraph}
-            formTitle={frontmatter.formHeadline}
-            id="#theGroveSubscribe"
-            page="theGrove"
-          />
-        </FlexColumn>
-        <hr />
-        <FAQ faq={frontmatter.faq} />
       </FlexContainer>
-    </CenteredSection>
+      <hr />
+      <BookingSection
+        page="The Grove"
+        backgroundColor={Constants.Colors.theGroveLightGreen}
+        formTitle={frontmatter.formHeadline}
+        formDescription={frontmatter.formSubHeadline}
+        formParagraph={frontmatter.formParagraph}
+      />
+      <hr />
+      <FAQ faq={frontmatter.faq} />
+    </section>
   );
 };
 
@@ -63,9 +50,10 @@ const TheGrove = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
         imageAlt={post.frontmatter.bannerImageHeadline}
+        location={location}
+        title={post.frontmatter.pageTitle}
       />
       <TheGroveTemplate
         contentComponent={HTMLContent}

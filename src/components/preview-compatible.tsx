@@ -67,6 +67,7 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
         className={className}
         fluid={potentialImage.childImageSharp.fluid}
         loading={loadType}
+        itemProp="image"
         style={imageStyle}
         title={title}
       />
@@ -80,6 +81,7 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
         className={className}
         fluid={childImageSharp.fluid}
         loading={loadType}
+        itemProp="image"
         style={imageStyle}
         title={title}
       />

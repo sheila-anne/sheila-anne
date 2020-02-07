@@ -4,7 +4,6 @@ export const logoQuery = graphql`
   fragment BlogPosts on MarkdownRemarkConnection {
     posts: edges {
       node {
-        excerpt(pruneLength: 150)
         id
         fields {
           slug

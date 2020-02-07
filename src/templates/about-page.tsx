@@ -1,36 +1,21 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import {
-  CenteredSection,
-  Content,
-  HTMLContent,
-  Layout,
-  SEO
-} from "../components";
-
-export const AboutPageTemplate = ({ content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-
-  return (
-    <CenteredSection>
-      <PageContent content={content} />
-    </CenteredSection>
-  );
-};
+import { BaseTemplate, HTMLContent, Layout, SEO } from "../components";
 
 const AboutPage = ({ data, location }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout location={location}>
+    <Layout location={location} itemType={"https://schema.org/AboutPage"}>
       <SEO
-        title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
         image={post.frontmatter.bannerImage.childImageSharp.original.src}
         imageAlt={post.frontmatter.bannerImageHeadline}
+        location={location}
+        title={post.frontmatter.pageTitle}
       />
-      <AboutPageTemplate contentComponent={HTMLContent} content={post.html} />
+      <BaseTemplate contentComponent={HTMLContent} content={post.html} />
     </Layout>
   );
 };

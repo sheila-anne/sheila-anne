@@ -188,16 +188,23 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
     location.pathname !== "/" &&
     navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
-    <NavListItem key={navLink.to}>
+    <NavListItem
+      key={navLink.to}
+      itemType="https://schema.org/SiteNavigationElement"
+      itemScope={true}
+      role="presentation"
+    >
       <SideLinkWrapper location={location} to={navLink.to}>
         <ColoredInternalLink
-          to={navLink.to}
           aria-current={location && location.pathname === navLink.to}
+          ariaLabel={navLink.title}
+          role="menuitem"
           title={navLink.title}
+          to={navLink.to}
         >
-          {navLink.text}{" "}
+          {navLink.text}
         </ColoredInternalLink>
-      </SideLinkWrapper>{" "}
+      </SideLinkWrapper>
     </NavListItem>
   ));
 };
@@ -207,11 +214,14 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
 
   return (
     <Header flipColors={!!isOpen && !!isMobile}>
-      <StyledNav isOpen={isOpen}>
+      <StyledNav isOpen={isOpen} role="navigation">
         <LogoText isMobile={isMobile} isOpen={isOpen}>
-          <Headline>
+          <Headline
+            itemType="https://schema.org/SiteNavigationElement"
+            itemScope={true}
+          >
             <ColoredInternalLink
-              aria-label="Sheila Anne logo, click to visit homepage"
+              ariaLabel="Sheila Anne logo, click to visit homepage"
               title={`Sheila Anne homepage`}
               to="/"
             >
@@ -222,8 +232,12 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
         {!!isMobile ? (
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
-            <MobileMenu isOpen={isOpen} aria-hidden={!isOpen}>
-              <NavLinkList isOpen={isOpen} aria-current={isOpen}>
+            <MobileMenu
+              aria-expanded={!!isOpen ? true : undefined}
+              aria-hidden={!isOpen}
+              isOpen={isOpen}
+            >
+              <NavLinkList aria-current={isOpen} isOpen={isOpen} role="menubar">
                 {getNavLinkItems(location, isMobile && isOpen)}
               </NavLinkList>
               <NavSocialList isOpen={isOpen}>
@@ -233,7 +247,9 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
           </>
         ) : (
           <>
-            <NavLinkList>{getNavLinkItems(location)}</NavLinkList>
+            <NavLinkList role="menubar">
+              {getNavLinkItems(location)}
+            </NavLinkList>
             <DesktopSocialWrapper isOpen={isMobile}>
               <Social />
             </DesktopSocialWrapper>

@@ -6,20 +6,17 @@ import React, {
   useState
 } from "react";
 import styled from "styled-components";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
-import { FormWrapperSection, Input } from "./form-elements";
+import { FormWrapperSection, Input, TextArea } from "./form-elements";
 import { SquareButton } from "../button";
-import { trackOnClick } from "./track-on-click";
-
-type PageNames = "theGrove" | "homepage";
 
 type SubscribeFormProps = {
   backgroundColor: string;
   formTitle: string;
   formDescription: string;
   formParagraph?: string;
-  id?: string;
-  page: PageNames;
+  page: string;
 };
 
 const PaddedParagraph = styled.p`
@@ -29,14 +26,16 @@ const PaddedParagraph = styled.p`
 const handleSubmit = async (
   e: FormEvent<HTMLFormElement>,
   setButtonText: Dispatch<SetStateAction<string>>,
-  page: PageNames
+  page: string
 ) => {
-  e.stopPropagation();
-  e.persist();
   e.preventDefault();
 
   setButtonText("Submitting...");
-  trackOnClick(page === "homepage" ? "Homepage Hubspot" : "The Grove Hubspot");
+  trackCustomEvent({
+    action: "submit",
+    category: `Form Submission`,
+    label: page
+  });
 
   const formValues = { page };
   const formElements = (Array.from(
@@ -68,13 +67,12 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
   formDescription,
   formParagraph,
   formTitle,
-  id,
   page
 }) => {
   const [buttonText, setButtonText] = useState("Submit!");
 
   return (
-    <FormWrapperSection id={id && id} centerText={true}>
+    <FormWrapperSection centerText={true} itemProp="mainContentOfPage">
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
@@ -114,7 +112,14 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
             type="tel"
           />
         </p>
-        <SquareButton type="submit" text={buttonText} />
+        <p>
+          <TextArea
+            id="message"
+            name="message"
+            placeholder="Message (optional)"
+          ></TextArea>
+        </p>
+        <SquareButton type="submit">{buttonText}</SquareButton>
       </form>
     </FormWrapperSection>
   );
