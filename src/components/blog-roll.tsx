@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
+import { BlogPostMeta } from "./blog-post-meta";
 import { Constants } from "../constants";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
@@ -24,10 +25,6 @@ const FlexTextContainer = styled.div`
     display: block;
     text-align: center;
   }
-`;
-
-const Paragraph = styled.p`
-  padding-bottom: 1rem;
 `;
 
 const FlexTitle = styled.h3`
@@ -65,7 +62,16 @@ const Article = styled.article<ArticleProps>`
 `;
 
 const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
-  <Article isFeatured={post.frontmatter.featuredpost}>
+  <Article
+    isFeatured={post.frontmatter.featuredpost}
+    itemType="https://schema.org/BlogPosting"
+    itemScope={true}
+  >
+    <BlogPostMeta datePublished={post.frontmatter.date} />
+    <meta
+      itemProp="mainEntityOfPage"
+      content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`}
+    />
     <FlexHeader>
       {post.frontmatter.featuredImage ? (
         <FeaturedThumbnail>
@@ -78,7 +84,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
         </FeaturedThumbnail>
       ) : null}
       <FlexTextContainer>
-        <FlexTitle>{post.frontmatter.title}</FlexTitle>
+        <FlexTitle itemProp="name headline">{post.frontmatter.title}</FlexTitle>
       </FlexTextContainer>
     </FlexHeader>
   </Article>
@@ -90,7 +96,11 @@ export const BlogRoll: FC<BlogPosts> = ({ posts }) => {
       {posts &&
         posts.map(({ node: post }) => (
           <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>
-            <SmartLink to={post.fields.slug} title={post.frontmatter.title}>
+            <SmartLink
+              hideMetadata={true}
+              to={post.fields.slug}
+              title={post.frontmatter.title}
+            >
               <BlogRollInner post={post} />
             </SmartLink>
           </BlogRollFlexColumn>

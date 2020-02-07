@@ -2,23 +2,13 @@ import { graphql } from "gatsby";
 import React, { useState } from "react";
 
 import {
+  BaseTemplate,
   BookingIframe,
-  Content,
   HTMLContent,
   Layout,
   SEO
 } from "../components";
 import { Constants } from "../constants";
-
-export const BookPageTemplate = ({ content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-
-  return (
-    <section>
-      <PageContent content={content} />
-    </section>
-  );
-};
 
 const BookPage = ({ data, location }) => {
   const { markdownRemark: post } = data;
@@ -27,10 +17,11 @@ const BookPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
+        location={location}
+        title={post.frontmatter.pageTitle}
       />
-      <BookPageTemplate contentComponent={HTMLContent} content={post.html} />
+      <BaseTemplate contentComponent={HTMLContent} content={post.html} />
       {!showBookingFrame && <div>Loading ...</div>}
       <BookingIframe
         height="600px"

@@ -1,18 +1,8 @@
 import React from "react";
-import { TheMatTemplate } from "../../templates/the-mat";
+import { BaseTemplate } from "../../components/base-template";
 
-const TheMatPagePreview = ({ entry, widgetFor }) => {
-  const data = entry.getIn(["data"]).toJS();
-  return (
-    <TheMatTemplate
-      content={widgetFor("body")}
-      frontmatter={data}
-      image={data.bannerImage}
-      imageHeadline={data.bannerImageHeadline}
-      isPreview={true}
-      posts={[]}
-    />
-  );
+const TheMatPagePreview = ({ widgetFor }) => {
+  return <BaseTemplate content={widgetFor("body")} />;
 };
 
 export default TheMatPagePreview;

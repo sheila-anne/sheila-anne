@@ -4,10 +4,11 @@ import { Layout, SEO, SubscribeForm } from "../../components/";
 
 export default ({ location }) => {
   return (
-    <Layout location={location}>
+    <Layout location={location} itemType="https://schema.org/ContactPage">
       <SEO
-        title="Contact | Sheila Anne"
         description="Get in touch with Sheila Anne today"
+        location={location}
+        title="Contact | Sheila Anne"
       />
       <SubscribeForm
         backgroundColor="#FFF"

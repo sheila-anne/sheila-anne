@@ -3,13 +3,15 @@ export {
   FullWidthImage,
   ImageHeadlineContainer
 } from "./banner-image";
+export { BaseTemplate } from "./base-template";
+export { BlogPostMeta } from "./blog-post-meta";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
 export { BookingIframe, BookingSection } from "./booking";
 export { Button, SquareButton } from "./button";
 export { SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
-export { CenteredSection, CenteredText } from "./centered";
+export { CenteredText } from "./centered";
 export { FAQ } from "./faq";
 export { Features } from "./features";
 export { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";

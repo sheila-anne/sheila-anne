@@ -192,8 +192,9 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={frontmatter.pageTitle}
         description={frontmatter.pageDescription}
+        location={location}
+        title={frontmatter.pageTitle}
       />
       <IndexPageTemplate
         frontmatter={frontmatter}

@@ -14,15 +14,15 @@ import { Constants } from "../constants";
 type WritingDeskProps = BannerImagePreviewPage & {
   content: string;
   contentComponent?: FC<any>;
-  frontmatter: any;
+  pageTitle: string;
 };
 
 export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   content,
   contentComponent,
-  frontmatter,
   image,
-  imageHeadline
+  imageHeadline,
+  pageTitle
 }) => {
   const PageContent = contentComponent || Content;
   const safeImage = image as NestedImage;
@@ -33,7 +33,7 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
       <BannerImage
         color={Constants.Colors.theGroveTeal}
         image={safeImage}
-        title={frontmatter.pageTitle}
+        title={pageTitle}
         imageHeadline={imageHeadline}
       />
       <BlogRollAll />
@@ -43,7 +43,6 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
 
 const WritingDeskPage = ({ location, data }) => {
   const { frontmatter } = data.markdownRemark;
-  const imageHeadline = frontmatter.bannerImageHeadline;
   const bannerImage = frontmatter.bannerImage;
   return (
     <Layout location={location}>
@@ -51,14 +50,15 @@ const WritingDeskPage = ({ location, data }) => {
         description={frontmatter.pageDescription}
         image={bannerImage.childImageSharp.fluid.src}
         imageAlt="Notes from the Writing Desk"
+        location={location}
         title={frontmatter.pageTitle}
       />
       <WritingDeskPageTemplate
         contentComponent={HTMLContent}
         content={data.markdownRemark.html}
-        frontmatter={frontmatter}
         image={bannerImage}
-        imageHeadline={imageHeadline}
+        imageHeadline={frontmatter.bannerImageHeadline}
+        pageTitle={frontmatter.pageTitle}
       />
     </Layout>
   );

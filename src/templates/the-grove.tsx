@@ -50,9 +50,10 @@ const TheGrove = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
-        title={post.frontmatter.pageTitle}
         description={post.frontmatter.pageDescription}
         imageAlt={post.frontmatter.bannerImageHeadline}
+        location={location}
+        title={post.frontmatter.pageTitle}
       />
       <TheGroveTemplate
         contentComponent={HTMLContent}

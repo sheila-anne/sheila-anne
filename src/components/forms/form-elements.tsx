@@ -12,22 +12,12 @@ type FormWrapperProps = {
   centerText?: boolean;
 };
 
-export const Submit = styled.button`
-  background: none;
-  cursor: pointer;
-  border: 1px solid ${Constants.Colors.gray};
-  border-radius: 5px;
-  font-weight: 100;
-  padding: 1rem 1rem 0.75rem;
-`;
-
 export const Input = styled.input<InputProps>`
   ${({ backgroundColor }) =>
     !!backgroundColor && `background-color: ${backgroundColor};`}
 `;
 
 export const TextArea = styled.textarea`
-  display: block;
   min-height: 150px;
   min-width: 500px;
 

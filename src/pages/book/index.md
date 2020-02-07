@@ -3,7 +3,7 @@ templateKey: "book-page"
 path: /about
 pageTitle: Book Life Coaching With Sheila Anne
 pageDescription: >
-  Book a complimentary 30 minute life coaching exploration call with Sheila Anne.
+  Apply today for a complimentary 30 minute life coaching exploration call with Sheila Anne!
 ---
 
 # Book Your Free Exploration Call Today

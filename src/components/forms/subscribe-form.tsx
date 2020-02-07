@@ -72,7 +72,7 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
   const [buttonText, setButtonText] = useState("Submit!");
 
   return (
-    <FormWrapperSection centerText={true}>
+    <FormWrapperSection centerText={true} itemProp="mainContentOfPage">
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
