@@ -3,14 +3,7 @@ import kebabCase from "lodash.kebabcase";
 import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
-import {
-  CenteredSection,
-  Content,
-  Layout,
-  HTMLContent,
-  SEO,
-  TagList
-} from "../components";
+import { Content, Layout, HTMLContent, SEO, TagList } from "../components";
 import { Constants } from "../constants";
 
 const Smalltext = styled.small`
@@ -82,39 +75,34 @@ export const BlogPostTemplate = ({
   const navTitle = `${title} | The Writing Desk | Sheila Anne`;
 
   return (
-    <CenteredSection>
-      <article itemType="https://schema.org/BlogPosting" itemScope={true}>
-        <SEO description={description} title={navTitle} type="article" />
-        <BlogPostMeta logo={logo} featuredImage={featuredImage} />
-        <h1 itemProp="name headline">{title}</h1>
-        <Smalltext>
-          Published <span itemProp="datePublished">{datePublished}</span> by{" "}
-          <span
-            itemProp="author"
-            itemType="https://schema.org/Person"
-            itemScope={true}
-          >
-            <span itemProp="name">Sheila Murray</span>{" "}
-          </span>
-        </Smalltext>
-        <PostContent
-          itemProp="articleBody mainEntityOfPage"
-          content={content}
-        />
-        {tags && tags.length ? (
-          <div style={{ marginTop: `4rem` }}>
-            <h4>Tags</h4>
-            <TagList>
-              {tags.map(tag => (
-                <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                </li>
-              ))}
-            </TagList>
-          </div>
-        ) : null}
-      </article>
-    </CenteredSection>
+    <article itemType="https://schema.org/BlogPosting" itemScope={true}>
+      <SEO description={description} title={navTitle} type="article" />
+      <BlogPostMeta logo={logo} featuredImage={featuredImage} />
+      <h1 itemProp="name headline">{title}</h1>
+      <Smalltext>
+        Published <span itemProp="datePublished">{datePublished}</span> by{" "}
+        <span
+          itemProp="author"
+          itemType="https://schema.org/Person"
+          itemScope={true}
+        >
+          <span itemProp="name">Sheila Murray</span>{" "}
+        </span>
+      </Smalltext>
+      <PostContent itemProp="articleBody mainEntityOfPage" content={content} />
+      {tags && tags.length ? (
+        <div style={{ marginTop: `4rem` }}>
+          <h4>Tags</h4>
+          <TagList>
+            {tags.map(tag => (
+              <li key={tag + `tag`}>
+                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+              </li>
+            ))}
+          </TagList>
+        </div>
+      ) : null}
+    </article>
   );
 };
 

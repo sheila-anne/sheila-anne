@@ -13,7 +13,11 @@ import { Constants } from "../constants";
 export const BookPageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
-  return <PageContent content={content} />;
+  return (
+    <section>
+      <PageContent content={content} />
+    </section>
+  );
 };
 
 const BookPage = ({ data, location }) => {

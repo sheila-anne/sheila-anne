@@ -4,7 +4,6 @@ import React from "react";
 import { Constants } from "../constants";
 import {
   BookingSection,
-  CenteredSection,
   CenteredText,
   Content,
   FAQ,
@@ -23,7 +22,7 @@ export const TheGroveTemplate = ({
   const PageContent = contentComponent || Content;
 
   return (
-    <CenteredSection>
+    <section>
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
       <CenteredText>
         <h2>How Does It Work?</h2>
@@ -41,7 +40,7 @@ export const TheGroveTemplate = ({
       />
       <hr />
       <FAQ faq={frontmatter.faq} />
-    </CenteredSection>
+    </section>
   );
 };
 

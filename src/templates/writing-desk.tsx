@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { graphql } from "gatsby";
 
 import {
-  CenteredSection,
   BannerImage,
   BlogRollAll,
   Content,
@@ -29,7 +28,7 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   const safeImage = image as NestedImage;
 
   return (
-    <CenteredSection>
+    <section>
       <PageContent content={content} />
       <BannerImage
         color={Constants.Colors.theGroveTeal}
@@ -38,7 +37,7 @@ export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
         imageHeadline={imageHeadline}
       />
       <BlogRollAll />
-    </CenteredSection>
+    </section>
   );
 };
 

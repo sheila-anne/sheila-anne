@@ -7,7 +7,6 @@ import {
   BlogRoll,
   BookingSection,
   Button,
-  CenteredSection,
   CenteredText,
   FlexContainer,
   FullWidthImage,
@@ -144,7 +143,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         }
         image={image}
       />
-      <CenteredSection>
+      <section>
         <CenteredText>
           <BannerHeadline>{mainpitch.title}</BannerHeadline>
         </CenteredText>
@@ -153,7 +152,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <Subheadline>{description}</Subheadline>
             <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
               {bannerSubtitle}{" "}
-              <BannerLink to="/the-grove" title="Life Coaching in The Grove">
+              <BannerLink to="/the-grove/" title="Life Coaching in The Grove">
                 Start here.
               </BannerLink>
             </BannerHeadline>
@@ -182,7 +181,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <Button to="/writing-desk/">Read more on the blog!</Button>
           </CenteredText>
         </Container>
-      </CenteredSection>
+      </section>
     </>
   );
 };

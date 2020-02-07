@@ -1,21 +1,15 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import {
-  CenteredSection,
-  Content,
-  HTMLContent,
-  Layout,
-  SEO
-} from "../components";
+import { Content, HTMLContent, Layout, SEO } from "../components";
 
 export const AboutPageTemplate = ({ content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <CenteredSection>
-      <PageContent content={content} />
-    </CenteredSection>
+    <section>
+      <PageContent content={content} />{" "}
+    </section>
   );
 };
 
