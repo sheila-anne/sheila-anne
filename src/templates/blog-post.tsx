@@ -42,11 +42,9 @@ export const BlogPostTemplate = ({
         title={navTitle}
         type="article"
       />
-      <BlogPostMeta datePublished={datePublished} />
-      <meta
-        itemProp="image"
-        content={`${Constants.baseUrl}${featuredImage?.childImageSharp?.fluid.src}`}
-        key="image"
+      <BlogPostMeta
+        datePublished={datePublished}
+        featuredImage={featuredImage}
       />
       <h1 itemProp="name headline">{title}</h1>
       <Smalltext>Published {datePublished} by Sheila Anne Murray</Smalltext>

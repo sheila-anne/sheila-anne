@@ -67,7 +67,10 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
     itemType="https://schema.org/BlogPosting"
     itemScope={true}
   >
-    <BlogPostMeta datePublished={post.frontmatter.date} />
+    <BlogPostMeta
+      datePublished={post.frontmatter.date}
+      featuredImage={post.frontmatter.featuredImage}
+    />
     <meta
       itemProp="mainEntityOfPage"
       content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`}

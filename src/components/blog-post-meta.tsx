@@ -5,9 +5,13 @@ import { Constants } from "../constants";
 
 type BlogPostMetaProps = {
   datePublished: string;
+  featuredImage?: NestedImage;
 };
 
-export const BlogPostMeta: FC<BlogPostMetaProps> = ({ datePublished }) => {
+export const BlogPostMeta: FC<BlogPostMetaProps> = ({
+  datePublished,
+  featuredImage
+}) => {
   const { logo } = useStaticQuery(blogPostMetaQuery);
 
   return (
@@ -61,6 +65,11 @@ export const BlogPostMeta: FC<BlogPostMetaProps> = ({ datePublished }) => {
       >
         <meta itemProp="name" content="Sheila Anne Murray" key="authorPerson" />
       </div>
+      <meta
+        itemProp="image"
+        content={`${Constants.baseUrl}${featuredImage?.childImageSharp?.fluid.src}`}
+        key="image"
+      />
     </>
   );
 };
