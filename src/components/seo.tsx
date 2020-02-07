@@ -22,6 +22,7 @@ const SEO: FC<SEOProps> = ({
 }) => {
   const fallbackImage = `${Constants.baseUrl}/img/sheila-anne-og-image.png`;
   const ogImage = !!image ? Constants.baseUrl + image : fallbackImage;
+  const pathname = location && location.pathname;
 
   const schemaGraph = [
     {
@@ -49,8 +50,8 @@ const SEO: FC<SEOProps> = ({
 
     {
       "@type": "WebSite",
-      "@id": `${Constants.baseUrl}${location.pathname}#website`,
-      url: `${Constants.baseUrl}${location.pathname}`,
+      "@id": `${Constants.baseUrl}${pathname}#website`,
+      url: `${Constants.baseUrl}${pathname}`,
       name: title,
       publisher: {
         "@id": `${Constants.baseUrl}/#organization`
@@ -60,8 +61,8 @@ const SEO: FC<SEOProps> = ({
 
   schemaGraph.push({
     "@type": "WebPage",
-    "@id": `${Constants.baseUrl}${location.pathname}#webpage`,
-    url: `${Constants.baseUrl}${location.pathname}`,
+    "@id": `${Constants.baseUrl}${pathname}#webpage`,
+    url: `${Constants.baseUrl}${pathname}`,
     inLanguage: `en-US`,
     about: { "@id": `${Constants.baseUrl}/#organization` },
     description: description,
@@ -93,10 +94,7 @@ const SEO: FC<SEOProps> = ({
             : "Sheila Anne - lifecoaching, yoga, inspirational writing and more."
         }
       />
-      <meta
-        property="canonical"
-        content={Constants.baseUrl + location.pathname}
-      />
+      <meta property="canonical" content={Constants.baseUrl + pathname} />
       <meta property="og:type" content={!!type ? type : "business.business"} />
       <meta
         property="description"
