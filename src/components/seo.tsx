@@ -1,7 +1,6 @@
-import { Helmet } from "react-helmet";
+import { graphql, useStaticQuery } from "gatsby";
+import { Helmet } from "react-helmet-async";
 import React, { FC } from "react";
-
-import { Constants } from "../constants";
 
 type SEOProps = {
   description: string;
@@ -12,7 +11,21 @@ type SEOProps = {
   type?: "article" | "website";
 };
 
-const SEO: FC<SEOProps> = ({
+const siteQuery = graphql`
+  query siteInfo {
+    site {
+      siteMetadata {
+        siteUrl
+        social {
+          facebook
+          instagram
+        }
+      }
+    }
+  }
+`;
+
+export const SEO: FC<SEOProps> = ({
   description,
   image,
   imageAlt,
@@ -20,23 +33,24 @@ const SEO: FC<SEOProps> = ({
   title,
   type
 }) => {
-  const fallbackImage = `${Constants.baseUrl}/img/sheila-anne-og-image.png`;
-  const ogImage = !!image ? Constants.baseUrl + image : fallbackImage;
+  const { site } = useStaticQuery(siteQuery);
+  const fallbackImage = `${site.siteMetadata.siteUrl}/img/sheila-anne-og-image.png`;
+  const ogImage = !!image ? site.siteMetadata.siteUrl + image : fallbackImage;
   const pathname = location && location.pathname;
 
   const schemaGraph = [
     {
       "@type": "Organization",
-      "@id": `${Constants.baseUrl}/#organization`,
+      "@id": `${site.siteMetadata.siteUrl}/#organization`,
       name: "Sheila Anne",
-      url: Constants.baseUrl,
+      url: site.siteMetadata.siteUrl,
       sameAs: [
-        "https://facebook.com/sheilaannecoaching",
-        "https://instagram.com/shetravls"
+        site.siteMetadata.social.facebook,
+        site.siteMetadata.social.instagram
       ],
       logo: {
         "@type": "ImageObject",
-        "@id": `${Constants.baseUrl}/#logo`,
+        "@id": `${site.siteMetadata.siteUrl}/#logo`,
         url: fallbackImage,
         caption: "Life coaching with Sheila Anne."
       },
@@ -50,21 +64,21 @@ const SEO: FC<SEOProps> = ({
 
     {
       "@type": "WebSite",
-      "@id": `${Constants.baseUrl}${pathname}#website`,
-      url: `${Constants.baseUrl}${pathname}`,
+      "@id": `${site.siteMetadata.siteUrl}${pathname}#website`,
+      url: `${site.siteMetadata.siteUrl}${pathname}`,
       name: title,
       publisher: {
-        "@id": `${Constants.baseUrl}/#organization`
+        "@id": `${site.siteMetadata.siteUrl}/#organization`
       }
     }
   ] as any[];
 
   schemaGraph.push({
     "@type": "WebPage",
-    "@id": `${Constants.baseUrl}${pathname}#webpage`,
-    url: `${Constants.baseUrl}${pathname}`,
+    "@id": `${site.siteMetadata.siteUrl}${pathname}#webpage`,
+    url: `${site.siteMetadata.siteUrl}${pathname}`,
     inLanguage: `en-US`,
-    about: { "@id": `${Constants.baseUrl}/#organization` },
+    about: { "@id": `${site.siteMetadata.siteUrl}/#organization` },
     description: description,
     headline: title,
     primaryimageOfPage: { "@id": `${ogImage}/#image` }
@@ -94,7 +108,10 @@ const SEO: FC<SEOProps> = ({
             : "Sheila Anne - lifecoaching, yoga, inspirational writing and more."
         }
       />
-      <meta property="canonical" content={Constants.baseUrl + pathname} />
+      <meta
+        property="canonical"
+        content={site.siteMetadata.siteUrl + pathname}
+      />
       <meta property="og:type" content={!!type ? type : "business.business"} />
       <meta
         property="description"
@@ -109,5 +126,3 @@ const SEO: FC<SEOProps> = ({
     </Helmet>
   );
 };
-
-export { SEO };

@@ -1,5 +1,5 @@
 require("dotenv").config();
-var proxy = require("http-proxy-middleware");
+var { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +8,8 @@ module.exports = {
     description: `Life coaching you through life's greatest challenges with Sheila Anne Murray`,
     siteUrl: `https://www.sheilaanne.com`,
     social: {
-      instagram: `shetravls`
+      facebook: "https://facebook.com/sheilaannecoaching",
+      instagram: `https://instagram.com/sheilaanne.lifecoach`
     }
   },
   plugins: [
@@ -44,7 +45,7 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-react-helmet-async",
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-typescript",
@@ -129,7 +130,7 @@ module.exports = {
   developMiddleware: app => {
     app.use(
       "/.netlify/functions/",
-      proxy({
+      createProxyMiddleware({
         target: "http://localhost:34567",
         pathRewrite: {
           "/.netlify/functions/": ""

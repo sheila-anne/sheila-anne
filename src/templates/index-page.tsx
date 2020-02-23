@@ -1,4 +1,4 @@
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { graphql } from "gatsby";
 import React, { FC } from "react";
 import styled from "styled-components";

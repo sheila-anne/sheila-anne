@@ -1,9 +1,10 @@
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
+import facebookImg from "../img/social/facebook.svg";
+import instagramImg from "../img/social/instagram.svg";
 import { SmartLink } from "./smart-link";
 
 type SocialLinks = {
@@ -12,18 +13,10 @@ type SocialLinks = {
   title: string;
 };
 
-const SocialItems = [
-  {
-    image: facebook,
-    title: "Follow Sheila Anne on Facebook",
-    url: "https://facebook.com/sheilaannecoaching"
-  },
-  {
-    image: instagram,
-    title: "Follow Sheila Anne on Instagram",
-    url: "https://instagram.com/shetravls"
-  }
-] as SocialLinks[];
+type SocialProps = {
+  facebook: string;
+  instagram: string;
+};
 
 const SocialImage = styled.img`
   height: 1em;
@@ -55,32 +48,71 @@ export const SocialWrapper = styled.div<{ dontShow?: boolean }>`
   }
 `;
 
-export const FixedSocialItems = () => (
-  <>
-    {SocialItems.map(socialItem => (
-      <SocialLink
-        ariaLabel={socialItem.title}
-        key={socialItem.url}
-        title={socialItem.title}
-        to={socialItem.url}
-      >
-        <SocialImage src={socialItem.image} alt={socialItem.title} />
-      </SocialLink>
-    ))}
-  </>
+const socialQuery = graphql`
+  query socialMedia {
+    site {
+      siteMetadata {
+        social {
+          facebook
+          instagram
+        }
+      }
+    }
+  }
+`;
+
+const SocialItem = (item: SocialLinks) => (
+  <SocialLink
+    ariaLabel={item.title}
+    key={item.url}
+    title={item.title}
+    to={item.url}
+  >
+    <SocialImage src={item.image} alt={item.title} />
+  </SocialLink>
 );
 
-export const Social = () => (
-  <SocialWrapper>
-    <FixedSocialItems />
-    <span itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
-      <SocialLink
-        ariaLabel="Book Your Free Life Coaching Session With Sheila Anne"
-        title="Book Your Free Life Coaching Session With Sheila Anne"
-        to="/book/"
+export const FixedSocialItems = () => {
+  const {
+    site: {
+      siteMetadata: {
+        social: { facebook, instagram }
+      }
+    }
+  } = useStaticQuery(socialQuery);
+
+  return (
+    <>
+      <SocialItem
+        title="Follow Sheila Anne on Facebook"
+        image={facebookImg}
+        url={facebook}
+      />
+      <SocialItem
+        title="Follow Sheila Anne on Instagram"
+        image={instagramImg}
+        url={instagram}
+      />
+    </>
+  );
+};
+
+export const Social = () => {
+  return (
+    <SocialWrapper>
+      <FixedSocialItems />
+      <span
+        itemType="https://schema.org/SiteNavigationElement"
+        itemScope={true}
       >
-        Book
-      </SocialLink>
-    </span>
-  </SocialWrapper>
-);
+        <SocialLink
+          ariaLabel="Book Your Free Life Coaching Session With Sheila Anne"
+          title="Book Your Free Life Coaching Session With Sheila Anne"
+          to="/book/"
+        >
+          Book
+        </SocialLink>
+      </span>
+    </SocialWrapper>
+  );
+};
