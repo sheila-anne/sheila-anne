@@ -28,7 +28,8 @@ export const BlogPostTemplate = ({
   featuredImage,
   location,
   tags,
-  title
+  title,
+  isPreview = false
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -38,6 +39,7 @@ export const BlogPostTemplate = ({
     <article itemType="https://schema.org/BlogPosting" itemScope={true}>
       <SEO
         description={description}
+        isPreview={isPreview}
         location={location}
         title={navTitle}
         type="article"
@@ -45,6 +47,7 @@ export const BlogPostTemplate = ({
       <BlogPostMeta
         datePublished={datePublished}
         featuredImage={featuredImage}
+        isPreview={isPreview}
       />
       <h1 itemProp="name headline">{title}</h1>
       <Smalltext>Published {datePublished} by Sheila Anne Murray</Smalltext>

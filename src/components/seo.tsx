@@ -6,6 +6,7 @@ type SEOProps = {
   description: string;
   image?: string;
   imageAlt?: string;
+  isPreview?: boolean;
   location: Location;
   title: string;
   type?: "article" | "website";
@@ -29,10 +30,14 @@ export const SEO: FC<SEOProps> = ({
   description,
   image,
   imageAlt,
+  isPreview,
   location,
   title,
   type
 }) => {
+  if (isPreview) {
+    return null;
+  }
   const { site } = useStaticQuery(siteQuery);
   const fallbackImage = `${site.siteMetadata.siteUrl}/img/sheila-anne-og-image.png`;
   const ogImage = !!image ? site.siteMetadata.siteUrl + image : fallbackImage;
