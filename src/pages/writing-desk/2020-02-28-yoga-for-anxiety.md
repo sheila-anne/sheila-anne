@@ -2,12 +2,19 @@
 templateKey: blog-post
 title: Yoga for Anxiety
 date: 2020-02-28T23:46:33.326Z
-description: describe
+description: >-
+  During times of anxiety, our brain is simultaneously firing and paralyzed by
+  panic. Practicing yoga can help us step outside of our anxious minds, tap into
+  our bodies, and find our breath and some peace once again.
 featuredpost: false
 featuredImage: /img/Yoga-for-anxiety.png
 tags:
-  - Yoga
-  - The Mat
+  - yoga
+  - poses
+  - the mat
+  - restorative
+  - yoga poses
+  - anxiety
 ---
 During times of anxiety, our brain is simultaneously firing and paralyzed by panic. Practicing yoga can help us step outside of our anxious minds, tap into our bodies, and find our breath and some peace once again. 
 
