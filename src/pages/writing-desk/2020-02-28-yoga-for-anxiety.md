@@ -26,7 +26,11 @@ Now we’ll engage the parasympathetic nervous system using Sama-vritti or an (e
 
 If you want to play with the breathing part of the practice a bit longer, go for it! I love [this Yoga with Adriene video.](https://youtu.be/8VwufJrUhic)
 
-**Extended puppy pose**\
+**Extended Puppy Pose**
+
+![girl doing extended puppy pose](/img/shutterstock_651701989.jpg "Extended Puppy Pose")
+
+\
 Come into table top (hands and knees)
 
 Walk your palms forward a few inches and sink your glutes back toward your heels
@@ -39,8 +43,12 @@ Think about opening your chest up and soften into areas of tension
 
 Think of puppies and see if that makes you feel calmer 🐕 😉 or just breathe here for 1-2 minutes 
 
-**Pigeon Pose**\
-This pose is a great hip opener and it releases stored negative energy and emotions. If you have any knee issues or your body doesn’t feel warm, please scroll to the modification.\
+**Half Pigeon Pose**\
+This pose is a great hip opener and it releases stored negative energy and emotions. If you have any knee issues or your body doesn’t feel warm, please scroll to the modification.
+
+![Girl doing half pigeon pose](/img/shutterstock_1453722644.jpg "Half Pigeon Pose")
+
+\
 From table top, bring the right knee toward the right wrist and extend the left leg out flat toward the back of the mat.
 
 For the least amount of tension in the hip, keep the right calf tucked under the core of the body. 
@@ -93,7 +101,7 @@ Feel your legs release and relax, dropping down toward the back of your pelvis.\
 Breathe here for anywhere from 5 - 15 and allow yourself to simply receive all of the amazing benefits!\
 Take great care as you release. Slowly push yourself away from the wall and slide your legs down to the right side. Use your hands to help press yourself back up into a seated position.
 
-**Reclined bound angle pose**\
+**Bound Angle & Reclined Bound Angle**\
 Start on your back with your feet planted into the ground and your knees parallel.
 
 Allow your knees to fall out to the side toward the side of the mat and the palms of your feet to touch.
