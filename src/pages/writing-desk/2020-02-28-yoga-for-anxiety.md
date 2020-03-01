@@ -102,11 +102,15 @@ Breathe here for anywhere from 5 - 15 and allow yourself to simply receive all o
 Take great care as you release. Slowly push yourself away from the wall and slide your legs down to the right side. Use your hands to help press yourself back up into a seated position.
 
 **Bound Angle & Reclined Bound Angle**\
-Start on your back with your feet planted into the ground and your knees parallel.
+For bound angle, start seated and bring the soles of your feet to touch.
 
-Allow your knees to fall out to the side toward the side of the mat and the palms of your feet to touch.
+![bound angle pose](/img/Yoga-for-anxiety.png "Bound Angle Pose")
 
-To make this pose more relaxing you can place blankets, blocks, or pillows underneath each knee.
+To add support and make this *even more* relaxing, place blankets, blocks, or pillows underneath each knee.
+
+Allow your chest to grow heavy and move toward your feet but try and hinge at the hips and keep your spin straight.  
+
+For reclined bound angle, place your hands behind your back and walk down to your forearms.  Again, you can use props to support you here.  Otherwise, you can walk all the way down so that your back is on the mat.
 
 You might want to put both hands on to your chest or on to your belly, or you might want to put one hand on to your heart and the other on your belly.
 
