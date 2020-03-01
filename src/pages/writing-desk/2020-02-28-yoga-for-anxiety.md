@@ -20,8 +20,6 @@ During times of anxiety, our brain is simultaneously firing and paralyzed by pan
 
 The mantra for this practice: “I know that I am inhaling. I know that I am exhaling.”
 
-
-
 ![Breathing in seated](/img/Yoga-for-anxiety.png "Breathing In Seated")
 
 **Breathing**\
@@ -87,7 +85,11 @@ Place the right ankle on the left leg, just below the knee. Allow gravity to do 
 To go deeper, raise your left knee toward your chest clasp your hands around your left thigh or left calf and hug in toward your chest.
 
 **\
-Balasana**\
+Balasana**
+
+![girl doing child's pose](/img/shutterstock_1169172100.jpg "Child's Pose/Balasana")
+
+\
 Start in table top, then bring your toes to touch and your knees wide towards the sides of the mat.
 
 Sink your hips back towards your feet, allowing your glutes to rest, and walk your hands forward toward the front of the mat.
