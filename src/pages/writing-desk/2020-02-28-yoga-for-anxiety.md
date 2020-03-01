@@ -20,6 +20,10 @@ During times of anxiety, our brain is simultaneously firing and paralyzed by pan
 
 The mantra for this practice: “I know that I am inhaling. I know that I am exhaling.”
 
+
+
+![Breathing in seated](/img/Yoga-for-anxiety.png "Breathing In Seated")
+
 **Breathing**\
 I begin each yoga class with breathing. I believe it’s a crucial part of the practice, as the body depends on the breath to be a guide throughout the practice. Our ability to manage our breath allows us to move deeper and more freely. As this is *yoga for anxiety*, I thought it necessary to include breath work along with the other poses. Intentional breathing signals to the body that it’s time to rest, rejuvenate and regenerate
 
@@ -111,7 +115,7 @@ Take great care as you release. Slowly push yourself away from the wall and slid
 **Bound Angle & Reclined Bound Angle**\
 For bound angle, start seated and bring the soles of your feet to touch.
 
-![bound angle pose](/img/Yoga-for-anxiety.png "Bound Angle Pose")
+![girl doing bound angle pose](/img/bound-angle.jpg "Bound Angle Pose")
 
 To add support and make this *even more* relaxing, place blankets, blocks, or pillows underneath each knee.
 
