@@ -27,6 +27,7 @@ export const BlogPostTemplate = ({
   description,
   featuredImage,
   location,
+  ogImage,
   tags,
   title,
   isPreview = false
@@ -40,7 +41,7 @@ export const BlogPostTemplate = ({
       <SEO
         description={description}
         isPreview={isPreview}
-        image={featuredImage?.childImageSharp?.fluid?.src}
+        image={ogImage?.childImageSharp?.original?.src}
         imageAlt={title}
         location={location}
         title={navTitle}
@@ -82,6 +83,7 @@ const BlogPost = ({ data, location }) => {
         description={post.frontmatter.description}
         featuredImage={post.frontmatter.featuredImage}
         location={location}
+        ogImage={post.frontmatter.ogImage}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -105,6 +107,13 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 600, quality: 100, maxHeight: 200) {
               ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        ogImage: featuredImage {
+          childImageSharp {
+            original {
+              src
             }
           }
         }
