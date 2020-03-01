@@ -40,6 +40,8 @@ export const BlogPostTemplate = ({
       <SEO
         description={description}
         isPreview={isPreview}
+        image={featuredImage?.childImageSharp?.fluid?.src}
+        imageAlt={title}
         location={location}
         title={navTitle}
         type="article"
