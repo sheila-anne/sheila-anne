@@ -56,7 +56,7 @@ Think of puppies and see if that makes you feel calmer 🐕 😉 or just breathe
 **Half Pigeon Pose**\
 This pose is a great hip opener and it releases stored negative energy and emotions. If you have any knee issues or your body doesn’t feel warm, please scroll to the modification.
 
-![Girl doing half pigeon pose](/img/sheila-anne-yoga-for-anxiety-half-pigion.jpg "Half Pigeon Pose")
+![Girl doing half pigeon pose](/img/sheila-anne-yoga-for-anxiety-half-pigeon.jpg "Half Pigeon Pose")
 
 \
 From table top, bring the right knee toward the right wrist and extend the left leg out flat toward the back of the mat.
