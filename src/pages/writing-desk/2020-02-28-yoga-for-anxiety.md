@@ -21,7 +21,7 @@ During times of anxiety, our brain is simultaneously firing and paralyzed by pan
 
 The mantra for this practice: “I know that I am inhaling. I know that I am exhaling.”
 
-![Breathing in seated](/img/Yoga-for-anxiety.png "Breathing In Seated")
+![Breathing in seated](/img/yoga-for-anxiety-breathing-in-seated-position.png "Breathing In Seated")
 
 **Breathing**\
 I begin each yoga class with breathing. I believe it’s a crucial part of the practice, as the body depends on the breath to be a guide throughout the practice. Our ability to manage our breath allows us to move deeper and more freely. As this is _yoga for anxiety_, I thought it necessary to include breath work along with the other poses. Intentional breathing signals to the body that it’s time to rest, rejuvenate and regenerate
