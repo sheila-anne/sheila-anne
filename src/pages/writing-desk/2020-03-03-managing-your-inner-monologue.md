@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Managing Your Inner Monologue
+title: The Three Steps To Manage Your Inner Monologue
 date: 2020-03-03T15:10:13.900Z
 description: >-
   I was recently introduced to the current hot topic of inner monologues and I
