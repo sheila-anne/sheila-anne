@@ -5,7 +5,7 @@ date: 2020-03-03T15:10:13.900Z
 description: >-
   I was recently introduced to the current hot topic of inner monologues and I
   was blown away. Though the study of inner speech started in the 1930s, there
-  has been a recent resurgence of interest in the topic -- people have flocked
+  has been a recent resurgence of interest in the topic — people have flocked
   into online discussions to express what they imagined life would be like
   without their internal narrative.
 
@@ -21,15 +21,13 @@ tags:
   - advice
   - tips
 ---
+![sitting with tea and a journal](/img/inner-monologue.jpg "managing inner monologue")
 
-
-![sitting with tea and a journal](/img/inner-monologue.jpg "Managing inner monologue")
-
-I was recently introduced to the [current hot topic](https://mymodernmet.com/inner-monologue/) of inner monologues and I was blown away. Though the study of inner speech started in the 1930s, there has been a recent resurgence of interest in the topic -- people have flocked into online discussions to express what they imagined life would be like without their internal narrative.
+I was recently introduced to the [current hot topic](https://mymodernmet.com/inner-monologue/) of inner monologues and I was blown away. Though the study of inner speech started in the 1930s, there has been a recent resurgence of interest in the topic — people have flocked into online discussions to express what they imagined life would be like without their internal narrative.
 
 So what if you *do* have an inner monologue?
 
-Most of us don’t just have one; our inner monologue is also our inner critic & inner panic button, and it has a sneaky way of taking over our lives. Sure, you can try to envision yourself by a lake with no cares in the world when things get rough. But if your mind is in “panic, self-destruction” mode, you probably know -- trying to think like that can make things worse.
+Most of us don’t just have one; our inner monologue is also our inner critic & inner panic button, and it has a sneaky way of taking over our lives. Sure, you can try to envision yourself by a lake with no cares in the world when things get rough. But if your mind is in “panic, self-destruction” mode, you probably know —trying to think like that can make things worse.
 
 What if I told you a more effective way that was also simpler?! In this post, I’ll be sharing three steps to managing your inner monologue.
 
@@ -39,9 +37,9 @@ Meet the monologue with curiosity & compassion. I mean it! None of this: “why 
 
 Instead:
 
-Reach for curiosity -- “This is an interesting thought process I’m experiencing. Hmmm…”
+Reach for curiosity — “This is an interesting thought process I’m experiencing. Hmmm…”
 
-Reach for compassion -- “ I’m listening and meeting these thoughts with love, not judgement.”
+Reach for compassion — “ I’m listening and meeting these thoughts with love, not judgement.”
 
 Give your worries a little love! You are not having an uncontrollable monologue on purpose! Your concerns, emotions, worries, and thoughts are natural. Accept that they are sending you a message, then commit to reaching for something that will serve you better.
 
@@ -67,6 +65,8 @@ Feel free to come up with your own if you want to be more specific. When you do,
 
 Make sure that you do the three steps in order. Ideally, you continue the deep breathing as you make the statements, continuing to promote homeostasis and mental clarity, while decreasing the opportunity to mentally relapse. If you find this helpful or have questions, contact me to let me know!
 
-\---
+———————————————————————————————————————
 
 My coaching sessions involve mindfulness and techniques like this. If this resonates with you, I invite you to apply for a 30 minute free call so we can personalize your plan to manage your inner monologue.
+
+![steps to manage the inner monologue](/img/steps-to-manage-inner-monologue.JPG "steps to manage inner monologue")
