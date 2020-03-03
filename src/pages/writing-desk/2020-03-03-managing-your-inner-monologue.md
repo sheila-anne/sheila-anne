@@ -14,9 +14,12 @@ description: >-
 featuredpost: false
 featuredImage: /img/steps-to-manage-inner-monologue.JPG
 tags:
-  - life coaching
   - the grove
-  - ''
+  - self care
+  - stress management
+  - coaching
+  - advice
+  - tips
 ---
 
 
