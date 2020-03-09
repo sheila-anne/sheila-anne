@@ -8,6 +8,7 @@ description: >-
   your upper body & I’m here with some yoga to ease the pain and get you back to
   business as usual once again!
 featuredpost: false
+featuredImage: /img/supported-bridge.JPG
 tags:
   - yoga
   - the mat
