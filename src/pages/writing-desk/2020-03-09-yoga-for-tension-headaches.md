@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Yoga For Tension Headaches & Upper Body Pain
+title: Yoga For Tension Headaches
 date: 2020-03-09T00:25:09.682Z
 description: >-
   Do you work a desk job? Do you have shoulder/back pain? Do you stress? Do you
@@ -17,6 +17,7 @@ tags:
   - tension
   - neck and shoulders
 ---
+
 Do you work a desk job? Do you have shoulder/back pain? Do you stress? Do you think about stress? You likely suffer from tension headaches or tension in your upper body & I’m here with some yoga to ease the pain and get you back to business as usual once again!
 
 **\
@@ -64,8 +65,6 @@ Your arms can stay outstretched on the floor next to your body, or your hands ca
 
 You can stay here several minutes, soaking up the benefits of the passive backbend. If this pose causes your back to hurt, remove the block and come down.
 
-
-
 **Legs Up The Wall**
 
 Also featured in [Yoga For Anxiety](https://www.sheilaanne.com/writing-desk/2020-02-28-yoga-for-anxiety/), this pose gently stretches the muscles in your neck and relaxes you at the same time.
@@ -91,7 +90,7 @@ Thread the needle is a killer pose for opening the shoulders and stretching the 
 
 Start in tabletop position (on your hands & knees)
 
-Inhale your right arm toward the ceiling, allowing your chest to open up big. 
+Inhale your right arm toward the ceiling, allowing your chest to open up big.
 
 ![Opening up heart space for thread the needle](/img/thread-the-needle-1.JPG "Thread the needle part 1")
 
