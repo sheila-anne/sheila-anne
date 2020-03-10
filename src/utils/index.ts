@@ -1,2 +1,3 @@
-import { applyStyle } from "./applyStyle";
-export { applyStyle };
+export { applyStyle } from "./applyStyle";
+export { hasWindow } from "./hasWindow";
+export { trackFacebook } from "./trackFacebook";

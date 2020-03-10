@@ -11,6 +11,7 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 import { CenteredText } from "./centered";
 import { Constants } from "../constants";
 import { SquareButton } from "./button";
+import { trackFacebook } from "../utils";
 
 type PageNames = "The Grove" | "Homepage";
 
@@ -46,11 +47,14 @@ const handleSubmit = (
 ) => {
   e.preventDefault();
 
-  trackCustomEvent({
+  const args = {
     action: "click",
     category: `Schedule`,
     label: page
-  });
+  };
+
+  trackCustomEvent(args);
+  trackFacebook(args);
 
   setShowBookingSection(!showBookingSection);
 };

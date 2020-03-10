@@ -35,10 +35,10 @@ export const SEO: FC<SEOProps> = ({
   title,
   type
 }) => {
+  const { site } = useStaticQuery(siteQuery);
   if (isPreview) {
     return null;
   }
-  const { site } = useStaticQuery(siteQuery);
   const fallbackImage = `${site.siteMetadata.siteUrl}/img/sheila-anne-og-image.png`;
   const ogImage = !!image ? site.siteMetadata.siteUrl + image : fallbackImage;
   const pathname = location && location.pathname;

@@ -10,6 +10,7 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { FormWrapperSection, Input, TextArea } from "./form-elements";
 import { SquareButton } from "../button";
+import { trackFacebook } from "../../utils";
 
 type SubscribeFormProps = {
   backgroundColor: string;
@@ -31,11 +32,13 @@ const handleSubmit = async (
   e.preventDefault();
 
   setButtonText("Submitting...");
-  trackCustomEvent({
+  const args = {
     action: "submit",
     category: `Form Submission`,
     label: page
-  });
+  };
+  trackCustomEvent(args);
+  trackFacebook(args);
 
   const formValues = { page };
   const formElements = (Array.from(
@@ -53,9 +56,9 @@ const handleSubmit = async (
     body: JSON.stringify(formValues)
   })
     .then(res => res.json())
-    .catch(err => {
-      success: false;
-    });
+    .catch(() => ({
+      success: false
+    }));
 
   const success = !!res?.success;
 

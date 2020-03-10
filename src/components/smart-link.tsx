@@ -2,6 +2,7 @@ import { OutboundLink, trackCustomEvent } from "gatsby-plugin-google-analytics";
 import React, { FC, MouseEvent } from "react";
 
 import { InternalLink } from "./internal-link";
+import { trackFacebook } from "../utils";
 
 type CustomLinkType = {
   ariaLabel?: string;
@@ -17,11 +18,13 @@ const getLinkType = (to: string) =>
 
 const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
   const to = event.currentTarget.href;
-  trackCustomEvent({
+  const args = {
     action: "click",
     category: `Internal Link`,
     label: to
-  });
+  };
+  trackCustomEvent(args);
+  trackFacebook(args);
 };
 
 const getInnerLink = (children: React.ReactNode, hideMetadata?: boolean) => {

@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { Constants } from "../constants";
-
-const hasWindow = typeof window !== "undefined";
+import { hasWindow } from "../utils";
 
 export const useWindow = () => {
   const [windowProps, setWindowProps] = useState(() => {

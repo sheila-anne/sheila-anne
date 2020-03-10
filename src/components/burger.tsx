@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { Constants } from "../constants";
+import { trackFacebook } from "../utils";
 
 type BurgerProps = {
   isOpen: boolean;
@@ -59,11 +60,13 @@ const onClick = (
 ) => {
   const newOpenValue = !isOpen;
   setIsOpen(newOpenValue);
-  trackCustomEvent({
+  const args = {
     action: "navigation",
     category: `Mobile Menu`,
     label: `$Toggle ${newOpenValue ? "closed" : "open"}`
-  });
+  };
+  trackCustomEvent(args);
+  trackFacebook(args);
 };
 
 const Burger: FC<BurgerProps> = ({ isOpen, setIsOpen }) => (

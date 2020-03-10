@@ -14,10 +14,10 @@ export const BlogPostMeta: FC<BlogPostMetaProps> = ({
   featuredImage,
   isPreview
 }) => {
+  const { logo } = useStaticQuery(blogPostMetaQuery);
   if (isPreview) {
     return null;
   }
-  const { logo } = useStaticQuery(blogPostMetaQuery);
 
   return (
     <>
