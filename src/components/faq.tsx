@@ -75,7 +75,7 @@ const reducer: Reducer<State, Action> = (
     label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`
   };
   trackCustomEvent(args);
-  trackFacebook(args);
+  trackFacebook("trackCustom", "FAQ Interaction", args);
   return { ...state, [action.type]: isExpanded };
 };
 

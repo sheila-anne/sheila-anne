@@ -54,7 +54,7 @@ const handleSubmit = (
   };
 
   trackCustomEvent(args);
-  trackFacebook(args);
+  trackFacebook("track", "Schedule", args);
 
   setShowBookingSection(!showBookingSection);
 };

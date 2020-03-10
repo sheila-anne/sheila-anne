@@ -24,7 +24,7 @@ const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
     label: to
   };
   trackCustomEvent(args);
-  trackFacebook(args);
+  trackFacebook("trackCustom", "Link Click", args);
 };
 
 const getInnerLink = (children: React.ReactNode, hideMetadata?: boolean) => {

@@ -38,7 +38,7 @@ const handleSubmit = async (
     label: page
   };
   trackCustomEvent(args);
-  trackFacebook(args);
+  trackFacebook("track", "Lead", args);
 
   const formValues = { page };
   const formElements = (Array.from(

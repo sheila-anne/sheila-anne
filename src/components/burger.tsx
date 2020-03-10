@@ -66,7 +66,7 @@ const onClick = (
     label: `$Toggle ${newOpenValue ? "closed" : "open"}`
   };
   trackCustomEvent(args);
-  trackFacebook(args);
+  trackFacebook("trackCustom", "Menu Interaction", args);
 };
 
 const Burger: FC<BurgerProps> = ({ isOpen, setIsOpen }) => (
