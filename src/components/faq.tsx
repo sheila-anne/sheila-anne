@@ -51,18 +51,12 @@ const RotateOnOpen = styled.span<{ isExpanded: boolean }>`
 const getInitialState = (faq: FAQ[]) =>
   faq
     .map(frequentlyAsked => ({
-      name: frequentlyAsked.question,
-      isExpanded: false
+      [frequentlyAsked.question]: false
     }))
-    .reduce(
-      (previousValue, currentValue) => {
-        return {
-          ...previousValue,
-          [currentValue.name]: currentValue.isExpanded
-        };
-      },
-      { base: false }
-    );
+    .reduce((previousValue, currentValue) => ({
+      ...previousValue,
+      ...currentValue
+    }));
 
 const reducer: Reducer<State, Action> = (
   state: State,
