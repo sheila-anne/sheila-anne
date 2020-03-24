@@ -34,18 +34,20 @@ const SuccessMessage = styled.div`
   border: 1px solid ${Constants.Colors.theGroveLightGreen};
 `;
 
+const shareNav =
+  typeof navigator !== "undefined" && (navigator as ShareNavigator);
+
 const onClick = (
   event: React.MouseEvent<HTMLButtonElement>,
   dispatch: React.Dispatch<ShareAction>
 ) => {
   event.preventDefault();
-  const shareNav = navigator as ShareNavigator;
   const title = document.title;
   const url =
     (document.querySelector("link[rel=canonical]") as HTMLAnchorElement)
       ?.href ?? document.location.href;
 
-  if (typeof shareNav !== "undefined" && !!shareNav.share) {
+  if (!!shareNav && !!shareNav.share) {
     shareNav
       .share({
         title,
@@ -68,8 +70,7 @@ export const Share = () => {
     shareSuccess: false,
     shareError: false
   });
-  const shareNav = navigator as ShareNavigator;
-  if (typeof shareNav !== "undefined" && !shareNav.share) {
+  if (!shareNav) {
     return null;
   }
 
