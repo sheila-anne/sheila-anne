@@ -9,6 +9,7 @@ import {
   Layout,
   HTMLContent,
   SEO,
+  Share,
   TagList
 } from "../components";
 import { Constants } from "../constants";
@@ -54,6 +55,7 @@ export const BlogPostTemplate = ({
       />
       <h1 itemProp="name headline">{title}</h1>
       <Smalltext>Published {datePublished} by Sheila Anne Murray</Smalltext>
+      <Share />
       <PostContent itemProp="articleBody mainEntityOfPage" content={content} />
       {tags && tags.length ? (
         <div style={{ marginTop: `4rem` }}>

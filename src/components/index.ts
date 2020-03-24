@@ -24,5 +24,6 @@ export {
   PreviewCompatibleImage
 } from "./preview-compatible";
 export { SEO } from "./seo";
+export { Share } from "./share";
 export { SmartLink } from "./smart-link";
 export { TagList } from "./tag-list";
