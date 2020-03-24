@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
@@ -11,14 +11,6 @@ type ShareProps = {
   url: string;
 };
 
-const initialState = { shareSuccess: false, shareError: false };
-type ShareAction = { key: keyof typeof initialState; value: string | boolean };
-type State = typeof initialState;
-
-const ErrorMessage = styled.div`
-  border: 1px solid red;
-`;
-
 const ShareButton = styled.button`
   background-color: #fff;
   cursor: pointer;
@@ -30,17 +22,12 @@ const ShareButton = styled.button`
   }
 `;
 
-const SuccessMessage = styled.div`
-  border: 1px solid ${Constants.Colors.theGroveLightGreen};
-`;
-
 const shareNav =
   typeof navigator !== "undefined" && (navigator as ShareNavigator);
 
-const onClick = (
-  event: React.MouseEvent<HTMLButtonElement>,
-  dispatch: React.Dispatch<ShareAction>
-) => {
+const hasShare = !!shareNav && !!shareNav.share;
+
+const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
   event.preventDefault();
   const title = document.title;
   const url =
@@ -53,43 +40,21 @@ const onClick = (
         title,
         url
       })
-      .then(() => dispatch({ key: "shareSuccess", value: true }))
-      .catch(() => dispatch({ key: "shareError", value: true }));
+      .catch();
   }
 };
 
-const reducer: React.Reducer<State, ShareAction> = (
-  state: State,
-  action: ShareAction
-): State => {
-  return { ...state, [action.key]: [action.value] };
-};
-
 export const Share = () => {
-  const [state, dispatch] = useReducer(reducer, {
-    shareSuccess: false,
-    shareError: false
-  });
-  if (!shareNav) {
+  if (!hasShare) {
     return null;
   }
 
   return (
-    <>
-      <ShareButton onClick={e => onClick(e, dispatch)}>
-        <span role="img" aria-label="share">
-          📤
-        </span>{" "}
-        Share!
-      </ShareButton>
-      {state.shareError && (
-        <ErrorMessage>
-          There was an error sharing this article. Please try again!
-        </ErrorMessage>
-      )}
-      {state.shareSuccess && (
-        <SuccessMessage>Article successfully shared!</SuccessMessage>
-      )}
-    </>
+    <ShareButton onClick={e => onClick(e)}>
+      <span role="img" aria-label="share">
+        📤
+      </span>{" "}
+      Share!
+    </ShareButton>
   );
 };
