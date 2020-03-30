@@ -36,6 +36,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `sheilaanne.lifecoach`
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         exclude: ["localhost:**", "/admin/**"],

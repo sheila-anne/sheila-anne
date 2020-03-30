@@ -9,11 +9,17 @@ type PillButtonProps = {
   type?: "submit" | undefined;
 };
 
-export const Button = styled(SmartLink)`
-  background-color: ${Constants.Colors.theGroveGreen};
-  box-shadow: inset 0 0 0 2px ${Constants.Colors.theGroveGreen};
+export const Button = styled(SmartLink)<{
+  backgroundColor?: string;
+  color?: string;
+}>`
+  background-color: ${({ backgroundColor }) =>
+    !!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen};
+  box-shadow: inset 0 0 0 2px
+    ${({ backgroundColor }) =>
+      !!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen};
   border-radius: 1rem;
-  color: #fff;
+  color: ${({ color }) => (!!color ? color : "#FFF")};
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
@@ -25,6 +31,10 @@ export const Button = styled(SmartLink)`
 
   @media (max-width: ${Constants.mobileWidth}) {
     margin: 1rem 0;
+  }
+
+  :hover {
+    color: ${({ color }) => (!!color ? Constants.Colors.darkBlue : "#000")};
   }
 `;
 

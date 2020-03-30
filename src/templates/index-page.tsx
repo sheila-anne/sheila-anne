@@ -10,6 +10,7 @@ import {
   CenteredText,
   FlexContainer,
   FullWidthImage,
+  Instagram,
   Layout,
   PreviewCompatibleBanner,
   SEO,
@@ -45,6 +46,14 @@ type PreviewTemplateProps = IndexFrontmatterProperty & {
 
 type IndexPageData = BlogPostsGraphql & {
   markdownRemark: IndexFrontmatterProperty;
+  insta: any;
+  site: {
+    siteMetadata: {
+      social: {
+        instagram: string;
+      };
+    };
+  };
 };
 
 type IndexPageProps = {
@@ -172,13 +181,24 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             />
           </FlexContainer>
           <CenteredText>
-            <BannerHeadline as="h3" lessMargin={true}>
-              Latest from my blog
+            <BannerHeadline
+              as="h3"
+              color={Constants.Colors.lightestBlue}
+              fontColor={"#000"}
+              lessMargin={true}
+            >
+              Latest From My Blog
             </BannerHeadline>
           </CenteredText>
           <BlogRoll posts={posts} />
           <CenteredText>
-            <Button to="/writing-desk/">Read more on the blog!</Button>
+            <Button
+              backgroundColor={Constants.Colors.lightestBlue}
+              color="#000"
+              to="/writing-desk/"
+            >
+              Read more @ The Writing Desk!
+            </Button>
           </CenteredText>
         </Container>
       </section>
@@ -199,6 +219,10 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
       <IndexPageTemplate
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
+      />
+      <Instagram
+        insta={data.insta}
+        instagramUrl={data.site.siteMetadata.social.instagram}
       />
     </Layout>
   );
@@ -238,6 +262,46 @@ export const pageQuery = graphql`
       limit: 3
     ) {
       ...BlogPosts
+    }
+
+    insta: allInstaNode(
+      filter: { username: { eq: "sheilaanne.lifecoach" } }
+      sort: { fields: timestamp, order: DESC }
+      limit: 6
+    ) {
+      edges {
+        node {
+          id
+          username
+          likes
+          caption
+          comments
+          localFile {
+            childImageSharp {
+              fluid(quality: 85, maxWidth: 600, maxHeight: 600) {
+                base64
+                tracedSVG
+                aspectRatio
+                src
+                srcSet
+                sizes
+                originalImg
+                originalName
+                presentationWidth
+                presentationHeight
+              }
+            }
+          }
+        }
+      }
+    }
+
+    site {
+      siteMetadata {
+        social {
+          instagram
+        }
+      }
     }
   }
 `;
