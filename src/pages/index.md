@@ -2,21 +2,19 @@
 templateKey: index-page
 pageTitle: Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement
 pageDescription: >
-  Lifecoach, yoga teacher, and content creator Sheila Anne Murray welcomes those looking to take their life to the next level.
+  Lifecoach, yoga teacher, and content creator Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
 bannerTitle: Meet your new life coach
 bannerSubtitle: >
-  Looking to navigate your life path?
+  Curious to learn more?
 image: /img/sheila-anne-coaching-header.jpg
-description: >-
-  Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind and spirit, creating a place where you can grow as a person.
+description: >
+  Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"
 
 mainpitch:
-  title: It’s time to harness your energy, recognize your purpose, and live your most authentic & bold life.
-  description: >
-    Tap into your inner compass. Stoke your inner fire. Ignite personal growth in your relationships, professional life, and activities. Create nourishing spaces & experiences. Discover a life coach who works to integrate your deepest desires into actionable and attainable goals. Sheila Anne is the coach ready to take your life to the next level.
+  title: Harness your energy, tap into your purpose, and create a deeply inspiring future.
 
 intro:
   blurbs:
@@ -41,3 +39,7 @@ intro:
       text: >
         Your world is changing, you’re standing tall in your power, and you're becoming the most bold & authentic version of you!
 ---
+
+🧘 Sheila Anne is a combination of life coaching, intentional movement, and story curation. Join Sheila as she nourishes your mind and spirit, creating a place where you can grow as a person.
+
+Her signature program in [The Grove](/the-grove/) encourages you to ground down as you grow. In this space, you can expect to cultivate mindfulness, integrate your deepest desires into actionable and attainable goals, and ignite deeper connections in your relationships, professional life, and activities.

@@ -95,7 +95,7 @@ collections:
           - { label: Page Description, name: pageDescription, widget: string }
           - { label: Banner Subtitle, name: bannerSubtitle, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: Description, name: description, widget: string }
+          - { label: Description, name: description, widget: text }
 
           - { label: "Form Headline", name: "formHeadline", widet: "string" }
           - {
@@ -103,18 +103,20 @@ collections:
               name: "formSubHeadline",
               widet: "string",
             }
-          - { label: "Form Paragraph", name: "formParagraph", widet: "string" }
+          - {
+              label: "Form Paragraph",
+              name: "formParagraph",
+              widet: "string",
+              required: false,
+            }
 
           - {
               label: Mainpitch,
               name: mainpitch,
               widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
+              fields: [{ label: Title, name: title, widget: string }],
             }
+          - { label: Body, name: body, widget: markdown }
 
       - file: "src/pages/about/index.md"
         label: "About"

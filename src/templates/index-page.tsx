@@ -37,6 +37,7 @@ type IndexFrontmatterProps = BaseFrontmatter & {
 
 type IndexFrontmatterProperty = {
   frontmatter: IndexFrontmatterProps;
+  html: string;
 };
 
 type PreviewTemplateProps = IndexFrontmatterProperty & {
@@ -111,7 +112,8 @@ const Subheadline = styled.h2`
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
   isPreview,
-  posts
+  posts,
+  html
 }) => {
   const {
     bannerSubtitle,
@@ -158,14 +160,14 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         </CenteredText>
         <Container>
           <CenteredText>
-            <Subheadline>{description}</Subheadline>
+            <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
             <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
               {bannerSubtitle}{" "}
               <BannerLink to="/the-grove/" title="Life Coaching in The Grove">
                 Start here.
               </BannerLink>
             </BannerHeadline>
-            <p>{mainpitch.description}</p>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
           </CenteredText>
           <FlexContainer
             backgroundColor={Constants.Colors.featuredPost}
@@ -219,6 +221,7 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
       <IndexPageTemplate
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
+        html={data.markdownRemark.html}
       />
       <Instagram
         insta={data.insta}
@@ -249,11 +252,11 @@ export const pageQuery = graphql`
         }
         mainpitch {
           title
-          description
         }
         pageDescription
         pageTitle
       }
+      html
     }
 
     allMarkdownRemark(
