@@ -8,7 +8,7 @@ description: >-
   your upper body & I’m here with some yoga to ease the pain and get you back to
   business as usual once again!
 featuredpost: false
-featuredImage: /img/supported-bridge.JPG
+featuredImage: /img/supported-bridge.jpg
 tags:
   - yoga
   - the mat
@@ -24,7 +24,7 @@ Seated Neck Release, option 1**
 
 You may be seated on the floor / mat or up on a block or blanket if that is more comfortable for your hips. What’s important is that your spine is straight and your neck has the space to be long.
 
-![Seated Neck Release, option 1](/img/neck-release-1.JPG "Seated Neck Release, option 1")
+![Seated Neck Release, option 1](/img/neck-release-1.jpg "Seated Neck Release, option 1")
 
 Place your left hand on the right side of your head and gently tilt your head to the left, allowing gravity to do most of the work.
 
@@ -36,7 +36,7 @@ Repeat on both sides a few times to reduce the intensity of the headache.
 
 **Seated Neck Release, option 2**
 
-![Seated neck release, option 2](/img/neck-release-2.JPG "Seated neck release, option 2")
+![Seated neck release, option 2](/img/neck-release-2.jpg "Seated neck release, option 2")
 
 Clasp your hands together behind your back, then bring them, still clasped, to sit on your left hip, effectively moving your right shoulder down and back.
 
@@ -52,7 +52,7 @@ This pose increases blood flow, opens the heartspace, and relaxes the neck and s
 
 You will need your yoga block or a similar solid bolster handy.
 
-![Supported bridge pose](/img/supported-bridge.JPG "Supported bridge pose")
+![Supported bridge pose](/img/supported-bridge.jpg "Supported bridge pose")
 
 Start on your back, with bent knees and feet flat on the floor.
 
@@ -68,7 +68,7 @@ You can stay here several minutes, soaking up the benefits of the passive backbe
 
 Also featured in [Yoga For Anxiety](https://www.sheilaanne.com/writing-desk/2020-02-28-yoga-for-anxiety/), this pose gently stretches the muscles in your neck and relaxes you at the same time.
 
-![Legs up the wall from the ground](/img/legs-up-the-wall-1.JPG "Legs up the wall from the ground")
+![Legs up the wall from the ground](/img/legs-up-the-wall-1.jpg "Legs up the wall from the ground")
 
 Place a firm pillow, folded blanket(s), or bolster against the wall.
 
@@ -80,7 +80,7 @@ Feel your legs release and relax, dropping down toward the back of your pelvis.
 
 Breathe here for anywhere from 5 - 15 second and allow yourself to simply receive all of the amazing benefits!
 
-![Legs up the wall from above](/img/legs-up-the-wall-2.JPG "Legs up the wall from above")
+![Legs up the wall from above](/img/legs-up-the-wall-2.jpg "Legs up the wall from above")
 
 Take great care as you release. Slowly push yourself away from the wall and slide your legs down to the right side. Use your hands to help press yourself back up into a seated position.
 
@@ -91,7 +91,7 @@ Start in tabletop position (on your hands & knees)
 
 Inhale your right arm toward the ceiling, allowing your chest to open up big.
 
-![Opening up heart space for thread the needle](/img/thread-the-needle-1.JPG "Thread the needle part 1")
+![Opening up heart space for thread the needle](/img/thread-the-needle-1.jpg "Thread the needle part 1")
 
 Exhale as you thread your right hand through the space between your left side body. Inhale your arm to the ceiling once again. Repeat three times, incorporating the breath as much as you are the movement.
 
@@ -99,7 +99,7 @@ Finally thread the needle and pause, allowing your right arm to come to rest on 
 
 Continue shifting your right fingertips to the left until you feel a stretch. You can slide your right elbow toward your left knee, then extend your left arm overhead and walk your left fingertips toward the front of the mat.
 
-![Thread the needle, resting](/img/thread-the-needle-2.JPG "Thread the needle part 2")
+![Thread the needle, resting](/img/thread-the-needle-2.jpg "Thread the needle part 2")
 
 Hold here, focus on your breathing, and ensure that you are not stretching past your body's natural limitations.
 

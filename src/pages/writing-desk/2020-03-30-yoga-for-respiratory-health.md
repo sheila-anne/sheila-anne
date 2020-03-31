@@ -5,7 +5,7 @@ date: 2020-03-30T15:25:09.682Z
 description: >-
   There’s a lot of talk these days about respiratory health, and perhaps you (like me) are thinking more than ever about your vital organs and how to promote their functionality.  Of course, the basics like nourishment 😛, exercise, sleep, and stress reduction are essential to keeping your body healthy and happy.  To take things one step further, you can increase self/body awareness and integrate specific yoga poses to nurture your respiratory system.
 featuredpost: false
-featuredImage: /img/sheila-anne-respiratory-health-gate-pose-one.JPG
+featuredImage: /img/sheila-anne-respiratory-health-gate-pose-one.jpg
 tags:
   - yoga
   - the mat
@@ -24,7 +24,7 @@ What with the coronavirus, there’s a lot of talk these days about respiratory 
 
 ### Sphinx Pose
 
-![Sphinx Pose](/img/sheila-anne-respiratory-health-sphinx-pose.JPG)
+![Sphinx Pose](/img/sheila-anne-respiratory-health-sphinx-pose.jpg)
 
 _Benefits_:
 
@@ -65,13 +65,13 @@ Gaze down so that the crown of your head shines forward and you feel some length
 
 #### Cow
 
-![Cow Pose](/img/sheila-anne-respiratory-health-cow-pose.JPG)
+![Cow Pose](/img/sheila-anne-respiratory-health-cow-pose.jpg)
 
 Inhale and allow your belly to be heavy as it moves toward the mat, and lift your chest in opposition toward the ceiling.
 
 #### Cat
 
-![Cat Pose](/img/sheila-anne-respiratory-health-cat-pose.JPG)
+![Cat Pose](/img/sheila-anne-respiratory-health-cat-pose.jpg)
 
 On the exhale, tuck the chin, round the belly up, draw the tailbone down toward the mat.
 
@@ -96,7 +96,7 @@ There are a whole slew of yoga poses that involve side bending, and I’m going 
 
 #### Seated Side Bend
 
-![Seated Side Bend Pose](/img/sheila-anne-respiratory-health-seated-side-bend.JPG)
+![Seated Side Bend Pose](/img/sheila-anne-respiratory-health-seated-side-bend.jpg)
 
 Start seated on a chair or on the floor, with a block or pillow under you if your hips are a little tight. I like sitting atop a block/pillow because it already creates a feeling of length in my spine and encourages me to straighten up in my posture.
 
@@ -114,7 +114,7 @@ Move on to the other side!
 
 #### Gate Pose Flow
 
-![First Gate Pose](/img/sheila-anne-respiratory-health-gate-pose-one.JPG)
+![First Gate Pose](/img/sheila-anne-respiratory-health-gate-pose-one.jpg)
 
 Begin kneeling on the floor. If you have knee pain, place a folded blanket beneath your knees.
 
@@ -128,7 +128,7 @@ Extend the tailbone down toward the extended right leg, tuck the pelvis, and ope
 
 Inhale to grow long, exhale to side bend a little bit deeper. Eyes can gaze down toward the left knee or up toward the right finger tips.
 
-![Second Gate Pose](/img/sheila-anne-respiratory-health-gate-pose-two.JPG)
+![Second Gate Pose](/img/sheila-anne-respiratory-health-gate-pose-two.jpg)
 
 Release the arm and bring your torso back to center, with the left knee under left hip and right leg still extended.
 
@@ -147,7 +147,7 @@ Complete on the other side.
 
 #### Reverse Warrior
 
-![Reverse Warrior Pose](/img/sheila-anne-respiratory-health-reverse-warrior.JPG)
+![Reverse Warrior Pose](/img/sheila-anne-respiratory-health-reverse-warrior.jpg)
 
 Starting in mountain pose (standing with feet grounding into the mat/floor) step right foot back to a lunge.
 

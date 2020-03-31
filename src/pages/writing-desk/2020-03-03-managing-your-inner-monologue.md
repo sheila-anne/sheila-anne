@@ -12,7 +12,7 @@ description: >-
 
   So what if you do have an inner monologue?
 featuredpost: false
-featuredImage: /img/steps-to-manage-inner-monologue.JPG
+featuredImage: /img/steps-to-manage-inner-monologue.jpg
 tags:
   - the grove
   - self care
@@ -21,11 +21,12 @@ tags:
   - advice
   - tips
 ---
+
 ![sitting with tea and a journal](/img/inner-monologue.jpg "managing inner monologue")
 
 I was recently introduced to the [current hot topic](https://mymodernmet.com/inner-monologue/) of inner monologues and I was blown away. Though the study of inner speech started in the 1930s, there has been a recent resurgence of interest in the topic — people have flocked into online discussions to express what they imagined life would be like without their internal narrative.
 
-So what if you *do* have an inner monologue?
+So what if you _do_ have an inner monologue?
 
 Most of us don’t just have one; our inner monologue is also our inner critic & inner panic button, and it has a sneaky way of taking over our lives. Sure, you can try to envision yourself by a lake with no cares in the world when things get rough. But if your mind is in “panic, self-destruction” mode, you probably know —trying to think like that can make things worse.
 
@@ -69,4 +70,4 @@ Make sure that you do the three steps in order. Ideally, you continue the deep b
 
 My coaching sessions involve mindfulness and techniques like this. If this resonates with you, I invite you to apply for a 30 minute free call so we can personalize your plan to manage your inner monologue.
 
-![steps to manage the inner monologue](/img/steps-to-manage-inner-monologue.JPG "steps to manage inner monologue")
+![steps to manage the inner monologue](/img/steps-to-manage-inner-monologue.jpg "steps to manage inner monologue")

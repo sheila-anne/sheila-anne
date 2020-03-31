@@ -8,7 +8,7 @@ description: >-
   some tips to help you maximize your coaching sessions and, by extension,  your
   results.
 featuredpost: false
-featuredImage: /img/sheila-anne-how-to-get-the-most-out-of-coaching.JPG
+featuredImage: /img/sheila-anne-how-to-get-the-most-out-of-coaching.jpg
 tags:
   - the grove
   - coaching
@@ -22,7 +22,7 @@ Coaching is a partnership between the client (you!) and the coach (me!). The mor
 - release limiting beliefs
 - transform your life!
 
-![How to get the most out of life coaching](/img/sheila-anne-how-to-get-the-most-out-of-coaching.JPG)
+![How to get the most out of life coaching](/img/sheila-anne-how-to-get-the-most-out-of-coaching.jpg)
 
 With all that in mind, I want to help you maximize our time together. Sharing a few tips & tricks below!
 

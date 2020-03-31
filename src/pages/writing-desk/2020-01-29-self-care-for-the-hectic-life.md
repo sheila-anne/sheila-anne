@@ -8,14 +8,14 @@ description: >-
   ideas on stress management, inviting you to stay committed to self care, even
   during the craziest of weeks.
 featuredpost: false
-featuredImage: /img/sheila-anne-self-care-for-the-hectic-life.JPG
+featuredImage: /img/sheila-anne-self-care-for-the-hectic-life.jpg
 tags:
   - the grove
   - self care
   - stress management
 ---
 
-![Stress management is always easier in Nature](/img/sheila-anne-self-care-for-the-hectic-life.JPG)
+![Stress management is always easier in Nature](/img/sheila-anne-self-care-for-the-hectic-life.jpg)
 
 Stress has always been a part of the human experience. Newer innovations, such as modern technology and the disconnectedness it creates, has only increased our exposure to stress-inducing triggers. What’s more, many people face lofty expectations of what being a successful human looks like (ie. having it all / doing it all / earning money while making it look easy and fun!) which negatively impacts the ability to properly name and deal with stress in the way the body/brain might need. It becomes very easy to get wrapped up in the routine, the to-do list, and in the fulfilling the needs / expectations of others… but what are you doing for yourself?
 
@@ -46,4 +46,4 @@ _"Self-care for me is always being there for myself and treating myself like I w
 
 Does this get you excited? Are you ready to take the next step and invest in yourself and in your future, more balanced life? While [working with me 1:1 in The Grove](/the-grove/), we’ll be able to do a full assessment and evaluate all aspects of your life. We’ll identify what areas you are absolutely killing, and what you might want to tackle next.
 
-![Sheila Anne in Nature](/img/Hobbit-trail.JPG)
+![Sheila Anne in Nature](/img/hobbit-trail.jpg)
