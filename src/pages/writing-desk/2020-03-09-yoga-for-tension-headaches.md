@@ -13,7 +13,6 @@ tags:
   - yoga
   - the mat
   - poses
-  - yoga poses
   - tension
   - neck and shoulders
 ---
