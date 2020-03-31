@@ -5,7 +5,7 @@ pageDescription: >
   Lifecoach, yoga teacher, and content creator Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
 bannerTitle: Meet your new life coach
 bannerSubtitle: >
-  Looking to navigate your life path?
+  Curious to learn more?
 image: /img/sheila-anne-coaching-header.jpg
 description: >
   Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
