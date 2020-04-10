@@ -17,9 +17,7 @@ tags:
   - the mat
 ---
 
-When you have an upset stomach or trouble digesting, yoga might feel like the
-last thing you want to do. Inhale, exhale, and trust me on this one. Time to
-relieve symptoms and restore energy and clarity.
+When you have an upset stomach or trouble digesting, yoga might feel like the last thing you want to do. Inhale, exhale, and trust me on this one. Time to relieve symptoms and restore energy and clarity.
 
 These poses are designed to gently engage your side-body muscles, relaxing the rest of your core. Muscles that are normally tense surrounding your stomach, intestines, and pelvic floor will naturally loosen using these poses. I know that whenever I encounter digestive issues, it's time to do a little digestive yoga session.
 

@@ -267,11 +267,7 @@ export const pageQuery = graphql`
       ...BlogPosts
     }
 
-    insta: allInstaNode(
-      filter: { username: { eq: "sheilaanne.lifecoach" } }
-      sort: { fields: timestamp, order: DESC }
-      limit: 6
-    ) {
+    insta: allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 6) {
       edges {
         node {
           id
