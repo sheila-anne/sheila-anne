@@ -12,7 +12,8 @@ tags:
   - advice
   - productivity
 ---
-If you [follow along on social](https://www.instagram.com/sheilaanne.lifecoach/) or subscribe to the [blog that I run with my fiancé](https://www.sheandjim.com/), you probably know that we recently moved into our own apartment! After a year on the road, living with friends, living with family, and a month and a half of apartment hunting in Colorado, we are committed to a home!😄
+
+If you [follow along on social](https://www.instagram.com/sheflowsandgrows/) or subscribe to the [blog that I run with my fiancé](https://www.sheandjim.com/), you probably know that we recently moved into our own apartment! After a year on the road, living with friends, living with family, and a month and a half of apartment hunting in Colorado, we are committed to a home!😄
 
 The prospect of filling an apartment is exciting but, to get it done right, you have to be strategic 😏. As we’ve gone through the process of furnishing our new place, I’ve realized that you can use the same strategy to plan your most productive and b e a u t i f u l weeks! Perhaps at this moment you think this is a stretch but I promise that this article will give you some **killer** tips and, once you start integrating them into your life, you’ll find yourself less overwhelmed, more productive, and with more room to breathe and enjoy.
 
@@ -30,7 +31,7 @@ The big message here: You can’t do it all at once. So if you want to succeed, 
 
 ![girl on a couch](/img/lounging-on-the-couch.jpg "Celebrating this amazing second-hand find")
 
-*Celebrating this amazing second-hand find!*
+_Celebrating this amazing second-hand find!_
 
 ## Be Mindful About How It Aligns With You! (AKA know thyself)
 
@@ -60,6 +61,6 @@ All of the things listed are completely reasonable to furnish an apartment, but 
 
 ![leaving the plant store](/img/leaving-the-plant-shop.jpg "Leaving our local plant store")
 
-*Leaving our local plant store with these goodies! Plants make a big difference in the home* 🥰
+_Leaving our local plant store with these goodies! Plants make a big difference in the home_ 🥰
 
 ### **If you couldn’t tell from this blog post, I’m passionate about helping people hack their lives and make the most out of every day/week/month/year! If this interests you & you’re excited about committing to making tangible changes,** [apply for a call with me here!](https://square.site/book/T2G1BPTFKKDBJ/sheila-anne)
