@@ -63,7 +63,7 @@ const onClick = (
   const args = {
     action: "navigation",
     category: `Mobile Menu`,
-    label: `$Toggle ${newOpenValue ? "closed" : "open"}`
+    label: `Toggle ${newOpenValue ? "closed" : "open"}`,
   };
   trackCustomEvent(args);
   trackFacebook("trackCustom", "Menu Interaction", args);
