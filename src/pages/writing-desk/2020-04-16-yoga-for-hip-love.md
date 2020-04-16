@@ -20,8 +20,6 @@ We can’t talk about hips without mentioning glutes. A quick anatomy aside -- T
 
 This flow is designed to be done slow and steady, more of a sweet-release for the hips. As the hip is a whole socket, it’s ideal to practice poses that stretch the hip in all directions. As you move through the poses, consider where and how you canlet goand breathe into the poses. Sensation is good but avoid muscling through pain… that won’t serve you here.
 
-
-
 ## Wide-Legged, Supported Child’s Pose
 
 ![girl doing wide legged childs pose](/img/childs-pose.jpeg "Wide-legged childs pose")
@@ -78,8 +76,6 @@ This pose may feel intense but it should never hurt! If you are feeling pain, pl
 
 Breathe deeply and hold the pose for 10 - 20 breaths. Switch to the other side.
 
-
-
 DOUBLE PIGEON (also known as firelog)
 
 Start seated on your mat with your feet flat on the floor and knees bent.
@@ -88,6 +84,8 @@ Palms can press into the ground behind you.
 
 Lean back and release your shoulders down your back. Cross your right ankle over your left knee, until you make a figure four shape with your legs.
 
+![Double Pigeon Prep](/img/pigeon-setup.jpeg "Double Pigeon Prep")
+
 Keep your right foot flexed and draw your right knee away from you until you feel a stretch in your right hip. Be gentle here.
 
 Wiggle left foot towards the right, so that the outside of your left calf can come to rest on the mat. Try to sit up straight and stack your legs.
@@ -95,6 +93,8 @@ Wiggle left foot towards the right, so that the outside of your left calf can co
 Line up the ankle or side of your right foot over your left knee. Make sure that your ankle is not flexed down, almost as if a beam of energy could run in a straight line from the palm of your right foot to your right knee.
 
 Your right knee will be over your left ankle, or side of the foot. Try to make your shins parallel to each other, with the right stacked directly over the left.
+
+![Double Pigeon](/img/double-pigeon.jpeg "Double Pigeon")
 
 This is an intense pose for both hips & groin, so be gentle! Breathe here and, if it feels comfortable you can walk your hands forward, keeping your hips on the ground.
 
@@ -136,8 +136,6 @@ Though you may walk your right foot out a few inches to give yourself more space
 
 If at any point the back knee hurts, slide forward to bring your weight further off you knee and onto your quad OR tuck the back toes and lift the knee.
 
-
-
 TWISTED DRAGON
 
 ![Twisted Dragon](/img/twisted-dragon.jpeg "Twisted Dragon")
@@ -161,7 +159,5 @@ Bring your right knee up in line with your hip, keeping your foot in dorsiflexio
 Place a blanket under your right knee if you need more support.
 
 After 30 - 60 seconds, slide the leg back down and move to the left side.
-
-
 
 If you enjoyed this sequence, be sure to check out my other yoga blogs at [The Writing Desk](https://www.sheilaanne.com/writing-desk/).
