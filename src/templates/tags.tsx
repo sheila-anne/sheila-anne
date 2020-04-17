@@ -8,14 +8,14 @@ import {
   CenteredText,
   Layout,
   SmartLink,
-  TagList
+  TagList,
 } from "../components/";
 
 const TagLink = styled(SmartLink)`
   text-decoration: underline;
 
   > * {
-    display: inline;
+    display: inline-block;
   }
 `;
 
@@ -25,7 +25,7 @@ const Headline = styled.h1`
 
 const TagRoute = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
-  const postLinks = posts.map(post => (
+  const postLinks = posts.map((post) => (
     <li key={post.node.fields.slug}>
       <TagLink to={post.node.fields.slug} title={post.node.frontmatter.title}>
         <h2>{post.node.frontmatter.title}</h2>

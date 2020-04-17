@@ -13,7 +13,6 @@ tags:
   - poses
   - the mat
   - restorative
-  - yoga poses
   - anxiety
 ---
 
