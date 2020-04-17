@@ -13,7 +13,6 @@ tags:
   - yoga
   - poses
   - restorative
-  - yoga poses
   - the mat
   - open heart
 ---

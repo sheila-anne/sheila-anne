@@ -13,7 +13,6 @@ tags:
   - poses
   - digestion
   - restorative
-  - yoga poses
   - the mat
 ---
 

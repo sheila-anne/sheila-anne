@@ -12,21 +12,21 @@ tags:
   - restorative
   - hips
   - the mat
-  - tight hips
 ---
+
 If you’re on this page, you likely are experiencing some pain / tightness / distress / whatever-you-care-to-call-it-in-your-hips. Let me tell you, your hips are so happy you’re here.
 
-We can’t talk about hips without mentioning glutes. A quick anatomy aside -- There are ligaments and muscles attached to the hip that help with stability and control of motion. Though people are typically motivated to work on their booty so it looks good in jeans, these muscles do soooo much more! Glute muscles act as a base of support for the pelvis and hips and help us to play, walk, stand, and even support us when we sit. So, underworking (& even overworking!) glute muscles affect the range of motion in the hips and sacrum and can lead to stability imbalances and even pain in other areas of your body. If you’re an athlete you’ve likely had experiences with knee pain, only to be instructed to work on your hips and glutes. I suggest that if hip & knee pain is nothing new for you, you may want to do👊some👊werk👊 on your glutes. In the future I hope to do a series to focus specifically on glute strengthening exercises, for now I’m just calling it out😆. OK — back to hips!
+We can’t talk about hips without mentioning glutes. A quick anatomy aside -- There are ligaments and muscles attached to the hip that help with stability and control of motion. Though people are typically motivated to work on their booty so it looks good in jeans, these muscles do soooo much more! Glute muscles act as a base of support for the pelvis and hips and help us to play, walk, stand, and even support us when we sit. So, underworking (& even overworking!) glute muscles affects the range of motion in the hips and sacrum and can lead to stability imbalances and even pain in other areas of your body. If you’re an athlete you’ve likely had experiences with knee pain, only to be instructed to work on your hips and glutes. I suggest that if hip & knee pain is nothing new for you, you may want to do 👊some 👊werk 👊 on your glutes. In the future I hope to do a series to focus specifically on glute strengthening exercises; for now I’m just calling it out 😆. OK — back to hips!
 
-This flow is designed to be done slow and steady, more of a sweet-release for the hips. As the hip is a whole socket, it’s ideal to practice poses that stretch the hip in all directions. As you move through the poses, consider where and how you canlet goand breathe into the poses. Sensation is good but avoid muscling through pain… that won’t serve you here.
+This flow is designed to be done slow and steady; as more of a sweet-release for the hips. As the hip is a hole socket, it’s ideal to practice poses that stretch the hip in all directions. As you move through the poses, consider where and how you can let go and breathe into the poses. Sensation is good but avoid muscling through pain… that won’t serve you here.
 
 ## Wide-Legged, Supported Child’s Pose
 
 ![girl doing wide legged childs pose](/img/childs-pose.jpeg "Wide-legged childs pose")
 
-Child’s pose (Balasana) is a lovely addition between challenging asanas or, in this case, after a long day sitting or feeling tightness in the hips. Child’s pose may seem simple and easy but do not underestimate it! This pose canfeel difficult on its own after a long day of travel, office work, or sustained exercise. You may want to grab a pillow or two for this one.
+Child’s Pose (Balasana) is a lovely addition between challenging asanas or, in this case, after a long day sitting or feeling tightness in the hips. Child’s pose may seem simple and easy but do not underestimate it! This pose can feel difficult on its own after a long day of travel, office work, or sustained exercise. You may want to grab a pillow or two for this one.
 
-Start in table top, then bring your toes to touch and your knees wide towards the sides of the mat.
+Start in Table Top, then bring your toes to touch and your knees wide towards the sides of the mat.
 
 Sink your hips back towards your feet, allowing your glutes to rest, and walk your hands forward toward the front of the mat.
 
@@ -36,7 +36,7 @@ Allow your forehead to come down to touch the mat and your chest to relax down w
 
 Option to place a pillow under your torso or between your hips and feet, for full support!
 
-You can stay here anywhere from 30 seconds to a few minutes. Again, if you have tight hips use caution as you inhale and lift up & out of the pose.
+You can stay here anywhere from 30 seconds to a few minutes. Again, if you have tight hips, use caution as you inhale and lift up & out of the pose.
 
 ## Seated Shin Hug
 
@@ -56,7 +56,7 @@ Continue the pose for 5 to 10 breaths, then release and repeat with your right l
 
 This pose will help you stretch the hip rotators & hip flexors. For modifications, see [Yoga For Anxiety](https://www.sheilaanne.com/writing-desk/2020-02-28-yoga-for-anxiety/).
 
-HALF PIGEON
+### Half Pigeon
 
 ![girl doing half pigeon](/img/half-pigeon.jpeg "half pigeon")
 
@@ -72,11 +72,11 @@ You may stay upright or allow your body to fold over the front leg.
 
 You may feel an intense stretch deep in the ball socket of the hip joint. This can bring up emotional waves for many people. I invite you to meet your thoughts and energy with curiosity and compassion rather than judgement and negativity.
 
-This pose may feel intense but it should never hurt! If you are feeling pain, please move to the modified versions.
+This pose may feel intense, but it should never hurt! If you are feeling pain, please move to the modified versions.
 
 Breathe deeply and hold the pose for 10 - 20 breaths. Switch to the other side.
 
-DOUBLE PIGEON (also known as firelog)
+## Double Pigeon (also known as firelog)
 
 Start seated on your mat with your feet flat on the floor and knees bent.
 
@@ -90,13 +90,13 @@ Keep your right foot flexed and draw your right knee away from you until you fee
 
 Wiggle left foot towards the right, so that the outside of your left calf can come to rest on the mat. Try to sit up straight and stack your legs.
 
-Line up the ankle or side of your right foot over your left knee. Make sure that your ankle is not flexed down, almost as if a beam of energy could run in a straight line from the palm of your right foot to your right knee.
+Line up the ankle or side of your right foot over your left knee. Make sure that your ankle is not flexed down; almost as if a beam of energy could run in a straight line from the palm of your right foot to your right knee.
 
 Your right knee will be over your left ankle, or side of the foot. Try to make your shins parallel to each other, with the right stacked directly over the left.
 
 ![Double Pigeon](/img/double-pigeon.jpeg "Double Pigeon")
 
-This is an intense pose for both hips & groin, so be gentle! Breathe here and, if it feels comfortable you can walk your hands forward, keeping your hips on the ground.
+This is an intense pose for both hips & groin, so be gentle! Breathe here and, if it feels comfortable, you can walk your hands forward, keeping your hips on the ground.
 
 ## Bound Angle Pose
 
@@ -104,9 +104,9 @@ This is an intense pose for both hips & groin, so be gentle! Breathe here and, i
 
 Sit with the palms of your feet together and your knees falling heavy toward the earth.
 
-Ground your down through your seat as you grow tall through your spine.
+Ground down through your seat as you grow tall through your spine.
 
-Press your heels together and open the balls of your feet with your hands, like opening a book.
+Press your heels together and open the balls of your feet with your hands; like opening a book.
 
 Continue lifting through your core as you root down. Breathe easy and relax your face. Another option is to support yourself with pillows/blocks by tucking them under your knees.
 
@@ -114,9 +114,9 @@ Continue lifting through your core as you root down. Breathe easy and relax your
 
 “Dragon” is the [yin yoga](https://yinyoga.com/) name for a pose that deeply opens that hip. There are a few variations of dragon that I will offer. In yin fashion, the idea is to go through these poses slowly and hold them a bit longer than you would in, let’s say, a vinyasa class. Dragon will help you get right to the heart of the leading hip (the joint) and will stretch the hip flexor and quadriceps of the back leg.
 
-You have the option to try one pose or try them all! If you choose to go through 2 - 3 poses, I recommend you focus on one leg, then switch.
+You have the option to try one pose, or try them all! If you choose to go through 2 - 3 poses, I recommend you focus on one leg, then switch.
 
-DRAGON FLYING HIGH
+### Dragon Flying High
 
 ![Dragon flying high](/img/dragon-flying-high.jpeg "Dragon Flying High")
 
@@ -124,9 +124,9 @@ From down dog, step your right foot forward and between the hands. Slide the bac
 
 Keep your right knee over your right foot, and bring your hands to rest on the right thigh and elongate your spine.
 
-Bring a little more massage to this pose by moving, just a couple of inches, back and forth.
+Bring a little more massage to this pose by rocking, just a couple of inches, back and forth.
 
-DRAGON FLYING LOW
+### Dragon Flying Low
 
 From dragon flying high, bring your hands or forearms down to the ground. Option to use a block under your hands / forearms to bring the floor up to you.
 
@@ -134,9 +134,9 @@ From dragon flying high, bring your hands or forearms down to the ground. Option
 
 Though you may walk your right foot out a few inches to give yourself more space, keep your right toes and knee facing the front of the mat, so everything can work together! You may want to think about hugging your right knee in toward you.
 
-If at any point the back knee hurts, slide forward to bring your weight further off you knee and onto your quad OR tuck the back toes and lift the knee.
+If at any point the back knee hurts, slide forward to bring your weight further off your knee and onto your quad OR tuck the back toes and lift the knee.
 
-TWISTED DRAGON
+### Twisted Dragon
 
 ![Twisted Dragon](/img/twisted-dragon.jpeg "Twisted Dragon")
 
@@ -160,4 +160,6 @@ Place a blanket under your right knee if you need more support.
 
 After 30 - 60 seconds, slide the leg back down and move to the left side.
 
-If you enjoyed this sequence, be sure to check out my other yoga blogs at [The Writing Desk](https://www.sheilaanne.com/writing-desk/).
+---
+
+If you enjoyed this sequence, be sure to check out [my other yoga blogs](/tags/yoga/)!
