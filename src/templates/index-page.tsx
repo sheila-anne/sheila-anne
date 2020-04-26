@@ -173,7 +173,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               margin="0 0 2rem 0"
             >
               <BannerLink to="/the-grove/" title="Life Coaching in The Grove">
-                Start working with me.
+                Start your journey with me.
               </BannerLink>
             </BannerHeadline>
             <h3>Here's How It Works:</h3>
@@ -196,7 +196,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               fontColor={"#000"}
               lessMargin={true}
             >
-              Latest From My Blog
+              Latest From The Blog
             </BannerHeadline>
           </CenteredText>
           <BlogRoll posts={posts} />
@@ -206,7 +206,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               color="#000"
               to="/writing-desk/"
             >
-              Read more @ The Writing Desk!
+              Read more @ the blog!
             </Button>
           </CenteredText>
         </Container>

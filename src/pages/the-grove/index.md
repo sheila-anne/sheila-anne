@@ -10,29 +10,6 @@ pageDescription: >
 pageTitle: Life Coaching In The Grove | Sheila Anne
 templateKey: "the-grove"
 
-intro:
-  blurbs:
-    - image: /img/sheila-anne-explore.png
-      imageAlt: Explore how Sheila Anne can help you improve your life.
-      title: Explore
-      text: >
-        Join Sheila here and share your story!  Explore how coaching can help you achieve the life you envision.
-    - image: /img/sheila-anne-discover.png
-      imageAlt: Discover what it's like to work with Sheila.
-      title: Discover
-      text: >
-        Let's get to know you! Together, we'll discover your strengths, biggest desires for growth, and create a blueprint for the future.
-    - image: /img/sheila-anne-grow.png
-      imageAlt: Sheila Anne Coaching helps you grow into your own strength.
-      title: Grow
-      text: >
-        Through ongoing 1:1 coaching sessions with Sheila, you will nurture your power, release limiting beliefs, and start to grow into your own.
-    - image: /img/sheila-anne-transform.png
-      imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: Transform
-      text: >
-        Your world is changing, you’re standing tall in your power, and you're becoming the most bold & authentic version of you!
-
 faq:
   - question: How do I know if coaching is right for me?
     answer: >
@@ -52,10 +29,10 @@ faq:
 
 Sheila Anne’s mission is to help her clients recognize their own superpowers, tap into their core purpose, and transform their life into one that feels aligned, balanced, and fulfilling.
 
-Through life coaching you can expect a deep dive into what makes you, you. From there, I’ll assist you in learning to trust inner compass and maximize your strengths. Together, we’ll develop a clear vision for your future and design a personalized, actionable plan to achieve it!
-
 ![At peace in the security of your own grove](/img/sheila-anne-life-coaching.jpg)
 
-## The Grove
+## 1:1 Coaching
 
-The Grove is my 1:1 coaching program, created to nourish your natural power & soul. Think of it as your new space to cultivate your dreams, to celebrate growth, to trim the weeds that don’t serve you, and to find freedom in your own thriving grove. It all begins with exploration...
+**Root To Rise** is my 1:1 coaching program, created to nourish your natural power & soul. Think of it as your new space to cultivate your dreams, to celebrate growth, to trim the weeds that don’t serve you, and to find freedom in your own thriving grove.
+
+You can expect a deep dive into what makes you, you. From there, I’ll assist you in learning to trust inner compass and maximize your strengths. Together, we’ll develop a clear vision for your future and design a personalized, actionable plan to achieve it. It all begins with a complimentary exploration call.
