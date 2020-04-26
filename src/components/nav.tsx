@@ -27,13 +27,13 @@ type OpenAndMobile = OpenNavProps & MobileNavProps;
 const ColoredInternalLink = styled(SmartLink)<{
   "aria-current"?: boolean;
 }>`
-  ${props =>
+  ${(props) =>
     !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
 const LogoText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
-    !!isOpen && !!isMobile ? Constants.Colors.blue : "inherit"};
+    !!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit"};
   display: flex;
   flex-basis: 33%;
   padding-top: 5px;
@@ -73,7 +73,7 @@ const Header = styled.header<{ flipColors: boolean }>`
 const StyledNav = styled.nav<OpenNavProps>`
   align-items: center;
   background-color: ${({ isOpen }) =>
-    !!isOpen ? Constants.Colors.blue : "#FFF"};
+    !!isOpen ? Constants.Colors.theGroveGreen : "#FFF"};
   display: flex;
   height: 75px;
   justify-content: center;
@@ -87,7 +87,7 @@ const StyledNav = styled.nav<OpenNavProps>`
 const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
   ${({ location, to }) =>
     location && location.pathname === to
-      ? `color: ${Constants.Colors.darkBlue};`
+      ? `color: ${Constants.Colors.theGroveGreen};`
       : ""}
   display: inline;
   font-family: Inria Serif;
@@ -140,8 +140,8 @@ const NavListItem = styled.li`
 `;
 
 const MobileMenu = styled.div<OpenNavProps>`
-  background: ${Constants.Colors.blue};
-  border: 1px solid ${Constants.Colors.blue};
+  background: ${Constants.Colors.theGroveGreen};
+  border: 1px solid ${Constants.Colors.theGroveGreen};
   height: 100vh;
   padding: 0.5rem;
   position: relative;
@@ -170,24 +170,24 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
     {
       to: "/the-grove/",
       text: "Working Together",
-      title: "Life coaching help from Sheila Anne"
+      title: "Life coaching help from Sheila Anne",
     },
     {
       to: "/writing-desk/",
-      text: "My Blog",
-      title: "Writing samples from Sheila Anne"
+      text: "Blog",
+      title: "Writing samples from Sheila Anne",
     },
 
     {
       to: "/the-mat/",
       text: "Yoga",
-      title: "Yoga & Intentional Movement"
-    }
+      title: "Yoga & Intentional Movement",
+    },
   ];
   !!showHomeLink &&
     location.pathname !== "/" &&
     navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
-  return navLinks.map(navLink => (
+  return navLinks.map((navLink) => (
     <NavListItem
       key={navLink.to}
       itemType="https://schema.org/SiteNavigationElement"

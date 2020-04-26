@@ -60,11 +60,8 @@ declare type Colors = {
   lightestBlue: string;
   lighterBlue: string;
   blue: string;
-  darkBlue: string;
   gray: string;
-  linkColors: string;
   navLinkText: string;
-  featuredPost: string;
   theGroveGreen: string;
   theGroveTeal: string;
   theGroveLightGreen: string;

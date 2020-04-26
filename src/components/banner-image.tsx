@@ -58,10 +58,10 @@ export const BannerImage: FC<BannerImageProps> = ({
   color,
   image,
   imageHeadline,
-  title
+  title,
 }) => {
   const imageData = image.childImageSharp?.fluid;
-  const headlineColor = !!color ? color : Constants.Colors.lighterBlue;
+  const headlineColor = !!color ? color : Constants.Colors.theGroveLightGreen;
   return (
     <section>
       <FullWidthImage

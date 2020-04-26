@@ -8,15 +8,17 @@ import {
   BookingSection,
   Button,
   CenteredText,
+  Features,
   FlexContainer,
   FullWidthImage,
   Instagram,
   Layout,
   PreviewCompatibleBanner,
   SEO,
-  SmartLink
+  SmartLink,
 } from "../components";
 import { Constants } from "../constants";
+import { applyStyle } from "../utils";
 
 type MainPitch = {
   description: string;
@@ -32,12 +34,12 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   formParagraph: string;
   heading: string;
   image: PreviewImage | string;
+  intro: any;
   mainpitch: MainPitch;
 };
 
 type IndexFrontmatterProperty = {
   frontmatter: IndexFrontmatterProps;
-  html: string;
 };
 
 type PreviewTemplateProps = IndexFrontmatterProperty & {
@@ -65,6 +67,7 @@ type HeadlineProps = {
   color?: string;
   fontColor?: string;
   lessMargin?: boolean;
+  margin?: string;
 };
 
 const Container = styled.div`
@@ -100,11 +103,13 @@ const BannerHeadline = styled.h1<HeadlineProps>`
   color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
   font-size: 1.5rem;
   margin-top: 0;
+  ${({ margin }) => applyStyle("margin", margin)};
   padding: 0.5rem;
 `;
 
 const Subheadline = styled.h2`
   font-size: 1.5rem;
+  font-weight: 300;
   margin: 1rem;
   padding: 1rem;
 `;
@@ -113,16 +118,13 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
   isPreview,
   posts,
-  html
 }) => {
   const {
-    bannerSubtitle,
     description,
     formHeadline,
     formParagraph,
     formSubHeadline,
     image,
-    mainpitch
   } = frontmatter;
 
   const safeImage = image as NestedImage;
@@ -156,26 +158,31 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       />
       <section>
         <CenteredText>
-          <BannerHeadline>{mainpitch.title}</BannerHeadline>
+          <BannerHeadline color={"#FFF"} fontColor="#000">
+            <div>Get Grounded</div>
+            <div>Find Balance</div>
+            <div>Thrive</div>
+          </BannerHeadline>
         </CenteredText>
         <Container>
           <CenteredText>
             <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
-            <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen}>
-              {bannerSubtitle}{" "}
+            <BannerHeadline
+              as="h2"
+              color={Constants.Colors.theGroveGreen}
+              margin="0 0 2rem 0"
+            >
               <BannerLink to="/the-grove/" title="Life Coaching in The Grove">
-                Start here.
+                Start working with me.
               </BannerLink>
             </BannerHeadline>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <h3>Here's How It Works:</h3>
           </CenteredText>
-          <FlexContainer
-            backgroundColor={Constants.Colors.featuredPost}
-            justifyContent="center"
-            margin="1rem 0"
-          >
+          <FlexContainer>
+            <Features gridItems={frontmatter.intro.blurbs} />
+          </FlexContainer>
+          <FlexContainer justifyContent="center" margin="2rem 0">
             <BookingSection
-              backgroundColor={Constants.Colors.featuredPost}
               formDescription={formSubHeadline}
               formParagraph={formParagraph}
               formTitle={formHeadline}
@@ -185,7 +192,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           <CenteredText>
             <BannerHeadline
               as="h3"
-              color={Constants.Colors.lightestBlue}
+              color="#FFF"
               fontColor={"#000"}
               lessMargin={true}
             >
@@ -195,7 +202,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           <BlogRoll posts={posts} />
           <CenteredText>
             <Button
-              backgroundColor={Constants.Colors.lightestBlue}
+              backgroundColor={Constants.Colors.theGroveLightGreen}
               color="#000"
               to="/writing-desk/"
             >
@@ -221,7 +228,6 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
       <IndexPageTemplate
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
-        html={data.markdownRemark.html}
       />
       <Instagram
         insta={data.insta}
@@ -250,13 +256,23 @@ export const pageQuery = graphql`
             }
           }
         }
-        mainpitch {
-          title
+        intro {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            imageAlt
+            text
+            title
+          }
         }
         pageDescription
         pageTitle
       }
-      html
     }
 
     allMarkdownRemark(

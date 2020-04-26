@@ -4,32 +4,23 @@ import React from "react";
 import { Constants } from "../constants";
 import {
   BookingSection,
-  CenteredText,
   Content,
   FAQ,
-  Features,
-  FlexContainer,
   HTMLContent,
   Layout,
-  SEO
+  SEO,
 } from "../components";
 
 export const TheGroveTemplate = ({
   content,
   contentComponent,
-  frontmatter
+  frontmatter,
 }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section>
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
-      <CenteredText>
-        <h2>How Does It Work?</h2>
-      </CenteredText>
-      <FlexContainer>
-        <Features gridItems={frontmatter.intro.blurbs} />
-      </FlexContainer>
       <hr />
       <BookingSection
         page="The Grove"
@@ -86,20 +77,6 @@ export const pageQuery = graphql`
         formHeadline
         formSubHeadline
         formParagraph
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            imageAlt
-            text
-            title
-          }
-        }
         pageDescription
         pageTitle
       }

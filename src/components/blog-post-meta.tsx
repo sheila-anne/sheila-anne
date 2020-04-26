@@ -6,13 +6,13 @@ import { Constants } from "../constants";
 type BlogPostMetaProps = {
   datePublished: string;
   featuredImage?: NestedImage;
-  isPreview: boolean;
+  isPreview?: boolean;
 };
 
 export const BlogPostMeta: FC<BlogPostMetaProps> = ({
   datePublished,
   featuredImage,
-  isPreview
+  isPreview,
 }) => {
   const { logo } = useStaticQuery(blogPostMetaQuery);
   if (isPreview) {

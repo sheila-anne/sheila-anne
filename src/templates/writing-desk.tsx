@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import { graphql } from "gatsby";
+import styled from "styled-components";
 
 import {
-  BannerImage,
   BlogRollAll,
   Content,
   HTMLContent,
   Layout,
-  SEO
+  SEO,
+  ImageHeadlineContainer,
 } from "../components";
 import { Constants } from "../constants";
 
@@ -17,25 +18,25 @@ type WritingDeskProps = BannerImagePreviewPage & {
   pageTitle: string;
 };
 
+const Headline = styled.h2`
+  background-color: ${Constants.Colors.theGroveLightGreen};
+  color: #2b2523;
+  padding: 5px;
+  text-align: center;
+`;
+
 export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
   content,
   contentComponent,
-  image,
   imageHeadline,
-  pageTitle
 }) => {
   const PageContent = contentComponent || Content;
-  const safeImage = image as NestedImage;
 
   return (
     <section>
       <PageContent content={content} />
-      <BannerImage
-        color={Constants.Colors.theGroveTeal}
-        image={safeImage}
-        title={pageTitle}
-        imageHeadline={imageHeadline}
-      />
+      <Headline>{imageHeadline}</Headline>
+
       <BlogRollAll />
     </section>
   );
@@ -56,7 +57,6 @@ const WritingDeskPage = ({ location, data }) => {
       <WritingDeskPageTemplate
         contentComponent={HTMLContent}
         content={data.markdownRemark.html}
-        image={bannerImage}
         imageHeadline={frontmatter.bannerImageHeadline}
         pageTitle={frontmatter.pageTitle}
       />

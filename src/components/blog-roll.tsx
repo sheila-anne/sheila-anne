@@ -48,7 +48,9 @@ const FeaturedThumbnail = styled.div`
 
 const Article = styled.article<ArticleProps>`
   background-color: ${({ isFeatured }) =>
-    isFeatured ? Constants.Colors.featuredPost : Constants.Colors.lightestBlue};
+    isFeatured
+      ? Constants.Colors.theGroveGreenGray
+      : Constants.Colors.theGroveLightGreen};
   border-radius: 1rem;
   color: #000;
   margin: 1rem;
@@ -81,7 +83,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
           <PreviewCompatibleImage
             imageInfo={{
               image: post.frontmatter.featuredImage,
-              alt: `featured image thumbnail for post ${post.frontmatter.title}`
+              alt: `featured image thumbnail for post ${post.frontmatter.title}`,
             }}
           />
         </FeaturedThumbnail>
