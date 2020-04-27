@@ -18,5 +18,3 @@ Looking to get in touch with Sheila?
 
 - [Book a free exploration call](/book/) to get started
 - Not ready to book? That's OK too! You can send Sheila a message on her [Contact Page](/contact/)
-
-![Get to know Sheila](/img/sheila-anne-about.jpg)

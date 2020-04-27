@@ -28,7 +28,7 @@ const Clickable = styled.div`
   margin: 2rem 0;
 `;
 
-const HiddenText = styled.small<{ isExpanded: boolean }>`
+const HiddenText = styled.p<{ isExpanded: boolean }>`
   display: ${({ isExpanded }) => (!!isExpanded ? "block" : "none")};
   margin-top: 1rem;
 `;
@@ -50,12 +50,12 @@ const RotateOnOpen = styled.span<{ isExpanded: boolean }>`
 
 const getInitialState = (faq: FAQ[]) =>
   faq
-    .map(frequentlyAsked => ({
-      [frequentlyAsked.question]: false
+    .map((frequentlyAsked) => ({
+      [frequentlyAsked.question]: false,
     }))
     .reduce((previousValue, currentValue) => ({
       ...previousValue,
-      ...currentValue
+      ...currentValue,
     }));
 
 const reducer: Reducer<State, Action> = (
@@ -66,7 +66,7 @@ const reducer: Reducer<State, Action> = (
   const args = {
     action: "click",
     category: `FAQ`,
-    label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`
+    label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
   };
   trackCustomEvent(args);
   trackFacebook("trackCustom", "FAQ Interaction", args);
@@ -80,12 +80,12 @@ export const FAQ: FC<FAQProps> = ({ faq }) => {
   return (
     <section>
       <h1>FAQ</h1>
-      {faq.map(frequentlyAsked => (
+      {faq.map((frequentlyAsked) => (
         <Clickable
           key={frequentlyAsked.question}
           onClick={() =>
             dispatch({
-              type: frequentlyAsked.question
+              type: frequentlyAsked.question,
             })
           }
         >

@@ -27,7 +27,7 @@ faq:
 
 # Life Coaching & The Grove
 
-Sheila Anne’s mission is to help her clients recognize their own superpowers, tap into their core purpose, and transform their life into one that feels aligned, balanced, and fulfilling.
+My mission is to help you recognize your own superpowers, tap into your own core purpose, and transform your life into one that feels aligned, balanced, and fulfilling.
 
 ![At peace in the security of your own grove](/img/sheila-anne-life-coaching.jpg)
 

@@ -111,7 +111,11 @@ const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
+`;
+
+const BannerText = styled.div`
+  padding: 5px;
 `;
 
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
@@ -159,9 +163,9 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       <section>
         <CenteredText>
           <BannerHeadline color={"#FFF"} fontColor="#000">
-            <div>Get Grounded</div>
-            <div>Find Balance</div>
-            <div>Thrive</div>
+            <BannerText>Get Grounded</BannerText>
+            <BannerText>Find Balance</BannerText>
+            <BannerText>Thrive</BannerText>
           </BannerHeadline>
         </CenteredText>
         <Container>
