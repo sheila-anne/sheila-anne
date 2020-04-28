@@ -165,7 +165,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
           <BannerHeadline color={"#FFF"} fontColor="#000">
             <BannerText>Get Grounded</BannerText>
             <BannerText>Find Balance</BannerText>
-            <BannerText>Thrive</BannerText>
+            <BannerText>Live Aligned</BannerText>
           </BannerHeadline>
         </CenteredText>
         <Container>
