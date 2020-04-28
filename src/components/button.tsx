@@ -34,7 +34,8 @@ export const Button = styled(SmartLink)<{
   }
 
   :hover {
-    color: ${({ color }) => (!!color ? Constants.Colors.darkBlue : "#000")};
+    color: ${({ color }) =>
+      !!color ? Constants.Colors.theGroveGreen : "#000"};
   }
 `;
 
@@ -46,7 +47,7 @@ const ButtonSpan = styled.span`
   background-position: top;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    background-color: #000;
+    background-color: ${Constants.Colors.theGroveGreen};
   }
 `;
 
@@ -61,7 +62,7 @@ const StyledSquareButton = styled.button`
   letter-spacing: 2px;
   text-transform: uppercase;
   background: transparent;
-  color: #29292a;
+  color: #000;
   cursor: pointer;
 
   &:before {
@@ -73,7 +74,7 @@ const StyledSquareButton = styled.button`
     width: 100%;
     height: 1px;
     transition: 0.3s ease height;
-    background: #29292a;
+    background: ${Constants.Colors.theGroveGreen};
   }
 
   &:hover,
@@ -97,9 +98,9 @@ const StyledSquareButton = styled.button`
 export const SquareButton: FC<PillButtonProps> = ({
   children,
   onClick,
-  type
+  type,
 }) => (
-  <StyledSquareButton onClick={onClick} type={type}>
+  <StyledSquareButton onClick={(e) => onClick && onClick(e as any)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
   </StyledSquareButton>
 );

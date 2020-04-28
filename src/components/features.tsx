@@ -15,10 +15,10 @@ type ColoredFlexColumnProps = {
 };
 
 const ColorsMap = {
-  0: Constants.Colors.theGroveTeal,
+  0: Constants.Colors.theGroveGreenGray,
   1: Constants.Colors.theGroveLightGreen,
-  2: Constants.Colors.theGroveGreenGray,
-  3: Constants.Colors.lightestBlue
+  2: Constants.Colors.theGroveTeal,
+  3: Constants.Colors.theGroveGreen,
 };
 
 const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`

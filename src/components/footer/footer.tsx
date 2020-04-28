@@ -8,7 +8,7 @@ import { SmartLink } from "../smart-link";
 import { FooterSocial } from "./footer-social";
 
 const StyledFooter = styled.footer`
-  background-color: #2b2523;
+  background-color: ${Constants.Colors.theGroveGreen};
   color: #f5f5f5;
   text-align: center;
 `;

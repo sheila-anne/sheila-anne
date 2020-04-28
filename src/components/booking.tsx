@@ -3,7 +3,7 @@ import React, {
   FC,
   MouseEvent,
   SetStateAction,
-  useState
+  useState,
 } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
@@ -16,7 +16,7 @@ import { trackFacebook } from "../utils";
 type PageNames = "The Grove" | "Homepage";
 
 type BookingSectionProps = {
-  backgroundColor: string;
+  backgroundColor?: string;
   formTitle: string;
   formDescription: string;
   formParagraph?: string;
@@ -50,7 +50,7 @@ const handleSubmit = (
   const args = {
     action: "click",
     category: `Schedule`,
-    label: page
+    label: page,
   };
 
   trackCustomEvent(args);
@@ -64,20 +64,23 @@ export const BookingSection: FC<BookingSectionProps> = ({
   formDescription,
   formParagraph,
   formTitle,
-  page
+  page,
 }) => {
   const [showBookingSection, setShowBookingSection] = useState(false);
 
   return (
     <section>
-      <CenteredText backgroundColor={backgroundColor} padding="1rem">
+      <CenteredText
+        backgroundColor={!!backgroundColor ? backgroundColor : "#FFF"}
+        padding="1rem"
+      >
         {!showBookingSection && <h1>{formTitle}</h1>}
         {!showBookingSection && <h2>{formDescription}</h2>}
         {!!formParagraph && !showBookingSection && (
           <PaddedParagraph>{formParagraph}</PaddedParagraph>
         )}
         <SquareButton
-          onClick={e =>
+          onClick={(e) =>
             handleSubmit(e, setShowBookingSection, showBookingSection, page)
           }
         >
