@@ -8,7 +8,7 @@ bannerSubtitle: >
   Curious to learn more?
 image: /img/sheila-anne-about.jpg
 description: >
-  We work together to ... Exchange anxiety for bliss, ditch expensive wellness trends, and start curating the life you deserve.
+  We work together to ... exchange anxiety for bliss, ditch expensive wellness trends, and start curating the life you deserve.
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"

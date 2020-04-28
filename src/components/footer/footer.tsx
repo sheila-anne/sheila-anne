@@ -14,13 +14,12 @@ const StyledFooter = styled.footer`
 `;
 
 const FlexFooter = styled.div`
+  align-items: center;
   display: flex;
+  justify-content: center;
 `;
 
 const FooterColumn = styled.div`
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
   padding: 0.75rem;
   width: 33.33%;
 `;

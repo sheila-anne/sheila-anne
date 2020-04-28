@@ -34,7 +34,6 @@ const ColoredInternalLink = styled(SmartLink)<{
 const LogoText = styled.div<OpenAndMobile>`
   background: ${({ isOpen, isMobile }) =>
     !!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit"};
-  display: flex;
   flex-basis: 33%;
   padding-top: 5px;
   margin: 0 -2rem 0 2rem;
