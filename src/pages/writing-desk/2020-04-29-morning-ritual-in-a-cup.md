@@ -15,7 +15,11 @@ tags:
   - ritual
   - coffee
 ---
-What if what you think of as a “habit” or “routine” could also be yourritual,or sequential activity that you do on a daily basis while being completely present. Establishing a morning ritual is an effective way to increase motivation, productivity, and mindfulness throughout the day. As I’m a lover of the morning, I have a few rituals, and today it’s all about coffee.
+What if what you think of as a “habit” or “routine” could also be your *ritual*, or sequential activity that you do on a daily basis while being completely present. Establishing a morning ritual is an effective way to increase motivation, productivity, and mindfulness throughout the day. As I’m a lover of the morning, I have a few rituals, and today it’s all about coffee.
+
+
+
+
 
 ## HEAT THE WATER
 
@@ -30,8 +34,6 @@ What if what you think of as a “habit” or “routine” could also be yourri
 ## SET UP THE MAKER
 
 ![Putting in the coffee sock](/img/setting-up-coffee.jpeg "Coffee sock for pour over")
-
-
 
 ![Chorreador](/img/coffee-pour-over.jpeg "Chorreador coffee maker")
 
@@ -50,8 +52,6 @@ What if what you think of as a “habit” or “routine” could also be yourri
 ![Coffee mug lineup](/img/coffee-mug-lineup.jpeg "Coffee mug lineup")
 
 ![Pouring the coffee](/img/pour-the-coffee.jpeg "Pouring the coffee")
-
-
 
 ![Close-up of coffee pour](/img/pour-the-coffee-close-up.jpeg "Closer view of coffee pour")
 
