@@ -1,11 +1,12 @@
 ---
 templateKey: blog-post
 title: 5 Super Simple Habits To Integrate In May
-date: 2020-04-28T18:31:39.673Z
+date: 2020-05-01T18:31:39.673Z
 description: In this post I’m sharing 5 super simple habits that really matter.
   Integrate these 5 things and your life may change. No really, I believe it to
   be that powerful!
-featuredpost: false
+featuredpost: true
+featuredImage: /img/journal-lavendar-bed.jpeg
 tags:
   - the grove
   - coaching
