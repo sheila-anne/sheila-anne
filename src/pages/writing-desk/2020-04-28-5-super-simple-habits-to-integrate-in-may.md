@@ -61,7 +61,7 @@ To get you started, here are some positive affirmations you can swap in:
 * I am more than enough
 * I am superior to negative thoughts and low actions
 
-  ![girl outside confident](/img/girl-sunglasses-outside.jpeg "fill up your cup with confidence")
+![girl outside confident](/img/girl-sunglasses-outside.jpeg "fill up your cup with confidence")
 
 ## Have a “designated down day”
 
