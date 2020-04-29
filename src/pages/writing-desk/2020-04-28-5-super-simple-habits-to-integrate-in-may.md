@@ -23,8 +23,6 @@ In this post I’m sharing 5 *super* simple habits that *really* matter. Integra
 
 If you’re finding yourself with more time on your hands and less reasons to be out and about, it could be thebesttime in your life to prioritize good quality sleep. How to get that good quality sleep could be a blog post on its own but there are some really simple things you are likely familiar with - step away from the screen at least an hour before bed, skip the afternoon caffeine, clear your mind (meditation, journaling, deep breathing) to prevent anxiety keeping you awake.
 
-
-
 ![Photo of lavender essential oils, white sheets, journal](/img/journal-lavendar-bed.jpeg "Journal & lavendar essential oil")
 
 A few things I’ve appreciated around bedtime recently - journaling & lavender oil
@@ -36,8 +34,6 @@ Every day, identify the most important thing that needs to get done, then schedu
 If you’re reading this blog, you’re likely a self-aware person, and you likely know what times of the day you feel at your best and when you routinely find yourself distracted or tired. If you know your daily energy cycle, leverage that!
 
 To get ahead of the curve, schedule the most important thing the day before so that each day, you can just flow right through. If your energy levels change or something is not working for you, make a change. Now we’re working smarter & more intentionally!
-
-
 
 ![girl journalling](/img/journaling-girl-inside.jpeg "Writing in journal in the morning")
 
@@ -74,15 +70,13 @@ Being more intentional about your self care and downtime is not only good for yo
 
 ![girl watering plants](/img/girl-watering-plants.jpeg "Taking care of the plants, taking care of me")
 
-
-
 ## Integrate a mindful morning ritual
 
 By starting the morning off right, you positively impact the outlook for the rest of the day. The beginning of the month is a great time to evaluate what is and is not working in your morning routine. Integrating a mindful ritual (you are fully present, at ease, and intentional) will promote a mindful day and set you up for success.
 
 A morning ritual can be as simple as doing things in a particular order, such as brushing your teeth, then washing your face, then drinking some water. Alternatively, some people like to meditate or move first thing in the morning. Whatever feels right for you, put some mindfulness into it - [it matters!](https://www.forbes.com/sites/alicegwalton/2018/06/21/marrying-mindfulness-with-movement-reduces-stress-boosts-mood/#13bcd552262a)
 
-Check out Morning Ritual in a Cup for an example of how I start my day.
+Check out [Morning Ritual In A Cup](https://www.sheilaanne.com/writing-desk/2020-04-29-morning-ritual-in-a-cup/) for an example of how I start my day.
 
 ![Pouring the coffee](/img/pouring-the-coffee.jpg "Morning coffee ritual")
 
