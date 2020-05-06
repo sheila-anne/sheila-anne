@@ -13,15 +13,11 @@ tags:
   - it's personal
   - self care
 ---
-
-
-
-
 Dear friend,
 
 I am writing to recognize & acknowledge all that you might be feeling right now. May is upon us, which means that the Mother’s Day advertisements, emails, and social posts have begun. Beautiful as they may be, I know that these can be triggering. I’m feeling triggered.
 
-I am writing to those whose moms have passed, those whose moms are no longer around, those whoaremoms and may be feeling their own grief around the holiday, and those that simply don’t have the sunshiney relationship that they see others celebrating on social media.
+I am writing to those whose moms have passed, those whose moms are no longer around, those who *are* moms and may be feeling their own grief around the holiday, and those that simply don’t have the sunshiney relationship that they see others celebrating on social media.
 
 I see you.
 
