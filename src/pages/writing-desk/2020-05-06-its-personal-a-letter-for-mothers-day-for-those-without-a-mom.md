@@ -7,15 +7,13 @@ description: I am writing to recognize & acknowledge all that you might be
   advertisements, emails, and social posts have begun. Beautiful as they may be,
   I know that these can be triggering. I’m feeling triggered.
 featuredpost: false
+featuredImage: /img/sheila-anne-quebec.jpg
 tags:
   - grief
-  - my journey
-  - mothers day
-  - ""
+  - it's personal
+  - self care
 ---
 Dear friend,
-
-
 
 I am writing to recognize & acknowledge all that you might be feeling right now. May is upon us, which means that the Mother’s Day advertisements, emails, and social posts have begun. Beautiful as they may be, I know that these can be triggering. I’m feeling triggered.
 
@@ -30,8 +28,6 @@ As for the Mother’s Day Weekend trips, we went to Nashville in 2017, and then 
 What you feel is valid & you can express your emotions in the way that feels best for you.
 
 I read something once about how grief & sadness are actually just “residual love.” That, if you feel sad about a person, it’s you feeling love and simply missing it. It’s a nice way to spin it, right? The idea resonated with me, and my eternal optimism (inherited from my mom) found comfort in it. It’s an interesting invitation to dissolve grief and choose love. But - let’s be honest - it’s not a perfect idea. If you don’t have the sparkly relationship with your mom that you see from others, or you don’t have the most wonderful memories to reflect on, “residual love” may not be the right fit. When I feel angry for lost time, missed conversations, or opportunities I wish I had taken, I have a hard time calling it love too. That’s anger. That’s bitterness. That’s just living & breathing emotion.
-
-
 
 Take care of you.
 
@@ -48,3 +44,5 @@ My heart embraces you.
 Love,
 
 Sheila
+
+![family in quebec](/img/sheila-anne-quebec.jpg "Mother's day in Quebec")
