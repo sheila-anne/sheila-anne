@@ -13,6 +13,10 @@ tags:
   - it's personal
   - self care
 ---
+
+
+
+
 Dear friend,
 
 I am writing to recognize & acknowledge all that you might be feeling right now. May is upon us, which means that the Mother’s Day advertisements, emails, and social posts have begun. Beautiful as they may be, I know that these can be triggering. I’m feeling triggered.
@@ -46,3 +50,5 @@ Love,
 Sheila
 
 ![family in quebec](/img/sheila-anne-quebec.jpg "Mother's day in Quebec")
+
+*Mother's Day in Quebec, 2018*
