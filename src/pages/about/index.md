@@ -36,3 +36,5 @@ Are you ready to get started with me?
 
 * [Book a free exploration call](/book/) 
 * Looking to hear more? You can send me a message on the [Contact Page](/contact/)
+
+  ![girl on stairs in spain](/img/sheila-spain-on-stairs.jpg "Sheila on a set of stairs in Spain")
