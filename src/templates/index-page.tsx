@@ -16,6 +16,7 @@ import {
   PreviewCompatibleBanner,
   SEO,
   SmartLink,
+  Testimonial,
 } from "../components";
 import { Constants } from "../constants";
 import { applyStyle } from "../utils";
@@ -45,6 +46,7 @@ type IndexFrontmatterProperty = {
 type PreviewTemplateProps = IndexFrontmatterProperty & {
   isPreview?: boolean;
   posts: BlogPost[];
+  testimonial: PreviewImage;
 };
 
 type IndexPageData = BlogPostsGraphql & {
@@ -57,6 +59,7 @@ type IndexPageData = BlogPostsGraphql & {
       };
     };
   };
+  testimonial: PreviewImage;
 };
 
 type IndexPageProps = {
@@ -118,10 +121,15 @@ const BannerText = styled.div`
   padding: 5px;
 `;
 
+const TestimonialContainer = styled(FlexContainer)`
+  display: block;
+`;
+
 export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
   isPreview,
   posts,
+  testimonial,
 }) => {
   const {
     description,
@@ -193,6 +201,12 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               page="Homepage"
             />
           </FlexContainer>
+          <TestimonialContainer
+            backgroundColor={Constants.Colors.theGroveGreenGray}
+            margin={"0 0 1rem 0"}
+          >
+            <Testimonial imgSrc={testimonial} />
+          </TestimonialContainer>
           <CenteredText>
             <BannerHeadline
               as="h3"
@@ -232,6 +246,7 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
       <IndexPageTemplate
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
+        testimonial={data.testimonial}
       />
       <Instagram
         insta={data.insta}
@@ -319,6 +334,16 @@ export const pageQuery = graphql`
       siteMetadata {
         social {
           instagram
+        }
+      }
+    }
+
+    testimonial: file(
+      relativePath: { eq: "sheila-anne-taylor-testimonial.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

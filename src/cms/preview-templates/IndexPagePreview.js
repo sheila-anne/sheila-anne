@@ -5,7 +5,14 @@ const IndexPagePreview = ({ entry }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
-    return <IndexPageTemplate isPreview={true} frontmatter={data} posts={[]} />;
+    return (
+      <IndexPageTemplate
+        isPreview={true}
+        frontmatter={data}
+        posts={[]}
+        testimonial={null}
+      />
+    );
   } else {
     return <div>Loading...</div>;
   }

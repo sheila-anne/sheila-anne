@@ -1,7 +1,7 @@
 export {
   BannerImage,
   FullWidthImage,
-  ImageHeadlineContainer
+  ImageHeadlineContainer,
 } from "./banner-image";
 export { BaseTemplate } from "./base-template";
 export { BlogPostMeta } from "./blog-post-meta";
@@ -22,9 +22,10 @@ export { Nav } from "./nav";
 export {
   PreviewCompatibleBanner,
   PreviewCompatibleFlexImage,
-  PreviewCompatibleImage
+  PreviewCompatibleImage,
 } from "./preview-compatible";
 export { SEO } from "./seo";
 export { Share } from "./share";
 export { SmartLink } from "./smart-link";
 export { TagList } from "./tag-list";
+export { Testimonial } from "./testimonial";
