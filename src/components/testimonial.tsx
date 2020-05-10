@@ -8,9 +8,7 @@ type TestimonialProps = {
 };
 
 const TestimonialCallout = styled.div`
-  display: inline-flex;
   flex: 66%;
-  margin-left: 2rem;
   padding: 2rem;
   text-align: center;
 `;
@@ -25,12 +23,14 @@ const TestimonialImage = styled(PreviewCompatibleImage)`
 `;
 
 const TestimonialItalics = styled.i`
+  font-size: 14px;
   margin: 0 1rem;
 `;
 
 const TestimonialSection = styled.section`
   align-items: center;
   display: flex;
+  flex-flow: column;
   margin-bottom: 2rem;
   padding: 10px;
 `;
@@ -54,11 +54,12 @@ export const Testimonial = ({ imgSrc }: TestimonialProps) => {
           is always an extraordinarily powerful experience.
         </TestimonialItalics>
         <br />
+        <br />
         <TestimonialItalics>
-          Not only has every session been absolutely amazing but she helped me
-          unearth the confidence I needed to take the biggest leap of my life.
-          She allowed me to root back into my authentic self and lead with my
-          heart. Without the work I have done with her the past few months I
+          Not only has every session been absolutely amazing but Sheila helped
+          me unearth the confidence I needed to take the biggest leap of my
+          life. She allowed me to root back into my authentic self and lead with
+          my heart. Without the work I have done with her the past few months I
           would still be stuck in a loop of fear, self doubt and would not be
           chasing my dreams. I am beyond grateful for the work I have done and
           the growth I’ve experienced in the short time I have worked with her.
