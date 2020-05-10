@@ -40,7 +40,11 @@ const TestimonialTitle = styled.h4``;
 export const Testimonial = ({ imgSrc }: TestimonialProps) => {
   return (
     <TestimonialSection>
-      <TestimonialImage imageInfo={imgSrc} />
+      <TestimonialImage
+        imageAlt="Client testimonial photo"
+        imageInfo={imgSrc}
+        title="Taylor testimonial"
+      />
       <TestimonialTitle>Taylor, Real Estate</TestimonialTitle>
       <TestimonialCallout>
         <TestimonialItalics>

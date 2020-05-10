@@ -236,8 +236,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
 const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
 
-  console.log(data.testimonial);
-
   return (
     <Layout location={location}>
       <SEO
