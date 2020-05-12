@@ -118,7 +118,7 @@ collections:
           - {
             label: Testimonials,
             name: testimonials,
-            widget: object
+            widget: object,
             fields: [{
               label: Title, name: title, widget: string,
               label: Image Alt Text, name: imageAlt, widget: string,
