@@ -1,5 +1,5 @@
 import React, { FC, MouseEvent } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
@@ -9,21 +9,22 @@ type PillButtonProps = {
   type?: "submit" | undefined;
 };
 
-export const Button = styled(SmartLink)<{
+type ButtonProps = {
   backgroundColor?: string;
   color?: string;
-}>`
+};
+
+const ButtonCss = css<ButtonProps>`
   background-color: ${({ backgroundColor }) =>
     !!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen};
-  box-shadow: inset 0 0 0 2px
-    ${({ backgroundColor }) =>
-      !!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen};
+  border: none;
   border-radius: 1rem;
   color: ${({ color }) => (!!color ? color : "#FFF")};
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.25;
+  outline: none;
   padding: 12px 20px;
   text-align: center;
   text-decoration: none;
@@ -37,6 +38,14 @@ export const Button = styled(SmartLink)<{
     color: ${({ color }) =>
       !!color ? Constants.Colors.theGroveGreen : "#000"};
   }
+`;
+
+export const PlainButton = styled.button<ButtonProps>`
+  ${ButtonCss}
+`;
+
+export const Button = styled(SmartLink)<ButtonProps>`
+  ${ButtonCss}
 `;
 
 const ButtonSpan = styled.span`

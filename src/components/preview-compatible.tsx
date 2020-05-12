@@ -23,7 +23,7 @@ export const PreviewCompatibleBanner: FC<PreviewCompatibleBannerProps> = ({
   Component,
   ComponentChildren,
   image,
-  isPreview
+  isPreview,
 }) => {
   return !!isPreview ? (
     <div>
@@ -34,7 +34,7 @@ export const PreviewCompatibleBanner: FC<PreviewCompatibleBannerProps> = ({
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: `contain`,
-          height: "200px"
+          height: "200px",
         }}
       />
       {ComponentChildren}
@@ -49,11 +49,11 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   imageAlt,
   imageInfo,
   loading,
-  title
+  title,
 }) => {
   const imageStyle = {
     maxWidth: "inherit",
-    maxHeight: "inherit"
+    maxHeight: "inherit",
   };
   let { alt = "", childImageSharp, image } = imageInfo;
   const altText = alt || imageAlt;

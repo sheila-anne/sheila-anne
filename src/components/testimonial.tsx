@@ -1,16 +1,52 @@
-import React from "react";
+import React, { Reducer, useReducer } from "react";
 import styled from "styled-components";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
+import { CenteredText } from "./centered";
 import { PreviewCompatibleImage } from "./preview-compatible";
+import { PlainButton } from "./button";
+import { trackFacebook } from "../utils";
+import { Constants } from "../constants";
 
-type TestimonialProps = {
-  imgSrc: PreviewImage;
+type Action = {
+  type: string;
 };
 
-const TestimonialCallout = styled.div`
-  flex: 66%;
-  padding: 2rem;
+type State = {
+  [key in string]: boolean;
+};
+
+type Testimonial = {
+  imageAlt: string;
+  imageSrc: PreviewImage;
+  text: string;
+  title: string;
+};
+
+type TestimonialProps = {
+  testimonials: Testimonial[];
+};
+
+const Clickable = styled.div`
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   text-align: center;
+`;
+
+const ExpandableText = styled.p<{ isExpanded: boolean }>`
+  height: ${({ isExpanded }) => (!!isExpanded ? "80%" : "100px")};
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out 0s;
+`;
+
+const TestimonialCallout = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1rem 2rem;
 `;
 
 const TestimonialImage = styled(PreviewCompatibleImage)`
@@ -22,53 +58,77 @@ const TestimonialImage = styled(PreviewCompatibleImage)`
   width: 200px;
 `;
 
-const TestimonialItalics = styled.i`
-  font-size: 14px;
-  margin: 0 1rem;
-`;
-
 const TestimonialSection = styled.section`
-  align-items: center;
-  display: flex;
-  flex-flow: column;
   margin-bottom: 2rem;
   padding: 10px;
 `;
 
-const TestimonialTitle = styled.h4``;
+const TestimonialTitle = styled.h4`
+  align-self: center;
+  margin-left: 1rem;
+`;
 
-export const Testimonial = ({ imgSrc }: TestimonialProps) => {
+const getInitialState = (testimonials: Testimonial[]) =>
+  testimonials
+    .map((testimonial) => ({
+      [testimonial.title]: false,
+    }))
+    .reduce((previousValue, currentValue) => ({
+      ...previousValue,
+      ...currentValue,
+    }));
+
+const reducer: Reducer<State, Action> = (
+  state: State,
+  action: Action
+): State => {
+  const isExpanded = !state[action.type];
+  const args = {
+    action: "click",
+    category: `Testimonial`,
+    label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
+  };
+  trackCustomEvent(args);
+  trackFacebook("trackCustom", "Testimonial Interaction", args);
+  return { ...state, [action.type]: isExpanded };
+};
+
+export const Testimonial = ({ testimonials }: TestimonialProps) => {
+  console.log(testimonials);
+  const initialState = getInitialState(testimonials);
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <TestimonialSection>
-      <TestimonialImage
-        imageAlt="Client testimonial photo"
-        imageInfo={imgSrc}
-        title="Taylor testimonial"
-      />
-      <TestimonialTitle>Taylor, Real Estate</TestimonialTitle>
-      <TestimonialCallout>
-        <TestimonialItalics>
-          Working with Sheila has been nothing short of amazing! The
-          breakthroughs I have had in the past few months have been life
-          changing. She has an amazing talent for looking at the big picture and
-          is one of the few people I’ve ever met who is able to follow my
-          scattermindedness, reflect on the important information and guide me
-          back with powerful questioning. That, teamed with her ability to take
-          you out of your mind and into your body to feel through the question
-          is always an extraordinarily powerful experience.
-        </TestimonialItalics>
-        <br />
-        <br />
-        <TestimonialItalics>
-          Not only has every session been absolutely amazing but Sheila helped
-          me unearth the confidence I needed to take the biggest leap of my
-          life. She allowed me to root back into my authentic self and lead with
-          my heart. Without the work I have done with her the past few months I
-          would still be stuck in a loop of fear, self doubt and would not be
-          chasing my dreams. I am beyond grateful for the work I have done and
-          the growth I’ve experienced in the short time I have worked with her.
-        </TestimonialItalics>
-      </TestimonialCallout>
+      {testimonials.map((testimonial) => (
+        <TestimonialCallout key={testimonial.title}>
+          <TestimonialImage
+            imageAlt={testimonial.imageAlt}
+            imageInfo={testimonial.imageSrc}
+            title={testimonial.title}
+          />
+          <TestimonialTitle>{testimonial.title}</TestimonialTitle>
+          <Clickable
+            onClick={() =>
+              dispatch({
+                type: testimonial.title,
+              })
+            }
+          >
+            <ExpandableText isExpanded={state[testimonial.title]}>
+              "{testimonial.text}"
+            </ExpandableText>
+            <CenteredText>
+              <PlainButton
+                backgroundColor={Constants.Colors.theGroveLightGreen}
+                color="#000"
+              >
+                {state[testimonial.title] ? "Show Less" : "Show More"}
+              </PlainButton>
+            </CenteredText>
+          </Clickable>
+        </TestimonialCallout>
+      ))}
     </TestimonialSection>
   );
 };

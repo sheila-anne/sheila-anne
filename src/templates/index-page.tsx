@@ -37,6 +37,7 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   image: PreviewImage | string;
   intro: any;
   mainpitch: MainPitch;
+  testimonials: any;
 };
 
 type IndexFrontmatterProperty = {
@@ -46,7 +47,6 @@ type IndexFrontmatterProperty = {
 type PreviewTemplateProps = IndexFrontmatterProperty & {
   isPreview?: boolean;
   posts: BlogPost[];
-  testimonial: PreviewImage;
 };
 
 type IndexPageData = BlogPostsGraphql & {
@@ -59,7 +59,7 @@ type IndexPageData = BlogPostsGraphql & {
       };
     };
   };
-  testimonial: PreviewImage;
+  testimonials: any;
 };
 
 type IndexPageProps = {
@@ -129,7 +129,6 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
   frontmatter,
   isPreview,
   posts,
-  testimonial,
 }) => {
   const {
     description,
@@ -137,6 +136,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     formParagraph,
     formSubHeadline,
     image,
+    testimonials,
   } = frontmatter;
 
   const safeImage = image as NestedImage;
@@ -205,7 +205,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             backgroundColor={Constants.Colors.theGroveGreenGray}
             margin={"0 0 1rem 0"}
           >
-            <Testimonial imgSrc={testimonial} />
+            <Testimonial testimonials={testimonials} />
           </TestimonialContainer>
           <CenteredText>
             <BannerHeadline
@@ -246,7 +246,6 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
       <IndexPageTemplate
         frontmatter={frontmatter}
         posts={data.allMarkdownRemark.posts}
-        testimonial={data.testimonial}
       />
       <Instagram
         insta={data.insta}
@@ -291,6 +290,18 @@ export const pageQuery = graphql`
         }
         pageDescription
         pageTitle
+        testimonials {
+          title
+          imageAlt
+          imageSrc {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          text
+        }
       }
     }
 
@@ -334,16 +345,6 @@ export const pageQuery = graphql`
       siteMetadata {
         social {
           instagram
-        }
-      }
-    }
-
-    testimonial: file(
-      relativePath: { eq: "sheila-anne-taylor-testimonial.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 400, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
