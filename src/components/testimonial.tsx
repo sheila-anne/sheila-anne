@@ -36,10 +36,11 @@ const Clickable = styled.div`
 `;
 
 const ExpandableText = styled.p<{ isExpanded: boolean }>`
-  height: ${({ isExpanded }) => (!!isExpanded ? "80%" : "100px")};
+  height: auto;
+  max-height: ${({ isExpanded }) => (!!isExpanded ? "1000px" : "100px")};
   margin-top: 1rem;
   overflow: hidden;
-  transition: height 0.3s ease-in-out 0s;
+  transition: max-height 0.3s ease-in-out 0s;
 `;
 
 const TestimonialCallout = styled.div`
@@ -59,7 +60,6 @@ const TestimonialImage = styled(PreviewCompatibleImage)`
 `;
 
 const TestimonialSection = styled.section`
-  margin-bottom: 2rem;
   padding: 10px;
 `;
 
