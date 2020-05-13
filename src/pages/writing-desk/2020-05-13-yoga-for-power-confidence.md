@@ -7,7 +7,7 @@ description: >-
   will be the perfect remedy.
 
 
-  Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too - in the grocery store, while you're cooking dinner, pre-presentation for work, whereever - you got this!
+  Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, whereever - you got this!
 featuredpost: true
 featuredImage: /img/big-star-pose.jpeg
 tags:
@@ -20,7 +20,7 @@ tags:
 ---
 Feelin' a little low or just generally need a boost of confidence?  These poses will be the perfect remedy.  
 
-Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy.  The great thing about these poses is that you can totally do them anywhere anytime too - in the grocery store, while you're cooking dinner, pre-presentation for work, whereever - you got this!
+Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy.  The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, whereever -- you got this!
 
 ![girl doing star pose](/img/big-star-pose.jpeg "build confidence in star pose!")
 
@@ -51,13 +51,13 @@ Hug front body toward back body, so you feel support & toning through the belly.
 
 Scoop tailbone in to support lengthening the back body and bring pelvis to neutral alignment. Think head over heart, heart over pelvis.
 
-To bring more awareness to the work happening in the legs, place a pillow or yoga block between the upper thighs. You may notice the inward rotation to the thighs, and the engagement of the thighs and glutes as the support this power pose!
+To bring more awareness to the work happening in the legs, place a pillow or yoga block between the upper thighs. You may notice the inward rotation to the thighs, and the engagement of the thighs and glutes as they support this power pose!
 
 ![Mountain pose with block](/img/mountain-pose-with-block.jpeg "Mountain Pose, with block")
 
 Seemingly simple, this pose can be hard to master because most daily lives include collapsing weight forward over our desks/phones/keyboards, and when we stand up we are not mindful to engage our thighs and glutes to support us.
 
-## Tree (Blossoming) Pose
+## Tree (Blossoming) Pose / Vrksasana
 
 ![girl doing tree pose](/img/tree-pose.jpeg "Tree Pose")
 
@@ -77,8 +77,6 @@ Take an exaggerated bend in the right knee, then open the knee and hip to the ri
 
 Press hands together at the heart center. This may be enough.
 
-
-
 ![girl starting tree pose](/img/start-tree-pose.jpeg "Tree pose, start")
 
 *The following are variations that increase in intensity/engagement:*
@@ -87,13 +85,13 @@ Press hands together at the heart center. This may be enough.
 2. Place the sole of the right foot on the left thigh.
 3. Inhale and let your tree blossom by bringing arms above your head. This will change your center of gravity and for some this makes it easier or harder!
 
-![girl blossoming tree pose](/img/blossoming-tree-pose.jpeg "\"Blossoming\" Tree Pose")
+![girl blossoming tree pose](/img/blossoming-tree-pose.jpeg "\\"Blossoming\\" Tree Pose")
 
 Whatever you have, continue to push down into the earth and feel energy traveling straight up through the crown of the head.
 
 To release, it may feel best to rotate your knee & hip forward, and *then* release foot to the earth.
 
-## Star Pose
+## Star Pose / Utthita Tadasana
 
 ![girl doing star pose](/img/star-pose.jpeg "Star Pose")
 
@@ -151,7 +149,7 @@ If it feels good, bounce a little here to test your balance while relaxing furth
 
 To come out of this pose, bring hands back to hips, push off the back foot and bring it to meet your front foot at the top of the mat.
 
-## Warrior III
+## Warrior III / Virabhadrasana **III**
 
 ![girl doing warrior 3](/img/warrior-3-full.jpeg "Warrior 3")
 
@@ -189,7 +187,7 @@ You may hold this pose for 5 - 10 breaths - whatever feels most empowering!
 
 Release back to high lunge or release the flying foot under you as you come to stand.
 
-## Side Plank
+## Side Plank / Vasisthasana
 
 ![girl doing side plank](/img/full-plank.jpeg "Side Plank")
 
@@ -224,8 +222,6 @@ Fly the top leg for a little fun and more fire for your lower body.
 ![girl doing modified side plank](/img/supported-half-plank.jpeg "Modified Side Plank")
 
 ![girl flying top leg in side plank](/img/full-plank-fly-foot.jpeg "Side Plank, Flying Top Leg")
-
-
 
 - - -
 
