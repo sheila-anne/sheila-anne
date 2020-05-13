@@ -2,9 +2,14 @@
 templateKey: blog-post
 title: Waste Not - Kitchen Edition
 date: 2020-04-10T12:00:09.682Z
-description: >-
-  Waste not is a blog series dedicated to methods proven to reduce waste, increase simplicity, and live happier. This is not — I repeat this is not — a list of things that you need to do. You don’t need to toss everything you own and start fresh (that would, in fact, defeat the purpose of wasting less). The purpose of the posts in this series is to provide education on alternatives to wastefulness, as well as an invitation to take a second look at the things you are doing and consuming
-featuredpost: true
+description: Waste not is a blog series dedicated to methods proven to reduce
+  waste, increase simplicity, and live happier. This is not — I repeat this is
+  not — a list of things that you need to do. You don’t need to toss everything
+  you own and start fresh (that would, in fact, defeat the purpose of wasting
+  less). The purpose of the posts in this series is to provide education on
+  alternatives to wastefulness, as well as an invitation to take a second look
+  at the things you are doing and consuming
+featuredpost: false
 featuredImage: /img/sheila-anne-waste-not-cover-photo.jpg
 tags:
   - waste not
