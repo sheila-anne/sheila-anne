@@ -94,7 +94,6 @@ const reducer: Reducer<State, Action> = (
 };
 
 export const Testimonial = ({ testimonials }: TestimonialProps) => {
-  console.log(testimonials);
   const initialState = getInitialState(testimonials);
   const [state, dispatch] = useReducer(reducer, initialState);
 
