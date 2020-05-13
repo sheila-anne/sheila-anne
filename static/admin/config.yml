@@ -116,16 +116,21 @@ collections:
               fields: [{ label: Title, name: title, widget: string }],
             }
           - {
-            label: Testimonials,
-            name: testimonials,
-            widget: object,
-            fields: [{
-              label: Title, name: title, widget: string,
-              label: Image Alt Text, name: imageAlt, widget: string,
-              label: Testimonial Text, name: text, wdiget: string,
-              label: Testimonial Headshot, name: imageSrc, widget: image
-            }]
-          }
+              label: Testimonials,
+              name: testimonials,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image Alt Text, name: imageAlt, widget: string },
+                  { label: Testimonial Text, name: text, wdiget: string },
+                  {
+                    label: Testimonial Headshot,
+                    name: imageSrc,
+                    widget: image,
+                  },
+                ],
+            }
           - { label: Body, name: body, widget: markdown }
 
       - file: "src/pages/about/index.md"
