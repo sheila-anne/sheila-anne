@@ -5,7 +5,7 @@ date: 2020-05-01T18:31:39.673Z
 description: In this post I’m sharing 5 super simple habits that really matter.
   Integrate these 5 things and your life may change. No really, I believe it to
   be that powerful!
-featuredpost: true
+featuredpost: false
 featuredImage: /img/journal-lavendar-bed.jpeg
 tags:
   - the grove
