@@ -10955,6 +10955,11 @@ netlify-lambda@1.6.3:
     webpack "^4.17.1"
     webpack-merge "^4.1.4"
 
+netlify-plugin-gatsby-cache@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-gatsby-cache/-/netlify-plugin-gatsby-cache-0.2.2.tgz#9dc84cb8cc811cdcc25fb5245f69bcc58c3f644f"
+  integrity sha512-kgvL5nrawuXz+UaJuUta7Ovwp67Euc2kaiLcNxHIJE/MxYmqCEUvQ+N6NjeKn+eJpeWD7gW9A3Z6HmVKR2Yxfg==
+
 newline-regex@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/newline-regex/-/newline-regex-0.2.1.tgz#4696d869045ee1509b83aac3a58d4a93bbed926e"
