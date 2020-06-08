@@ -21,7 +21,7 @@ const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
   const args = {
     action: "click",
     category: `Internal Link`,
-    label: to
+    label: to,
   };
   trackCustomEvent(args);
   trackFacebook("trackCustom", "Link Click", args);
@@ -38,7 +38,7 @@ export const SmartLink: FC<CustomLinkType> = ({
   role,
   to,
   title,
-  children
+  children,
 }) => {
   const linkType = getLinkType(to);
   if (linkType === "Internal") {
@@ -62,7 +62,7 @@ export const SmartLink: FC<CustomLinkType> = ({
         className={className}
         href={to}
         itemProp="url"
-        rel="noopener noreferrer"
+        rel="noopener"
         role={!!role ? role : undefined}
         target="_blank"
         title={title}
