@@ -1,0 +1,85 @@
+---
+templateKey: blog-post
+title: "Friend Talk: How to Start Uncomfortable Conversations Within Your Friend
+  Group"
+date: 2020-06-12T19:43:18.081Z
+description: Cultivating a safe space for uncomfortable conversations is vital
+  in this moment. We are still in the midst of a pandemic (which has had its own
+  host of challenges & changes) and now the world is watching as the US faces
+  the deeply seeded beasts of police brutality & white supremacy. If you are a
+  white woman, and conversations with friends have never breached the topic of
+  race, this is your opportunity to start.
+featuredpost: false
+tags:
+  - Advice
+  - The Grove
+  - Relationships
+  - Communication
+---
+The real treat of a friendship is what happens when you move past feel-good fun and dip into the uncomfortable conversations -- the ones that pull at your heart strings, can feel messy as hell, stretch your perspectives, and leave you feeling stronger and more connected.
+
+
+
+It isn’t easy to get started. You may or may not feel comfortable talking with your friends about classically vulnerable things such as your vices, sex life, and finances - but have you breached the topics such as racial discrimination, grief, depression, or socio-economic health disparities? If not ... why not?
+
+
+
+Cultivating a safe space for uncomfortable conversations is vital in this moment. We are still in the midst of a pandemic (which has had its own host of challenges & changes) and now the world is watching as the US faces the deeply seeded beasts of police brutality & white supremacy. If you are a white woman, and conversations with friends have never breached the topic of race, this is your opportunity to start. If this feels uncomfortable, then you’re on the right track… cue the classic quotes you’ve used in the past around your personal struggles (ie. “grow through what you grow through”).
+
+Consider that we're more comfortable with our friends than anyone else, yet it’s uncommon to spend precious quality time entrenched in uncomfortable conversations. Far too often, tough topics are left to fester in our heads -- or worse, they are pushed down and away to a place where we don’t need to contemplate them.
+
+
+
+If you’ve always avoided uncomfortable conversations around challenging topics, ask yourself why. What is it that is keeping you from speaking up? What might you be afraid of? Perhaps you fear it will be awkward, or fear you’ll say the wrong thing. Perhaps you fear you’ll be the “buzz kill” friend if you bring up the tough stuff. How would it feel to release those fears? [I’m happy to help you explore these questions](https://www.sheilaanne.com/book/), as I know they do not always have easy answers.
+
+
+
+I’ll introduce 3 steps to help you start having uncomfortable conversations within your friend group. These steps can be integrated into virtually any topic you want to explore with your girlfriends.  
+
+
+
+## What is your *why* for starting an uncomfortable conversation?
+
+Before you reach out to your friends, reach inside and consider *why* you want to have this conversation. For example, you may want to:
+
+* Learn something new
+* Make a change in your life
+* Take action in your community
+* Create a space for discussion and cultivation of ideas
+
+Not only will this help you to understand yourself, your needs, and your motivation, it will also help you to set up a thoughtful discussion space with your friends. You can keep returning to your *why* as the conversation progresses with your group to keep the conversation on track and intentional.
+
+## Be clear on *what* kind of space you want to create
+
+What kind of space is going to help you achieve your why?Space for these conversations isn't limited to an intimate conversation with friends, it can happen in a variety of settings and it's important to choose the right one for your purpose.Consider if you are looking to have a single discussion or create a container for a longer-term conversation. If you feel you need something more structured and long-term you may want to:
+
+* Decide on a cadence for meeting about the topic (ie. weekly, bi-weekly, monthly)
+* Start a book club or documentary club around the topic.
+* Create a separate space for the discussion, such as an email thread, texting thread, or group on social media
+* Commit to attending community events/joining groups related to this topic
+
+Alongside that, consider the values you want to uphold in your group. What values are most important to achieving your why? For example you may use the following values as inspiration:
+
+* Accountability
+* Respect
+* Openness
+* Embracing imperfection
+* Change-making
+* Compassion
+* Honesty
+
+Consider that not all of this is new! You may already have established values within your friend group without realizing it! If you’ve ever followed a nutrition plan with a friend, relied on a gym buddy, or joined a book club, you’ve already gone through the experience of creating a specific lane of your friendship for accountability, change-making, etc.
+
+## Open up the conversation and be compassionate to all viewpoints (and even to the “no thank-you”s)
+
+You’ve decided on your *why* and you know *what* kind of space you want to create… Now it’s time to start the conversation with your friends.
+
+Be open to the fact that some of your friends may not want to engage in the discussion. This is a reflection of their personal comfort zone; don’t let it distract you from your purpose or take away from your friendship. Just because you may be ready to engage in an uncomfortable conversation doesn’t mean that everyone else will be. Find peace with that. As you begin to take part in the conversation keep in mind that the space that you originally envisioned may evolve. This is great! It’s all part of the learning process, and if it helps the greater group to dive deeper into exploring challenging topics - it’s for the best!
+
+Starting these conversations is not easy but it’s worth it! If you can be bold enough to ask your friends to cultivate this space with you, compassionate enough to let a friend say “no” without holding anything against them, and open enough to consider new points of view, you will be well on your way to growing within your already strong community. The possibilities are endless.
+
+\----
+
+Starting challenging conversations may not be as fun as a blissful day on the lake or night out on the town, but these conversations can be a key piece to developing a deep relationship with yourself and with your friend group.
+
+The process of developing deep relationships & conversions is *not* separate from the inner work it requires. This is where a coach comes in. I work with free-spirited, driven women who are looking to develop deep self love, self trust, and “come home” to themselves. [Schedule a 20 minute free consultation with me](https://www.sheilaanne.com/book/), and see if my Root to Rise program is right for you.
