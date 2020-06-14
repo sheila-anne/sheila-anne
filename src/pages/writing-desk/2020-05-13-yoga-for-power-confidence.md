@@ -8,7 +8,7 @@ description: >-
 
 
   Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, whereever - you got this!
-featuredpost: true
+featuredpost: false
 featuredImage: /img/big-star-pose.jpeg
 tags:
   - yoga
