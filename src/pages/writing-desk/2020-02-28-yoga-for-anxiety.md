@@ -117,7 +117,7 @@ Take great care as you release. Slowly push yourself away from the wall and slid
 **Bound Angle & Reclined Bound Angle**\
 For bound angle, start seated and bring the soles of your feet to touch.
 
-![girl doing bound angle pose](/img/bound-angle.jpg "Bound Angle Pose")
+![girl doing bound angle pose](/img/bound-angle-for-anxiety.jpg "Bound Angle Pose")
 
 To add support and make this _even more_ relaxing, place blankets, blocks, or pillows underneath each knee.
 

@@ -6,7 +6,7 @@ description: If you’re on this page, you likely are experiencing some pain /
   tightness / distress / whatever-you-care-to-call-it-in-your-hips. Let me tell
   you, your hips are so happy you’re here.
 featuredpost: false
-featuredImage: /img/double-pigeon.jpeg
+featuredImage: /img/double-pigeon.jpg
 tags:
   - yoga
   - restorative
@@ -22,7 +22,7 @@ This flow is designed to be done slow and steady; as more of a sweet-release for
 
 ## Wide-Legged, Supported Child’s Pose
 
-![girl doing wide legged childs pose](/img/childs-pose.jpeg "Wide-legged childs pose")
+![girl doing wide legged childs pose](/img/childs-pose.jpg "Wide-legged childs pose")
 
 Child’s Pose (Balasana) is a lovely addition between challenging asanas or, in this case, after a long day sitting or feeling tightness in the hips. Child’s pose may seem simple and easy but do not underestimate it! This pose can feel difficult on its own after a long day of travel, office work, or sustained exercise. You may want to grab a pillow or two for this one.
 
@@ -42,7 +42,7 @@ You can stay here anywhere from 30 seconds to a few minutes. Again, if you have 
 
 This pose offers a stable position (seated) to open up your hips and stretch your glutes.
 
-![shin hug](/img/shin-hug.jpeg "seated shin hug")
+![shin hug](/img/shin-hug.jpg "seated shin hug")
 
 Start in a comfortable, cross-legged position. Hug your left knee into your left elbow and hold the left foot with the right hand. The shin is angled across your body.
 
@@ -58,7 +58,7 @@ This pose will help you stretch the hip rotators & hip flexors. For modification
 
 ### Half Pigeon
 
-![girl doing half pigeon](/img/half-pigeon.jpeg "half pigeon")
+![girl doing half pigeon](/img/half-pigeon.jpg "half pigeon")
 
 From table top, bring the right knee toward the right wrist and extend the left leg out flat toward the back of the mat.
 
@@ -68,7 +68,7 @@ For more tension, bring your right ankle toward the left wrist, so that the righ
 
 You may stay upright or allow your body to fold over the front leg.
 
-![girl doing resting half pigeon](/img/resting-half-pigeon.jpeg "resting half pigeon")
+![girl doing resting half pigeon](/img/resting-half-pigeon.jpg "resting half pigeon")
 
 You may feel an intense stretch deep in the ball socket of the hip joint. This can bring up emotional waves for many people. I invite you to meet your thoughts and energy with curiosity and compassion rather than judgement and negativity.
 
@@ -84,7 +84,7 @@ Palms can press into the ground behind you.
 
 Lean back and release your shoulders down your back. Cross your right ankle over your left knee, until you make a figure four shape with your legs.
 
-![Double Pigeon Prep](/img/pigeon-setup.jpeg "Double Pigeon Prep")
+![Double Pigeon Prep](/img/pigeon-setup.jpg "Double Pigeon Prep")
 
 Keep your right foot flexed and draw your right knee away from you until you feel a stretch in your right hip. Be gentle here.
 
@@ -94,13 +94,13 @@ Line up the ankle or side of your right foot over your left knee. Make sure that
 
 Your right knee will be over your left ankle, or side of the foot. Try to make your shins parallel to each other, with the right stacked directly over the left.
 
-![Double Pigeon](/img/double-pigeon.jpeg "Double Pigeon")
+![Double Pigeon](/img/double-pigeon.jpg "Double Pigeon")
 
 This is an intense pose for both hips & groin, so be gentle! Breathe here and, if it feels comfortable, you can walk your hands forward, keeping your hips on the ground.
 
 ## Bound Angle Pose
 
-![Bound Angle](/img/bound-angle.jpeg "Bound Angle")
+![Bound Angle](/img/bound-angle-for-hip-love.jpg "Bound Angle")
 
 Sit with the palms of your feet together and your knees falling heavy toward the earth.
 
@@ -118,7 +118,7 @@ You have the option to try one pose, or try them all! If you choose to go throug
 
 ### Dragon Flying High
 
-![Dragon flying high](/img/dragon-flying-high.jpeg "Dragon Flying High")
+![Dragon flying high](/img/dragon-flying-high.jpg "Dragon Flying High")
 
 From down dog, step your right foot forward and between the hands. Slide the back knee backward as far as you can, so that your weight is above the patella, not on it.
 
@@ -130,7 +130,7 @@ Bring a little more massage to this pose by rocking, just a couple of inches, ba
 
 From dragon flying high, bring your hands or forearms down to the ground. Option to use a block under your hands / forearms to bring the floor up to you.
 
-![Dragon Flying Low](/img/dragon-flying-low.jpeg "Dragon Flying Low")
+![Dragon Flying Low](/img/dragon-flying-low.jpg "Dragon Flying Low")
 
 Though you may walk your right foot out a few inches to give yourself more space, keep your right toes and knee facing the front of the mat, so everything can work together! You may want to think about hugging your right knee in toward you.
 
@@ -138,7 +138,7 @@ If at any point the back knee hurts, slide forward to bring your weight further 
 
 ### Twisted Dragon
 
-![Twisted Dragon](/img/twisted-dragon.jpeg "Twisted Dragon")
+![Twisted Dragon](/img/twisted-dragon.jpg "Twisted Dragon")
 
 Now you can turn your right toes, knee, and hip out toward the right.
 
@@ -150,7 +150,7 @@ To release, bring your hands to the ground and push back to downward facing dog 
 
 This pose opens up your hips & inner thighs and the "half" aspect may feel more approachable than the more common frog pose.
 
-![Half Frog Pose](/img/half-frog.jpeg "Half Frog Pose")
+![Half Frog Pose](/img/half-frog.jpg "Half Frog Pose")
 
 Start by lying flat on your belly, your arms stacked under your forehead for support.
 
