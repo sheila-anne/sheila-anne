@@ -9,7 +9,7 @@ description: Cultivating a safe space for uncomfortable conversations is vital
   the deeply seeded beasts of police brutality & white supremacy. If you are a
   white woman, and conversations with friends have never breached the topic of
   race, this is your opportunity to start.
-featuredpost: false
+featuredpost: true
 featuredImage: /img/friend-talk.png
 tags:
   - advice
@@ -32,7 +32,7 @@ If this is resonating with you, rest assured that having uncomfortable conversat
 
 I will offer 3 steps to help you start having uncomfortable conversations. I hope that it helps to elevate your courage to do the inner work and delve into this tough stuff. Though these steps can be integrated into virtually any topic you want to explore with your friends (both old & new), I invite you to consider starting a conversation around the Black Lives Matter movement. If not now, then when?
 
-![Alice walker quote, no person is your friend who demands your silence or denies your right to grow](/img/alice-walker-friend-talk.jpeg "Alice Walker quote - uncomfortable conversations with friends")
+![Alice walker quote, no person is your friend who demands your silence or denies your right to grow](/img/alice-walker-friend-talk.jpg "Alice Walker quote - uncomfortable conversations with friends")
 
 ## What is your _why_ for starting an uncomfortable conversation?
 
@@ -66,7 +66,7 @@ Alongside that, consider the values you want to uphold in your group. What value
 
 Consider that not all of this is new! You may already have established values within your friend group without realizing it! If you’ve ever followed a nutrition plan with a friend, relied on a gym buddy, or joined a book club, you’ve already gone through the experience of creating a specific lane of your friendship for accountability, change-making, etc.
 
-## Open up the conversation and be compassionate to all viewpoints (and even to the “no thank-you”s)
+## Open up the conversation, be compassionate to all viewpoints (even the “no thank-you”s), and be kind to yourself through the process
 
 You’ve decided on your _why_ and you know _what_ kind of space you want to create… Now it’s time to start the conversation with your friends. Reach out to your friends using the platform that feels most natural, and start by keeping things personal -- by explaining why you want to have a conversation and what you'd like to create / get out of it.
 
