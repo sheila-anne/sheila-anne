@@ -6,6 +6,7 @@ description: Mindful movement is a key way to release stress out feel good! It's
   not about having a rigid workout routine but rather bringing awareness into
   surroundings and feeling present as you move through the world.
 featuredpost: false
+featuredImage: /img/sheila-yogapose-oneleggedwheel.jpg
 tags:
   - mindfulness
   - stress management
@@ -42,6 +43,8 @@ Inhale exhale inhale exhale
 
 Feelin’ strong, feelin’ calm
 
+![girl doing one legged wheel yoga pose](/img/sheila-yogapose-oneleggedwheel.jpg "mindful movement, yoga")
+
 This is why I love yoga. Movement, music, & meditation gently tug my awareness from my busy brain to my intuitive body. When I step onto the rubber of my mat, I step into a place of peace and inner power.
 
 Everyone has their own way of releasing stress and fueling motivation and I find my way through mindful movement. Yoga is not the only way, though. I run, I climb, I strength-train, I love a leisurely stroll with a friend, and I enjoy needlepointing.
@@ -62,11 +65,13 @@ During this time I gained empathy for those unable to move their bodies in the w
 
 I decided that it was time to break my dependence with exercise as a survival *necessity* and dig deeper into the intention behind my movement.
 
+![girl running outside](/img/group-run-outside.jpg "Late night running event")
+
 ## Mindfulness and movement
 
 Intentional movement is a way to drop into mindfulness and decrease stress. That’s probably not new for anyone to hear. What is interesting, and perhaps novel, is that simply moving is not enough — If you go on a run and stress about your upcoming presentation, you may be doing yourself a disservice. Research has shown that linking mindfulness to movement — bringing awareness to your surroundings and your purpose —[can improve self-management and overall well being](https://www.forbes.com/sites/alicegwalton/2018/06/21/marrying-mindfulness-with-movement-reduces-stress-boosts-mood/#1d2100b7262a)❤.
 
-As I reflect on a handful of vivid memories walking off a stressful day in Boston, running the hills of New Hampshire during an epic Reach The Beach challenge, and sipping lattes as I caught up with friends, I realize that it wasn’t necessarily the *movement* that guided me into a state of meditation and experience, but rather my sensory awareness and capacity to be present.
+As I reflect on a handful of vivid memories walking off a stressful day in Boston, running the hills of New Hampshire during an epic Reach The Beach challenge, and sipping lattes as I caught up with friends, I realize that it wasn’t necessarily *movement* that guided me into a state of meditation and experience, but rather my sensory awareness and capacity to be present.
 
 As it turned out, my experience recovering from an injury became my opportunity to reconnect to myself and the abundance of mediums available to find peace & power. I started focusing more on my mind-body connection and I allowed myself more flexibility when it came to deciding on how I would move my body and mind; one day it could be a hard strength training session, the next a slow flow on my yoga mat, the next a stitching session with my latest needlepoint canvas.
 
@@ -84,4 +89,4 @@ How can I incorporate more mindfulness into my movement? Into my life?
 
 Keep in mind that this is a continuous unraveling of discovery. If you’re feeling curious about how to be more mindful, I invite you to try [Yoga for an Open Heart](https://www.sheilaanne.com/writing-desk/2020-01-29-yoga-for-an-open-heart/) and let the answers flow to you.
 
-**Ready to break up with your rigid fitness routine and develop a genuine mind-body connection? I’m helping women do it every day!  Schedule your first 20 minute call here.**
+**Ready to break up with your rigid fitness routine and develop a genuine mind-body connection? I’m helping women do it every day!  [Schedule your first 20 minute call here.](https://square.site/book/T2G1BPTFKKDBJ/sheila-anne)**
