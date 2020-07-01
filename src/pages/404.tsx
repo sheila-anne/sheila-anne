@@ -5,9 +5,10 @@ import { Layout, SEO } from "../components";
 const NotFoundPage: FC<GatsbyPage> = ({ location }) => (
   <Layout location={location}>
     <SEO
-      type="website"
       description="404: Not found."
+      location={location}
       title="Sheila Anne: Not found"
+      type="website"
     />
     <section>
       <h1>NOT FOUND</h1>

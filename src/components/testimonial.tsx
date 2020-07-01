@@ -17,8 +17,8 @@ type State = {
 };
 
 type Testimonial = {
-  imageAlt: string;
-  imageSrc: PreviewImage;
+  imageAlt?: string;
+  imageSrc?: PreviewImage;
   text: string;
   title: string;
 };
@@ -98,14 +98,17 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <TestimonialSection>
+    <TestimonialSection id="testimonials">
       {testimonials.map((testimonial) => (
         <TestimonialCallout key={testimonial.title}>
-          <TestimonialImage
-            imageAlt={testimonial.imageAlt}
-            imageInfo={testimonial.imageSrc}
-            title={testimonial.title}
-          />
+          {testimonial.imageSrc && (
+            <TestimonialImage
+              imageAlt={testimonial.imageAlt}
+              imageInfo={testimonial.imageSrc}
+              title={testimonial.title}
+            />
+          )}
+
           <TestimonialTitle>{testimonial.title}</TestimonialTitle>
           <Clickable
             onClick={() =>

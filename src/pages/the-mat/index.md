@@ -12,7 +12,7 @@ templateKey: "the-mat"
 
 Yoga allows us to drop from our busy brains into our bodies and limitless potential.
 
-[Working with me 1:1](/the-grove/) ? You can bet we’ll be incorporating mindfulness, visualization, and intentional movement.
+[Working with me 1:1](/working-together/) ? You can bet we’ll be incorporating mindfulness, visualization, and intentional movement.
 
 Looking to dip your toes in? You can start flowing with me ASAP:
 

@@ -9,9 +9,11 @@ import {
   HTMLContent,
   Layout,
   SEO,
+  Testimonial,
+  WorkingTogetherHeader,
 } from "../components";
 
-export const TheGroveTemplate = ({
+export const WorkingTogetherTemplate = ({
   content,
   contentComponent,
   frontmatter,
@@ -20,16 +22,18 @@ export const TheGroveTemplate = ({
 
   return (
     <section>
+      <WorkingTogetherHeader />
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
       <hr />
       <BookingSection
-        page="The Grove"
+        page="Working Together"
         backgroundColor={Constants.Colors.theGroveLightGreen}
         formTitle={frontmatter.formHeadline}
         formDescription={frontmatter.formSubHeadline}
         formParagraph={frontmatter.formParagraph}
       />
       <hr />
+      <Testimonial testimonials={frontmatter.testimonials} />
       <FAQ faq={frontmatter.faq} />
     </section>
   );
@@ -46,7 +50,7 @@ const TheGrove = ({ data, location }) => {
         location={location}
         title={post.frontmatter.pageTitle}
       />
-      <TheGroveTemplate
+      <WorkingTogetherTemplate
         contentComponent={HTMLContent}
         content={post.html}
         frontmatter={post.frontmatter}
@@ -79,6 +83,10 @@ export const pageQuery = graphql`
         formParagraph
         pageDescription
         pageTitle
+        testimonials {
+          title
+          text
+        }
       }
     }
   }

@@ -13,7 +13,6 @@ description: >-
 featuredpost: false
 featuredImage: /img/sloans-lake-sunset.jpg
 tags:
-  - the grove
   - coaching
   - tips
   - advice

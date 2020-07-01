@@ -174,4 +174,4 @@ Throughout these poses, remember to bring awareness to your breath and to honor 
 ---
 
 Pssst. Did you know that I have 1:1 programs for women that are looking to be well & pave a path to success? I integrate mindfulness, movement, and individual assessments to help you tap into your power and make an action plan toward the life you desire!
-The first call is free 👉🏻 [Schedule my call now!](/the-grove)
+The first call is free 👉🏻 [Schedule my call now!](/working-together)

@@ -167,7 +167,7 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
   const navLinks = [
     { to: "/about/", text: "About Me", title: "About Sheila Anne" },
     {
-      to: "/the-grove/",
+      to: "/working-together/",
       text: "Working Together",
       title: "Life coaching help from Sheila Anne",
     },

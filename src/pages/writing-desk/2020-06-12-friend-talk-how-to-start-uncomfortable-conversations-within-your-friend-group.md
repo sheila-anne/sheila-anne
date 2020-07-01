@@ -13,7 +13,6 @@ featuredpost: true
 featuredImage: /img/friend-talk.png
 tags:
   - advice
-  - the grove
   - relationships
   - communication
 ---

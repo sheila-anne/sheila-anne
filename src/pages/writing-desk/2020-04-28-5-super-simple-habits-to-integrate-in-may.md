@@ -8,7 +8,6 @@ description: In this post I’m sharing 5 super simple habits that really matter
 featuredpost: false
 featuredImage: /img/journal-lavendar-bed.jpg
 tags:
-  - the grove
   - coaching
   - tips
   - advice

@@ -184,7 +184,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               color={Constants.Colors.theGroveGreen}
               margin="0 0 2rem 0"
             >
-              <BannerLink to="/the-grove/" title="Life Coaching in The Grove">
+              <BannerLink to="/working-together/" title="Let's work together">
                 Start your journey with me.
               </BannerLink>
             </BannerHeadline>

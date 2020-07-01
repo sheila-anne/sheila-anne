@@ -10,7 +10,6 @@ description: >-
 featuredpost: false
 featuredImage: /img/sheila-anne-self-care-for-the-hectic-life.jpg
 tags:
-  - the grove
   - self care
   - stress management
 ---
@@ -44,6 +43,6 @@ _"Self-care for me is always being there for myself and treating myself like I w
 19. While in conversation -- Flip your phone over or (better yet) put it in a place you can’t see. This will shut down the temptation to reach for your device and lose your connection with the present moment. Bonus: This will do wonders for your relationships!
 20. Turn on your favorite song and sing loudly! Did you know that singing increases endorphin release and reduces cortisol levels? Why not try this next time you’re in the shower, cooking dinner, commuting in the car, or (why not!?) walking down the street.
 
-Does this get you excited? Are you ready to take the next step and invest in yourself and in your future, more balanced life? While [working with me 1:1 in The Grove](/the-grove/), we’ll be able to do a full assessment and evaluate all aspects of your life. We’ll identify what areas you are absolutely killing, and what you might want to tackle next.
+Does this get you excited? Are you ready to take the next step and invest in yourself and in your future, more balanced life? While [working with me 1:1](/working-together/), we’ll be able to do a full assessment and evaluate all aspects of your life. We’ll identify what areas you are absolutely killing, and what you might want to tackle next.
 
 ![Sheila Anne in Nature](/img/hobbit-trail.jpg)
