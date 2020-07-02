@@ -27,8 +27,16 @@ faq:
 testimonials:
   - title: Hannah G.
     text: In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in the past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!
+    imageAlt: Ground To Grow testimonial from Hannah
+    imageSrc: /img/hannah-headshot.jpg
   - title: Jessica S.
-    text: Working with Sheila was a wonderful experience. I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive
+    text: Working with Sheila was a wonderful experience. I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive. She held space beautifully and her grounded, calm presence could be felt through the screen. By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless!
+    imageAlt: Ground To Grow testimonial from Jessica
+    imageSrc: /img/jessica-headshot.jpg
+  - title: Brianna M.
+    text: Before my session with Sheila, I was a little nervous. I knew I had things I wanted to work on, but I wasn't sure if I would be able to find the right way to articulate them. But right away, Sheila helped ground me and provided a safe space by taking the time to work on breathwork and centering before we got started. I really enjoyed the questions she asked, and I felt that I was organically able to find answers without it feeling forced. She is also an incredible listener and was able to repeat back things I said verbatim and worked with me to unpack deeper meaning on them. After our session, I felt energized and excited and that feeling continued for the rest of the day. Thank you so much, Sheila!
+    imageAlt: Ground To Grow testimonial from Brianna
+    imageSrc: /img/brianna-headshot.jpg
 ---
 
 ![At peace in the security of your own grove](/img/sheila-anne-life-coaching.jpg)

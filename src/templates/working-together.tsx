@@ -85,6 +85,14 @@ export const pageQuery = graphql`
         pageTitle
         testimonials {
           title
+          imageAlt
+          imageSrc {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
           text
         }
       }
