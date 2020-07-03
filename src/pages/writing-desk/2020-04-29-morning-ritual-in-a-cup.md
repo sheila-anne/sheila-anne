@@ -11,7 +11,6 @@ featuredpost: false
 featuredImage: /img/scoop-the-grinds.jpg
 tags:
   - self care
-  - the grove
   - ritual
   - coffee
 ---

@@ -13,7 +13,7 @@ import { Constants } from "../constants";
 import { SquareButton } from "./button";
 import { trackFacebook } from "../utils";
 
-type PageNames = "The Grove" | "Homepage";
+type PageNames = "Working Together" | "Homepage";
 
 type BookingSectionProps = {
   backgroundColor?: string;

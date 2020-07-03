@@ -10,7 +10,6 @@ description: >-
 featuredpost: false
 featuredImage: /img/sheila-anne-how-to-get-the-most-out-of-coaching.jpg
 tags:
-  - the grove
   - coaching
   - tips
   - advice
@@ -50,4 +49,4 @@ The more you put into coaching, the more you’ll get out of it! To get the most
 
 The more honest and open you are, with both yourself and your coach, the more we’ll learn together. Be prepared to share your story, your desires, and any obstacles. This will allow us the greatest insight, to explore all opportunities, and to set you up for success! If there is a topic that for you is “off limits,” we can name that and leave it out of our sessions.
 
-Ready to get started? [Sign up for an Exploration Call](/the-grove/) with me here!
+Ready to get started? [Sign up for an Exploration Call](/working-together/) with me here!

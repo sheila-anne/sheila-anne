@@ -10,7 +10,6 @@ description: >-
 featuredpost: false
 featuredImage: /img/sheila-anne-winds-of-advice.png
 tags:
-  - the grove
   - coaching
   - tips
   - advice

@@ -6,7 +6,6 @@ description: "The prospect of filling an apartment is exciting but, to get it do
 featuredpost: false
 featuredImage: /img/plants-planning-on-the-stoop.jpg
 tags:
-  - the grove
   - coaching
   - tips
   - advice

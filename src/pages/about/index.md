@@ -26,7 +26,7 @@ I began to slow down, to undo some of those bolts, and found ways to cultivate i
 
 My mom passed in the late summer of 2018 and the rest of the year was filled with changes - I worked in the fitness industry for a few months, earned my 200hr Yoga Teacher Training, and then left the working world to backpack Europe with my partner. We [started an adventure blog](https://www.sheandjim.com/) where we reflected on our experiences traveling and learning about ourselves and one another. Traveling helped me to “come home” to myself once again, as I found my footing and explored the world with the curiosity of a child.
 
-[Now I coach others to do the same](/the-grove/). I help women to connect to themselves, cultivate inner peace, and follow their deep purpose so that they don’t worry about a life unlived. I have been privileged to watch my clients explore their unique strengths, to experience transformation, and to “come home” to themselves, just as I did.
+[Now I coach others to do the same](/working-together/). I help women to connect to themselves, cultivate inner peace, and follow their deep purpose so that they don’t worry about a life unlived. I have been privileged to watch my clients explore their unique strengths, to experience transformation, and to “come home” to themselves, just as I did.
 
 Are you ready to get started with me?
 

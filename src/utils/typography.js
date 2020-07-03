@@ -74,7 +74,6 @@ const theme = {
     },
     a: {
       color: "#57a99a",
-      textDecoration: "none",
     },
     "a:hover,a:active": {
       boxShadow: "none",

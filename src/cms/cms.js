@@ -6,7 +6,7 @@ import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
 import ColorsPreview from "./preview-templates/ColorsPreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
-import TheGrovePagePreview from "./preview-templates/TheGrovePagePreview";
+import WorkingTogetherPagePreview from "./preview-templates/WorkingTogetherPagePreview";
 import TheMatPagePreview from "./preview-templates/TheMatPagePreview";
 
 function StyleInjector({ children }) {
@@ -26,7 +26,7 @@ function StyleInjector({ children }) {
 }
 
 export default function withStyledComponents(Comp) {
-  return props => (
+  return (props) => (
     <StyleInjector>
       <Comp {...props} />
     </StyleInjector>
@@ -41,7 +41,7 @@ CMS.registerPreviewTemplate(
 );
 CMS.registerPreviewTemplate("index", withStyledComponents(IndexPagePreview));
 CMS.registerPreviewTemplate(
-  "the-grove",
-  withStyledComponents(TheGrovePagePreview)
+  "working-together",
+  withStyledComponents(WorkingTogetherPagePreview)
 );
 CMS.registerPreviewTemplate("the-mat", withStyledComponents(TheMatPagePreview));

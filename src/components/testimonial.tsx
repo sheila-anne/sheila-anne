@@ -1,4 +1,12 @@
-import React, { Reducer, useReducer } from "react";
+import React, {
+  Dispatch,
+  FC,
+  Reducer,
+  useLayoutEffect,
+  useReducer,
+  useRef,
+  useState,
+} from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -17,8 +25,8 @@ type State = {
 };
 
 type Testimonial = {
-  imageAlt: string;
-  imageSrc: PreviewImage;
+  imageAlt?: string;
+  imageSrc?: PreviewImage;
   text: string;
   title: string;
 };
@@ -26,6 +34,15 @@ type Testimonial = {
 type TestimonialProps = {
   testimonials: Testimonial[];
 };
+
+type Expandable = {
+  dispatch: Dispatch<Action>;
+  isExpanded: boolean;
+  text: string;
+  title: string;
+};
+
+const MIN_EXPANDABLE_HEIGHT = 100;
 
 const Clickable = styled.div`
   cursor: pointer;
@@ -37,7 +54,8 @@ const Clickable = styled.div`
 
 const ExpandableText = styled.p<{ isExpanded: boolean }>`
   height: auto;
-  max-height: ${({ isExpanded }) => (!!isExpanded ? "1000px" : "100px")};
+  max-height: ${({ isExpanded }) =>
+    !!isExpanded ? "1000px" : `${MIN_EXPANDABLE_HEIGHT}px`};
   margin-top: 1rem;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out 0s;
@@ -93,39 +111,78 @@ const reducer: Reducer<State, Action> = (
   return { ...state, [action.type]: isExpanded };
 };
 
+const MeasurableHeightText: FC<Expandable> = ({
+  dispatch,
+  isExpanded,
+  text,
+  title,
+}) => {
+  const ref = useRef<HTMLParagraphElement>(null);
+  const [height, setHeight] = useState(0);
+
+  useLayoutEffect(() => {
+    if (ref.current) {
+      setHeight(ref.current.clientHeight);
+    }
+  }, []);
+
+  const Text = ({
+    isExpanded,
+    text,
+  }: {
+    isExpanded: boolean;
+    text: string;
+  }) => (
+    <ExpandableText isExpanded={isExpanded} ref={ref}>
+      "{text}"
+    </ExpandableText>
+  );
+
+  return height > MIN_EXPANDABLE_HEIGHT ? (
+    <Clickable
+      onClick={() =>
+        dispatch({
+          type: title,
+        })
+      }
+    >
+      <Text isExpanded={isExpanded} text={text} />
+      <CenteredText>
+        <PlainButton
+          backgroundColor={Constants.Colors.theGroveLightGreen}
+          color="#000"
+        >
+          {isExpanded ? "Show Less" : "Show More"}
+        </PlainButton>
+      </CenteredText>
+    </Clickable>
+  ) : (
+    <Text isExpanded={true} text={text}></Text>
+  );
+};
+
 export const Testimonial = ({ testimonials }: TestimonialProps) => {
   const initialState = getInitialState(testimonials);
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <TestimonialSection>
+    <TestimonialSection id="testimonials">
       {testimonials.map((testimonial) => (
         <TestimonialCallout key={testimonial.title}>
-          <TestimonialImage
-            imageAlt={testimonial.imageAlt}
-            imageInfo={testimonial.imageSrc}
+          {testimonial.imageSrc && (
+            <TestimonialImage
+              imageAlt={testimonial.imageAlt}
+              imageInfo={testimonial.imageSrc}
+              title={testimonial.title}
+            />
+          )}
+          <TestimonialTitle>{testimonial.title}</TestimonialTitle>
+          <MeasurableHeightText
+            dispatch={dispatch}
+            isExpanded={state[testimonial.title]}
+            text={testimonial.text}
             title={testimonial.title}
           />
-          <TestimonialTitle>{testimonial.title}</TestimonialTitle>
-          <Clickable
-            onClick={() =>
-              dispatch({
-                type: testimonial.title,
-              })
-            }
-          >
-            <ExpandableText isExpanded={state[testimonial.title]}>
-              "{testimonial.text}"
-            </ExpandableText>
-            <CenteredText>
-              <PlainButton
-                backgroundColor={Constants.Colors.theGroveLightGreen}
-                color="#000"
-              >
-                {state[testimonial.title] ? "Show Less" : "Show More"}
-              </PlainButton>
-            </CenteredText>
-          </Clickable>
         </TestimonialCallout>
       ))}
     </TestimonialSection>

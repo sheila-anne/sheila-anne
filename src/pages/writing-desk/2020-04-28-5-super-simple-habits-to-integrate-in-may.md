@@ -8,7 +8,6 @@ description: In this post I’m sharing 5 super simple habits that really matter
 featuredpost: false
 featuredImage: /img/journal-lavendar-bed.jpg
 tags:
-  - the grove
   - coaching
   - tips
   - advice
@@ -37,7 +36,7 @@ If you’re reading this blog, you’re likely a self-aware person, and you like
 
 To get ahead of the curve, schedule the most important thing the day before so that each day, you can just flow right through. If your energy levels change or something is not working for you, make a change. Now we’re working smarter & more intentionally!
 
-![girl journalling](/img/journaling-girl-inside.jpg "Writing in journal in the morning")
+![Sheila journaling](/img/sheila-anne-life-coaching.jpg "Writing in journal in the morning")
 
 Since I’m a morning person, I sometimes get my most important thing completed before 8am.
 
