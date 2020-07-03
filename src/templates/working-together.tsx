@@ -45,6 +45,7 @@ const TheGrove = ({ data, location }) => {
   return (
     <Layout location={location}>
       <SEO
+        image={post.frontmatter.featuredImage.childImageSharp.original.src}
         description={post.frontmatter.pageDescription}
         imageAlt={post.frontmatter.bannerImageHeadline}
         location={location}
@@ -75,6 +76,9 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 300, quality: 95) {
               ...GatsbyImageSharpFluid
+            }
+            original {
+              src
             }
           }
         }

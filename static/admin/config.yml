@@ -113,7 +113,11 @@ collections:
               label: Mainpitch,
               name: mainpitch,
               widget: object,
-              fields: [{ label: Title, name: title, widget: string }],
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
             }
           - {
               label: Testimonials,

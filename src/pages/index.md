@@ -8,36 +8,32 @@ bannerSubtitle: >
   Curious to learn more?
 image: /img/sheila-anne-about.jpg
 description: >
-  We work together to ... exchange anxiety for bliss, ditch expensive wellness trends, and start curating the life you deserve.
+  We work together to ... ditch overwhelm & expectations, cultivate a mind-body connection, and find the career that brings you real joy.
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"
 
 mainpitch:
-  title: Harness your energy, tap into your purpose, and create a deeply inspiring future.
+  title: Hi, I’m Sheila! I’m a certified professional coach specializing in helping driven, free-spirited women to cultivate the life & career they deserve. Why? Because I used to be a girl who relied on checking boxes, filling her schedule, and getting fit to feel good about who she was. Sound familiar? My career path was winding, my brain was always chock-full of things I had to do, and moments of fulfillment were fleeting. I discovered how to connect my mind and body, redefine success, and lead my own purpose-filled path. Now I’m fluffing passionate about helping others to do the same!
+  image: /img/sheila-anne-with-coffee-mug.jpg
 
 intro:
   blurbs:
-    - image: /img/sheila-anne-explore.png
-      imageAlt: Explore how Sheila Anne can help you improve your life.
-      title: Explore
-      text: >
-        Join Sheila here and share your story!  Explore how coaching can help you achieve the life you envision.
     - image: /img/sheila-anne-discover.png
       imageAlt: Discover what it's like to work with Sheila.
-      title: Discover
+      title: Exploration Call
       text: >
-        Let's get to know you! Together, we'll discover your strengths, biggest desires for growth, and create a blueprint for the future.
+        Let's get to know you! 20 minute complementary call that identifies how coaching can help you in your life.
     - image: /img/sheila-anne-grow.png
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
-      title: Grow
+      title: Ground To Grow Accelerator
       text: >
-        Through ongoing 1:1 coaching sessions with Sheila, you will nurture your power, release limiting beliefs, and start to grow into your own.
+        45-minute power session to address you're feeling stuck and provide tangible steps towards greater fulfillment (a great place to start)!
     - image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: Transform
+      title: Root To Rise
       text: >
-        Your world is changing, you’re standing tall in your power, and you're becoming the most bold & authentic version of you!
+        My signature 3 month-long coaching program gauranteed to help you create long-lasting change in your personal and professional life.
 
 testimonials:
   - title: Taylor P.

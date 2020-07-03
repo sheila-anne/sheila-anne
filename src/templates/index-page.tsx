@@ -14,6 +14,7 @@ import {
   Instagram,
   Layout,
   PreviewCompatibleBanner,
+  PreviewCompatibleImage,
   SEO,
   SmartLink,
   Testimonial,
@@ -24,6 +25,7 @@ import { applyStyle } from "../utils";
 type MainPitch = {
   description: string;
   title: string;
+  image: NestedImage;
 };
 
 type IndexFrontmatterProps = BaseFrontmatter & {
@@ -110,6 +112,11 @@ const BannerHeadline = styled.h1<HeadlineProps>`
   padding: 0.5rem;
 `;
 
+const ImageContainer = styled.div`
+  flex: 100%;
+  margin-bottom: 1rem;
+`;
+
 const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
@@ -137,10 +144,10 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     formSubHeadline,
     image,
     testimonials,
+    mainpitch,
   } = frontmatter;
 
   const safeImage = image as NestedImage;
-
   const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
 
   return (
@@ -171,9 +178,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       <section>
         <CenteredText>
           <BannerHeadline color={"#FFF"} fontColor="#000">
-            <BannerText>Get Grounded</BannerText>
-            <BannerText>Find Balance</BannerText>
-            <BannerText>Live Aligned</BannerText>
+            <BannerText>Come Home To Yourself</BannerText>
           </BannerHeadline>
         </CenteredText>
         <Container>
@@ -188,7 +193,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
                 Start your journey with me.
               </BannerLink>
             </BannerHeadline>
-            <h3>Here's How It Works:</h3>
+            <h3>Here's What Working Together Looks Like:</h3>
           </CenteredText>
           <FlexContainer>
             <Features gridItems={frontmatter.intro.blurbs} />
@@ -201,9 +206,32 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               page="Homepage"
             />
           </FlexContainer>
+          <FlexContainer margin="2rem 0">
+            <ImageContainer>
+              <PreviewCompatibleImage
+                loading="lazy"
+                imageInfo={{
+                  alt: "Sheila Anne drinking coffee",
+                  childImageSharp: mainpitch.image.childImageSharp,
+                }}
+                title="A warm welcome from Sheila Anne"
+              />
+            </ImageContainer>
+            <p>{mainpitch.title}</p>
+          </FlexContainer>
+          <CenteredText>
+            <BannerHeadline
+              as="h3"
+              color="#FFF"
+              fontColor="#000"
+              lessMargin={true}
+            >
+              What People Are Saying
+            </BannerHeadline>
+          </CenteredText>
           <TestimonialContainer
             backgroundColor={Constants.Colors.theGroveGreenGray}
-            margin={"0 0 1rem 0"}
+            margin="0 0 1rem 0"
           >
             <Testimonial testimonials={testimonials} />
           </TestimonialContainer>
@@ -211,7 +239,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <BannerHeadline
               as="h3"
               color="#FFF"
-              fontColor={"#000"}
+              fontColor="#000"
               lessMargin={true}
             >
               Latest From The Blog
@@ -286,6 +314,16 @@ export const pageQuery = graphql`
             imageAlt
             text
             title
+          }
+        }
+        mainpitch {
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
           }
         }
         pageDescription

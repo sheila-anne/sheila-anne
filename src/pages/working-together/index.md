@@ -1,6 +1,6 @@
 ---
 bannerImageHeadline: "Life Coaching | Working Together"
-featuredImage: /img/sheila-in-the-alps.jpg
+featuredImage: /img/sheila-anne-working-together.jpg
 formHeadline: "Let's get started!"
 formParagraph: "This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
 formSubHeadline: "Setup your free exploration call."
@@ -39,7 +39,7 @@ testimonials:
     imageSrc: /img/brianna-headshot.jpg
 ---
 
-![At peace in the security of your own grove](/img/sheila-anne-life-coaching.jpg)
+![Working together with Sheila Anne](/img/sheila-anne-working-together.jpg)
 
 <h2 id="exploration-call">Exploration Call</h2>
 This 20-minute complimentary call is an opportunity to tell me your story & learn about how we can work together.  You can ask allllll of the questions & may come away with more clarity & confidence - answers beyond my program.
@@ -47,7 +47,7 @@ This 20-minute complimentary call is an opportunity to tell me your story & lear
 <h2 id="ground-to-grow">Ground to Grow Accelerator</h2>
 This one-time 45 minute coaching session will help you understand exactly why you are feeling stuck & overwhelmed, plus tangible steps that you can do to find more peace and fulfillment.
 
-<img src="/img/sheila-anne-balancing-by-the-pacific.jpg" alt="Sheila walking along a tree on the shore of the Pacific" title="This is how you feel after Ground To Grow" loading="lazy">
+<img src="/img/sheila-anne-ground-to-grow.jpg" alt="Sheila harnessing her energy at Red Rocks" title="This is how you feel after Ground To Grow" loading="lazy">
 
 ### Tell me more!
 
@@ -77,7 +77,15 @@ How would it feel to have complete clarity around your goals and career path, fe
 
 We start with a 90 minute session tackling a whole-life evaluation and from there you can expect weekly homework, accountability, and (of course) me having your back all along the way. Making a career change? Let’s do it! Navigating your life purpose? I got you! Looking to leap into bliss and live your own life instead of others’ expectations? Yessss we’ll make it happen!
 
-All this goodness is actually way too much for me to share on this page … let’s skip the small talk and get you all the details. [Take me there](/root-to-rise/)!
+Let’s skip the small talk and get you alllll the details:
+
+The 3-month **Root to Rise Program** will enable you to…
+
+- **Explore** all that makes you, you -- Through journaling, visualizations, and assessments you’ll gain deep self awareness and purpose.
+- **Discover** your core values and make all future decisions from a place of intention - Let’s take the guessing out of decision making & create easy-flowing success.
+- **Simplify** your life & infuse joy -- We’ll talk about mindful rituals, minimalism, prioritization, and celebrating things that matter. Simplicity is a core principle of my coaching because I believe your life can be simple and full!
+- **Cultivate** a mind-body connection that will help you prioritize your well being and make lasting change . Set aside your expectations for needing how-to guides and expensive wellness trends, we’re taking things a little deeper here! Here you’ll face your inner monologue and self-sabotaging stories. We’ll talk about how to develop a fresh mindset that is more aligned with the confidence and fulfillment you hope to create.
+- **Create** an inspiring future -- Once you’ve built the foundation, developed clarity around your future, and connected to your whole self - your potential is limitless. You establish goals and action steps to get you there and have me as your accountability partner & cheerleader as you root and rise.
 
 ---
 
