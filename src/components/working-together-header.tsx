@@ -40,7 +40,7 @@ export const WorkingTogetherHeader = () => {
       <div>
         Here are the ways I am working together with clients to cultivate a
         mind-body connection, tap into what they truly desire, and create an
-        inspiring & aligned future.
+        inspiring & aligned future:
       </div>
       <header>
         <nav>

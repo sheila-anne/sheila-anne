@@ -33,7 +33,7 @@ intro:
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
       title: Root To Rise
       text: >
-        My signature 3 month-long coaching program gauranteed to help you create long-lasting change in your personal and professional life.
+        My signature 3 month-long coaching program guaranteed to help you create long-lasting change in your personal and professional life.
 
 testimonials:
   - title: Taylor P.
