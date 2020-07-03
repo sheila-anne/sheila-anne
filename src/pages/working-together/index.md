@@ -47,16 +47,18 @@ This 20-minute complimentary call is an opportunity to tell me your story & lear
 <h2 id="ground-to-grow">Ground to Grow Accelerator</h2>
 This one-time 45 minute coaching session will help you understand exactly why you are feeling stuck & overwhelmed, plus tangible steps that you can do to find more peace and fulfillment.
 
+<img src="/img/sheila-anne-balancing-by-the-pacific.jpg" alt="Sheila walking along a tree on the shore of the Pacific" title="This is how you feel after Ground To Grow" loading="lazy">
+
 ### Tell me more!
 
 Let’s jump into your life and establish where you’re at 📍 and where you want to go. If you’re like most people, your daily life hardly allows intentional time for reflection, evaluation, and envisioning the future. This 45 minute session is all about gaining little insights that will help you achieve powerful results.
 
-**Ground to Grow** will help you to:
+The **Ground to Grow Accelerator** will help you to:
 
-- Assess your life aspects - Through an assessment, you’ll create a whole picture of your life
-- Envision success - Get crystal clear on what matters and what you want your future to look like. This way you stop flirting with different ideas of what success looks like, become radically clear on your own definition, and gain more confidence.
-- Define roadblocks - Gain insight into what might be making you feel stuck, constantly overwhelmed, or unfulfilled. You’ll be able to leverage this powerful insight to build epic goals that you’ll really follow through on!
-- Establish goals - Oh yes, you’ll have takeaways! You will craft 3 actionable steps that will infuse joy, decrease stress, and revitalize your daily life.
+- **Assess** your life aspects -- Through an assessment, you’ll create a whole picture of your life
+- **Envision** success -- Get crystal clear on what matters and what you want your future to look like. This way you stop flirting with different ideas of what success looks like, become radically clear on your own definition, and gain more confidence.
+- **Define** roadblocks -- Gain insight into what might be making you feel stuck, constantly overwhelmed, or unfulfilled. You’ll be able to leverage this powerful insight to build epic goals that you’ll really follow through on!
+- **Establish** goals -- Oh yes, you’ll have takeaways! You will craft 3 actionable steps that will infuse joy, decrease stress, and revitalize your daily life.
 
 [Read what people are saying about Ground To Grow!](#testimonials)
 
@@ -64,22 +66,23 @@ Ready to jump in?
 [Yes! Let’s go!](/book/)
 
 <h2 id="root-to-rise">Root to Rise 3 Month Program</h2>
-This 3 month, 1:1 coaching program is for those who are ready to create long-lasting change. Embark on a journey of dedicated self care, self discovery, and aligned action.
 
-It’s so easy to make lists, check off action items, and let your busy brain lead the way. Oftentimes, though, we get stuck in being productive and perfecting each piece of ourselves that we forget to do the inner work - the work that makes the most profound impact on our lives.
+My signature 3 month, 1:1 coaching program is for those who are ready to create long-lasting change. Embark on a journey of dedicated self care, self discovery, and aligned action.
 
-“Root to rise” is a common verbal cue used in yoga. It signifies to first lay an intentional foundation then activate your muscles and grow tall while keeping structural integrity. Building a strong foundation = Limitless opportunity to grow strong and powerful.
+<img src="/img/sheila-anne-root-to-rise.jpg" alt="Sheila in Reversed Warrior by the Pacific" title="This is how you feel after Root To Rise" loading="lazy">
 
-The 3-month **Root to Rise Program** will enable you to…
+### Tell me more!
 
-- **Explore** all that makes you, you - Through journaling, visualizations, and assessments you’ll gain deep self awareness and purpose.
-- **Discover** your core values and make all future decisions from a place of intention - Let’s take the guessing out of decision making & create easy-flowing success.
-- **Simplify** your life & infuse joy - We’ll talk about mindful rituals, minimalism, prioritization, and celebrating things that matter. Simplicity is a core principle of my coaching because I believe your life can be simple and full!
-- **Cultivate** a mind-body connection that will help you prioritize your well being and make lasting change . Set aside your expectations for needing how-to guides and expensive wellness trends, we’re taking things a little deeper here! Here you’ll face your inner monologue and self-sabotaging stories. We’ll talk about how to develop a fresh mindset that is more aligned with the confidence and fulfillment you hope to create.
-- **Create** an inspiring future - Once you’ve built the foundation, developed clarity around your future, and connected to your whole self - your potential is limitless. You establish goals and action steps to get you there and have me as your accountability partner & cheerleader as you root and rise.
+How would it feel to have complete clarity around your goals and career path, feel confidently you, and kick overwhelm to the curb? Yea, that’s what you can expect in this program. In fact … you will likely feel more emboldened and clear after just the first session.
 
-Invest in yourself! There is truly no better time than now.
+We start with a 90 minute session tackling a whole-life evaluation and from there you can expect weekly homework, accountability, and (of course) me having your back all along the way. Making a career change? Let’s do it! Navigating your life purpose? I got you! Looking to leap into bliss and live your own life instead of others’ expectations? Yessss we’ll make it happen!
 
-[Click or tap here to book your first session](/book/)
+All this goodness is actually way too much for me to share on this page … let’s skip the small talk and get you all the details. [Take me there](/root-to-rise/)!
 
-Questions? Check out the FAQ (below) or [send me a message!](/contact/)
+---
+
+Not finding what you’re looking for? I also do customized programs that tailor to your schedule and needs.
+
+[Click or tap here to book your first session](/book/) today!
+
+Questions? [Check out the FAQ](#faq) or [send me a message!](/contact/)
