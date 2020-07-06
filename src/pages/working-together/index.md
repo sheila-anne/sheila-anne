@@ -26,11 +26,11 @@ faq:
 
 testimonials:
   - title: Hannah G.
-    text: In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in the past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!
+    text: My session with Sheila Anne exceeded all of my expectations! For a while I have been struggling with how to find my career path and I went into the session with Sheila Anne hoping to find some clarity in this aspect. What I learned is that to find this answer I have to dig into another area of my life in which I have been struggling – spirituality and connection to myself. In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!Sheila asks prompting questions which enable you to find the answers within yourself in a supportive, safe and encouraging way. I highly recommend working with her if you have any blocks in your life or just want to feel more grounded!
     imageAlt: Ground To Grow testimonial from Hannah
     imageSrc: /img/hannah-headshot.jpg
   - title: Jessica S.
-    text: Working with Sheila was a wonderful experience. I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive. She held space beautifully and her grounded, calm presence could be felt through the screen. By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless!
+    text: Working with Sheila was a wonderful experience. I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive. She held space beautifully and her grounded, calm presence could be felt through the screen. By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless
     imageAlt: Ground To Grow testimonial from Jessica
     imageSrc: /img/jessica-headshot.jpg
   - title: Brianna M.
