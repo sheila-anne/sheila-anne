@@ -17,6 +17,7 @@ type PageNames = "Working Together" | "Homepage";
 
 type BookingSectionProps = {
   backgroundColor?: string;
+  bookingUrl?: string;
   formTitle: string;
   formDescription: string;
   formParagraph?: string;
@@ -65,6 +66,7 @@ export const BookingSection: FC<BookingSectionProps> = ({
   formParagraph,
   formTitle,
   page,
+  bookingUrl = Constants.square.allServicesUrl,
 }) => {
   const [showBookingSection, setShowBookingSection] = useState(false);
 
@@ -87,10 +89,7 @@ export const BookingSection: FC<BookingSectionProps> = ({
           {showBookingSection ? "Hide" : "Tap To Schedule With Sheila Anne"}
         </SquareButton>
       </CenteredText>
-      <BookingIframe
-        showBookingSection={showBookingSection}
-        src={Constants.schedulingUrl}
-      />
+      <BookingIframe showBookingSection={showBookingSection} src={bookingUrl} />
     </section>
   );
 };

@@ -9,8 +9,14 @@ const Constants = {
   baseUrl: "https://www.sheilaanne.com",
   mobileBreakpoint,
   mobileWidth: mobileBreakpoint + "px",
-  schedulingUrl:
-    "https://squareup.com/appointments/buyer/widget/vlggwbtks6vh2m/T2G1BPTFKKDBJ"
+  square: {
+    allServicesUrl:
+      "https://squareup.com/appointments/buyer/widget/vlggwbtks6vh2m/T2G1BPTFKKDBJ",
+    explorationUrl:
+      "https://squareup.com/appointments/buyer/widget/382r9s8g5atn2g/T2G1BPTFKKDBJ",
+    groundToGrowUrl:
+      "https://squareup.com/appointments/buyer/widget/efbofoh5gwycw0/T2G1BPTFKKDBJ",
+  },
 };
 
 export { Constants };

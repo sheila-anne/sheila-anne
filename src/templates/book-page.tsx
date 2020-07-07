@@ -6,13 +6,27 @@ import {
   BookingIframe,
   HTMLContent,
   Layout,
-  SEO
+  SEO,
 } from "../components";
 import { Constants } from "../constants";
 
-const BookPage = ({ data, location }) => {
+const BookPage = ({ data, location }: { data: any; location: Location }) => {
   const { markdownRemark: post } = data;
   const [showBookingFrame, setShowBookingFrame] = useState(false);
+
+  let bookingUrl = Constants.square.allServicesUrl;
+  if (location) {
+    switch (location.pathname) {
+      case "/book/exploration/": {
+        bookingUrl = Constants.square.explorationUrl;
+        break;
+      }
+      case "/book/ground-to-grow/": {
+        bookingUrl = Constants.square.groundToGrowUrl;
+        break;
+      }
+    }
+  }
 
   return (
     <Layout location={location}>
@@ -27,7 +41,7 @@ const BookPage = ({ data, location }) => {
         height="600px"
         onLoad={() => setShowBookingFrame(true)}
         showBookingSection={showBookingFrame}
-        src={Constants.schedulingUrl}
+        src={bookingUrl}
       />
     </Layout>
   );

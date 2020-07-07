@@ -44,6 +44,10 @@ testimonials:
 <h2 id="exploration-call">Exploration Call</h2>
 This 20-minute complimentary call is an opportunity to tell me your story & learn about how we can work together.  You can ask allllll of the questions & may come away with more clarity & confidence - answers beyond my program.
 
+Let's get started -- [book your exploration call today](/book/exploration/)!
+
+---
+
 <h2 id="ground-to-grow">Ground to Grow Accelerator</h2>
 This one-time 45 minute coaching session will help you understand exactly why you are feeling stuck & overwhelmed, plus tangible steps that you can do to find more peace and fulfillment.
 
@@ -63,7 +67,7 @@ The **Ground to Grow Accelerator** will help you to:
 [Read what people are saying about Ground To Grow!](#testimonials)
 
 Ready to jump in?
-[Yes! Let’s go!](/book/)
+[Schedule your session now!](/book/ground-to-grow/)
 
 <h2 id="root-to-rise">Root to Rise 3 Month Program</h2>
 

@@ -177,7 +177,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
       />
       <section>
         <CenteredText>
-          <BannerHeadline color={"#FFF"} fontColor="#000">
+          <BannerHeadline color="#FFF" fontColor="#000">
             <BannerText>Come Home To Yourself</BannerText>
           </BannerHeadline>
         </CenteredText>
