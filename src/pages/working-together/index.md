@@ -69,6 +69,8 @@ The **Ground to Grow Accelerator** will help you to:
 Ready to jump in?
 [Schedule your session now!](/book/ground-to-grow/)
 
+---
+
 <h2 id="root-to-rise">Root to Rise 3 Month Program</h2>
 
 My signature 3 month, 1:1 coaching program is for those who are ready to create long-lasting change. Embark on a journey of dedicated self care, self discovery, and aligned action.

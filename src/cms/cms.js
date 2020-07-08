@@ -25,7 +25,7 @@ function StyleInjector({ children }) {
   );
 }
 
-export default function withStyledComponents(Comp) {
+function withStyledComponents(Comp) {
   return (props) => (
     <StyleInjector>
       <Comp {...props} />

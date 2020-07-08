@@ -1,19 +1,9 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import { Constants } from "../constants";
-import {
-  BookingSection,
-  Content,
-  FAQ,
-  HTMLContent,
-  Layout,
-  SEO,
-  Testimonial,
-  WorkingTogetherHeader,
-} from "../components";
+import { Content, HTMLContent, Layout, SEO, Testimonial } from "../components";
 
-export const WorkingTogetherTemplate = ({
+export const RootToRiseTemplate = ({
   content,
   contentComponent,
   frontmatter,
@@ -22,24 +12,13 @@ export const WorkingTogetherTemplate = ({
 
   return (
     <section>
-      <WorkingTogetherHeader />
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
-      <hr />
-      <BookingSection
-        page="Working Together"
-        backgroundColor={Constants.Colors.theGroveLightGreen}
-        formTitle={frontmatter.formHeadline}
-        formDescription={frontmatter.formSubHeadline}
-        formParagraph={frontmatter.formParagraph}
-      />
-      <hr />
       <Testimonial testimonials={frontmatter.testimonials} />
-      <FAQ faq={frontmatter.faq} />
     </section>
   );
 };
 
-const WorkingTogether = ({ data, location }) => {
+const RootToRise = ({ data, location }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -51,7 +30,7 @@ const WorkingTogether = ({ data, location }) => {
         location={location}
         title={post.frontmatter.pageTitle}
       />
-      <WorkingTogetherTemplate
+      <RootToRiseTemplate
         contentComponent={HTMLContent}
         content={post.html}
         frontmatter={post.frontmatter}
@@ -60,18 +39,14 @@ const WorkingTogether = ({ data, location }) => {
   );
 };
 
-export default WorkingTogether;
+export default RootToRise;
 
 export const pageQuery = graphql`
-  query TheGrovePage($id: String!) {
+  query RootToRisePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         bannerImageHeadline
-        faq {
-          question
-          answer
-        }
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 300, quality: 95) {
@@ -82,9 +57,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        formHeadline
-        formSubHeadline
-        formParagraph
         pageDescription
         pageTitle
         testimonials {
