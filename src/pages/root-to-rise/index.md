@@ -62,7 +62,7 @@ Through your journey thus far, there’s been a little something missing -- that
 
 <img src="/img/sheila-anne-root-to-rise-intro.jpg" alt="Sheila writing in her office" title="Root To Rise provides that missing link for you" loading="lazy">
 
-I created the Root to Rise program because I know that free spirits like you are ready for _sustainable_ change, which can only come with dedicated time and effort.
+I created the Root to Rise program because I know that free-spirits like you are ready for _sustainable_ change, which can only come with dedicated time and effort.
 
 ## Root to Rise will enable you to:
 
@@ -95,7 +95,7 @@ Are you ready to Root & Rise? [Reserve an intro call now](/book/exploration/)!
 
 ## Why work with me?
 
-Not only am I a Certified Professional Coach, I am also a recovering overachiever and life-long free spirit. I struggled for years feeling overwhelmed by everything I wanted to accomplish, learn, and experience. I wanted to do it all, while appearing totally in control and grounded. This led me toward perfectionist tendencies, an obsession with wellness, and emotional numbing. It wasn’t until my mom passed that I really set myself free. Inspired by her radiant energy, I started digging deeper into discovering who “Sheila” really was, what she truly wanted, and what I needed to do to make it happen. The secret - very little of it was external. It wasn’t a promotion, validation, or a new fitness routine. I left my life in Boston, traveled for 5 months with my partner, and came home to myself in a way I never imagined possible. Now I’ve created a path to help other free-spirited achievers to explore, discover, and transform into the most alive version of themselves 💙. I blend my yoga background and killer focus to bring you into a space that you can feel grounded, safe, and totally resourced to carve your next path.
+Not only am I a Certified Professional Coach, I am also a recovering overachiever and life-long free-spirit. I struggled for years feeling overwhelmed by everything I wanted to accomplish, learn, and experience. I wanted to do it all, while appearing totally in control and grounded. This led me toward perfectionist tendencies, an obsession with wellness, and emotional numbing. It wasn’t until my mom passed that I really set myself free. Inspired by her radiant energy, I started digging deeper into discovering who “Sheila” really was, what she truly wanted, and what I needed to do to make it happen. The secret - very little of it was external. It wasn’t a promotion, validation, or a new fitness routine. I left my life in Boston, traveled for 5 months with my partner, and came home to myself in a way I never imagined possible. Now I’ve created a path to help other free-spirited achievers to explore, discover, and transform into the most alive version of themselves 💙. I blend my yoga background and killer focus to bring you into a space that you can feel grounded, safe, and totally resourced to carve your next path.
 
 ## Here’s how much I believe in us …
 

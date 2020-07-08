@@ -2,7 +2,7 @@
 bannerImageHeadline: "Life Coaching | Working Together"
 featuredImage: /img/sheila-anne-working-together.jpg
 formHeadline: "Let's get started!"
-formParagraph: "This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
+formParagraph: "This 20-minute complementary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
 formSubHeadline: "Setup your free exploration call."
 path: /working-together
 pageDescription: >
@@ -10,23 +10,9 @@ pageDescription: >
 pageTitle: Working Together | Sheila Anne
 templateKey: "working-together"
 
-faq:
-  - question: How do I know if coaching is right for me?
-    answer: >
-      Life coaching is an effective way to progress your life into one that feels aligned, empowered, and fulfilling.  Coaching is designed to continually give power back to the client, to cultivate more growth and self-understanding. If you find yourself feeling like you might not be doing what you really want to do, in your career, physical space, relationships, activities, etc., life coaching can help you gain clarity in your future and take actions toward transformation. Different coaches will have different approaches and niches, so clients have options of the type of coach they want to work with. I specifically focus on health & wellness, life purpose, career coaching, and managing grief & change. To learn more about if we are a good fit, sign up for a complimentary 30 minute call.
-  - question: How is coaching different from therapy?
-    answer: >
-      Therapy can be an amazing tool for working through past experiences, and with the right therapist you can create a beautiful space for healing and personal growth. On the other hand, life coaching is future-focused and progress oriented.  Sessions will focus on where you are and where you want to go. Though we may touch on the past to gain more perspective and context, we will always be bringing it back to the present and the future. I will also support you with accountability tools and homework, because I know that many of the successes and the “a-ha”s actually occur outside of our time together.
-  - question: Where are the coaching sessions held?
-    answer: >
-      Most clients and I meet via video conferencing.  I use a platform that allows us to meet in a private room and communicate in real time with clear video and sound.  I send a meeting link prior to our scheduled appointment.  Alternatively, we can meet via phone calls.
-  - question: What can I expect to get out of coaching with Sheila Anne?
-    answer: >
-      Since life coaching is a client-driven experience, you are in the driver's seat. Put lots of effort into our sessions & into your life in between, and you will be rewarded exponentially! Each time we meet, you will come with something specific that you want to focus on (yes, it’s ok if the conversation organically takes a new direction if that’s what you want!) and it’s my job to support you with tools and additional perspectives. At the end we’ll decide together what actions you will be accountable for before our next session, so you are always moving forward toward your goals. Each time we meet we will celebrate any accomplishments, and you also may always share personal frustrations and questions.
-
 testimonials:
   - title: Hannah G.
-    text: My session with Sheila Anne exceeded all of my expectations! For a while I have been struggling with how to find my career path and I went into the session with Sheila Anne hoping to find some clarity in this aspect. What I learned is that to find this answer I have to dig into another area of my life in which I have been struggling – spirituality and connection to myself. In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!Sheila asks prompting questions which enable you to find the answers within yourself in a supportive, safe and encouraging way. I highly recommend working with her if you have any blocks in your life or just want to feel more grounded!
+    text: My session with Sheila Anne exceeded all of my expectations! For a while I have been struggling with how to find my career path and I went into the session with Sheila Anne hoping to find some clarity in this aspect. What I learned is that to find this answer I have to dig into another area of my life in which I have been struggling – spirituality and connection to myself. In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back! Sheila asks prompting questions which enable you to find the answers within yourself in a supportive, safe and encouraging way. I highly recommend working with her if you have any blocks in your life or just want to feel more grounded!
     imageAlt: Ground To Grow testimonial from Hannah
     imageSrc: /img/hannah-headshot.jpg
   - title: Jessica S.
@@ -64,7 +50,7 @@ The **Ground to Grow Accelerator** will help you to:
 - **Define** roadblocks -- Gain insight into what might be making you feel stuck, constantly overwhelmed, or unfulfilled. You’ll be able to leverage this powerful insight to build epic goals that you’ll really follow through on!
 - **Establish** goals -- Oh yes, you’ll have takeaways! You will craft 3 actionable steps that will infuse joy, decrease stress, and revitalize your daily life.
 
-[Read what people are saying about Ground To Grow!](#testimonials)
+> "In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!" - testimonial excerpt from Hannah G.
 
 Ready to jump in?
 [Schedule your session now!](/book/ground-to-grow/)
@@ -83,15 +69,9 @@ How would it feel to have complete clarity around your goals and career path, fe
 
 We start with a 90 minute session tackling a whole-life evaluation and from there you can expect weekly homework, accountability, and (of course) me having your back all along the way. Making a career change? Let’s do it! Navigating your life purpose? I got you! Looking to leap into bliss and live your own life instead of others’ expectations? Yessss we’ll make it happen!
 
-Let’s skip the small talk and get you alllll the details:
+All this goodness is actually way too much for me to share on this page… let’s skip the small talk and get you alllllll the details. 🤸‍♀️
 
-The 3-month **Root to Rise Program** will enable you to…
-
-- **Explore** all that makes you, you -- Through journaling, visualizations, and assessments you’ll gain deep self awareness and purpose.
-- **Discover** your core values and make all future decisions from a place of intention - Let’s take the guessing out of decision making & create easy-flowing success.
-- **Simplify** your life & infuse joy -- We’ll talk about mindful rituals, minimalism, prioritization, and celebrating things that matter. Simplicity is a core principle of my coaching because I believe your life can be simple and full!
-- **Cultivate** a mind-body connection that will help you prioritize your well being and make lasting change . Set aside your expectations for needing how-to guides and expensive wellness trends, we’re taking things a little deeper here! Here you’ll face your inner monologue and self-sabotaging stories. We’ll talk about how to develop a fresh mindset that is more aligned with the confidence and fulfillment you hope to create.
-- **Create** an inspiring future -- Once you’ve built the foundation, developed clarity around your future, and connected to your whole self - your potential is limitless. You establish goals and action steps to get you there and have me as your accountability partner & cheerleader as you root and rise.
+👉 **[Take me there](/root-to-rise/)!** 👈
 
 ---
 

@@ -21,7 +21,7 @@ const theme = {
       fontStyle: "italic",
       paddingLeft: rhythm(13 / 16),
       marginLeft: rhythm(-1),
-      borderLeft: `${rhythm(3 / 16)} solid hsla(100,30%,50%,1)`,
+      borderLeft: `${rhythm(3 / 16)} solid hsla(169,32%,50%,1)`,
     },
     "blockquote > :last-child": {
       marginBottom: 0,

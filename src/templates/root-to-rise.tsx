@@ -11,6 +11,7 @@ import {
   SEO,
   SquareButton,
   Testimonial,
+  FAQ,
 } from "../components";
 
 const ColorContainer = styled.div<{ backgroundColor?: string }>`
@@ -28,7 +29,7 @@ const CenteredButton = ({ text }: { text: string }) => (
   </CenteredText>
 );
 
-export const RootToRiseTemplate = ({ frontmatter }) => {
+export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
   const testimonials = [...frontmatter.testimonials];
   const firstTestimonial = testimonials.shift();
 
@@ -40,6 +41,7 @@ export const RootToRiseTemplate = ({ frontmatter }) => {
           alt: "Root To Rise with Sheila Anne",
           childImageSharp: frontmatter.featuredImage.childImageSharp,
         }}
+        loading="eager"
       />
       <h2>Get Grounded, Find Balance, Live Aligned</h2>
       <h3>
@@ -164,7 +166,7 @@ export const RootToRiseTemplate = ({ frontmatter }) => {
       <h2>Why Work With Me?</h2>
       <p>
         Not only am I a Certified Professional Coach, I am also a recovering
-        overachiever and life-long free spirit. I struggled for years feeling
+        overachiever and life-long free-spirit. I struggled for years feeling
         overwhelmed by everything I wanted to accomplish, learn, and experience.
         I wanted to do it all, while appearing totally in control and grounded.
         This led me toward perfectionist tendencies, an obsession with wellness,
@@ -183,9 +185,9 @@ export const RootToRiseTemplate = ({ frontmatter }) => {
       </p>
       <h2>Here’s how much I believe in us …</h2>
       <p>
-        I offer a money-back guarantee! If after our initial 90 minute session
-        you are totally not vibing with the energy, I’ll cancel your spot and
-        return your investment.
+        I offer a <b>money-back guarantee!</b> If after our initial 90 minute
+        session you are totally not vibing with the energy, I’ll cancel your
+        spot and return your investment.
       </p>
       <h2>Let’s go!</h2>
       <p>
@@ -200,8 +202,10 @@ export const RootToRiseTemplate = ({ frontmatter }) => {
         <a href="/about/">learn more about my story here</a> or check out the{" "}
         <a href="/working-together#faq">FAQs</a>!
       </p>
-      <h2>What People Are Saying About Root-To-Rise:</h2>
+      <hr />
       <Testimonial testimonials={testimonials} />
+      <hr />
+      <FAQ faq={faqs} />
     </section>
   );
 };
@@ -209,6 +213,9 @@ export const RootToRiseTemplate = ({ frontmatter }) => {
 const RootToRise = ({
   data: {
     markdownRemark: { frontmatter },
+    site: {
+      siteMetadata: { faqs },
+    },
   },
   location,
 }) => (
@@ -220,7 +227,7 @@ const RootToRise = ({
       location={location}
       title={frontmatter.pageTitle}
     />
-    <RootToRiseTemplate frontmatter={frontmatter} />
+    <RootToRiseTemplate frontmatter={frontmatter} faqs={faqs} />
   </Layout>
 );
 
@@ -269,6 +276,14 @@ export const pageQuery = graphql`
             }
           }
           text
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        faqs {
+          answer
+          question
         }
       }
     }
