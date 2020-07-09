@@ -42,6 +42,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           childImageSharp: frontmatter.featuredImage.childImageSharp,
         }}
         loading="eager"
+        title="Sheila standing tall in her power at Garden Of The Gods"
       />
       <h2>Get Grounded, Find Balance, Live Aligned</h2>
       <h3>
@@ -83,6 +84,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           alt: "Root To Rise with Sheila Anne, shown writing in her office",
           childImageSharp: frontmatter.secondImage.childImageSharp,
         }}
+        title="Sheila using the power of reflection to gather her thoughts"
       />
       <br />
       <p>
@@ -142,8 +144,6 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           results. Think of each session as your safe space to breathe, tap in,
           and bloom.
         </p>
-        <br />
-        <p>Are you ready to Root & Rise?</p>
         <CenteredButton text="Reserve your intro call now!" />
         <h2>What This Program Includes</h2>
         <ul>
@@ -162,6 +162,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           alt: "Root To Rise with Sheila Anne, this time in the Alps",
           childImageSharp: frontmatter.thirdImage.childImageSharp,
         }}
+        title="Sheila standing tall in her power, this time in the Alps"
       />
       <h2>Why Work With Me?</h2>
       <p>

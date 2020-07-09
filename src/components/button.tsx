@@ -5,7 +5,7 @@ import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
 
 type PillButtonProps = {
-  onClick?: (e: MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onClick?: (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => void;
   type?: "submit" | undefined;
 };
 
@@ -109,7 +109,7 @@ export const SquareButton: FC<PillButtonProps> = ({
   onClick,
   type,
 }) => (
-  <StyledSquareButton onClick={(e) => onClick && onClick(e as any)} type={type}>
+  <StyledSquareButton onClick={(e) => onClick && onClick(e)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
   </StyledSquareButton>
 );

@@ -41,7 +41,7 @@ export const BookingIframe = styled.iframe<{
 `;
 
 const handleSubmit = (
-  e: MouseEvent<HTMLButtonElement, MouseEvent>,
+  e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
   setShowBookingSection: Dispatch<SetStateAction<boolean>>,
   showBookingSection: boolean,
   page: PageNames

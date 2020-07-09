@@ -193,7 +193,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
                 Start your journey with me.
               </BannerLink>
             </BannerHeadline>
-            <h3>Here's What Working Together Looks Like:</h3>
+            <h3>Here's How We Can Work Together:</h3>
           </CenteredText>
           <FlexContainer>
             <Features gridItems={frontmatter.intro.blurbs} />

@@ -37,7 +37,7 @@ Let's get started -- [book your exploration call today](/book/exploration/)!
 <h2 id="ground-to-grow">Ground to Grow Accelerator</h2>
 This one-time 45 minute coaching session will help you understand exactly why you are feeling stuck & overwhelmed, plus tangible steps that you can do to find more peace and fulfillment.
 
-<img src="/img/sheila-anne-ground-to-grow.jpg" alt="Sheila harnessing her energy at Red Rocks" title="This is how you feel after Ground To Grow" loading="lazy">
+![Sheila harnessing her energy at Garden Of The Gods](/img/sheila-anne-ground-to-grow.jpg)
 
 ### Tell me more!
 
@@ -61,7 +61,7 @@ Ready to jump in?
 
 My signature 3 month, 1:1 coaching program is for those who are ready to create long-lasting change. Embark on a journey of dedicated self care, self discovery, and aligned action.
 
-<img src="/img/sheila-anne-root-to-rise.jpg" alt="Sheila in Reversed Warrior by the Pacific" title="This is how you feel after Root To Rise" loading="lazy">
+![Sheila in Reversed Warrior by the Pacific](/img/sheila-anne-root-to-rise.jpg)
 
 ### Tell me more!
 
