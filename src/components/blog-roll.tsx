@@ -47,12 +47,15 @@ const FeaturedThumbnail = styled.div`
 `;
 
 const Article = styled.article<ArticleProps>`
+  align-items: center;
   background-color: ${({ isFeatured }) =>
     isFeatured
       ? Constants.Colors.theGroveGreenGray
       : Constants.Colors.theGroveLightGreen};
   border-radius: 1rem;
   color: #000;
+  display: flex;
+  height: 200px;
   margin: 1rem;
   overflow: hidden;
   padding: 0 1rem 1rem 1rem;
@@ -60,6 +63,13 @@ const Article = styled.article<ArticleProps>`
   @media (max-width: ${Constants.mobileWidth}) {
     height: 100%;
     margin: 0;
+  }
+`;
+
+const Paragraph = styled.p`
+  display: none;
+  @media (max-width: ${Constants.mobileWidth}) {
+    display: block;
   }
 `;
 
@@ -90,6 +100,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
       ) : null}
       <FlexTextContainer>
         <FlexTitle itemProp="name headline">{post.frontmatter.title}</FlexTitle>
+        <Paragraph>{post.excerpt}</Paragraph>
       </FlexTextContainer>
     </FlexHeader>
   </Article>

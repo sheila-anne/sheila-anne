@@ -38,6 +38,7 @@ declare type BlogPostFrontmatter = {
 
 declare type BlogPostInner = {
   id: string;
+  excerpt: string;
   fields: BlogPostFields;
   frontmatter: BlogPostFrontmatter;
 };
