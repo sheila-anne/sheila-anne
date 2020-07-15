@@ -13,6 +13,7 @@ import {
   FullWidthImage,
   Instagram,
   Layout,
+  OptInForm,
   PreviewCompatibleBanner,
   PreviewCompatibleImage,
   SEO,
@@ -195,6 +196,12 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
                 Start your journey with me.
               </BannerLink>
             </BannerHeadline>
+            <OptInForm
+              formTitle="Download my free something!"
+              backgroundColor="#FFF"
+              page="opt-in"
+              formDescription="Sign up below to receive my exclusive guide to ..."
+            />
             <h3>Here's How We Can Work Together:</h3>
           </CenteredText>
           <FlexContainer>

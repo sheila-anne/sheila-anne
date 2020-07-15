@@ -9,7 +9,7 @@ export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
 export { BookingIframe, BookingSection } from "./booking";
 export { Button, PlainButton, PillButton } from "./button";
-export { SubscribeForm } from "./forms/";
+export { OptInForm, SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered";
 export { FAQ } from "./faq";

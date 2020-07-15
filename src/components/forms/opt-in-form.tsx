@@ -5,25 +5,19 @@ import React, {
   SetStateAction,
   useState,
 } from "react";
-import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
-import { FormWrapperSection, Input, TextArea } from "./form-elements";
+import { FormWrapperSection, Input } from "./form-elements";
 import { FormPage } from "../../types/forms";
 import { PillButton } from "../button";
 import { trackFacebook } from "../../utils";
 
-type SubscribeFormProps = {
+type OptInFormProps = {
   backgroundColor: string;
   formTitle: string;
   formDescription: string;
-  formParagraph?: string;
   page: FormPage;
 };
-
-const PaddedParagraph = styled.p`
-  padding: 5px;
-`;
 
 const handleSubmit = async (
   e: FormEvent<HTMLFormElement>,
@@ -52,7 +46,7 @@ const handleSubmit = async (
     formValues[element.name] = element.value;
   }
 
-  const res = await fetch("/.netlify/functions/form-handler", {
+  const res = await fetch("/.netlify/functions/subscribe-handler", {
     method: "POST",
     body: JSON.stringify(formValues),
   })
@@ -66,20 +60,19 @@ const handleSubmit = async (
   setButtonText(success ? "Success!" : "Error");
 };
 
-export const SubscribeForm: FC<SubscribeFormProps> = ({
+export const OptInForm: FC<OptInFormProps> = ({
   backgroundColor,
   formDescription,
-  formParagraph,
   formTitle,
   page,
 }) => {
-  const [buttonText, setButtonText] = useState("Submit!");
+  const [buttonText, setButtonText] = useState("Yes, send it to me!");
+  //TODO: consolidate this and the subscribe form!
 
   return (
     <FormWrapperSection centerText={true} itemProp="mainContentOfPage">
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
-      {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
       <form onSubmit={e => handleSubmit(e, setButtonText, page)}>
         <Input
           autoComplete="name"
@@ -100,24 +93,6 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
           required={true}
           placeholder="Email"
         />
-        <Input
-          autoComplete="tel"
-          backgroundColor={backgroundColor}
-          id="phone"
-          inputMode="tel"
-          maxLength={11}
-          name="phone"
-          placeholder="Phone (optional)"
-          type="tel"
-        />
-        <div>
-          <TextArea
-            id="message"
-            name="message"
-            placeholder="Message"
-            required={true}
-          />
-        </div>
         <PillButton type="submit">{buttonText}</PillButton>
       </form>
     </FormWrapperSection>
