@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { Footer } from "./footer";
 import { Nav } from "./nav";
-import { rhythm } from "../utils/typography";
+import { maxPageWidth, rhythm } from "../utils/";
 import { useScrollHandler } from "../hooks/useScrollHandler";
 
 const MainWrapper = styled.main`
@@ -23,8 +23,8 @@ const MainWrapper = styled.main`
   }
 
   margin: 0 auto;
-  max-width: ${rhythm(35)};
-  padding: ${rhythm(0.5)} ${rhythm(3 / 4)};
+  max-width: ${maxPageWidth};
+  padding: ${rhythm(1 / 2)} ${rhythm(3 / 4)};
   z-index: 100;
   height: 100%;
   max-height: 100%;

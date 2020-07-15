@@ -70,6 +70,7 @@ declare type Colors = {
 };
 
 type FeaturedGridItem = PreviewImage & {
+  href: string;
   imageAlt?: string;
   text: string;
   title: string;

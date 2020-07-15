@@ -42,6 +42,7 @@ const BookPage = ({ data, location }: { data: any; location: Location }) => {
         onLoad={() => setShowBookingFrame(true)}
         showBookingSection={showBookingFrame}
         src={bookingUrl}
+        scrolling="no"
       />
     </Layout>
   );

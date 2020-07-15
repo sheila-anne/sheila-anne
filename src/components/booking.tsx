@@ -10,8 +10,8 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { CenteredText } from "./centered";
 import { Constants } from "../constants";
-import { SquareButton } from "./button";
-import { trackFacebook } from "../utils";
+import { PillButton } from "./button";
+import { maxPageWidth, trackFacebook } from "../utils";
 
 type PageNames = "Working Together" | "Homepage";
 
@@ -37,7 +37,11 @@ export const BookingIframe = styled.iframe<{
   display: ${({ showBookingSection }) =>
     showBookingSection ? "block" : "none"};
   min-height: ${({ height }) => (height ? height : "500px")};
-  width: 100%;
+  width: ${maxPageWidth};
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    width: 100%;
+  }
 `;
 
 const handleSubmit = (
@@ -81,15 +85,19 @@ export const BookingSection: FC<BookingSectionProps> = ({
         {!!formParagraph && !showBookingSection && (
           <PaddedParagraph>{formParagraph}</PaddedParagraph>
         )}
-        <SquareButton
-          onClick={(e) =>
+        <PillButton
+          onClick={e =>
             handleSubmit(e, setShowBookingSection, showBookingSection, page)
           }
         >
           {showBookingSection ? "Hide" : "Tap To Schedule With Sheila Anne"}
-        </SquareButton>
+        </PillButton>
       </CenteredText>
-      <BookingIframe showBookingSection={showBookingSection} src={bookingUrl} />
+      <BookingIframe
+        showBookingSection={showBookingSection}
+        src={bookingUrl}
+        scrolling="no"
+      />
     </section>
   );
 };

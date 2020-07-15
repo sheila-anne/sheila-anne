@@ -8,7 +8,7 @@ export { BlogPostMeta } from "./blog-post-meta";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
 export { BookingIframe, BookingSection } from "./booking";
-export { Button, PlainButton, SquareButton } from "./button";
+export { Button, PlainButton, PillButton } from "./button";
 export { SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered";

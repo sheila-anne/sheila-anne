@@ -54,36 +54,43 @@ const ButtonSpan = styled.span`
   padding: 17px 28px;
   background-size: 100% 200%;
   background-position: top;
+  border-radius: 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
     background-color: ${Constants.Colors.theGroveGreen};
   }
 `;
 
-const StyledSquareButton = styled.button`
-  position: relative;
-  padding: 0;
-  border: none;
-  outline: none;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.2;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+const StyledPillButton = styled.button`
   background: transparent;
+  border: none;
   color: #000;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 1rem 0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
 
   &:before {
+    background: ${Constants.Colors.theGroveGreen};
+    border-radius: 1rem;
+    bottom: 0;
     content: "";
     display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     height: 1px;
+    left: 0;
+    position: absolute;
     transition: 0.3s ease height;
-    background: ${Constants.Colors.theGroveGreen};
+    width: 100%;
+
+    @media (max-width: ${Constants.mobileWidth}) {
+      display: none;
+    }
   }
 
   &:hover,
@@ -104,12 +111,12 @@ const StyledSquareButton = styled.button`
   }
 `;
 
-export const SquareButton: FC<PillButtonProps> = ({
+export const PillButton: FC<PillButtonProps> = ({
   children,
   onClick,
   type,
 }) => (
-  <StyledSquareButton onClick={(e) => onClick && onClick(e)} type={type}>
+  <StyledPillButton onClick={e => onClick && onClick(e)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
-  </StyledSquareButton>
+  </StyledPillButton>
 );

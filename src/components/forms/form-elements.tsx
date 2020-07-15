@@ -15,6 +15,7 @@ type FormWrapperProps = {
 export const Input = styled.input<InputProps>`
   ${({ backgroundColor }) =>
     !!backgroundColor && `background-color: ${backgroundColor};`}
+  margin: 1rem 0;
 `;
 
 export const TextArea = styled.textarea`

@@ -1,7 +1,8 @@
-import Typography from "typography";
+import Typography, { TypographyOptions } from "typography";
 
-const theme = {
-  title: "Sheila Anne Theme",
+import { Constants } from "../constants";
+
+const theme: TypographyOptions = {
   baseFontSize: "16px",
   baseLineHeight: 1.75,
   scaleRatio: 5 / 2,
@@ -19,9 +20,9 @@ const theme = {
       ...scale(1 / 5),
       color: `#000`,
       fontStyle: "italic",
-      paddingLeft: rhythm(13 / 16),
+      paddingLeft: rhythm(3 / 4),
       marginLeft: rhythm(-1),
-      borderLeft: `${rhythm(3 / 16)} solid hsla(169,32%,50%,1)`,
+      borderLeft: `${rhythm(3 / 16)} solid ${Constants.Colors.theGroveGreen}`,
     },
     "blockquote > :last-child": {
       marginBottom: 0,
@@ -40,7 +41,7 @@ const theme = {
     hr: {
       height: "1px",
       width: "100%",
-      marginTop: `calc(${rhythm(0.5)} - 1px)`,
+      marginTop: `calc(${rhythm(1 / 2)} - 1px)`,
     },
     "ul,ol": {
       marginBottom: "1rem",
@@ -58,7 +59,7 @@ const theme = {
       blockquote: {
         marginLeft: rhythm(-3 / 4),
         marginRight: 0,
-        paddingLeft: rhythm(9 / 16),
+        paddingLeft: rhythm(3 / 4),
       },
       "h1,h2,h3,h4,h5,h6": {
         marginBottom: rhythm(1 / 2),
@@ -73,13 +74,13 @@ const theme = {
       fontStyle: "italic",
     },
     a: {
-      color: "#57a99a",
+      color: `${Constants.Colors.theGroveGreen}`,
     },
     "a:hover,a:active": {
       boxShadow: "none",
     },
     "mark,ins": {
-      background: "#57a99a",
+      background: `${Constants.Colors.theGroveGreen}`,
       color: "#FFF",
       padding: `${rhythm(1 / 16)} ${rhythm(1 / 8)}`,
       textDecoration: "none",
@@ -94,4 +95,5 @@ if (process.env.NODE_ENV !== "production") {
 
 export default typography;
 export const rhythm = typography.rhythm;
-export const scale = typography.scale;
+
+export const maxPageWidth = typography.rhythm(35);

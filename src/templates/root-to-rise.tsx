@@ -9,7 +9,7 @@ import {
   Layout,
   PreviewCompatibleImage,
   SEO,
-  SquareButton,
+  PillButton,
   Testimonial,
   FAQ,
 } from "../components";
@@ -23,9 +23,9 @@ const ColorContainer = styled.div<{ backgroundColor?: string }>`
 
 const CenteredButton = ({ text }: { text: string }) => (
   <CenteredText margin="1rem 0">
-    <SquareButton onClick={() => navigate("/book/exploration/")}>
+    <PillButton onClick={() => navigate("/book/exploration/")}>
       {text}
-    </SquareButton>
+    </PillButton>
   </CenteredText>
 );
 

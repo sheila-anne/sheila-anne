@@ -19,17 +19,20 @@ mainpitch:
 
 intro:
   blurbs:
-    - image: /img/sheila-anne-discover.png
+    - href: /book/exploration/
+      image: /img/sheila-anne-discover.png
       imageAlt: Discover what it's like to work with Sheila.
       title: Exploration Call
       text: >
         Let's get to know you! 20 minute complementary call that identifies how coaching can help you in your life.
-    - image: /img/sheila-anne-grow.png
+    - href: /working-together#ground-to-grow
+      image: /img/sheila-anne-grow.png
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
       title: Ground To Grow Accelerator
       text: >
         45-minute power session to address you're feeling stuck and provide tangible steps towards greater fulfillment (a great place to start)!
-    - image: /img/sheila-anne-transform.png
+    - href: /root-to-rise/
+      image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
       title: Root To Rise
       text: >

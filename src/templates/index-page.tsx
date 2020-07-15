@@ -37,7 +37,9 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   formParagraph: string;
   heading: string;
   image: PreviewImage | string;
-  intro: any;
+  intro: {
+    blurbs: FeaturedGridItem[];
+  };
   mainpitch: MainPitch;
   testimonials: any;
 };
@@ -304,6 +306,7 @@ export const pageQuery = graphql`
         }
         intro {
           blurbs {
+            href
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {

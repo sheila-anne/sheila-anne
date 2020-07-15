@@ -3,13 +3,13 @@ import React, {
   FC,
   FormEvent,
   SetStateAction,
-  useState
+  useState,
 } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { FormWrapperSection, Input, TextArea } from "./form-elements";
-import { SquareButton } from "../button";
+import { PillButton } from "../button";
 import { trackFacebook } from "../../utils";
 
 type SubscribeFormProps = {
@@ -35,7 +35,7 @@ const handleSubmit = async (
   const args = {
     action: "submit",
     category: `Form Submission`,
-    label: page
+    label: page,
   };
   trackCustomEvent(args);
   trackFacebook("track", "Lead", args);
@@ -53,11 +53,11 @@ const handleSubmit = async (
 
   const res = await fetch("/.netlify/functions/form-handler", {
     method: "POST",
-    body: JSON.stringify(formValues)
+    body: JSON.stringify(formValues),
   })
     .then(res => res.json())
     .catch(() => ({
-      success: false
+      success: false,
     }));
 
   const success = !!res?.success;
@@ -70,7 +70,7 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
   formDescription,
   formParagraph,
   formTitle,
-  page
+  page,
 }) => {
   const [buttonText, setButtonText] = useState("Submit!");
 
@@ -80,49 +80,44 @@ const SubscribeForm: FC<SubscribeFormProps> = ({
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
       <form onSubmit={e => handleSubmit(e, setButtonText, page)}>
-        <p>
-          <Input
-            autoComplete="name"
-            backgroundColor={backgroundColor}
-            type="text"
-            id="name"
-            name="name"
-            required={true}
-            placeholder="Name"
-          />
-        </p>
-        <p>
-          <Input
-            autoComplete="email"
-            backgroundColor={backgroundColor}
-            type="email"
-            id="email"
-            inputMode="email"
-            name="email"
-            required={true}
-            placeholder="Email"
-          />
-        </p>
-        <p>
-          <Input
-            autoComplete="tel"
-            backgroundColor={backgroundColor}
-            id="phone"
-            inputMode="tel"
-            maxLength={11}
-            name="phone"
-            placeholder="Phone (optional)"
-            type="tel"
-          />
-        </p>
-        <p>
+        <Input
+          autoComplete="name"
+          backgroundColor={backgroundColor}
+          type="text"
+          id="name"
+          name="name"
+          required={true}
+          placeholder="Name"
+        />
+        <Input
+          autoComplete="email"
+          backgroundColor={backgroundColor}
+          type="email"
+          id="email"
+          inputMode="email"
+          name="email"
+          required={true}
+          placeholder="Email"
+        />
+        <Input
+          autoComplete="tel"
+          backgroundColor={backgroundColor}
+          id="phone"
+          inputMode="tel"
+          maxLength={11}
+          name="phone"
+          placeholder="Phone (optional)"
+          type="tel"
+        />
+        <div>
           <TextArea
             id="message"
             name="message"
-            placeholder="Message (optional)"
-          ></TextArea>
-        </p>
-        <SquareButton type="submit">{buttonText}</SquareButton>
+            placeholder="Message"
+            required={true}
+          />
+        </div>
+        <PillButton type="submit">{buttonText}</PillButton>
       </form>
     </FormWrapperSection>
   );
