@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Layout, SEO, SubscribeForm } from "../../components/";
+import { ContactForm, Layout, SEO } from "../../components/";
 
 export default ({ location }) => {
   return (
@@ -10,7 +10,7 @@ export default ({ location }) => {
         location={location}
         title="Contact | Sheila Anne"
       />
-      <SubscribeForm
+      <ContactForm
         backgroundColor="#FFF"
         formTitle="Let's get in touch"
         formDescription="Have further questions for me? Don't hesitate to reach out, let's get to know one another:"
