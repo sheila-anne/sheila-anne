@@ -89,6 +89,7 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
           name="name"
           required={true}
           placeholder="Name"
+          title="Name"
         />
         <Input
           autoComplete="email"
@@ -99,6 +100,7 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
           name="email"
           required={true}
           placeholder="Email"
+          title="Email"
         />
         <Input
           autoComplete="tel"
@@ -109,6 +111,7 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
           name="phone"
           placeholder="Phone (optional)"
           type="tel"
+          title="Phone Number"
         />
         <div>
           <TextArea
@@ -116,6 +119,7 @@ export const SubscribeForm: FC<SubscribeFormProps> = ({
             name="message"
             placeholder="Message"
             required={true}
+            title="Write your message here"
           />
         </div>
         <PillButton type="submit">{buttonText}</PillButton>
