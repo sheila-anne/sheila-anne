@@ -55,8 +55,8 @@
     "dev:functions": "tsc -p src/lambda/tsconfig.json -w",
     "serve": "gatsby serve",
     "build": "run-p build:**",
-    "build:functions": "tsc -p src/lambda/tsconfig.json",
-    "build:app": "gatsby build"
+    "build:lambda": "tsc -p src/lambda/tsconfig.json",
+    "build:site": "gatsby build"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.59",

@@ -1,7 +1,7 @@
 [build]
   publish = "public"
   command = "yarn build"
-  functions = "src/lambda/dist"
+  functions = "src/lambda/dist/lambda"
 
 [dev]
   command = "yarn dev"

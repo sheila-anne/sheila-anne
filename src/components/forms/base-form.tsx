@@ -32,6 +32,7 @@ const PaddedParagraph = styled.p`
 
 const handleSubmit = async (
   e: FormEvent<HTMLFormElement>,
+  formRoute: string,
   setButtonText: Dispatch<SetStateAction<string>>,
   page: string
 ) => {
@@ -57,7 +58,7 @@ const handleSubmit = async (
     formValues[element.name] = element.value;
   }
 
-  const res = await fetch("/.netlify/functions/form-handler", {
+  const res = await fetch(formRoute, {
     method: "POST",
     body: JSON.stringify(formValues),
   })
@@ -78,6 +79,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   children,
   formDescription,
   formParagraph,
+  formRoute,
   formTitle,
   page,
   submitText,
@@ -89,7 +91,7 @@ export const BaseForm: FC<BaseFormProps> = ({
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
-      <form onSubmit={e => handleSubmit(e, setButtonText, page)}>
+      <form onSubmit={e => handleSubmit(e, formRoute, setButtonText, page)}>
         {children}
         <PillButton type="submit">{buttonText}</PillButton>
       </form>

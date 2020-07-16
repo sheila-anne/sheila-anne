@@ -2,6 +2,19 @@ import "dotenv/config";
 import { APIGatewayEvent, Context } from "aws-lambda";
 import fetch from "node-fetch";
 
+import { FormPage } from "../types/forms";
+
+type MailchimpResponse = {
+  title: string;
+  status: string;
+};
+
+type EventBody = {
+  page: FormPage;
+  name: string;
+  email: string;
+};
+
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
   if (!event.body) {
     return {
@@ -11,13 +24,17 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
   }
   console.log(`Received subscribe event: ${event.body}`);
 
-  const eventProperties = JSON.parse(event.body);
+  const eventProperties = JSON.parse(event.body) as EventBody;
+  const names =
+    eventProperties.name.indexOf(" ") > -1
+      ? eventProperties.name.split(" ")
+      : [eventProperties.name, "No Last Name"];
   const data = {
-    email_address: eventProperties.EMAIL,
+    email_address: eventProperties.email,
     status: "subscribed",
     merge_fields: {
-      FNAME: eventProperties.FNAME,
-      LNAME: eventProperties.LNAME,
+      FirstName: names[0],
+      LastName: names[1],
     },
     tags: ["opt-in-tag"],
   };
@@ -33,7 +50,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
     body: JSON.stringify(data),
   })
     .then(response => response.json())
-    .then(data => {
+    .then((data: MailchimpResponse) => {
       const memberExists = data.title === "Member Exists";
       const statusCode =
         data.status === "subscribed" || memberExists ? 200 : 422;
