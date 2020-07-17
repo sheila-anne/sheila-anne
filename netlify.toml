@@ -1,7 +1,11 @@
 [build]
   publish = "public"
   command = "yarn build"
-  functions = "src/lambda"
+  functions = "src/lambda/dist/lambda"
+
+[dev]
+  command = "yarn dev"
+  port = 34567
 
 [[plugins]]
 package = "netlify-plugin-gatsby-cache"
