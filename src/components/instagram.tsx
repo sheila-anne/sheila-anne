@@ -59,7 +59,7 @@ const Wrapper = styled(Anchor)`
   > div img {
     transition: all 0.3s ease 0s !important;
   }
-  &:hover {
+  &::hover {
     ${OpaqueOverlay} {
       opacity: 1;
     }
@@ -89,22 +89,14 @@ export const Instagram: FC<InstagramProps> = ({ insta, instagramUrl }) => (
     <CenteredText>
       <h1>Don't Miss A Beat</h1>
       <div>
-        Follow along on <SmartLink to={instagramUrl}> Instagram</SmartLink> for
-        motivation, inspiration, and yoga flows:
+        Follow along on <SmartLink to={instagramUrl}> Instagram</SmartLink> for motivation, inspiration, and yoga flows:
       </div>
     </CenteredText>
-    <Grid
-      justifyContent="start"
-      gap={"small"}
-      columns={[`1fr`, `1fr`, `1fr`]}
-      margin="1rem 0 0 0"
-    >
+    <Grid justifyContent="start" gap={"small"} columns={[`1fr`, `1fr`, `1fr`]} margin="1rem 0 0 0">
       {insta.edges.map(
         instagram =>
           instagram.node.localFile &&
-          instagram.node.localFile.childImageSharp && (
-            <InstagramPicture key={instagram.node.id} node={instagram.node} />
-          )
+          instagram.node.localFile.childImageSharp && <InstagramPicture key={instagram.node.id} node={instagram.node} />
       )}
     </Grid>
   </section>

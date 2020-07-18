@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import React, {
-  ComponentType,
-  Dispatch,
-  FormEvent,
-  SetStateAction,
-  useState,
-} from "react";
+import React, { ComponentType, Dispatch, FormEvent, SetStateAction, useState, ReactHTMLElement } from "react";
 
 import { Constants } from "../../constants";
 import { applyStyle } from "../../utils";
@@ -19,36 +13,53 @@ type FormWrapperProps = {
   centerText?: boolean;
 };
 
-const setValid = (
-  e: FormEvent<HTMLFormElement>,
-  setIsInvalid: Dispatch<SetStateAction<boolean>>
-) => {
+const setAriaInvalid = (e: FormEvent<HTMLFormElement>, setIsInvalid: Dispatch<SetStateAction<boolean>>) => {
   e.preventDefault();
   setIsInvalid(!e.currentTarget.validity.valid);
 };
 
-function higherOrderStyledComponent<T>(Component: ComponentType<T>) {
+function accessibleComponent<T>(Component: ComponentType<T>) {
   const [isInvalid, setIsInvalid] = useState(true);
 
-  return (props: T) => (
+  return (props: T & { title?: string }) => (
     <Component
       {...props}
-      onInput={(e: FormEvent<HTMLFormElement>) => setValid(e, setIsInvalid)}
+      onInput={(e: FormEvent<HTMLFormElement>) => setAriaInvalid(e, setIsInvalid)}
       aria-invalid={isInvalid}
+      aria-label={!!props.title ? props.title : undefined}
     />
   );
 }
 
-export const Input = (props: InputProps) =>
-  higherOrderStyledComponent(InputInner)(props);
+export const Hidden = styled.span`
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+`;
 
-export const TextArea = (
-  props: React.TextareaHTMLAttributes<HTMLTextAreaElement>
-) => higherOrderStyledComponent(TextAreaInner)(props);
+function ariaWrapper<T>(Component: ComponentType<T>, props: React.FormHTMLAttributes<HTMLElement>) {
+  const ariaWrappedComponent = accessibleComponent(Component)(props as T);
+  return props.title ? (
+    <label htmlFor={props.name}>
+      <Hidden>{props.title}</Hidden>
+      {ariaWrappedComponent}
+    </label>
+  ) : (
+    ariaWrappedComponent
+  );
+}
+
+export const Input = (props: InputProps) => ariaWrapper(InputInner, props);
+
+export const TextArea = (props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) => ariaWrapper(TextAreaInner, props);
 
 const InputInner = styled.input<InputProps>`
-  ${({ backgroundColor }) =>
-    !!backgroundColor && `background-color: ${backgroundColor};`}
+  ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}
   margin: 1rem 0;
 `;
 
@@ -63,8 +74,7 @@ const TextAreaInner = styled.textarea`
 `;
 
 export const FormWrapperSection = styled.section<FormWrapperProps>`
-  ${({ alignItems }) =>
-    applyStyle("align-items", !!alignItems ? alignItems : "center")}
+  ${({ alignItems }) => applyStyle("align-items", !!alignItems ? alignItems : "center")}
   display: flex;
   flex-flow: column;
   margin: 1rem auto;

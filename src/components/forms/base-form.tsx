@@ -1,10 +1,4 @@
-import React, {
-  Dispatch,
-  FC,
-  FormEvent,
-  SetStateAction,
-  useState,
-} from "react";
+import React, { Dispatch, FC, FormEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -48,9 +42,7 @@ const handleSubmit = async (
   trackFacebook("track", "Lead", args);
 
   const formValues = { page };
-  const formElements = (Array.from(
-    e.currentTarget.elements
-  ) as unknown) as HTMLInputElement[];
+  const formElements = (Array.from(e.currentTarget.elements) as unknown) as HTMLInputElement[];
   for (let element of formElements) {
     if (element.value === element.defaultValue || !element.value) {
       continue;

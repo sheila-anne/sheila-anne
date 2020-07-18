@@ -7,12 +7,7 @@ type OptInFormProps = BaseFormProps & {
   backgroundColor: string;
 };
 
-export const OptInForm: FC<OptInFormProps> = ({
-  backgroundColor,
-  formDescription,
-  formTitle,
-  page,
-}) => (
+export const OptInForm: FC<OptInFormProps> = ({ backgroundColor, formDescription, formTitle, page }) => (
   <BaseForm
     formDescription={formDescription}
     formRoute="/.netlify/functions/subscribe-handler"
@@ -28,6 +23,7 @@ export const OptInForm: FC<OptInFormProps> = ({
       name="name"
       required={true}
       placeholder="Name"
+      title="Name"
     />
     <Input
       autoComplete="email"
@@ -38,6 +34,7 @@ export const OptInForm: FC<OptInFormProps> = ({
       name="email"
       required={true}
       placeholder="Email"
+      title="Email"
     />
   </BaseForm>
 );

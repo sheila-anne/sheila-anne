@@ -55,13 +55,7 @@ export const ContactForm: FC<ContactFormProps> = ({
       title="Phone Number"
     />
     <div>
-      <TextArea
-        id="message"
-        name="message"
-        placeholder="Message"
-        required={true}
-        title="Write your message here"
-      />
+      <TextArea id="message" name="message" placeholder="Message" required={true} title="Write your message here" />
     </div>
   </BaseForm>
 );
