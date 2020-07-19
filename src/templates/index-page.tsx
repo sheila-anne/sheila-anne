@@ -7,13 +7,13 @@ import {
   BlogRoll,
   BookingSection,
   CenteredText,
+  ContentBreak,
   Features,
   FlexContainer,
   FullWidthImage,
   Instagram,
   Layout,
   LinkButton,
-  OptInForm,
   PreviewCompatibleBanner,
   PreviewCompatibleImage,
   SEO,
@@ -162,24 +162,13 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPre
       <section>
         <CenteredText>
           <BannerHeadline color="#FFF" fontColor="#000">
-            <BannerText>Come Home To Yourself</BannerText>
+            <BannerText>Come Home To Yourself, Transform Your Life</BannerText>
           </BannerHeadline>
         </CenteredText>
         <Container>
           <CenteredText>
             <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
-            <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen} margin="0 0 2rem 0">
-              <BannerLink to="/working-together/" title="Let's work together">
-                Start your journey with me.
-              </BannerLink>
-            </BannerHeadline>
-            <OptInForm
-              formTitle="Download my free something!"
-              backgroundColor="#FFF"
-              page="opt-in"
-              formDescription="Sign up below to receive my exclusive guide to ..."
-              submitText="Yes, send it to me!"
-            />
+            <ContentBreak />
             <h3>Here's How We Can Work Together:</h3>
           </CenteredText>
           <FlexContainer>

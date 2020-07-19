@@ -8,7 +8,7 @@ bannerSubtitle: >
   Curious to learn more?
 image: /img/sheila-anne-about.jpg
 description: >
-  We work together to ... ditch overwhelm & expectations, cultivate a mind-body connection, and find the career that brings you real joy.
+  I am a life transformation coach that works with purpose-driven women like you — tired of questioning where you are and where you're going; dreaming of a life outside of the grind; all the boxes checked but still feeling incomplete. Let's make a change together!
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"

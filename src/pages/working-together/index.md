@@ -25,8 +25,6 @@ testimonials:
     imageSrc: /img/brianna-headshot.jpg
 ---
 
-![Working together with Sheila Anne](/img/sheila-anne-working-together.jpg)
-
 <h2 id="exploration-call">Exploration Call</h2>
 This 20-minute complimentary call is an opportunity to tell me your story & learn about how we can work together.  You can ask allllll of the questions & may come away with more clarity & confidence - answers beyond my program.
 
@@ -53,7 +51,7 @@ The **Ground to Grow Accelerator** will help you to:
 - **Define** roadblocks -- Gain insight into what might be making you feel stuck, constantly overwhelmed, or unfulfilled. You’ll be able to leverage this powerful insight to build epic goals that you’ll really follow through on!
 - **Establish** goals -- Oh yes, you’ll have takeaways! You will craft 3 actionable steps that will infuse joy, decrease stress, and revitalize your daily life.
 
-> "In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!" - testimonial excerpt from Hannah G.
+> "In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back!" - [Hannah G](#testimonials).
 
 Ready to jump in?
 [Schedule your session now!](/book/ground-to-grow/)
