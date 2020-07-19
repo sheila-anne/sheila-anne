@@ -3,24 +3,22 @@ import React, { FC } from "react";
 import { BaseForm, BaseFormProps } from "./base-form";
 import { Input, TextArea } from "./form-elements";
 
-type ContactFormProps = BaseFormProps & {
-  backgroundColor: string;
-};
-
-export const ContactForm: FC<ContactFormProps> = ({
+export const ContactForm: FC<BaseFormProps> = ({
   backgroundColor,
   formDescription,
   formParagraph,
+  formRoute = "/.netlify/functions/contact-handler",
   formTitle,
   page,
+  submitText,
 }) => (
   <BaseForm
     formDescription={formDescription}
     formParagraph={formParagraph}
-    formRoute="/.netlify/functions/form-handler"
+    formRoute={formRoute}
     formTitle={formTitle}
     page={page}
-    submitText="Submit!"
+    submitText={submitText}
   >
     <Input
       autoComplete="name"

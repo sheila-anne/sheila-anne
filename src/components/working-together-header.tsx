@@ -28,7 +28,7 @@ const NonTreeListItem = styled.li`
   border-radius: 1rem;
   margin-top: 1rem;
   padding-right: 1.5rem;
-  &::before {
+  &:before {
     background-image: unset !important;
   }
 `;
@@ -38,19 +38,14 @@ export const WorkingTogetherHeader = () => {
     <>
       <h1>Working Together</h1>
       <div>
-        Here are the ways I am working together with clients to cultivate a
-        mind-body connection, tap into what they truly desire, and create an
-        inspiring & aligned future:
+        Here are the ways I am working together with clients to cultivate a mind-body connection, tap into what they
+        truly desire, and create an inspiring & aligned future:
       </div>
       <header>
         <nav>
           <ListContainer>
-            {WorkingTogetherSections.map((item) => (
-              <WorkingTogetherAnchor
-                href={`#${item.href}`}
-                key={item.name}
-                title={item.name}
-              >
+            {WorkingTogetherSections.map(item => (
+              <WorkingTogetherAnchor href={`#${item.href}`} key={item.name} title={item.name}>
                 <NonTreeListItem>{item.name}</NonTreeListItem>
               </WorkingTogetherAnchor>
             ))}

@@ -59,7 +59,7 @@ const Wrapper = styled(Anchor)`
   > div img {
     transition: all 0.3s ease 0s !important;
   }
-  &::hover {
+  &:hover {
     ${OpaqueOverlay} {
       opacity: 1;
     }

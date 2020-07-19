@@ -15,8 +15,7 @@ type ButtonProps = {
 };
 
 const ButtonCss = css<ButtonProps>`
-  background-color: ${({ backgroundColor }) =>
-    !!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen};
+  background-color: ${({ backgroundColor }) => (!!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen)};
   border: none;
   border-radius: 1rem;
   color: ${({ color }) => (!!color ? color : "#FFF")};
@@ -35,8 +34,12 @@ const ButtonCss = css<ButtonProps>`
   }
 
   :hover {
-    color: ${({ color }) =>
-      !!color ? Constants.Colors.theGroveGreen : "#000"};
+    color: ${({ color }) => (!!color ? Constants.Colors.theGroveGreen : "#000")};
+  }
+
+  // TODO: fix me
+  &:focus {
+    border: 1px solid #000;
   }
 `;
 
@@ -100,7 +103,7 @@ const StyledPillButton = styled.button`
     span {
       background-position: bottom;
     }
-    &::before {
+    &:before {
       height: 100%;
     }
   }
@@ -111,11 +114,7 @@ const StyledPillButton = styled.button`
   }
 `;
 
-export const PillButton: FC<PillButtonProps> = ({
-  children,
-  onClick,
-  type,
-}) => (
+export const PillButton: FC<PillButtonProps> = ({ children, onClick, type }) => (
   <StyledPillButton onClick={e => onClick && onClick(e)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
   </StyledPillButton>

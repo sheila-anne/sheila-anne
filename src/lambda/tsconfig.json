@@ -11,5 +11,5 @@
     "outDir": "./dist",
     "isolatedModules": false
   },
-  "include": ["./subscribe-handler.ts", "./form-handler.ts"]
+  "include": ["./subscribe-handler.ts", "./contact-handler.ts"]
 }

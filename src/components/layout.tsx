@@ -28,7 +28,7 @@ const MainWrapper = styled.main`
   max-height: 100%;
 
   & > * li {
-    &::before {
+    &:before {
       content: "";
       display: inline-block;
       height: 1rem;

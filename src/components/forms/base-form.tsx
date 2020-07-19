@@ -8,10 +8,11 @@ import { PillButton } from "../button";
 import { trackFacebook } from "../../utils";
 
 export type BaseFormProps = {
+  backgroundColor?: string;
   formTitle: string;
   formDescription: string;
   formParagraph?: string;
-  formRoute: string;
+  formRoute?: string;
   page: FormPage;
   submitText: string;
 };
@@ -71,7 +72,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   children,
   formDescription,
   formParagraph,
-  formRoute,
+  formRoute = "",
   formTitle,
   page,
   submitText,

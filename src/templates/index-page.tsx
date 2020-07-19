@@ -105,8 +105,7 @@ const BannerLink = styled(SmartLink)`
 
 const BannerHeadline = styled.h1<HeadlineProps>`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
-  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem
-      0px 0px,
+  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
   color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
   font-size: 1.5rem;
@@ -135,20 +134,8 @@ const TestimonialContainer = styled(FlexContainer)`
   display: block;
 `;
 
-export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
-  frontmatter,
-  isPreview,
-  posts,
-}) => {
-  const {
-    description,
-    formHeadline,
-    formParagraph,
-    formSubHeadline,
-    image,
-    testimonials,
-    mainpitch,
-  } = frontmatter;
+export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPreview, posts }) => {
+  const { description, formHeadline, formParagraph, formSubHeadline, image, testimonials, mainpitch } = frontmatter;
 
   const safeImage = image as NestedImage;
   const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
@@ -157,13 +144,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
     <>
       {!!bannerImagesrc && (
         <Helmet>
-          <link
-            href={bannerImagesrc}
-            rel="preload"
-            as="image"
-            key={bannerImagesrc}
-            crossOrigin="anoynmous"
-          />
+          <link href={bannerImagesrc} rel="preload" as="image" key={bannerImagesrc} crossOrigin="anoynmous" />
         </Helmet>
       )}
       <PreviewCompatibleBanner
@@ -187,11 +168,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
         <Container>
           <CenteredText>
             <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
-            <BannerHeadline
-              as="h2"
-              color={Constants.Colors.theGroveGreen}
-              margin="0 0 2rem 0"
-            >
+            <BannerHeadline as="h2" color={Constants.Colors.theGroveGreen} margin="0 0 2rem 0">
               <BannerLink to="/working-together/" title="Let's work together">
                 Start your journey with me.
               </BannerLink>
@@ -201,6 +178,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
               backgroundColor="#FFF"
               page="opt-in"
               formDescription="Sign up below to receive my exclusive guide to ..."
+              submitText="Yes, send it to me!"
             />
             <h3>Here's How We Can Work Together:</h3>
           </CenteredText>
@@ -229,38 +207,21 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({
             <p>{mainpitch.title}</p>
           </FlexContainer>
           <CenteredText>
-            <BannerHeadline
-              as="h3"
-              color="#FFF"
-              fontColor="#000"
-              lessMargin={true}
-            >
+            <BannerHeadline as="h3" color="#FFF" fontColor="#000" lessMargin={true}>
               What People Are Saying
             </BannerHeadline>
           </CenteredText>
-          <TestimonialContainer
-            backgroundColor={Constants.Colors.theGroveGreenGray}
-            margin="0 0 1rem 0"
-          >
+          <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
             <Testimonial testimonials={testimonials} />
           </TestimonialContainer>
           <CenteredText>
-            <BannerHeadline
-              as="h3"
-              color="#FFF"
-              fontColor="#000"
-              lessMargin={true}
-            >
+            <BannerHeadline as="h3" color="#FFF" fontColor="#000" lessMargin={true}>
               Latest From The Blog
             </BannerHeadline>
           </CenteredText>
           <BlogRoll posts={posts} />
           <CenteredText>
-            <Button
-              backgroundColor={Constants.Colors.theGroveLightGreen}
-              color="#000"
-              to="/writing-desk/"
-            >
+            <Button backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
               Read more @ the blog!
             </Button>
           </CenteredText>
@@ -275,19 +236,9 @@ const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <SEO
-        description={frontmatter.pageDescription}
-        location={location}
-        title={frontmatter.pageTitle}
-      />
-      <IndexPageTemplate
-        frontmatter={frontmatter}
-        posts={data.allMarkdownRemark.posts}
-      />
-      <Instagram
-        insta={data.insta}
-        instagramUrl={data.site.siteMetadata.social.instagram}
-      />
+      <SEO description={frontmatter.pageDescription} location={location} title={frontmatter.pageTitle} />
+      <IndexPageTemplate frontmatter={frontmatter} posts={data.allMarkdownRemark.posts} />
+      <Instagram insta={data.insta} instagramUrl={data.site.siteMetadata.social.instagram} />
     </Layout>
   );
 };

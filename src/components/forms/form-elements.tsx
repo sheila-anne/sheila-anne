@@ -1,10 +1,19 @@
 import styled from "styled-components";
-import React, { ComponentType, Dispatch, FormEvent, SetStateAction, useState, ReactHTMLElement } from "react";
+import React, {
+  ComponentType,
+  Dispatch,
+  FormEvent,
+  FormHTMLAttributes,
+  InputHTMLAttributes,
+  SetStateAction,
+  TextareaHTMLAttributes,
+  useState,
+} from "react";
 
 import { Constants } from "../../constants";
 import { applyStyle } from "../../utils";
 
-type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
+type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   backgroundColor?: string;
 };
 
@@ -13,18 +22,27 @@ type FormWrapperProps = {
   centerText?: boolean;
 };
 
-const setAriaInvalid = (e: FormEvent<HTMLFormElement>, setIsInvalid: Dispatch<SetStateAction<boolean>>) => {
+/*
+this type has to be extended as more elements are fed in; this is because HTMLElement lacks the
+"validity" property, among other things, and there isn't a subset element in MDN / TypeScript for valid
+elements to be used in a form, although there is an actual web standard, "Flow Content" that is considered
+legal to use within a form: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content
+not all Flow Content elements have the validity prop, either ... so we're left with this type
+ */
+type FormElement = HTMLInputElement | HTMLTextAreaElement;
+
+const setAriaInvalid = (e: FormEvent<FormElement>, setIsInvalid: Dispatch<SetStateAction<boolean>>) => {
   e.preventDefault();
   setIsInvalid(!e.currentTarget.validity.valid);
 };
 
-function accessibleComponent<T>(Component: ComponentType<T>) {
+function ariaWrapper<T>(Component: ComponentType<T>) {
   const [isInvalid, setIsInvalid] = useState(true);
 
-  return (props: T & { title?: string }) => (
+  return (props: T & FormHTMLAttributes<FormElement>) => (
     <Component
       {...props}
-      onInput={(e: FormEvent<HTMLFormElement>) => setAriaInvalid(e, setIsInvalid)}
+      onInput={(e: FormEvent<FormElement>) => setAriaInvalid(e, setIsInvalid)}
       aria-invalid={isInvalid}
       aria-label={!!props.title ? props.title : undefined}
     />
@@ -42,8 +60,13 @@ export const Hidden = styled.span`
   width: 1px;
 `;
 
-function ariaWrapper<T>(Component: ComponentType<T>, props: React.FormHTMLAttributes<HTMLElement>) {
-  const ariaWrappedComponent = accessibleComponent(Component)(props as T);
+function accessibleWrapper<T>(Component: ComponentType<T>, props: FormHTMLAttributes<HTMLElement>) {
+  /*
+  have to cast the props here to keep everything happy because the typings
+  for styled-components don't return the correct react typings (like HTMLInputElement)
+  even when calling styled.input explicitly - unlucky
+  */
+  const ariaWrappedComponent = ariaWrapper(Component)(props as T);
   return props.title ? (
     <label htmlFor={props.name}>
       <Hidden>{props.title}</Hidden>
@@ -54,9 +77,9 @@ function ariaWrapper<T>(Component: ComponentType<T>, props: React.FormHTMLAttrib
   );
 }
 
-export const Input = (props: InputProps) => ariaWrapper(InputInner, props);
+export const Input = (props: InputProps) => accessibleWrapper(InputInner, props);
 
-export const TextArea = (props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) => ariaWrapper(TextAreaInner, props);
+export const TextArea = (props: TextareaHTMLAttributes<HTMLTextAreaElement>) => accessibleWrapper(TextAreaInner, props);
 
 const InputInner = styled.input<InputProps>`
   ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}

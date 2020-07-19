@@ -3,17 +3,20 @@ import React, { FC } from "react";
 import { BaseForm, BaseFormProps } from "./base-form";
 import { Input } from "./form-elements";
 
-type OptInFormProps = BaseFormProps & {
-  backgroundColor: string;
-};
-
-export const OptInForm: FC<OptInFormProps> = ({ backgroundColor, formDescription, formTitle, page }) => (
+export const OptInForm: FC<BaseFormProps> = ({
+  backgroundColor,
+  formDescription,
+  formRoute = "/.netlify/functions/subscribe-handler",
+  formTitle,
+  page,
+  submitText,
+}) => (
   <BaseForm
     formDescription={formDescription}
-    formRoute="/.netlify/functions/subscribe-handler"
+    formRoute={formRoute}
     formTitle={formTitle}
     page={page}
-    submitText="Yes, send it to me!"
+    submitText={submitText}
   >
     <Input
       autoComplete="name"

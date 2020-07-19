@@ -16,23 +16,23 @@ export const FullWidthImage = styled(BackgroundImage)`
   background-size: contain;
 
   &,
-  &::before,
-  &::after {
+  &:before,
+  &:after {
     margin-bottom: 1rem;
   }
 
   @media (max-width: ${Constants.mobileWidth}) {
     &,
-    &::before,
-    &::after {
+    &:before,
+    &:after {
       height: 250px !important;
     }
   }
 
   @media (max-width: 360px) {
     &,
-    &::before,
-    &::after {
+    &:before,
+    &:after {
       height: 200px !important;
     }
   }
@@ -54,12 +54,7 @@ export const ImageHeadlineContainer = styled.div<{
   }
 `;
 
-export const BannerImage: FC<BannerImageProps> = ({
-  color,
-  image,
-  imageHeadline,
-  title,
-}) => {
+export const BannerImage: FC<BannerImageProps> = ({ color, image, imageHeadline, title }) => {
   const imageData = image.childImageSharp?.fluid;
   const headlineColor = !!color ? color : Constants.Colors.theGroveLightGreen;
   return (

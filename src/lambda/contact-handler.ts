@@ -30,10 +30,7 @@ type HubspotResponse = {
   }[];
 };
 
-exports.handler = async function (
-  event: APIGatewayEvent,
-  context: Context
-): Promise<HandlerReturn> {
+exports.handler = async function (event: APIGatewayEvent, context: Context): Promise<HandlerReturn> {
   if (!event.body) {
     return {
       statusCode: 500,
