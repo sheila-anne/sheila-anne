@@ -6,13 +6,13 @@ import styled from "styled-components";
 import {
   BlogRoll,
   BookingSection,
-  Button,
   CenteredText,
   Features,
   FlexContainer,
   FullWidthImage,
   Instagram,
   Layout,
+  LinkButton,
   OptInForm,
   PreviewCompatibleBanner,
   PreviewCompatibleImage,
@@ -185,7 +185,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPre
           <FlexContainer>
             <Features gridItems={frontmatter.intro.blurbs} />
           </FlexContainer>
-          <FlexContainer justifyContent="center" margin="2rem 0">
+          <FlexContainer justifyContent="center" margin="1rem 0">
             <BookingSection
               formDescription={formSubHeadline}
               formParagraph={formParagraph}
@@ -221,9 +221,9 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPre
           </CenteredText>
           <BlogRoll posts={posts} />
           <CenteredText>
-            <Button backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
+            <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
               Read more @ the blog!
-            </Button>
+            </LinkButton>
           </CenteredText>
         </Container>
       </section>

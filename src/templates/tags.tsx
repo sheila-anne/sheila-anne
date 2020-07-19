@@ -3,13 +3,7 @@ import { Helmet } from "react-helmet-async";
 import React from "react";
 import styled from "styled-components";
 
-import {
-  Button,
-  CenteredText,
-  Layout,
-  SmartLink,
-  TagList,
-} from "../components/";
+import { CenteredText, Layout, LinkButton, SmartLink, TagList } from "../components/";
 
 const TagLink = styled(SmartLink)`
   text-decoration: underline;
@@ -25,7 +19,7 @@ const Headline = styled.h1`
 
 const TagRoute = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
-  const postLinks = posts.map((post) => (
+  const postLinks = posts.map(post => (
     <li key={post.node.fields.slug}>
       <TagLink to={post.node.fields.slug} title={post.node.frontmatter.title}>
         <h2>{post.node.frontmatter.title}</h2>
@@ -35,9 +29,7 @@ const TagRoute = ({ data, location, pageContext }) => {
   const tag = pageContext.tag;
   const title = data.site.siteMetadata.title;
   const totalCount = data.allMarkdownRemark.totalCount;
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with “${tag}”:`;
+  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} tagged with “${tag}”:`;
 
   return (
     <Layout location={location}>
@@ -47,9 +39,9 @@ const TagRoute = ({ data, location, pageContext }) => {
         <TagList>{postLinks}</TagList>
         <hr />
         <CenteredText>
-          <Button to="/tags/" title="Browse all tags">
+          <LinkButton to="/tags/" title="Browse all tags">
             Browse more posts by tag!
-          </Button>
+          </LinkButton>
         </CenteredText>
       </section>
     </Layout>

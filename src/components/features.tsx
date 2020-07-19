@@ -29,7 +29,7 @@ const ClickableCard = styled.a`
 const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
   background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
   border-radius: 1rem;
-  flex-basis: 45%;
+  flex-basis: 30%;
   padding: 10px;
   margin: 1rem auto;
   text-align: center;

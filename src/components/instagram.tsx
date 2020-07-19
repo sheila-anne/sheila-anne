@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 
 import { CenteredText } from "./centered";
+import { FocusCss } from "./button";
 import { SmartLink } from "./smart-link";
 
 type InstagramPictureProps = {
@@ -67,6 +68,7 @@ const Wrapper = styled(Anchor)`
       opacity: 1;
     }
   }
+  ${FocusCss}
 `;
 
 const InstagramPicture = ({ node }) => (

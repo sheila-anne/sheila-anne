@@ -1,12 +1,4 @@
-import React, {
-  Dispatch,
-  FC,
-  Reducer,
-  useLayoutEffect,
-  useReducer,
-  useRef,
-  useState,
-} from "react";
+import React, { Dispatch, FC, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -54,8 +46,7 @@ const Clickable = styled.div`
 
 const ExpandableText = styled.p<{ isExpanded: boolean }>`
   height: auto;
-  max-height: ${({ isExpanded }) =>
-    !!isExpanded ? "1000px" : `${MIN_EXPANDABLE_HEIGHT}px`};
+  max-height: ${({ isExpanded }) => (!!isExpanded ? "1000px" : `${MIN_EXPANDABLE_HEIGHT}px`)};
   margin-top: 1rem;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out 0s;
@@ -86,9 +77,9 @@ const TestimonialTitle = styled.h4`
   margin-left: 1rem;
 `;
 
-const getInitialState = (testimonials: Testimonial[]) =>
+const getInitialState = (testimonials: Testimonial[]): State =>
   testimonials
-    .map((testimonial) => ({
+    .map(testimonial => ({
       [testimonial.title]: false,
     }))
     .reduce((previousValue, currentValue) => ({
@@ -96,10 +87,7 @@ const getInitialState = (testimonials: Testimonial[]) =>
       ...currentValue,
     }));
 
-const reducer: Reducer<State, Action> = (
-  state: State,
-  action: Action
-): State => {
+const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
   const isExpanded = !state[action.type];
   const args = {
     action: "click",
@@ -111,12 +99,7 @@ const reducer: Reducer<State, Action> = (
   return { ...state, [action.type]: isExpanded };
 };
 
-const MeasurableHeightText: FC<Expandable> = ({
-  dispatch,
-  isExpanded,
-  text,
-  title,
-}) => {
+const MeasurableHeightText: FC<Expandable> = ({ dispatch, isExpanded, text, title }) => {
   const ref = useRef<HTMLParagraphElement>(null);
   const [height, setHeight] = useState(0);
 
@@ -126,13 +109,7 @@ const MeasurableHeightText: FC<Expandable> = ({
     }
   }, []);
 
-  const Text = ({
-    isExpanded,
-    text,
-  }: {
-    isExpanded: boolean;
-    text: string;
-  }) => (
+  const Text = ({ isExpanded, text }: { isExpanded: boolean; text: string }) => (
     <ExpandableText isExpanded={isExpanded} ref={ref}>
       "{text}"
     </ExpandableText>
@@ -148,10 +125,7 @@ const MeasurableHeightText: FC<Expandable> = ({
     >
       <Text isExpanded={isExpanded} text={text} />
       <CenteredText>
-        <PlainButton
-          backgroundColor={Constants.Colors.theGroveLightGreen}
-          color="#000"
-        >
+        <PlainButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000">
           {isExpanded ? "Show Less" : "Show More"}
         </PlainButton>
       </CenteredText>
@@ -167,7 +141,7 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
 
   return (
     <TestimonialSection id="testimonials">
-      {testimonials.map((testimonial) => (
+      {testimonials.map(testimonial => (
         <TestimonialCallout key={testimonial.title}>
           {testimonial.imageSrc && (
             <TestimonialImage

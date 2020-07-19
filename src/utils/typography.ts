@@ -35,6 +35,11 @@ const theme: TypographyOptions = {
     "blockquote cite:before": {
       content: '"— "',
     },
+    "button, input, select, textarea": {
+      boxSizing: "border-box",
+      fontFamily: "inherit",
+      fontSize: "100%",
+    },
     p: {
       marginBottom: "1rem",
     },

@@ -30,6 +30,9 @@ testimonials:
 <h2 id="exploration-call">Exploration Call</h2>
 This 20-minute complimentary call is an opportunity to tell me your story & learn about how we can work together.  You can ask allllll of the questions & may come away with more clarity & confidence - answers beyond my program.
 
+<br/>
+<br/>
+
 Let's get started -- [book your exploration call today](/book/exploration/)!
 
 ---

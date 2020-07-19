@@ -14,6 +14,13 @@ type ButtonProps = {
   color?: string;
 };
 
+export const FocusCss = css`
+  :focus {
+    border: 0.5px solid #000;
+    border-radius: 1rem;
+  }
+`;
+
 const ButtonCss = css<ButtonProps>`
   background-color: ${({ backgroundColor }) => (!!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen)};
   border: none;
@@ -32,23 +39,16 @@ const ButtonCss = css<ButtonProps>`
   @media (max-width: ${Constants.mobileWidth}) {
     margin: 1rem 0;
   }
-
-  :hover {
-    color: ${({ color }) => (!!color ? Constants.Colors.theGroveGreen : "#000")};
-  }
-
-  // TODO: fix me
-  &:focus {
-    border: 1px solid #000;
-  }
 `;
 
 export const PlainButton = styled.button<ButtonProps>`
   ${ButtonCss}
+  ${FocusCss}
 `;
 
-export const Button = styled(SmartLink)<ButtonProps>`
+export const LinkButton = styled(SmartLink)<ButtonProps>`
   ${ButtonCss}
+  ${FocusCss}
 `;
 
 const ButtonSpan = styled.span`
@@ -107,6 +107,8 @@ const StyledPillButton = styled.button`
       height: 100%;
     }
   }
+
+  ${FocusCss}
 
   @media (max-width: ${Constants.mobileWidth}) {
     color: #fff;
