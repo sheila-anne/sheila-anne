@@ -38,6 +38,7 @@ declare type BlogPostFrontmatter = {
 
 declare type BlogPostInner = {
   id: string;
+  excerpt: string;
   fields: BlogPostFields;
   frontmatter: BlogPostFrontmatter;
 };
@@ -69,6 +70,7 @@ declare type Colors = {
 };
 
 type FeaturedGridItem = PreviewImage & {
+  href: string;
   imageAlt?: string;
   text: string;
   title: string;

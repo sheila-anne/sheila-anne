@@ -16,6 +16,7 @@ import {
 export const WorkingTogetherTemplate = ({
   content,
   contentComponent,
+  faqs,
   frontmatter,
 }) => {
   const PageContent = contentComponent || Content;
@@ -34,13 +35,18 @@ export const WorkingTogetherTemplate = ({
       />
       <hr />
       <Testimonial testimonials={frontmatter.testimonials} />
-      <FAQ faq={frontmatter.faq} />
+      <FAQ faq={faqs} />
     </section>
   );
 };
 
-const TheGrove = ({ data, location }) => {
-  const { markdownRemark: post } = data;
+const WorkingTogether = ({ data, location }) => {
+  const {
+    markdownRemark: post,
+    site: {
+      siteMetadata: { faqs },
+    },
+  } = data;
 
   return (
     <Layout location={location}>
@@ -55,23 +61,29 @@ const TheGrove = ({ data, location }) => {
         contentComponent={HTMLContent}
         content={post.html}
         frontmatter={post.frontmatter}
+        faqs={faqs}
       />
     </Layout>
   );
 };
 
-export default TheGrove;
+export default WorkingTogether;
 
 export const pageQuery = graphql`
   query TheGrovePage($id: String!) {
+    site {
+      siteMetadata {
+        faqs {
+          question
+          answer
+        }
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         bannerImageHeadline
-        faq {
-          question
-          answer
-        }
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 300, quality: 95) {

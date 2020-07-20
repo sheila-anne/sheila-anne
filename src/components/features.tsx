@@ -21,15 +21,21 @@ const ColorsMap = {
   3: Constants.Colors.theGroveGreen,
 };
 
+const ClickableCard = styled.a`
+  color: inherit;
+  text-decoration: none;
+`;
+
 const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
   background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
-  flex-basis: 45%;
+  border-radius: 1rem;
+  flex-basis: 30%;
   padding: 10px;
   margin: 1rem auto;
   text-align: center;
 `;
 
-const FlexCenteredText = styled(CenteredText)`
+const FlexImage = styled(PreviewCompatibleImage)`
   display: inline-block;
   max-height: 240px;
   max-width: 240px;
@@ -41,25 +47,19 @@ const SmallHeadline = styled.h3`
   margin-top: 0;
 `;
 
-const Features: FC<FeaturedProps> = ({ gridItems }) => (
+export const Features: FC<FeaturedProps> = ({ gridItems }) => (
   <FlexContainer>
     {gridItems.map((item, index) => (
       <ColoredFlexColumn key={item.text} colorIndex={index}>
-        <section>
+        {/* hack to fix trailing comma being purged when sourced from markdown */}
+        <ClickableCard href={item.href + "/"}>
           <CenteredText>
-            <FlexCenteredText>
-              <PreviewCompatibleImage
-                imageInfo={item}
-                imageAlt={item.imageAlt}
-              />
-            </FlexCenteredText>
+            <FlexImage imageInfo={item} imageAlt={item.imageAlt} />
             <SmallHeadline>{item.title}</SmallHeadline>
           </CenteredText>
           <p>{item.text}</p>
-        </section>
+        </ClickableCard>
       </ColoredFlexColumn>
     ))}
   </FlexContainer>
 );
-
-export { Features };

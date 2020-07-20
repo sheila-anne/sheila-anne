@@ -5,6 +5,7 @@ export const logoQuery = graphql`
     posts: edges {
       node {
         id
+        excerpt
         fields {
           slug
         }

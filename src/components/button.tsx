@@ -5,7 +5,7 @@ import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
 
 type PillButtonProps = {
-  onClick?: (e: MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onClick?: (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => void;
   type?: "submit" | undefined;
 };
 
@@ -14,9 +14,15 @@ type ButtonProps = {
   color?: string;
 };
 
+export const FocusCss = css`
+  :focus {
+    border: 0.5px solid #000;
+    border-radius: 1rem;
+  }
+`;
+
 const ButtonCss = css<ButtonProps>`
-  background-color: ${({ backgroundColor }) =>
-    !!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen};
+  background-color: ${({ backgroundColor }) => (!!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen)};
   border: none;
   border-radius: 1rem;
   color: ${({ color }) => (!!color ? color : "#FFF")};
@@ -33,19 +39,16 @@ const ButtonCss = css<ButtonProps>`
   @media (max-width: ${Constants.mobileWidth}) {
     margin: 1rem 0;
   }
-
-  :hover {
-    color: ${({ color }) =>
-      !!color ? Constants.Colors.theGroveGreen : "#000"};
-  }
 `;
 
 export const PlainButton = styled.button<ButtonProps>`
   ${ButtonCss}
+  ${FocusCss}
 `;
 
-export const Button = styled(SmartLink)<ButtonProps>`
+export const LinkButton = styled(SmartLink)<ButtonProps>`
   ${ButtonCss}
+  ${FocusCss}
 `;
 
 const ButtonSpan = styled.span`
@@ -54,36 +57,43 @@ const ButtonSpan = styled.span`
   padding: 17px 28px;
   background-size: 100% 200%;
   background-position: top;
+  border-radius: 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
     background-color: ${Constants.Colors.theGroveGreen};
   }
 `;
 
-const StyledSquareButton = styled.button`
-  position: relative;
-  padding: 0;
-  border: none;
-  outline: none;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.2;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+const StyledPillButton = styled.button`
   background: transparent;
+  border: none;
   color: #000;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 1rem 0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
 
   &:before {
+    background: ${Constants.Colors.theGroveGreen};
+    border-radius: 1rem;
+    bottom: 0;
     content: "";
     display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     height: 1px;
+    left: 0;
+    position: absolute;
     transition: 0.3s ease height;
-    background: ${Constants.Colors.theGroveGreen};
+    width: 100%;
+
+    @media (max-width: ${Constants.mobileWidth}) {
+      display: none;
+    }
   }
 
   &:hover,
@@ -93,10 +103,12 @@ const StyledSquareButton = styled.button`
     span {
       background-position: bottom;
     }
-    &::before {
+    &:before {
       height: 100%;
     }
   }
+
+  ${FocusCss}
 
   @media (max-width: ${Constants.mobileWidth}) {
     color: #fff;
@@ -104,12 +116,8 @@ const StyledSquareButton = styled.button`
   }
 `;
 
-export const SquareButton: FC<PillButtonProps> = ({
-  children,
-  onClick,
-  type,
-}) => (
-  <StyledSquareButton onClick={(e) => onClick && onClick(e as any)} type={type}>
+export const PillButton: FC<PillButtonProps> = ({ children, onClick, type }) => (
+  <StyledPillButton onClick={e => onClick && onClick(e)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
-  </StyledSquareButton>
+  </StyledPillButton>
 );

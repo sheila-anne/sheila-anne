@@ -1,13 +1,24 @@
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
+import { PreviewCompatibleImage } from "../components";
 
 const WorkingTogetherSections = [
   { name: "Exploration Call", href: "exploration-call" },
   { name: "Ground To Grow Accelerator", href: "ground-to-grow" },
   { name: "Root To Rise", href: "root-to-rise" },
 ];
+
+const Heading = styled.h1`
+  margin-top: 0.25rem;
+`;
+
+const Subheading = styled.h2`
+  font-size: 1.25rem;
+  font-weight: 100;
+`;
 
 const ListContainer = styled.ol`
   justify-content: space-around;
@@ -28,29 +39,40 @@ const NonTreeListItem = styled.li`
   border-radius: 1rem;
   margin-top: 1rem;
   padding-right: 1.5rem;
-  &::before {
+  &:before {
     background-image: unset !important;
   }
 `;
 
 export const WorkingTogetherHeader = () => {
+  const data = useStaticQuery<{ markdownRemark: { frontmatter: { featuredImage: PreviewImage } } }>(
+    WorkingTogetherHeaderQuery
+  );
+
   return (
     <>
-      <h1>Working Together</h1>
-      <div>
-        Here are the ways I am working together with clients to cultivate a
-        mind-body connection, tap into what they truly desire, and create an
-        inspiring & aligned future:
-      </div>
+      <Heading>Working Together</Heading>
+      <Subheading>
+        We work together to cultivate a mind-body connection, tap into who you are, and find the career that brings you
+        real joy.
+      </Subheading>
+      <Subheading as="h3">Is this you?</Subheading>
+      <p>
+        Are you looking to level up in your career? Dreaming of breaking up with your job to live a nomadic lifestyle?
+        Wishing you could stop telling yourself that you are figuring it out? Awaiting the day that you’ll play by your
+        own rules and ditch the expectations? You are not alone and, <b>yes</b>, there is a way to make it happen.
+      </p>
+      <PreviewCompatibleImage
+        imageInfo={data.markdownRemark.frontmatter.featuredImage}
+        imageAlt="Working together with Sheila Anne"
+        title="Work with me to achieve your dream life"
+      />
       <header>
         <nav>
+          <Subheading>Ready for your life transformation? Here are my offerings:</Subheading>
           <ListContainer>
-            {WorkingTogetherSections.map((item) => (
-              <WorkingTogetherAnchor
-                href={`#${item.href}`}
-                key={item.name}
-                title={item.name}
-              >
+            {WorkingTogetherSections.map(item => (
+              <WorkingTogetherAnchor href={`#${item.href}`} key={item.name} title={item.name}>
                 <NonTreeListItem>{item.name}</NonTreeListItem>
               </WorkingTogetherAnchor>
             ))}
@@ -60,3 +82,19 @@ export const WorkingTogetherHeader = () => {
     </>
   );
 };
+
+const WorkingTogetherHeaderQuery = graphql`
+  query WorkingTogetherHeaderQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "working-together" } }) {
+      frontmatter {
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+  }
+`;

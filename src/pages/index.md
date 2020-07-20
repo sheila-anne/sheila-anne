@@ -8,7 +8,7 @@ bannerSubtitle: >
   Curious to learn more?
 image: /img/sheila-anne-about.jpg
 description: >
-  We work together to ... ditch overwhelm & expectations, cultivate a mind-body connection, and find the career that brings you real joy.
+  I am a life transformation coach that works with purpose-driven women like you — tired of questioning where you are and where you're going; dreaming of a life outside of the grind; all the boxes checked but still feeling incomplete. Let's make a change together!
 formHeadline: "Let's get to know one another"
 formParagraph: ""
 formSubHeadline: "Don't wait to change your life, connect with me today!"
@@ -19,17 +19,20 @@ mainpitch:
 
 intro:
   blurbs:
-    - image: /img/sheila-anne-discover.png
+    - href: /book/exploration/
+      image: /img/sheila-anne-discover.png
       imageAlt: Discover what it's like to work with Sheila.
       title: Exploration Call
       text: >
         Let's get to know you! 20 minute complementary call that identifies how coaching can help you in your life.
-    - image: /img/sheila-anne-grow.png
+    - href: /working-together#ground-to-grow
+      image: /img/sheila-anne-grow.png
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
       title: Ground To Grow Accelerator
       text: >
         45-minute power session to address you're feeling stuck and provide tangible steps towards greater fulfillment (a great place to start)!
-    - image: /img/sheila-anne-transform.png
+    - href: /root-to-rise/
+      image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
       title: Root To Rise
       text: >

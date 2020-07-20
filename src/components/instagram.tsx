@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 
 import { CenteredText } from "./centered";
+import { FocusCss } from "./button";
 import { SmartLink } from "./smart-link";
 
 type InstagramPictureProps = {
@@ -67,6 +68,7 @@ const Wrapper = styled(Anchor)`
       opacity: 1;
     }
   }
+  ${FocusCss}
 `;
 
 const InstagramPicture = ({ node }) => (
@@ -89,22 +91,14 @@ export const Instagram: FC<InstagramProps> = ({ insta, instagramUrl }) => (
     <CenteredText>
       <h1>Don't Miss A Beat</h1>
       <div>
-        Follow along on <SmartLink to={instagramUrl}> Instagram</SmartLink> for
-        motivation, inspiration, and yoga flows:
+        Follow along on <SmartLink to={instagramUrl}> Instagram</SmartLink> for motivation, inspiration, and yoga flows:
       </div>
     </CenteredText>
-    <Grid
-      justifyContent="start"
-      gap={"small"}
-      columns={[`1fr`, `1fr`, `1fr`]}
-      margin="1rem 0 0 0"
-    >
+    <Grid justifyContent="start" gap={"small"} columns={[`1fr`, `1fr`, `1fr`]} margin="1rem 0 0 0">
       {insta.edges.map(
         instagram =>
           instagram.node.localFile &&
-          instagram.node.localFile.childImageSharp && (
-            <InstagramPicture key={instagram.node.id} node={instagram.node} />
-          )
+          instagram.node.localFile.childImageSharp && <InstagramPicture key={instagram.node.id} node={instagram.node} />
       )}
     </Grid>
   </section>

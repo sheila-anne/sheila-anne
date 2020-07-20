@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 import facebookImg from "../img/social/facebook.svg";
+import { FocusCss } from "./button";
 import instagramImg from "../img/social/instagram.svg";
 import { SmartLink } from "./smart-link";
 
@@ -11,11 +12,6 @@ type SocialLinks = {
   image: string;
   url: string;
   title: string;
-};
-
-type SocialProps = {
-  facebook: string;
-  instagram: string;
 };
 
 const SocialImage = styled.img`
@@ -30,6 +26,11 @@ const SocialLink = styled(SmartLink)`
   display: block;
   padding: 0.75rem;
   text-decoration: none;
+
+  ${FocusCss}
+  :focus {
+    outline: none;
+  }
 `;
 
 export const SocialWrapper = styled.div<{ dontShow?: boolean }>`
@@ -43,6 +44,7 @@ export const SocialWrapper = styled.div<{ dontShow?: boolean }>`
     padding: 0.5rem;
     width: 1rem;
   }
+
   @media (max-width: ${Constants.mobileWidth}) {
     margin-right: 0;
   }
@@ -62,12 +64,7 @@ const socialQuery = graphql`
 `;
 
 const SocialItem = (item: SocialLinks) => (
-  <SocialLink
-    ariaLabel={item.title}
-    key={item.url}
-    title={item.title}
-    to={item.url}
-  >
+  <SocialLink ariaLabel={item.title} key={item.url} title={item.title} to={item.url}>
     <SocialImage src={item.image} alt={item.title} />
   </SocialLink>
 );
@@ -76,23 +73,15 @@ export const FixedSocialItems = () => {
   const {
     site: {
       siteMetadata: {
-        social: { facebook, instagram }
-      }
-    }
+        social: { facebook, instagram },
+      },
+    },
   } = useStaticQuery(socialQuery);
 
   return (
     <>
-      <SocialItem
-        title="Follow Sheila Anne on Facebook"
-        image={facebookImg}
-        url={facebook}
-      />
-      <SocialItem
-        title="Follow Sheila Anne on Instagram"
-        image={instagramImg}
-        url={instagram}
-      />
+      <SocialItem title="Follow Sheila Anne on Facebook" image={facebookImg} url={facebook} />
+      <SocialItem title="Follow Sheila Anne on Instagram" image={instagramImg} url={instagram} />
     </>
   );
 };
@@ -101,10 +90,7 @@ export const Social = () => {
   return (
     <SocialWrapper>
       <FixedSocialItems />
-      <span
-        itemType="https://schema.org/SiteNavigationElement"
-        itemScope={true}
-      >
+      <span itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
         <SocialLink
           ariaLabel="Book Your Free Life Coaching Session With Sheila Anne"
           title="Book Your Free Life Coaching Session With Sheila Anne"

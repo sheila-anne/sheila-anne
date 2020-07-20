@@ -48,8 +48,8 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
   className,
   imageAlt,
   imageInfo,
-  loading,
   title,
+  loading = "auto",
 }) => {
   const imageStyle = {
     maxWidth: "inherit",
