@@ -45,10 +45,12 @@ const NonTreeListItem = styled.li`
 `;
 
 export const WorkingTogetherHeader = () => {
-  const data = useStaticQuery(WorkingTogetherHeaderQuery);
+  const data = useStaticQuery<{ markdownRemark: { frontmatter: { featuredImage: PreviewImage } } }>(
+    WorkingTogetherHeaderQuery
+  );
 
   return (
-    <section>
+    <>
       <Heading>Working Together</Heading>
       <Subheading>
         We work together to cultivate a mind-body connection, tap into who you are, and find the career that brings you
@@ -77,7 +79,7 @@ export const WorkingTogetherHeader = () => {
           </ListContainer>
         </nav>
       </header>
-    </section>
+    </>
   );
 };
 
