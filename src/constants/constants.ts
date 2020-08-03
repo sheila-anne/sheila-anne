@@ -16,4 +16,5 @@ export const Constants = {
     explorationUrl: getSquareAppointmentUrl("382r9s8g5atn2g"),
     groundToGrowUrl: getSquareAppointmentUrl("efbofoh5gwycw0"),
   },
+  textBannerKey: "hide-banner",
 };

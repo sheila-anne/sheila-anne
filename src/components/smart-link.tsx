@@ -8,15 +8,18 @@ type CustomLinkType = {
   ariaLabel?: string;
   className?: string;
   hideMetadata?: boolean;
+  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
   role?: string;
   to: string;
   title?: string;
 };
 
-const getLinkType = (to: string) =>
-  to.indexOf("http") > -1 ? "External" : "Internal";
+type LinkType = "External" | "Internal";
 
-const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
+const getLinkType = (to: string): LinkType => (to.indexOf("http") > -1 ? "External" : "Internal");
+
+const innerOnClick = (event: MouseEvent<HTMLAnchorElement>, outerClickHandler?: (...props: any) => void) => {
+  outerClickHandler && outerClickHandler();
   const to = event.currentTarget.href;
   const args = {
     action: "click",
@@ -35,6 +38,7 @@ export const SmartLink: FC<CustomLinkType> = ({
   ariaLabel,
   className,
   hideMetadata,
+  onClick,
   role,
   to,
   title,
@@ -47,7 +51,7 @@ export const SmartLink: FC<CustomLinkType> = ({
         aria-label={ariaLabel}
         className={className}
         itemProp={!hideMetadata ? "url" : undefined}
-        onClick={onClick}
+        onClick={e => innerOnClick(e, onClick)}
         role={!!role ? role : undefined}
         to={to}
         title={title}

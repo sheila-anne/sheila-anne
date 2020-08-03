@@ -7,6 +7,7 @@ export const OptInForm: FC<BaseFormProps> = ({
   backgroundColor,
   formDescription,
   formRoute = "/.netlify/functions/subscribe-handler",
+  formParagraph,
   formTitle,
   page,
   submitText,
@@ -14,6 +15,7 @@ export const OptInForm: FC<BaseFormProps> = ({
   <BaseForm
     formDescription={formDescription}
     formRoute={formRoute}
+    formParagraph={formParagraph}
     formTitle={formTitle}
     page={page}
     submitText={submitText}
