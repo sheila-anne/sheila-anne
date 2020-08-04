@@ -25,10 +25,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
   console.log(`Received subscribe event: ${event.body}`);
 
   const eventProperties = JSON.parse(event.body) as EventBody;
-  const names =
-    eventProperties.name.indexOf(" ") > -1
-      ? eventProperties.name.split(" ")
-      : [eventProperties.name, "No Last Name"];
+  const names = eventProperties.name.indexOf(" ") > -1 ? eventProperties.name.split(" ") : [eventProperties.name, ""];
   const data = {
     email_address: eventProperties.email,
     status: "subscribed",
@@ -36,15 +33,13 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
       FirstName: names[0],
       LastName: names[1],
     },
-    tags: ["opt-in-tag"],
+    tags: ["pathfinder"],
   };
 
   return fetch(process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI, {
     method: "POST",
     headers: {
-      Authorization: `Basic ${Buffer.from(
-        `any:${process.env.MAILCHIMP_API_KEY}`
-      ).toString("base64")}`,
+      Authorization: `Basic ${Buffer.from(`any:${process.env.MAILCHIMP_API_KEY}`).toString("base64")}`,
       "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(data),
@@ -52,8 +47,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
     .then(response => response.json())
     .then((data: MailchimpResponse) => {
       const memberExists = data.title === "Member Exists";
-      const statusCode =
-        data.status === "subscribed" || memberExists ? 200 : 422;
+      const statusCode = data.status === "subscribed" || memberExists ? 200 : 422;
       console.log("Mailchimp response: ", data);
       return {
         statusCode,

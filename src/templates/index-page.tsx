@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 import {
   BlogRoll,
-  BookingSection,
   CenteredText,
   ContentBreak,
   Features,
@@ -98,8 +97,6 @@ const Container = styled.div`
 `;
 
 const BannerLink = styled(SmartLink)`
-  color: #fff;
-  display: inline;
   text-decoration: underline;
 `;
 
@@ -122,6 +119,11 @@ const ImageContainer = styled.div`
 const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
+  margin: 1rem;
+  padding: 0 1rem 1rem 1rem;
+`;
+
+const PathfinderHeading = styled.h2`
   margin: 1rem;
   padding: 0 1rem 1rem 1rem;
 `;
@@ -171,16 +173,8 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPre
             <ContentBreak />
             <h3>Here's How We Can Work Together:</h3>
           </CenteredText>
-          <FlexContainer>
+          <FlexContainer margin="1rem 0">
             <Features gridItems={frontmatter.intro.blurbs} />
-          </FlexContainer>
-          <FlexContainer justifyContent="center" margin="1rem 0">
-            <BookingSection
-              formDescription={formSubHeadline}
-              formParagraph={formParagraph}
-              formTitle={formHeadline}
-              page="Homepage"
-            />
           </FlexContainer>
           <FlexContainer margin="2rem 0">
             <ImageContainer>
@@ -195,8 +189,21 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPre
             </ImageContainer>
             <p>{mainpitch.title}</p>
           </FlexContainer>
+          <ContentBreak />
+          <FlexContainer justifyContent="center" margin="1rem 0">
+            <PathfinderHeading>Pathfinder: Find Your Way</PathfinderHeading>
+            <div>
+              There's so much more to say - but let's get to know one another first! I've prepared a free, downloadable
+              kit for you to see if one of my programs will be a good fit for you. By{" "}
+              <BannerLink to="/pathfinder/" title="Pathfinder freebie">
+                signing up for my Pathfinder guide
+              </BannerLink>
+              , you get my complementary assessment tool which will help you assess where you are in your own
+              transformational journey, and how I can help.
+            </div>
+          </FlexContainer>
           <CenteredText>
-            <BannerHeadline as="h3" color="#FFF" fontColor="#000" lessMargin={true}>
+            <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
               What People Are Saying
             </BannerHeadline>
           </CenteredText>
@@ -204,7 +211,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPre
             <Testimonial testimonials={testimonials} />
           </TestimonialContainer>
           <CenteredText>
-            <BannerHeadline as="h3" color="#FFF" fontColor="#000" lessMargin={true}>
+            <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
               Latest From The Blog
             </BannerHeadline>
           </CenteredText>

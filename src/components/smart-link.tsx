@@ -20,11 +20,10 @@ const getLinkType = (to: string): LinkType => (to.indexOf("http") > -1 ? "Extern
 
 const innerOnClick = (event: MouseEvent<HTMLAnchorElement>, outerClickHandler?: (...props: any) => void) => {
   outerClickHandler && outerClickHandler();
-  const to = event.currentTarget.href;
   const args = {
     action: "click",
     category: `Internal Link`,
-    label: to,
+    label: event.currentTarget.href,
   };
   trackCustomEvent(args);
   trackFacebook("trackCustom", "Link Click", args);

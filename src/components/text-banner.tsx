@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React, { Dispatch, MouseEvent, SetStateAction, useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
@@ -41,32 +41,38 @@ const UnderlineLink = styled(SmartLink)`
   text-decoration: underline;
 `;
 
+const TRUE_SESSION_VALUE = "1";
+
 const clickHandler = (setIsShown: Dispatch<SetStateAction<boolean>>) => {
   setIsShown(false);
-  window.sessionStorage.setItem(Constants.textBannerKey, "1");
+  window.sessionStorage.setItem(Constants.textBannerKey, TRUE_SESSION_VALUE);
 };
 
 export const BannerText = () => {
   const [isShown, setIsShown] = useState(true);
   useEffect(() => {
     const isDismissed = window.sessionStorage.getItem(Constants.textBannerKey);
-    if (isDismissed === "1") {
+    if (isDismissed === TRUE_SESSION_VALUE) {
       setIsShown(false);
     }
   }, []);
+
+  const innerHandler = (e: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
+    clickHandler(setIsShown);
+  };
   return isShown ? (
     <BannerDiv>
       <Text>
         <UnderlineLink
           aria-label={"Click to sign up for the Pathfinder freebie"}
-          onClick={() => clickHandler(setIsShown)}
+          onClick={innerHandler}
           to="/pathfinder/"
           title="Pathfinder freebie"
         >
           Sign up to receive my free Pathfinder kit!
         </UnderlineLink>
       </Text>
-      <CloseButton onClick={() => clickHandler(setIsShown)} title="Close">
+      <CloseButton onClick={innerHandler} title="Close">
         X
       </CloseButton>
     </BannerDiv>
