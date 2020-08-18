@@ -6,7 +6,7 @@ pageDescription: >
 bannerTitle: Meet your new life coach
 bannerSubtitle: >
   Curious to learn more?
-image: /img/sheila-anne-about.jpg
+image: /img/sheila-anne-cover-2020.jpg
 description: >
   I am a life transformation coach that works with purpose-driven women like you — tired of questioning where you are and where you're going; dreaming of a life outside of the grind; all the boxes checked but still feeling incomplete. Let's make a change together!
 formHeadline: "Let's get to know one another"
