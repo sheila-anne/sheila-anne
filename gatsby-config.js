@@ -60,6 +60,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/content`,
+        name: "content",
+      },
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `4451596119`,
@@ -110,7 +117,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet-async",
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/pathfinder/**"],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-typescript",
     "gatsby-plugin-catch-links",

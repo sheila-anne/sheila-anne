@@ -13,6 +13,7 @@ export type BaseFormProps = {
   formDescription: string;
   formParagraph?: string;
   formRoute?: string;
+  isSubmitSuccess?: Dispatch<SetStateAction<boolean>>;
   page: FormPage;
   submitText: string;
 };
@@ -29,7 +30,8 @@ const handleSubmit = async (
   e: FormEvent<HTMLFormElement>,
   formRoute: string,
   setButtonText: Dispatch<SetStateAction<string>>,
-  page: string
+  page: string,
+  isSubmitSuccess?: Dispatch<SetStateAction<boolean>>
 ) => {
   e.preventDefault();
 
@@ -66,6 +68,7 @@ const handleSubmit = async (
   const success = !!res?.success;
 
   setButtonText(success ? "Success!" : "Error");
+  isSubmitSuccess && isSubmitSuccess(success);
 };
 
 export const BaseForm: FC<BaseFormProps> = ({
@@ -74,6 +77,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   formParagraph,
   formRoute = "",
   formTitle,
+  isSubmitSuccess,
   page,
   submitText,
 }) => {
@@ -84,7 +88,7 @@ export const BaseForm: FC<BaseFormProps> = ({
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
-      <form onSubmit={e => handleSubmit(e, formRoute, setButtonText, page)}>
+      <form onSubmit={e => handleSubmit(e, formRoute, setButtonText, page, isSubmitSuccess)}>
         {children}
         <PillButton type="submit">{buttonText}</PillButton>
       </form>

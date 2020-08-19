@@ -10,6 +10,5 @@
     "esModuleInterop": true,
     "outDir": "./dist",
     "isolatedModules": false
-  },
-  "include": ["./subscribe-handler.ts", "./contact-handler.ts"]
+  }
 }

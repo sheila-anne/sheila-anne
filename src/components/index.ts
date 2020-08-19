@@ -6,7 +6,7 @@ export { BlogRoll } from "./blog-roll";
 export { BookingIframe, BookingSection } from "./booking";
 export { ContentBreak } from "./content-break";
 export { LinkButton, PlainButton, PillButton } from "./button";
-export { ContactForm, OptInForm } from "./forms/";
+export { ContactForm, FreebieForm, OptInForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered";
 export { FAQ } from "./faq";
