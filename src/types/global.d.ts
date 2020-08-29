@@ -8,19 +8,6 @@ declare type BaseGatsbyPage = {
   itemType?: string;
 };
 
-declare type BannerImagePreviewPage = {
-  image?: string | NestedImage;
-  imageHeadline: string;
-  isPreview?: boolean;
-};
-
-declare type BasePreviewWithBannerImage = BannerImagePreviewPage & {
-  content: string;
-  contentComponent?: any;
-  frontmatter: any;
-  posts?: BlogPost[];
-};
-
 declare type BlogPost = {
   node: BlogPostInner;
 };

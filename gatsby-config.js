@@ -88,9 +88,9 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 800,
+              maxWidth: 1260,
               linkImagesToOriginal: false,
-              quality: 90,
+              quality: 100,
               showCaption: true,
             },
           },
@@ -120,7 +120,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/pathfinder/**"],
+        exclude: ["/pathfinder/**", "/giveaway/*"],
       },
     },
     "gatsby-plugin-styled-components",

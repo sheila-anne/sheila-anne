@@ -9,11 +9,9 @@ import {
   ContentBreak,
   Features,
   FlexContainer,
-  FullWidthImage,
   Instagram,
   Layout,
   LinkButton,
-  PreviewCompatibleBanner,
   PreviewCompatibleImage,
   SEO,
   SmartLink,
@@ -116,6 +114,15 @@ const ImageContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
+const BreakOutImage = styled(PreviewCompatibleImage)`
+  left: 50%;
+  margin-left: -48vw;
+  margin-right: -48vw;
+  max-width: 96w;
+  right: 50%;
+  width: 96vw;
+`;
+
 const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
@@ -136,94 +143,82 @@ const TestimonialContainer = styled(FlexContainer)`
   display: block;
 `;
 
-export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPreview, posts }) => {
-  const { description, formHeadline, formParagraph, formSubHeadline, image, testimonials, mainpitch } = frontmatter;
+export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, posts }) => {
+  const { description, image, testimonials, mainpitch } = frontmatter;
 
   const safeImage = image as NestedImage;
-  const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
 
   return (
-    <>
-      {!!bannerImagesrc && (
-        <Helmet>
-          <link href={bannerImagesrc} rel="preload" as="image" key={bannerImagesrc} crossOrigin="anoynmous" />
-        </Helmet>
-      )}
-      <PreviewCompatibleBanner
-        isPreview={isPreview}
-        Component={
-          <FullWidthImage
-            critical={true}
-            fadeIn="soft"
-            fluid={safeImage?.childImageSharp?.fluid || safeImage}
-            title="Sheila Anne Life Coaching cover photo"
-          />
-        }
-        image={image}
+    <section>
+      <BreakOutImage
+        loading="eager"
+        imageInfo={{
+          alt: "Sheila Anne welcoming you to her site",
+          childImageSharp: safeImage?.childImageSharp,
+        }}
+        title="Sheila Anne Life Coaching cover photo"
       />
-      <section>
+      <CenteredText>
+        <BannerHeadline color="#FFF" fontColor="#000" margin="1rem 0 0 0">
+          <BannerText>Come Home To Yourself, Transform Your Life</BannerText>
+        </BannerHeadline>
+      </CenteredText>
+      <Container>
         <CenteredText>
-          <BannerHeadline color="#FFF" fontColor="#000">
-            <BannerText>Come Home To Yourself, Transform Your Life</BannerText>
+          <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
+          <ContentBreak />
+          <h3>Here's How We Can Work Together:</h3>
+        </CenteredText>
+        <FlexContainer margin="1rem 0">
+          <Features gridItems={frontmatter.intro.blurbs} />
+        </FlexContainer>
+        <FlexContainer margin="2rem 0">
+          <ImageContainer>
+            <PreviewCompatibleImage
+              loading="lazy"
+              imageInfo={{
+                alt: "Sheila Anne drinking coffee",
+                childImageSharp: mainpitch.image.childImageSharp,
+              }}
+              title="A warm welcome from Sheila Anne"
+            />
+          </ImageContainer>
+          <p>{mainpitch.title}</p>
+        </FlexContainer>
+        <ContentBreak />
+        <FlexContainer justifyContent="center" margin="1rem 0">
+          <PathfinderHeading>Pathfinder: Find Your Way</PathfinderHeading>
+          <div>
+            There's so much more to say - but let's get to know one another first! I've prepared a free, downloadable
+            kit for you to see if one of my programs will be a good fit for you. By{" "}
+            <BannerLink to="/pathfinder/" title="Pathfinder freebie">
+              signing up for my Pathfinder guide
+            </BannerLink>
+            , you get my complementary assessment tool which will help you assess where you are in your own
+            transformational journey, and how I can help.
+          </div>
+        </FlexContainer>
+        <CenteredText>
+          <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
+            What People Are Saying
           </BannerHeadline>
         </CenteredText>
-        <Container>
-          <CenteredText>
-            <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
-            <ContentBreak />
-            <h3>Here's How We Can Work Together:</h3>
-          </CenteredText>
-          <FlexContainer margin="1rem 0">
-            <Features gridItems={frontmatter.intro.blurbs} />
-          </FlexContainer>
-          <FlexContainer margin="2rem 0">
-            <ImageContainer>
-              <PreviewCompatibleImage
-                loading="lazy"
-                imageInfo={{
-                  alt: "Sheila Anne drinking coffee",
-                  childImageSharp: mainpitch.image.childImageSharp,
-                }}
-                title="A warm welcome from Sheila Anne"
-              />
-            </ImageContainer>
-            <p>{mainpitch.title}</p>
-          </FlexContainer>
-          <ContentBreak />
-          <FlexContainer justifyContent="center" margin="1rem 0">
-            <PathfinderHeading>Pathfinder: Find Your Way</PathfinderHeading>
-            <div>
-              There's so much more to say - but let's get to know one another first! I've prepared a free, downloadable
-              kit for you to see if one of my programs will be a good fit for you. By{" "}
-              <BannerLink to="/pathfinder/" title="Pathfinder freebie">
-                signing up for my Pathfinder guide
-              </BannerLink>
-              , you get my complementary assessment tool which will help you assess where you are in your own
-              transformational journey, and how I can help.
-            </div>
-          </FlexContainer>
-          <CenteredText>
-            <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
-              What People Are Saying
-            </BannerHeadline>
-          </CenteredText>
-          <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
-            <Testimonial testimonials={testimonials} />
-          </TestimonialContainer>
-          <CenteredText>
-            <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
-              Latest From The Blog
-            </BannerHeadline>
-          </CenteredText>
-          <BlogRoll posts={posts} />
-          <CenteredText>
-            <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
-              Read more @ the blog!
-            </LinkButton>
-          </CenteredText>
-        </Container>
-      </section>
-    </>
+        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
+          <Testimonial testimonials={testimonials} />
+        </TestimonialContainer>
+        <CenteredText>
+          <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
+            Latest From The Blog
+          </BannerHeadline>
+        </CenteredText>
+        <BlogRoll posts={posts} />
+        <CenteredText>
+          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
+            Read more @ the blog!
+          </LinkButton>
+        </CenteredText>
+      </Container>
+    </section>
   );
 };
 
