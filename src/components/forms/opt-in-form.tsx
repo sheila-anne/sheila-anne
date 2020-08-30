@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 
 import { BaseForm, BaseFormProps } from "./base-form";
 import { Input } from "./form-elements";
 
-export const OptInForm: FC<BaseFormProps> = ({
+export const OptInForm = ({
   backgroundColor,
   formDescription,
   formRoute = "/.netlify/functions/subscribe-handler",
@@ -11,7 +11,7 @@ export const OptInForm: FC<BaseFormProps> = ({
   formTitle,
   page,
   submitText,
-}) => (
+}: BaseFormProps) => (
   <BaseForm
     formDescription={formDescription}
     formRoute={formRoute}

@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import { applyStyle } from "../utils";
@@ -198,7 +198,7 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
   ));
 };
 
-const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
+const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -240,7 +240,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
   );
 };
 
-const Nav: FC<NavProps> = ({ location }) => {
+const Nav = ({ location }: NavProps) => {
   const { isMobile } = useWindow();
   return <NavHeader location={location} isMobile={isMobile} />;
 };

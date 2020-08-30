@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { CenteredText } from "./centered";
@@ -47,7 +47,7 @@ const SmallHeadline = styled.h3`
   margin-top: 0;
 `;
 
-export const Features: FC<FeaturedProps> = ({ gridItems }) => (
+export const Features = ({ gridItems }: FeaturedProps) => (
   <FlexContainer>
     {gridItems.map((item, index) => (
       <ColoredFlexColumn key={item.text} colorIndex={index}>

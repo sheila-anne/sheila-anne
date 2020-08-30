@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 
 import { BaseForm, BaseFormProps } from "./base-form";
 import { Input, TextArea } from "./form-elements";
 
-export const ContactForm: FC<BaseFormProps> = ({
+export const ContactForm = ({
   backgroundColor,
   formDescription,
   formParagraph,
@@ -11,7 +11,7 @@ export const ContactForm: FC<BaseFormProps> = ({
   formTitle,
   page,
   submitText,
-}) => (
+}: BaseFormProps) => (
   <BaseForm
     formDescription={formDescription}
     formParagraph={formParagraph}

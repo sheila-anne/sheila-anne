@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, MouseEvent, SetStateAction, useState } from "react";
+import React, { Dispatch, MouseEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -56,14 +56,14 @@ const handleSubmit = (
   setShowBookingSection(!showBookingSection);
 };
 
-export const BookingSection: FC<BookingSectionProps> = ({
+export const BookingSection = ({
   backgroundColor,
   formDescription,
   formParagraph,
   formTitle,
   page,
   bookingUrl = Constants.square.allServicesUrl,
-}) => {
+}: BookingSectionProps) => {
   const [showBookingSection, setShowBookingSection] = useState(false);
 
   return (

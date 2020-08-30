@@ -19,7 +19,7 @@ const Headline = styled.h2`
   text-align: center;
 `;
 
-export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({ content, contentComponent, imageHeadline }) => {
+export const WritingDeskPageTemplate = ({ content, contentComponent, imageHeadline }: WritingDeskProps) => {
   const PageContent = contentComponent || Content;
 
   return (

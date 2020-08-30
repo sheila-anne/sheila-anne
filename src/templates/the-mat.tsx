@@ -1,9 +1,9 @@
 import { graphql } from "gatsby";
-import React, { FC } from "react";
+import React from "react";
 
 import { BaseTemplate, HTMLContent, Layout, SEO } from "../components/";
 
-const TheMat: FC<GatsbyPage> = ({ data, location }) => {
+const TheMat = ({ data, location }: GatsbyPage) => {
   const { markdownRemark: post } = data;
 
   return (

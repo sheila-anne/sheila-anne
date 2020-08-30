@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -30,8 +30,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ isOpen }) =>
-      !!isOpen ? "#FFF" : Constants.Colors.navLinkText};
+    background: ${({ isOpen }) => (!!isOpen ? "#FFF" : Constants.Colors.navLinkText)};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -44,8 +43,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
     :nth-child(2) {
       opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
       height: ${({ isOpen }) => !!isOpen && "0"};
-      transform: ${({ isOpen }) =>
-        isOpen ? "translateX(20px)" : "translateX(0)"};
+      transform: ${({ isOpen }) => (isOpen ? "translateX(20px)" : "translateX(0)")};
     }
 
     :nth-child(3) {
@@ -54,10 +52,7 @@ const StyledBurger = styled.button<{ isOpen: boolean }>`
   }
 `;
 
-const onClick = (
-  isOpen: boolean,
-  setIsOpen: Dispatch<SetStateAction<boolean>>
-) => {
+const onClick = (isOpen: boolean, setIsOpen: Dispatch<SetStateAction<boolean>>) => {
   const newOpenValue = !isOpen;
   setIsOpen(newOpenValue);
   const args = {
@@ -69,16 +64,10 @@ const onClick = (
   trackFacebook("trackCustom", "Menu Interaction", args);
 };
 
-const Burger: FC<BurgerProps> = ({ isOpen, setIsOpen }) => (
-  <StyledBurger
-    aria-haspopup={true}
-    isOpen={isOpen}
-    onClick={() => onClick(isOpen, setIsOpen)}
-  >
+export const Burger = ({ isOpen, setIsOpen }: BurgerProps) => (
+  <StyledBurger aria-haspopup={true} isOpen={isOpen} onClick={() => onClick(isOpen, setIsOpen)}>
     <div />
     <div />
     <div />
   </StyledBurger>
 );
-
-export { Burger };

@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react";
+import React from "react";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
@@ -12,13 +12,13 @@ type PreviewCompatibleImageProps = {
   title?: string;
 };
 
-export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
+export const PreviewCompatibleImage = ({
   className,
   imageAlt,
   imageInfo,
   title,
   loading = "auto",
-}) => {
+}: PreviewCompatibleImageProps) => {
   const imageStyle = {
     maxWidth: "inherit",
     maxHeight: "inherit",
@@ -67,4 +67,13 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
 
 export const PreviewCompatibleFlexImage = styled(PreviewCompatibleImage)`
   ${FlexImageCSS}
+`;
+
+export const BreakOutImage = styled(PreviewCompatibleImage)`
+  left: 50%;
+  margin-left: -48vw;
+  margin-right: -48vw;
+  max-width: 96w;
+  right: 50%;
+  width: 96vw;
 `;

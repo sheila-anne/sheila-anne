@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { graphql } from "gatsby";
-import React, { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import {
   BlogRoll,
+  BreakOutImage,
   CenteredText,
   ContentBreak,
   Features,
@@ -27,12 +27,7 @@ type MainPitch = {
 };
 
 type IndexFrontmatterProps = BaseFrontmatter & {
-  bannerSubtitle: string;
-  bannerTitle: string;
   description: string;
-  formHeadline: string;
-  formSubHeadline: string;
-  formParagraph: string;
   heading: string;
   image: PreviewImage | string;
   intro: {
@@ -114,15 +109,6 @@ const ImageContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const BreakOutImage = styled(PreviewCompatibleImage)`
-  left: 50%;
-  margin-left: -48vw;
-  margin-right: -48vw;
-  max-width: 96w;
-  right: 50%;
-  width: 96vw;
-`;
-
 const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
@@ -143,7 +129,7 @@ const TestimonialContainer = styled(FlexContainer)`
   display: block;
 `;
 
-export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, posts }) => {
+export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) => {
   const { description, image, testimonials, mainpitch } = frontmatter;
 
   const safeImage = image as NestedImage;
@@ -222,7 +208,7 @@ export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, posts
   );
 };
 
-const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
+const IndexPage = ({ data, location }: IndexPageProps) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
@@ -240,12 +226,7 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        bannerTitle
-        bannerSubtitle
         description
-        formHeadline
-        formSubHeadline
-        formParagraph
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

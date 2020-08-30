@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { BlogPostMeta } from "./blog-post-meta";
@@ -49,9 +49,7 @@ const FeaturedThumbnail = styled.div`
 const Article = styled.article<ArticleProps>`
   align-items: center;
   background-color: ${({ isFeatured }) =>
-    isFeatured
-      ? Constants.Colors.theGroveGreenGray
-      : Constants.Colors.theGroveLightGreen};
+    isFeatured ? Constants.Colors.theGroveGreenGray : Constants.Colors.theGroveLightGreen};
   border-radius: 1rem;
   color: #000;
   display: flex;
@@ -74,19 +72,9 @@ const Paragraph = styled.p`
 `;
 
 const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
-  <Article
-    isFeatured={post.frontmatter.featuredpost}
-    itemType="https://schema.org/BlogPosting"
-    itemScope={true}
-  >
-    <BlogPostMeta
-      datePublished={post.frontmatter.date}
-      featuredImage={post.frontmatter.featuredImage}
-    />
-    <meta
-      itemProp="mainEntityOfPage"
-      content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`}
-    />
+  <Article isFeatured={post.frontmatter.featuredpost} itemType="https://schema.org/BlogPosting" itemScope={true}>
+    <BlogPostMeta datePublished={post.frontmatter.date} featuredImage={post.frontmatter.featuredImage} />
+    <meta itemProp="mainEntityOfPage" content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`} />
     <FlexHeader>
       {post.frontmatter.featuredImage ? (
         <FeaturedThumbnail>
@@ -106,17 +94,13 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
   </Article>
 );
 
-export const BlogRoll: FC<BlogPosts> = ({ posts }) => {
+export const BlogRoll = ({ posts }: BlogPosts) => {
   return (
     <FlexContainer>
       {posts &&
         posts.map(({ node: post }) => (
           <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>
-            <SmartLink
-              hideMetadata={true}
-              to={post.fields.slug}
-              title={post.frontmatter.title}
-            >
+            <SmartLink hideMetadata={true} to={post.fields.slug} title={post.frontmatter.title}>
               <BlogRollInner post={post} />
             </SmartLink>
           </BlogRollFlexColumn>

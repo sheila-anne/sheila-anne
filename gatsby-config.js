@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Sheila Anne`,
     author: `Sheila Anne Murray`,
-    description: `Life coaching you through life's greatest challenges with Sheila Anne Murray`,
+    description: `Transformational life coaching with Sheila Anne Murray`,
     siteUrl: `https://www.sheilaanne.com`,
     social: {
       facebook: "https://facebook.com/sheilaannecoaching",
