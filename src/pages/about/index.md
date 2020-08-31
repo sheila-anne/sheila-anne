@@ -1,11 +1,11 @@
 ---
 templateKey: about-page
 bannerImage: /img/sheila-anne-about.jpg
-bannerImageHeadline: Learn more about Sheila Anne, life coach
+bannerImageHeadline: Learn more about Sheila Anne's story and what led her into transformational life coaching
 path: /about
 pageTitle: About | Sheila Anne
 pageDescription: >
-  Learn more about Transformational Life Coach - Sheila Anne Murray
+  Learn more about transformational Life Coach - Sheila Anne Murray
 featuredImage: /img/sheila-spain-on-stairs.jpg
 ---
 

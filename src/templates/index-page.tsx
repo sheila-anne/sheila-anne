@@ -9,6 +9,7 @@ import {
   ContentBreak,
   Features,
   FlexContainer,
+  HalfColumn,
   Instagram,
   Layout,
   LinkButton,
@@ -34,6 +35,7 @@ type IndexFrontmatterProps = BaseFrontmatter & {
     blurbs: FeaturedGridItem[];
   };
   mainpitch: MainPitch;
+  pathfinder: NestedImage;
   testimonials: any;
 };
 
@@ -109,6 +111,15 @@ const ImageContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
+const HalfImage = styled.div`
+  max-width: 200px;
+  text-align: center;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    max-width: inherit;
+  }
+`;
+
 const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
@@ -119,6 +130,7 @@ const Subheadline = styled.h2`
 const PathfinderHeading = styled.h2`
   margin: 1rem;
   padding: 0 1rem 1rem 1rem;
+  text-align: center;
 `;
 
 const BannerText = styled.div`
@@ -130,7 +142,7 @@ const TestimonialContainer = styled(FlexContainer)`
 `;
 
 export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) => {
-  const { description, image, testimonials, mainpitch } = frontmatter;
+  const { description, image, mainpitch, pathfinder, testimonials } = frontmatter;
 
   const safeImage = image as NestedImage;
 
@@ -173,16 +185,31 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
         </FlexContainer>
         <ContentBreak />
         <FlexContainer justifyContent="center" margin="1rem 0">
-          <PathfinderHeading>Pathfinder: Find Your Way</PathfinderHeading>
-          <div>
-            There's so much more to say - but let's get to know one another first! I've prepared a free, downloadable
-            kit for you to see if one of my programs will be a good fit for you. By{" "}
-            <BannerLink to="/pathfinder/" title="Pathfinder freebie">
-              signing up for my Pathfinder guide
-            </BannerLink>
-            , you get my complementary assessment tool which will help you assess where you are in your own
-            transformational journey, and how I can help.
-          </div>
+          <HalfColumn>
+            <HalfImage>
+              <SmartLink to="/pathfinder/" title="PATHFINDER freebie">
+                <PreviewCompatibleImage
+                  loading="lazy"
+                  imageInfo={{
+                    alt: "Preview of the PATHFINDER freebie",
+                    childImageSharp: pathfinder.childImageSharp,
+                  }}
+                  title="Preview of the PATHFINDER freebie"
+                />
+              </SmartLink>
+            </HalfImage>
+          </HalfColumn>
+          <HalfColumn>
+            <PathfinderHeading>PATHFINDER: Find Your Way</PathfinderHeading>
+            <div>
+              <BannerLink to="/pathfinder/" title="PATHFINDER freebie">
+                Grab your free, downloadable guide
+              </BannerLink>{" "}
+              that will help you make your next big move. PATHFINDER will help you to reflect on questions that really
+              matter when taking your next step; gain clarity around what you desire in your career path; and feel more
+              resourced in how to pursue the path you deserve!
+            </div>
+          </HalfColumn>
         </FlexContainer>
         <CenteredText>
           <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
@@ -231,6 +258,13 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        pathfinder {
+          childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

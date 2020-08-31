@@ -11,7 +11,7 @@ export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered";
 export { FAQ } from "./faq";
 export { Features } from "./features";
-export { FlexContainer, FlexColumn, FlexHeader, FlexImage } from "./flex";
+export { FlexContainer, FlexColumn, FlexHeader, FlexImage, HalfColumn } from "./flex";
 export { Footer } from "./footer";
 export { Instagram } from "./instagram";
 export { Layout } from "./layout";

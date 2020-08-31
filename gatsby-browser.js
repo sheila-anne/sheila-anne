@@ -10,7 +10,7 @@ export const onClientEntry = () => {
 export const wrapPageElement = ({ element, props }) => {
   return (
     <>
-      <BannerText />
+      <BannerText {...props} />
       {element}
     </>
   );

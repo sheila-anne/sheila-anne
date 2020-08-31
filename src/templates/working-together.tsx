@@ -13,12 +13,7 @@ import {
   WorkingTogetherHeader,
 } from "../components";
 
-export const WorkingTogetherTemplate = ({
-  content,
-  contentComponent,
-  faqs,
-  frontmatter,
-}) => {
+export const WorkingTogetherTemplate = ({ content, contentComponent, faqs, frontmatter }) => {
   const PageContent = contentComponent || Content;
 
   return (

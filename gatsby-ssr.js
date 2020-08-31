@@ -12,7 +12,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
 exports.wrapPageElement = ({ element, props }) => {
   return (
     <>
-      <BannerText />
+      <BannerText {...props} />
       {element}
     </>
   );

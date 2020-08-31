@@ -1,6 +1,8 @@
 import "dotenv/config";
 import { APIGatewayEvent, Context } from "aws-lambda";
 
+import { bodyGuardian } from "./utils";
+
 const { FREEBIE_SECRET } = process.env;
 
 type EventProperties = {
@@ -13,13 +15,7 @@ type HandlerReturn = {
 };
 
 exports.handler = async function (event: APIGatewayEvent, context: Context): Promise<HandlerReturn> {
-  if (!event.body) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ success: false }),
-    };
-  }
-  console.log(`Received form submission event: ${event.body}`);
+  bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body) as EventProperties;
   const isMatch = eventProperties.code === FREEBIE_SECRET;

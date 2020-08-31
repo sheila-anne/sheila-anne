@@ -6,6 +6,7 @@ pageDescription: >
 image: /img/sheila-anne-logo.jpg
 description: >
   I am a life transformation coach that works with purpose-driven women like you — tired of questioning where you are and where you're going; dreaming of a life outside of the grind; all the boxes checked but still feeling incomplete. Let's make a change together!
+pathfinder: /img/freebie-pathfinder-teaser-image.jpg
 
 mainpitch:
   title: Hi, I’m Sheila! I’m a certified professional coach specializing in helping driven, free-spirited women to cultivate the life & career they deserve. Why? Because I used to be a girl who relied on checking boxes, filling her schedule, and getting fit to feel good about who she was. Sound familiar? My career path was winding, my brain was always chock-full of things I had to do, and moments of fulfillment were fleeting. I discovered how to connect my mind and body, redefine success, and lead my own purpose-filled path. Now I’m fluffing passionate about helping others to do the same!

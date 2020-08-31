@@ -240,9 +240,7 @@ const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
   );
 };
 
-const Nav = ({ location }: NavProps) => {
+export const Nav = ({ location }: NavProps) => {
   const { isMobile } = useWindow();
   return <NavHeader location={location} isMobile={isMobile} />;
 };
-
-export { Nav };

@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { APIGatewayEvent, Context } from "aws-lambda";
-import fetch from "node-fetch";
 
+import { bodyGuardian, fetchResponse } from "./utils";
 import { FormPage } from "../types/forms";
 
 const { HUBSPOT_PORTAL, HUBSPOT_HOMEPAGE_FORM_GUID } = process.env;
@@ -16,11 +16,6 @@ type EventProperties = {
   phone?: string;
 };
 
-type HandlerReturn = {
-  statusCode: number;
-  body: string;
-};
-
 type HubspotResponse = {
   redirectUri: string;
   inlineMessage: string;
@@ -30,14 +25,8 @@ type HubspotResponse = {
   }[];
 };
 
-exports.handler = async function (event: APIGatewayEvent, context: Context): Promise<HandlerReturn> {
-  if (!event.body) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ success: false }),
-    };
-  }
-  console.log(`Received form submission event: ${event.body}`);
+exports.handler = async function (event: APIGatewayEvent, context: Context) {
+  bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body) as EventProperties;
 
@@ -69,26 +58,8 @@ exports.handler = async function (event: APIGatewayEvent, context: Context): Pro
 
   const fullUrl = hubSpotUrl + HUBSPOT_HOMEPAGE_FORM_GUID;
 
-  return fetch(fullUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then(response => response.json() as Promise<HubspotResponse>)
-    .then(data => {
-      console.log("Hubspot response: ", data);
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ success: true }),
-      };
-    })
-    .catch(err => {
-      console.error(err);
-      return {
-        statusCode: 422,
-        body: JSON.stringify({ success: false }),
-      };
-    });
+  return fetchResponse<HubspotResponse>(fullUrl, data).then(_ => ({
+    statusCode: 200,
+    body: JSON.stringify({ success: true }),
+  }));
 };

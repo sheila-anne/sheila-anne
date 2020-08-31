@@ -1,8 +1,12 @@
-import React, { Dispatch, MouseEvent, SetStateAction, useEffect, useState } from "react";
+import React, { Dispatch, MouseEvent, SetStateAction, useLayoutEffect, useState } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
+
+type TextBannerProps = {
+  path: string;
+};
 
 const BannerDiv = styled.div`
   align-items: center;
@@ -48,14 +52,16 @@ const clickHandler = (setIsShown: Dispatch<SetStateAction<boolean>>) => {
   window.sessionStorage.setItem(Constants.textBannerKey, TRUE_SESSION_VALUE);
 };
 
-export const BannerText = () => {
+const NoShowValue = "pathfinder";
+
+export const BannerText = ({ path }: TextBannerProps) => {
   const [isShown, setIsShown] = useState(true);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const isDismissed = window.sessionStorage.getItem(Constants.textBannerKey);
-    if (isDismissed === TRUE_SESSION_VALUE) {
-      setIsShown(false);
+    if (isDismissed === TRUE_SESSION_VALUE || (path && path.includes(NoShowValue))) {
+      clickHandler(setIsShown);
     }
-  }, []);
+  }, [path]);
 
   const innerHandler = (e: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
@@ -64,12 +70,12 @@ export const BannerText = () => {
     <BannerDiv>
       <Text>
         <UnderlineLink
-          aria-label={"Click to sign up for the Pathfinder freebie"}
+          aria-label="Click to sign up for my PATHFINDER freebie"
           onClick={innerHandler}
           to="/pathfinder/"
-          title="Pathfinder freebie"
+          title="Click to sign up for my PATHFINDER freebie"
         >
-          Sign up to receive my free Pathfinder kit!
+          Sign up to receive my free PATHFINDER guide!
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">

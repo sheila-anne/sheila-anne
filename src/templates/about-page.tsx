@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import { BaseTemplate, HTMLContent, Layout, SEO } from "../components";
+import { BaseTemplate, BreakOutImage, HTMLContent, Layout, SEO } from "../components";
 
 const AboutPage = ({ data, location }) => {
   const { markdownRemark: post } = data;
@@ -15,6 +15,16 @@ const AboutPage = ({ data, location }) => {
         location={location}
         title={post.frontmatter.pageTitle}
       />
+      <div>
+        <BreakOutImage
+          loading="eager"
+          imageInfo={{
+            alt: "Sheila running through a field",
+            childImageSharp: post.frontmatter.bannerImage.childImageSharp,
+          }}
+          title={post.frontmatter.bannerImageHeadline}
+        />
+      </div>
       <BaseTemplate contentComponent={HTMLContent} content={post.html} />
     </Layout>
   );
@@ -30,6 +40,9 @@ export const aboutPageQuery = graphql`
         bannerImageHeadline
         bannerImage {
           childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
             original {
               src
             }
