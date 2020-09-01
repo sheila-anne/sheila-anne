@@ -23,7 +23,7 @@ const siteQuery = graphql`
         }
       }
     }
-    backupImage: file(relativePath: { eq: "sheila-anne-og-image.jpg" }) {
+    backupImage: file(relativePath: { eq: "sheila-anne-og-image.png" }) {
       publicURL
     }
   }
