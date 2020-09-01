@@ -51,6 +51,15 @@ export const HalfColumn = styled(FlexColumn)`
   flex-basis: 33%;
 `;
 
+export const FlexColSplitImage = styled.div`
+  max-width: 200px;
+  text-align: center;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    max-width: inherit;
+  }
+`;
+
 export const FlexHeader = styled.header`
   display: flex;
   margin-bottom: 1rem;

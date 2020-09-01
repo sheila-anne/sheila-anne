@@ -31,7 +31,7 @@ export const SEO = ({ description, image, imageAlt, isPreview, location, title, 
   if (isPreview) {
     return null;
   }
-  const fallbackImage = `/img/sheila-anne-og-image.png`;
+  const fallbackImage = `/img/sheila-anne-og-image.jpg`;
   const ogImage = site.siteMetadata.siteUrl + (!!image ? image : fallbackImage);
   const pathname = location && location.pathname;
 

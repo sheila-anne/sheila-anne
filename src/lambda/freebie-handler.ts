@@ -2,6 +2,7 @@ import "dotenv/config";
 import { APIGatewayEvent, Context } from "aws-lambda";
 
 import { bodyGuardian } from "./utils";
+import { OuterHandlerReturn } from "../types/lambda";
 
 const { FREEBIE_SECRET } = process.env;
 
@@ -9,12 +10,7 @@ type EventProperties = {
   code: string;
 };
 
-type HandlerReturn = {
-  statusCode: number;
-  body: string;
-};
-
-exports.handler = async function (event: APIGatewayEvent, context: Context): Promise<HandlerReturn> {
+exports.handler = async function (event: APIGatewayEvent, context: Context): Promise<OuterHandlerReturn> {
   bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body) as EventProperties;

@@ -13,7 +13,8 @@ type PathfinderFile = {
 };
 
 export const FreebieForm = () => {
-  const data = useStaticQuery<PathfinderFile>(PathfinderQuery);
+  const data = useStaticQuery<PathfinderFile>(FreebieFormQuery);
+  console.log(data);
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false);
   return (
     <BaseForm
@@ -23,6 +24,7 @@ export const FreebieForm = () => {
       isSubmitSuccess={setIsSubmitSuccess}
       page="freebie"
       submitText="Submit"
+      trackArgs={{ eventName: "SubmitApplication", params: { content_name: "PATHFINDER" } }}
     >
       {!isSubmitSuccess && (
         <Input
@@ -52,8 +54,8 @@ export const FreebieForm = () => {
   );
 };
 
-const PathfinderQuery = graphql`
-  query PathfinderQuery {
+const FreebieFormQuery = graphql`
+  query FreebieFormQuery {
     file(relativePath: { eq: "sheila-anne-pathfinder.pdf" }) {
       absolutePath
     }

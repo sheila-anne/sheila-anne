@@ -19,6 +19,13 @@ export const OptInForm = ({
     formTitle={formTitle}
     page={page}
     submitText={submitText}
+    trackArgs={{
+      eventName: "CompleteRegistration",
+      params: {
+        content_name: "PATHFINDER",
+        status: true,
+      },
+    }}
   >
     <Input
       autoComplete="name"

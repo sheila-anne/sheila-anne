@@ -9,6 +9,7 @@ import {
   ContentBreak,
   Features,
   FlexContainer,
+  FlexColSplitImage,
   HalfColumn,
   Instagram,
   Layout,
@@ -111,15 +112,6 @@ const ImageContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const HalfImage = styled.div`
-  max-width: 200px;
-  text-align: center;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    max-width: inherit;
-  }
-`;
-
 const Subheadline = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
@@ -186,7 +178,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
         <ContentBreak />
         <FlexContainer justifyContent="center" margin="1rem 0">
           <HalfColumn>
-            <HalfImage>
+            <FlexColSplitImage>
               <SmartLink to="/pathfinder/" title="PATHFINDER freebie">
                 <PreviewCompatibleImage
                   loading="lazy"
@@ -197,7 +189,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
                   title="Preview of the PATHFINDER freebie"
                 />
               </SmartLink>
-            </HalfImage>
+            </FlexColSplitImage>
           </HalfColumn>
           <HalfColumn>
             <PathfinderHeading>PATHFINDER: Find Your Way</PathfinderHeading>
