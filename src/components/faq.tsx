@@ -1,4 +1,4 @@
-import React, { FC, Reducer, useReducer } from "react";
+import React, { Reducer, useReducer } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -50,7 +50,7 @@ const RotateOnOpen = styled.span<{ isExpanded: boolean }>`
 
 const getInitialState = (faq: FAQ[]) =>
   faq
-    .map((frequentlyAsked) => ({
+    .map(frequentlyAsked => ({
       [frequentlyAsked.question]: false,
     }))
     .reduce((previousValue, currentValue) => ({
@@ -58,10 +58,7 @@ const getInitialState = (faq: FAQ[]) =>
       ...currentValue,
     }));
 
-const reducer: Reducer<State, Action> = (
-  state: State,
-  action: Action
-): State => {
+const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
   const isExpanded = !state[action.type];
   const args = {
     action: "click",
@@ -73,14 +70,14 @@ const reducer: Reducer<State, Action> = (
   return { ...state, [action.type]: isExpanded };
 };
 
-export const FAQ: FC<FAQProps> = ({ faq }) => {
+export const FAQ = ({ faq }: FAQProps) => {
   const initialState = getInitialState(faq);
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <section>
       <h1 id="faq">FAQ</h1>
-      {faq.map((frequentlyAsked) => (
+      {faq.map(frequentlyAsked => (
         <Clickable
           key={frequentlyAsked.question}
           onClick={() =>
@@ -90,14 +87,9 @@ export const FAQ: FC<FAQProps> = ({ faq }) => {
           }
         >
           <SmallHeadline>
-            {frequentlyAsked.question}{" "}
-            <RotateOnOpen isExpanded={state[frequentlyAsked.question]}>
-              →
-            </RotateOnOpen>
+            {frequentlyAsked.question} <RotateOnOpen isExpanded={state[frequentlyAsked.question]}>→</RotateOnOpen>
           </SmallHeadline>
-          <HiddenText isExpanded={state[frequentlyAsked.question]}>
-            {frequentlyAsked.answer}
-          </HiddenText>
+          <HiddenText isExpanded={state[frequentlyAsked.question]}>{frequentlyAsked.answer}</HiddenText>
         </Clickable>
       ))}
     </section>

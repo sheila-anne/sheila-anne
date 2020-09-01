@@ -19,15 +19,15 @@ type FlexColumnProps = FlexContainerProps & {
 };
 
 const BackgroundColorDiv = styled.div<BackgroundColorProps>`
-  ${({ backgroundColor }) =>
-    !!backgroundColor && `background-color: ${backgroundColor};`}
+  ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}
 `;
 
 export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
   flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
-  ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
+  ${({ justifyContent }) =>
+    applyStyle("justify-content", justifyContent)}
 
   @media (max-width: ${Constants.mobileWidth}) {
     flex-flow: row wrap;
@@ -43,6 +43,20 @@ export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ margin }) => applyStyle("margin", margin)}
     flex-basis: 100%;
+  }
+`;
+
+export const HalfColumn = styled(FlexColumn)`
+  align-self: center;
+  flex-basis: 33%;
+`;
+
+export const FlexColSplitImage = styled.div`
+  max-width: 200px;
+  text-align: center;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    max-width: inherit;
   }
 `;
 

@@ -1,17 +1,12 @@
 ---
 templateKey: index-page
-pageTitle: Sheila Anne | Life Coaching | Content Creation | Yoga & Intentional Movement
+pageTitle: Sheila Anne | Transformational Life Coaching
 pageDescription: >
-  Lifecoach, yoga teacher, and content creator Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
-bannerTitle: Meet your new life coach
-bannerSubtitle: >
-  Curious to learn more?
-image: /img/sheila-anne-cover-2020.jpg
+  Transformational lifecoach Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
+image: /img/sheila-anne-logo.jpg
 description: >
   I am a life transformation coach that works with purpose-driven women like you — tired of questioning where you are and where you're going; dreaming of a life outside of the grind; all the boxes checked but still feeling incomplete. Let's make a change together!
-formHeadline: "Let's get to know one another"
-formParagraph: ""
-formSubHeadline: "Don't wait to change your life, connect with me today!"
+pathfinder: /img/freebie-pathfinder-teaser-image.jpg
 
 mainpitch:
   title: Hi, I’m Sheila! I’m a certified professional coach specializing in helping driven, free-spirited women to cultivate the life & career they deserve. Why? Because I used to be a girl who relied on checking boxes, filling her schedule, and getting fit to feel good about who she was. Sound familiar? My career path was winding, my brain was always chock-full of things I had to do, and moments of fulfillment were fleeting. I discovered how to connect my mind and body, redefine success, and lead my own purpose-filled path. Now I’m fluffing passionate about helping others to do the same!

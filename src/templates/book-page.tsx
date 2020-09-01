@@ -1,13 +1,7 @@
 import { graphql } from "gatsby";
 import React, { useState } from "react";
 
-import {
-  BaseTemplate,
-  BookingIframe,
-  HTMLContent,
-  Layout,
-  SEO,
-} from "../components";
+import { BaseTemplate, BookingIframe, HTMLContent, Layout, SEO } from "../components";
 import { Constants } from "../constants";
 
 const BookPage = ({ data, location }: { data: any; location: Location }) => {
@@ -28,22 +22,16 @@ const BookPage = ({ data, location }: { data: any; location: Location }) => {
     }
   }
 
+  const innerOnLoad = () => {
+    setShowBookingFrame(true);
+  };
+
   return (
     <Layout location={location}>
-      <SEO
-        description={post.frontmatter.pageDescription}
-        location={location}
-        title={post.frontmatter.pageTitle}
-      />
+      <SEO description={post.frontmatter.pageDescription} location={location} title={post.frontmatter.pageTitle} />
       <BaseTemplate contentComponent={HTMLContent} content={post.html} />
       {!showBookingFrame && <div>Loading ...</div>}
-      <BookingIframe
-        height="600px"
-        onLoad={() => setShowBookingFrame(true)}
-        showBookingSection={showBookingFrame}
-        src={bookingUrl}
-        scrolling="no"
-      />
+      <BookingIframe height="800px" onLoad={innerOnLoad} showBookingSection={showBookingFrame} src={bookingUrl} />
     </Layout>
   );
 };

@@ -1,10 +1,4 @@
-import React, {
-  Dispatch,
-  FC,
-  MouseEvent,
-  SetStateAction,
-  useState,
-} from "react";
+import React, { Dispatch, MouseEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -30,13 +24,11 @@ const PaddedParagraph = styled.p`
 `;
 
 export const BookingIframe = styled.iframe<{
-  height?: string;
   showBookingSection: boolean;
 }>`
   border: none;
-  display: ${({ showBookingSection }) =>
-    showBookingSection ? "block" : "none"};
-  min-height: ${({ height }) => (height ? height : "500px")};
+  display: ${({ showBookingSection }) => (showBookingSection ? "block" : "none")};
+  height: 800px;
   width: ${maxPageWidth};
 
   @media (max-width: ${Constants.mobileWidth}) {
@@ -64,40 +56,27 @@ const handleSubmit = (
   setShowBookingSection(!showBookingSection);
 };
 
-export const BookingSection: FC<BookingSectionProps> = ({
+export const BookingSection = ({
   backgroundColor,
   formDescription,
   formParagraph,
   formTitle,
   page,
   bookingUrl = Constants.square.allServicesUrl,
-}) => {
+}: BookingSectionProps) => {
   const [showBookingSection, setShowBookingSection] = useState(false);
 
   return (
     <section>
-      <CenteredText
-        backgroundColor={!!backgroundColor ? backgroundColor : "#FFF"}
-        padding="1rem"
-      >
+      <CenteredText backgroundColor={!!backgroundColor ? backgroundColor : "#FFF"} padding="1rem">
         {!showBookingSection && <h1>{formTitle}</h1>}
         {!showBookingSection && <h2>{formDescription}</h2>}
-        {!!formParagraph && !showBookingSection && (
-          <PaddedParagraph>{formParagraph}</PaddedParagraph>
-        )}
-        <PillButton
-          onClick={e =>
-            handleSubmit(e, setShowBookingSection, showBookingSection, page)
-          }
-        >
-          {showBookingSection ? "Hide" : "Tap To Schedule With Sheila Anne"}
+        {!!formParagraph && !showBookingSection && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
+        <PillButton onClick={e => handleSubmit(e, setShowBookingSection, showBookingSection, page)}>
+          {showBookingSection ? "Hide Scheduling Section" : "Tap To Schedule With Sheila Anne"}
         </PillButton>
       </CenteredText>
-      <BookingIframe
-        showBookingSection={showBookingSection}
-        src={bookingUrl}
-        scrolling="no"
-      />
+      <BookingIframe showBookingSection={showBookingSection} src={bookingUrl} />
     </section>
   );
 };

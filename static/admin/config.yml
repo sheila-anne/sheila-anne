@@ -21,27 +21,12 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
-        }
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
-      - {
-          label: "Featured Post",
-          name: "featuredpost",
-          widget: "boolean",
-          default: false,
-        }
-      - {
-          label: "Featured Image",
-          name: "featuredImage",
-          widget: image,
-          required: false,
-        }
+      - { label: "Featured Post", name: "featuredpost", widget: "boolean", default: false }
+      - { label: "Featured Image", name: "featuredImage", widget: image, required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
 
@@ -52,12 +37,7 @@ collections:
         name: "color-config"
         file: "src/config/colors.json"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "color",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "color" }
           - { label: Blue, name: blue, widget: string }
           - { label: Lighter Blue, name: lighterBlue, widget: string }
           - { label: Lightest Blue, name: lightestBlue, widget: string }
@@ -65,16 +45,8 @@ collections:
           - { label: Nav Link Text, name: navLinkText, widget: string }
           - { label: The Grove Green, name: theGroveGreen, widget: string }
           - { label: The Grove Teal, name: theGroveTeal, widget: string }
-          - {
-              label: The Grove Light Green,
-              name: theGroveLightGreen,
-              widget: string,
-            }
-          - {
-              label: The Grove Green-Gray,
-              name: theGroveGreenGray,
-              widget: string,
-            }
+          - { label: The Grove Light Green, name: theGroveLightGreen, widget: string }
+          - { label: The Grove Green-Gray, name: theGroveGreenGray, widget: string }
 
   - name: "pages"
     label: "Pages"
@@ -83,41 +55,16 @@ collections:
         label: "Home Page"
         name: "index"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
-            }
-          - { label: Banner Title, name: bannerTitle, widget: string }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: Page Title, name: pageTitle, widget: string }
           - { label: Page Description, name: pageDescription, widget: string }
-          - { label: Banner Subtitle, name: bannerSubtitle, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Description, name: description, widget: text }
-
-          - { label: "Form Headline", name: "formHeadline", widet: "string" }
-          - {
-              label: "Form Subheadline",
-              name: "formSubHeadline",
-              widet: "string",
-            }
-          - {
-              label: "Form Paragraph",
-              name: "formParagraph",
-              widet: "string",
-              required: false,
-            }
-
           - {
               label: Mainpitch,
               name: mainpitch,
               widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Image, name: image, widget: image },
-                ],
+              fields: [{ label: Title, name: title, widget: string }, { label: Image, name: image, widget: image }],
             }
           - {
               label: Testimonials,
@@ -128,11 +75,7 @@ collections:
                   { label: Title, name: title, widget: string },
                   { label: Image Alt Text, name: imageAlt, widget: string },
                   { label: Testimonial Text, name: text, wdiget: string },
-                  {
-                    label: Testimonial Headshot,
-                    name: imageSrc,
-                    widget: image,
-                  },
+                  { label: Testimonial Headshot, name: imageSrc, widget: image },
                 ],
             }
           - { label: Body, name: body, widget: markdown }
@@ -141,24 +84,11 @@ collections:
         label: "About"
         name: "about"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
           - { label: "Page Title", name: "pageTitle", widget: "string" }
-          - {
-              label: "Page Description",
-              name: "pageDescription",
-              widget: "string",
-            }
+          - { label: "Page Description", name: "pageDescription", widget: "string" }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
-          - {
-              label: "Banner Image Headline",
-              name: "bannerImageHeadline",
-              widget: "string",
-            }
+          - { label: "Banner Image Headline", name: "bannerImageHeadline", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
 
@@ -166,32 +96,15 @@ collections:
         label: "Working Together"
         name: "working-together"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "working-together",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "working-together" }
           - { label: "Page Title", name: "pageTitle", widget: "string" }
-          - {
-              label: "Page Description",
-              name: "pageDescription",
-              widget: "string",
-            }
+          - { label: "Page Description", name: "pageDescription", widget: "string" }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
-          - {
-              label: "Banner Image Headline",
-              name: "bannerImageHeadline",
-              widget: "string",
-            }
+          - { label: "Banner Image Headline", name: "bannerImageHeadline", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
           - { label: "Form Headline", name: "formHeadline", widet: "string" }
-          - {
-              label: "Form Subheadline",
-              name: "formSubHeadline",
-              widet: "string",
-            }
+          - { label: "Form Subheadline", name: "formSubHeadline", widet: "string" }
           - { label: "Form Paragraph", name: "formParagraph", widet: "string" }
           - {
               label: Intro,
@@ -218,10 +131,7 @@ collections:
               name: faq,
               widget: list,
               fields:
-                [
-                  { label: Question, name: question, widget: string },
-                  { label: Answer, name: answer, widget: text },
-                ],
+                [{ label: Question, name: question, widget: string }, { label: Answer, name: answer, widget: text }],
             }
           - {
               label: Testimonials,
@@ -232,11 +142,7 @@ collections:
                   { label: Title, name: title, widget: string },
                   { label: Image Alt Text, name: imageAlt, widget: string },
                   { label: Testimonial Text, name: text, wdiget: string },
-                  {
-                    label: Testimonial Headshot,
-                    name: imageSrc,
-                    widget: image,
-                  },
+                  { label: Testimonial Headshot, name: imageSrc, widget: image },
                 ],
             }
 
@@ -244,46 +150,20 @@ collections:
         label: "The Writing Desk"
         name: "the-writing-desk"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "the-writing-desk",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "the-writing-desk" }
           - { label: "Page Title", name: "pageTitle", widget: "string" }
-          - {
-              label: "Page Description",
-              name: "pageDescription",
-              widget: "string",
-            }
+          - { label: "Page Description", name: "pageDescription", widget: "string" }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
-          - {
-              label: "Banner Image Headline",
-              name: "bannerImageHeadline",
-              widget: "string",
-            }
+          - { label: "Banner Image Headline", name: "bannerImageHeadline", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
       - file: "src/pages/the-mat/index.md"
         label: "The Mat"
         name: "the-mat"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "the-mat",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "the-mat" }
           - { label: "Page Title", name: "pageTitle", widget: "string" }
-          - {
-              label: "Page Description",
-              name: "pageDescription",
-              widget: "string",
-            }
+          - { label: "Page Description", name: "pageDescription", widget: "string" }
           - { label: "Banner Image", name: "bannerImage", widget: "image" }
-          - {
-              label: "Banner Image Headline",
-              name: "bannerImageHeadline",
-              widget: "string",
-            }
+          - { label: "Banner Image Headline", name: "bannerImageHeadline", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { applyStyle } from "../utils/";
@@ -20,13 +20,7 @@ const ContentContainer = styled.div<ContentContainerProps>`
   ${({ padding }) => applyStyle("padding", padding)}
 `;
 
-export const HTMLContent: FC<ContentProps> = ({
-  backgroundColor,
-  content,
-  itemProp,
-  margin,
-  padding
-}) => (
+export const HTMLContent = ({ backgroundColor, content, itemProp, margin, padding }: ContentProps) => (
   <ContentContainer
     backgroundColor={backgroundColor}
     dangerouslySetInnerHTML={{ __html: content }}
@@ -36,6 +30,6 @@ export const HTMLContent: FC<ContentProps> = ({
   />
 );
 
-export const Content: FC<ContentProps> = ({ content, itemProp }) => (
+export const Content = ({ content, itemProp }: ContentProps) => (
   <ContentContainer itemProp={itemProp}>{content}</ContentContainer>
 );

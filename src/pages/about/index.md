@@ -1,12 +1,11 @@
 ---
 templateKey: about-page
 bannerImage: /img/sheila-anne-about.jpg
-bannerImageHeadline: Learn more about Sheila Anne, life coach
+bannerImageHeadline: Learn more about Sheila Anne's story and what led her into transformational life coaching
 path: /about
 pageTitle: About | Sheila Anne
 pageDescription: >
-  Learn more about Life Coach, Yoga Instructor, and Content Creator - Sheila
-  Anne Murray
+  Learn more about transformational Life Coach - Sheila Anne Murray
 featuredImage: /img/sheila-spain-on-stairs.jpg
 ---
 
@@ -32,5 +31,3 @@ Are you ready to get started with me?
 
 - [Book a free exploration call](/book/) today
 - Looking to hear more? [Contact me!](/contact/)
-
-![girl on stairs in spain](/img/sheila-spain-on-stairs.jpg "Sheila on a set of stairs in Spain")

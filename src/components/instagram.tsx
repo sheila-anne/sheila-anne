@@ -1,6 +1,6 @@
 import { Box, Grid, Anchor, Text } from "grommet";
 import { Favorite, Chat } from "grommet-icons";
-import React, { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 import Img from "gatsby-image";
 
@@ -86,7 +86,7 @@ const InstagramPicture = ({ node }) => (
   </Wrapper>
 );
 
-export const Instagram: FC<InstagramProps> = ({ insta, instagramUrl }) => (
+export const Instagram = ({ insta, instagramUrl }: InstagramProps) => (
   <section>
     <CenteredText>
       <h1>Don't Miss A Beat</h1>

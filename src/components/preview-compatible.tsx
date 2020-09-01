@@ -1,15 +1,8 @@
-import React, { FC, ReactElement } from "react";
+import React from "react";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
 import { FlexImageCSS } from "./flex";
-
-type PreviewCompatibleBannerProps = {
-  Component: ReactElement;
-  ComponentChildren?: ReactElement;
-  image: string | NestedImage;
-  isPreview?: boolean;
-};
 
 type PreviewCompatibleImageProps = {
   className?: string;
@@ -19,38 +12,13 @@ type PreviewCompatibleImageProps = {
   title?: string;
 };
 
-export const PreviewCompatibleBanner: FC<PreviewCompatibleBannerProps> = ({
-  Component,
-  ComponentChildren,
-  image,
-  isPreview,
-}) => {
-  return !!isPreview ? (
-    <div>
-      <div
-        style={{
-          backgroundAttachment: `inherit`,
-          backgroundImage: `url(${image})`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: `contain`,
-          height: "200px",
-        }}
-      />
-      {ComponentChildren}
-    </div>
-  ) : (
-    Component
-  );
-};
-
-export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
+export const PreviewCompatibleImage = ({
   className,
   imageAlt,
   imageInfo,
   title,
   loading = "auto",
-}) => {
+}: PreviewCompatibleImageProps) => {
   const imageStyle = {
     maxWidth: "inherit",
     maxHeight: "inherit",
@@ -88,23 +56,10 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
     );
   }
 
-  const rawImg =
-    typeof imageInfo === "string"
-      ? imageInfo
-      : !!image && typeof image === "string"
-      ? image
-      : "";
+  const rawImg = typeof imageInfo === "string" ? imageInfo : !!image && typeof image === "string" ? image : "";
 
   if (!!rawImg) {
-    return (
-      <img
-        alt={altText}
-        className={className}
-        style={imageStyle}
-        src={rawImg}
-        title={title}
-      />
-    );
+    return <img alt={altText} className={className} style={imageStyle} src={rawImg} title={title} />;
   }
 
   return null;
@@ -112,4 +67,13 @@ export const PreviewCompatibleImage: FC<PreviewCompatibleImageProps> = ({
 
 export const PreviewCompatibleFlexImage = styled(PreviewCompatibleImage)`
   ${FlexImageCSS}
+`;
+
+export const BreakOutImage = styled(PreviewCompatibleImage)`
+  left: 50%;
+  margin-left: -48vw;
+  margin-right: -48vw;
+  max-width: 96w;
+  right: 50%;
+  width: 96vw;
 `;

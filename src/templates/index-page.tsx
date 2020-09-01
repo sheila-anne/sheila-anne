@@ -1,20 +1,19 @@
-import { Helmet } from "react-helmet-async";
 import { graphql } from "gatsby";
-import React, { FC } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import {
   BlogRoll,
-  BookingSection,
+  BreakOutImage,
   CenteredText,
   ContentBreak,
   Features,
   FlexContainer,
-  FullWidthImage,
+  FlexColSplitImage,
+  HalfColumn,
   Instagram,
   Layout,
   LinkButton,
-  PreviewCompatibleBanner,
   PreviewCompatibleImage,
   SEO,
   SmartLink,
@@ -30,18 +29,14 @@ type MainPitch = {
 };
 
 type IndexFrontmatterProps = BaseFrontmatter & {
-  bannerSubtitle: string;
-  bannerTitle: string;
   description: string;
-  formHeadline: string;
-  formSubHeadline: string;
-  formParagraph: string;
   heading: string;
   image: PreviewImage | string;
   intro: {
     blurbs: FeaturedGridItem[];
   };
   mainpitch: MainPitch;
+  pathfinder: NestedImage;
   testimonials: any;
 };
 
@@ -98,8 +93,6 @@ const Container = styled.div`
 `;
 
 const BannerLink = styled(SmartLink)`
-  color: #fff;
-  display: inline;
   text-decoration: underline;
 `;
 
@@ -126,6 +119,12 @@ const Subheadline = styled.h2`
   padding: 0 1rem 1rem 1rem;
 `;
 
+const PathfinderHeading = styled.h2`
+  margin: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+`;
+
 const BannerText = styled.div`
   padding: 5px;
 `;
@@ -134,93 +133,101 @@ const TestimonialContainer = styled(FlexContainer)`
   display: block;
 `;
 
-export const IndexPageTemplate: FC<PreviewTemplateProps> = ({ frontmatter, isPreview, posts }) => {
-  const { description, formHeadline, formParagraph, formSubHeadline, image, testimonials, mainpitch } = frontmatter;
+export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) => {
+  const { description, image, mainpitch, pathfinder, testimonials } = frontmatter;
 
   const safeImage = image as NestedImage;
-  const bannerImagesrc = safeImage?.childImageSharp?.fluid?.src;
 
   return (
-    <>
-      {!!bannerImagesrc && (
-        <Helmet>
-          <link href={bannerImagesrc} rel="preload" as="image" key={bannerImagesrc} crossOrigin="anoynmous" />
-        </Helmet>
-      )}
-      <PreviewCompatibleBanner
-        isPreview={isPreview}
-        Component={
-          <FullWidthImage
-            critical={true}
-            fadeIn="soft"
-            fluid={safeImage?.childImageSharp?.fluid || safeImage}
-            title="Sheila Anne Life Coaching cover photo"
-          />
-        }
-        image={image}
+    <section>
+      <BreakOutImage
+        loading="eager"
+        imageInfo={{
+          alt: "Sheila Anne welcoming you to her site",
+          childImageSharp: safeImage?.childImageSharp,
+        }}
+        title="Sheila Anne Life Coaching cover photo"
       />
-      <section>
+      <CenteredText>
+        <BannerHeadline color="#FFF" fontColor="#000" margin="1rem 0 0 0">
+          <BannerText>Come Home To Yourself, Transform Your Life</BannerText>
+        </BannerHeadline>
+      </CenteredText>
+      <Container>
         <CenteredText>
-          <BannerHeadline color="#FFF" fontColor="#000">
-            <BannerText>Come Home To Yourself, Transform Your Life</BannerText>
+          <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
+          <ContentBreak />
+          <h3>Here's How We Can Work Together:</h3>
+        </CenteredText>
+        <FlexContainer margin="1rem 0">
+          <Features gridItems={frontmatter.intro.blurbs} />
+        </FlexContainer>
+        <FlexContainer margin="2rem 0">
+          <ImageContainer>
+            <PreviewCompatibleImage
+              loading="lazy"
+              imageInfo={{
+                alt: "Sheila Anne drinking coffee",
+                childImageSharp: mainpitch.image.childImageSharp,
+              }}
+              title="A warm welcome from Sheila Anne"
+            />
+          </ImageContainer>
+          <p>{mainpitch.title}</p>
+        </FlexContainer>
+        <ContentBreak />
+        <FlexContainer justifyContent="center" margin="1rem 0">
+          <HalfColumn>
+            <FlexColSplitImage>
+              <SmartLink to="/pathfinder/" title="PATHFINDER freebie">
+                <PreviewCompatibleImage
+                  loading="lazy"
+                  imageInfo={{
+                    alt: "Preview of the PATHFINDER freebie",
+                    childImageSharp: pathfinder.childImageSharp,
+                  }}
+                  title="Preview of the PATHFINDER freebie"
+                />
+              </SmartLink>
+            </FlexColSplitImage>
+          </HalfColumn>
+          <HalfColumn>
+            <PathfinderHeading>PATHFINDER: Find Your Way</PathfinderHeading>
+            <div>
+              <BannerLink to="/pathfinder/" title="PATHFINDER freebie">
+                Grab your free, downloadable guide
+              </BannerLink>{" "}
+              that will help you make your next big move. PATHFINDER will help you to reflect on questions that really
+              matter when taking your next step; gain clarity around what you desire in your career path; and feel more
+              resourced in how to pursue the path you deserve!
+            </div>
+          </HalfColumn>
+        </FlexContainer>
+        <CenteredText>
+          <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
+            What People Are Saying
           </BannerHeadline>
         </CenteredText>
-        <Container>
-          <CenteredText>
-            <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
-            <ContentBreak />
-            <h3>Here's How We Can Work Together:</h3>
-          </CenteredText>
-          <FlexContainer>
-            <Features gridItems={frontmatter.intro.blurbs} />
-          </FlexContainer>
-          <FlexContainer justifyContent="center" margin="1rem 0">
-            <BookingSection
-              formDescription={formSubHeadline}
-              formParagraph={formParagraph}
-              formTitle={formHeadline}
-              page="Homepage"
-            />
-          </FlexContainer>
-          <FlexContainer margin="2rem 0">
-            <ImageContainer>
-              <PreviewCompatibleImage
-                loading="lazy"
-                imageInfo={{
-                  alt: "Sheila Anne drinking coffee",
-                  childImageSharp: mainpitch.image.childImageSharp,
-                }}
-                title="A warm welcome from Sheila Anne"
-              />
-            </ImageContainer>
-            <p>{mainpitch.title}</p>
-          </FlexContainer>
-          <CenteredText>
-            <BannerHeadline as="h3" color="#FFF" fontColor="#000" lessMargin={true}>
-              What People Are Saying
-            </BannerHeadline>
-          </CenteredText>
-          <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
-            <Testimonial testimonials={testimonials} />
-          </TestimonialContainer>
-          <CenteredText>
-            <BannerHeadline as="h3" color="#FFF" fontColor="#000" lessMargin={true}>
-              Latest From The Blog
-            </BannerHeadline>
-          </CenteredText>
-          <BlogRoll posts={posts} />
-          <CenteredText>
-            <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
-              Read more @ the blog!
-            </LinkButton>
-          </CenteredText>
-        </Container>
-      </section>
-    </>
+        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
+          <Testimonial testimonials={testimonials} />
+        </TestimonialContainer>
+        <CenteredText>
+          <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
+            Latest From The Blog
+          </BannerHeadline>
+        </CenteredText>
+        <BlogRoll posts={posts} />
+        <CenteredText>
+          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
+            Read more @ the blog!
+          </LinkButton>
+        </CenteredText>
+      </Container>
+    </section>
   );
 };
 
-const IndexPage: FC<IndexPageProps> = ({ data, location }) => {
+const IndexPage = ({ data, location }: IndexPageProps) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
@@ -238,16 +245,18 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        bannerTitle
-        bannerSubtitle
         description
-        formHeadline
-        formSubHeadline
-        formParagraph
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        pathfinder {
+          childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

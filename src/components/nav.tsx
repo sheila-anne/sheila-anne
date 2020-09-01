@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import { applyStyle } from "../utils";
@@ -27,13 +27,11 @@ type OpenAndMobile = OpenNavProps & MobileNavProps;
 const ColoredInternalLink = styled(SmartLink)<{
   "aria-current"?: boolean;
 }>`
-  ${(props) =>
-    !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
+  ${props => !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
 const LogoText = styled.div<OpenAndMobile>`
-  background: ${({ isOpen, isMobile }) =>
-    !!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit"};
+  background: ${({ isOpen, isMobile }) => (!!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit")};
   flex-basis: 33%;
   padding-top: 5px;
   margin: 0 -2rem 0 2rem;
@@ -64,15 +62,13 @@ const Header = styled.header<{ flipColors: boolean }>`
   z-index: 1000;
 
   ${ColoredInternalLink} {
-    ${({ flipColors }) =>
-      applyStyle("color", !!flipColors ? "#FFF" : "inherit")}
+    ${({ flipColors }) => applyStyle("color", !!flipColors ? "#FFF" : "inherit")}
   }
 `;
 
 const StyledNav = styled.nav<OpenNavProps>`
   align-items: center;
-  background-color: ${({ isOpen }) =>
-    !!isOpen ? Constants.Colors.theGroveGreen : "#FFF"};
+  background-color: ${({ isOpen }) => (!!isOpen ? Constants.Colors.theGroveGreen : "#FFF")};
   display: flex;
   height: 75px;
   justify-content: center;
@@ -84,10 +80,7 @@ const StyledNav = styled.nav<OpenNavProps>`
 `;
 
 const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
-  ${({ location, to }) =>
-    location && location.pathname === to
-      ? `color: ${Constants.Colors.theGroveGreen};`
-      : ""}
+  ${({ location, to }) => (location && location.pathname === to ? `color: ${Constants.Colors.theGroveGreen};` : "")}
   display: inline;
   font-family: Inria Serif;
   font-weight: 500;
@@ -146,8 +139,7 @@ const MobileMenu = styled.div<OpenNavProps>`
   position: relative;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ isOpen }) =>
-    isOpen ? "translate(0,0)" : "translate(0, -120%)"};
+  transform: ${({ isOpen }) => (isOpen ? "translate(0,0)" : "translate(0, -120%)")};
 
   ${ColoredInternalLink} {
     display: block;
@@ -183,10 +175,8 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
       title: "Yoga & Intentional Movement",
     },
   ];
-  !!showHomeLink &&
-    location.pathname !== "/" &&
-    navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
-  return navLinks.map((navLink) => (
+  !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
+  return navLinks.map(navLink => (
     <NavListItem
       key={navLink.to}
       itemType="https://schema.org/SiteNavigationElement"
@@ -208,17 +198,14 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
   ));
 };
 
-const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
+const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Header flipColors={!!isOpen && !!isMobile}>
       <StyledNav isOpen={isOpen} role="navigation">
         <LogoText isMobile={isMobile} isOpen={isOpen}>
-          <Headline
-            itemType="https://schema.org/SiteNavigationElement"
-            itemScope={true}
-          >
+          <Headline itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
             <ColoredInternalLink
               ariaLabel="Sheila Anne logo, click to visit homepage"
               title={`Sheila Anne homepage`}
@@ -231,11 +218,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
         {!!isMobile ? (
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
-            <MobileMenu
-              aria-expanded={!!isOpen ? true : undefined}
-              aria-hidden={!isOpen}
-              isOpen={isOpen}
-            >
+            <MobileMenu aria-expanded={!!isOpen ? true : undefined} aria-hidden={!isOpen} isOpen={isOpen}>
               <NavLinkList aria-current={isOpen} isOpen={isOpen} role="menubar">
                 {getNavLinkItems(location, isMobile && isOpen)}
               </NavLinkList>
@@ -246,9 +229,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
           </>
         ) : (
           <>
-            <NavLinkList role="menubar">
-              {getNavLinkItems(location)}
-            </NavLinkList>
+            <NavLinkList role="menubar">{getNavLinkItems(location)}</NavLinkList>
             <DesktopSocialWrapper isOpen={isMobile}>
               <Social />
             </DesktopSocialWrapper>
@@ -259,9 +240,7 @@ const NavHeader: FC<NavHeaderProps> = ({ location, isMobile }) => {
   );
 };
 
-const Nav: FC<NavProps> = ({ location }) => {
+export const Nav = ({ location }: NavProps) => {
   const { isMobile } = useWindow();
   return <NavHeader location={location} isMobile={isMobile} />;
 };
-
-export { Nav };

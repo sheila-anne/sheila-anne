@@ -2,19 +2,13 @@ import React, { FC } from "react";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 
-import {
-  BlogRollAll,
-  Content,
-  HTMLContent,
-  Layout,
-  SEO,
-  ImageHeadlineContainer,
-} from "../components";
+import { BlogRollAll, Content, HTMLContent, Layout, SEO } from "../components";
 import { Constants } from "../constants";
 
-type WritingDeskProps = BannerImagePreviewPage & {
+type WritingDeskProps = {
   content: string;
   contentComponent?: FC<any>;
+  imageHeadline: string;
   pageTitle: string;
 };
 
@@ -25,11 +19,7 @@ const Headline = styled.h2`
   text-align: center;
 `;
 
-export const WritingDeskPageTemplate: FC<WritingDeskProps> = ({
-  content,
-  contentComponent,
-  imageHeadline,
-}) => {
+export const WritingDeskPageTemplate = ({ content, contentComponent, imageHeadline }: WritingDeskProps) => {
   const PageContent = contentComponent || Content;
 
   return (

@@ -10,7 +10,6 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
       content={widgetFor("body")}
       description={entry.getIn(["data", "description"])}
       isPreview={true}
-      pageTitle={entry.getIn(["data", "pageTitle"])}
       tags={tags && tags.toJS()}
       title={title}
     />

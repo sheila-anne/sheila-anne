@@ -1,31 +1,22 @@
-import { OutboundLink, trackCustomEvent } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React, { FC, MouseEvent } from "react";
 
 import { InternalLink } from "./internal-link";
-import { trackFacebook } from "../utils";
+import { linkClickHandler } from "../utils";
 
 type CustomLinkType = {
   ariaLabel?: string;
   className?: string;
   hideMetadata?: boolean;
+  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
   role?: string;
   to: string;
   title?: string;
 };
 
-const getLinkType = (to: string) =>
-  to.indexOf("http") > -1 ? "External" : "Internal";
+type LinkType = "External" | "Internal";
 
-const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
-  const to = event.currentTarget.href;
-  const args = {
-    action: "click",
-    category: `Internal Link`,
-    label: to,
-  };
-  trackCustomEvent(args);
-  trackFacebook("trackCustom", "Link Click", args);
-};
+const getLinkType = (to: string): LinkType => (to.indexOf("http") > -1 ? "External" : "Internal");
 
 const getInnerLink = (children: React.ReactNode, hideMetadata?: boolean) => {
   return !hideMetadata ? <span itemProp="name">{children}</span> : children;
@@ -35,6 +26,7 @@ export const SmartLink: FC<CustomLinkType> = ({
   ariaLabel,
   className,
   hideMetadata,
+  onClick,
   role,
   to,
   title,
@@ -47,7 +39,7 @@ export const SmartLink: FC<CustomLinkType> = ({
         aria-label={ariaLabel}
         className={className}
         itemProp={!hideMetadata ? "url" : undefined}
-        onClick={onClick}
+        onClick={e => linkClickHandler(e, onClick)}
         role={!!role ? role : undefined}
         to={to}
         title={title}

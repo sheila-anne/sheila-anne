@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Sheila Anne`,
     author: `Sheila Anne Murray`,
-    description: `Life coaching you through life's greatest challenges with Sheila Anne Murray`,
+    description: `Transformational life coaching with Sheila Anne Murray`,
     siteUrl: `https://www.sheilaanne.com`,
     social: {
       facebook: "https://facebook.com/sheilaannecoaching",
@@ -60,6 +60,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/content`,
+        name: "content",
+      },
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `4451596119`,
@@ -81,9 +88,9 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 800,
+              maxWidth: 1260,
               linkImagesToOriginal: false,
-              quality: 90,
+              quality: 100,
               showCaption: true,
             },
           },
@@ -110,7 +117,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet-async",
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/pathfinder/**", "/giveaway/*"],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-typescript",
     "gatsby-plugin-catch-links",

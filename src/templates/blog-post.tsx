@@ -3,15 +3,7 @@ import kebabCase from "lodash.kebabcase";
 import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
-import {
-  BlogPostMeta,
-  Content,
-  Layout,
-  HTMLContent,
-  SEO,
-  Share,
-  TagList
-} from "../components";
+import { BlogPostMeta, Content, Layout, HTMLContent, SEO, Share, TagList } from "../components";
 import { Constants } from "../constants";
 
 const Smalltext = styled.small`
@@ -31,7 +23,7 @@ export const BlogPostTemplate = ({
   ogImage,
   tags,
   title,
-  isPreview = false
+  isPreview = false,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -42,17 +34,13 @@ export const BlogPostTemplate = ({
       <SEO
         description={description}
         isPreview={isPreview}
-        image={ogImage?.childImageSharp?.original?.src}
+        image={ogImage?.publicURL}
         imageAlt={title}
         location={location}
         title={navTitle}
         type="article"
       />
-      <BlogPostMeta
-        datePublished={datePublished}
-        featuredImage={featuredImage}
-        isPreview={isPreview}
-      />
+      <BlogPostMeta datePublished={datePublished} featuredImage={featuredImage} isPreview={isPreview} />
       <h1 itemProp="name headline">{title}</h1>
       <Smalltext>Published {datePublished} by Sheila Anne Murray</Smalltext>
       <Share />
@@ -106,6 +94,7 @@ export const pageQuery = graphql`
         description
         tags
         featuredImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 600, quality: 100, maxHeight: 200) {
               ...GatsbyImageSharpFluid
@@ -113,11 +102,7 @@ export const pageQuery = graphql`
           }
         }
         ogImage: featuredImage {
-          childImageSharp {
-            original {
-              src
-            }
-          }
+          publicURL
         }
       }
     }

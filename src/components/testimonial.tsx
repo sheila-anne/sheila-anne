@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
+import React, { Dispatch, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
 import styled from "styled-components";
 import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
@@ -99,7 +99,7 @@ const reducer: Reducer<State, Action> = (state: State, action: Action): State =>
   return { ...state, [action.type]: isExpanded };
 };
 
-const MeasurableHeightText: FC<Expandable> = ({ dispatch, isExpanded, text, title }) => {
+const MeasurableHeightText = ({ dispatch, isExpanded, text, title }: Expandable) => {
   const ref = useRef<HTMLParagraphElement>(null);
   const [height, setHeight] = useState(0);
 
