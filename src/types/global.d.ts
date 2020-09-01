@@ -71,9 +71,11 @@ declare type GatsbyComponent = {
 
 declare type NestedImage = {
   childImageSharp?: SharpImage;
+  publicURL?: string;
 };
 
 declare type PreviewImage = {
+  publicURL?: string;
   alt: string;
   childImageSharp?: SharpImage;
   image?: string | NestedImage;

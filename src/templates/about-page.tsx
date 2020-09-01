@@ -10,7 +10,7 @@ const AboutPage = ({ data, location }) => {
     <Layout location={location} itemType={"https://schema.org/AboutPage"}>
       <SEO
         description={post.frontmatter.pageDescription}
-        image={post.frontmatter.bannerImage.childImageSharp.original.src}
+        image={post.frontmatter.bannerImage.publicURL}
         imageAlt={post.frontmatter.bannerImageHeadline}
         location={location}
         title={post.frontmatter.pageTitle}
@@ -39,12 +39,10 @@ export const aboutPageQuery = graphql`
       frontmatter {
         bannerImageHeadline
         bannerImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
-            }
-            original {
-              src
             }
           }
         }

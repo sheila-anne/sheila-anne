@@ -23,16 +23,18 @@ const siteQuery = graphql`
         }
       }
     }
+    backupImage: file(relativePath: { eq: "sheila-anne-og-image.jpg" }) {
+      publicURL
+    }
   }
 `;
 
 export const SEO = ({ description, image, imageAlt, isPreview, location, title, type }: SEOProps) => {
-  const { site } = useStaticQuery(siteQuery);
   if (isPreview) {
     return null;
   }
-  const fallbackImage = `/img/sheila-anne-og-image.jpg`;
-  const ogImage = site.siteMetadata.siteUrl + (!!image ? image : fallbackImage);
+  const { backupImage, site } = useStaticQuery(siteQuery);
+  const ogImage = !!image ? image : backupImage.publicURL;
   const pathname = location && location.pathname;
 
   const schemaGraph = [
@@ -45,7 +47,7 @@ export const SEO = ({ description, image, imageAlt, isPreview, location, title, 
       logo: {
         "@type": "ImageObject",
         "@id": `${site.siteMetadata.siteUrl}/#logo`,
-        url: fallbackImage,
+        url: backupImage.publicURL,
         caption: "Life coaching with Sheila Anne.",
       },
       image: {

@@ -10,7 +10,7 @@ const TheMat = ({ data, location }: GatsbyPage) => {
     <Layout location={location}>
       <SEO
         description={post.frontmatter.pageDescription}
-        image={post.frontmatter.bannerImage.childImageSharp.original.src}
+        image={post.frontmatter.bannerImage.publicURL}
         imageAlt={post.frontmatter.bannerImageHeadline}
         location={location}
         title={post.frontmatter.pageTitle}
@@ -38,12 +38,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         bannerImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
-            }
-            original {
-              src
             }
           }
         }

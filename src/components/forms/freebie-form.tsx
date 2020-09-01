@@ -2,19 +2,18 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 
 import { BaseForm } from "./base-form";
-import { linkClickHandler } from "../../utils";
 import { Input } from "./form-elements";
+import { linkClickHandler } from "../../utils";
 import { SmartLink } from "../smart-link";
 
 type PathfinderFile = {
   file: {
-    absolutePath: string;
+    publicURL: string;
   };
 };
 
 export const FreebieForm = () => {
   const data = useStaticQuery<PathfinderFile>(FreebieFormQuery);
-  console.log(data);
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false);
   return (
     <BaseForm
@@ -39,7 +38,7 @@ export const FreebieForm = () => {
       {isSubmitSuccess && !!data.file && (
         <div>
           Congrats! To get your Pathfinder freebie:{" "}
-          <a href={data.file.absolutePath} target="_blank" onClick={linkClickHandler}>
+          <a href={data.file.publicURL} download={true} onClick={linkClickHandler}>
             Click here!
           </a>
         </div>
@@ -47,7 +46,7 @@ export const FreebieForm = () => {
       {isSubmitSuccess && !data.file && (
         <div>
           That's the right code, but there was an unexpected error. Please{" "}
-          <SmartLink to="/contact">contact me</SmartLink> to let me know!
+          <SmartLink to="/contact/">contact me</SmartLink> to let me know!
         </div>
       )}
     </BaseForm>
@@ -57,7 +56,7 @@ export const FreebieForm = () => {
 const FreebieFormQuery = graphql`
   query FreebieFormQuery {
     file(relativePath: { eq: "sheila-anne-pathfinder.pdf" }) {
-      absolutePath
+      publicURL
     }
   }
 `;

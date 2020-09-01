@@ -15,6 +15,7 @@ export const logoQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           featuredpost
           featuredImage {
+            publicURL
             childImageSharp {
               fluid(maxWidth: 120, quality: 100) {
                 ...GatsbyImageSharpFluid

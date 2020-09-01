@@ -10,10 +10,10 @@ type BlogPostMetaProps = {
 };
 
 export const BlogPostMeta = ({ datePublished, featuredImage, isPreview }: BlogPostMetaProps) => {
-  const { logo } = useStaticQuery(blogPostMetaQuery);
   if (isPreview) {
     return null;
   }
+  const { logo } = useStaticQuery(blogPostMetaQuery);
 
   return (
     <>
@@ -21,12 +21,7 @@ export const BlogPostMeta = ({ datePublished, featuredImage, isPreview }: BlogPo
         <meta itemProp="name" content="Sheila Anne" key="publisherName" id="publisherName" />
         <meta itemProp="url" content={Constants.baseUrl} itemID={Constants.baseUrl} key="publisherUrl" />
         <div itemScope={true} itemType="https://schema.org/ImageObject" itemProp="logo" key="logo">
-          <meta
-            itemID={`${Constants.baseUrl}${logo?.childImageSharp?.original.src}`}
-            itemProp="url"
-            content={`${Constants.baseUrl}${logo?.childImageSharp?.original.src}`}
-            key="logoUrl"
-          />
+          <meta itemID={logo?.publicURL} itemProp="url" content={logo?.publicURL} key="logoUrl" />
         </div>
       </div>
       <meta itemProp="dateModified" content={new Date().toLocaleDateString()} key="dateModified" />
@@ -34,7 +29,7 @@ export const BlogPostMeta = ({ datePublished, featuredImage, isPreview }: BlogPo
       <div itemProp="author" itemType="https://schema.org/Person" itemScope={true}>
         <meta itemProp="name" content="Sheila Anne Murray" key="authorPerson" />
       </div>
-      <meta itemProp="image" content={`${Constants.baseUrl}${featuredImage?.childImageSharp?.fluid.src}`} key="image" />
+      <meta itemProp="image" content={featuredImage?.publicURL} key="image" />
     </>
   );
 };
@@ -42,11 +37,7 @@ export const BlogPostMeta = ({ datePublished, featuredImage, isPreview }: BlogPo
 export const blogPostMetaQuery = graphql`
   query BlogPostMeta {
     logo: file(relativePath: { eq: "sheila-anne-logo.jpg" }) {
-      childImageSharp {
-        original {
-          src
-        }
-      }
+      publicURL
     }
   }
 `;
