@@ -61,7 +61,7 @@ const onClick = (isOpen: boolean, setIsOpen: Dispatch<SetStateAction<boolean>>) 
     label: `Toggle ${newOpenValue ? "closed" : "open"}`,
   };
   trackCustomEvent(args);
-  trackFacebook("trackCustom", "Menu Interaction", args);
+  trackFacebook({ eventType: "trackCustom", eventName: "Menu Interaction", params: args });
 };
 
 export const Burger = ({ isOpen, setIsOpen }: BurgerProps) => (

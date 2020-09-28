@@ -51,7 +51,7 @@ const handleSubmit = (
   };
 
   trackCustomEvent(args);
-  trackFacebook("track", "Schedule", args);
+  trackFacebook({ eventType: "track", eventName: "InitiateCheckout", params: { content_name: args.label, ...args } });
 
   setShowBookingSection(!showBookingSection);
 };
