@@ -34,6 +34,8 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   image: PreviewImage | string;
   intro: {
     blurbs: FeaturedGridItem[];
+    workWithMe: string[];
+    seeHowICanHelp: string[];
   };
   mainpitch: MainPitch;
   pathfinder: NestedImage;
@@ -127,14 +129,19 @@ const PathfinderHeading = styled.h2`
 
 const BannerText = styled.div`
   padding: 5px;
+  font-size: 2rem;
 `;
 
 const TestimonialContainer = styled(FlexContainer)`
   display: block;
+  margin-bottom: 2rem;
 `;
 
 export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) => {
   const { description, image, mainpitch, pathfinder, testimonials } = frontmatter;
+
+  const fullTestimonials = [...testimonials];
+  const firstTestimonial = [fullTestimonials.shift()];
 
   const safeImage = image as NestedImage;
 
@@ -150,32 +157,20 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
       />
       <CenteredText>
         <BannerHeadline color="#FFF" fontColor="#000" margin="1rem 0 0 0">
-          <BannerText>Come Home To Yourself, Transform Your Life</BannerText>
+          <BannerText>Hey high-achiever, are you ready to level up?</BannerText>
         </BannerHeadline>
       </CenteredText>
       <Container>
         <CenteredText>
-          <Subheadline dangerouslySetInnerHTML={{ __html: description }} />
+          {description.split(".").map((descrip, index) => {
+            return <Subheadline key={index}>{descrip}</Subheadline>;
+          })}
           <ContentBreak />
           <h3>Here's How We Can Work Together:</h3>
         </CenteredText>
         <FlexContainer margin="1rem 0">
           <Features gridItems={frontmatter.intro.blurbs} />
         </FlexContainer>
-        <FlexContainer margin="2rem 0">
-          <ImageContainer>
-            <PreviewCompatibleImage
-              loading="lazy"
-              imageInfo={{
-                alt: "Sheila Anne drinking coffee",
-                childImageSharp: mainpitch.image.childImageSharp,
-              }}
-              title="A warm welcome from Sheila Anne"
-            />
-          </ImageContainer>
-          <p>{mainpitch.title}</p>
-        </FlexContainer>
-        <ContentBreak />
         <FlexContainer justifyContent="center" margin="1rem 0">
           <HalfColumn>
             <FlexColSplitImage>
@@ -203,13 +198,46 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             </div>
           </HalfColumn>
         </FlexContainer>
-        <CenteredText>
-          <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
-            What People Are Saying
-          </BannerHeadline>
-        </CenteredText>
         <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
-          <Testimonial testimonials={testimonials} />
+          <Testimonial testimonials={firstTestimonial} />
+        </TestimonialContainer>
+        <ContentBreak />
+        <FlexContainer margin="2rem 0">
+          <ImageContainer>
+            <PreviewCompatibleImage
+              loading="lazy"
+              imageInfo={{
+                alt: "Sheila Anne drinking coffee",
+                childImageSharp: mainpitch.image.childImageSharp,
+              }}
+              title="A warm welcome from Sheila Anne"
+            />
+          </ImageContainer>
+          <p>{mainpitch.title}</p>
+        </FlexContainer>
+        <ContentBreak />
+        <CenteredText>
+          <h3>Work with me if you are:</h3>
+        </CenteredText>
+        <FlexContainer>
+          <ul>
+            {frontmatter.intro.workWithMe.map(reason => (
+              <li key={reason}>{reason}</li>
+            ))}
+          </ul>
+        </FlexContainer>
+        <CenteredText>
+          <h3>And see how I can help you to ...</h3>
+        </CenteredText>
+        <FlexContainer>
+          <ul>
+            {frontmatter.intro.seeHowICanHelp.map(reason => (
+              <li key={reason}>{reason}</li>
+            ))}
+          </ul>
+        </FlexContainer>
+        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
+          <Testimonial testimonials={fullTestimonials} />
         </TestimonialContainer>
         <CenteredText>
           <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
@@ -261,6 +289,8 @@ export const pageQuery = graphql`
           }
         }
         intro {
+          workWithMe
+          seeHowICanHelp
           blurbs {
             href
             image {

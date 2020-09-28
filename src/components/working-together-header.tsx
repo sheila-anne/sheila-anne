@@ -53,14 +53,13 @@ export const WorkingTogetherHeader = () => {
     <>
       <Heading>Working Together</Heading>
       <Subheading>
-        We work together to cultivate a mind-body connection, tap into who you are, and find the career that brings you
-        real joy.
+        In working with me you will discover your unique strengths, uncover deeply-seeded beliefs, build confidence from
+        within, and create goals that will lead toward your next big thing.
       </Subheading>
       <Subheading as="h3">Is this you?</Subheading>
       <p>
-        Are you looking to level up in your career? Dreaming of breaking up with your job to live a nomadic lifestyle?
-        Wishing you could stop telling yourself that you are figuring it out? Awaiting the day that you’ll play by your
-        own rules and ditch the expectations? You are not alone and, <b>yes</b>, there is a way to make it happen.
+        Awaiting the day that you'll play by your own rules and ditch the expectations? You are not alone, and yes,
+        there is a way to make it happen.
       </p>
       <PreviewCompatibleImage
         imageInfo={data.markdownRemark.frontmatter.featuredImage}
@@ -69,7 +68,7 @@ export const WorkingTogetherHeader = () => {
       />
       <header>
         <nav>
-          <Subheading>Ready for your life transformation? Here are my offerings:</Subheading>
+          <Subheading>Ready — Set — Go! Here are my offerings:</Subheading>
           <ListContainer>
             {WorkingTogetherSections.map(item => (
               <WorkingTogetherAnchor href={`#${item.href}`} key={item.name} title={item.name}>

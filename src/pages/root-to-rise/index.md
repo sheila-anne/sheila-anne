@@ -38,7 +38,7 @@ testimonials:
 
 ![Root To Rise With Sheila Anne](/img/sheila-anne-root-to-rise.jpg)
 
-## Get Grounded, Find Balance, Live Aligned
+## You know you're made for more -- and I'm going to help you make it happen!
 
 ### Are you seeking a career change? Ready to feel less stuck in your job or routine? Looking to come home to yourself and your unique purpose?
 
