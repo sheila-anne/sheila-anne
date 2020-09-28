@@ -25,11 +25,11 @@ intro:
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
       title: Ground To Grow Accelerator
       text: >
-        Power session to help you create radical clarity and action steps in one area of your life. A great place to start!
+        A power session to help you create radical clarity and action steps in one area of your life. A great place to start!
     - href: /root-to-rise/
       image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: Root To Rise
+      title: Root To Rise Transformational Coaching Program
       text: >
         My signature coaching program to help you deepen self-awareness, roadmap your next adventure, and create courageous change!
   workWithMe:
@@ -37,7 +37,6 @@ intro:
     - Outgrowing your job, career, or relationship
     - Operating below your potential
     - Struggling to feel grounded and calm
-    - Excited to stop second-guessing every decision
     - Ready to prioritize yourself and your path
   seeHowICanHelp:
     - Feel confident and energized
