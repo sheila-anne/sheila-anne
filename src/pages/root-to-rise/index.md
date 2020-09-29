@@ -6,8 +6,8 @@ pageDescription: >
   Are you seeking a career change? Ready to feel less stuck in your job or routine? Looking to come home to yourself and your unique purpose? Welcome, you’re in just the right place.
 pageTitle: Root To Rise | Sheila Anne
 templateKey: "root-to-rise"
-secondImage: /img/sheila-anne-root-to-rise-intro.jpg
-thirdImage: /img/sheila-in-the-alps.jpg
+secondImage: /img/sheila-anne-about.jpg
+thirdImage: /img/sheila-anne-root-to-rise-intro.jpg
 testimonials:
   - title: Taylor P.
     imageAlt: Client testimonial from Taylor
@@ -38,7 +38,7 @@ testimonials:
 
 ![Root To Rise With Sheila Anne](/img/sheila-anne-root-to-rise.jpg)
 
-## Get Grounded, Find Balance, Live Aligned
+## You know you're made for more -- and I'm going to help you make it happen!
 
 ### Are you seeking a career change? Ready to feel less stuck in your job or routine? Looking to come home to yourself and your unique purpose?
 

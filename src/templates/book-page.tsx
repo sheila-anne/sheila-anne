@@ -19,6 +19,10 @@ const BookPage = ({ data, location }: { data: any; location: Location }) => {
         bookingUrl = Constants.square.groundToGrowUrl;
         break;
       }
+      case "/book/root-to-rise/": {
+        bookingUrl = Constants.square.rootToRiseUrl;
+        break;
+      }
     }
   }
 

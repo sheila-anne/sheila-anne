@@ -15,7 +15,7 @@ const ColorContainer = styled.div<{ backgroundColor?: string }>`
 
 const CenteredButton = ({ text }: { text: string }) => (
   <CenteredText margin="1rem 0">
-    <PillButton onClick={() => navigate("/book/exploration/")}>{text}</PillButton>
+    <PillButton onClick={() => navigate("/book/root-to-rise/")}>{text}</PillButton>
   </CenteredText>
 );
 
@@ -25,7 +25,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
 
   return (
     <section>
-      <h1>Root To Rise</h1>
+      <h1>Root To Rise: Transformational Coaching Program</h1>
       <PreviewCompatibleImage
         imageInfo={{
           alt: "Root To Rise with Sheila Anne",
@@ -34,32 +34,25 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         loading="eager"
         title="Sheila standing tall in her power at Garden Of The Gods"
       />
-      <h2>Get Grounded, Find Balance, Live Aligned</h2>
-      <h3>
-        Are you seeking a career change? Ready to feel less stuck in your job or routine? Looking to come home to
-        yourself and your unique purpose? Welcome, you’re in just the right place.
-      </h3>
+      <h2>Root into your power</h2>
+      <h2>Rise into the most badass version of you</h2>
+      <h2>You know you're made for more & I'm going to help you make it happen</h2>
+
       <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
-        <h4>Is This You?</h4>
         <p>
-          Are you a driven, free-spirit that has an endless list of things to do, places to see, and goals to achieve?
-          Do you question your purpose and connection to your work? Do you crave a life and career that you love?
-          Cultivating a life that is fulfilling and balanced does not come naturally in a world with so many things to
-          do and ways to fill time!
+          Are you a high-achiever that has hustled, built connections, and accomplished goals but you feel something is
+          missing? Do you daydream about taking more risks and racing toward new heights ... but you haven't taken
+          action? Are you wondering <strong>what's next?</strong> Welcome. You're in just the right place.
         </p>
         <br />
         <p>
-          Let me take a guess — You’ve probably tried various routines, self-help books, and have attended conferences
-          and networking events. Perhaps you’ve gotten involved in a fitness community or started a book club. Maybe
-          you’ve considered changing career paths or taking a leap of faith but something has held you back. Despite
-          these attempts, something feels incomplete. You think to yourself <i>there must be something more</i> ...
+          Through your journey thus far, there’s been a little something missing — that something that will help you
+          pause, deeply connect, and set intentional goals toward your next adventure. That’s where I come in.
         </p>
         <br />
         Why? Because for you it’s easy to make lists, check off action items, and let your busy brain lead the way.
         That’s your jam! When it comes to slowing down and doing the inner work, you’d rather be productive and perfect
-        each piece of yourself. Through your journey thus far, there’s been a little something missing — that something
-        that will help you pause, deeply connect, and set intentional goals toward your dream future. That’s where I
-        come in.
+        each piece of yourself.
       </ColorContainer>
       <CenteredButton text="Tap To Book Your Free Call!" />
       <PreviewCompatibleImage
@@ -71,61 +64,75 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       />
       <br />
       <p>
-        I created the Root to Rise program because I know that free spirits like you are ready for <i>sustainable</i>{" "}
-        change, which can only come with dedicated time and effort.
+        I created the Root to Rise program because I know that you are ready for <i>real</i> change, which can only come
+        with sure-fire stratey and dedicated effort. Just like in a yoga sequence, each session will build upon the
+        previous — you will root down to establish a solid base of values & intentions, and rise up to make big waves in
+        your career, relationships, and lifestyle.
       </p>
       <ColorContainer backgroundColor={Constants.Colors.lightestBlue}>
         <h2>Root to Rise will enable you to:</h2>
         <ul>
           <li>
-            <b>Explore</b> all that makes you, you — Through journaling, visualizations, and assessments you’ll gain
-            deep self awareness and purpose.
+            <b>B</b>e curious — discover all that makes you, you. Get clear on your values, goals, and potential
+            obstacles so you can quickly start bringing awareness to change-making.
           </li>
           <li>
-            <b>Discover</b> your core values and make all future decisions from a place of intention — Let’s take the
-            guessing out of decision making & create easy-flowing success.
+            <b>L</b>everage your unique strengths — your expertise & background are one of a kind! Explore how to
+            leverage your strengths so you can confidently create easy flowing success.
           </li>
           <li>
-            <b>Simplify</b> your life & infuse joy — We’ll talk about mindful rituals, minimalism, prioritization, and
-            celebrating things that matter. Simplicity is a core principle of my coaching because I believe your life
-            can be simple and full!
+            <b>O</b>vercome your stories — we'll address doubts, fears, and imposter syndrome head on! This is where the
+            power of coaching is vital — it's time to break up with your old behaviors and beliefs.
           </li>
           <li>
-            <b>Cultivate</b> a mind-body connection that will help you prioritize your well being and make lasting
-            change. Set aside your expectations for needing how-to guides and expensive wellness trends, we’re taking
-            things a little deeper here! Here you’ll face your inner monologue and self-sabotaging stories. We’ll talk
-            about how to develop a fresh mindset that is more aligned with the confidence and fulfillment you hope to
-            create.
+            <b>S</b>implify your lifestyle — hone in on what is helping you to optimize your growth and what is holding
+            you back. We work on creating a resilient mindset & cutting out the noise (perhaps in the form of
+            self-judgement, bad relationships, annoying managers 💁‍♀️). You'll have more space and energy left to
+            cultivate positive change.
           </li>
           <li>
-            <b>Create</b> an inspiring future — Once you’ve built the foundation, developed clarity around your future,
-            and connected to your whole self — your potential is limitless. You establish goals and action steps to get
-            you there and have me as your accountability partner & cheerleader as you root and rise.
+            <b>S</b>tart living more courageously — no more waiting for the "perfect time" to shine your light, redesign
+            your life, and tackle your goals. The time to level up is now!
+          </li>
+          <li>
+            <b>O</b>pen your imagination to possibilities — can you imagine pathways emerging that you never considered?
+            That's what will happen as you start to shift — and I'm here to help you see blind spots as well as killer
+            opportunities.
+          </li>
+          <li>
+            <b>M</b>aximize your momentum — once you've build the foundation, developed clarity around your future, and
+            connected to your whole self — your potential is limitless. We will ensure you maximize your positive
+            momentum & keep cranking.
           </li>
         </ul>
       </ColorContainer>
       <Testimonial testimonials={[firstTestimonial]} />
       <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
         <h2>Here's What You Can Expect:</h2>
-        <p>
-          Once you’re officially enrolled in the program🍾, I’ll send you a discovery form, so you can start deepening
-          your self awareness, and I can start learning alllll the good things that make you, you! Moreover, this form
-          will help us create a baseline, where we will begin to root down and rise up throughout the three months. We
-          will meet three times per month, for a total of nine sessions. In each session we will work together to break
-          down challenges, explore opportunities, and come up with an action plan to get you your desired results. Think
-          of each session as your safe space to breathe, tap in, and bloom.
-        </p>
-        <CenteredButton text="Reserve your intro call now!" />
-        <h2>What This Program Includes</h2>
         <ul>
-          <li>90 Minute Ground & Grow Session (deep dive)</li>
-          <li>8 Coaching sessions (60 min)</li>
-          <li>Follow up homework, exercises & action items</li>
+          <li>
+            <b>Step One</b>: Apply for a call with me to enroll in the program 🍾.
+          </li>
+          <li>
+            <b>Step Two</b>: Receive your welcome packet, including the intensive Self-Discovery Assessment.
+          </li>
+          <li>
+            <b>Step Three</b>: We begin the work!
+          </li>
+        </ul>
+        <CenteredButton text="Reserve your intro call now!" />
+        <h2>What this 3 month program includes</h2>
+        <ul>
+          <li>Self-Discovery Deep Dive (with me)!</li>
+          <li>
+            8 <b>BLOSSOM</b> Coaching Sessions
+          </li>
+          <li>BLOSSOM Book, which includes follow-up homework, exercises and action items</li>
         </ul>
         <h3>Bonuses!</h3>
         <ul>
-          <li>Email support throughout 3 months</li>
-          <li>One virtual 1:1 yoga session personalized for you</li>
+          <li>Email support throughout the 3 months</li>
+          <li>One personalized recorded meditation</li>
         </ul>
       </ColorContainer>
       <PreviewCompatibleImage
@@ -137,32 +144,35 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       />
       <h2>Why Work With Me?</h2>
       <p>
-        Not only am I a Certified Professional Coach, I am also a recovering overachiever and life-long free-spirit. I
-        struggled for years feeling overwhelmed by everything I wanted to accomplish, learn, and experience. I wanted to
-        do it all, while appearing totally in control and grounded. This led me toward perfectionist tendencies, an
-        obsession with wellness, and emotional numbing. It wasn’t until my mom passed that I really set myself free.
-        Inspired by her radiant energy, I started digging deeper into discovering who “Sheila” really was, what she
-        truly wanted, and what I needed to do to make it happen. The secret - very little of it was external. It wasn’t
-        a promotion, validation, or a new fitness routine. I left my life in Boston, traveled for 5 months with my
-        partner, and came home to myself in a way I never imagined possible. Now I’ve created a path to help other
-        free-spirited achievers to explore, discover, and transform into the most alive version of themselves 💙. I
-        blend my yoga background and killer focus to bring you into a space that you can feel grounded, safe, and
-        totally resourced to carve your next path.
+        I am a Whole Person Certified Coach who has helped dozens of women to level up their lives and find “what’s
+        next.” I blend my professional coach training, yoga background, killer focus to bring you into a space that you
+        can feel grounded, safe, and totally resourced to step into the career, relationships, and life you deserve.
+      </p>
+      <p>
+        This isn’t just a process I facilitate: this is personal, as I struggled for years feeling that life wasn’t
+        exactly how I wanted it to be, but when it came to making a shift, I didn’t know where to start.
+      </p>
+      <p>
+        It wasn’t until my mom passed that I set myself free. Inspired by her radiant energy, I started digging deeper
+        into discovering who “Sheila” really was, what she truly wanted, and what I needed to do to make it happen. My
+        world exploded with opportunity.
+      </p>
+      <p>
+        My mission is to ensure that you don’t waste one more day wondering what’s next, how you’ll get there, or if you
+        deserve it. Your time is now 🚀!
       </p>
       <h2>Here’s how much I believe in us …</h2>
       <p>
-        I offer a <b>money-back guarantee!</b> If after our initial 90 minute session you are totally not vibing with
-        the energy, I’ll cancel your spot and return your investment.
+        I offer a <b>money-back guarantee!</b> If after our initial Self-Discovery Deep Dive, if you are totally{" "}
+        <i>not</i> vibing with the energy, I’ll cancel your spot and return your investment.
       </p>
       <h2>Let’s go!</h2>
-      <p>
-        Ok — enough chit chat — Let’s get started with your first phone call and see if Root to Rise is right for you!
-      </p>
-      <CenteredButton text="Book A Call!" />
+      <p>Ok — enough chit chat — jump into action & apply below!</p>
+      <CenteredButton text="Apply now!" />
       <h2>Still feeling unsure?</h2>
       <p>
         Try-me-out in a <a href="/book/ground-to-grow/">Ground To Grow Accelerator</a>,{" "}
-        <a href="/about/">learn more about my story here</a> or check out the <a href="/working-together#faq">FAQs</a>!
+        <a href="/about/">learn more about my story</a> or check out the <a href="/working-together#faq">FAQs</a>!
       </p>
       <hr />
       <Testimonial testimonials={testimonials} />

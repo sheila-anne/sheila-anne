@@ -5,33 +5,45 @@ pageDescription: >
   Transformational lifecoach Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
 image: /img/sheila-anne-logo.jpg
 description: >
-  I am a life transformation coach that works with purpose-driven women like you — tired of questioning where you are and where you're going; dreaming of a life outside of the grind; all the boxes checked but still feeling incomplete. Let's make a change together!
-pathfinder: /img/freebie-pathfinder-teaser-image.jpg
+  You've outgrown your career, relationship, or lifestyle. You're ready for something new. Now it's time to take the leap!
+pathfinder: /img/freebie-pathfinder-teaser-image.png
 
 mainpitch:
-  title: Hi, I’m Sheila! I’m a certified professional coach specializing in helping driven, free-spirited women to cultivate the life & career they deserve. Why? Because I used to be a girl who relied on checking boxes, filling her schedule, and getting fit to feel good about who she was. Sound familiar? My career path was winding, my brain was always chock-full of things I had to do, and moments of fulfillment were fleeting. I discovered how to connect my mind and body, redefine success, and lead my own purpose-filled path. Now I’m fluffing passionate about helping others to do the same!
+  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach specializing in helping driven, free-spirited women to level up their lives. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and setting wellness goals to feel complete. I was so busy trying to do things "right," I didn't realize I had outgrown my lifestyle. Sound familiar? I dsicovered how to connect back to my core self, reevaluate my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same!
   image: /img/sheila-anne-with-coffee-mug.jpg
 
 intro:
   blurbs:
     - href: /book/exploration/
       image: /img/sheila-anne-discover.png
-      imageAlt: Discover what it's like to work with Sheila.
+      imageAlt: Apply for a free Exploration Call.
       title: Exploration Call
       text: >
-        Let's get to know you! 20 minute complementary call that identifies how coaching can help you in your life.
+        Not sure where to start or if coaching is for you? Apply for a free Exploration Call. We'll get to know each other, talk about your goals and strategize next steps.
     - href: /working-together#ground-to-grow
       image: /img/sheila-anne-grow.png
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
       title: Ground To Grow Accelerator
       text: >
-        45-minute power session to address you're feeling stuck and provide tangible steps towards greater fulfillment (a great place to start)!
+        A power session to help you create radical clarity and action steps in one area of your life. A great place to start!
     - href: /root-to-rise/
       image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: Root To Rise
+      title: Root To Rise Transformational Coaching Program
       text: >
-        My signature 3 month-long coaching program guaranteed to help you create long-lasting change in your personal and professional life.
+        My signature coaching program to help you deepen self-awareness, roadmap your next adventure, and create courageous change!
+  workWithMe:
+    - An achiever & a free-spirit
+    - Outgrowing your job, career, or relationship
+    - Operating below your potential
+    - Struggling to feel grounded and calm
+    - Ready to prioritize yourself and your path
+  seeHowICanHelp:
+    - Feel confident and energized
+    - Make decisions with ease
+    - Build habits of mindfulness & productivity
+    - Reimagine what's possible for your future
+    - Take the next leap ... in the right direction!
 
 testimonials:
   - title: Taylor P.
