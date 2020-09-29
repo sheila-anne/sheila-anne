@@ -34,7 +34,7 @@ export const SEO = ({ description, image, imageAlt, isPreview, location, title, 
     return null;
   }
   const { backupImage, site } = useStaticQuery(siteQuery);
-  const ogImage = !!image ? image : backupImage.publicURL;
+  const ogImage = !!image ? image : site.siteMetadata.siteUrl + backupImage.publicURL;
   const pathname = location && location.pathname;
 
   const schemaGraph = [
