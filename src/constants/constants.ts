@@ -13,6 +13,7 @@ export const Constants = {
     allServicesUrl: getSquareAppointmentUrl("vlggwbtks6vh2m"),
     explorationUrl: getSquareAppointmentUrl("382r9s8g5atn2g"),
     groundToGrowUrl: getSquareAppointmentUrl("efbofoh5gwycw0"),
+    rootToRiseUrl: getSquareAppointmentUrl("2rao3bwu73phex"),
   },
   textBannerKey: "hide-banner",
 };

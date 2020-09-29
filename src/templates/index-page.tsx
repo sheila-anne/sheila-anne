@@ -122,7 +122,7 @@ const Subheadline = styled.h2`
 `;
 
 const PathfinderHeading = styled.h2`
-  margin: 1rem;
+  margin: 0 0.5rem;
   padding: 0 1rem 1rem 1rem;
   text-align: center;
 `;
@@ -187,14 +187,13 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             </FlexColSplitImage>
           </HalfColumn>
           <HalfColumn>
-            <PathfinderHeading>PATHFINDER: Find Your Way</PathfinderHeading>
+            <PathfinderHeading>PATHFINDER: Find Your Way Forward</PathfinderHeading>
             <div>
               <BannerLink to="/pathfinder/" title="PATHFINDER freebie">
                 Grab your free, downloadable guide
               </BannerLink>{" "}
               that will help you make your next big move. PATHFINDER will help you to reflect on questions that really
-              matter when taking your next step; gain clarity around what you desire in your career path; and feel more
-              resourced in how to pursue the path you deserve!
+              matter when leveling up!
             </div>
           </HalfColumn>
         </FlexContainer>

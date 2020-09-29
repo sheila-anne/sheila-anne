@@ -48,7 +48,7 @@ export default ({ data, location }: GatsbyPage) => {
 
 export const pageQuery = graphql`
   query PathfinderQuery {
-    pathfinder: file(relativePath: { eq: "freebie-pathfinder-teaser-image.jpg" }) {
+    pathfinder: file(relativePath: { eq: "freebie-pathfinder-teaser-image.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid

@@ -2,7 +2,7 @@
 bannerImageHeadline: "Life Coaching | Working Together"
 featuredImage: /img/sheila-anne-working-together.jpg
 formHeadline: "Let's get started!"
-formParagraph: "This 20-minute complementary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
+formParagraph: "This 20-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
 formSubHeadline: "Setup your free exploration call."
 path: /working-together
 pageDescription: >
@@ -59,11 +59,11 @@ Are you ready to step into the driver's seat, gain clarity, and confidently make
 
 ---
 
-<h2 id="root-to-rise">Root to Rise 3 Month Program</h2>
+<h2 id="root-to-rise">Root to Rise Transformational Coaching Program</h2>
 
-My signature 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey of courageous self discovery & mindfulness, and level up in your career path, relationships, and lifestyle.
+My signature 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey of courageous self discovery, mindfulness, and level up in your career path, relationships, and lifestyle.
 
-![Sheila in Reversed Warrior by the Pacific](/img/sheila-anne-root-to-rise.jpg)
+![Root To Rise transformational coaching program](/img/sheila-anne-root-to-rise.jpg)
 
 ### Tell me more!
 
