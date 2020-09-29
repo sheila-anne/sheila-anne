@@ -1,5 +1,5 @@
 import { APIGatewayEvent } from "aws-lambda";
-import fetch, { HeaderInit } from "node-fetch";
+import fetch, { HeadersInit } from "node-fetch";
 
 import { InnerHandlerReturn, OuterHandlerReturn } from "../types/lambda";
 
@@ -13,7 +13,7 @@ const getHandlerReturn = (statusCode: number, body: InnerHandlerReturn): OuterHa
   body: JSON.stringify(body),
 });
 
-export async function fetchResponse<T>(url: string, data: any, headers?: HeaderInit): Promise<T | OuterHandlerReturn> {
+export async function fetchResponse<T>(url: string, data: any, headers?: HeadersInit): Promise<T | OuterHandlerReturn> {
   return fetch(url, {
     method: "POST",
     headers: headers
