@@ -1,5 +1,17 @@
 import colors from "../config/colors.json";
 
+type Colors = {
+  lightestBlue: string;
+  lighterBlue: string;
+  blue: string;
+  gray: string;
+  navLinkText: string;
+  theGroveGreen: string;
+  theGroveTeal: string;
+  theGroveLightGreen: string;
+  theGroveGreenGray: string;
+};
+
 const mobileBreakpoint = 768;
 const getSquareAppointmentUrl = (appointmentUrl: string) =>
   `https://squareup.com/appointments/buyer/widget/${appointmentUrl}/T2G1BPTFKKDBJ`;

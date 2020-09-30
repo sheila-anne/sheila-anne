@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "outDir": "./dist",
-    "isolatedModules": false
+    "isolatedModules": false,
+    "resolveJsonModule": true
   }
 }

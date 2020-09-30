@@ -44,18 +44,6 @@ declare type Blurbs = {
   text: string;
 };
 
-declare type Colors = {
-  lightestBlue: string;
-  lighterBlue: string;
-  blue: string;
-  gray: string;
-  navLinkText: string;
-  theGroveGreen: string;
-  theGroveTeal: string;
-  theGroveLightGreen: string;
-  theGroveGreenGray: string;
-};
-
 type FeaturedGridItem = PreviewImage & {
   href: string;
   imageAlt?: string;

@@ -1,6 +1,7 @@
 import "dotenv/config";
 import { APIGatewayEvent, Context } from "aws-lambda";
 
+import { Constants } from "../constants";
 import { bodyGuardian, fetchResponse } from "./utils";
 import { FormPage } from "../types/forms";
 
@@ -51,7 +52,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
       },
     ],
     context: {
-      pageUri: `https://www.sheilaanne.com/${eventProperties.page}`,
+      pageUri: `${Constants.baseUrl}/${eventProperties.page}`,
       pageName: eventProperties.page,
     },
   };

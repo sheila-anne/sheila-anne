@@ -16,7 +16,12 @@ type CustomLinkType = {
 
 type LinkType = "External" | "Internal";
 
-const getLinkType = (to: string): LinkType => (to.indexOf("http") > -1 ? "External" : "Internal");
+const getLinkType = (to: string): LinkType => {
+  if (to.includes("localhost") || to.startsWith("/")) {
+    return "Internal";
+  }
+  return to.indexOf("http") > -1 ? "External" : "Internal";
+};
 
 const getInnerLink = (children: React.ReactNode, hideMetadata?: boolean) => {
   return !hideMetadata ? <span itemProp="name">{children}</span> : children;
