@@ -26,8 +26,7 @@ export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
   flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
-  ${({ justifyContent }) =>
-    applyStyle("justify-content", justifyContent)}
+  ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
 
   @media (max-width: ${Constants.mobileWidth}) {
     flex-flow: row wrap;
@@ -49,6 +48,10 @@ export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
 export const HalfColumn = styled(FlexColumn)`
   align-self: center;
   flex-basis: 33%;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    flex-basis: 75%;
+  }
 `;
 
 export const FlexColSplitImage = styled.div`

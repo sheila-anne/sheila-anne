@@ -24,6 +24,12 @@ const PaddedParagraph = styled.p`
   padding: 5px;
 `;
 
+const StyledForm = styled.form`
+  display: inherit;
+  flex-flow: column;
+  align-items: center;
+`;
+
 const handleSubmit = async (
   e: FormEvent<HTMLFormElement>,
   formRoute: string,
@@ -89,10 +95,10 @@ export const BaseForm: FC<BaseFormProps> = ({
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
-      <form onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
+      <StyledForm onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
         {children}
         <PillButton type="submit">{buttonText}</PillButton>
-      </form>
+      </StyledForm>
     </FormWrapperSection>
   );
 };

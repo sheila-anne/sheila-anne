@@ -34,9 +34,10 @@ intro:
         My signature coaching program to help you deepen self-awareness, roadmap your next adventure, and create courageous change!
   workWithMe:
     - An achiever & a free-spirit
-    - Outgrowing your job, career, or relationship
+    - Outgrowing your job, relationship, or lifestyle
     - Operating below your potential
     - Struggling to feel grounded and calm
+    - Appearing to have it all together, but on the inside there is chaos
     - Ready to prioritize yourself and your path
   seeHowICanHelp:
     - Feel confident and energized

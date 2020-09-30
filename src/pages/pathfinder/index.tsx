@@ -35,8 +35,9 @@ export default ({ data, location }: GatsbyPage) => {
         <HalfColumn>
           <OptInForm
             backgroundColor="#FFF"
-            formTitle="Grab Your Free Copy Of PATHFINDER!"
-            formDescription="10 key questions to help you find your path:"
+            formTitle="Grab Your Digital Copy Of PATHFINDER!"
+            formDescription="You've outgrown your current lifestyle, relationship, or career ... so what's next?"
+            formParagraph="PATHFINDER offers the 10 key questions you need to blaze your path forward:"
             page="opt-in"
             submitText="Send me my free copy!"
           />

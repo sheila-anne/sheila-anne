@@ -226,7 +226,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
           </ul>
         </FlexContainer>
         <CenteredText>
-          <h3>And see how I can help you to ...</h3>
+          <h3>And see how I can help you to:</h3>
         </CenteredText>
         <FlexContainer>
           <ul>

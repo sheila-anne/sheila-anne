@@ -51,7 +51,7 @@ The **Ground to Grow Accelerator** will help you to:
 - **Remove** roadblocks -- Gain insight into what might be making you feel stuck or unfulfilled. Uncover these and you'll be on the fast track to freedom.
 - **Establish** a game plan -- You will craft 3 actionable steps that will allow you to make change in one area of your life. Think: a sure-fire strategy to help you level up quickly.
 
-  > "I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive. She held space beautifully and her grounded, calm presence could be felt through the screen. By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless" -- [Jessica S.](#testimonials)
+> "I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive. She held space beautifully and her grounded, calm presence could be felt through the screen. By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless" -- [Jessica S.](#testimonials)
 
 Are you ready to step into the driver's seat, gain clarity, and confidently make change your way?
 
