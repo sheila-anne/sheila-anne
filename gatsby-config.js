@@ -73,11 +73,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        exclude: ["localhost:**", "/admin/**"],
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
-        head: false,
+        trackingIds: [process.env.GOOGLE_ANALYTICS_TRACKING_ID],
+        pluginConfig: {
+          exclude: ["localhost:**", "/admin/**"],
+          head: false,
+          respectDNT: true,
+        },
       },
     },
     {

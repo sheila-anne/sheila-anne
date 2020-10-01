@@ -1,12 +1,11 @@
 import React, { Dispatch, FC, FormEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
-import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { FormWrapperSection } from "./form-elements";
 import { FormPage } from "../../types/forms";
 import { InnerHandlerReturn } from "../../types/lambda";
 import { PillButton } from "../button";
-import { trackFacebook, TrackArgs } from "../../utils";
+import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
 
 export type BaseFormProps = {
   backgroundColor?: string;
@@ -42,11 +41,10 @@ const handleSubmit = async (
 
   setButtonText("Submitting...");
   const args = {
-    action: "submit",
     category: `Form Submission`,
     label: page,
   };
-  trackCustomEvent(args);
+  trackCustomEvent({ type: "Form Submission", args });
   trackFacebook({ eventType: "track", ...trackArgs });
 
   const formValues = { page };

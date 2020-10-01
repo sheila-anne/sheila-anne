@@ -1,11 +1,10 @@
 import React, { Dispatch, MouseEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
-import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { CenteredText } from "./centered";
 import { Constants } from "../constants";
 import { PillButton } from "./button";
-import { maxPageWidth, trackFacebook } from "../utils";
+import { maxPageWidth, trackCustomEvent, trackFacebook } from "../utils";
 
 type PageNames = "Working Together" | "Homepage";
 
@@ -45,12 +44,11 @@ const handleSubmit = (
   e.preventDefault();
 
   const args = {
-    action: "click",
     category: `Schedule`,
     label: page,
   };
 
-  trackCustomEvent(args);
+  trackCustomEvent({ type: "Schedule Booking", args });
   trackFacebook({ eventType: "track", eventName: "InitiateCheckout", params: { content_name: args.label, ...args } });
 
   setShowBookingSection(!showBookingSection);

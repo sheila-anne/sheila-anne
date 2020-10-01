@@ -1,11 +1,10 @@
 import React, { Dispatch, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
 import styled from "styled-components";
-import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { CenteredText } from "./centered";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { PlainButton } from "./button";
-import { trackFacebook } from "../utils";
+import { trackCustomEvent, trackFacebook } from "../utils";
 import { Constants } from "../constants";
 
 type Action = {
@@ -90,11 +89,10 @@ const getInitialState = (testimonials: Testimonial[]): State =>
 const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
   const isExpanded = !state[action.type];
   const args = {
-    action: "click",
     category: `Testimonial`,
     label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
   };
-  trackCustomEvent(args);
+  trackCustomEvent({ type: "Testimonial Interaction", args });
   trackFacebook({ eventType: "trackCustom", eventName: "Testimonial Interaction", params: args });
   return { ...state, [action.type]: isExpanded };
 };

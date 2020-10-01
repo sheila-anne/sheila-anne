@@ -1,9 +1,8 @@
 import React, { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
-import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 import { Constants } from "../constants";
-import { trackFacebook } from "../utils";
+import { trackCustomEvent, trackFacebook } from "../utils";
 
 type BurgerProps = {
   isOpen: boolean;
@@ -60,7 +59,7 @@ const onClick = (isOpen: boolean, setIsOpen: Dispatch<SetStateAction<boolean>>) 
     category: `Mobile Menu`,
     label: `Toggle ${newOpenValue ? "closed" : "open"}`,
   };
-  trackCustomEvent(args);
+  trackCustomEvent({ type: "Mobile Menu", args });
   trackFacebook({ eventType: "trackCustom", eventName: "Menu Interaction", params: args });
 };
 

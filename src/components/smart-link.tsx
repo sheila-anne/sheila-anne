@@ -1,4 +1,4 @@
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React, { FC, MouseEvent } from "react";
 
 import { InternalLink } from "./internal-link";
