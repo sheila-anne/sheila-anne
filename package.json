@@ -21,7 +21,7 @@
     "gatsby-plugin-typography": "2.5.12",
     "gatsby-remark-copy-linked-files": "2.3.18",
     "gatsby-remark-footnotes": "0.0.7",
-    "gatsby-remark-google-analytics-track-links": "1.0.0",
+    "gatsby-remark-google-analytics-track-links": "1.0.1",
     "gatsby-remark-images": "3.3.32",
     "gatsby-remark-relative-images": "0.2.3",
     "gatsby-remark-relative-links": "0.0.3",
