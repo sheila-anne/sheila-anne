@@ -1,12 +1,18 @@
 import { hasWindow } from "./hasWindow";
 
+type GtagEventArgs = {
+  event_action?: string;
+  event_category: string;
+  event_label: string;
+};
+
 type GtagBaseEvent = {
   type: string;
-  args?: { [key in string]: string };
+  args?: GtagEventArgs;
 };
 
 type GtagWindow = Window & {
-  gtag: (event: "event", type: string, args?: { [key in string]: string }) => void;
+  gtag: (event: "event", type: string, args?: GtagEventArgs) => void;
 };
 
 export const trackCustomEvent = (event: GtagBaseEvent) => {
@@ -15,5 +21,9 @@ export const trackCustomEvent = (event: GtagBaseEvent) => {
     return;
   }
 
-  gWindow.gtag("event", event.type, !!event.args ? event.args : {});
+  gWindow.gtag(
+    "event",
+    event.type,
+    !!event.args ? event.args : { event_category: "Default", event_label: "Generic event" }
+  );
 };

@@ -7,10 +7,10 @@ import { trackCustomEvent } from "./trackCustomEvent";
 export const linkClickHandler = (event: MouseEvent<HTMLAnchorElement>, outerClickHandler?: (...props: any) => void) => {
   outerClickHandler && outerClickHandler();
   const args = {
-    category: `Internal Link`,
-    label: event.currentTarget.href,
+    event_category: `Internal Link`,
+    event_label: event.currentTarget.href,
   };
-  if (args.label.indexOf(Constants.baseUrl) === -1) {
+  if (args.event_label.indexOf(Constants.baseUrl) === -1) {
     return;
   }
   trackCustomEvent({ type: "Link Click", ...args });

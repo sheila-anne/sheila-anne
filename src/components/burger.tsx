@@ -55,9 +55,9 @@ const onClick = (isOpen: boolean, setIsOpen: Dispatch<SetStateAction<boolean>>) 
   const newOpenValue = !isOpen;
   setIsOpen(newOpenValue);
   const args = {
-    action: "navigation",
-    category: `Mobile Menu`,
-    label: `Toggle ${newOpenValue ? "closed" : "open"}`,
+    event_action: "navigation",
+    event_category: `Mobile Menu`,
+    event_label: `Toggle ${newOpenValue ? "closed" : "open"}`,
   };
   trackCustomEvent({ type: "Mobile Menu", args });
   trackFacebook({ eventType: "trackCustom", eventName: "Menu Interaction", params: args });

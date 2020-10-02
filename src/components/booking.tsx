@@ -44,12 +44,16 @@ const handleSubmit = (
   e.preventDefault();
 
   const args = {
-    category: `Schedule`,
-    label: page,
+    event_category: `Schedule`,
+    event_label: page,
   };
 
   trackCustomEvent({ type: "Schedule Booking", args });
-  trackFacebook({ eventType: "track", eventName: "InitiateCheckout", params: { content_name: args.label, ...args } });
+  trackFacebook({
+    eventType: "track",
+    eventName: "InitiateCheckout",
+    params: { content_name: args.event_label, ...args },
+  });
 
   setShowBookingSection(!showBookingSection);
 };

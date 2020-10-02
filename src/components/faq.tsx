@@ -60,8 +60,8 @@ const getInitialState = (faq: FAQ[]) =>
 const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
   const isExpanded = !state[action.type];
   const args = {
-    category: `FAQ`,
-    label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
+    event_category: `FAQ`,
+    event_label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
   };
   trackCustomEvent({ type: "FAQ Interaction", args });
   trackFacebook({ eventType: "trackCustom", eventName: "FAQ Interaction", params: args });

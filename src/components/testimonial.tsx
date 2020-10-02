@@ -89,8 +89,8 @@ const getInitialState = (testimonials: Testimonial[]): State =>
 const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
   const isExpanded = !state[action.type];
   const args = {
-    category: `Testimonial`,
-    label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
+    event_category: `Testimonial`,
+    event_label: `${action.type} was ${isExpanded ? "expanded" : "closed"}`,
   };
   trackCustomEvent({ type: "Testimonial Interaction", args });
   trackFacebook({ eventType: "trackCustom", eventName: "Testimonial Interaction", params: args });

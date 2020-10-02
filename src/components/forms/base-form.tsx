@@ -41,8 +41,8 @@ const handleSubmit = async (
 
   setButtonText("Submitting...");
   const args = {
-    category: `Form Submission`,
-    label: page,
+    event_category: `Form Submission`,
+    event_label: page,
   };
   trackCustomEvent({ type: "Form Submission", args });
   trackFacebook({ eventType: "track", ...trackArgs });
