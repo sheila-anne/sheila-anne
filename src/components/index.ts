@@ -1,3 +1,4 @@
+export { BannerImage } from "./banner-image";
 export { BaseTemplate } from "./base-template";
 export { BlogPostMeta } from "./blog-post-meta";
 export { BlogRollAll } from "./blog-roll-all";

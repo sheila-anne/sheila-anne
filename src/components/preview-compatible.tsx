@@ -73,7 +73,6 @@ export const BreakOutImage = styled(PreviewCompatibleImage)`
   left: 50%;
   margin-left: -48vw;
   margin-right: -48vw;
-  max-width: 96w;
   right: 50%;
   width: 96vw;
 `;

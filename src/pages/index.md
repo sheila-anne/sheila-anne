@@ -5,7 +5,7 @@ pageDescription: >
   Transformational lifecoach Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
 image: /img/sheila-anne-logo.jpg
 description: >
-  You've outgrown your career, relationship, or lifestyle. You're ready for something new. Now it's time to take the leap!
+  You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
 pathfinder: /img/freebie-pathfinder-teaser-image.png
 
 mainpitch:
@@ -33,18 +33,14 @@ intro:
       text: >
         My signature coaching program to help you deepen self-awareness, roadmap your next adventure, and create courageous change!
   workWithMe:
-    - An achiever & a free-spirit
-    - Outgrowing your job, relationship, or lifestyle
-    - Operating below your potential
-    - Struggling to feel grounded and calm
-    - Appearing to have it all together, but on the inside there is chaos
-    - Ready to prioritize yourself and your path
-  seeHowICanHelp:
-    - Feel confident and energized
-    - Make decisions with ease
-    - Build habits of mindfulness & productivity
-    - Reimagine what's possible for your future
-    - Take the next leap ... in the right direction!
+    - a chronic goal-setter and to-do list maker
+    - always the one who goes the extra mile in your work
+    - feeling underwhelmed, undervalued, or bleh about your career
+    - craving relationships that light you up and help you grow
+    - searching for productivity tools to maximize each minute of the day
+    - noticing that your brain is always going a million miles an hour
+    - always searching for another hour to squeeze in a fitness class, social event, or new experience
+    - frustrated by not knowing exactly what to do next
 
 testimonials:
   - title: Taylor P.

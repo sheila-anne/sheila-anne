@@ -3,8 +3,8 @@ import React from "react";
 import styled from "styled-components";
 
 import {
+  BannerImage,
   BlogRoll,
-  BreakOutImage,
   CenteredText,
   ContentBreak,
   Features,
@@ -35,7 +35,6 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   intro: {
     blurbs: FeaturedGridItem[];
     workWithMe: string[];
-    seeHowICanHelp: string[];
   };
   mainpitch: MainPitch;
   pathfinder: NestedImage;
@@ -127,11 +126,6 @@ const PathfinderHeading = styled.h2`
   text-align: center;
 `;
 
-const BannerText = styled.div`
-  padding: 5px;
-  font-size: 2rem;
-`;
-
 const TestimonialContainer = styled(FlexContainer)`
   display: block;
   margin-bottom: 2rem;
@@ -145,33 +139,62 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
 
   const safeImage = image as NestedImage;
 
+  const descriptionParts = description.split(".");
+
   return (
     <section>
-      <BreakOutImage
-        loading="eager"
-        imageInfo={{
-          alt: "Sheila Anne welcoming you to her site",
-          childImageSharp: safeImage?.childImageSharp,
-        }}
+      <BannerImage
+        image={safeImage}
+        imageHeadline="Hey high-achiever, are you ready to level up?"
         title="Sheila Anne Life Coaching cover photo"
       />
-      <CenteredText>
-        <BannerHeadline color="#FFF" fontColor="#000" margin="1rem 0 0 0">
-          <BannerText>Hey high-achiever, are you ready to level up?</BannerText>
-        </BannerHeadline>
-      </CenteredText>
       <Container>
         <CenteredText>
-          {description.split(".").map((descrip, index) => {
-            return <Subheadline key={index}>{descrip}</Subheadline>;
+          {descriptionParts.map((descrip, index) => {
+            return (
+              <Subheadline key={index}>{descrip + (index === descriptionParts.length - 1 ? "" : ".")}</Subheadline>
+            );
           })}
-          <ContentBreak />
+        </CenteredText>
+        <ContentBreak />
+        <CenteredText>
+          <h3>Are you:</h3>
+        </CenteredText>
+        <FlexContainer>
+          <ul>
+            {frontmatter.intro.workWithMe.map(reason => (
+              <li key={reason}>{reason}</li>
+            ))}
+          </ul>
+        </FlexContainer>
+        <CenteredText>
+          <h3>Ready to prioritize yourself and your path? Let's go!</h3>
+        </CenteredText>
+        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="2rem 0 1rem 0">
+          <Testimonial testimonials={firstTestimonial} />
+        </TestimonialContainer>
+        <ContentBreak />
+        <FlexContainer margin="1rem 0 0 0">
+          <ImageContainer>
+            <PreviewCompatibleImage
+              loading="lazy"
+              imageInfo={{
+                alt: "Sheila Anne drinking coffee",
+                childImageSharp: mainpitch.image.childImageSharp,
+              }}
+              title="A warm welcome from Sheila Anne"
+            />
+          </ImageContainer>
+          <div>{mainpitch.title}</div>
+        </FlexContainer>
+        <CenteredText>
           <h3>Here's How We Can Work Together:</h3>
         </CenteredText>
         <FlexContainer margin="1rem 0">
           <Features gridItems={frontmatter.intro.blurbs} />
         </FlexContainer>
-        <FlexContainer justifyContent="center" margin="1rem 0">
+        <ContentBreak />
+        <FlexContainer justifyContent="center" margin="2rem 0">
           <HalfColumn>
             <FlexColSplitImage>
               <SmartLink to="/pathfinder/" title="PATHFINDER freebie">
@@ -197,44 +220,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             </div>
           </HalfColumn>
         </FlexContainer>
-        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
-          <Testimonial testimonials={firstTestimonial} />
-        </TestimonialContainer>
         <ContentBreak />
-        <FlexContainer margin="2rem 0">
-          <ImageContainer>
-            <PreviewCompatibleImage
-              loading="lazy"
-              imageInfo={{
-                alt: "Sheila Anne drinking coffee",
-                childImageSharp: mainpitch.image.childImageSharp,
-              }}
-              title="A warm welcome from Sheila Anne"
-            />
-          </ImageContainer>
-          <p>{mainpitch.title}</p>
-        </FlexContainer>
-        <ContentBreak />
-        <CenteredText>
-          <h3>Work with me if you are:</h3>
-        </CenteredText>
-        <FlexContainer>
-          <ul>
-            {frontmatter.intro.workWithMe.map(reason => (
-              <li key={reason}>{reason}</li>
-            ))}
-          </ul>
-        </FlexContainer>
-        <CenteredText>
-          <h3>And see how I can help you to:</h3>
-        </CenteredText>
-        <FlexContainer>
-          <ul>
-            {frontmatter.intro.seeHowICanHelp.map(reason => (
-              <li key={reason}>{reason}</li>
-            ))}
-          </ul>
-        </FlexContainer>
         <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
           <Testimonial testimonials={fullTestimonials} />
         </TestimonialContainer>
@@ -289,7 +275,6 @@ export const pageQuery = graphql`
         }
         intro {
           workWithMe
-          seeHowICanHelp
           blurbs {
             href
             image {
