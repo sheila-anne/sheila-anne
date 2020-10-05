@@ -10,7 +10,7 @@ tags:
   - productivity
   - coaching
   - advice
-  - ""
+  - habits
 ---
 I rushed my puppy Buckwheat into the Subaru and hopped into the front seat with my coffee. We were off to do a short visit with my cousins down the street and I was stoked… I was also anxious.
 
