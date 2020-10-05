@@ -9,7 +9,7 @@ description: Cultivating a safe space for uncomfortable conversations is vital
   the deeply seeded beasts of police brutality & white supremacy. If you are a
   white woman, and conversations with friends have never breached the topic of
   race, this is your opportunity to start.
-featuredpost: true
+featuredpost: false
 featuredImage: /img/friend-talk.png
 tags:
   - advice
