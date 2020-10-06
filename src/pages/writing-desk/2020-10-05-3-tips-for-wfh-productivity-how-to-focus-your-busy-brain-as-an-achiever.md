@@ -56,6 +56,6 @@ Next time you run through your list of tasks - check yourself. Will you realisti
 
 Q: How realistic are you being with your goals and how can you set yourself up for more success?
 
-
+![Notebook to plan your goals and week](/img/work-from-home-productivity-planner.png "Tips for productivity")
 
 Mental focus is one of the many things that I help clients to transform in their lives. Are you ready to level up your productivity and make big things happen? [Click here to apply for a complementary strategy session.](https://www.sheilaanne.com/book/exploration/)
