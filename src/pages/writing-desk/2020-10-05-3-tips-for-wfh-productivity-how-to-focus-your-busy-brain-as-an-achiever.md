@@ -58,4 +58,6 @@ Q: How realistic are you being with your goals and how can you set yourself up f
 
 ![Notebook to plan your goals](/img/work-from-home-productivity-planner.png "Tips for productivity")
 
-Mental focus is one of the many things that I help clients to transform in their lives. Are you ready to level up your productivity and make big things happen? [Click here to apply for a complementary strategy session.](https://www.sheilaanne.com/book/exploration/)
+**Mental focus is one of the many things that I help clients to transform in their lives.** \
+**Are you ready to level up your productivity and make big things happen?** \
+**[Click here to apply for a complimentary strategy session.](https://www.sheilaanne.com/book/exploration/)**
