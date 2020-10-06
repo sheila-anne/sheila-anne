@@ -24,7 +24,7 @@ As an achiever, my typical day involves waking up and feeling like I’m at “z
 
 Simply not being this way is a littttttle idealistic. I’m also all about leveraging your strengths, not trying to counteract them. That said, there are a few go-to tools I’ve acquired over the years that help me to focus my busy brain.
 
-## Move Your Body
+## 1. Move Your Body
 
 Have you ever been working and then suddenly yourself perusing Airbnb, chatting with a friend, scrolling through social media, or working on tasks you know are like 10th on your list of importance? I’ve been there for sure. If your body is sedentary and your mind is moving 100 mph, focusing is a challenge.
 
@@ -34,7 +34,7 @@ Adding movement to your day can make a huge difference, especially if you can co
 
 Q: How can you more mindfully move your body daily?
 
-## Don’t Ambush Yourself With Tasks
+## 3. Don’t Ambush Yourself With Tasks
 
 If you’re an achiever, you probably don’t often get to through the week and say “Whoops I forgot to try.” Effort is your natural state of being. Let’s be real — you like to accomplish.
 
@@ -46,7 +46,7 @@ Q: How do you currently prepare yourself for the week and how can you improve yo
 
 🔥hot tip🔥: I live by my physical planner, and my Google calendar serves as a supplement. I find that the less I need to visit my computer or phone to find my schedule, the less I get sidetracked.
 
-## Make Success Simple
+## 3. Make Success Simple
 
 Often, we achievers have a mile-long list of tasks & responsibilities. Though it can be amazing to set goals and to get shit done… wins are often not celebrated and there’s a continuous incomplete feeling.
 
@@ -56,6 +56,6 @@ Next time you run through your list of tasks - check yourself. Will you realisti
 
 Q: How realistic are you being with your goals and how can you set yourself up for more success?
 
-![Notebook to plan your goals and week](/img/work-from-home-productivity-planner.png "Tips for productivity")
+![Notebook to plan your goals](/img/work-from-home-productivity-planner.png "Tips for productivity")
 
 Mental focus is one of the many things that I help clients to transform in their lives. Are you ready to level up your productivity and make big things happen? [Click here to apply for a complementary strategy session.](https://www.sheilaanne.com/book/exploration/)
