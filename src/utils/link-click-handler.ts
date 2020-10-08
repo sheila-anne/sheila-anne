@@ -14,5 +14,12 @@ export const linkClickHandler = (event: MouseEvent<HTMLAnchorElement>, outerClic
     return;
   }
   trackCustomEvent({ type: "Link Click", ...args });
-  trackFacebook({ eventType: "trackCustom", eventName: "Link Click", params: args });
+  trackFacebook({
+    eventType: "trackCustom",
+    eventName: "Link Click",
+    params: {
+      content_category: args.event_category,
+      content_name: args.event_label,
+    },
+  });
 };

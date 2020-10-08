@@ -45,7 +45,13 @@ const handleSubmit = async (
     event_label: page,
   };
   trackCustomEvent({ type: "Form Submission", args });
-  trackFacebook({ eventType: "track", ...trackArgs });
+  trackFacebook({
+    eventType: "track",
+    params: {
+      content_category: args.event_category,
+      content_name: args.event_label,
+    },
+  });
 
   const formValues = { page };
   const formElements = (Array.from(e.currentTarget.elements) as unknown) as HTMLInputElement[];
