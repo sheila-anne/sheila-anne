@@ -52,7 +52,7 @@ const handleSubmit = (
   trackFacebook({
     eventType: "track",
     eventName: "InitiateCheckout",
-    params: { content_name: args.event_label, ...args },
+    params: { content_category: args.event_label, ...args },
   });
 
   setShowBookingSection(!showBookingSection);
