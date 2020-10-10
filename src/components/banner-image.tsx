@@ -52,7 +52,7 @@ export const ImageHeadlineContainer = styled.h1<{
 `;
 
 export const BannerImage: FC<BannerImageProps> = ({ color, image, imageHeadline, title }) => {
-  const headlineColor = !!color ? color : Constants.Colors.lighterBlue;
+  const headlineColor = !!color ? color : Constants.Colors.theGroveLightGreen;
   return (
     <BannerImageWrapper>
       <BreakOutImage imageAlt={title} imageInfo={{ image, alt: title }} title={title} />
