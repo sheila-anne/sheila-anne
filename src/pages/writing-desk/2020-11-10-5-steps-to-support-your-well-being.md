@@ -24,11 +24,9 @@ It was challenging to make sense of everything that had happened, hadn’t happe
 
 *Deep breath in. Deep breath out.*
 
-The heightened energy around the country was palpable, catalyzed mostly by things out of our control. The overused word of 2020 - uncertainty - seemed exactly fitting for the time.
+The heightened energy around the country was palpable, catalyzed mostly by things out of our control. The overused word of 2020 — uncertainty — seemed exactly fitting for the time.
 
-
-
-In the wake of this, I was inspired to create a series of posts on my instagram, focused on promoting individual well-being. With so much out of our control, it is absolutely essential to take care of ourselves and our environment. I am re-sharing and elaborating on those 5 ideas for you, so that you may come back to this page whenever you like, and find something that aligns with what you need.
+In the wake of this, I was inspired to create a series of posts on [my Instagram](https://www.instagram.com/sheflowsandgrows/), focused on promoting individual well-being. With so much out of our control, it is absolutely essential to take care of ourselves and our environment. I am re-sharing and elaborating on those 5 ideas for you, so that you may come back to this page whenever you like, and find something that aligns with what you need.
 
 ## 1. Create your sanctuary
 
@@ -36,7 +34,7 @@ In the wake of this, I was inspired to create a series of posts on my instagram,
 
 Beginning first at the foundation — create a space that makes your soul happy & calm. You don’t need much here, it could be as simple as a single candle or a favorite cozy blanket.
 
-What I’m lovin’ — warm tea, burning sage, my notebook to keep my brain organized. Also a salt lamp, a plant and minimalist space, and a soothing craft like this Thorn Alexander canvas 💛
+What I’m lovin’ — warm tea, burning sage, my notebook to keep my brain organized. Also a salt lamp, a plant and minimalist space, and a soothing craft like this [Thorn Alexander](https://thornalexander.com/) canvas 💛
 
 Simple things can really make a big difference such as plants, natural light, mirrors to open the room, and each thing having a place. I always notice that my space can reflect my mind: busy mind = crazy space; calm mind = tidy space. Do yourself a favor and prevent overwhelming mess in your mind and room by taking pride in your sanctuary and the way you care for it.
 
@@ -44,7 +42,7 @@ Simple things can really make a big difference such as plants, natural light, mi
 
 ![Breath work for a calm mind ](/img/breathing-calming-stress-relief.jpg "Breath work for a calm mind ")
 
-The practice of breath is for everyone. 🗣 Practice intentional breath right at home just a few minutes/day and you’ll likely experience reduced stress, elevated mood, improved sleep, sharpened focus, and even a boosted immune system 🦠
+The practice of breath is for everyone. 🗣 Practice intentional breath right at home just a few minutes/day and you’ll likely experience reduced stress, elevated mood, improved sleep, sharpened focus, and even a boosted immune system 🦠.
 
 It’s not woo-woo — it’s science.
 
@@ -76,9 +74,9 @@ That said…
 
 👉 You can skip the mantra and just let out a giant “AH” to release that energy you’re holding.
 
-Some days, you just need to release a scream or a swear to authentically address the frustration within. Really, try it 😏 It’s quite therapeutic.
+Some days, you just need to release a scream or a swear to authentically address the frustration within. Really, try it 😏. It’s quite therapeutic.
 
-Take a breath, try a mantra or yell, and carry on friends 💛
+Take a breath, try a mantra or yell, and carry on friends 💛!
 
 ## 4. Move your body
 
@@ -86,19 +84,19 @@ Take a breath, try a mantra or yell, and carry on friends 💛
 
 It’s no secret that I have a love for movement. I crave a good fitness challenge, I am a certified yoga instructor, and I love sharing my playtime with others.
 
-Movement can be challenging, yes, but aim for something that gets you excited too! Perhaps for you that’s trail walking, leisurely strolling, zumba, powerlifting, or parkour. You’ll never know what you’ll fall for until you try. I have a friend who recently tried pole dancing and now she’s hooked!
+Movement can be challenging, yes, but aim for something that gets you excited too! Perhaps for you that’s trail walking, leisurely strolling, zumba, power-lifting, or parkour. You’ll never know what you’ll fall for until you try. I have a friend who recently tried pole dancing and now she’s hooked!
 
-The best thing about movement - it looks different for every single human. And even then it looks different depending on the day. 🏃🏻‍♀️🤸🏻‍♂️🚴🏻‍♀️
+The best thing about movement — it looks different for every single human. And even then it looks different depending on the day. 🏃🏻‍♀️🤸🏻‍♂️🚴🏻‍♀️
 
-When I was younger I understood movement as exercise and competitive sport. If I was moving it was for the purpose of “working out” and getting stronger, faster, more competitive.
+When I was younger, I understood movement as exercise and competitive sport. If I was moving, it was for the purpose of “working out” and getting stronger, faster, more competitive.
 
 Now I know better. Movement is what fuels and channels my energy, emotions, and mind.
 
-Movement has changed depending on my circumstances, passion, and even relationships. I got into long-distance running because I was making friends through work that way. Running 7 miles at 7am “7 at 7” is also how I met my fiancé.
+Movement has changed depending on my circumstances, passion, and even relationships. I got into long-distance running because I was making friends through work that way. Running 7 miles at 7 AM — “7 at 7” — is also how I met my fiancé.
 
-In 2017 I moved to the north end of Boston, farther away from my gym/sanctuary. I have vivid memories of waking up when it was still dark, to run a mile to my bike, to bike 2 miles, to arrive at a gym where I could do a HIIT workout with my favorite instructor. it wasn’t necessarily her fire workout that got me out of bed, but pushing myself mentally and physically through the morning, when most were still turning in their beds.
+In 2017 I moved to the North End of Boston, farther away from my gym/sanctuary. I have vivid memories of waking up when it was still dark, running a mile to my bike, biking 2 miles, all before finally arriving at a gym where I could do a HIIT workout with my favorite instructor. It wasn’t necessarily her fire workout that got me out of bed, but the act of pushing myself mentally and physically through the morning, when most were still turning in their beds.
 
-Ever since getting a dog (Buckwheat) I’ve relished our walks. If you have a dog (or a child), you know how a walk is with them - stopping every now and then to smell things, pick up things, and look around. It’s helped me develop greater patience and appreciation for simply being present - no need to rush around.
+Ever since getting a dog (Buckwheat), I’ve relished our walks. If you have a dog (or a child), you know how a walk is with them — stopping every now and then to smell things, pick up things, and look around. It’s helped me develop greater patience and appreciation for simply being present — no need to rush around.
 
 ## 5. Fuel with food
 
@@ -112,9 +110,9 @@ What’s more, taking time to mindfully prepare what you’ll consume, and then 
 
 What food fuels your body as well as your soul? How is food self-care for you?
 
-The answer is different for everyone. Cause everybody’s got a different body to love and feed.🤍
+The answer is different for everyone, 'cause everybody’s got a different body to love and feed. 🤍
 
-The biggest things I prioritize when it comes to my food fuel are breakfast, water, homemade nourishing snacks, and eating for the season/where I am in my cycle. The best thing you can do to promote well-being is bring awareness to how you feel before, during, and after food. What foods make you feel satisfied and energized? Which ones make you feel lethargic or even moody? Keep in mind that life is one big experiment, so you can’t do anything “wrong” except for being hard on yourself!
+The biggest things I prioritize when it comes to my food as fuel are breakfast, water, homemade nourishing snacks, and eating for the season/where I am in my cycle. The best thing you can do to promote well-being is to bring awareness to how you feel before, during, and after food. What foods make you feel satisfied and energized? Which ones make you feel lethargic or even moody? Keep in mind that life is one big experiment, so you can’t do anything “wrong” except for being hard on yourself!
 
 \---
 
