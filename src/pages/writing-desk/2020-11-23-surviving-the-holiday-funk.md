@@ -32,15 +32,15 @@ So, are you in a bit of a funk? I’m here to offer a few helpful things that I'
 
 ## Social media does not equal reality
 
+![Social media is not reality](/img/social-media-emotions.png "Social media is not reality")
+
 I’m confident that you likely logically know this one 🙄 but stick with me.
 
 Examples:
 
-Facebook was designed to connect university students
-
-Instagram was designed to share pretty pictures
-
-TikTok was designed to share quick comedy, dance, and music videos
+* Facebook was designed to connect university students
+* Instagram was designed to share pretty pictures
+* TikTok was designed to share quick comedy, dance, and music videos
 
 No social media platform was designed to offer the full-picture reality that is another human’s life. And yet… during a time with so little in-person connection, social media can be a go-to form of seeing what someone else is “up to” or checking in on how someone else is “doing” without the work of calling them up or writing them a personal message.
 
@@ -48,11 +48,9 @@ Though you may logically understand social media does not equal reality, have yo
 
 I promise you that (if you use social media) you will see lots of smiles, cheer, community, travel and togetherness through the holiday season. That’s just how it goes. It will be your choice how you want to digest this information and if you will then compare it to your own life and reality.
 
-I can also promise you that, if you are breaking tradition, staying home, keeping your family safe, grieving a recent loss, or feeling generally heavy this year, you are not alone. Keep this in mind if your news feed becomes a highlight reel of merriment and extravagant holiday feasts. If you are cooking up a box of Annie’s Mac & Cheese for your holiday and are trying to just get through the day solo, you are doing the very best you can and you are in good company.
+I can also promise you - if you are breaking tradition, staying home, keeping your family safe, grieving a recent loss, or feeling generally heavy this year, you are not alone. Keep this in mind if your news feed becomes a highlight reel of merriment and extravagant holiday feasts. If you are cooking up a box of Annie’s Mac & Cheese for your holiday and are trying to just get through the day solo, you are doing the very best you can and you are in good company.
 
 Here’s the good news. You have the power here to control your mindset around social media and the degree to which you relate it to your own life. My best advice - don’t look around. Stick to what you are doing, enjoy the posts of others if it makes you happy, make sure you’re being real with yourself.
-
-![Social media is not reality](/img/social-media-emotions.png "Social media is not reality")
 
 ## Your feelings are real
 
@@ -79,7 +77,7 @@ Maybe last year you were the cookie-Queen-gift-giving-extraordinaire.
 
 Maybe this year you want to cozy up on the couch and watch the Crown.
 
-It’s not your biggest responsibility to instantly text back, head up virtual festivities, or be jolly to every individual you see. Your biggest responsibility is to be your honest self. This year give yourself the gift of asking “what is my best today?” knowing that it might look different than yesterday or tomorrow.
+It’s not your biggest responsibility to instantly text back, head up virtual festivities, or be jolly to every individual you see. Your biggest responsibility is to be your honest self. This year give yourself the gift of asking: “what is my best today?” knowing that it might look different than yesterday or tomorrow.
 
 Next, communicate your needs to those who you love, and who love you. There’s no need to show up as anyone other than your authentic self. Let’s be honest - doing that is exhausting. There’s also no need to force conversations you don’t want to have, no need to take on others’ advice, drama, or responsibilities. Instead, what would it feel like to communicate what you really need - like space, time, patience, support, etc.
 
@@ -106,7 +104,11 @@ Here are some simple acts of self-love to indulge in during the holiday season.
 * Prioritize sleep over screen time
 * Move your body in the way that feels good for you
 
-  ![Use your superpowers](/img/manage-your-mindset-covid.png "You have the power!")
+Check out my guide on [5 Steps To Support Your Well-being](https://www.sheilaanne.com/writing-desk/2020-11-10-5-steps-to-support-your-well-being/)
+
+![Use your superpowers](/img/manage-your-mindset-covid.png "You have the power!")
+
+
 
 I know that the phrase “the new normal” has been floating around, to describe the current state of things. The phrase has never sat quite well with me. Ever since my mom passed two years ago I’ve been wondering what the “new normal” will be and I promise you I haven’t found it. There is no “normal” way to think, feel, act during times of uncertainty and grief. There will always be a big spectrum of what “normal” is to each individual.
 
@@ -114,4 +116,4 @@ One thing I am sure of is that this holiday season is not the new tradition, nor
 
 This year, be aware of the power of your thoughts, be gentle with yourself, try some honest communication, make success (and self-care) simple.
 
-I would be happy collaborate with you on an individualized plan to step further into alignment and into the life that calls to you. Please click here to view my schedule to set up your first free call.
+I would be happy collaborate with you on an individualized plan to step further into alignment and into the life that calls to you. Please [click here to view my schedule](https://www.sheilaanne.com/book/exploration/) to set up your first free call.
