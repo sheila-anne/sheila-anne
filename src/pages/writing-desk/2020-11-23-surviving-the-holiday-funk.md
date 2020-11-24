@@ -8,6 +8,7 @@ description: >-
 
   I felt like I was being pulled in two different directions - gratitude and grief - and I felt completely uncertain about how things were supposed to be. As there is no rule book called “How to Celebrate, Behave, and Grieve Following The Loss Of A Loved-One” my usual, perfectionist way of getting things done was not going to cut it.
 featuredpost: true
+featuredImage: /img/in-a-funk.png
 tags:
   - coaching
   - communication
@@ -17,9 +18,9 @@ tags:
   - stress management
   - tips
 ---
-It was my first holiday season without my mother and I was on high-alert.
+It was my first holiday season without my mother and I was stuck in a funk.
 
-I felt like I was being pulled in two different directions - gratitude and grief - and I felt completely uncertain about how things were supposed to be. As there is no rule book called “How to Celebrate, Behave, and Grieve Following The Loss Of A Loved-One” my usual, perfectionist way of getting things done was not going to cut it.
+I felt like I was being pulled in two different directions - gratitude and grief - and I felt completely uncertain about how things were supposed to be. As there is no rule book called “How to Celebrate, Behave, and Grieve Following The Loss Of A Loved-One” (that I'm aware of) my usual, perfectionist way of getting things done was not going to cut it.
 
 And so, I white-knuckled my way through my first mother-less holiday season. Sometimes I was surrounded by friends and wanted to be alone, other times I was alone and wanted to just be held. There were moments of apprehension and sadness, then joy and lightness.
 
@@ -47,9 +48,11 @@ Though you may logically understand social media does not equal reality, have yo
 
 I promise you that (if you use social media) you will see lots of smiles, cheer, community, travel and togetherness through the holiday season. That’s just how it goes. It will be your choice how you want to digest this information and if you will then compare it to your own life and reality.
 
-I can also promise you that, if you are breaking tradition, staying home, keeping your family safe, grieving a recent loss, or feeling generally heavy this year, you are not alone. Keep this in mind if your newsfeed becomes a highlight reel of merriment and extravagant holiday feasts. If you are cooking up a box of Annie’s Mac & Cheese for your holiday and are trying to just get through the day solo, you are doing the very best you can and you are in good company.
+I can also promise you that, if you are breaking tradition, staying home, keeping your family safe, grieving a recent loss, or feeling generally heavy this year, you are not alone. Keep this in mind if your news feed becomes a highlight reel of merriment and extravagant holiday feasts. If you are cooking up a box of Annie’s Mac & Cheese for your holiday and are trying to just get through the day solo, you are doing the very best you can and you are in good company.
 
 Here’s the good news. You have the power here to control your mindset around social media and the degree to which you relate it to your own life. My best advice - don’t look around. Stick to what you are doing, enjoy the posts of others if it makes you happy, make sure you’re being real with yourself.
+
+![Social media is not reality](/img/social-media-emotions.png "Social media is not reality")
 
 ## Your feelings are real
 
@@ -66,7 +69,9 @@ Here are some general tips when it comes to feelings.
 
 Feel what you feel. Emotions are real.
 
-### Honest communication rocks
+![Meditating, taking a pause, feeling](/img/feel-your-feelings.png "Take a moment to feel your feelings")
+
+## Honest communication rocks
 
 If you’re going through a funky period, remember that those who care about you want only the best for you, and it’s up to you to decide what that “best” will be.
 
@@ -76,15 +81,15 @@ Maybe this year you want to cozy up on the couch and watch the Crown.
 
 It’s not your biggest responsibility to instantly text back, head up virtual festivities, or be jolly to every individual you see. Your biggest responsibility is to be your honest self. This year give yourself the gift of asking “what is my best today?” knowing that it might look different than yesterday or tomorrow.
 
-Then, communicate your needs to those who you love, and who love you. There’s no need to show up as anyone other than your authentic self. Let’s be honest - doing that is exhausting. There’s also no need to force conversations you don’t want to have, no need to take on others’ advice, drama, or responsibilities. Instead, what would it feel like to communicate what you really need - like space, time, patience, support, etc.
+Next, communicate your needs to those who you love, and who love you. There’s no need to show up as anyone other than your authentic self. Let’s be honest - doing that is exhausting. There’s also no need to force conversations you don’t want to have, no need to take on others’ advice, drama, or responsibilities. Instead, what would it feel like to communicate what you really need - like space, time, patience, support, etc.
 
 Of course, there is an opportunity to just ghost everyone you know but is that what your highest self wants? The secret is that people want to be with you on your journey, even if that means giving you the space you need to be alone. When we share how we are really doing, humans are more drawn to us and feel a more intimate relationship. Best case scenario, you inspire your support network to ask the same of their support network. Maybe a friend of yours has wanted the courage to be real with her family about taking on too much, and now you’ve given that inspiration to them.
 
-I love the post below by OptionB
+I love the post below by [OptionB](https://optionb.org/)
 
+![Managing expectations during trying times](/img/option-b-communicate-expectations.png "Managing and communicating expectations during trying times")
 
-
-### You have power!
+## You have power!
 
 Your energy has power, your thoughts have power, your intention has power. Don’t give away your power! Taking some pressure off yourself, feeling your feelings, and doing your best doesn’t mean that the world will just happen around you. In contrast, you might find that a little extra honesty and self compassion will make you more powerful because you are living in alignment.
 
@@ -101,9 +106,11 @@ Here are some simple acts of self-love to indulge in during the holiday season.
 * Prioritize sleep over screen time
 * Move your body in the way that feels good for you
 
+  ![Use your superpowers](/img/manage-your-mindset-covid.png "You have the power!")
+
 I know that the phrase “the new normal” has been floating around, to describe the current state of things. The phrase has never sat quite well with me. Ever since my mom passed two years ago I’ve been wondering what the “new normal” will be and I promise you I haven’t found it. There is no “normal” way to think, feel, act during times of uncertainty and grief. There will always be a big spectrum of what “normal” is to each individual.
 
-However, certain that this holiday season is not the new tradition, nor an indicator for how we will spend our time in the years to come. This season will come, it will pass, and things will surely change next year. They always do.
+One thing I am sure of is that this holiday season is not the new tradition, nor an indicator for how we will spend our time in the years to come. This season will come, it will pass, and things will surely change next year. They always do.
 
 This year, be aware of the power of your thoughts, be gentle with yourself, try some honest communication, make success (and self-care) simple.
 
