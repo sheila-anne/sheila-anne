@@ -4,7 +4,7 @@ title: 5 Steps To Support Your Well-being
 date: 2020-11-10T03:26:43.742Z
 description: 5 steps to support your well-being during hectic times, pandemic
   times, and just generally every day.
-featuredpost: true
+featuredpost: false
 featuredImage: /img/da45c030-a061-47f6-9288-1c31051915b7.jpeg
 tags:
   - advice
