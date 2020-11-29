@@ -18,6 +18,7 @@ import {
   SEO,
   SmartLink,
   Testimonial,
+  Youtube,
 } from "../components";
 import { Constants } from "../constants";
 import { applyStyle } from "../utils";
@@ -170,7 +171,8 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
         <CenteredText>
           <h3>Ready to prioritize yourself and your path? Let's go!</h3>
         </CenteredText>
-        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="2rem 0 1rem 0">
+        <Youtube url="7jTx1xMKI_Q" />
+        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="1rem 0 1rem 0">
           <Testimonial testimonials={firstTestimonial} />
         </TestimonialContainer>
         <ContentBreak />

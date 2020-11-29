@@ -23,3 +23,4 @@ export { SmartLink } from "./smart-link";
 export { TagList } from "./tag-list";
 export { Testimonial } from "./testimonial";
 export { WorkingTogetherHeader } from "./working-together-header";
+export { Youtube } from "./youtube";
