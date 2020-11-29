@@ -52,7 +52,7 @@ const clickHandler = (setIsShown: Dispatch<SetStateAction<boolean>>) => {
   window.sessionStorage.setItem(Constants.textBannerKey, TRUE_SESSION_VALUE);
 };
 
-const NoShowValue = "pathfinder";
+const NoShowValue = "freebie";
 
 export const BannerText = ({ path }: TextBannerProps) => {
   const [isShown, setIsShown] = useState(true);
@@ -63,19 +63,19 @@ export const BannerText = ({ path }: TextBannerProps) => {
     }
   }, [path]);
 
-  const innerHandler = (e: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
+  const innerHandler = (_: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
   };
   return isShown ? (
     <BannerDiv>
       <Text>
         <UnderlineLink
-          aria-label="Click to sign up for my PATHFINDER freebie"
+          aria-label="Click to get your Positivity Pack!"
           onClick={innerHandler}
-          to="/pathfinder/"
-          title="Click to sign up for my PATHFINDER freebie"
+          to="/freebie/"
+          title="Click to get your Positivity Pack!"
         >
-          Sign up to receive my free PATHFINDER guide!
+          December freebie! Get your Positivity Pack for free!
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">

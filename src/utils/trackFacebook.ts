@@ -11,9 +11,14 @@ type FullTrackArgs = TrackArgs & {
   eventType: FacebookEvent;
 };
 
+type FacebookWindow = Window & {
+  fbq:(eventType: string, eventName: string, params: object) => void;
+}
+
 export const trackFacebook = (args: FullTrackArgs) => {
-  if (!hasWindow || (hasWindow && typeof window.fbq !== "function")) {
+  const fbWindow = window as unknown as FacebookWindow;
+  if (!hasWindow || (hasWindow && typeof fbWindow.fbq !== "function")) {
     return;
   }
-  fbq(args.eventType, args.eventName, args.params ?? {});
+  fbWindow.fbq(args.eventType, args.eventName, args.params ?? {});
 };

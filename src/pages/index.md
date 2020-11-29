@@ -45,7 +45,8 @@ intro:
 testimonials:
   - title: Taylor P.
     imageAlt: Client testimonial from Taylor
-    text: Working with Sheila has been nothing short of amazing! The
+    text: >
+      Working with Sheila has been nothing short of amazing! The
       breakthroughs I have had in the past few months have been life
       changing. She has an amazing talent for looking at the big picture and
       is one of the few people I’ve ever met who is able to follow my

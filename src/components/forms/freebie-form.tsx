@@ -18,7 +18,7 @@ export const FreebieForm = () => {
   return (
     <BaseForm
       formDescription="You're moments away from getting your free download!"
-      formTitle="Enter your Pathfinder code"
+      formTitle="Enter your Positivity Pack code"
       formRoute="/.netlify/functions/freebie-handler"
       isSubmitSuccess={setIsSubmitSuccess}
       page="freebie"
@@ -37,9 +37,9 @@ export const FreebieForm = () => {
       )}
       {isSubmitSuccess && !!data.file && (
         <div>
-          Congrats! To get your Pathfinder freebie:{" "}
+          To get your Positivity Pack affirmation deck & phone wallpapers:{" "}
           <a href={data.file.publicURL} download={true} onClick={linkClickHandler}>
-            Click here!
+            click here!
           </a>
         </div>
       )}

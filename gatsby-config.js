@@ -123,7 +123,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/pathfinder/**", "/giveaway/*"],
+        exclude: ["/freebie/**", "/giveaway/*"],
       },
     },
     "gatsby-plugin-styled-components",

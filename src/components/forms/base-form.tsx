@@ -17,6 +17,7 @@ export type BaseFormProps = {
   page: FormPage;
   submitText: string;
   trackArgs?: TrackArgs;
+  id?: string;
 };
 
 const PaddedParagraph = styled.p`
@@ -45,13 +46,7 @@ const handleSubmit = async (
     event_label: page,
   };
   trackCustomEvent({ type: "Form Submission", args });
-  trackFacebook({
-    eventType: "track",
-    params: {
-      content_category: args.event_category,
-      content_name: args.event_label,
-    },
-  });
+  trackFacebook({eventType: "track", ...trackArgs});
 
   const formValues = { page };
   const formElements = (Array.from(e.currentTarget.elements) as unknown) as HTMLInputElement[];
@@ -88,6 +83,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   page,
   submitText,
   trackArgs,
+  id
 }) => {
   const [buttonText, setButtonText] = useState(submitText);
   const fbTrackArgs = trackArgs ?? {
@@ -99,7 +95,7 @@ export const BaseForm: FC<BaseFormProps> = ({
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
-      <StyledForm onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
+      <StyledForm id={id} onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
         {children}
         <PillButton type="submit">{buttonText}</PillButton>
       </StyledForm>

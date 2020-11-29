@@ -11,8 +11,12 @@ export const OptInForm = ({
   formTitle,
   page,
   submitText,
+  id,
+  isSubmitSuccess
 }: BaseFormProps) => (
   <BaseForm
+    id={id}
+    isSubmitSuccess={isSubmitSuccess}
     formDescription={formDescription}
     formRoute={formRoute}
     formParagraph={formParagraph}
@@ -22,7 +26,7 @@ export const OptInForm = ({
     trackArgs={{
       eventName: "CompleteRegistration",
       params: {
-        content_name: "PATHFINDER",
+        content_name: "POSITIVITY_PACK",
         status: true,
       },
     }}
@@ -47,6 +51,15 @@ export const OptInForm = ({
       required={true}
       placeholder="Email"
       title="Email"
+    />
+    <Input
+      autoComplete="tel"
+      backgroundColor={backgroundColor}
+      type="text"
+      id="tel"
+      name="tel"
+      placeholder="Telephone (optional)"
+      title="Telephone"
     />
   </BaseForm>
 );
