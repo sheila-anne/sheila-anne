@@ -18,15 +18,11 @@ function StyleInjector({ children }) {
     setIframeRef(iframeHeadElem);
   }, []);
 
-  return (
-    iframeRef && (
-      <StyleSheetManager target={iframeRef}>{children}</StyleSheetManager>
-    )
-  );
+  return iframeRef && <StyleSheetManager target={iframeRef}>{children}</StyleSheetManager>;
 }
 
 function withStyledComponents(Comp) {
-  return (props) => (
+  return props => (
     <StyleInjector>
       <Comp {...props} />
     </StyleInjector>
@@ -35,13 +31,7 @@ function withStyledComponents(Comp) {
 
 CMS.registerPreviewTemplate("about", withStyledComponents(AboutPagePreview));
 CMS.registerPreviewTemplate("blog", withStyledComponents(BlogPostPreview));
-CMS.registerPreviewTemplate(
-  "color-config",
-  withStyledComponents(ColorsPreview)
-);
+CMS.registerPreviewTemplate("color-config", withStyledComponents(ColorsPreview));
 CMS.registerPreviewTemplate("index", withStyledComponents(IndexPagePreview));
-CMS.registerPreviewTemplate(
-  "working-together",
-  withStyledComponents(WorkingTogetherPagePreview)
-);
+CMS.registerPreviewTemplate("working-together", withStyledComponents(WorkingTogetherPagePreview));
 CMS.registerPreviewTemplate("the-mat", withStyledComponents(TheMatPagePreview));

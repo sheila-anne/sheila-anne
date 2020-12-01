@@ -4,6 +4,13 @@ import { APIGatewayEvent, Context } from "aws-lambda";
 import { bodyGuardian, fetchResponse } from "./utils";
 import { FormPage } from "../types/forms";
 
+type MailchimpMergeFields = {
+  FNAME: string;
+  LNAME: string;
+  SIGNDATE: string;
+  PHONE?: string;
+};
+
 type MailchimpResponse = {
   title: string;
   status: string;
@@ -13,6 +20,7 @@ type EventBody = {
   page: FormPage;
   name: string;
   email: string;
+  telephone?: string;
 };
 
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
@@ -28,9 +36,13 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
       FNAME: names[0],
       LNAME: names[1],
       SIGNDATE: getTodayString(),
-    },
-    tags: ["Pathfinder"],
+    } as MailchimpMergeFields,
+    tags: ["Positivity Pack"],
   };
+
+  if (!!eventProperties.telephone) {
+    data.merge_fields.PHONE = eventProperties.telephone;
+  }
 
   return fetchResponse<MailchimpResponse>(process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI, data, {
     Authorization: `Basic ${Buffer.from(`any:${process.env.MAILCHIMP_API_KEY}`).toString("base64")}`,

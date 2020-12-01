@@ -12,6 +12,7 @@ tags:
   - advice
   - habits
 ---
+
 I rushed my puppy Buckwheat into the Subaru and hopped into the front seat with my coffee. We were off to do a short visit with my cousins down the street and I was stoked… I was also anxious.
 
 Ok, Sheila — I thought — once you get back you will put your head down and get things done, you’ve already wasted too much time today!

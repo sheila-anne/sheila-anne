@@ -18,6 +18,7 @@ import {
   SEO,
   SmartLink,
   Testimonial,
+  Youtube,
 } from "../components";
 import { Constants } from "../constants";
 import { applyStyle } from "../utils";
@@ -37,7 +38,7 @@ type IndexFrontmatterProps = BaseFrontmatter & {
     workWithMe: string[];
   };
   mainpitch: MainPitch;
-  pathfinder: NestedImage;
+  freebie: NestedImage;
   testimonials: any;
 };
 
@@ -120,7 +121,7 @@ const Subheadline = styled.h2`
   padding: 0 1rem 1rem 1rem;
 `;
 
-const PathfinderHeading = styled.h2`
+const FreebieHeading = styled.h2`
   margin: 0 0.5rem;
   padding: 0 1rem 1rem 1rem;
   text-align: center;
@@ -132,7 +133,7 @@ const TestimonialContainer = styled(FlexContainer)`
 `;
 
 export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) => {
-  const { description, image, mainpitch, pathfinder, testimonials } = frontmatter;
+  const { description, image, mainpitch, freebie, testimonials } = frontmatter;
 
   const fullTestimonials = [...testimonials];
   const firstTestimonial = [fullTestimonials.shift()];
@@ -145,7 +146,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
     <section>
       <BannerImage
         image={safeImage}
-        imageHeadline="Hey high-achiever, are you ready to level up?"
+        imageHeadline="Hey high-achiever, are you ready to thrive?"
         title="Sheila Anne Life Coaching cover photo"
       />
       <Container>
@@ -167,10 +168,17 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             ))}
           </ul>
         </FlexContainer>
-        <CenteredText>
-          <h3>Ready to prioritize yourself and your path? Let's go!</h3>
+        <CenteredText margin="0 0 2rem 0">
+          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/book/exploration/">
+            I got you, let's work together!
+          </LinkButton>
         </CenteredText>
-        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="2rem 0 1rem 0">
+        <ContentBreak/>
+        <CenteredText>
+          <h3>What people are saying:</h3>
+        </CenteredText>
+        <Youtube url="7jTx1xMKI_Q" />
+        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="1rem 0 1rem 0">
           <Testimonial testimonials={firstTestimonial} />
         </TestimonialContainer>
         <ContentBreak />
@@ -197,26 +205,26 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
         <FlexContainer justifyContent="center" margin="2rem 0">
           <HalfColumn>
             <FlexColSplitImage>
-              <SmartLink to="/pathfinder/" title="PATHFINDER freebie">
+              <SmartLink to="/freebie/" title="Positivity Pack freebie">
                 <PreviewCompatibleImage
                   loading="lazy"
                   imageInfo={{
-                    alt: "Preview of the PATHFINDER freebie",
-                    childImageSharp: pathfinder.childImageSharp,
+                    alt: "Preview of the Positivity Pack freebie",
+                    childImageSharp: freebie.childImageSharp,
                   }}
-                  title="Preview of the PATHFINDER freebie"
+                  title="Preview of the Positivity Pack freebie"
                 />
               </SmartLink>
             </FlexColSplitImage>
           </HalfColumn>
           <HalfColumn>
-            <PathfinderHeading>PATHFINDER: Find Your Way Forward</PathfinderHeading>
+            <FreebieHeading>Positivity Pack: December Giveaway!</FreebieHeading>
             <div>
-              <BannerLink to="/pathfinder/" title="PATHFINDER freebie">
-                Grab your free, downloadable guide
-              </BannerLink>{" "}
-              that will help you make your next big move. PATHFINDER will help you to reflect on questions that really
-              matter when leveling up!
+              2020 has been something else. Find focus and positivity with my December gift to you, the{" "}
+              <BannerLink to="/freebie/" title="Positivity Pack freebie">
+                Positivity Pack
+              </BannerLink>
+              !
             </div>
           </HalfColumn>
         </FlexContainer>
@@ -266,7 +274,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        pathfinder {
+        freebie {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid

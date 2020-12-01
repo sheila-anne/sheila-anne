@@ -1,8 +1,9 @@
-import React, { Dispatch, MouseEvent, SetStateAction, useLayoutEffect, useState } from "react";
+import React, { Dispatch, MouseEvent, SetStateAction, useEffect, useLayoutEffect, useState } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
+import { hasWindow } from "../utils"
 
 type TextBannerProps = {
   path: string;
@@ -52,35 +53,48 @@ const clickHandler = (setIsShown: Dispatch<SetStateAction<boolean>>) => {
   window.sessionStorage.setItem(Constants.textBannerKey, TRUE_SESSION_VALUE);
 };
 
-const NoShowValue = "pathfinder";
+const NoShowValue = "freebie";
 
-export const BannerText = ({ path }: TextBannerProps) => {
+
+const InnerBanner = ({path} : TextBannerProps) => {
+  const useIsomorphicLayoutEffect = hasWindow ? useLayoutEffect : useEffect;
   const [isShown, setIsShown] = useState(true);
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const isDismissed = window.sessionStorage.getItem(Constants.textBannerKey);
     if (isDismissed === TRUE_SESSION_VALUE || (path && path.includes(NoShowValue))) {
       clickHandler(setIsShown);
     }
   }, [path]);
 
-  const innerHandler = (e: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
+  const innerHandler = (_: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
   };
   return isShown ? (
     <BannerDiv>
       <Text>
         <UnderlineLink
-          aria-label="Click to sign up for my PATHFINDER freebie"
+          aria-label="Click to get your Positivity Pack!"
           onClick={innerHandler}
-          to="/pathfinder/"
-          title="Click to sign up for my PATHFINDER freebie"
+          to="/freebie/"
+          title="Click to get your Positivity Pack!"
         >
-          Sign up to receive my free PATHFINDER guide!
+          December freebie! Get your Positivity Pack for free!
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">
         X
       </CloseButton>
     </BannerDiv>
+  ) : null;
+};
+
+export const BannerText = ({ path }: TextBannerProps) => {
+  const [isShown, setIsShown] = useState(true);
+  useEffect(() => {
+    setIsShown(true)
+  }, []);
+
+  return isShown ? (
+    <InnerBanner path={path}/>
   ) : null;
 };

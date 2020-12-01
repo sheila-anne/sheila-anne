@@ -18,11 +18,12 @@ tags:
   - stress management
   - tips
 ---
+
 I feel like I blinked, and it was suddenly November 2020.
 
 It was challenging to make sense of everything that had happened, hadn’t happened, and could happen. At the end of October, Mercury was in retrograde, pandemic cases were climbing, we experienced a Blue Moon, and the election season was in its final week.
 
-*Deep breath in. Deep breath out.*
+_Deep breath in. Deep breath out._
 
 The heightened energy around the country was palpable, catalyzed mostly by things out of our control. The overused word of 2020 — uncertainty — seemed exactly fitting for the time.
 

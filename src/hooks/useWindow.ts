@@ -9,12 +9,12 @@ export const useWindow = () => {
       ? {
           width: window.outerWidth,
           height: window.outerHeight,
-          isMobile: window.outerWidth <= Constants.mobileBreakpoint
+          isMobile: window.outerWidth <= Constants.mobileBreakpoint,
         }
       : {
           width: 0,
           height: 0,
-          isMobile: false
+          isMobile: false,
         };
   });
 
@@ -24,7 +24,7 @@ export const useWindow = () => {
       setWindowProps({
         width: window.outerWidth,
         height: window.outerHeight,
-        isMobile: window.outerWidth <= Constants.mobileBreakpoint
+        isMobile: window.outerWidth <= Constants.mobileBreakpoint,
       });
     if (hasWindow) {
       window.addEventListener("resize", onResize);

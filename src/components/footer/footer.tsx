@@ -58,11 +58,7 @@ const StyledListItem = styled.li`
 
 const Footer = () => (
   <StyledFooter>
-    <FooterImage
-      src={sheilaLogo}
-      alt="Sheila Anne"
-      style={{ width: "14em", height: "10em" }}
-    />
+    <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
     <FlexFooter>
       <FooterColumn>
         <FooterList>
@@ -79,10 +75,7 @@ const Footer = () => (
           <StyledListItem>
             <FooterLink to="/writing-desk/">Latest Stories</FooterLink>
           </StyledListItem>
-          <StyledListItem
-            itemType="https://schema.org/SiteNavigationElement"
-            itemScope={true}
-          >
+          <StyledListItem itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
             <FooterLink to="/contact/">Contact</FooterLink>
           </StyledListItem>
         </FooterList>
