@@ -12,7 +12,7 @@ export const OptInForm = ({
   page,
   submitText,
   id,
-  isSubmitSuccess
+  isSubmitSuccess,
 }: BaseFormProps) => (
   <BaseForm
     id={id}

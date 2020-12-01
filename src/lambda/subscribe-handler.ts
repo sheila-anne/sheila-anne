@@ -9,7 +9,7 @@ type MailchimpMergeFields = {
   LNAME: string;
   SIGNDATE: string;
   PHONE?: string;
-}
+};
 
 type MailchimpResponse = {
   title: string;
@@ -40,7 +40,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
     tags: ["Positivity Pack"],
   };
 
-  if(!!eventProperties.telephone) {
+  if (!!eventProperties.telephone) {
     data.merge_fields.PHONE = eventProperties.telephone;
   }
 

@@ -4,10 +4,7 @@ import React from "react";
 import { BlogRoll } from "./blog-roll";
 
 export const BlogRollAll = () => (
-  <StaticQuery
-    query={BlogRollQuery}
-    render={data => <BlogRoll posts={data.allMarkdownRemark.posts} />}
-  />
+  <StaticQuery query={BlogRollQuery} render={data => <BlogRoll posts={data.allMarkdownRemark.posts} />} />
 );
 
 const BlogRollQuery = graphql`

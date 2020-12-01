@@ -11,6 +11,6 @@ export const Youtube = ({ url }: YoutubeProps) => (
     src={`https://www.youtube-nocookie.com/embed/${url}?rel=0`}
     frameBorder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
+    allowFullScreen={true}
   ></iframe>
 );

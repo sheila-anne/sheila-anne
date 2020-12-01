@@ -18,6 +18,7 @@ tags:
   - stress management
   - tips
 ---
+
 It was my first holiday season without my mother and I was stuck in a funk.
 
 I felt like I was being pulled in two different directions - gratitude and grief - and I felt completely uncertain about how things were supposed to be. As there is no rule book called “How to Celebrate, Behave, and Grieve Following The Loss Of A Loved-One” (that I'm aware of) my usual, perfectionist way of getting things done was not going to cut it.
@@ -38,9 +39,9 @@ I’m confident that you likely logically know this one 🙄 but stick with me.
 
 Examples:
 
-* Facebook was designed to connect university students
-* Instagram was designed to share pretty pictures
-* TikTok was designed to share quick comedy, dance, and music videos
+- Facebook was designed to connect university students
+- Instagram was designed to share pretty pictures
+- TikTok was designed to share quick comedy, dance, and music videos
 
 No social media platform was designed to offer the full-picture reality that is another human’s life. And yet… during a time with so little in-person connection, social media can be a go-to form of seeing what someone else is “up to” or checking in on how someone else is “doing” without the work of calling them up or writing them a personal message.
 
@@ -60,10 +61,10 @@ We are emotional beings that think. Our emotions, conscious and unconscious, man
 
 Here are some general tips when it comes to feelings.
 
-* Treat yourself with the same respect and compassion as you would show a dear friend.
-* When a feeling arises, simply notice it. Be an observer of your own life and brain pattern.
-* Send compassion to the part of you that is feeling lonely, annoyed, frustrated, resentful, or otherwise.
-* Give yourself permission to be with that feeling, and then choose again when it feels right. Meaning, when you feel yourself on the other side of the emotion or thought, investigate what else you might feel - such as gratitude, peace, supported, brave.
+- Treat yourself with the same respect and compassion as you would show a dear friend.
+- When a feeling arises, simply notice it. Be an observer of your own life and brain pattern.
+- Send compassion to the part of you that is feeling lonely, annoyed, frustrated, resentful, or otherwise.
+- Give yourself permission to be with that feeling, and then choose again when it feels right. Meaning, when you feel yourself on the other side of the emotion or thought, investigate what else you might feel - such as gratitude, peace, supported, brave.
 
 Feel what you feel. Emotions are real.
 
@@ -97,18 +98,16 @@ This holiday season might not feel as good, easy-breezy, or community-oriented a
 
 Here are some simple acts of self-love to indulge in during the holiday season.
 
-* Wash your face every morning
-* Blast music you love
-* Pick a snack or meal you’re excited about making
-* Write down your gratitudes
-* Prioritize sleep over screen time
-* Move your body in the way that feels good for you
+- Wash your face every morning
+- Blast music you love
+- Pick a snack or meal you’re excited about making
+- Write down your gratitudes
+- Prioritize sleep over screen time
+- Move your body in the way that feels good for you
 
 Check out my guide on [5 Steps To Support Your Well-being](https://www.sheilaanne.com/writing-desk/2020-11-10-5-steps-to-support-your-well-being/)
 
 ![Use your superpowers](/img/manage-your-mindset-covid.png "You have the power!")
-
-
 
 I know that the phrase “the new normal” has been floating around, to describe the current state of things. The phrase has never sat quite well with me. Ever since my mom passed two years ago I’ve been wondering what the “new normal” will be and I promise you I haven’t found it. There is no “normal” way to think, feel, act during times of uncertainty and grief. There will always be a big spectrum of what “normal” is to each individual.
 

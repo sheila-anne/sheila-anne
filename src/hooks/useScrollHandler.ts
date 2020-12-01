@@ -7,17 +7,13 @@ type HtmlElementOnClick = HTMLCollectionOf<Element> & {
 const scrollOptions = {
   behavior: "auto",
   block: "center",
-  inline: "start"
+  inline: "start",
 } as ScrollIntoViewOptions;
 
 const getHtmlCollection = (className: string) =>
-  (document.getElementsByClassName(
-    className
-  ) as unknown) as HtmlElementOnClick[];
+  (document.getElementsByClassName(className) as unknown) as HtmlElementOnClick[];
 
-const genericScrollHandler = (
-  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-) => {
+const genericScrollHandler = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
   const element = document.getElementById(event.currentTarget.hash);
 
   if (element) {
@@ -26,13 +22,8 @@ const genericScrollHandler = (
   }
 };
 
-const scrollHandler = (
-  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-) => {
-  const elementId = event.currentTarget.hash.slice(
-    1,
-    event.currentTarget.hash.length
-  );
+const scrollHandler = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const elementId = event.currentTarget.hash.slice(1, event.currentTarget.hash.length);
   const element = document.getElementById(elementId);
 
   if (element) {
@@ -53,10 +44,7 @@ const attachScrollHandler = (hash: string) => {
 
   let possibleScrollPoint = hash && hash.slice(1, hash.length);
   if (possibleScrollPoint && possibleScrollPoint.endsWith("/")) {
-    possibleScrollPoint = possibleScrollPoint.substring(
-      0,
-      possibleScrollPoint.length - 1
-    );
+    possibleScrollPoint = possibleScrollPoint.substring(0, possibleScrollPoint.length - 1);
   }
 
   let possibleScrollElem = document.getElementById(possibleScrollPoint);

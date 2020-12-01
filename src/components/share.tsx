@@ -22,23 +22,20 @@ const ShareButton = styled.button`
   }
 `;
 
-const shareNav =
-  typeof navigator !== "undefined" && (navigator as ShareNavigator);
+const shareNav = typeof navigator !== "undefined" && (navigator as ShareNavigator);
 
 const hasShare = !!shareNav && !!shareNav.share;
 
 const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
   event.preventDefault();
   const title = document.title;
-  const url =
-    (document.querySelector("link[rel=canonical]") as HTMLAnchorElement)
-      ?.href ?? document.location.href;
+  const url = (document.querySelector("link[rel=canonical]") as HTMLAnchorElement)?.href ?? document.location.href;
 
   if (!!shareNav && !!shareNav.share) {
     shareNav
       .share({
         title,
-        url
+        url,
       })
       .catch();
   }

@@ -27,9 +27,9 @@ export default ({ data, location }: GatsbyPage) => {
   return (
     <Layout location={location}>
       <SEO
-        description="Sign up to get Sheila Anne's Pathfinder freebie."
+        description="Sign up to get Sheila Anne's Positivity Pack freebie."
         location={location}
-        title="Pathfinder | Sheila Anne"
+        title="Positivity Pack | Sheila Anne"
       />
       {!isSubmitSuccess ? (
         <FlexContainer justifyContent="center" margin="1rem 0">
@@ -38,9 +38,8 @@ export default ({ data, location }: GatsbyPage) => {
               <PreviewCompatibleImage
                 imageInfo={{
                   alt: "The Positivity Pack freebie",
-                  childImageSharp: data.pathfinder.childImageSharp,
+                  childImageSharp: data.freebieImage.childImageSharp,
                 }}
-                imageAlt="The Positivity Pack freebie"
                 title="The Positivity Pack freebie"
               />
             </FlexColSplitImage>
@@ -63,7 +62,7 @@ export default ({ data, location }: GatsbyPage) => {
           <MarginText>
             Make a commitment to yourself right now to pick one positive affirmation each day, no matter how you feel.
             Let the affirmation ground you, guide you, and see how it resonates as your day unfolds. Seemingly small,
-            affirmations can be a radically transformative way to shift your mindset and build confidence.{" "}
+            affirmations can be a radically transformative way to shift your mindset and build confidence.
           </MarginText>
           <MarginText>
             Before you go, feel free to take a look around my little slice of the internet. Enjoy stories and life hacks{" "}
@@ -73,6 +72,13 @@ export default ({ data, location }: GatsbyPage) => {
         </div>
       )}
       <section>
+        <PreviewCompatibleImage
+          imageInfo={{
+            alt: "Sheila smiling in nature",
+            childImageSharp: data.overlayPhoto.childImageSharp,
+          }}
+          title="Bring in the New Year with positivity"
+        />
         <CenteredText margin="3rem 0 1rem 0">
           <h2>Here's What's Included In Your Positivity Pack</h2>
         </CenteredText>
@@ -102,16 +108,37 @@ export default ({ data, location }: GatsbyPage) => {
           Submit your information <AnchorCursor href="#freebieForm">using the form above </AnchorCursor> to receive your
           free <b>Positivity Pack</b>!
         </MarginText>
+        <PreviewCompatibleImage
+          imageInfo={{
+            alt: "Sheila breathing deep",
+            childImageSharp: data.third.childImageSharp,
+          }}
+          title="Breathe easy with the Positivity Pack"
+        />
       </section>
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query PathfinderQuery {
-    pathfinder: file(relativePath: { eq: "freebie-pathfinder-teaser-image.png" }) {
+  query FreebieQuery {
+    freebieImage: file(relativePath: { eq: "positivity-pack-cropped.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    overlayPhoto: file(relativePath: { eq: "positivity-pack-cover.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    third: file(relativePath: { eq: "positivity-pack-breathing-calming-stress-relief.jpg" }) {
+      childImageSharp {
+        fluid(quality: 95) {
           ...GatsbyImageSharpFluid
         }
       }

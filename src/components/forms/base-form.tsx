@@ -46,7 +46,7 @@ const handleSubmit = async (
     event_label: page,
   };
   trackCustomEvent({ type: "Form Submission", args });
-  trackFacebook({eventType: "track", ...trackArgs});
+  trackFacebook({ eventType: "track", ...trackArgs });
 
   const formValues = { page };
   const formElements = (Array.from(e.currentTarget.elements) as unknown) as HTMLInputElement[];
@@ -83,7 +83,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   page,
   submitText,
   trackArgs,
-  id
+  id,
 }) => {
   const [buttonText, setButtonText] = useState(submitText);
   const fbTrackArgs = trackArgs ?? {

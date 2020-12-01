@@ -1,8 +1,9 @@
-import React, { Dispatch, MouseEvent, SetStateAction, useLayoutEffect, useState } from "react";
+import React, { Dispatch, MouseEvent, SetStateAction, useEffect, useLayoutEffect, useState } from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
+import { hasWindow } from "../utils"
 
 type TextBannerProps = {
   path: string;
@@ -54,9 +55,11 @@ const clickHandler = (setIsShown: Dispatch<SetStateAction<boolean>>) => {
 
 const NoShowValue = "freebie";
 
-export const BannerText = ({ path }: TextBannerProps) => {
+
+const InnerBanner = ({path} : TextBannerProps) => {
+  const useIsomorphicLayoutEffect = hasWindow ? useLayoutEffect : useEffect;
   const [isShown, setIsShown] = useState(true);
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const isDismissed = window.sessionStorage.getItem(Constants.textBannerKey);
     if (isDismissed === TRUE_SESSION_VALUE || (path && path.includes(NoShowValue))) {
       clickHandler(setIsShown);
@@ -82,5 +85,16 @@ export const BannerText = ({ path }: TextBannerProps) => {
         X
       </CloseButton>
     </BannerDiv>
+  ) : null;
+};
+
+export const BannerText = ({ path }: TextBannerProps) => {
+  const [isShown, setIsShown] = useState(true);
+  useEffect(() => {
+    setIsShown(true)
+  }, []);
+
+  return isShown ? (
+    <InnerBanner path={path}/>
   ) : null;
 };
