@@ -28,7 +28,7 @@ Let’s make a gratitude jar!
 **Why make a gratitude jar**
 
 * Gratitude is strongly and consistently associated with greater happiness
-* Gratitude Improves physical & emotional health
+* Gratitude improves physical & emotional health
 * Gratitude makes you magnetic to more good things
 * Writing notes each day will help you stay present
 * It’s a very simple and quick process
