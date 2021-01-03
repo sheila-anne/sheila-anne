@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
-import { hasWindow } from "../utils"
+import { hasWindow } from "../utils";
 
 type TextBannerProps = {
   path: string;
@@ -55,8 +55,7 @@ const clickHandler = (setIsShown: Dispatch<SetStateAction<boolean>>) => {
 
 const NoShowValue = "freebie";
 
-
-const InnerBanner = ({path} : TextBannerProps) => {
+const InnerBanner = ({ path }: TextBannerProps) => {
   const useIsomorphicLayoutEffect = hasWindow ? useLayoutEffect : useEffect;
   const [isShown, setIsShown] = useState(true);
   useIsomorphicLayoutEffect(() => {
@@ -78,7 +77,7 @@ const InnerBanner = ({path} : TextBannerProps) => {
           to="/freebie/"
           title="Click to get your Positivity Pack!"
         >
-          December gift! Get your Positivity Pack!
+          Grab your free Positivity Pack!
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">
@@ -91,10 +90,8 @@ const InnerBanner = ({path} : TextBannerProps) => {
 export const BannerText = ({ path }: TextBannerProps) => {
   const [isShown, setIsShown] = useState(true);
   useEffect(() => {
-    setIsShown(true)
+    setIsShown(true);
   }, []);
 
-  return isShown ? (
-    <InnerBanner path={path}/>
-  ) : null;
+  return isShown ? <InnerBanner path={path} /> : null;
 };
