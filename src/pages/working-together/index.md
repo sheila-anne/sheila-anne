@@ -26,7 +26,7 @@ testimonials:
 ---
 
 <h2 id="exploration-call">Exploration Call</h2>
-Getting started can be the scariest part. I invite you to channel your inner courage and take the leap. This completementary Exploration Call is an opportunity to tell me your story & learn strategies for moving forward. You can ask all the questions & learn which offering best suits your needs.
+Getting started can be the scariest part. I invite you to channel your inner courage and take the leap. This complimentary Exploration Call is an opportunity to tell me your story & learn strategies for moving forward. You can ask all the questions & learn which offering best suits your needs.
 
 <br/>
 <br/>

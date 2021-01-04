@@ -8,7 +8,7 @@ description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
 freebie: /img/positivity-pack-cropped.jpg
 mainpitch:
-  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach and ICF Associate Certified Coach specializing in helping driven, free-spirited women to step into the best versions of themselves. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and setting wellness goals to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown my lifestyle. Sound familiar? I discovered how to connect back to my core self, reevaluate my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same!
+  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach and ICF Associate Certified Coach specializing in helping driven, free-spirited women to level up their lives. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and racing forward in life to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown the path I was on and wasn’t aligned with who I wanted to be. Sound familiar? I discovered how to connect back to my core self, redesign my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same! Don’t be shy -
   image: /img/sheila-anne-with-coffee-mug.jpg
 
 intro:
@@ -24,7 +24,7 @@ intro:
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
       title: Ground To Grow Accelerator
       text: >
-        A power session to help you create radical clarity and action steps in one area of your life. A great place to start!
+        A power session to help you gain radical clarity, remove blocks, and create action steps in one area of your life. Includes a guided body scan and success assessment.
     - href: /root-to-rise/
       image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
@@ -36,31 +36,20 @@ intro:
     - always the one who goes the extra mile in your work
     - feeling underwhelmed, undervalued, or bleh about your career
     - craving relationships that light you up and help you grow
-    - searching for productivity tools to maximize each minute of the day
+    - constantly looking to maximize each minute of the day
     - noticing that your brain is always going a million miles an hour
-    - always searching for another hour to squeeze in a fitness class, social event, or new experience
-    - frustrated by not knowing exactly what to do next
+    - consistently questioning yourself and your success
+    - wishing for less stress and more flow in your life
 
 testimonials:
   - title: Taylor P.
     imageAlt: Client testimonial from Taylor
     text: >
-      Working with Sheila has been nothing short of amazing! The
-      breakthroughs I have had in the past few months have been life
-      changing. She has an amazing talent for looking at the big picture and
-      is one of the few people I’ve ever met who is able to follow my
-      scattermindedness, reflect on the important information and guide me
-      back with powerful questioning. That, teamed with her ability to take
-      you out of your mind and into your body to feel through the question
-      is always an extraordinarily powerful experience.
+      Working with Sheila has been nothing short of amazing! When we first started working together I was in a relationship that was far from healthy. My sanity and physical well-being were at risk. With her help, I was able to too root back into my authentic self, gain confidence and lead with my heart to leave that situation.
 
-      Not only has every session been absolutely amazing but Sheila helped
-      me unearth the confidence I needed to take the biggest leap of my
-      life. She allowed me to root back into my authentic self and lead with
-      my heart. Without the work I have done with her the past few months I
-      would still be stuck in a loop of fear, self doubt and would not be
-      chasing my dreams. I am beyond grateful for the work I have done and
-      the growth I’ve experienced in the short time I have worked with her.
+      That leap led me to move into a trailer, build my business, put my health above all else, and live a life that allows me to truly express myself. I do not remember the last time I was able to live in such a state of ease like I am right now.
+
+      Without the work I have done with her the past few months I would still be stuck in a loop of fear, self doubt and crippling anxiety.
     imageSrc: /img/sheila-anne-taylor-testimonial.jpg
   - title: Sophie G.
     imageAlt: Client testimonial from Sophie

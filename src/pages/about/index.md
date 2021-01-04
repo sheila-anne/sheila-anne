@@ -11,23 +11,33 @@ featuredImage: /img/sheila-spain-on-stairs.jpg
 
 # My Story
 
-When I was young I wandered barefoot. I loved the feel of the changing earth under my feet -- grass, to sand, to pavement, to rock, the occasional barefoot steps on frozen ground. I whiled away hours in the woods, lost in daydreams.
+When I was young I wandered barefoot. I loved the feel of the changing earth under my feet — grass, to sand, to pavement, to rock, the occasional barefoot steps on frozen ground. I whiled away hours in the woods, lost in daydreams.
 
-As I grew up my mind became a busier & more productive place.
+Like many, I experienced stress & anxiety as I grew into my own, and I set expectations for myself that were lofty and only briefly celebrated when met. Those that know me would probably remark about my “zest for life.” I have always seen life as an adventure, and am energized by new people and situations. In the past, I struggled to balance this excitement for experiencing the world and my deeply-seeded perfectionist mentality. My thought process was likely something like: “Why waste time not being the absolute best you can be?” I worked tirelessly through various careers, I earned success, but… I still felt unfulfilled. I had a thriving friend group, a never-ending list of activities, a powerhouse work ethic, and a tight-knit family. I didn’t see anything wrong — do you?
 
-Like many, I experienced social anxiety as I grew into my own, and I set expectations for myself that were lofty and only briefly celebrated when met. Though I was nurtured in a happy, New Hampshire family that was loving and supportive I, like my mom, was an eternal optimist and secret worry-wart. My stress levels would rise and fall as quickly as the wind. _Sound familiar?_
+In 2017, at the height of my summer travels, reality rapidly changed — my mom was diagnosed with cancer. Inertia and habit wanted me to continue on, head up, smiling. My heart wanted me to pay attention; to open up; to accept help.
 
-Those that know me would probably remark about my “zest for life.” I have always seen life as an adventure, and am energized by new people and situations. In the past, I struggled to balance this excitement for experiencing the world and my deeply-seeded perfectionist mentality. My thought process was likely something like: "Why waste time not being the absolute best you can be?" I worked tirelessly through various careers, I earned success, but… I still felt unfulfilled. I had a thriving friend group, a never-ending list of activities, a powerhouse work ethic, and a tight-knit family. I didn’t see anything wrong -- _do you_?
+I began to slow down, to realign with my core self, and to redesign my path forward.
 
-In 2017, at the height of my summer travels, reality rapidly changed -- my mom was diagnosed with cancer. Inertia and habit wanted me to continue on, head up, smiling. My heart wanted me to pay attention; to open up; to accept help. I realized that, though I was a free-spirited extrovert, I had bolted-up my heart space, and allowed my achiever mentality to guide every step.
+My mom passed in the late summer of 2018 and I started taking courageous action toward my dreams - leading life my way. I earned my 200hr Yoga Teacher Training, left the working world to backpack Europe with my partner, began training to become a life coach, and moved to Denver, Colorado.
 
-I began to slow down, to undo some of those bolts, and found ways to cultivate inner peace alongside my achiever-self. At this time I also welcomed a relationship into my life, making an intentional choice to put my arm down, to open the door to deeper connection. In turn, I had opened the door to a deeper connection with myself.
+I came home to myself, trusted my intuition, and committed to aligned action. This helped me find my footing and explore the world with the curiosity and joy that I once did.
 
-My mom passed in the late summer of 2018 and the rest of the year was filled with changes - I worked in the fitness industry for a few months, earned my 200hr Yoga Teacher Training, and then left the working world to backpack Europe with my partner. We [started an adventure blog](https://www.sheandjim.com/) where we reflected on our experiences traveling and learning about ourselves and one another. Traveling helped me to “come home” to myself once again, as I found my footing and explored the world with the curiosity of a child.
+[Now I coach others to do the same](/working-together/). I specialize in helping high-achieving women to realign with who they are, redesign their path forward, and transform their careers, relationships, and lifestyles. We use a blend of coaching tools, mindfulness techniques, and accountability check-ins to get you the feel-good results you’re craving.
 
-[Now I coach others to do the same](/working-together/). I help women to connect to themselves, cultivate inner peace, and follow their deep purpose so that they don’t worry about a life unlived. I have been privileged to watch my clients explore their unique strengths, to experience transformation, and to “come home” to themselves, just as I did.
+Are you ready to get started?
 
-Are you ready to get started with me?
+[Book a free exploration call](/book/) today!
 
-- [Book a free exploration call](/book/) today
+## Street Cred
+
+### ICF Associate Certified Coach
+
+Associate Certified Coach (ACC) Credential-holders are trained (60+ hours) and experienced (100+ hours) coaches. They have demonstrated knowledge and emerging proficiency in the application of the ICF Core Competencies, Code of Ethics, and definition of coaching. Earners show a commitment to high ethical standards and have demonstrated, through rigorous assessment, professional competence in their work with clients.
+
+### Whole Person Certified Coach
+
+Whole Person Coaching® is a holistic coaching method based on the premise that when you come to know, embrace and express all aspects of your whole self, you are positioned to thrive in any aspect of life. You become rich in resources, grounded in your being, and at peace within. Whole Person Coaching is a thought-provoking process coupled with experience-oriented, transformative learning designed to help you to gain access to the depth and breadth of who you are at the core: mentally, emotionally, physically, socially and spiritually. From this embodied understanding of your whole self, you can easily and effectively draw upon your deepest wisdom to overcome any stopping blocks and achieve what matters most to you. From our work together, you will emerge fully self-innovative and well equipped to be highly effective in any aspect of your life, for the rest of your life.
+
+- [Let's get started with that free exploration call](/book/)!
 - Looking to hear more? [Contact me!](/contact/)

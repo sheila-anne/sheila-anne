@@ -22,17 +22,6 @@ const BannerImageWrapper = styled.div`
   }
 `;
 
-const Subheadline = styled.h2`
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin: 1rem;
-  padding: 0 1rem 1rem 1rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    font-size: 1rem;
-  }
-`;
-
 export const ImageHeadlineContainer = styled.h1<{
   color: string;
   height?: string;
@@ -41,9 +30,10 @@ export const ImageHeadlineContainer = styled.h1<{
   background-color: ${({ color }) => color};
   border-radius: 1rem;
   color: #fff;
-  flex-grow: 0;
+  flex-grow: 1;
   line-height: 1;
   padding: 1rem;
+  text-align: center;
   z-index: 1;
 
   @media (max-width: ${Constants.mobileWidth}) {

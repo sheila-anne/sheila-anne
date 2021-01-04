@@ -77,7 +77,7 @@ const InnerBanner = ({ path }: TextBannerProps) => {
           to="/freebie/"
           title="Click to get your Positivity Pack!"
         >
-          Grab your free Positivity Pack!
+          Grab Your Free Positivity Pack!
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">

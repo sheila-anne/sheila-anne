@@ -146,7 +146,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
     <section>
       <BannerImage
         image={safeImage}
-        imageHeadline="Hey high-achiever, are you ready to thrive?"
+        imageHeadline="Step Into The Best Version Of You"
         title="Sheila Anne Life Coaching cover photo"
       />
       <Container>
@@ -173,7 +173,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             I got you, let's work together!
           </LinkButton>
         </CenteredText>
-        <ContentBreak/>
+        <ContentBreak />
         <CenteredText>
           <h3>What people are saying:</h3>
         </CenteredText>
@@ -193,10 +193,13 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
               title="A warm welcome from Sheila Anne"
             />
           </ImageContainer>
-          <div>{mainpitch.title}</div>
+          <div>
+            {mainpitch.title} <SmartLink to="/book/explore">Book your first call already!</SmartLink>
+          </div>
         </FlexContainer>
         <CenteredText>
           <h3>Here's How We Can Work Together:</h3>
+          <div>Click / tap on each of the sections for more info!</div>
         </CenteredText>
         <FlexContainer margin="1rem 0">
           <Features gridItems={frontmatter.intro.blurbs} />
@@ -218,9 +221,9 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             </FlexColSplitImage>
           </HalfColumn>
           <HalfColumn>
-            <FreebieHeading>Positivity Pack: December Giveaway!</FreebieHeading>
+            <FreebieHeading>Positive Pack ... My Gift To You!</FreebieHeading>
             <div>
-              2020 has been something else. Find focus and positivity with my December gift to you, the{" "}
+              2020 was something else. Find focus, be magnetic and create change from within with the{" "}
               <BannerLink to="/freebie/" title="Positivity Pack freebie">
                 Positivity Pack
               </BannerLink>

@@ -1,3 +1,5 @@
+import { graphql, useStaticQuery } from "gatsby";
+import Img, { GatsbyImageProps } from "gatsby-image";
 import React from "react";
 import styled from "styled-components";
 
@@ -13,10 +15,15 @@ const StyledFooter = styled.footer`
   text-align: center;
 `;
 
-const FlexFooter = styled.div`
+const FooterGatsbyImage = styled(Img)<GatsbyImageProps>`
+  margin-right: 1rem;
+`;
+
+const FlexFooter = styled.div<{ margin?: string }>`
   align-items: center;
   display: flex;
   justify-content: center;
+  ${({ margin }) => !!margin && `margin: ${margin};`}
 `;
 
 const FooterColumn = styled.div`
@@ -26,7 +33,7 @@ const FooterColumn = styled.div`
 
 const FooterImage = styled.img`
   height: 1em;
-  margin-bottom: -0.2rem;
+  margin-bottom: -2.5rem;
   width: 1em;
 `;
 
@@ -56,33 +63,69 @@ const StyledListItem = styled.li`
   }
 `;
 
-const Footer = () => (
-  <StyledFooter>
-    <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
-    <FlexFooter>
-      <FooterColumn>
-        <FooterList>
-          <StyledListItem>
-            <FooterLink to="/">Home</FooterLink>
-          </StyledListItem>
-          <StyledListItem>
-            <FooterLink to="/about/">About</FooterLink>
-          </StyledListItem>
-        </FooterList>
-      </FooterColumn>
-      <FooterColumn>
-        <FooterList>
-          <StyledListItem>
-            <FooterLink to="/writing-desk/">Latest Stories</FooterLink>
-          </StyledListItem>
-          <StyledListItem itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
-            <FooterLink to="/contact/">Contact</FooterLink>
-          </StyledListItem>
-        </FooterList>
-      </FooterColumn>
-      <FooterSocial />
-    </FlexFooter>
-  </StyledFooter>
-);
+const footerQuery = graphql`
+  query footerInfo {
+    accImage: file(relativePath: { eq: "acc-logo.png" }) {
+      childImageSharp {
+        fixed(height: 75) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    wpccImage: file(relativePath: { eq: "whole-person-certified.png" }) {
+      childImageSharp {
+        fixed(height: 75) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
 
-export { Footer };
+export const Footer = () => {
+  const { accImage, wpccImage } = useStaticQuery(footerQuery);
+  return (
+    <StyledFooter>
+      <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
+      <FlexFooter margin="0 0 .5rem 0">
+        <FooterGatsbyImage
+          alt={"ICF Associate Certified Coach"}
+          fixed={accImage.childImageSharp.fixed}
+          loading={"auto"}
+          itemProp="image"
+          title={"ICF Associate Certified Coach"}
+        />
+        <FooterGatsbyImage
+          alt={"Whole Person Certified Coach"}
+          fixed={wpccImage.childImageSharp.fixed}
+          loading={"auto"}
+          itemProp="image"
+          title={"Whole Person Certified Coach"}
+        />
+      </FlexFooter>
+      <FlexFooter>
+        <FooterColumn>
+          <FooterList>
+            <StyledListItem>
+              <FooterLink to="/">Home</FooterLink>
+            </StyledListItem>
+            <StyledListItem>
+              <FooterLink to="/about/">About</FooterLink>
+            </StyledListItem>
+          </FooterList>
+        </FooterColumn>
+        <FooterColumn>
+          <FooterList>
+            <StyledListItem>
+              <FooterLink to="/writing-desk/">Latest Stories</FooterLink>
+            </StyledListItem>
+            <StyledListItem itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
+              <FooterLink to="/contact/">Contact</FooterLink>
+            </StyledListItem>
+          </FooterList>
+        </FooterColumn>
+        <FooterSocial />
+      </FlexFooter>
+    </StyledFooter>
+  );
+};
