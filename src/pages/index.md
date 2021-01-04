@@ -2,13 +2,13 @@
 templateKey: index-page
 pageTitle: Sheila Anne | Transformational Life Coaching
 pageDescription: >
-  Transformational lifecoach Sheila Anne Murray welcomes those looking to take their life to the next level. Are you ready to ditch expensive wellness trends, exchange anxiety for bliss, and start curating the life you deserve? ✨ Sheila helps women cultivate a deep sense of self and well-being 👉🏼 so you can thrive in the present and create a purpose-filled future.
+  ICF Associate Certified Coach Sheila Anne Murray welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
 image: /img/sheila-anne-logo.jpg
 description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
 freebie: /img/positivity-pack-cropped.jpg
 mainpitch:
-  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach specializing in helping driven, free-spirited women to level up their lives. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and setting wellness goals to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown my lifestyle. Sound familiar? I discovered how to connect back to my core self, reevaluate my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same!
+  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach and ICF Associate Certified Coach specializing in helping driven, free-spirited women to step into the best versions of themselves. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and setting wellness goals to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown my lifestyle. Sound familiar? I discovered how to connect back to my core self, reevaluate my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same!
   image: /img/sheila-anne-with-coffee-mug.jpg
 
 intro:
