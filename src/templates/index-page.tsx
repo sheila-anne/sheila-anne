@@ -194,7 +194,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             />
           </ImageContainer>
           <div>
-            {mainpitch.title} <SmartLink to="/book/explore">Book your first call already!</SmartLink>
+            {mainpitch.title} <SmartLink to="/book/exploration/">Book your first call already!</SmartLink>
           </div>
         </FlexContainer>
         <CenteredText>

@@ -9,25 +9,26 @@ pageDescription: >
 featuredImage: /img/sheila-spain-on-stairs.jpg
 ---
 
-# My Story
+# Hi, I'm Sheila
 
-When I was young I wandered barefoot. I loved the feel of the changing earth under my feet — grass, to sand, to pavement, to rock, the occasional barefoot steps on frozen ground. I whiled away hours in the woods, lost in daydreams.
+My mission is to help women in their 20s and 30s to confidently step into their next-level selves and thrive in their bodies, minds, and souls.
 
-Like many, I experienced stress & anxiety as I grew into my own, and I set expectations for myself that were lofty and only briefly celebrated when met. Those that know me would probably remark about my “zest for life.” I have always seen life as an adventure, and am energized by new people and situations. In the past, I struggled to balance this excitement for experiencing the world and my deeply-seeded perfectionist mentality. My thought process was likely something like: “Why waste time not being the absolute best you can be?” I worked tirelessly through various careers, I earned success, but… I still felt unfulfilled. I had a thriving friend group, a never-ending list of activities, a powerhouse work ethic, and a tight-knit family. I didn’t see anything wrong — do you?
+I work with goal-getters that are always striving toward the next thing and hardly have a moment to breathe and connect with themselves. Sound familiar? This used to be me - I thought I had it all figured out because I was killin’ it at work, I had a never-ending list of activities, and people looked to me as a confident leader. The problem? I was burning out, indecisive about my future, and was more attached to appearing successful than I was to my wellbeing & following my dreams.
 
-In 2017, at the height of my summer travels, reality rapidly changed — my mom was diagnosed with cancer. Inertia and habit wanted me to continue on, head up, smiling. My heart wanted me to pay attention; to open up; to accept help.
+When I lost my mom -my light- to cancer in 2018 I began to slow down, to realign with my core self, and to redesign my path forward. This led me to earn my 200hr Yoga Teacher Training certification, leave the working world to backpack Europe with my partner, pivot toward the path of life coaching, and move across the country to Denver, Colorado.
 
-I began to slow down, to realign with my core self, and to redesign my path forward.
+Now I coach others to come home to themselves and transform their lives. I’ve worked with women to overcome perfectionism, to take a leap into their next business venture, to realign with their core purpose, and to feel more confident in every aspect of their lives. I use a unique blend of mindfulness, strategic goal setting, and proven coaching techniques to get them the results they desire. I believe coaching is a co-creative process -- I hold the supportive and progress-driven container and you step into the driver’s seat of where our journey takes us and how quickly it moves.
 
-My mom passed in the late summer of 2018 and I started taking courageous action toward my dreams - leading life my way. I earned my 200hr Yoga Teacher Training, left the working world to backpack Europe with my partner, began training to become a life coach, and moved to Denver, Colorado.
+My superpower is my ability to help you slow down, connect with your body, and achieve from a place of alignment and powerful confidence. The integration of mindfulness and meditation is what helps you step off the hamster wheel, reflect on what you truly desire, and rise into the most badass version of you.
 
-I came home to myself, trusted my intuition, and committed to aligned action. This helped me find my footing and explore the world with the curiosity and joy that I once did.
+To suit every need, I have two ways you can work with me:
 
-[Now I coach others to do the same](/working-together/). I specialize in helping high-achieving women to realign with who they are, redesign their path forward, and transform their careers, relationships, and lifestyles. We use a blend of coaching tools, mindfulness techniques, and accountability check-ins to get you the feel-good results you’re craving.
+- [Ground to Grow Accelerator](/book/ground-to-grow/) - One time power session
+- [Root to Rise Transformational Coaching Program](/root-to-rise/) - Three month commitment
 
-Are you ready to get started?
+It all starts with a free exploration call - a 20 minute strategy session with yours truly.
 
-[Book a free exploration call](/book/) today!
+[Book a free exploration call](/book/exploration/) today, and come home to yourself!
 
 ## Street Cred
 
