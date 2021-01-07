@@ -14,6 +14,7 @@ tags:
   - restorative
   - anxiety
 ---
+
 During times of anxiety, our brain is simultaneously firing and paralyzed by panic. Practicing yoga can help us step outside of our anxious minds, tap into our bodies, and find our breath and some peace once again.
 
 The mantra for this practice: “I know that I am inhaling. I know that I am exhaling.”
@@ -21,7 +22,7 @@ The mantra for this practice: “I know that I am inhaling. I know that I am exh
 ![Breathing in seated](/img/seated-breathing.png "Breathing In Seated")
 
 **Breathing**\
-I begin each yoga class with breathing. I believe it’s a crucial part of the practice, as the body depends on the breath to be a guide throughout the practice. Our ability to manage our breath allows us to move deeper and more freely. As this is *yoga for anxiety*, I thought it necessary to include breath work along with the other poses. Intentional breathing signals to the body that it’s time to rest, rejuvenate and regenerate
+I begin each yoga class with breathing. I believe it’s a crucial part of the practice, as the body depends on the breath to be a guide throughout the practice. Our ability to manage our breath allows us to move deeper and more freely. As this is _yoga for anxiety_, I thought it necessary to include breath work along with the other poses. Intentional breathing signals to the body that it’s time to rest, rejuvenate and regenerate
 
 Ok, after that introduction… It’s time to breathe!Start in seated with eyes closed or with a soft gaze if closing your eyes feels uncomfortable right now (or if you need to read this over a few times :) )
 
@@ -117,7 +118,7 @@ For bound angle, start seated and bring the soles of your feet to touch.
 
 ![girl doing bound angle pose](/img/bound-angle.png "Bound Angle Pose")
 
-To add support and make this *even more* relaxing, place blankets, blocks, or pillows underneath each knee.
+To add support and make this _even more_ relaxing, place blankets, blocks, or pillows underneath each knee.
 
 Allow your chest to grow heavy and move toward your feet but try and hinge at the hips and keep your spin straight.
 
@@ -127,4 +128,4 @@ You might want to put both hands on to your chest or on to your belly, or you mi
 
 Continue with deep inhales and exhales.
 
-If you enjoyed this yoga sequence you may be interested in this practical application of how move through a negative emotion such as anxiety.
+If you enjoyed this yoga sequence, you may be interested in [this practical application of how to move through a negative emotion such as anxiety](/writing-desk/2021-01-07-how-to-move-through-a-negative-emotion-in-5-steps/).

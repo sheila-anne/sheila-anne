@@ -7,7 +7,7 @@ description: >-
 
 
   I felt like I was being pulled in two different directions - gratitude and grief - and I felt completely uncertain about how things were supposed to be. As there is no rule book called “How to Celebrate, Behave, and Grieve Following The Loss Of A Loved-One” my usual, perfectionist way of getting things done was not going to cut it.
-featuredpost: true
+featuredpost: false
 featuredImage: /img/in-a-funk.png
 tags:
   - coaching
