@@ -2,10 +2,9 @@
 templateKey: blog-post
 title: Yoga for Anxiety
 date: 2020-02-28T23:46:33.326Z
-description: >-
-  During times of anxiety, our brain is simultaneously firing and paralyzed by
-  panic. Practicing yoga can help us step outside of our anxious minds, tap into
-  our bodies, and find our breath and some peace once again.
+description: During times of anxiety, our brain is simultaneously firing and
+  paralyzed by panic. Practicing yoga can help us step outside of our anxious
+  minds, tap into our bodies, and find our breath and some peace once again.
 featuredpost: false
 featuredImage: /img/sheila-anne-yoga-for-anxiety.jpg
 tags:
@@ -15,15 +14,14 @@ tags:
   - restorative
   - anxiety
 ---
-
 During times of anxiety, our brain is simultaneously firing and paralyzed by panic. Practicing yoga can help us step outside of our anxious minds, tap into our bodies, and find our breath and some peace once again.
 
 The mantra for this practice: “I know that I am inhaling. I know that I am exhaling.”
 
-![Breathing in seated](/img/yoga-for-anxiety-breathing-in-seated-position.png "Breathing In Seated")
+![Breathing in seated](/img/seated-breathing.png "Breathing In Seated")
 
 **Breathing**\
-I begin each yoga class with breathing. I believe it’s a crucial part of the practice, as the body depends on the breath to be a guide throughout the practice. Our ability to manage our breath allows us to move deeper and more freely. As this is _yoga for anxiety_, I thought it necessary to include breath work along with the other poses. Intentional breathing signals to the body that it’s time to rest, rejuvenate and regenerate
+I begin each yoga class with breathing. I believe it’s a crucial part of the practice, as the body depends on the breath to be a guide throughout the practice. Our ability to manage our breath allows us to move deeper and more freely. As this is *yoga for anxiety*, I thought it necessary to include breath work along with the other poses. Intentional breathing signals to the body that it’s time to rest, rejuvenate and regenerate
 
 Ok, after that introduction… It’s time to breathe!Start in seated with eyes closed or with a soft gaze if closing your eyes feels uncomfortable right now (or if you need to read this over a few times :) )
 
@@ -37,7 +35,7 @@ If you want to play with the breathing part of the practice a bit longer, go for
 
 **Extended Puppy Pose**
 
-![girl doing extended puppy pose](/img/sheila-anne-yoga-for-anxiety-extended-puppy-pose.jpg "Extended Puppy Pose")
+![girl doing extended puppy pose](/img/puppy-pose.png "Extended Puppy Pose")
 
 \
 Come into table top (hands and knees)
@@ -55,7 +53,7 @@ Think of puppies and see if that makes you feel calmer 🐕 😉 or just breathe
 **Half Pigeon Pose**\
 This pose is a great hip opener and it releases stored negative energy and emotions. If you have any knee issues or your body doesn’t feel warm, please scroll to the modification.
 
-![Girl doing half pigeon pose](/img/sheila-anne-yoga-for-anxiety-half-pigeon.jpg "Half Pigeon Pose")
+![Girl doing half pigeon pose](/img/half-pigeon.png "Half Pigeon Pose")
 
 \
 From table top, bring the right knee toward the right wrist and extend the left leg out flat toward the back of the mat.
@@ -87,7 +85,7 @@ To go deeper, raise your left knee toward your chest clasp your hands around you
 **\
 Balasana**
 
-![girl doing child's pose](/img/sheila-anne-yoga-for-anxiety-balasana.jpg "Child's Pose/Balasana")
+![girl doing child's pose](/img/balasana.png "Child's Pose/Balasana")
 
 \
 Start in table top, then bring your toes to touch and your knees wide towards the sides of the mat.
@@ -101,7 +99,7 @@ Either stay here and breathe or wrap each arm around your side body towards your
 **Legs Up The Wall**\
 You’ll need some clear wall space and a supportive prop this one!
 
-![girl doing supported legs up the wall pose](/img/legs-up-wall.jpg "Legs Up The Wall")
+![girl doing supported legs up the wall pose](/img/legs-up-the-wall.png "Legs Up The Wall")
 
 Place a firm pillow, folded blanket(s), or bolster against the wall
 
@@ -117,9 +115,9 @@ Take great care as you release. Slowly push yourself away from the wall and slid
 **Bound Angle & Reclined Bound Angle**\
 For bound angle, start seated and bring the soles of your feet to touch.
 
-![girl doing bound angle pose](/img/bound-angle-for-anxiety.jpg "Bound Angle Pose")
+![girl doing bound angle pose](/img/bound-angle.png "Bound Angle Pose")
 
-To add support and make this _even more_ relaxing, place blankets, blocks, or pillows underneath each knee.
+To add support and make this *even more* relaxing, place blankets, blocks, or pillows underneath each knee.
 
 Allow your chest to grow heavy and move toward your feet but try and hinge at the hips and keep your spin straight.
 
