@@ -126,3 +126,5 @@ For reclined bound angle, place your hands behind your back and walk down to you
 You might want to put both hands on to your chest or on to your belly, or you might want to put one hand on to your heart and the other on your belly.
 
 Continue with deep inhales and exhales.
+
+If you enjoyed this yoga sequence you may be interested in this practical application of how move through a negative emotion such as anxiety.
