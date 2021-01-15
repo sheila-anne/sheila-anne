@@ -7,7 +7,7 @@ description: >
   the light on the other side of the feeling you’re currently experiencing. I’m
   here to provide five steps to moving through a negative emotion and back to
   equilibrium.
-featuredpost: true
+featuredpost: false
 featuredImage: /img/moving-though-negative-emotion.jpeg
 tags:
   - anxiety
