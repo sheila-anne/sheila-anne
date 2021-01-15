@@ -1,12 +1,10 @@
 ---
 templateKey: blog-post
-title: What I Learned In A Year As A Soloprenuer
+title: What I Learned In A Year As A Solopreneur
 date: 2021-01-15T01:55:07.173Z
-description: >+
-  In the beginning of 2020 I simultaneously jumped into life coach training and
-  launched my own business. This story is about what I've learned in my first
-  year as a solopreneur!
-
+description: In the beginning of 2020 I simultaneously jumped into life coach
+  training and launched my own business. This story is about what I've learned
+  in my first year as a solopreneur!
 featuredpost: true
 featuredImage: /img/sheila-6596-1-.jpg
 tags:
