@@ -7,7 +7,7 @@ description: >-
   will be the perfect remedy.
 
 
-  Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, whereever - you got this!
+  Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, wherever - you got this!
 featuredpost: false
 featuredImage: /img/big-star-pose.jpg
 tags:
@@ -21,7 +21,7 @@ tags:
 
 Feelin' a little low or just generally need a boost of confidence? These poses will be the perfect remedy.
 
-Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, whereever -- you got this!
+Turn on your fave feel-good music (may I recommend Lizzo, Taylor Swift, or Maggie Rodgers) and hop on your mat in something comfy. The great thing about these poses is that you can totally do them anywhere anytime too -- in the grocery store, while you're cooking dinner, pre-presentation for work, wherever -- you got this!
 
 ![girl doing star pose](/img/big-star-pose.jpg "build confidence in star pose!")
 
