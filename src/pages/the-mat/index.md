@@ -19,9 +19,6 @@ Looking to dip your toes in? You can start flowing with me ASAP:
 
 ## Flow With Me
 
-- Wednesday @ 3pm Mountain Time on Zoom - [Contact me](https://www.sheilaanne.com/contact/) for the link
-- Saturdays @ 8am Mountain Time on [Instagram Live](https://www.instagram.com/sheflowsandgrows/)
-- Sundays @ 8 am Mountain Time on Google Meet - [Contact me](https://www.sheilaanne.com/contact/) for the link
 - Visit [yoga flows on the blog](/tags/yoga/)
 - Check out my [IGTV channel](https://www.instagram.com/sheflowsandgrows/channel/)
 - [Contact me](/contact/) to book a virtual 1:1 or group class
