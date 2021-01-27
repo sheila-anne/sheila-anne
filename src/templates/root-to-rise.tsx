@@ -32,7 +32,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           childImageSharp: frontmatter.featuredImage.childImageSharp,
         }}
         loading="eager"
-        title="Sheila standing tall in her power at Garden Of The Gods"
+        title="Sheila sitting peacefully in a field"
       />
       <h2>Root into your power</h2>
       <h2>Rise into the most badass version of you</h2>
@@ -40,15 +40,19 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
 
       <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
         <p>
-          Are you a high-achiever that has hustled, built connections, and accomplished goals but you feel something is
-          missing? Do you daydream about taking more risks and racing toward new heights ... but you haven't taken
-          action? Are you wondering <strong>what's next?</strong> Welcome. You're in just the right place.
+          Are you a high-achiever that consistently hustles, builds connections, and accomplishes goals but you still
+          feel like something is missing? Do you daydream about taking bigger risks, racing toward new heights, while
+          feeling totally in flow and balanced?
         </p>
         <br />
         <p>
-          Through your journey thus far, there’s been a little something missing — that something that will help you
-          pause, deeply connect, and set intentional goals toward your next adventure. That’s where I come in.
+          Are you wondering: <i>“Is that even possible for me?”</i>
         </p>
+        <br />
+        Welcome. You're in just the right place.
+        <br />
+        Through your journey thus far, there’s been a little something missing — that something that will help you
+        pause, deeply connect, and set intentional goals toward your next adventure. That’s where I come in.
         <br />
         Why? Because for you it’s easy to make lists, check off action items, and let your busy brain lead the way.
         That’s your jam! When it comes to slowing down and doing the inner work, you’d rather be productive and perfect
@@ -73,42 +77,39 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         <h2>Root to Rise will enable you to:</h2>
         <ul>
           <li>
-            <b>B</b>e curious — discover all that makes you, you. Get clear on your values, goals, and potential
-            obstacles so you can quickly start bringing awareness to change-making.
+            <b>Root into your power of being present</b>. You may take your first deep breath in a while during our work
+            together. We’ll dive into what helps to stay rooted and mindful amidst the obligations and activities of
+            your fast-paced life.
           </li>
           <li>
-            <b>L</b>everage your unique strengths — your expertise & background are one of a kind! Explore how to
-            leverage your strengths so you can confidently create easy flowing success.
+            <b>Step into the driver’s seat of your life</b>. Clarify your values, goals, and obstacles so you can make
+            big, intentional changes.
           </li>
           <li>
-            <b>O</b>vercome your stories — we'll address doubts, fears, and imposter syndrome head on! This is where the
-            power of coaching is vital — it's time to break up with your old behaviors and beliefs.
+            <b>Holistically care for your well-being</b>. We’re talkin’ less stress, more flow. Nourish your inner fire,
+            introduce healthy habits, and let go of things that are inhibiting your growth.
           </li>
           <li>
-            <b>S</b>implify your lifestyle — hone in on what is helping you to optimize your growth and what is holding
-            you back. We work on creating a resilient mindset & cutting out the noise (perhaps in the form of
-            self-judgement, bad relationships, annoying managers 💁‍♀️). You'll have more space and energy left to
-            cultivate positive change.
+            <b>Realign with what makes you, you</b>. Feel more yourself and show up more authentically, courageously,
+            and radiantly in your relationships, career, and daily life.
           </li>
           <li>
-            <b>S</b>tart living more courageously — no more waiting for the "perfect time" to shine your light, redesign
-            your life, and tackle your goals. The time to level up is now!
+            <b>Level up your mindset</b>. Are you desiring financial wealth, a new home, more joy, deeper self trust?
+            Nothing is off limits when we work together to cultivate an abundance mindset.
           </li>
           <li>
-            <b>O</b>pen your imagination to possibilities — can you imagine pathways emerging that you never considered?
-            That's what will happen as you start to shift — and I'm here to help you see blind spots as well as killer
-            opportunities.
+            <b>Take courageous action</b>. Launch a business, negotiate a raise, strategize next steps, go on dates,
+            write a book - all of this is possible for you.
           </li>
           <li>
-            <b>M</b>aximize your momentum — once you've build the foundation, developed clarity around your future, and
-            connected to your whole self — your potential is limitless. We will ensure you maximize your positive
-            momentum & keep cranking.
+            <b>Rise into the most badass version of you</b>. Bringing your A game to each adventure you tackle... but in
+            a cool and confident way.
           </li>
         </ul>
       </ColorContainer>
       <Testimonial testimonials={[firstTestimonial]} />
       <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
-        <h2>Here's What You Can Expect:</h2>
+        <h2>What To Expect:</h2>
         <ul>
           <li>
             <b>Step One</b>: Apply for a call with me to enroll in the program 🍾.
@@ -120,19 +121,54 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             <b>Step Three</b>: We begin the work!
           </li>
         </ul>
+
         <CenteredButton text="Reserve your intro call now!" />
-        <h2>What this 3 month program includes</h2>
+        <p>
+          The Root to Rise Program will give you the tools and support you need to radiate confidence, align with an
+          inspiring lifestyle and career, eliminate daily stress patterns, and take courageous action toward the future
+          you deserve.
+        </p>
+        <p>
+          When you enroll in the program, you will gain access to the BLOSSOM Book, which is chock-full of practices,
+          journaling prompts, and challenges that correspond to our 1:1 sessions.
+        </p>
+        <p>
+          Though we’ll follow my signature Root to Rise process, the huge benefit of working with me 1:1 is that YOU get
+          to be in the driver’s seat, bringing to the table what feels most vital to explore and strategize. Be it
+          taming the inner critic, designing your killer career plan, improving your money mindset, or spending half the
+          session on a guided meditation - BLOSSOM sessions offer the ultimate time to learn and grow in the way you
+          need most!
+        </p>
+        <h2>What's Included</h2>
         <ul>
-          <li>Self-Discovery Deep Dive (with me)!</li>
           <li>
-            8 <b>BLOSSOM</b> Coaching Sessions
+            <b>Self-Discovery Assessment + Deep Dive</b>: When is the last time you took 90 minutes to take inventory of
+            your life and set specific goals for yourself in areas like career, wellbeing, and enjoyment? You may not
+            have done this before but guess what - you deserve it! In your first BLOSSOM session we take a dive into
+            your Self Discovery Assessment. This session alone will provide you with “ah-ha”s and action steps to start
+            moving the needle in your life.
           </li>
-          <li>BLOSSOM Book, which includes follow-up homework, exercises and action items</li>
-        </ul>
-        <h3>Bonuses!</h3>
-        <ul>
-          <li>Email support throughout the 3 months</li>
-          <li>One personalized recorded meditation</li>
+          <li>
+            <b>3 BLOSSOM Sessions Each Month</b>: To support you in stepping purposefully into an aligned and inspiring
+            future, we’ll meet three times each month and make sure you’re always pushing yourself out of your comfort
+            zone and into the zone of courageous change and aligned living.
+          </li>
+          <li>
+            <b>BLOSSOM book</b>: This book will equip you with assignments to complete in between our sessions together.
+            You’ll be able to reflect on and take action on everything you’re learning.
+          </li>
+          <li>
+            <b>Text & Email Support</b>: Unlimited access to me via email and texting, for support on action items,
+            reflections, and strategy between sessions.
+            <br />I treat my clients like absolute queens 👑 and to deliver this high-quality experience, I cap the
+            number of 1:1 clients I take on. You can rest assured that during the three months we work together, I will
+            be 100% there for all your questions and celebration moments!
+          </li>
+          <li>
+            <b>BONUS!</b>: One personalized meditation! At any time during your three month program you can request your
+            personalized meditation on any of the topics or themes that we’ve covered. You’ll have lifetime access to
+            this meditation.
+          </li>
         </ul>
       </ColorContainer>
       <PreviewCompatibleImage
@@ -144,9 +180,10 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       />
       <h2>Why Work With Me?</h2>
       <p>
-        I am a Whole Person Certified Coach who has helped dozens of women to level up their lives and find “what’s
-        next.” I blend my professional coach training, yoga background, killer focus to bring you into a space that you
-        can feel grounded, safe, and totally resourced to step into the career, relationships, and life you deserve.
+        I am a Whole Person Certified & ICF Associate Certified Coach who has helped dozens of ambitious women to create
+        more success, flow, and change in their lives. I blend my professional coach training, yoga background, killer
+        focus to bring you into a space that you can feel grounded, safe, and totally resourced to step into the career,
+        relationships, and life you deserve.
       </p>
       <p>
         This isn’t just a process I facilitate: this is personal, as I struggled for years feeling that life wasn’t

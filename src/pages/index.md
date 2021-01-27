@@ -8,7 +8,7 @@ description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
 freebie: /img/positivity-pack-cropped.jpg
 mainpitch:
-  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach and ICF Associate Certified Coach specializing in helping driven, free-spirited women to level up their lives. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and racing forward in life to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown the path I was on and wasn’t aligned with who I wanted to be. Sound familiar? I discovered how to connect back to my core self, redesign my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same! Don’t be shy -
+  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach and ICF Associate Certified Coach specializing in helping high-achieving women to thrive in their relationships, careers, and lifestyles. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and racing forward in life to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown the path I was on and wasn’t aligned with who I wanted to be. Sound familiar? I discovered how to connect back to my core self, redesign my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same! Don’t be shy -
   image: /img/sheila-anne-with-coffee-mug.jpg
 
 intro:
@@ -24,7 +24,7 @@ intro:
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
       title: Ground To Grow Accelerator
       text: >
-        A power session to help you gain radical clarity, remove blocks, and create action steps in one area of your life. Includes a guided body scan and success assessment.
+        A power session to help you gain radical clarity, remove blocks, and create action steps in one area of your life. Includes a guided body scan and strategy session.
     - href: /root-to-rise/
       image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.

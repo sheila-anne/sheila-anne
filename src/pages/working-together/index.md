@@ -26,34 +26,33 @@ testimonials:
 ---
 
 <h2 id="exploration-call">Exploration Call</h2>
-Getting started can be the scariest part. I invite you to channel your inner courage and take the leap. This complimentary Exploration Call is an opportunity to tell me your story & learn strategies for moving forward. You can ask all the questions & learn which offering best suits your needs.
+Take the first step toward the next chapter of your life. This complimentary Exploration Call is an opportunity to tell me your story & learn strategies for moving forward. You can ask all the questions & learn which offering best suits your needs.
 
 <br/>
 <br/>
 
-Let's get started -- [book your exploration call today](/book/exploration/)!
+Let's get started -- [book your exploration call today](/book/exploration/) 🚀
 
 ---
 
 <h2 id="ground-to-grow">Ground to Grow Accelerator</h2>
-This one-time power coaching session will help you to understand exactly why you are feeling stuck in one area of your life, plus tangible steps that will launch you into success.
+This one-time power coaching session will give you clarity, confidence, and answers in one area of your life. Includes a whole-person success assessment and guided body scan.
 
-![Sheila harnessing her energy at Garden Of The Gods](/img/sheila-anne-ground-to-grow.jpg)
+![Sheila sitting peacefully in a field](/img/sheila-anne-ground-to-grow.jpg)
 
 ### Tell me more!
 
-Let’s jump into one area of your life and establish where you’re at 📍 and where you want to go. This power session is perfect for you if you have a decision to make, need to quickly get "unstuck," want a boost of confidence, or feel called to make a change and want to partner with a coach to make it happen.
+Let’s jump into one area of your life and establish where you’re at 📍 and where you want to go. This power session is perfect for you if you are feeling overwhelmed with commitments, need a boost of confidence, or feel called to make a change and want to partner with a coach to make it happen.
 
 The **Ground to Grow Accelerator** will help you to:
 
-- **Assess** your life aspects -- Create a whole picture of your life and pick one area to focus on. This will enable you to get the most value out of our time.
-- **Envision** your path -- Get crystal clear on what matters and what you want your future to look like. Stop flirting with different ideas of what your path "should" look like, and get clarity on the life you want!
-- **Remove** roadblocks -- Gain insight into what might be making you feel stuck or unfulfilled. Uncover these and you'll be on the fast track to freedom.
-- **Establish** a game plan -- You will craft 3 actionable steps that will allow you to make change in one area of your life. Think: a sure-fire strategy to help you level up quickly.
+- **Envision your path** -- Get crystal clear on your priorities and vision for the future, so you can feel more decisive and better equipped to make that future a reality.
+- **Gain confidence** -- Tap into your emotional and intuitive brain to calm your inner critic and leverage your unique strengths.
+- **Take action** -- Craft 3 actionable steps that will allow you to make tangible change. Think: a sure-fire strategy to help you step into your next-level self.
 
-> "I sought her guidance regarding limiting beliefs surrounding a new career venture and in our short time together she was not only able to help me name and clearly identify those limiting beliefs, but also begin exploring alternate beliefs that are more supportive. She held space beautifully and her grounded, calm presence could be felt through the screen. By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless" -- [Jessica S.](#testimonials)
+> "By the end of the session I was feeling much more rooted and confident in myself and excited rather than scared shitless" -- [Jessica S.](#testimonials)
 
-Are you ready to step into the driver's seat, gain clarity, and confidently make change your way?
+Are you ready to step into the driver’s seat, gain clarity, and confidently make change your way?
 
 👉 [Apply for your Ground To Grow Accelerator here!](/book/ground-to-grow/) 👈
 
@@ -63,13 +62,9 @@ Are you ready to step into the driver's seat, gain clarity, and confidently make
 
 My signature 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey of courageous self discovery, mindfulness, and level up in your career path, relationships, and lifestyle.
 
+✨ [Take me to the details!](/root-to-rise/) ✨
+
 ![Root To Rise transformational coaching program](/img/sheila-anne-root-to-rise.jpg)
-
-### Tell me more!
-
-You're constantly growing and evolving -- it's time you designed a life that fits your fire 🔥. Imagine re-envisioning what's possible in your career, relationships and lifestyle, leveraging your killer strengths, and taking action without second guesses. That's what you can expect in the Root → Rise program.
-
-Let’s skip the small talk -- 👉 [Take me to the details!](/root-to-rise/)! 👈
 
 ---
 

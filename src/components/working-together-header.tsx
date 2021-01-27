@@ -53,12 +53,12 @@ export const WorkingTogetherHeader = () => {
     <>
       <Heading>Working Together</Heading>
       <Subheading>
-        In working with me you will discover your unique strengths, uncover deeply-seeded beliefs, build confidence from
-        within, and create goals that will lead toward your next big thing.
+        Work with me if you’d like to create a life that is inspiring, energizing, and aligned. I’m here to support you
+        to confidently step into your next-level self and thrive in your body, mind, and soul.
       </Subheading>
       <Subheading as="h3">Is this you?</Subheading>
       <p>
-        Awaiting the day that you'll play by your own rules and ditch the expectations? You are not alone, and yes,
+        Awaiting the day that you'll play by your own rules and courageously take action? You are not alone, and yes,
         there is a way to make it happen.
       </p>
       <PreviewCompatibleImage
