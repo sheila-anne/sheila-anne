@@ -44,11 +44,12 @@ const handleSubmit = (
   e.preventDefault();
 
   const args = {
-    event_category: `Schedule`,
+    event_category: `Schedule Booking`,
     event_label: page,
+    send_to: "AW-456930843/upZZCOSniPMBEJvs8NkB",
   };
 
-  trackCustomEvent({ type: "Schedule Booking", args });
+  trackCustomEvent({ type: "conversion", args });
   trackFacebook({
     eventType: "track",
     eventName: "InitiateCheckout",

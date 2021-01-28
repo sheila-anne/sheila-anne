@@ -4,6 +4,7 @@ type GtagEventArgs = {
   event_action?: string;
   event_category: string;
   event_label: string;
+  send_to?: string;
 };
 
 type GtagBaseEvent = {

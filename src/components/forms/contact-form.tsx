@@ -19,7 +19,7 @@ export const ContactForm = ({
     formTitle={formTitle}
     page={page}
     submitText={submitText}
-    trackArgs={{ eventName: "Contact" }}
+    trackArgs={{ eventName: "Contact", sendTo: "AW-456930843/fuarCJq8-fIBEJvs8NkB" }}
   >
     <Input
       autoComplete="name"
