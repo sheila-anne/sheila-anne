@@ -10,13 +10,11 @@ description: I keep hearing about how hard 2020 was and, though I agree, I also
   beyond “typical” self-care acts — they invite you to commit to radical
   self-love by way of exploration and self-understanding.
 featuredpost: false
-featuredImage: /img/img_0395.jpg
+featuredImage: /img/face-mask-self-love.jpg
 ---
 I keep hearing about how hard 2020 was and, though I agree, I also acknowledge that it’s *still* hard for so many. We are still in a pandemic and there are still people grieving, hustling, and trying to right their wobbling ship daily. With that in mind, I was considering what has helped my own resilience throughout the ups and downs of the past.  These habits stretch beyond “typical” self-care acts — they invite you to commit to radical self-love by way of exploration and self-understanding.
 
 If I can practice these things, I know you can too. I’m looking forward to hearing how they enhance your life and help you to love yourself more deeply.
-
-
 
 ## 1. Let go of past expectations
 
@@ -38,15 +36,11 @@ An ultimate self-love habit is living fully in your power, *unapologetically you
 
 What makes you special? What values do you hold that you’re proud of?
 
-
-
 ## 4. Adopt your own self care rituals
 
-If you haven’t had luck with the rituals that you see mentors, influencers, or C-suite professionals practicing, it’s time to turn inward! One of the best things you can do for yourself is listen in to your own internal cues — what does your body need in the morning? What do you need to wind down at night? Each individual has their own flow of energy, inspiration, and motivation. You are unique and your rituals can be too! Don’t be afraid to test out different rituals (say journalling, bubble baths, slow walking, meditating) and simply explore how they work for you and the life you're curating.
+If you haven’t had luck with the rituals that you see mentors, influencers, or C-suite professionals practicing, it’s time to turn inward! One of the best things you can do for yourself is listen in to your own internal cues — what does your body need in the morning? What do you need to wind down at night? Each individual has their own flow of energy, inspiration, and motivation. You are unique and your rituals can be too! Don’t be afraid to test out different rituals (say journalling, bubble baths, slow walking, slapping on a face mask between to-dos) and simply explore how they work for you and the life you're curating.
 
 What is one self-care ritual you could integrate today? What is one thing that’s not working for you that you could release?
-
-
 
 ## 5. Stop comparing yourself to others 
 
@@ -77,3 +71,5 @@ How can you lend an ear to your intuition on the day-to-day?
 Self-love does not transform overnight but rather is a foundation that we continue to strengthen, mold, and build off. Consider for a moment how much you’ve already grown in your commitment to love yourself, feel good, and grow through experiences. 
 
 If this article resonates with you and you would like to step into a powerful 75 minute event focused entirely on self love and igniting your inner spark, you simply must join us at the Self Love First Love workshop. [](https://checkout.square.site/buy/PNF2F6FFLGT77PFFRUD2SUD6)**[Grab your spot right here!](https://checkout.square.site/buy/PNF2F6FFLGT77PFFRUD2SUD6)**
+
+![Note to self - I love me](/img/29db0a44-5897-466f-a9d9-e5036626f3fd-496-0000000a2233b61c.jpg "Note to self - I love me")
