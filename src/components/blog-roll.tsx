@@ -13,6 +13,10 @@ type ArticleProps = {
 
 const BlogRollFlexColumn = styled(FlexColumn)`
   flex-basis: 33%;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    flex-basis: 95%;
+  }
 `;
 
 const FlexTextContainer = styled.div`
@@ -96,7 +100,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
 
 export const BlogRoll = ({ posts }: BlogPosts) => {
   return (
-    <FlexContainer>
+    <FlexContainer justifyContent="center">
       {posts &&
         posts.map(({ node: post }) => (
           <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>

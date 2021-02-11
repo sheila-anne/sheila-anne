@@ -26,7 +26,6 @@ export const WritingDeskPageTemplate = ({ content, contentComponent, imageHeadli
     <section>
       <PageContent content={content} />
       <Headline>{imageHeadline}</Headline>
-
       <BlogRollAll />
     </section>
   );
