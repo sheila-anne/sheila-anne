@@ -8,7 +8,7 @@ description: Amidst the hustle and bustle of life, it’s easy to forget where w
   truly happy, and if we’re meant for more. More success, more impact, more
   inspiration, more opportunities.
 featuredpost: true
-featuredImage: /img/sheila-switzerland.jpg
+featuredImage: /img/find-whats-next-square.jpg
 tags:
   - tips
   - coaching
@@ -37,7 +37,7 @@ What makes you wish you were somewhere else or doing something else? Are you say
 
 If you could follow any path you wanted, what would you choose to do? Ask this question to unblock your rational brain, even just for a moment, and really capture your passions and ideas.
 
-#### 4. What skill/superpower do I hope to leverage more in my future? 
+### 4. What skill/superpower do I hope to leverage more in my future? 
 
 Sometimes the job, relationship, or routine we're in doesn't allow us to flex all our muscles... perhaps you're looking to showcase your creativity, entrepreneurial spirit, communication skills, love language, holistic perspective, etc. Consider what skill or superpower within you wants to be seen and utilized more!
 
@@ -67,12 +67,14 @@ You've spent countless hours considering what might be missing in your life, wha
 
 Reading through these questions is just the first step. Make sure you don't just blast through! Reflect, write, and come back to your answers later to expand and and edit.
 
-\---
+\--
 
 So, what's next? How are you going to show up for yourself and commit to making change and curating the life you deserve?
 
 I invite you to take look at the various ways to work with me
 
-* #### [Complimentary Consult](https://www.sheilaanne.com/book/exploration/): Your opportunity to pick my brain and learn about how coaching can support you. No strings attached!
-* #### [Ground to Grow Accelerator](https://www.sheilaanne.com/book/ground-to-grow/): Jump-start your growth with a 45 minute personalized workshop that will leave you feeling empowered, aligned, and ready to take action.
-* #### [Root to Rise Transformational Coaching Program](https://www.sheilaanne.com/root-to-rise/): If you already know that you are ready to make radical changes in your life, this program is for you! Take the leap - I’ll leap with you!
+#### [Complimentary Consult](https://www.sheilaanne.com/book/exploration/): Your opportunity to pick my brain and learn about how coaching can support you. No strings attached!
+
+#### [Ground to Grow Accelerator](https://www.sheilaanne.com/book/ground-to-grow/): Jump-start your growth with a 45 minute personalized workshop that will leave you feeling empowered, aligned, and ready to take action.
+
+#### [Root to Rise Transformational Coaching Program](https://www.sheilaanne.com/root-to-rise/): If you already know that you are ready to make radical changes in your life, this program is for you! Take the leap - I’ll leap with you!
