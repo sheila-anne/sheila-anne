@@ -17,13 +17,14 @@ tags:
   - habits
   - relationships
 ---
-![Find-whats-next-in-life](/img/find-whats-next.jpg "Searching for your next adventure")
+
+![Find what's next in life](/img/find-whats-next.jpg "Searching for your next adventure")
 
 Amidst the hustle and bustle of life, it’s easy to forget where we are headed and why we're headed in “that” direction. What happens as a result is that some days we awake wondering what the purpose of our life is, if we’re truly happy, and if we’re meant for more. More success, more impact, more inspiration, more opportunities.
 
 Clients often find me because they are desiring more in their lives. They want more flow, more alignment, more happiness, more abundance (be it money, surprises, or fulfillment). Typically they haven’t had the opportunity in recent years to sit down and reflect on central questions that propel them forward into a life they truly love. This is especially true for high-achievers and perfectionists, as they are always pushing themselves toward the next level, and haven’t carved out the time to sit back and wonder.
 
-If you’ve found your way to this article, it’s likely that you are looking for answers. I do hope that’s what you find. These questions are the ideal primer. More than that, in asking yourself these questions, I hope you find a renewed sense of self-awareness and confidence. 
+If you’ve found your way to this article, it’s likely that you are looking for answers. I do hope that’s what you find. These questions are the ideal primer. More than that, in asking yourself these questions, I hope you find a renewed sense of self-awareness and confidence.
 
 ### 1. What do I love about myself & my current life? 
 
@@ -67,7 +68,7 @@ You've spent countless hours considering what might be missing in your life, wha
 
 Reading through these questions is just the first step. Make sure you don't just blast through! Reflect, write, and come back to your answers later to expand and and edit.
 
-\---
+---
 
 So, what's next? How are you going to show up for yourself and commit to making change and curating the life you deserve?
 
