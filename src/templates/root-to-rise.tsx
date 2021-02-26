@@ -4,7 +4,18 @@ import styled from "styled-components";
 
 import { applyStyle } from "../utils";
 import { Constants } from "../constants";
-import { CenteredText, Layout, PreviewCompatibleImage, SEO, PillButton, Testimonial, FAQ } from "../components";
+import {
+  CenteredText,
+  FlexContainer,
+  FlexColSplitImage,
+  HalfColumn,
+  Layout,
+  PreviewCompatibleImage,
+  SEO,
+  PillButton,
+  Testimonial,
+  FAQ,
+} from "../components";
 
 const ColorContainer = styled.div<{ backgroundColor?: string }>`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
@@ -19,6 +30,10 @@ const CenteredButton = ({ text }: { text: string }) => (
   </CenteredText>
 );
 
+const SmallSecondHeader = styled.h2`
+  font-size: 1.5rem;
+`;
+
 export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
   const testimonials = [...frontmatter.testimonials];
   const firstTestimonial = testimonials.shift();
@@ -26,17 +41,26 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
   return (
     <section>
       <h1>Root To Rise: Transformational Coaching Program</h1>
-      <PreviewCompatibleImage
-        imageInfo={{
-          alt: "Root To Rise with Sheila Anne",
-          childImageSharp: frontmatter.featuredImage.childImageSharp,
-        }}
-        loading="eager"
-        title="Sheila sitting peacefully in a field"
-      />
-      <h2>Root into your power</h2>
-      <h2>Rise into the most badass version of you</h2>
-      <h2>You know you're made for more & I'm going to help you make it happen</h2>
+      <FlexContainer justifyContent="center" margin="1rem 0">
+        <HalfColumn>
+          <FlexColSplitImage>
+            <PreviewCompatibleImage
+              imageInfo={{
+                alt: "Root To Rise with Sheila Anne",
+                childImageSharp: frontmatter.featuredImage.childImageSharp,
+              }}
+              loading="eager"
+              title="Sheila's signature Root To Rise transformational program has helped strong, powerful women create deep long-lasting change"
+            />
+          </FlexColSplitImage>
+        </HalfColumn>
+        <HalfColumn>
+          <SmallSecondHeader>Root into your power</SmallSecondHeader>
+          <SmallSecondHeader>Rise into the most badass version of you</SmallSecondHeader>
+          <SmallSecondHeader>You know you're made for more & I'm going to help you make it happen</SmallSecondHeader>
+        </HalfColumn>
+      </FlexContainer>
+      <CenteredButton text="Book your free intro call with Sheila" />
 
       <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
         <p>
@@ -49,14 +73,20 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           Are you wondering: <i>“Is that even possible for me?”</i>
         </p>
         <br />
-        Welcome. You're in just the right place.
+        <p>
+          <b>Welcome. You're in just the right place.</b>
+        </p>
         <br />
-        Through your journey thus far, there’s been a little something missing — that something that will help you
-        pause, deeply connect, and set intentional goals toward your next adventure. That’s where I come in.
+        <p>
+          Through your journey thus far, there’s been a little something missing — that something that will help you
+          pause, deeply connect, and set intentional goals toward your next adventure. That’s where I come in.
+        </p>
         <br />
-        Why? Because for you it’s easy to make lists, check off action items, and let your busy brain lead the way.
-        That’s your jam! When it comes to slowing down and doing the inner work, you’d rather be productive and perfect
-        each piece of yourself.
+        <p>
+          Why? Because for you it’s easy to make lists, check off action items, and let your busy brain lead the way.
+          That’s your jam! When it comes to slowing down and doing the inner work, you’d rather be productive and
+          perfect each piece of yourself.
+        </p>
       </ColorContainer>
       <CenteredButton text="Tap To Book Your Free Call!" />
       <PreviewCompatibleImage

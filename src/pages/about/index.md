@@ -26,7 +26,7 @@ To suit every need, I have two ways you can work with me:
 - [Ground to Grow Accelerator](/book/ground-to-grow/) - One time power session
 - [Root to Rise Transformational Coaching Program](/root-to-rise/) - Three month commitment
 
-It all starts with a free exploration call - a 20 minute strategy session with yours truly.
+It all starts with a free exploration call - a 30 minute strategy session with yours truly.
 
 [Book a free exploration call](/book/exploration/) today, and come home to yourself!
 

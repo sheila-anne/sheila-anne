@@ -1,17 +1,26 @@
 import { graphql } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 
 import { Constants } from "../constants";
 import {
   BookingSection,
+  CenteredText,
   Content,
   FAQ,
   HTMLContent,
   Layout,
+  LinkButton,
+  PreviewCompatibleImage,
   SEO,
+  SmartLink,
   Testimonial,
   WorkingTogetherHeader,
 } from "../components";
+
+const Text = styled.div`
+  margin-bottom: 1rem;
+`;
 
 export const WorkingTogetherTemplate = ({ content, contentComponent, faqs, frontmatter }) => {
   const PageContent = contentComponent || Content;
@@ -20,6 +29,21 @@ export const WorkingTogetherTemplate = ({ content, contentComponent, faqs, front
     <section>
       <WorkingTogetherHeader />
       <PageContent content={content} margin="0 0 1rem 0" padding="5px 2rem" />
+      <h2 id="root-to-rise">Root To Rise Transformational Coaching Program</h2>
+      <Text>
+        My signature 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a
+        journey of courageous self discovery, mindfulness, and level up in your career path, relationships, and
+        lifestyle.
+      </Text>
+      <CenteredText margin="0 0 1rem 0">
+        <LinkButton to="/root-to-rise/">Take me to the details!</LinkButton>
+      </CenteredText>
+      <Text>
+        Not finding what you’re looking for? I also do customized programs that tailor to your schedule and needs.
+      </Text>
+      <Text>
+        Questions? <a href="#faq">Check out the FAQ</a> or <SmartLink to="/contact/">send me a message!</SmartLink>
+      </Text>
       <hr />
       <BookingSection
         page="Working Together"
@@ -65,7 +89,7 @@ const WorkingTogether = ({ data, location }) => {
 export default WorkingTogether;
 
 export const pageQuery = graphql`
-  query TheGrovePage($id: String!) {
+  query WorkingTogetherPage($id: String!) {
     site {
       siteMetadata {
         faqs {

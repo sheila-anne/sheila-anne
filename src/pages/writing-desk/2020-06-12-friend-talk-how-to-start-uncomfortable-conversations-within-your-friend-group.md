@@ -79,4 +79,4 @@ Starting these conversations is not easy but it’s worth it! If you can be bold
 
 Starting challenging conversations may not be as fun as a blissful day on the lake or night out on the town, but these conversations can be a key piece to developing a deep relationship with yourself and with your friend group.
 
-The process of developing deep relationships & conversions is _not_ separate from the inner work it requires. This is where a coach comes in. I work with free-spirited, driven women who are looking to develop deep self love, self trust, and take aligned action. [Schedule a 20 minute free consultation with me](https://www.sheilaanne.com/book/), to learn more about my program and the results of those I work with.
+The process of developing deep relationships & conversions is _not_ separate from the inner work it requires. This is where a coach comes in. I work with free-spirited, driven women who are looking to develop deep self love, self trust, and take aligned action. [Schedule a 30 minute free consultation with me](https://www.sheilaanne.com/book/), to learn more about my program and the results of those I work with.

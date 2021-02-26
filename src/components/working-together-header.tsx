@@ -35,8 +35,10 @@ const WorkingTogetherAnchor = styled.a`
 `;
 
 const NonTreeListItem = styled.li`
+  background-color: ${Constants.Colors.theGroveGreen};
   border: 1px solid ${Constants.Colors.theGroveGreen};
   border-radius: 1rem;
+  color: #fff;
   margin-top: 1rem;
   padding-right: 1.5rem;
   &:before {
@@ -51,6 +53,18 @@ export const WorkingTogetherHeader = () => {
 
   return (
     <>
+      <header>
+        <nav>
+          <Subheading>Ready — Set — Go! Here are my offerings:</Subheading>
+          <ListContainer>
+            {WorkingTogetherSections.map(item => (
+              <WorkingTogetherAnchor href={`#${item.href}`} key={item.name} title={item.name}>
+                <NonTreeListItem>{item.name}</NonTreeListItem>
+              </WorkingTogetherAnchor>
+            ))}
+          </ListContainer>
+        </nav>
+      </header>
       <Heading>Working Together</Heading>
       <Subheading>
         Work with me if you’d like to create a life that is inspiring, energizing, and aligned. I’m here to support you
@@ -66,18 +80,6 @@ export const WorkingTogetherHeader = () => {
         imageAlt="Working together with Sheila Anne"
         title="Work with me to achieve your dream life"
       />
-      <header>
-        <nav>
-          <Subheading>Ready — Set — Go! Here are my offerings:</Subheading>
-          <ListContainer>
-            {WorkingTogetherSections.map(item => (
-              <WorkingTogetherAnchor href={`#${item.href}`} key={item.name} title={item.name}>
-                <NonTreeListItem>{item.name}</NonTreeListItem>
-              </WorkingTogetherAnchor>
-            ))}
-          </ListContainer>
-        </nav>
-      </header>
     </>
   );
 };

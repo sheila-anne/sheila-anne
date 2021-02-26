@@ -168,12 +168,6 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
       text: "Blog",
       title: "Writing samples from Sheila Anne",
     },
-
-    {
-      to: "/the-mat/",
-      text: "Yoga",
-      title: "Yoga & Intentional Movement",
-    },
   ];
   !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (

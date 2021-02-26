@@ -2,7 +2,7 @@
 bannerImageHeadline: "Life Coaching | Working Together"
 featuredImage: /img/sheila-anne-working-together.jpg
 formHeadline: "Let's get started!"
-formParagraph: "This 20-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
+formParagraph: "This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
 formSubHeadline: "Setup your free exploration call."
 path: /working-together
 pageDescription: >
@@ -57,19 +57,3 @@ Are you ready to step into the driver’s seat, gain clarity, and confidently ma
 👉 [Apply for your Ground To Grow Accelerator here!](/book/ground-to-grow/) 👈
 
 ---
-
-<h2 id="root-to-rise">Root to Rise Transformational Coaching Program</h2>
-
-My signature 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey of courageous self discovery, mindfulness, and level up in your career path, relationships, and lifestyle.
-
-✨ [Take me to the details!](/root-to-rise/) ✨
-
-![Root To Rise transformational coaching program](/img/sheila-anne-root-to-rise.jpg)
-
----
-
-Not finding what you’re looking for? I also do customized programs that tailor to your schedule and needs.
-
-[Click or tap here to book your first session](/book/) today!
-
-Questions? [Check out the FAQ](#faq) or [send me a message!](/contact/)
