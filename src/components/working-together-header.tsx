@@ -21,12 +21,15 @@ const Subheading = styled.h2`
 `;
 
 const ListContainer = styled.ol`
+  align-items: center;
   justify-content: space-around;
   display: flex;
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
     text-align: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
   }
 `;
 

@@ -35,12 +35,9 @@ export const WorkingTogetherTemplate = ({ content, contentComponent, faqs, front
         journey of courageous self discovery, mindfulness, and level up in your career path, relationships, and
         lifestyle.
       </Text>
-      <CenteredText margin="0 0 1rem 0">
+      <CenteredText margin="2rem 0">
         <LinkButton to="/root-to-rise/">Take me to the details!</LinkButton>
       </CenteredText>
-      <Text>
-        Not finding what you’re looking for? I also do customized programs that tailor to your schedule and needs.
-      </Text>
       <Text>
         Questions? <a href="#faq">Check out the FAQ</a> or <SmartLink to="/contact/">send me a message!</SmartLink>
       </Text>
