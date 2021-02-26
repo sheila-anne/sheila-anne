@@ -67,7 +67,7 @@ You've spent countless hours considering what might be missing in your life, wha
 
 Reading through these questions is just the first step. Make sure you don't just blast through! Reflect, write, and come back to your answers later to expand and and edit.
 
-\--
+\---
 
 So, what's next? How are you going to show up for yourself and commit to making change and curating the life you deserve?
 
