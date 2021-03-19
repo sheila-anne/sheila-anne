@@ -7,7 +7,7 @@ description: Two years ago I was in the midst of planning a trip. Not just any
   had kept me up at night, the one I silently worried would never come to
   fruition.
 featuredpost: true
-featuredImage: /img/girl-in-chamonix.jpeg
+featuredImage: /img/girl-in-chamonix.jpg
 ---
 
 Two years ago I was in the midst of planning a trip. Not just any trip - “The Trip.” The one that my heart had ached for for years, the one that had kept me up at night, the one I silently worried would never come to fruition.
@@ -16,7 +16,7 @@ The trip would mean a one-way ticket, quitting my job, leaving my life in Boston
 
 When I pursued my travel dreams with my partner, James, I pursued a path of life exploration, bucking the norm, and living bigger.
 
-![Arches National Park](/img/file_006.jpeg "Arches National Park")
+![Arches National Park](/img/file_006.jpg "Arches National Park")
 
 ## 1. Choosing Ourselves Is Amazing And Messy
 
@@ -34,7 +34,7 @@ When I work with my clients on redesigning their lives, we have to continuously 
 
 Traveling taught me that to be on the journey, commit to the things that are truly calling your heart, and expect that the messy is part of what creates a big, bold, beautiful life.
 
-![Traveling light](/img/file_015.jpeg "Traveling light")
+![Traveling light](/img/file_015.jpg "Traveling light")
 
 ## 2. Be Kind To Yourself - Carry Little On Your Back
 
@@ -54,7 +54,7 @@ Things you might leave behind: old grudges, self-critical thoughts, stale energy
 
 I trust that everything I need at this moment, I already have. Sometimes I just need to repurpose what I have or make use of something that’s fallen to the bottom of the bag. In the rare times I do require something new, I trust that it will serve my next-level self, wherever she is headed.
 
-![Chamonix](/img/file_009.jpeg "Traveling and hiking in Chamonix")
+![Chamonix](/img/file_009.jpg "Traveling and hiking in Chamonix")
 
 ## 3. You Can’t Ignore Your Vital Needs
 
@@ -68,7 +68,7 @@ By prioritizing our vital needs we grew exponentially in our relationship. We su
 
 Whether you’re on your path toward promotion, being a parent, or launching a business, remember that you are also a human. The more that you can accept that and prioritize your vital needs, the faster you will grow. The bonus is that others in your life and those that look up to you will see that they, too, can embrace their needs and wellbeing while striving in their journey.
 
-![Lounging during sunset in Barcelona](/img/file_000.jpeg "Sunset Barcelona")
+![Lounging during sunset in Barcelona](/img/file_000.jpg "Sunset Barcelona")
 
 ## 4. Living Is So Much More Than Daily Progress
 
