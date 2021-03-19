@@ -7,7 +7,7 @@ description: Two years ago I was in the midst of planning a trip. Not just any
   had kept me up at night, the one I silently worried would never come to
   fruition.
 featuredpost: true
-featuredImage: /img/file_009.jpeg
+featuredImage: /img/girl-in-chamonix.jpeg
 ---
 Two years ago I was in the midst of planning a trip. Not just any trip - “The Trip.” The one that my heart had ached for for years, the one that had kept me up at night, the one I silently worried would never come to fruition.
 
