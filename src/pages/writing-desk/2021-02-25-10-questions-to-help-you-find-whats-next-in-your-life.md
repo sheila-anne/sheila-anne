@@ -7,7 +7,7 @@ description: Amidst the hustle and bustle of life, it’s easy to forget where w
   is that some days we awake wondering what the purpose of our life is, if we’re
   truly happy, and if we’re meant for more. More success, more impact, more
   inspiration, more opportunities.
-featuredpost: true
+featuredpost: false
 featuredImage: /img/find-whats-next-square.jpg
 tags:
   - tips
