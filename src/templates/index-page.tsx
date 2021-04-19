@@ -258,7 +258,6 @@ const IndexPage = ({ data, location }: IndexPageProps) => {
     <Layout location={location}>
       <SEO description={frontmatter.pageDescription} location={location} title={frontmatter.pageTitle} />
       <IndexPageTemplate frontmatter={frontmatter} posts={data.allMarkdownRemark.posts} />
-      <Instagram insta={data.insta} instagramUrl={data.site.siteMetadata.social.instagram} />
     </Layout>
   );
 };
@@ -333,34 +332,6 @@ export const pageQuery = graphql`
       limit: 3
     ) {
       ...BlogPosts
-    }
-
-    insta: allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 6) {
-      edges {
-        node {
-          id
-          username
-          likes
-          caption
-          comments
-          localFile {
-            childImageSharp {
-              fluid(quality: 85, maxWidth: 600, maxHeight: 600) {
-                base64
-                tracedSVG
-                aspectRatio
-                src
-                srcSet
-                sizes
-                originalImg
-                originalName
-                presentationWidth
-                presentationHeight
-              }
-            }
-          }
-        }
-      }
     }
 
     site {
