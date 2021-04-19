@@ -23,6 +23,7 @@ export const Constants = {
   mobileWidth: mobileBreakpoint + "px",
   square: {
     allServicesUrl: getSquareAppointmentUrl("vlggwbtks6vh2m"),
+    eventsUrl: "https://checkout.square.site/buy/MOL5MPFPMF4RRZTSFJU5YT3H",
     explorationUrl: getSquareAppointmentUrl("382r9s8g5atn2g"),
     groundToGrowUrl: getSquareAppointmentUrl("efbofoh5gwycw0"),
     rootToRiseUrl: getSquareAppointmentUrl("2rao3bwu73phex"),

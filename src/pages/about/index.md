@@ -11,7 +11,7 @@ featuredImage: /img/sheila-spain-on-stairs.jpg
 
 # Hi, I'm Sheila
 
-My mission is to help women in their 20s and 30s to confidently step into their next-level selves and thrive in their bodies, minds, and souls.
+My mission is to help ambitious women to confidently step into their next-level selves and thrive in their bodies, minds, and souls.
 
 I work with goal-getters that are always striving toward the next thing and hardly have a moment to breathe and connect with themselves. Sound familiar? This used to be me - I thought I had it all figured out because I was killin’ it at work, I had a never-ending list of activities, and people looked to me as a confident leader. The problem? I was burning out, indecisive about my future, and was more attached to appearing successful than I was to my wellbeing & following my dreams.
 
