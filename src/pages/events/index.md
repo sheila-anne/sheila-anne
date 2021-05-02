@@ -12,7 +12,7 @@ path: /events
 
 Are you craving a little more community, confidence, and courage?
 
-You will not want to miss this summer workshop series happening once a month May - July. Each workshop will be ~75 minutes and will include training, a guided visualization, and reiki! Connect with your heart-space, raise your energetic vibration, ignite your inner spark. Prepare to connect with others on the topic of self-love and prioritizing YOU.
+You will not want to miss this virtual workshop series happening once a month May - July 2021. Each workshop will be ~75 minutes and will include training, a guided visualization, and reiki! Connect with your heart-space, raise your energetic vibration, ignite your inner spark. Prepare to connect with others on the topic of self-love and prioritizing YOU.
 
 There will be three separate events, **Self-Love**, **Self-Worth** and **Self-Trust**.  Attend one or all! They will build upon each other in a beautiful way, and each will be beneficial and magical as a stand-alone if you cannot attend them all. Limited number of spots available, as this will be an intimate event. Led by [Sheila Anne](/) & [Krysta-Lyn](https://www.krysta-lyn.com/).
 
@@ -20,9 +20,9 @@ If you would like to attend all three events, make sure to purchase the bundle t
 
 ## Schedule & Pricing
 
-* Self-Love: May 9th, 2021
-* Self-Worth: June 6th, 2021
-* Self-Trust: July 11th, 2021
+* Self-Love: May 9th, 2021 (12 PM EST)
+* Self-Worth: June 6th, 2021 (12 PM EST)
+* Self-Trust: July 11th, 2021 (12 PM EST)
 
 Time will be decided as we confirm participant time zones.
 

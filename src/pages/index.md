@@ -16,21 +16,21 @@ intro:
     - href: /book/exploration/
       image: /img/sheila-anne-discover.png
       imageAlt: Apply for a free Exploration Call.
-      title: Exploration Call
+      title: 30 Minute Exploration Call
       text: >
-        Not sure where to start or if coaching is for you? Apply for a free Exploration Call. We'll get to know each other, talk about your goals and strategize next steps.
+        Not sure where to start or have questions about my offerings? Apply for a free Exploration Call. We'll get to know each other, talk about your goals, and strategize next steps.
     - href: /working-together#ground-to-grow
       image: /img/sheila-anne-grow.png
       imageAlt: Sheila Anne Coaching helps you grow into your own strength.
-      title: Ground To Grow Accelerator
+      title: 45 Minute Accelerator
       text: >
-        A power session to help you gain radical clarity, remove blocks, and create action steps in one area of your life. Includes a guided body scan and strategy session.
+        The Ground to Grow Accelerator will help you gain radical clarity, remove blocks, and create action steps in one area of your life.
     - href: /root-to-rise/
       image: /img/sheila-anne-transform.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: Root To Rise Transformational Coaching Program
+      title: 1:1 Coaching
       text: >
-        My signature coaching program to help you deepen self-awareness, roadmap your next adventure, and create courageous change!
+        My signature Root To Rise coaching program will help you deepen self-awareness, roadmap your next adventure, and create courageous change!
   workWithMe:
     - a chronic goal-setter and to-do list maker
     - always the one who goes the extra mile in your work

@@ -11,7 +11,6 @@ import {
   FlexContainer,
   FlexColSplitImage,
   HalfColumn,
-  Instagram,
   Layout,
   LinkButton,
   PreviewCompatibleImage,
@@ -221,9 +220,9 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             </FlexColSplitImage>
           </HalfColumn>
           <HalfColumn>
-            <FreebieHeading>Positive Pack ... My Gift To You!</FreebieHeading>
+            <FreebieHeading>Free Download!</FreebieHeading>
             <div>
-              2020 was something else. Find focus, be magnetic and create change from within with the{" "}
+              Find focus, be magnetic and create change from within with the{" "}
               <BannerLink to="/freebie/" title="Positivity Pack freebie">
                 Positivity Pack
               </BannerLink>

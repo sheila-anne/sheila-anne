@@ -6,6 +6,7 @@ import { applyStyle } from "../utils";
 import { Constants } from "../constants";
 import {
   CenteredText,
+  ContentBreak,
   FlexContainer,
   FlexColSplitImage,
   HalfColumn,
@@ -159,18 +160,21 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           you deserve.
         </p>
         <p>
-          When you enroll in the program, you will gain access to the BLOSSOM Book, which is chock-full of practices,
-          journaling prompts, and challenges that correspond to our 1:1 sessions.
+          When you enroll in the program, you will gain access to on-demand support from me and the BLOSSOM resource pack,
+          which is chock-full of practices and journaling prompts.
         </p>
         <p>
-          Though we’ll follow my signature Root to Rise process, the huge benefit of working with me 1:1 is that YOU get
-          to be in the driver’s seat, bringing to the table what feels most vital to explore and strategize. Be it
-          taming the inner critic, designing your killer career plan, improving your money mindset, or spending half the
-          session on a guided meditation - BLOSSOM sessions offer the ultimate time to learn and grow in the way you
-          need most!
+          The benefit of working with me 1:1 is that YOU get to be in the driver’s seat, bringing to the table what feels
+          most vital to explore and strategize. Be it taming the inner critic, designing your killer career plan,
+          improving your money mindset, or spending half the session on a guided meditation -- BLOSSOM sessions offer the
+          ultimate time to learn and grow in the way you need most!
         </p>
         <h2>What's Included</h2>
         <ul>
+          <li>
+            <b>A Certified Coach and unwavering supporter</b> who is not afraid to push you outside of your comfort zone,
+            is passionate about your growth, and will cheer for you every single step of the way. That’s me 👋
+          </li>
           <li>
             <b>Self-Discovery Assessment + Deep Dive</b>: When is the last time you took 90 minutes to take inventory of
             your life and set specific goals for yourself in areas like career, wellbeing, and enjoyment? You may not
@@ -184,22 +188,22 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             zone and into the zone of courageous change and aligned living.
           </li>
           <li>
-            <b>BLOSSOM book</b>: This book will equip you with assignments to complete in between our sessions together.
-            You’ll be able to reflect on and take action on everything you’re learning.
+            <b>BLOSSOM Resources</b>: Strategic journaling prompts to unearth your purpose, behaviors, and desired life path.
           </li>
           <li>
-            <b>Text & Email Support</b>: Unlimited access to me via email and texting, for support on action items,
+            <b>Text, Voice & Email Support</b>: Unlimited access to me via email and texting, for support on action items,
             reflections, and strategy between sessions.
-            <br />I treat my clients like absolute queens 👑 and to deliver this high-quality experience, I cap the
-            number of 1:1 clients I take on. You can rest assured that during the three months we work together, I will
-            be 100% there for all your questions and celebration moments!
           </li>
           <li>
-            <b>BONUS!</b>: One personalized meditation! At any time during your three month program you can request your
-            personalized meditation on any of the topics or themes that we’ve covered. You’ll have lifetime access to
-            this meditation.
+            <b>An invitation</b>: to continue on with me following the three month commitment.
           </li>
         </ul>
+        <ContentBreak/>
+        <p>
+          Note: I treat my clients like absolute queens 👑 and to deliver this high-quality experience, I cap the
+          number of 1:1 clients I take on. You can rest assured that during the three months we work together, I will
+          be 100% there for all your questions and celebration moments!
+        </p>
       </ColorContainer>
       <PreviewCompatibleImage
         imageInfo={{
