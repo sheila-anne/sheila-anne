@@ -207,10 +207,10 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       </ColorContainer>
       <PreviewCompatibleImage
         imageInfo={{
-          alt: "Root To Rise with Sheila Anne, this time in the Alps",
+          alt: "Sheila hard at work!",
           childImageSharp: frontmatter.thirdImage.childImageSharp,
         }}
-        title="Sheila standing tall in her power, this time in the Alps"
+        title="Sheila hard at work!"
       />
       <h2>Why Work With Me?</h2>
       <p>

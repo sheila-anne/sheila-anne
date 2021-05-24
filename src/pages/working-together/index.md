@@ -11,6 +11,10 @@ pageTitle: Working Together | Sheila Anne
 templateKey: "working-together"
 
 testimonials:
+  - title: Katie K.
+    text: I worked with Sheila during a transitionary period of my life for some extra support - I knew I was heading in the right direction, but going through radical change is scary! Having Sheila as a sounding board was so incredibly helpful. She reinforced the things that I knew in my gut were true and she helped me identify areas of opportunity that I was previously blind to or scared of seeing. The environment she created during our session was so comfortable, welcoming and safe - which made it much easier to show up and be vulnerable and honest. I'm so excited to implement some of the tools Sheila recommended in my everyday life - and I know exactly how to do that because she helped me come up with an accountability plan that left me feeling both hopeful and and more peaceful about what my future holds!
+    imageAlt: Ground To Grow testimonial from Katie
+    imageSrc: /img/katie-k-sheila-anne-testimonial.jpg
   - title: Hannah G.
     text: My session with Sheila Anne exceeded all of my expectations! For a while I have been struggling with how to find my career path and I went into the session with Sheila Anne hoping to find some clarity in this aspect. What I learned is that to find this answer I have to dig into another area of my life in which I have been struggling – spirituality and connection to myself. In the 45 minutes I had with Sheila I managed to dig deep and discover how specific moments in past may be contributing to some limiting beliefs that I hold. I felt very comfortable in the session which enabled me to open up and discover my deeply held beliefs that are holding me back! Sheila asks prompting questions which enable you to find the answers within yourself in a supportive, safe and encouraging way. I highly recommend working with her if you have any blocks in your life or just want to feel more grounded!
     imageAlt: Ground To Grow testimonial from Hannah

@@ -5,6 +5,7 @@ import { Constants } from "../constants";
 import { SmartLink } from "./smart-link";
 
 type PillButtonProps = {
+  color?: string;
   onClick?: (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => void;
   type?: "submit" | undefined;
 };
@@ -60,11 +61,11 @@ const ButtonSpan = styled.span`
   border-radius: 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    background-color: ${Constants.Colors.theGroveGreen};
+    background-color: ${Constants.Colors.redRocksRed};
   }
 `;
 
-const StyledPillButton = styled.button`
+const StyledPillButton = styled.button<{color?: string}>`
   background: transparent;
   border: none;
   color: #000;
@@ -80,7 +81,7 @@ const StyledPillButton = styled.button`
   text-transform: uppercase;
 
   &:before {
-    background: ${Constants.Colors.theGroveGreen};
+    background:  ${({ color }) => !!color ? color : Constants.Colors.theGroveLightGreen};
     border-radius: 1rem;
     bottom: 0;
     content: "";
@@ -116,8 +117,8 @@ const StyledPillButton = styled.button`
   }
 `;
 
-export const PillButton: FC<PillButtonProps> = ({ children, onClick, type }) => (
-  <StyledPillButton onClick={e => onClick && onClick(e)} type={type}>
+export const PillButton: FC<PillButtonProps> = ({ color, children, onClick, type }) => (
+  <StyledPillButton color={color} onClick={e => onClick && onClick(e)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
   </StyledPillButton>
 );

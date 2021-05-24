@@ -10,6 +10,7 @@ type Colors = {
   theGroveTeal: string;
   theGroveLightGreen: string;
   theGroveGreenGray: string;
+  redRocksRed: string;
 };
 
 const mobileBreakpoint = 768;

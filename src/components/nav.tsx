@@ -155,7 +155,11 @@ const MobileMenu = styled.div<OpenNavProps>`
   }
 `;
 
-const getNavLinkItems = (location: Location, showHomeLink = false) => {
+const getNavLinkItems = (
+  location: Location,
+  showHomeLink = false,
+  setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
+) => {
   const navLinks = [
     { to: "/about/", text: "About Me", title: "About Sheila Anne" },
     {
@@ -169,6 +173,7 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
       title: "Writing samples from Sheila Anne",
     },
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
+    { to: "#subscribeForm", text: "Subscribe", title: "Join the community!" },
   ];
   !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
@@ -180,6 +185,10 @@ const getNavLinkItems = (location: Location, showHomeLink = false) => {
     >
       <SideLinkWrapper location={location} to={navLink.to}>
         <ColoredInternalLink
+          // if you're in the mobile-menu, some links are links;
+          // some are page references. close the menu if the setState handler
+          // is passed in to show relative page refs
+          onClick={() => setIsOpen && setIsOpen(!showHomeLink)}
           aria-current={location && location.pathname === navLink.to}
           ariaLabel={navLink.title}
           role="menuitem"
@@ -215,7 +224,7 @@ const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
             <MobileMenu aria-expanded={!!isOpen ? true : undefined} aria-hidden={!isOpen} isOpen={isOpen}>
               <NavLinkList aria-current={isOpen} isOpen={isOpen} role="menubar">
-                {getNavLinkItems(location, isMobile && isOpen)}
+                {getNavLinkItems(location, isMobile && isOpen, setIsOpen)}
               </NavLinkList>
               <NavSocialList isOpen={isOpen}>
                 <Social />

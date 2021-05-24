@@ -30,6 +30,7 @@ export const OptInForm = ({
         status: true,
       },
     }}
+    tags="Positivity Pack"
   >
     <Input
       autoComplete="name"
@@ -61,5 +62,6 @@ export const OptInForm = ({
       placeholder="Telephone (optional)"
       title="Telephone"
     />
+    <input style={{display: "none"}} value="Positivity Pack" id="tags" readOnly={true} name="tags"/>
   </BaseForm>
 );

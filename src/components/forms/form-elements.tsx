@@ -15,6 +15,7 @@ import { applyStyle } from "../../utils";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   backgroundColor?: string;
+  display?: string;
 };
 
 type FormWrapperProps = {

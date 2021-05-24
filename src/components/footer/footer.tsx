@@ -8,6 +8,7 @@ import sheilaLogo from "../../img/sheilaLogo.svg";
 import { Constants } from "../../constants";
 import { SmartLink } from "../smart-link";
 import { FooterSocial } from "./footer-social";
+import { SubscribeForm } from "../forms";
 
 const StyledFooter = styled.footer`
   background-color: ${Constants.Colors.theGroveGreen};
@@ -102,6 +103,9 @@ export const Footer = () => {
           itemProp="image"
           title={"Whole Person Certified Coach"}
         />
+      </FlexFooter>
+      <FlexFooter>
+        <SubscribeForm />
       </FlexFooter>
       <FlexFooter>
         <FooterColumn>

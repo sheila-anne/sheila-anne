@@ -135,8 +135,6 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
   const { description, image, mainpitch, freebie, testimonials } = frontmatter;
 
   const fullTestimonials = [...testimonials];
-  const firstTestimonial = [fullTestimonials.shift()];
-
   const safeImage = image as NestedImage;
 
   const descriptionParts = description.split(".");
@@ -177,9 +175,6 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
           <h3>What people are saying:</h3>
         </CenteredText>
         <Youtube url="7jTx1xMKI_Q" />
-        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="1rem 0 1rem 0">
-          <Testimonial testimonials={firstTestimonial} />
-        </TestimonialContainer>
         <ContentBreak />
         <FlexContainer margin="1rem 0 0 0">
           <ImageContainer>

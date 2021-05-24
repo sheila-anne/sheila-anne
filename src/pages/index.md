@@ -42,6 +42,10 @@ intro:
     - wishing for less stress and more flow in your life
 
 testimonials:
+  - title: Kristen W.
+    imageAlt: Client testimonial from Kristen
+    text: Working with Sheila is a gift that brings clarity, peace, and confidence. I was teetering on a big career decision and decided to work with Sheila to chart the path forward. She helped me to understand what was truly important to me, and to design my ideal life as an entrepreneur, mom, wife, friend, and lifelong learner! One of the amazing results of working with Sheila is a business I've been waiting my entire career to launch - collective-coaching.com. So grateful for her services. She changed my life
+    imageSrc: /img/kristen-w-sheila-anne-testimonial.png
   - title: Taylor P.
     imageAlt: Client testimonial from Taylor
     text: >
@@ -51,8 +55,4 @@ testimonials:
 
       Without the work I have done with her the past few months I would still be stuck in a loop of fear, self doubt and crippling anxiety.
     imageSrc: /img/sheila-anne-taylor-testimonial.jpg
-  - title: Sophie G.
-    imageAlt: Client testimonial from Sophie
-    text: I connected with Sheila at the beginning of my career pivot. I had been consulting for the past two years and was ready to make a change, but I wasn't sure how to move forward. Sheila guided me through a four-week meditation on what my next move might look like, including identifying core values and exploring how I could move forward deliberately and with confidence. I left our work together with a clearer picture of the kind of organization I'd like to contribute to, work-wise, and a more grounded sense of self and purpose.
-    imageSrc: /img/sheila-anne-sophie-testimonial.jpg
 ---

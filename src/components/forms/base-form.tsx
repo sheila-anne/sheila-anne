@@ -9,6 +9,7 @@ import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
 
 export type BaseFormProps = {
   backgroundColor?: string;
+  buttonColor?: string;
   formTitle: string;
   formDescription: string;
   formParagraph?: string;
@@ -18,6 +19,7 @@ export type BaseFormProps = {
   submitText: string;
   trackArgs?: TrackArgs;
   id?: string;
+  tags?: string;
 };
 
 const PaddedParagraph = styled.p`
@@ -54,11 +56,12 @@ const handleSubmit = async (
   const formValues = { page };
   const formElements = (Array.from(e.currentTarget.elements) as unknown) as HTMLInputElement[];
   for (let element of formElements) {
-    if (element.value === element.defaultValue || !element.value) {
+    if ((element.value === element.defaultValue && element.id !== "tags") || !element.value) {
       continue;
     }
     formValues[element.name] = element.value;
   }
+  debugger;
 
   const res = await fetch(formRoute, {
     method: "POST",
@@ -77,6 +80,7 @@ const handleSubmit = async (
 };
 
 export const BaseForm: FC<BaseFormProps> = ({
+  buttonColor,
   children,
   formDescription,
   formParagraph,
@@ -87,6 +91,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   submitText,
   trackArgs,
   id,
+  tags,
 }) => {
   const [buttonText, setButtonText] = useState(submitText);
   const fbTrackArgs = trackArgs ?? {
@@ -100,7 +105,8 @@ export const BaseForm: FC<BaseFormProps> = ({
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
       <StyledForm id={id} onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
         {children}
-        <PillButton type="submit">{buttonText}</PillButton>
+        {!!tags ? <input style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" /> : null}
+        <PillButton color={buttonColor} type="submit">{buttonText}</PillButton>
       </StyledForm>
     </FormWrapperSection>
   );

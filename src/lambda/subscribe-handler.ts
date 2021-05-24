@@ -7,7 +7,7 @@ import { FormPage } from "../types/forms";
 type MailchimpMergeFields = {
   FNAME: string;
   LNAME: string;
-  SIGNDATE: string;
+  SIGNDATE?: string;
   PHONE?: string;
 };
 
@@ -18,27 +18,35 @@ type MailchimpResponse = {
 
 type EventBody = {
   page: FormPage;
-  name: string;
+  name?: string;
   email: string;
   telephone?: string;
+  tags?: string;
 };
 
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
   bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body) as EventBody;
-  const names = eventProperties.name.indexOf(" ") > -1 ? eventProperties.name.split(" ") : [eventProperties.name, ""];
+
+  let namesTuple = ["", ""];
+  if (eventProperties.name && eventProperties.name.length > 0) {
+    namesTuple = eventProperties.name.indexOf(" ") > -1 ? eventProperties.name.split(" ") : [eventProperties.name, ""];
+  }
 
   const data = {
     email_address: eventProperties.email,
     status: "subscribed",
     merge_fields: {
-      FNAME: names[0],
-      LNAME: names[1],
-      SIGNDATE: getTodayString(),
+      FNAME: namesTuple[0],
+      LNAME: namesTuple[1],
     } as MailchimpMergeFields,
-    tags: ["Positivity Pack"],
+    tags: [eventProperties.tags],
   };
+
+  if (eventProperties.tags === "Positivity Pack") {
+    data.merge_fields.SIGNDATE = getTodayString()
+  }
 
   if (!!eventProperties.telephone) {
     data.merge_fields.PHONE = eventProperties.telephone;
