@@ -67,12 +67,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `4451596119`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [process.env.GOOGLE_ANALYTICS_TRACKING_ID, process.env.GOOGLE_ADWORDS_TRACKING_ID],

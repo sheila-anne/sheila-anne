@@ -100,7 +100,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       <br />
       <p>
         I created the Root to Rise program because I know that you are ready for <i>real</i> change, which can only come
-        with sure-fire stratey and dedicated effort. Just like in a yoga sequence, each session will build upon the
+        with sure-fire strategy and dedicated effort. Just like in a yoga sequence, each session will build upon the
         previous — you will root down to establish a solid base of values & intentions, and rise up to make big waves in
         your career, relationships, and lifestyle.
       </p>
