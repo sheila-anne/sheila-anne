@@ -162,6 +162,7 @@ const getNavLinkItems = (
 ) => {
   const navLinks = [
     { to: "/about/", text: "About Me", title: "About Sheila Anne" },
+    { to: "/nourish/", text: "NOURISH.", title: "A whole-person group coaching program" },
     {
       to: "/working-together/",
       text: "Working Together",

@@ -1,8 +1,16 @@
 import React from "react";
 import Img from "gatsby-image";
-import styled from "styled-components";
+import styled, {css } from "styled-components";
 
 import { FlexImageCSS } from "./flex";
+
+export const BreakOutCss = css`
+  left: 50%;
+  margin-left: -48vw;
+  margin-right: -48vw;
+  right: 50%;
+  width: 96vw;
+`;
 
 type PreviewCompatibleImageProps = {
   className?: string;
@@ -70,9 +78,5 @@ export const PreviewCompatibleFlexImage = styled(PreviewCompatibleImage)`
 `;
 
 export const BreakOutImage = styled(PreviewCompatibleImage)`
-  left: 50%;
-  margin-left: -48vw;
-  margin-right: -48vw;
-  right: 50%;
-  width: 96vw;
+  ${BreakOutCss}
 `;

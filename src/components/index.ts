@@ -4,7 +4,7 @@ export { BlogPostMeta } from "./blog-post-meta";
 export { BlogRollAll } from "./blog-roll-all";
 export { BlogRoll } from "./blog-roll";
 export { BookingIframe, BookingSection } from "./booking";
-export { BreakOutImage, PreviewCompatibleFlexImage, PreviewCompatibleImage } from "./preview-compatible";
+export { BreakOutCss, BreakOutImage, PreviewCompatibleFlexImage, PreviewCompatibleImage } from "./preview-compatible";
 export { ContentBreak } from "./content-break";
 export { LinkButton, PlainButton, PillButton } from "./button";
 export { ContactForm, FreebieForm, OptInForm, SubscribeForm } from "./forms/";
