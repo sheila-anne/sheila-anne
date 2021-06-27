@@ -7,8 +7,8 @@ import { PreviewCompatibleImage } from "../components";
 
 const WorkingTogetherSections = [
   { name: "Exploration Call", href: "exploration-call" },
-  { name: "Ground To Grow Accelerator", href: "ground-to-grow" },
-  { name: "Root To Rise Transformational Program", href: "root-to-rise" },
+  { name: "Group coaching program", href: "nourish" },
+  { name: "Private coaching", href: "root-to-rise" },
 ];
 
 const Heading = styled.h1`

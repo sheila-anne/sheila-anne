@@ -7,7 +7,7 @@ export { BookingIframe, BookingSection } from "./booking";
 export { BreakOutCss, BreakOutImage, PreviewCompatibleFlexImage, PreviewCompatibleImage } from "./preview-compatible";
 export { ContentBreak } from "./content-break";
 export { LinkButton, PlainButton, PillButton } from "./button";
-export { ContactForm, FreebieForm, OptInForm, SubscribeForm } from "./forms/";
+export { ContactForm, FreebieForm, NourishForm, OptInForm, SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered";
 export { FAQ } from "./faq";

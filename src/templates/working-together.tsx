@@ -11,7 +11,6 @@ import {
   HTMLContent,
   Layout,
   LinkButton,
-  PreviewCompatibleImage,
   SEO,
   SmartLink,
   Testimonial,

@@ -11,12 +11,14 @@ import {
   FlexColSplitImage,
   HalfColumn,
   Layout,
+  NourishForm,
   PreviewCompatibleImage,
   SEO,
 } from "../components";
 
 const ColorContainer = styled.div<{ backgroundColor?: string }>`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
+  margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem 2rem;
 `;
@@ -72,7 +74,7 @@ export const NourishTemplate = ({ frontmatter }) => {
       </ColorContainerMobile>
 
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
-        <CenteredText color={Constants.Colors.nourishBrown} fontWeight="800">
+        <CenteredText color={Constants.Colors.nourishBrown} fontSize="2rem" fontWeight="800">
           <div>JOIN THE WAITLIST!</div>
           <div>Be the first to know when doors open</div>
           <div>& receive exclusive Early Bird bonuses!</div>
@@ -81,8 +83,7 @@ export const NourishTemplate = ({ frontmatter }) => {
       <h1 style={{ display: "none" }}>Nourish</h1>
       <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
         <HalfColumn>
-          {/* form */}
-          <div>form will go here</div>
+          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Join the waitlist!" page="nourish" />
         </HalfColumn>
         <HalfColumn>
           <FlexColSplitImage>
@@ -97,6 +98,43 @@ export const NourishTemplate = ({ frontmatter }) => {
           </FlexColSplitImage>
         </HalfColumn>
       </FlexContainer>
+      <PreviewCompatibleImage imageInfo={frontmatter.thirdImage} title="Nourish teaser photo" />
+      <CenteredText
+        backgroundColor={Constants.Colors.nourishNeutral}
+        color={Constants.Colors.nourishBrown}
+        padding="1rem"
+      >
+        <div>
+          FOR THE <b>AMBITIOUS WOMAN</b>
+        </div>
+        <div>
+          WHO IS <b>READY</b>
+        </div>
+        <div>
+          TO FULLY <b>NOURISH</b>
+        </div>
+        <div>
+          HER <b>UNIQUE POWER</b>
+        </div>
+        <div>
+          AND SAY <b>YES</b> TO
+        </div>
+        <div>
+          THE <b>WILDLY BEAUTIFUL</b> LIFE
+        </div>
+        <div>
+          <b>SHE KNOWS</b> SHE IS
+        </div>
+        <div>
+          CAPABLE OF <b>CREATING</b>.
+        </div>
+      </CenteredText>
+      <CenteredText backgroundColor={Constants.Colors.nourishNeutral} color={Constants.Colors.nourishBrown}>
+        Join the waitlist to stay in the loop.
+      </CenteredText>
+      <CenteredText backgroundColor={Constants.Colors.nourishNeutral} color={Constants.Colors.nourishBrown}>
+        Kicking off <b>Fall 2021!</b>
+      </CenteredText>
     </section>
   );
 };
@@ -143,6 +181,13 @@ export const pageQuery = graphql`
           }
         }
         secondImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        thirdImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
