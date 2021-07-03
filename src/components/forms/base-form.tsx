@@ -61,7 +61,6 @@ const handleSubmit = async (
     }
     formValues[element.name] = element.value;
   }
-  debugger;
 
   const res = await fetch(formRoute, {
     method: "POST",
