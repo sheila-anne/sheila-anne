@@ -103,6 +103,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
         padding="1rem"
+        fontSize="2rem"
       >
         <div>
           FOR THE <b>AMBITIOUS WOMAN</b>
@@ -129,10 +130,18 @@ export const NourishTemplate = ({ frontmatter }) => {
           CAPABLE OF <b>CREATING</b>.
         </div>
       </CenteredText>
-      <CenteredText backgroundColor={Constants.Colors.nourishNeutral} color={Constants.Colors.nourishBrown}>
+      <CenteredText
+        backgroundColor={Constants.Colors.nourishNeutral}
+        color={Constants.Colors.nourishBrown}
+        fontSize="2rem"
+      >
         Join the waitlist to stay in the loop.
       </CenteredText>
-      <CenteredText backgroundColor={Constants.Colors.nourishNeutral} color={Constants.Colors.nourishBrown}>
+      <CenteredText
+        backgroundColor={Constants.Colors.nourishNeutral}
+        color={Constants.Colors.nourishBrown}
+        fontSize="2rem"
+      >
         Kicking off <b>Fall 2021!</b>
       </CenteredText>
     </section>
