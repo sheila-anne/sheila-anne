@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { APIGatewayEvent, Context } from "aws-lambda";
 
-import { bodyGuardian, fetchResponse } from "./utils";
+import { bodyGuardian, getMd5, fetchResponse } from "./utils";
 import { FormPage } from "../types/forms";
 
 type MailchimpMergeFields = {
@@ -24,6 +24,8 @@ type EventBody = {
   tags?: string;
 };
 
+type MailChimpTagResponse = {};
+
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
   bodyGuardian(event);
 
@@ -45,25 +47,40 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
   };
 
   if (eventProperties.tags === "Positivity Pack") {
-    data.merge_fields.SIGNDATE = getTodayString()
+    data.merge_fields.SIGNDATE = getTodayString();
   }
 
   if (!!eventProperties.telephone) {
     data.merge_fields.PHONE = eventProperties.telephone;
   }
 
-  return fetchResponse<MailchimpResponse>(process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI, data, {
+  const headers = {
     Authorization: `Basic ${Buffer.from(`any:${process.env.MAILCHIMP_API_KEY}`).toString("base64")}`,
     "Content-Type": "application/json;charset=utf-8",
-  }).then(res => {
-    const data = res as MailchimpResponse;
-    if (data.status) {
-      const memberExists = data.title === "Member Exists";
-      const statusCode = data.status === "subscribed" || memberExists ? 200 : 422;
-      return {
+  };
+
+  return fetchResponse<MailchimpResponse>(process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI, data, headers).then(res => {
+    const responseData = res as MailchimpResponse;
+    if (responseData.status) {
+      const memberExists = responseData.title === "Member Exists";
+      const statusCode = responseData.status === "subscribed" || memberExists ? 200 : 422;
+      const returnData = {
         statusCode,
         body: JSON.stringify({ success: statusCode === 200, memberExists }),
       };
+
+      if (memberExists) {
+        fetchResponse<MailChimpTagResponse>(
+          `${process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI}/${getMd5(data.email_address)}/tags`,
+          { tags: data.tags.map(tag => ({ name: tag, status: "active" })) },
+          headers
+        ).then(_ => {
+          // MailchimpTagResponse is actually void
+          return returnData;
+        });
+      } else {
+        return returnData;
+      }
     }
     return res;
   });
