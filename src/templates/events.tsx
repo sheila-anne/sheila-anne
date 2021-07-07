@@ -4,7 +4,7 @@ import React from "react";
 import { BaseTemplate, CenteredText, HTMLContent, Layout, LinkButton, PreviewCompatibleImage, SEO, SmartLink } from "../components";
 import { Constants } from "../constants"
 
-const TheMat = ({ data, location }: GatsbyPage) => {
+const Events = ({ data, location }: GatsbyPage) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -38,7 +38,7 @@ const TheMat = ({ data, location }: GatsbyPage) => {
   );
 };
 
-export default TheMat;
+export default Events;
 
 export const pageQuery = graphql`
   query TheMatPage($id: String!) {

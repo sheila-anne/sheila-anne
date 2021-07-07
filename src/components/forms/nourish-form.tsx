@@ -10,11 +10,10 @@ export const NourishForm = ({
   formRoute = "/.netlify/functions/subscribe-handler",
   page,
   submitText,
-  id,
   isSubmitSuccess,
 }: BaseFormProps) => (
   <BaseForm
-    id={id}
+    id="nourish"
     isSubmitSuccess={isSubmitSuccess}
     formDescription=""
     formRoute={formRoute}

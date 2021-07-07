@@ -75,15 +75,15 @@ export const NourishTemplate = ({ frontmatter }) => {
 
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <CenteredText color={Constants.Colors.nourishBrown} fontSize="2rem" fontWeight="800">
-          <div>JOIN THE WAITLIST!</div>
-          <div>Be the first to know when doors open</div>
+          <div>GET EARLY ACCESS!</div>
+          <div>Be the first to apply</div>
           <div>& receive exclusive Early Bird bonuses!</div>
         </CenteredText>
       </ColorContainer>
       <h1 style={{ display: "none" }}>Nourish</h1>
       <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
         <HalfColumn>
-          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Join the waitlist!" page="nourish" />
+          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Get Early Access!" page="nourish" />
         </HalfColumn>
         <HalfColumn>
           <FlexColSplitImage>
@@ -134,15 +134,16 @@ export const NourishTemplate = ({ frontmatter }) => {
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
         fontSize="2rem"
+        margin="1rem 0"
       >
-        Join the waitlist to stay in the loop.
+        A 14 week group coaching program kicking off <b>Fall 2021!</b>
       </CenteredText>
       <CenteredText
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
         fontSize="2rem"
       >
-        Kicking off <b>Fall 2021!</b>
+        Sign up for Early Access 👆 to get Early Bird bonuses!
       </CenteredText>
     </section>
   );

@@ -7,10 +7,7 @@ bannerImage: /img/sheila-anne-self-love-workshop.png
 bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
-
-# Master Class
-
-## Self Workshop Series
+# Self Workshop Series
 
 Are you craving a little more community, confidence, and courage?
 
