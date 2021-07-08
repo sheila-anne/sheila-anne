@@ -11,6 +11,9 @@ type Colors = {
   theGroveLightGreen: string;
   theGroveGreenGray: string;
   redRocksRed: string;
+  nourishNeutral: string;
+  nourishGray: string;
+  nourishBrown: string;
 };
 
 const mobileBreakpoint = 768;

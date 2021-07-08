@@ -10,8 +10,8 @@ import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
 export type BaseFormProps = {
   backgroundColor?: string;
   buttonColor?: string;
-  formTitle: string;
-  formDescription: string;
+  formTitle?: string;
+  formDescription?: string;
   formParagraph?: string;
   formRoute?: string;
   isSubmitSuccess?: Dispatch<SetStateAction<boolean>>;
@@ -61,7 +61,6 @@ const handleSubmit = async (
     }
     formValues[element.name] = element.value;
   }
-  debugger;
 
   const res = await fetch(formRoute, {
     method: "POST",
@@ -106,7 +105,9 @@ export const BaseForm: FC<BaseFormProps> = ({
       <StyledForm id={id} onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
         {children}
         {!!tags ? <input style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" /> : null}
-        <PillButton color={buttonColor} type="submit">{buttonText}</PillButton>
+        <PillButton color={buttonColor} type="submit">
+          {buttonText}
+        </PillButton>
       </StyledForm>
     </FormWrapperSection>
   );
