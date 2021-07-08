@@ -24,8 +24,6 @@ type EventBody = {
   tags?: string;
 };
 
-type MailChimpTagResponse = {};
-
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
   bodyGuardian(event);
 
@@ -71,14 +69,14 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
 
       if (memberExists) {
         console.log("Member already exists, updating existing mailchimp member with tags");
-        return fetchResponse<MailChimpTagResponse>(
+        return fetchResponse<MailchimpResponse>(
           `${process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI}${getMd5(data.email_address)}/tags`,
           { tags: data.tags.map(tag => ({ name: tag, status: "active" })) },
           headers
         )
           .then(_ => {
             console.log("Updated tags successfully!");
-            // MailchimpTagResponse is actually void
+            // Mailchimp tag response is actually void ...
             return returnData;
           })
           .catch(err => {
@@ -88,8 +86,9 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
         console.log("Member added successfully!");
         return returnData;
       }
+    } else {
+      return { statusCode: 422, body: JSON.stringify({ success: false, message: "API call failed" }) };
     }
-    return res;
   });
 };
 
