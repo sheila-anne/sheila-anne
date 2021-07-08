@@ -71,7 +71,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
 
       if (memberExists) {
         console.log("Member already exists, updating existing mailchimp member with tags");
-        fetchResponse<MailChimpTagResponse>(
+        return fetchResponse<MailChimpTagResponse>(
           `${process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI}${getMd5(data.email_address)}/tags`,
           { tags: data.tags.map(tag => ({ name: tag, status: "active" })) },
           headers
