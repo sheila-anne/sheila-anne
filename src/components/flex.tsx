@@ -60,6 +60,7 @@ export const FlexColSplitImage = styled.div`
 
   @media (max-width: ${Constants.mobileWidth}) {
     max-width: inherit;
+    margin-bottom: 1rem;
   }
 `;
 

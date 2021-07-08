@@ -39,7 +39,7 @@ export const NetlifyForm: FC<NetylifyFormProps> = ({ actionRoute }) => (
         </label>
       </div>
       <ClickableButton name="SendMessage" type="submit">
-        Send!
+        Attend!
       </ClickableButton>
     </form>
   </FormWrapperSection>

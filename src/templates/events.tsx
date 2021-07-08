@@ -1,8 +1,8 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import { BaseTemplate, CenteredText, HTMLContent, Layout, LinkButton, PreviewCompatibleImage, SEO, SmartLink } from "../components";
-import { Constants } from "../constants"
+import { BaseTemplate, CenteredText, HTMLContent, Layout, LinkButton, SEO } from "../components";
+import { Constants } from "../constants";
 
 const Events = ({ data, location }: GatsbyPage) => {
   const { markdownRemark: post } = data;
@@ -16,23 +16,16 @@ const Events = ({ data, location }: GatsbyPage) => {
         location={location}
         title={post.frontmatter.pageTitle}
       />
-      <div>
-      <PreviewCompatibleImage
-        imageInfo={post.frontmatter.bannerImage}
-        title="Workshop series with Sheila Anne"
-      />
-
-      </div>
       <CenteredText margin="2rem 0 2rem 0">
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to={Constants.square.eventsUrl} >
-            Grab your spot here!
-          </LinkButton>
+        <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/master-class/">
+          Grab your master class spot here!
+        </LinkButton>
       </CenteredText>
       <BaseTemplate contentComponent={HTMLContent} content={post.html} />
       <CenteredText margin="1rem 0 1rem 0">
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to={Constants.square.eventsUrl} >
-            Don't miss out, reserve today!
-          </LinkButton>
+        <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to={Constants.square.eventsUrl}>
+          Don't miss out, reserve today!
+        </LinkButton>
       </CenteredText>
     </Layout>
   );

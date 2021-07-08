@@ -8,7 +8,6 @@ import {
   CenteredText,
   ContentBreak,
   FAQ,
-  HTMLContent,
   Layout,
   LinkButton,
   SEO,

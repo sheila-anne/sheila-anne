@@ -36,7 +36,14 @@ export async function fetchResponse<T>(
     fetchArgs.body = JSON.stringify(data);
   }
   return fetch(url, fetchArgs)
-    .then(response => response.json() as Promise<T>)
+    .then(response => {
+      try {
+        return response.json() as Promise<T>;
+      } catch (ex) {
+        console.log("There was an error converting to JSON: " + ex);
+        return Promise.resolve<T>(("{}" as unknown) as T);
+      }
+    })
     .then(data => {
       console.log("Response: ", data);
       return data;
