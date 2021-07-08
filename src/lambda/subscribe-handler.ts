@@ -70,15 +70,22 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
       };
 
       if (memberExists) {
+        console.log("Member already exists, updating existing mailchimp member with tags");
         fetchResponse<MailChimpTagResponse>(
-          `${process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI}/${getMd5(data.email_address)}/tags`,
+          `${process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI}${getMd5(data.email_address)}/tags`,
           { tags: data.tags.map(tag => ({ name: tag, status: "active" })) },
           headers
-        ).then(_ => {
-          // MailchimpTagResponse is actually void
-          return returnData;
-        });
+        )
+          .then(_ => {
+            console.log("Updated tags successfully!");
+            // MailchimpTagResponse is actually void
+            return returnData;
+          })
+          .catch(err => {
+            console.error("There was an error updating tags: " + err);
+          });
       } else {
+        console.log("Member added successfully!");
         return returnData;
       }
     }
