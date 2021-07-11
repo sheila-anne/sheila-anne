@@ -11,7 +11,7 @@ path: /events
 # Free Virtual Master Class: Curate Your Wildly Beautiful Life
 
 - Tuesday, July 20th, 2021 at 4PM Mountain Time
-- [Join Sheila for this immersive workshop](/master-class/), thoughtfully designed for ambitious women who want to step into the driver's seat, and create a life the wildly beautiful life they deserve. In just 60 minutes you'll learn exactly how to lead from a place of alignment, honor your one-of-a-kind superpowers, and make big changes in your career, habits, and relationships. Just in time for the passion and energy of Leo season, you'll leave this session feeling inspired and ready to take big action 🔥
+- [Join Sheila for this immersive workshop](/master-class/), thoughtfully designed for ambitious women who want to step into the driver's seat, and create the wildly beautiful life they deserve. In just 60 minutes you'll learn exactly how to lead from a place of alignment, honor your one-of-a-kind superpowers, and make big changes in your career, habits, and relationships. Just in time for the passion and energy of Leo season, you'll leave this session feeling inspired and ready to take big action 🔥
 
 # Self Workshop Series
 

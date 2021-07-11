@@ -11,12 +11,12 @@ const MarginText = styled.div`
 const MasterClass = ({ location }: GatsbyPage) => (
   <Layout location={location}>
     <SEO
-      description={`Sign up for the Curating Your Wildly Beautiful Life event.`}
+      description={`Sign up for the Curate Your Wildly Beautiful Life event.`}
       location={location}
       title={`Master Class | Sheila Anne`}
       type="website"
     />
-    <h1>Curating Your Wildly Beautiful Life</h1>
+    <h1>Curate Your Wildly Beautiful Life</h1>
     <NetlifyForm actionRoute="/thank-you" />
     <MarginText>
       This master class is thoughtfully designed for ambitious women who want to step into the driver's seat, and create

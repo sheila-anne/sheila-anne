@@ -22,7 +22,7 @@ const ThankYou = ({ data, location }: GatsbyPage) => (
     <h1>Congrats!</h1>
     <FlexContainer>
       <SpacedOutText>
-        You're all signed up for <b>Curating Your Wildly Beautiful Life</b>.
+        You're all signed up for <b>Curate Your Wildly Beautiful Life</b>.
       </SpacedOutText>
       <SpacedOutText>
         Share your favorite graphic from this page on social media to let your friends know you're coming! Tag{" "}
