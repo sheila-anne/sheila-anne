@@ -20,7 +20,7 @@ const MasterClass = ({ location }: GatsbyPage) => (
     <NetlifyForm actionRoute="/thank-you" />
     <MarginText>
       This master class is thoughtfully designed for ambitious women who want to step into the driver's seat, and create
-      a life the wildly beautiful life they deserve. In just 60 minutes, you'll learn exactly how to lead from a place
+      the wildly beautiful life they deserve. In just 60 minutes, you'll learn exactly how to lead from a place
       of alignment, honor your one-of-a-kind superpowers, and make big changes in your career, habits, and
       relationships. Just in time for the passion and energy of Leo season, you'll leave this session feeling inspired
       and ready to take big action 🔥
