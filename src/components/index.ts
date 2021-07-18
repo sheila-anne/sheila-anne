@@ -22,5 +22,6 @@ export { Share } from "./share";
 export { SmartLink } from "./smart-link";
 export { TagList } from "./tag-list";
 export { Testimonial } from "./testimonial";
+export { Timeline } from "./timeline";
 export { WorkingTogetherHeader } from "./working-together-header";
 export { Youtube } from "./youtube";

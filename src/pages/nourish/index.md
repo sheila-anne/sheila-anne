@@ -8,5 +8,7 @@ bannerImageMobile: /img/nourish-banner-image-mobile.png
 bannerImageHeadline: A whole person coaching program to cultivate well-being, foster community, and let your natural self thrive
 secondImage: /img/sheila-anne-nourish-form-pic.jpg
 thirdImage: /img/nourish-teaser-photo.png
+montage: /img/sheila-anne-nourish-montage.png
+sideBySide: /img/nourish-side-by-side.jpeg
 path: /nourish
 ---
