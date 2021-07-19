@@ -88,7 +88,6 @@ module.exports = {
               maxWidth: 1260,
               linkImagesToOriginal: false,
               quality: 100,
-              showCaption: true,
             },
           },
           {
@@ -117,7 +116,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/freebie/**", "/giveaway/*"],
+        query: `{
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+        }`,
+      },
+      resolvePages: ({ allSitePage: { nodes: allPages } }) => allPages,
+      serialize: ({ path }) => {
+        return {
+          url: path,
+        };
       },
     },
     "gatsby-plugin-styled-components",
