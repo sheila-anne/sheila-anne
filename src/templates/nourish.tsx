@@ -173,7 +173,7 @@ export const NourishTemplate = ({ frontmatter }) => {
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <CenteredText color={Constants.Colors.nourishBrown} fontSize="1.5rem">
           <div>
-            NOURISH is a group coaching program thoughtfully designed for the <b>driven woman</b> who is{" "}
+            NOURISH is a group coaching program for the <b>driven woman</b> who is{" "}
             <b>ready to thrive</b> in her body, mind, and soul. You can expect transformational coaching, immersive
             training, community connection, and get-out-of-your-comfort-zone experiences. This is unlike anything you’ve
             done before. This is what your next-level self has been waiting for.
@@ -202,13 +202,13 @@ export const NourishTemplate = ({ frontmatter }) => {
           ]}
         />
         <SpacedOutText>
-          Bi-weekly training & coaching calls will help you to hone-in learn, practice, and transform. Between our calls
+          Bi-weekly training & coaching calls will help you to hone-in, learn, practice, and transform. Between our calls
           you will be working through the NOURISH Notebook, integrating learnings, and connecting with the NOURISH
           community via our messaging platform. You’ll constantly be supported, held, and cheered on.
         </SpacedOutText>
 
         <SpacedOutText>
-          If you are an ambitious, adventurous woman who wants to be her own unique powerhouse, this program is for you.
+          If you are an ambitious, adventurous woman who wants to be her own unique powerhouse, this program is for you!
         </SpacedOutText>
         <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
           <CenteredText>
@@ -268,8 +268,8 @@ export const NourishTemplate = ({ frontmatter }) => {
             <SpacedOutText padding="1rem">
               I know that you want to feel present, alive, and fulfilled each day, and that’s what I wanted too! Through
               the tragic loss of my mother, pivoting my career (again and again) , leaving the corporate world, falling
-              in love, and uprooting my life countless times, I’ve learned that our power and our adaptability doesn’t
-              exist in isolation. This program is truly a work of my soul and I am beyond grateful to be able to share
+              in love, and uprooting my life countless times, I’ve learned that our power and our adaptability don't
+              exist in isolation. This program is truly a work of my soul, and I am beyond grateful to be able to share
               it with you.
             </SpacedOutText>
           </FlexContainer>
@@ -280,8 +280,10 @@ export const NourishTemplate = ({ frontmatter }) => {
           <h2>Investment</h2>
           <h3>NOURISH </h3>
           <SpacedOutText>
-            All trainings, retreats, curriculum, community, meditations, notebook, support from: 3 payments of $450 or
-            $1300
+            All trainings, retreats, curriculum, community, meditations, notebook, and support
+          </SpacedOutText>
+          <SpacedOutText>
+            $1300 or 3 monthly payments of $450 
           </SpacedOutText>
           <h3>NOURISH+</h3>
           <SpacedOutText>
@@ -292,7 +294,7 @@ export const NourishTemplate = ({ frontmatter }) => {
               <li>Private messaging with Sheila </li>
             </ul>
           </SpacedOutText>
-          <SpacedOutText>$1700 or 3 payments of $575</SpacedOutText>
+          <SpacedOutText>$1700 or 3 monthly payments of $575</SpacedOutText>
           <SpacedOutText>
             Sheila is committed to program accessibility, so please contact her for more information on customized
             payment options and scholarships.
@@ -301,23 +303,6 @@ export const NourishTemplate = ({ frontmatter }) => {
       </div>
       <ContentBreak />
       <FAQ faq={faqs}></FAQ>
-      <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
-        <HalfColumn>
-          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Get Early Access!" page="nourish" />
-        </HalfColumn>
-        <HalfColumn>
-          <FlexColSplitImage>
-            <RoundedImage
-              imageInfo={{
-                alt: "Nourish whole person Coaching Program by Sheila Anne",
-                childImageSharp: frontmatter.secondImage.childImageSharp,
-              }}
-              loading="eager"
-              title="A whole person coaching program to cultivate well-being, foster community, and let your natural self thrive"
-            />
-          </FlexColSplitImage>
-        </HalfColumn>
-      </FlexContainer>
       <PreviewCompatibleImage imageInfo={frontmatter.thirdImage} title="Nourish teaser photo" />
     </section>
   );
