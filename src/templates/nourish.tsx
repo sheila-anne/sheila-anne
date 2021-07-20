@@ -244,7 +244,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           </CenteredText>
         </ColorContainer>
         <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
-          <h2>Why did a chronic goal setter choose to design NOURISH for you?</h2>
+          <h2>I’m dedicated to helping you thrive</h2>
           <HalfColumn>
             <FlexColSplitImage>
               <RoundedImage
