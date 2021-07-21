@@ -18,6 +18,5 @@ export const getFormattedFormElements = (e: React.FormEvent<HTMLFormElement>) =>
       formValues[element.name] = element.options[element.selectedIndex].value;
     }
   }
-  delete formValues["tags"];
   return formValues as FormattedFormElement;
 };
