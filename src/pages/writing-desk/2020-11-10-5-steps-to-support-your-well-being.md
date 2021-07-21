@@ -5,7 +5,7 @@ date: 2020-11-10T03:26:43.742Z
 description: 5 steps to support your well-being during hectic times, pandemic
   times, and just generally every day.
 featuredpost: false
-featuredImage: /img/da45c030-a061-47f6-9288-1c31051915b7.jpeg
+featuredImage: /img/burning-sage.jpg
 tags:
   - advice
   - anxiety
@@ -63,7 +63,7 @@ If you want to take your breath work a bit further, here are some of the guided 
 
 ## 3. Mantra it out, or try yelling
 
-![Mantras for well-being](/img/mantra-it-out.jpeg "Mantra it out")
+![Mantras for well-being](/img/mantra-it-out.jpg "Mantra it out")
 
 I love mantras. I think they can be incredibly powerful in retraining our neural pathways, so we can think bigger, more positively, and more confidently. A healthier, more powerful mind yields courageous change!
 
@@ -101,7 +101,7 @@ Ever since getting a dog (Buckwheat), I’ve relished our walks. If you have a d
 
 ## 5. Fuel with food
 
-![Sourdough bread for well-being](/img/sourdough-food-fuel.jpeg "Sourdough bread loaf")
+![Sourdough bread for well-being](/img/sourdough-food-fuel.jpg "Sourdough bread loaf")
 
 If you ever follow along on my Instagram stories you may have noticed my love for homemade creations like sourdough pancakes, sourdough bread, liquid elixirs, and energizing snacks.
 
