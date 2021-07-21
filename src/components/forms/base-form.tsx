@@ -110,7 +110,9 @@ export const BaseForm: FC<BaseFormProps> = ({
           handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess, additionalSubmitHandler)
         }
         data-netlify={isNetlify}
+        name={id}
       >
+        {isNetlify && <Hidden as="input" name="form-name" value={id}/>}
         {children}
         {!!tags ? (
           <Hidden as="input" style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" />

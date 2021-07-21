@@ -26,19 +26,12 @@ const Select = ({ options, name, id }: { options: string[]; name: string; id: st
 };
 
 const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  const formValues = getFormattedFormElements(event);
-  delete formValues["tags"];
-
-  const encodedFormValues = Object.keys(formValues)
-    .map(key => {
-      encodeURIComponent(key) + "=" + encodeURIComponent(formValues[key]);
-    })
-    .join("&");
+  const formData = new FormData(event.target as HTMLFormElement);
 
   await fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encodedFormValues,
+    body: new URLSearchParams(formData as unknown as string).toString(),
   }).catch(console.error);
 };
 
