@@ -1,8 +1,9 @@
 import React, { Dispatch, FC, FormEvent, SetStateAction, useState } from "react";
 import styled from "styled-components";
 
-import { FormWrapperSection } from "./form-elements";
+import { FormWrapperSection, Hidden } from "./form-elements";
 import { FormPage } from "../../types/forms";
+import { getFormattedFormElements } from "./form-utils";
 import { InnerHandlerReturn } from "../../types/lambda";
 import { PillButton } from "../button";
 import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
@@ -20,6 +21,8 @@ export type BaseFormProps = {
   trackArgs?: TrackArgs;
   id?: string;
   tags?: string;
+  additionalSubmitHandler?: (event: React.FormEvent<HTMLFormElement>) => void;
+  isNetlify?: boolean;
 };
 
 const PaddedParagraph = styled.p`
@@ -38,7 +41,8 @@ const handleSubmit = async (
   page: string,
   setButtonText: Dispatch<SetStateAction<string>>,
   trackArgs: TrackArgs,
-  isSubmitSuccess?: Dispatch<SetStateAction<boolean>>
+  isSubmitSuccess?: Dispatch<SetStateAction<boolean>>,
+  additionalSubmitHandler?: (event: React.FormEvent<HTMLFormElement>) => void
 ) => {
   e.preventDefault();
 
@@ -53,14 +57,7 @@ const handleSubmit = async (
   trackCustomEvent({ type: "conversion", args });
   trackFacebook({ eventType: "track", ...trackArgs });
 
-  const formValues = { page };
-  const formElements = (Array.from(e.currentTarget.elements) as unknown) as HTMLInputElement[];
-  for (let element of formElements) {
-    if ((element.value === element.defaultValue && element.id !== "tags") || !element.value) {
-      continue;
-    }
-    formValues[element.name] = element.value;
-  }
+  const formValues = { page, ...getFormattedFormElements(e) };
 
   const res = await fetch(formRoute, {
     method: "POST",
@@ -76,6 +73,9 @@ const handleSubmit = async (
 
   setButtonText(success ? "Success!" : "Error");
   isSubmitSuccess && isSubmitSuccess(success);
+  if (success) {
+    additionalSubmitHandler && additionalSubmitHandler(e);
+  }
 };
 
 export const BaseForm: FC<BaseFormProps> = ({
@@ -91,6 +91,8 @@ export const BaseForm: FC<BaseFormProps> = ({
   trackArgs,
   id,
   tags,
+  additionalSubmitHandler,
+  isNetlify,
 }) => {
   const [buttonText, setButtonText] = useState(submitText);
   const fbTrackArgs = trackArgs ?? {
@@ -102,9 +104,17 @@ export const BaseForm: FC<BaseFormProps> = ({
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
-      <StyledForm id={id} onSubmit={e => handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess)}>
+      <StyledForm
+        id={id}
+        onSubmit={e =>
+          handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess, additionalSubmitHandler)
+        }
+        data-netlify={isNetlify}
+      >
         {children}
-        {!!tags ? <input style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" /> : null}
+        {!!tags ? (
+          <Hidden as="input" style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" />
+        ) : null}
         <PillButton color={buttonColor} type="submit">
           {buttonText}
         </PillButton>

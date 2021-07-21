@@ -9,6 +9,8 @@ bannerImageHeadline: A whole person coaching program to cultivate well-being, fo
 secondImage: /img/sheila-anne-nourish-form-pic.jpg
 thirdImage: /img/nourish-teaser-photo.png
 montage: /img/sheila-anne-nourish-montage.png
-sideBySide: /img/nourish-side-by-side.jpeg
+coachingImage: /img/sheila-coaching.png
+sideBySide: /img/nourish-side-by-side.jpg
+welcomeToNourish: /img/welcome-home-to-nourish.jpg
 path: /nourish
 ---

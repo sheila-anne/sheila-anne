@@ -5,7 +5,7 @@ date: 2020-12-28T23:33:06.208Z
 description: "This very special tool will help you to feel more present,
   grateful, and happy each day. "
 featuredpost: false
-featuredImage: /img/gratitude-jar-example.jpeg
+featuredImage: /img/gratitude-jar-example.jpg
 tags:
   - coaching
   - confidence
@@ -24,7 +24,7 @@ That was the year that I learned the importance and power of gratitude. Though i
 
 Let’s make a gratitude jar!
 
-![Gratitude jar to increase happiness and presence](/img/gratitude-jar-full.jpeg "Gratitude jar to increase happiness and presence")
+![Gratitude jar to increase happiness and presence](/img/gratitude-jar-full.jpg "Gratitude jar to increase happiness and presence")
 
 **Why make a gratitude jar**
 
@@ -45,9 +45,9 @@ Let’s make a gratitude jar!
 
 THAT’S IT! I recommend you start on January 1 but, as I believe with all habits, it's really best to start when and wherever you are - even mid month, just get started!
 
-![Photo of a jar](/img/empty-jar.jpeg "Empty jar or container for all your gratitude notes")
+![Photo of a jar](/img/empty-jar.jpg "Empty jar or container for all your gratitude notes")
 
-![Scissors and post-it notes to put in gratitude jar](/img/post-its-and-paper-for-gratitude-jar.jpeg "Scissors and post-it notes for gratitude jar")
+![Scissors and post-it notes to put in gratitude jar](/img/post-its-and-paper-for-gratitude-jar.jpg "Scissors and post-it notes for gratitude jar")
 
 **\
 How to use your gratitude jar**

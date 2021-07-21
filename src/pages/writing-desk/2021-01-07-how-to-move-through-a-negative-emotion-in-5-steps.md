@@ -8,7 +8,7 @@ description: >
   here to provide five steps to moving through a negative emotion and back to
   equilibrium.
 featuredpost: false
-featuredImage: /img/moving-though-negative-emotion.jpeg
+featuredImage: /img/moving-though-negative-emotion.jpg
 tags:
   - anxiety
   - coaching
@@ -17,11 +17,12 @@ tags:
   - stress management
   - tips
 ---
+
 Ugh - isn’t it just the worst - being struck by a negative emotion such as frustration, panic, anger, sadness, worry, disappointment, or guilt? Maybe it’s an upcoming exam, a fight with a friend, a love interest who won’t text you back, consumption of news, or uncertainty about the future.
 
 During times like these, it can be challenging to see the light on the other side of the feeling you’re currently experiencing. I’m here to provide five steps to moving through a negative emotion and back to equilibrium.
 
-![Girl seated, moving through negative emotion](/img/moving-though-negative-emotion.jpeg "Moving through a negative emotion")
+![Girl seated, moving through negative emotion](/img/moving-though-negative-emotion.jpg "Moving through a negative emotion")
 
 ## 1. Acknowledge the feeling in your body that’s bubbling up
 
