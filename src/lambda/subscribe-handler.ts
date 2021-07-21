@@ -28,6 +28,10 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
   bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body) as EventBody;
+  if(!eventProperties.tags) {
+    eventProperties.tags = '';
+  }
+  console.log('Received the following event:' + event.body);
 
   let namesTuple = ["", ""];
   if (eventProperties.name && eventProperties.name.length > 0) {
