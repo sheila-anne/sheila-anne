@@ -104,7 +104,6 @@ const NourishApplyButton = () => (
 );
 
 export const NourishTemplate = ({ frontmatter }) => {
-  console.log(frontmatter);
   return (
     <section>
       <DesktopImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
