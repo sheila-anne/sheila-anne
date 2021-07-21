@@ -8,6 +8,7 @@ export const ContactForm = ({
   submitText,
 }) => (
   <NetlifyForm
+    actionRoute="/thank-you"
     formName={"contact-us"}
     submitButtonText={submitText}
   >

@@ -62,7 +62,6 @@ export const NourishForm = ({
     additionalSubmitHandler={onSubmit}
     isNetlify={true}
   >
-    <Hidden as="input" name="form-name" value="nourish-form" readOnly={true} />
     <Input
       autoComplete="given-name"
       backgroundColor={backgroundColor}
