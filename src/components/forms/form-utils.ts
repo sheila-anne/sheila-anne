@@ -4,10 +4,13 @@ type FormattedFormElement = {
 
 export const getFormattedFormElements = (e: React.FormEvent<HTMLFormElement>) => {
   const formValues = {};
-  const formElements = Array.from(e.currentTarget.elements) as unknown as HTMLElement[];
+  const targetedElements = e.currentTarget
+    ? e.currentTarget.elements
+    : (e.target as EventTarget & HTMLFormElement).elements;
+  const formElements = Array.from(targetedElements) as unknown as HTMLElement[];
   for (let element of formElements) {
-    if (element instanceof HTMLInputElement) {
-      if ((element.value === element.defaultValue && element.id !== "tags") || !element.value) {
+    if (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement) {
+      if (element.value === element.defaultValue || !element.value) {
         continue;
       }
       formValues[element.name] = element.value;
@@ -15,5 +18,6 @@ export const getFormattedFormElements = (e: React.FormEvent<HTMLFormElement>) =>
       formValues[element.name] = element.options[element.selectedIndex].value;
     }
   }
+  delete formValues["tags"];
   return formValues as FormattedFormElement;
 };
