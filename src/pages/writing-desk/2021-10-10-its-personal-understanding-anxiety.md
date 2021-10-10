@@ -9,7 +9,7 @@ description: If there is one thing that the pandemic has taught us, it’s that
   emotions, and honoring where we are in our process. For me, the pandemic
   created heightened anxiety I hadn’t felt since childhood.
 featuredpost: true
-featuredImage: /img/understanding-anxiety.jpeg
+featuredImage: /img/understanding-anxiety.jpg
 tags:
   - it's personal
   - anxiety
@@ -88,7 +88,7 @@ Whenever I start working with a new client I introduce them to meditation apps! 
 
 Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to drop me a note here or [message me on Instagram](https://www.instagram.com/sheflowsandgrows/).
 
-![](/img/understanding-anxiety.jpeg)
+![](/img/understanding-anxiety.jpg)
 
 
 
