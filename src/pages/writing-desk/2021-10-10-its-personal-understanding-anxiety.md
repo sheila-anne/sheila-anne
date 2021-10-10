@@ -20,7 +20,7 @@ tags:
 
 “I think I have … anxiety,” I said with an exhale, looking anywhere but at my therapist.
 
-Finally, I looked up. Her expression was open and neutral, as if I just told her the sky was blue. As I was preparing for this conversation, I had imagined she would gasp and either tell me that I was wrong or that I needed to go on medication straight away.
+Finally, I looked up. Her expression was open and neutral, as if I told her the sky was blue. As I was preparing for this conversation, I had imagined she would gasp and either tell me that I was wrong or that I needed to go on medication straight away.
 
 Neither of those things happened. 
 
