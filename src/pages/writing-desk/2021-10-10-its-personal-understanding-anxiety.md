@@ -18,15 +18,9 @@ tags:
 ---
 *October 10th is World Mental Health Day. I thought this might be a good time to share my experience of identifying with anxiety and common misconceptions. This blog is purely for educational purposes and is not a replacement for mental health counseling. If you have questions don’t hesitate to reach out or connect.*
 
-
-
 “I think I have … anxiety,” I said with an exhale, looking anywhere but at my therapist.
 
-
-
 Finally, I looked up. Her expression was open and neutral, as if I just told her the sky was blue. As I was preparing for this conversation, I had imagined she would gasp and either tell me that I was wrong or that I needed to go on medication straight away.
-
-
 
 Neither of those things happened. 
 
@@ -36,15 +30,13 @@ I grew up during a time when mental health was still stigmatized, going to a the
 
 If there is one thing that the pandemic has taught us, it’s that mental health needs to be as prioritized as physical health and that there is so much more that we can do for ourselves and as a collective to nurture our well-being. This includes seeing ourselves as whole people with complex emotions, and honoring where we are in our process. For me, the pandemic created heightened anxiety I hadn’t felt since childhood.
 
-As it turns out, I’m not alone here. Amy Cuddy and JillEllyn Riley came up with the term “[pandemic flux syndrome](https://www.washingtonpost.com/outlook/2021/08/11/pandemic-anxiety-psychology-delta/),” to encapsulate the mental health toll much of the world is facing during a time that is washed with uncertainty and emotional depletion.
+As it turns out, I’m not alone here. Amy Cuddy and Jill Ellyn Riley came up with the term “[pandemic flux syndrome](https://www.washingtonpost.com/outlook/2021/08/11/pandemic-anxiety-psychology-delta/),” to encapsulate the mental health toll much of the world is facing during a time that is washed with uncertainty and emotional depletion.
 
 Even as a coach that has worked with over a hundred clients on promoting well-being and finding alignment in their lives and careers, I’m still learning all the time. I’ve come to understand that living in this place of “not-knowing-always-learning” is key for helping professionals to serve their clients at a high level.
 
-While growing my own relationship with anxiety, I’ve been able to help my clients get to know theirs. Like me, many of my clients experience varying levels of anxiety, but have been told most of their lives to “keep going,” “stay positive,” “just relax,” or “chill out.” Statements like these undermine our lived experience and keep us from fully stepping into our best selves.
+While growing my own relationship with anxiety, I’ve been able to help my clients get to know theirs. Like me, many of my clients experience varying levels of anxiety, but have been told most of their lives to “keep going,” “stay positive,” “just relax,” or “chill out.” Statements like these undermine our lived experience and keep us from fully stepping into our best selves.  I recently started a program to become a certified trauma-informed coach and I'm looking forward to the tools and understanding it will provide me with, so I can more powerfully help my clients.
 
-With that, I wanted to bust a handful of myths that I used to believe about anxiety.
-
-
+In this article, I am busting a handful of myths that I used to believe about anxiety.
 
 ## 5 Unfortunate Anxiety Myths I Used To Believe 
 
@@ -89,6 +81,14 @@ Sometimes feeling stressed or anxious can make us want to stay put when it can a
 ### Guided Meditation 
 
 Whenever I start working with a new client I introduce them to meditation apps! Using an app not only gives them access to a wealth of on-demand guided meditations but can help them chart their progress. My favorite of the moment is Insight Timer but there are so many out there. These days some companies will pay for their employees to have premium meditation app subscriptions. I totally love this. A favorite meditation of mine during stressful times is the RAIN meditation by Tara Brach. If you’re curious about meditation I’d recommend reading 10% Happier by Dan Harris. 
+
+
+
+
+
+Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to drop me a note here or [message me on Instagram](https://www.instagram.com/sheflowsandgrows/).
+
+![](/img/understanding-anxiety.jpeg)
 
 
 
