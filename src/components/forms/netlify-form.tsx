@@ -10,36 +10,28 @@ const Honeypot = styled.p`
 
 type NetylifyFormProps = {
   actionRoute: string;
+  formName: string;
+  submitButtonText: string;
 };
 
 const ClickableButton = styled(PlainButton)`
   cursor: pointer;
+  margin-top: 1rem;
 `;
 
-const FORM_NAME = "sheila-anne-event";
-
-export const NetlifyForm: FC<NetylifyFormProps> = ({ actionRoute }) => (
+export const NetlifyForm: FC<NetylifyFormProps> = ({ actionRoute, formName, submitButtonText, children }) => (
   <FormWrapperSection>
-    <form id={`#${FORM_NAME}`} name={FORM_NAME} data-netlify="true" action={actionRoute}>
+    <form id={`#${formName}`} name={formName} data-netlify="true" action={actionRoute}>
       <Honeypot>
         <label>
           Don’t fill this out if you expect to hear from us!
           <Input name="bot-field" value="" readOnly />
         </label>
       </Honeypot>
-      <Honeypot as="input" name="form-name" value={FORM_NAME} readOnly={true} />
-      <div>
-        <label htmlFor="name">
-          Your Name: <Input type="text" id="name" name="name" required={true} autoComplete="given-name" />
-        </label>
-      </div>
-      <div>
-        <label htmlFor="email">
-          Your Email: <Input type="email" id="email" name="email" required={true} autoComplete="email" />
-        </label>
-      </div>
+      <Honeypot as="input" name="form-name" value={formName} readOnly={true} />
+      {children}
       <ClickableButton name="SendMessage" type="submit">
-        Attend!
+        {submitButtonText}
       </ClickableButton>
     </form>
   </FormWrapperSection>

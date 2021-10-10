@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Layout, NetlifyForm, SEO } from "../../components";
+import { Input } from "../../components/forms/form-elements"
 
 const MarginText = styled.div`
   margin-bottom: 1rem;
@@ -17,7 +18,18 @@ const MasterClass = ({ location }: GatsbyPage) => (
       type="website"
     />
     <h1>Curate Your Wildly Beautiful Life</h1>
-    <NetlifyForm actionRoute="/thank-you" />
+    <NetlifyForm actionRoute="/thank-you" formName="sheila-anne-event" submitButtonText="Attend!">
+    <div>
+        <label htmlFor="name">
+          Your Name: <Input type="text" id="name" name="name" required={true} autoComplete="given-name" />
+        </label>
+      </div>
+      <div>
+        <label htmlFor="email">
+          Your Email: <Input type="email" id="email" name="email" required={true} autoComplete="email" />
+        </label>
+      </div>
+      </NetlifyForm>
     <MarginText>
       This master class is thoughtfully designed for ambitious women who want to step into the driver's seat, and create
       the wildly beautiful life they deserve. In just 60 minutes, you'll learn exactly how to lead from a place

@@ -1,26 +1,18 @@
 import React from "react";
 
-import { BaseForm, BaseFormProps } from "./base-form";
+import { NetlifyForm } from "./";
 import { Input, TextArea } from "./form-elements";
 
 export const ContactForm = ({
   backgroundColor,
-  formDescription,
-  formParagraph,
-  formRoute = "/.netlify/functions/contact-handler",
-  formTitle,
-  page,
   submitText,
-}: BaseFormProps) => (
-  <BaseForm
-    formDescription={formDescription}
-    formParagraph={formParagraph}
-    formRoute={formRoute}
-    formTitle={formTitle}
-    page={page}
-    submitText={submitText}
-    trackArgs={{ eventName: "Contact", sendTo: "AW-456930843/fuarCJq8-fIBEJvs8NkB" }}
+}) => (
+  <NetlifyForm
+    formName={"contact-us"}
+    submitButtonText={submitText}
   >
+    <h2>Let's get in touch</h2>
+    <div>Have further questions for me? Don't hesitate to reach out, let's get to know one another:</div>
     <Input
       autoComplete="name"
       backgroundColor={backgroundColor}
@@ -56,5 +48,5 @@ export const ContactForm = ({
     <div>
       <TextArea id="message" name="message" placeholder="Message" required={true} title="Write your message here" />
     </div>
-  </BaseForm>
+  </NetlifyForm>
 );
