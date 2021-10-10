@@ -86,7 +86,7 @@ Whenever I start working with a new client I introduce them to meditation apps! 
 
 
 
-Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to drop me a note here or [message me on Instagram](https://www.instagram.com/sheflowsandgrows/).
+Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to [drop me a note here](/contact/) or [message me on Instagram](https://www.instagram.com/sheflowsandgrows/).
 
 ![](/img/understanding-anxiety.jpg)
 

@@ -5,15 +5,18 @@ import styled from "styled-components";
 import { applyStyle } from "../utils";
 import { Constants } from "../constants";
 import {
+  LinkButton,
   BreakOutImage,
   CenteredText,
+  ContentBreak,
+  FAQ,
   FlexContainer,
   FlexColSplitImage,
   HalfColumn,
   Layout,
-  NourishForm,
   PreviewCompatibleImage,
   SEO,
+  Timeline,
 } from "../components";
 
 const ColorContainer = styled.div<{ backgroundColor?: string }>`
@@ -56,11 +59,57 @@ const RoundedImage = styled(PreviewCompatibleImage)`
   border-radius: 1rem;
 `;
 
+const SpacedOutText = styled.div<{ padding?: string }>`
+  margin: 1rem 0;
+  ${({ padding }) => !!padding && `padding: ${padding}`}
+`;
+
+const SmallerHeadline = styled.h2`
+  margin-top: 1rem;
+`;
+
+const StyledQuote = styled.blockquote`
+  padding: 1rem;
+`;
+
+const faqs = [
+  {
+    question: "What if I miss a session?",
+    answer:
+      "We will miss having you but the calls are always recorded and will be available for you on-demand throughout the entirety of the program!",
+  },
+  {
+    question: "Will I get personal coaching from Sheila?",
+    answer:
+      "There will be an opportunity for you to receive individual coaching during our bi-weekly group sessions. If you desire a more personalized experience, I encourage you to invest in NOURISH VIP. Each month we will have one 60 minute session, and you will have unlimited access to Sheila via voice and text support.",
+  },
+  {
+    question: "How do I know if I’m ready for NOURISH?",
+    answer:
+      "If you read through and resonate with everything on this page - it’s likely that you are ready! Keep in mind that once you apply, we will hop on a call to confirm that it’s the right fit for you.Listen to your heart and see if this program is calling you.",
+  },
+  { question: "What isn’t NOURISH?", answer: "NOURISH is not a replacement for mental health counseling" },
+  {
+    question: "What is the timeline for NOURISH?",
+    answer: "The program kicks off in mid-September 2021 and will run until mid-December 2021 (14 weeks)",
+  },
+];
+
+const NourishApplyButton = () => (
+  <CenteredText margin="2rem 0">
+    <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
+      Apply now
+    </LinkButton>
+  </CenteredText>
+);
+
 export const NourishTemplate = ({ frontmatter }) => {
   return (
-    <section style={{ backgroundColor: Constants.Colors.nourishGray }}>
+    <section>
       <DesktopImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <MobileImage imageInfo={frontmatter.bannerImageMobile} title="Nourish whole person coaching program" />
+      <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
+      <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <ColorContainerMobile backgroundColor={Constants.Colors.nourishNeutral}>
         <CenteredText fontWeight="800" color={"#FFF"}>
           <div>a whole-person coaching program</div>
@@ -72,38 +121,12 @@ export const NourishTemplate = ({ frontmatter }) => {
           </div>
         </CenteredText>
       </ColorContainerMobile>
-
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
-        <CenteredText color={Constants.Colors.nourishBrown} fontSize="2rem" fontWeight="800">
-          <div>GET EARLY ACCESS!</div>
-          <div>Be the first to apply</div>
-          <div>& receive exclusive Early Bird bonuses!</div>
-        </CenteredText>
-      </ColorContainer>
-      <h1 style={{ display: "none" }}>Nourish</h1>
-      <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
-        <HalfColumn>
-          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Get Early Access!" page="nourish" />
-        </HalfColumn>
-        <HalfColumn>
-          <FlexColSplitImage>
-            <RoundedImage
-              imageInfo={{
-                alt: "Nourish whole person Coaching Program by Sheila Anne",
-                childImageSharp: frontmatter.secondImage.childImageSharp,
-              }}
-              loading="eager"
-              title="A whole person coaching program to cultivate well-being, foster community, and let your natural self thrive"
-            />
-          </FlexColSplitImage>
-        </HalfColumn>
-      </FlexContainer>
-      <PreviewCompatibleImage imageInfo={frontmatter.thirdImage} title="Nourish teaser photo" />
       <CenteredText
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
         padding="1rem"
         fontSize="2rem"
+        margin="1rem 0"
       >
         <div>
           FOR THE <b>AMBITIOUS WOMAN</b>
@@ -130,21 +153,253 @@ export const NourishTemplate = ({ frontmatter }) => {
           CAPABLE OF <b>CREATING</b>.
         </div>
       </CenteredText>
-      <CenteredText
-        backgroundColor={Constants.Colors.nourishNeutral}
-        color={Constants.Colors.nourishBrown}
-        fontSize="2rem"
-        margin="1rem 0"
-      >
-        A 14 week group coaching program kicking off <b>Fall 2021!</b>
-      </CenteredText>
-      <CenteredText
-        backgroundColor={Constants.Colors.nourishNeutral}
-        color={Constants.Colors.nourishBrown}
-        fontSize="2rem"
-      >
-        Sign up for Early Access 👆 to get Early Bird bonuses!
-      </CenteredText>
+      <NourishApplyButton />
+      <div>
+        <h2>Are you ...</h2>
+        <SpacedOutText>SO OVER battling self doubt and your inner critic</SpacedOutText>
+        <SpacedOutText>
+          TIRED of always hustling and never feeling like you’ll get to where you want to go
+        </SpacedOutText>
+        <SpacedOutText>CRAVING unwavering confidence and decisive action</SpacedOutText>
+        <SpacedOutText>SEEKING for the self connection and self love you know you're capable of</SpacedOutText>
+        <SpacedOutText>EXCITED to find what's next in your relationships, lifestyle, and career path</SpacedOutText>
+        <SpacedOutText>
+          READY to stop trying to do it all on your own, and find a supportive and inspiring community
+        </SpacedOutText>
+      </div>
+      <div>
+        <h2>What if ...</h2>
+        <SpacedOutText>
+          You were able to <b>change</b> the behaviors and beliefs blocking you from playing bigger and bolder in your
+          life
+        </SpacedOutText>
+        <SpacedOutText>
+          There was a <b>community</b> waiting to support you, grow with you, and inspire you to be 100% yourself
+        </SpacedOutText>
+        <SpacedOutText>
+          You could feel <b>present</b>, in <b>flow</b>, and an inner <b>glow</b> in your daily life
+        </SpacedOutText>
+        <SpacedOutText>
+          You were <b>confident</b> in your unique power, because you understood <b>exactly who you were</b> and how to
+          nourish your <b>body, mind, and soul</b>.
+        </SpacedOutText>
+      </div>
+      <div>
+        <h2>Welcome home to you. Welcome home to NOURISH</h2>
+        <PreviewCompatibleImage imageInfo={frontmatter.welcomeToNourish} title="Welcome home to NOURISH" />
+      </div>
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+        <CenteredText color={Constants.Colors.nourishBrown} fontSize="1.5rem">
+          <div>
+            NOURISH is a 14-week group coaching program for the <b>driven woman</b> who is <b>ready to thrive</b> in her
+            body, mind, and soul. You can expect transformational coaching, immersive training, community connection,
+            and get-out-of-your-comfort-zone experiences. This is unlike anything you’ve done before. This is what your
+            next-level self has been waiting for.
+          </div>
+        </CenteredText>
+      </ColorContainer>
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+        <CenteredText color={Constants.Colors.nourishBrown} fontSize="1.5rem">
+          <div>
+            This program is thoughtfully designed to help you achieve your goals from a place of alignment and
+            abundance. The tools and learnings you acquire within the program are lifelong, whether you are chasing a
+            new career dream, craving self confidence, or looking for “what’s next” after burnout or grief or big life
+            changes.
+          </div>
+        </CenteredText>
+      </ColorContainer>
+      <NourishApplyButton />
+      <div>
+        <h2>The NOURISH transformation consists of three pillars: Body, Mind, Soul.</h2>
+        <Timeline
+          timelines={[
+            { text: "Launch Party 🍾" },
+            { text: "Body 🌼", isBold: true },
+            { text: "Mind 🌼", isBold: true },
+            { text: "Soul 🌼", isBold: true },
+            { text: "Closing Celebration 🎉" },
+          ]}
+        />
+        <SpacedOutText>
+          Bi-weekly training & coaching calls will help you to hone-in, learn, practice, and transform. Between our
+          calls you will be working through the NOURISH Notebook, integrating learnings, and connecting with the NOURISH
+          community via our messaging platform. You’ll constantly be supported, held, and cheered on.
+        </SpacedOutText>
+
+        <SpacedOutText>
+          If you are an ambitious, adventurous woman who wants to be her own unique powerhouse, this program is for you!
+        </SpacedOutText>
+        <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
+          <CenteredText>
+            <SmallerHeadline>The NOURISH Experience 🌼</SmallerHeadline>
+            <h3>2 Virtual Retreats</h3>
+            <SpacedOutText>
+              Including a kick-off party to build meaningful relationships, and a closing celebration to commemorate the
+              incredible journey.{" "}
+            </SpacedOutText>
+            <h3>Bi - Weekly Calls</h3>
+            <SpacedOutText>
+              For intensive training and personalized support. Each call will have a specific focus, connected to that
+              month’s theme. A blend of learning, coaching, and community conversation. Each call will be recorded so
+              you can revisit it whenever you choose.
+            </SpacedOutText>
+            <h3>NOURISH Notebook</h3>
+            <SpacedOutText>
+              A digital journal chock-full of journaling prompts and exercises. Delivered in three parts along the
+              NOURISH journey.
+            </SpacedOutText>
+            <h3>Community</h3>
+            <SpacedOutText>
+              You will have constant access to your community (off social media) so that you can deepen your knowledge,
+              ask questions, and share stories. Sheila will be in this community as well, available to answer questions
+              and cheer you on always.
+            </SpacedOutText>
+            <h3>Monthly Meditations</h3>
+            <SpacedOutText>
+              A downloadable meditation related to Body, Mind, and Soul, that you can listen to wherever and whenever.
+            </SpacedOutText>
+            <h3>Surprises!</h3>
+            <SpacedOutText>Obviously, ‘cause you deserve it!</SpacedOutText>
+          </CenteredText>
+        </ColorContainer>
+        <h2>I’m dedicated to helping you thrive</h2>
+        <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
+          <HalfColumn>
+            <FlexColSplitImage>
+              <RoundedImage
+                imageInfo={{
+                  alt: "Sheila smiling in a chair",
+                  childImageSharp: frontmatter.sideBySide.childImageSharp,
+                }}
+                title="Nourish details"
+              />
+            </FlexColSplitImage>
+          </HalfColumn>
+          <HalfColumn>
+            <h3>Hi. I'm Sheila.</h3>
+            <SpacedOutText>
+              I am a recovering overachiever / perfectionist and I know what it’s like to be so busy checking all the
+              boxes, that you lose the magic of self-connection and empowered action. I created NOURISH because I
+              believe that when we come home to ourselves, we can transform our lives.
+            </SpacedOutText>
+          </HalfColumn>
+          <FlexContainer justifyContent="center" backgroundColor={Constants.Colors.nourishGray}>
+            <SpacedOutText padding="1rem">
+              I know that you want to feel present, alive, and fulfilled each day, and that’s what I wanted too! Through
+              the tragic loss of my mother, pivoting my career (again and again) , leaving the corporate world, falling
+              in love, and uprooting my life countless times, I’ve learned that our power and our adaptability don't
+              exist in isolation. This program is truly a work of my soul, and I am beyond grateful to be able to share
+              it with you.
+            </SpacedOutText>
+          </FlexContainer>
+        </FlexContainer>
+      </div>
+      <div>
+        <h2>NOURISH is for you if ...</h2>
+        <ul>
+          <li>You are the doing, planning, career-crushing friend that always tries to fill her life to the brim</li>
+          <li>You have big dreams but often get stuck in the “how” and “what if” stage</li>
+          <li>You appear confident but get stuck in loops of self doubt</li>
+          <li>You are certain that you have unique power to share with the world</li>
+          <li>You often wonder what your greater purpose is</li>
+          <li>
+            You are not afraid to get messy, open up to community, for the sake of transformational growth and deep
+            connection
+          </li>
+          <li>You are excited by the idea of living with more flow and peace in life</li>
+          <li>
+            You are in a season of healing, seeking, rediscovering, growing through grief, or craving deeper self
+            connection
+          </li>
+          <li>
+            You will be committed to showing up, practicing learnings, working through the notebook, and supporting
+            other women.
+          </li>
+        </ul>
+      </div>
+      <NourishApplyButton />
+      <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
+        <SmallerHeadline>A deeper look at what you’ll learn:</SmallerHeadline>
+        <h3>BODY</h3>
+        <div>
+          <b>Pause</b>: Get to know how to build somatic awareness and mindfulness to transform your life, and how to
+          disconnect from the constant need to “do” so you can commit to greater well-being
+        </div>
+        <div>
+          <b>Play</b>: Explore how you interact with the world, your career, your pleasure, your relationships
+        </div>
+        <h3>MIND</h3>
+        <div>
+          <b>Inner Critic</b>: Develop a clear sense of who the inner critic is, what they are triggered by, what they
+          want, how to turn down the volume so that you can build resilience and take aligned action
+        </div>
+        <div>
+          <b>Inner Mentor</b>: Walk away with a killer resource to tune into when you need an extra boost of confidence,
+          to get in touch with your authenticity, or make tough decisions
+        </div>
+        <h3>SOUL</h3>
+        <div>
+          <b>Purpose</b>: Step into a deep knowing of how you can shine your light a killer mission statement, tools for
+          unwavering self belief
+        </div>
+        <div>
+          <b>Magnetize</b>: Manifest the life you desire, switch from scarcity to abundance, explore with energy tools,
+          and declare what you want to attract and be open to receiving it.
+        </div>
+      </ColorContainer>
+      <div>
+        <CenteredText>
+          <h2>Investment</h2>
+          <h3>NOURISH </h3>
+          <SpacedOutText>
+            All trainings, retreats, curriculum, community, meditations, notebook, and support:
+          </SpacedOutText>
+          <SpacedOutText>$1300 or 3 monthly payments of $450</SpacedOutText>
+          <h3>NOURISH+</h3>
+          <SpacedOutText>
+            <i>For the woman ready to be intimately supported and expedite her transformational growth.</i>
+            <div>Everything included in NOURISH:</div>
+            <SpacedOutText>+ One 1:1 call/ month with Sheila </SpacedOutText>
+            <SpacedOutText>+ Private messaging with Sheila </SpacedOutText>
+          </SpacedOutText>
+          <SpacedOutText>$1700 or 3 monthly payments of $575</SpacedOutText>
+          <NourishApplyButton />
+          <SpacedOutText>
+            Sheila is committed to program accessibility, so please contact her for more information on customized
+            payment options.
+          </SpacedOutText>
+        </CenteredText>
+      </div>
+      <PreviewCompatibleImage imageInfo={frontmatter.coachingImage} title="Sheila coaching in person" />
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+        <h2>What people are saying about working with Sheila</h2>
+        <StyledQuote>
+          “Working with Sheila is a gift that brings clarity, peace, and confidence. I was teetering on a big career
+          decision and decided to work with Sheila to chart the path forward. She helped me to understand what was truly
+          important to me, and to design my ideal life as an entrepreneur, mom, wife, friend, and lifelong learner!” -
+          Kristen
+        </StyledQuote>
+        <StyledQuote>
+          “With her help, I was able to root back into my authentic self, gain confidence and lead with my heart to
+          leave that situation. That leap led me to move into a trailer, build my business, put my health above all
+          else, and live a life that allows me to truly express myself.” - Taylor
+        </StyledQuote>
+        <StyledQuote>
+          “Sheila has helped me through major transitions in my life and helps tap into feelings of confidence and
+          gratitude for where I’m at and where I’m going. She can see things that I’m not aware of and is truly invested
+          in my growth and wellbeing both mentally, physically, emotionally and spiritually. As a high achiever, I have
+          high expectations and Sheila constantly exceeds them.” - Kirra
+        </StyledQuote>
+        <StyledQuote>
+          “Since working with Sheila I have made intentional changes in the way I run my business, interact with my
+          family, and most importantly how I relate to myself. I am now able to extend the compassion and kindness that
+          I previously only reserved for others to myself which has brought me satisfaction and joy in all areas of my
+          life.” - Sarah
+        </StyledQuote>
+      </ColorContainer>
+      <ContentBreak />
+      <FAQ faq={faqs}></FAQ>
+      <PreviewCompatibleImage imageInfo={frontmatter.thirdImage} title="Nourish teaser photo" />
     </section>
   );
 };
@@ -190,6 +445,13 @@ export const pageQuery = graphql`
             }
           }
         }
+        montage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
         secondImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -198,6 +460,27 @@ export const pageQuery = graphql`
           }
         }
         thirdImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        sideBySide {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        coachingImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        welcomeToNourish {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp

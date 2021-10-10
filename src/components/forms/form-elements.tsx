@@ -88,6 +88,7 @@ const InputInner = styled.input<InputProps>`
 `;
 
 const TextAreaInner = styled.textarea`
+  margin-bottom: 1rem;
   min-height: 150px;
   min-width: 500px;
 
