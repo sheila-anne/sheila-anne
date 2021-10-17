@@ -14,15 +14,16 @@ import {
   FlexColSplitImage,
   HalfColumn,
   Layout,
+  NourishForm,
   PreviewCompatibleImage,
   SEO,
   Timeline,
 } from "../components";
 
-const ColorContainer = styled.div<{ backgroundColor?: string }>`
+const ColorContainer = styled.div<{ backgroundColor?: string; marginBottom?: string }>`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1rem")};
   padding: 1rem 2rem;
 `;
 
@@ -97,8 +98,8 @@ const faqs = [
 
 const NourishApplyButton = () => (
   <CenteredText margin="2rem 0">
-    <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Apply now
+    <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="#nourish">
+      Get on the waitlist!
     </LinkButton>
   </CenteredText>
 );
@@ -108,7 +109,6 @@ export const NourishTemplate = ({ frontmatter }) => {
     <section>
       <DesktopImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <MobileImage imageInfo={frontmatter.bannerImageMobile} title="Nourish whole person coaching program" />
-      <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <ColorContainerMobile backgroundColor={Constants.Colors.nourishNeutral}>
         <CenteredText fontWeight="800" color={"#FFF"}>
@@ -121,6 +121,28 @@ export const NourishTemplate = ({ frontmatter }) => {
           </div>
         </CenteredText>
       </ColorContainerMobile>
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
+        <h2>NOURISH is currently in session!</h2>
+        <b>Doors to this program are currently closed.</b> Sign up to be the first to know when doors reopen and to be eligible for
+        exclusive bonuses and early enrollment pricing! 🌼
+      </ColorContainer>
+      <FlexContainer justifyContent="center" margin="0 0 1rem 0" backgroundColor={Constants.Colors.nourishGray}>
+        <HalfColumn>
+          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Sign me up!" page="nourish" />
+        </HalfColumn>
+        <HalfColumn>
+          <FlexColSplitImage>
+            <RoundedImage
+              imageInfo={{
+                alt: "Nourish whole person Coaching Program by Sheila Anne",
+                childImageSharp: frontmatter.secondImage.childImageSharp,
+              }}
+              loading="eager"
+              title="A whole person coaching program to cultivate well-being, foster community, and let your natural self thrive"
+            />
+          </FlexColSplitImage>
+        </HalfColumn>
+      </FlexContainer>
       <CenteredText
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
