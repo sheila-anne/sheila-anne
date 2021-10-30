@@ -10,9 +10,7 @@ description: "Changing habits, making time for mindfulness, and taking deep
 featuredpost: false
 featuredImage: /img/slowing-down.png
 ---
-
-
-![](/img/slowing-down.png)
+![](/img/slowing-down-1-.png)
 
 As I crawled out of an Epsom salt bath at noon on a Saturday I thought to myself, "Wow, this is so nice. Why don’t I do this more often?"
 
