@@ -9,6 +9,12 @@ description: "Changing habits, making time for mindfulness, and taking deep
   if you open your eyes to the learned behaviors within and around you. "
 featuredpost: false
 featuredImage: /img/slowing-down.png
+tags:
+  - habits
+  - mindfulness
+  - relationships
+  - self care
+  - stress management
 ---
 ![](/img/slowing-down-1-.png)
 
