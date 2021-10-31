@@ -34,13 +34,10 @@ Within each of us there does exist a part that craves pause, rest, and slowness.
 
 Reflection questions:
 
-How can I help those around me to slow down?
-
-What could others learn from seeing me slow down?
-
-How do I feel about myself when I’m busy? Example: proud, energized, exhausted
-
-Apart from my achievements and work-ethic, what do I want to show myself and the world?
+* How can I help those around me to slow down?
+* What could others learn from seeing me slow down?
+* How do I feel about myself when I’m busy? Example: proud, energized, exhausted
+* Apart from my achievements and work-ethic, what do I want to show myself and the world?
 
 ## Reason #2 Why You’re Not Slowing Down: You surround yourself with other busy bodies
 
@@ -50,13 +47,10 @@ Don’t lose hope! If you recognize the norms of the community around you and th
 
 Reflection questions:
 
-In what ways do I compare myself to others?
-
-To what degree is my behavior of busyness influenced by others? When 
-
-Who in my life (intentionally or unintentionally) is enabling my habits of staying busy and always achieving?
-
-How do I want to show up for myself when I am in a season/time of rest and others around me are focused on achieving?
+* In what ways do I compare myself to others?
+* To what degree is my behavior of busyness influenced by others? 
+* Who in my life (intentionally or unintentionally) is enabling my habits of staying busy and always achieving?
+* How do I want to show up for myself when I am in a season/time of rest and others around me are focused on achieving?
 
 ## Reason #3 Why You’re Not Slowing Down: Society favors perfection, busyness, and overworking
 
@@ -68,13 +62,10 @@ Though it’s unlikely these norms will break anytime soon, it’s vital to reco
 
 Reflection questions:
 
-What do I want your life to be about?
-
-How do I want to take care of myself?
-
-What cultural norms or phrases have influenced my behavior?
-
-How do I want those in my company/organization to witness my commitment to self care and well-being?
+* What do I want my life to be about?
+* How do I want to take care of myself?
+* What cultural norms or phrases have influenced my behavior?
+* How do I want those in my company/organization to witness my commitment to self care and well-being?
 
 \---
 
