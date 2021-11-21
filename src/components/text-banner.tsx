@@ -72,12 +72,12 @@ const InnerBanner = ({ path }: TextBannerProps) => {
     <BannerDiv>
       <Text>
         <UnderlineLink
-          aria-label="Click to get your Positivity Pack!"
+          aria-label="Now available: private coaching spots for January 2022"
           onClick={innerHandler}
-          to="/freebie/"
-          title="Click to get your Positivity Pack!"
+          to="/book/root-to-rise/"
+          title="Now available: private coaching spots for January 2022"
         >
-          Grab Your Free Positivity Pack!
+          NOW AVAILABLE: PRIVATE COACHING SPOTS FOR JANUARY 2022
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">

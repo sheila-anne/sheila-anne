@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import {
+  BannerLink,
   BannerImage,
   BlogRoll,
   CenteredText,
@@ -13,6 +14,7 @@ import {
   HalfColumn,
   Layout,
   LinkButton,
+  OneTreePlanted,
   PreviewCompatibleImage,
   SEO,
   SmartLink,
@@ -91,10 +93,6 @@ const Container = styled.div`
   @media (min-width: 1408px) {
     max-width: 1344px;
   }
-`;
-
-const BannerLink = styled(SmartLink)`
-  text-decoration: underline;
 `;
 
 const BannerHeadline = styled.h1<HeadlineProps>`
@@ -240,6 +238,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
             Read more @ the blog!
           </LinkButton>
         </CenteredText>
+        <OneTreePlanted />
       </Container>
     </section>
   );

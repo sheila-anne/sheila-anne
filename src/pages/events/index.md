@@ -8,9 +8,29 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-# Missed the Master Class?
+## Celebrate & Retreat
 
-Sheila taught a Master Class on **Curating Your Wildly Beautiful Life** in mid-July in preparation for initial 14-week [NOURISH group coaching program](/nourish/) kickoff in September, 2021. If you missed the class but love that subject, [make sure to fill out the NOURISH application form](/nourish-form/) to be included!
+- BOSTON - DECEMBER 11, 2021
+- 1-4 PM EST
+
+We might not be able to head to Costa Rica this year, but we are going to retreat on a beautiful afternoon together in Boston! This event will be held on the first quarter moon (a significant time for bringing visions into reality). The event will be held at a super special studio, [The Yoga Playground](https://www.yogaplayground.org/).
+
+### What can you expect?
+
+- a three hour in-person mini retreat full to the brim of heart opening, vibration lifting, feel-good experiences
+- a chance to move and play through a yoga flow
+- reflection through journaling, defined affirmation statements and power poses to channel your inner bad ass
+- grounding and healing with a guided visualization with me and reiki by the amazing Krysta Lyn
+- connecting and celebrating with an unforgettable **cacao** ceremony
+- a couple other surprises trickled in
+
+[Sign me up!](https://checkout.square.site/buy/UWMIFZ5RJLDZEIBR764SQKW2)
+
+---
+
+## Missed the Master Class?
+
+Sheila taught a Master Class on **Curating Your Wildly Beautiful Life** in preparation for the initial 14-week [NOURISH group coaching program](/nourish/) kickoff in September, 2021. If you missed the class but love that subject, [make sure to fill out the NOURISH application form](/nourish-form/) to be included!
 
 ---
 

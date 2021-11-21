@@ -23,8 +23,8 @@ My superpower is my ability to help you slow down, connect with your body, and a
 
 To suit every need, I have two ways you can work with me:
 
-- [Ground to Grow Accelerator](/book/ground-to-grow/) - One time power session
-- [Root to Rise Transformational Coaching Program](/root-to-rise/) - Three month commitment
+- [NOURISH Group Coaching](/nourish/) - 14 weeks of community and whole-person change
+- [Private Coaching](/root-to-rise/) - Three month transformation to help you root and rise into the best version of you
 
 It all starts with a free exploration call - a 30 minute strategy session with yours truly.
 

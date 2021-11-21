@@ -1,3 +1,4 @@
+export { BannerLink } from "./banner-link";
 export { BannerImage } from "./banner-image";
 export { BaseTemplate } from "./base-template";
 export { BlogPostMeta } from "./blog-post-meta";
@@ -17,6 +18,7 @@ export { Footer } from "./footer";
 export { Instagram } from "./instagram";
 export { Layout } from "./layout";
 export { Nav } from "./nav";
+export { OneTreePlanted } from "./one-tree-planted";
 export { SEO } from "./seo";
 export { Share } from "./share";
 export { SmartLink } from "./smart-link";
