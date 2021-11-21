@@ -18,7 +18,7 @@ const BannerDiv = styled.div`
   justify-content: center;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    height: 75px;
+    height: min-content;
   }
 `;
 
