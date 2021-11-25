@@ -1,7 +1,9 @@
 import React, { Dispatch, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
 import styled from "styled-components";
 
+import { BannerLink } from "./banner-link";
 import { CenteredText } from "./centered";
+import { ContentBreak } from "./content-break";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { PlainButton } from "./button";
 import { trackCustomEvent, trackFacebook } from "../utils";
@@ -164,6 +166,14 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
           />
         </TestimonialCallout>
       ))}
+      <hr />
+      <CenteredText margin="1rem 0">
+        Care to share? Write a review about your experience{" "}
+        <BannerLink to="https://docs.google.com/forms/d/e/1FAIpQLSeWCYaWYILlbv-RcvIkjXdzhUB2s3N3EqkacQh5un2QKcIINg/viewform?usp=sf_link">
+          here
+        </BannerLink>
+        !
+      </CenteredText>
     </TestimonialSection>
   );
 };
