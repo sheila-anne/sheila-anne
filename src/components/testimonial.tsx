@@ -169,10 +169,7 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
       <hr />
       <CenteredText margin="1rem 0">
         Care to share? Write a review about your experience{" "}
-        <BannerLink to="https://docs.google.com/forms/d/e/1FAIpQLSeWCYaWYILlbv-RcvIkjXdzhUB2s3N3EqkacQh5un2QKcIINg/viewform?usp=sf_link">
-          here
-        </BannerLink>
-        !
+        <BannerLink to="https://forms.gle/U4LwVirKiBMKWEAt5">here</BannerLink>!
       </CenteredText>
     </TestimonialSection>
   );
