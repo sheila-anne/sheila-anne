@@ -59,6 +59,8 @@ export const NourishForm = ({
     }}
     tags="Nourish"
     buttonColor={Constants.Colors.nourishNeutral}
+    additionalSubmitHandler={onSubmit}
+    isNetlify={true}
   >
     <Input
       autoComplete="given-name"
