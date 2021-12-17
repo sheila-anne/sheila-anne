@@ -99,7 +99,7 @@ const faqs = [
 const NourishApplyButton = () => (
   <CenteredText margin="2rem 0">
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="#nourish">
-      Get on the waitlist!
+      Apply for early enrollment!
     </LinkButton>
   </CenteredText>
 );
@@ -122,9 +122,9 @@ export const NourishTemplate = ({ frontmatter }) => {
         </CenteredText>
       </ColorContainerMobile>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
-        <h2>NOURISH is currently in session!</h2>
-        <b>Doors to this program are currently closed.</b> Sign up to be the first to know when doors reopen and to be eligible for
-        exclusive bonuses and early enrollment pricing! 🌼
+        <h2>Apply for early enrollment!</h2>
+        Sign up to be the first to know when doors reopen and to be eligible for exclusive bonuses and early enrollment
+        pricing! 🌼
       </ColorContainer>
       <FlexContainer justifyContent="center" margin="0 0 1rem 0" backgroundColor={Constants.Colors.nourishGray}>
         <HalfColumn>
@@ -385,6 +385,9 @@ export const NourishTemplate = ({ frontmatter }) => {
             <SpacedOutText>+ Private messaging with Sheila </SpacedOutText>
           </SpacedOutText>
           <SpacedOutText>$1700 or 3 monthly payments of $575</SpacedOutText>
+          <SpacedOutText>
+            <b>Exclusive pricing available for early enrollment applicants</b>
+          </SpacedOutText>
           <NourishApplyButton />
           <SpacedOutText>
             Sheila is committed to program accessibility, so please contact her for more information on customized
