@@ -8,7 +8,7 @@ description: I recognize that the label “life coach” can be a bit abstract, 
   coach is, and how it may differ from the other people-helping services.
   Perhaps this will simply increase your awareness, or perhaps it will help you
   make the decision on the kind of resource you need in your life right now.
-featuredpost: false
+featuredpost: true
 featuredImage: /img/blog-thumnail.png
 tags:
   - coaching
