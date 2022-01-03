@@ -102,4 +102,4 @@ For more information on if therapy is right for you, visit [The National Institu
 
   * Instead of hiring a full time employee, you may hire a consultant that will work for a set timeline or a single project. Often there will be a detailed contract that outlines resources, objectives, and tasks to accomplish. For a one-time need, consultants can save you/your company money while providing external expertise. 
 
-I hope that you found this article helpful! I often get questions about how coaching differs from these other developmental relationships, and I wanted to create a single document highlighting those key distinctions. If you think coaching may be right for you, don’t hesitate to book a free call with me right here!
+I hope that you found this article helpful! I often get questions about how coaching differs from these other developmental relationships, and I wanted to create a single document highlighting those key distinctions. If you think coaching may be right for you, don’t hesitate to [book a free call with me right here](/book/exploration/)!
