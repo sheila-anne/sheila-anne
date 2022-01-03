@@ -72,12 +72,12 @@ const InnerBanner = ({ path }: TextBannerProps) => {
     <BannerDiv>
       <Text>
         <UnderlineLink
-          aria-label="Now available: private coaching spots for January 2022"
+          aria-label="NOW ENROLLING: NOURISH Group Coaching Program"
           onClick={innerHandler}
-          to="/book/root-to-rise/"
-          title="Now available: private coaching spots for January 2022"
+          to="/nourish/"
+          title="NOW ENROLLING: NOURISH Group Coaching Program"
         >
-          NOW AVAILABLE: PRIVATE COACHING SPOTS FOR JANUARY 2022
+          NOW ENROLLING: NOURISH Group Coaching Program
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">

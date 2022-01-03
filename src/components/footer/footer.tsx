@@ -80,11 +80,19 @@ const footerQuery = graphql`
         }
       }
     }
+
+    ticImage: file(relativePath: { eq: "trauma-informed-coach.png" }) {
+      childImageSharp {
+        fixed(height: 75) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `;
 
 export const Footer = () => {
-  const { accImage, wpccImage } = useStaticQuery(footerQuery);
+  const { accImage, wpccImage, ticImage } = useStaticQuery(footerQuery);
   return (
     <StyledFooter>
       <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
@@ -102,6 +110,13 @@ export const Footer = () => {
           loading={"auto"}
           itemProp="image"
           title={"Whole Person Certified Coach"}
+        />
+        <FooterGatsbyImage
+          alt={"Trauma Informed Coach"}
+          fixed={ticImage.childImageSharp.fixed}
+          loading={"auto"}
+          itemProp="image"
+          title={"Trauma Informed Coach"}
         />
       </FlexFooter>
       <FlexFooter>

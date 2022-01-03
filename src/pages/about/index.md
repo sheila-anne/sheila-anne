@@ -40,5 +40,9 @@ Associate Certified Coach (ACC) Credential-holders are trained (60+ hours) and e
 
 Whole Person Coaching® is a holistic coaching method based on the premise that when you come to know, embrace and express all aspects of your whole self, you are positioned to thrive in any aspect of life. You become rich in resources, grounded in your being, and at peace within. Whole Person Coaching is a thought-provoking process coupled with experience-oriented, transformative learning designed to help you to gain access to the depth and breadth of who you are at the core: mentally, emotionally, physically, socially and spiritually. From this embodied understanding of your whole self, you can easily and effectively draw upon your deepest wisdom to overcome any stopping blocks and achieve what matters most to you. From our work together, you will emerge fully self-innovative and well equipped to be highly effective in any aspect of your life, for the rest of your life.
 
+### Trauma-Informed Certified Coach
+
+As a trauma-informed coach, I am trained in research-backed approaches to help my clients become resourced and resilient. We may discuss polyvagal theory, window of tolerance, the impact of stress on the body, self regulation, and more. In my practice, I use the definition laid out by the American Psychological Association (APA), which says that trauma can be an event or series of events that has lasting adverse effects on physically, socially, emotionally, spiritually, and on the well-being of the individual. I draw a firm boundary between coaching and therapy and help clients to find the most suitable provider for their needs.
+
 - [Let's get started with that free exploration call](/book/)!
 - Looking to hear more? [Contact me!](/contact/)
