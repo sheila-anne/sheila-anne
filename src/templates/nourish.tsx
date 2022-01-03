@@ -14,7 +14,6 @@ import {
   FlexColSplitImage,
   HalfColumn,
   Layout,
-  NourishForm,
   PreviewCompatibleImage,
   SEO,
   Timeline,
@@ -70,7 +69,7 @@ const SmallerHeadline = styled.h2`
 `;
 
 const StyledQuote = styled.blockquote`
-  padding: 1rem;
+  padding: 2rem;
 `;
 
 const faqs = [
@@ -98,8 +97,8 @@ const faqs = [
 
 const NourishApplyButton = () => (
   <CenteredText margin="2rem 0">
-    <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="#nourish">
-      Apply for early enrollment!
+    <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
+      Apply now
     </LinkButton>
   </CenteredText>
 );
@@ -109,6 +108,7 @@ export const NourishTemplate = ({ frontmatter }) => {
     <section>
       <DesktopImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <MobileImage imageInfo={frontmatter.bannerImageMobile} title="Nourish whole person coaching program" />
+      <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <ColorContainerMobile backgroundColor={Constants.Colors.nourishNeutral}>
         <CenteredText fontWeight="800" color={"#FFF"}>
@@ -122,27 +122,13 @@ export const NourishTemplate = ({ frontmatter }) => {
         </CenteredText>
       </ColorContainerMobile>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
-        <h2>Apply for early enrollment!</h2>
-        Sign up to be the first to know when doors reopen and to be eligible for exclusive bonuses and early enrollment
-        pricing! 🌼
+        <h2>The next NOURISH experience kicks off in late February, 2022!</h2>
+        <StyledQuote>
+          “<b>Nourish is a life-changing program</b> that provides a safe space for a supportive community filled with
+          mutual growth, experiential learning and emotional connection.” - Emma, NOURISH graduate
+        </StyledQuote>
+        <NourishApplyButton />
       </ColorContainer>
-      <FlexContainer justifyContent="center" margin="0 0 1rem 0" backgroundColor={Constants.Colors.nourishGray}>
-        <HalfColumn>
-          <NourishForm backgroundColor={Constants.Colors.nourishGray} submitText="Sign me up!" page="nourish" />
-        </HalfColumn>
-        <HalfColumn>
-          <FlexColSplitImage>
-            <RoundedImage
-              imageInfo={{
-                alt: "Nourish whole person Coaching Program by Sheila Anne",
-                childImageSharp: frontmatter.secondImage.childImageSharp,
-              }}
-              loading="eager"
-              title="A whole person coaching program to cultivate well-being, foster community, and let your natural self thrive"
-            />
-          </FlexColSplitImage>
-        </HalfColumn>
-      </FlexContainer>
       <CenteredText
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
@@ -176,6 +162,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         </div>
       </CenteredText>
       <NourishApplyButton />
+
       <div>
         <h2>Are you ...</h2>
         <SpacedOutText>SO OVER battling self doubt and your inner critic</SpacedOutText>
@@ -397,29 +384,34 @@ export const NourishTemplate = ({ frontmatter }) => {
       </div>
       <PreviewCompatibleImage imageInfo={frontmatter.coachingImage} title="Sheila coaching in person" />
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
-        <h2>What people are saying about working with Sheila</h2>
+        <h2>What people are saying about the NOURISH experience</h2>
         <StyledQuote>
-          “Working with Sheila is a gift that brings clarity, peace, and confidence. I was teetering on a big career
-          decision and decided to work with Sheila to chart the path forward. She helped me to understand what was truly
-          important to me, and to design my ideal life as an entrepreneur, mom, wife, friend, and lifelong learner!” -
-          Kristen
+          “Nourish is a life changing program that provides a safe space for a supportive community filled with mutual
+          growth, experiential learning and emotional connection. While the group functions well as a whole, the
+          individual progress and growth is undeniable. You are guided in one collective direction while having a slew
+          of personalized options for building your journey for what suits you at that moment. I sought out Nourish as
+          an intimate way to unite the compartmentalized parts of my being and I am leaving it with a new community, the
+          tools to infinitely build on my beautiful base self and a sense of union with myself and my once divided
+          life.” - Emma
         </StyledQuote>
         <StyledQuote>
-          “With her help, I was able to root back into my authentic self, gain confidence and lead with my heart to
-          leave that situation. That leap led me to move into a trailer, build my business, put my health above all
-          else, and live a life that allows me to truly express myself.” - Taylor
+          “This program was unlike anything I’ve ever done before. When I first started my stress and anxiety were at an
+          all time high. Not only was the program mentally restorative for me it was incredibly transformative. I
+          cultivated some long lasting friendships, dug deeper into myself than I ever have, and took chances I wouldn’t
+          have been strong enough to without the support of Sheila and the women in the Nourish community.” - Jenna
         </StyledQuote>
         <StyledQuote>
-          “Sheila has helped me through major transitions in my life and helps tap into feelings of confidence and
-          gratitude for where I’m at and where I’m going. She can see things that I’m not aware of and is truly invested
-          in my growth and wellbeing both mentally, physically, emotionally and spiritually. As a high achiever, I have
-          high expectations and Sheila constantly exceeds them.” - Kirra
+          “Nourish helped me claim back my power to make aligned decisions for a more fulfilling life. Coming into the
+          program, I was struggling with anxiety and felt like an empty vessel. I now feel like I have new tools to
+          magnetize what is truly meant for me--guilt free.” - Elaina
         </StyledQuote>
         <StyledQuote>
-          “Since working with Sheila I have made intentional changes in the way I run my business, interact with my
-          family, and most importantly how I relate to myself. I am now able to extend the compassion and kindness that
-          I previously only reserved for others to myself which has brought me satisfaction and joy in all areas of my
-          life.” - Sarah
+          “I joined Nourish because I wanted to make lasting changes within myself. When I started my Nourish journey, I
+          was living my life at an unsustainable pace marked by anxious thoughts, indecision, and shallow breaths.
+          Working through this program with Sheila and the amazing first cohort of Nourish women helped me to transform
+          in ways I could not have imagined four months ago. A few examples of the impact of Nourish: Slower internal
+          pace; Increased confidence in my ability to make aligned choices; Deeper, conscious breath. I am so grateful
+          for Sheila and the support of all my fellow Nourish women.” - Carolyn
         </StyledQuote>
       </ColorContainer>
       <ContentBreak />

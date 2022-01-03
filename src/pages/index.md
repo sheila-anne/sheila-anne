@@ -2,14 +2,14 @@
 templateKey: index-page
 pageTitle: Sheila Anne | Transformational Life Coaching
 pageDescription: >
-  ICF Associate Certified Coach Sheila Anne Murray welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
+  ICF Associate Certified Coach & Trauma Informed Coach Sheila Anne Murray welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
 image: /img/sheila-anne-logo.jpg
 description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
 freebie: /img/positivity-pack-cropped.jpg
 mainpitch:
-  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach and ICF Associate Certified Coach specializing in helping high-achieving women to thrive in their relationships, careers, and lifestyles. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and racing forward in life to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown the path I was on and wasn’t aligned with who I wanted to be. Sound familiar? I discovered how to connect back to my core self, redesign my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same! Don’t be shy -
-  image: /img/sheila-anne-with-coffee-mug.jpg
+  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach, ICF Associate Certified Coach, Trauma-Informed Coach, and yoga instructor. I specialize in helping high-achieving women to thrive in their relationships, careers, and lifestyles. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and racing forward in life to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown the path I was on and wasn’t aligned with who I wanted to be. Sound familiar? I discovered how to connect back to my core self, redesign my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same! Don’t be shy -
+  image: /img/welcome-home-to-nourish.jpg
 
 intro:
   blurbs:
@@ -56,3 +56,9 @@ testimonials:
       Without the work I have done with her the past few months I would still be stuck in a loop of fear, self doubt and crippling anxiety.
     imageSrc: /img/sheila-anne-taylor-testimonial.jpg
 ---
+
+> "I was seeking someone who would truly listen to me, challenge me, and guide me on a path in alignment with my higher purpose and strengths. Sheila was this, and so much more."
+
+> "We formed small, actionable goals week by week, pivoting with my priorities, and I achieved all of them. Sheila is the kind of coach that feels like a deep exhale and a sigh of relief."
+
+> “Over the span of 3 months I went from having panic attacks at work to having the strength to walk away and sign up for classes towards a masters degree.”

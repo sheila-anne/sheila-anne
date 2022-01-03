@@ -139,7 +139,7 @@ const MobileMenu = styled.div<OpenNavProps>`
   position: relative;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ isOpen }) => (isOpen ? "translate(0,0)" : "translate(0, -120%)")};
+  transform: ${({ isOpen }) => (isOpen ? "translate(0,0)" : "translate(0, -150%)")};
 
   ${ColoredInternalLink} {
     display: block;

@@ -43,17 +43,18 @@ type IndexFrontmatterProps = BaseFrontmatter & {
   testimonials: any;
 };
 
-type IndexFrontmatterProperty = {
+type IndexPageInnerProps = {
   frontmatter: IndexFrontmatterProps;
+  html: string;
 };
 
-type PreviewTemplateProps = IndexFrontmatterProperty & {
+type PreviewTemplateProps = IndexPageInnerProps & {
   isPreview?: boolean;
   posts: BlogPost[];
 };
 
 type IndexPageData = BlogPostsGraphql & {
-  markdownRemark: IndexFrontmatterProperty;
+  markdownRemark: IndexPageInnerProps;
   insta: any;
   site: {
     siteMetadata: {
@@ -129,7 +130,7 @@ const TestimonialContainer = styled(FlexContainer)`
   margin-bottom: 2rem;
 `;
 
-export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) => {
+export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateProps) => {
   const { description, image, mainpitch, freebie, testimonials } = frontmatter;
 
   const fullTestimonials = [...testimonials];
@@ -172,14 +173,14 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
         <CenteredText>
           <h3>What people are saying:</h3>
         </CenteredText>
-        <Youtube url="7jTx1xMKI_Q" />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
         <ContentBreak />
         <FlexContainer margin="1rem 0 0 0">
           <ImageContainer>
             <PreviewCompatibleImage
               loading="lazy"
               imageInfo={{
-                alt: "Sheila Anne drinking coffee",
+                alt: "Sheila Anne on a brightly lit porch with a colorful rug",
                 childImageSharp: mainpitch.image.childImageSharp,
               }}
               title="A warm welcome from Sheila Anne"
@@ -224,6 +225,7 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
           </HalfColumn>
         </FlexContainer>
         <ContentBreak />
+        <Youtube url="7jTx1xMKI_Q" />
         <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
           <Testimonial testimonials={fullTestimonials} />
         </TestimonialContainer>
@@ -245,12 +247,12 @@ export const IndexPageTemplate = ({ frontmatter, posts }: PreviewTemplateProps) 
 };
 
 const IndexPage = ({ data, location }: IndexPageProps) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter, html } = data.markdownRemark;
 
   return (
     <Layout location={location}>
       <SEO description={frontmatter.pageDescription} location={location} title={frontmatter.pageTitle} />
-      <IndexPageTemplate frontmatter={frontmatter} posts={data.allMarkdownRemark.posts} />
+      <IndexPageTemplate frontmatter={frontmatter} html={html} posts={data.allMarkdownRemark.posts} />
     </Layout>
   );
 };
@@ -260,6 +262,7 @@ export default IndexPage;
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
         description
         image {
