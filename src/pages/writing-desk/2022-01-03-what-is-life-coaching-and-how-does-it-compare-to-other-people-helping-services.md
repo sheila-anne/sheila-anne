@@ -9,7 +9,7 @@ description: I recognize that the label “life coach” can be a bit abstract, 
   Perhaps this will simply increase your awareness, or perhaps it will help you
   make the decision on the kind of resource you need in your life right now.
 featuredpost: false
-featuredImage: ""
+featuredImage: /img/blog-thumnail.png
 tags:
   - coaching
   - stress management
