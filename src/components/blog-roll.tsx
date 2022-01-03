@@ -20,7 +20,7 @@ const BlogRollFlexColumn = styled(FlexColumn)`
 `;
 
 const FlexTextContainer = styled.div`
-  flex-basis: 65%;
+  flex-basis: 67%;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
