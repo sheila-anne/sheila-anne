@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 import { BaseForm, BaseFormProps } from "./base-form";
-import { Input, Hidden, TextArea } from "./form-elements";
+import { Input, TextArea } from "./form-elements";
 
 import { Constants } from "../../constants";
-import { getFormattedFormElements } from "./form-utils";
 
 const StyledSmall = styled.small`
   margin-bottom: 1rem;
@@ -23,16 +22,6 @@ const Select = ({ options, name, id }: { options: string[]; name: string; id: st
       ))}
     </StyledSelect>
   );
-};
-
-const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  const formData = new FormData(event.target as HTMLFormElement);
-
-  await fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData as unknown as string).toString(),
-  }).catch(console.error);
 };
 
 export const NourishForm = ({
@@ -59,7 +48,6 @@ export const NourishForm = ({
     }}
     tags="Nourish"
     buttonColor={Constants.Colors.nourishNeutral}
-    additionalSubmitHandler={onSubmit}
     isNetlify={true}
   >
     <Input
