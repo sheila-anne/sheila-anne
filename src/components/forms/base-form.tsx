@@ -41,6 +41,7 @@ const handleSubmit = async (
   page: string,
   setButtonText: Dispatch<SetStateAction<string>>,
   trackArgs: TrackArgs,
+  isNetlify: boolean | undefined,
   isSubmitSuccess?: Dispatch<SetStateAction<boolean>>,
   additionalSubmitHandler?: (event: React.FormEvent<HTMLFormElement>) => void
 ) => {
@@ -59,6 +60,16 @@ const handleSubmit = async (
 
   const formValues = { page, ...getFormattedFormElements(e) };
 
+  const netlifySubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as unknown as string).toString(),
+    }).catch(console.error);
+  };
+
   const res = await fetch(formRoute, {
     method: "POST",
     body: JSON.stringify(formValues),
@@ -75,6 +86,7 @@ const handleSubmit = async (
   isSubmitSuccess && isSubmitSuccess(success);
   if (success) {
     additionalSubmitHandler && additionalSubmitHandler(e);
+    isNetlify && netlifySubmitHandler(e);
   }
 };
 
@@ -107,12 +119,21 @@ export const BaseForm: FC<BaseFormProps> = ({
       <StyledForm
         id={id}
         onSubmit={e =>
-          handleSubmit(e, formRoute, page, setButtonText, fbTrackArgs, isSubmitSuccess, additionalSubmitHandler)
+          handleSubmit(
+            e,
+            formRoute,
+            page,
+            setButtonText,
+            fbTrackArgs,
+            isNetlify,
+            isSubmitSuccess,
+            additionalSubmitHandler
+          )
         }
         data-netlify={isNetlify}
         name={id}
       >
-        {isNetlify && <Hidden as="input" name="form-name" value={id}/>}
+        {isNetlify && <Hidden as="input" name="form-name" value={id} />}
         {children}
         {!!tags ? (
           <Hidden as="input" style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" />
