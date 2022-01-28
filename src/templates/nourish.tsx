@@ -122,7 +122,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         </CenteredText>
       </ColorContainerMobile>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
-        <h2>The next NOURISH experience kicks off in late February, 2022!</h2>
+        <h2>Blossom with NOURISH in Spring 2022!</h2>
         <StyledQuote>
           “<b>Nourish is a life-changing program</b> that provides a safe space for a supportive community filled with
           mutual growth, experiential learning and emotional connection.” - Emma, NOURISH graduate
