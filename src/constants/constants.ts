@@ -17,20 +17,20 @@ type Colors = {
 };
 
 const mobileBreakpoint = 768;
-const getSquareAppointmentUrl = (appointmentUrl: string) =>
-  `https://squareup.com/appointments/buyer/widget/${appointmentUrl}/T2G1BPTFKKDBJ`;
+const getBookingAppointmentUrl = (appointmentUrl?: string) =>
+  `https://calendly.com/sheila-anne${
+    appointmentUrl ? "/" + appointmentUrl : ""
+  }?primary_color=${colors.theGroveGreen.slice(1)}&hide_event_type_details=1`;
 
 export const Constants = {
   Colors: colors as Colors,
   baseUrl: "https://www.sheilaanne.com",
   mobileBreakpoint,
   mobileWidth: mobileBreakpoint + "px",
-  square: {
-    allServicesUrl: getSquareAppointmentUrl("vlggwbtks6vh2m"),
-    eventsUrl: "https://checkout.square.site/buy/MOL5MPFPMF4RRZTSFJU5YT3H",
-    explorationUrl: getSquareAppointmentUrl("382r9s8g5atn2g"),
-    groundToGrowUrl: getSquareAppointmentUrl("efbofoh5gwycw0"),
-    rootToRiseUrl: getSquareAppointmentUrl("2rao3bwu73phex"),
+  booking: {
+    allServicesUrl: getBookingAppointmentUrl(),
+    explorationUrl: getBookingAppointmentUrl("exploration-call"),
+    rootToRiseUrl: getBookingAppointmentUrl("root-to-rise-intro-call"),
   },
   textBannerKey: "hide-banner",
 };

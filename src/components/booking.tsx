@@ -35,6 +35,16 @@ export const BookingIframe = styled.iframe<{
   }
 `;
 
+const getBookingArgs = (page: string) => ({
+  event_category: `Schedule Booking`,
+  event_label: page,
+  send_to: "AW-456930843/upZZCOSniPMBEJvs8NkB",
+});
+
+export const BookingScript = () => {
+  return <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async={true} />;
+};
+
 const handleSubmit = (
   e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>,
   setShowBookingSection: Dispatch<SetStateAction<boolean>>,
@@ -43,12 +53,7 @@ const handleSubmit = (
 ) => {
   e.preventDefault();
 
-  const args = {
-    event_category: `Schedule Booking`,
-    event_label: page,
-    send_to: "AW-456930843/upZZCOSniPMBEJvs8NkB",
-  };
-
+  const args = getBookingArgs(page);
   trackCustomEvent({ type: "conversion", args });
   trackFacebook({
     eventType: "track",
@@ -65,17 +70,24 @@ export const BookingSection = ({
   formParagraph,
   formTitle,
   page,
-  bookingUrl = Constants.square.allServicesUrl,
+  bookingUrl = Constants.booking.allServicesUrl,
 }: BookingSectionProps) => {
   const [showBookingSection, setShowBookingSection] = useState(false);
 
   return (
     <section>
-      <CenteredText backgroundColor={!!backgroundColor ? backgroundColor : "#FFF"} padding="1rem">
+      <BookingScript />
+      <CenteredText
+        backgroundColor={!!backgroundColor && !showBookingSection ? backgroundColor : "#FFF"}
+        padding="1rem"
+      >
         {!showBookingSection && <h1>{formTitle}</h1>}
         {!showBookingSection && <h2>{formDescription}</h2>}
         {!!formParagraph && !showBookingSection && <PaddedParagraph>{formParagraph}</PaddedParagraph>}
-        <PillButton onClick={e => handleSubmit(e, setShowBookingSection, showBookingSection, page)}>
+        <PillButton
+          color={Constants.Colors.theGroveGreen}
+          onClick={e => handleSubmit(e, setShowBookingSection, showBookingSection, page)}
+        >
           {showBookingSection ? "Hide Scheduling Section" : "Tap To Schedule With Sheila Anne"}
         </PillButton>
       </CenteredText>

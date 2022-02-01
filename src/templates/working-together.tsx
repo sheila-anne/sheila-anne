@@ -56,7 +56,7 @@ export const WorkingTogetherTemplate = ({ faqs, frontmatter }) => {
       </CenteredText>
       <ContentBreak />
       <Text>
-        Not finding what you are looking for? I offer personalized workshops and one-time power sessions. Please{" "}
+        Not finding what you are looking for? I offer personalized workshops and customized coaching packages. Please{" "}
         <SmartLink to="/contact/">contact me</SmartLink> to let me know what you need.{" "}
         <a href="#faq">Don't miss the FAQ section</a> if you have questions, too.
       </Text>

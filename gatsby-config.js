@@ -30,7 +30,7 @@ module.exports = {
       {
         question: "What can I expect to get out of coaching with Sheila Anne?",
         answer:
-          "Depending on which program you are in (the one time Ground to Grow Accelerator or my signature Root to Rise program) the session will flow differently.  As my Accelerator is a one time power session, you can expect more guidence from me to help you dig deep and achieve quick results. On the other hand, the Root to Rise program is a beautiful opportunity to organically explore, take action, transform, and sustain your results.  Either way, since coaching is a client-driven experience, you are in the driver's seat. Put lots of effort into our session(s), and you will be rewarded exponentially! It’s my job (and passion) to support you with a safe space, coaching tools, and additional perspectives.",
+          "Expect to explore, take aligned action, transform, and sustain your results.  Since coaching is a client-driven experience, you are in the driver's seat. Put lots of effort into our sessions, and you will be rewarded exponentially! It’s my job (and passion) to support you with a safe space, coaching tools, and additional perspectives.",
       },
     ],
   },

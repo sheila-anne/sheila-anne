@@ -76,6 +76,6 @@ I invite you to take look at the various ways to work with me
 
 #### [Complimentary Consult](https://www.sheilaanne.com/book/exploration/): Your opportunity to pick my brain and learn about how coaching can support you. No strings attached!
 
-#### [Ground to Grow Accelerator](https://www.sheilaanne.com/book/ground-to-grow/): Jump-start your growth with a 45 minute personalized workshop that will leave you feeling empowered, aligned, and ready to take action.
+#### [NOURISH](https://www.sheilaanne.com/nourish/): My signature group coaching program for women looking top nurture their natural selves and thrive in community with other like-minded, ambitious women.
 
 #### [Root to Rise Transformational Coaching Program](https://www.sheilaanne.com/root-to-rise/): If you already know that you are ready to make radical changes in your life, this program is for you! Take the leap - I’ll leap with you!

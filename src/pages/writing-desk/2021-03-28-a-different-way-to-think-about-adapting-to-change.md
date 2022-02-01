@@ -57,6 +57,6 @@ Because we are meant to leave the places we’ve outgrown. We are meant to be su
 - What might be the gift within this change?
 - How can I continue to keep the big picture front of mind?
 
-If you enjoyed this blog and are called to step into a life that feels **full, grounded, and flowing,** you must check out my [Ground to Grow Accelerator](https://www.sheilaanne.com/working-together/#ground-to-grow)! It's a 45 minute power session that will leave you feeling more confident, clear, and ready to take **big bold action!** [Apply for your session right here](https://www.sheilaanne.com/book/ground-to-grow/)!
+If you enjoyed this blog and are called to step into a life that feels **full, grounded, and flowing,** schedule an exploration call [right here](https://www.sheilaanne.com/book/exploration/)!
 
 ![Stay grounded in times of change](/img/bloom-where-you-are-planted-change.jpg "Stay grounded in times of change")

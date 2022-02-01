@@ -160,20 +160,20 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           you deserve.
         </p>
         <p>
-          When you enroll in the program, you will gain access to on-demand support from me and the BLOSSOM resource pack,
-          which is chock-full of practices and journaling prompts.
+          When you enroll in the program, you will gain access to on-demand support from me and the BLOSSOM resource
+          pack, which is chock-full of practices and journaling prompts.
         </p>
         <p>
-          The benefit of working with me 1:1 is that YOU get to be in the driver’s seat, bringing to the table what feels
-          most vital to explore and strategize. Be it taming the inner critic, designing your killer career plan,
-          improving your money mindset, or spending half the session on a guided meditation -- BLOSSOM sessions offer the
-          ultimate time to learn and grow in the way you need most!
+          The benefit of working with me 1:1 is that YOU get to be in the driver’s seat, bringing to the table what
+          feels most vital to explore and strategize. Be it taming the inner critic, designing your killer career plan,
+          improving your money mindset, or spending half the session on a guided meditation -- BLOSSOM sessions offer
+          the ultimate time to learn and grow in the way you need most!
         </p>
         <h2>What's Included</h2>
         <ul>
           <li>
-            <b>A Certified Coach and unwavering supporter</b> who is not afraid to push you outside of your comfort zone,
-            is passionate about your growth, and will cheer for you every single step of the way. That’s me 👋
+            <b>A Certified Coach and unwavering supporter</b> who is not afraid to push you outside of your comfort
+            zone, is passionate about your growth, and will cheer for you every single step of the way. That’s me 👋
           </li>
           <li>
             <b>Self-Discovery Assessment + Deep Dive</b>: When is the last time you took 90 minutes to take inventory of
@@ -188,21 +188,22 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             zone and into the zone of courageous change and aligned living.
           </li>
           <li>
-            <b>BLOSSOM Resources</b>: Strategic journaling prompts to unearth your purpose, behaviors, and desired life path.
+            <b>BLOSSOM Resources</b>: Strategic journaling prompts to unearth your purpose, behaviors, and desired life
+            path.
           </li>
           <li>
-            <b>Text, Voice & Email Support</b>: Unlimited access to me via email and texting, for support on action items,
-            reflections, and strategy between sessions.
+            <b>Text, Voice & Email Support</b>: Unlimited access to me via email and texting, for support on action
+            items, reflections, and strategy between sessions.
           </li>
           <li>
-            <b>An invitation</b>: to continue on with me following the three month commitment.
+            <b>An invitation</b>: to continue on with me following the initial four or six month commitment.
           </li>
         </ul>
-        <ContentBreak/>
+        <ContentBreak />
         <p>
-          Note: I treat my clients like absolute queens 👑 and to deliver this high-quality experience, I cap the
-          number of 1:1 clients I take on. You can rest assured that during the three months we work together, I will
-          be 100% there for all your questions and celebration moments!
+          Note: I treat my clients like absolute queens 👑 and to deliver this high-quality experience, I cap the number
+          of 1:1 clients I take on. You can rest assured that during the time we work together, I will be 100% there for
+          all your questions and celebration moments!
         </p>
       </ColorContainer>
       <PreviewCompatibleImage
@@ -242,7 +243,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       <CenteredButton text="Apply now!" />
       <h2>Still feeling unsure?</h2>
       <p>
-        Try-me-out in a <a href="/book/ground-to-grow/">Ground To Grow Accelerator</a>,{" "}
+        Try-me-out in a <a href="/book/exploration-call/">Exploration Call</a>,{" "}
         <a href="/about/">learn more about my story</a> or check out the <a href="/working-together#faq">FAQs</a>!
       </p>
       <hr />
