@@ -8,6 +8,7 @@ description: "The exciting thing about identifying our subconscious beliefs and
   I’ll be walking through a few simple steps to get started on identifying
   subconscious beliefs as well as how to intervene. "
 featuredpost: true
+featuredImage: /img/rewiring-sub-beliefs.png
 ---
 *[read part one here](https://www.sheilaanne.com/writing-desk/2022-01-27-its-personal-unearthing-subconscious-beliefs-part-1/)*
 
