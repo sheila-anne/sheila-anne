@@ -68,16 +68,12 @@ const InnerBanner = ({ path }: TextBannerProps) => {
   const innerHandler = (_: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
   };
+  const bannerText = "Now accepting private clients!";
   return isShown ? (
     <BannerDiv>
       <Text>
-        <UnderlineLink
-          aria-label="NOW ENROLLING: NOURISH Group Coaching Program"
-          onClick={innerHandler}
-          to="/nourish/"
-          title="NOW ENROLLING: NOURISH Group Coaching Program"
-        >
-          NOW ENROLLING: NOURISH Group Coaching Program
+        <UnderlineLink aria-label={bannerText} onClick={innerHandler} to="/root-to-rise/" title={bannerText}>
+          {bannerText}
         </UnderlineLink>
       </Text>
       <CloseButton onClick={innerHandler} title="Close">

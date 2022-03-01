@@ -98,7 +98,7 @@ const faqs = [
 const NourishApplyButton = () => (
   <CenteredText margin="2rem 0">
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Apply now
+      Apply to the waitlist
     </LinkButton>
   </CenteredText>
 );
@@ -122,7 +122,8 @@ export const NourishTemplate = ({ frontmatter }) => {
         </CenteredText>
       </ColorContainerMobile>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
-        <h2>Blossom with NOURISH in Spring 2022!</h2>
+        <h2>Blossom with NOURISH in Fall 2022</h2>
+        <div>Spots limited for this intimate experience, be sure to apply now.</div>
         <StyledQuote>
           “<b>Nourish is a life-changing program</b> that provides a safe space for a supportive community filled with
           mutual growth, experiential learning and emotional connection.” - Emma, NOURISH graduate
