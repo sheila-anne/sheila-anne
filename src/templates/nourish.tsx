@@ -111,7 +111,7 @@ export const NourishTemplate = ({ frontmatter }) => {
       <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <ColorContainerMobile backgroundColor={Constants.Colors.nourishNeutral}>
-        <CenteredText fontWeight="800" color={"#FFF"}>
+        <CenteredText fontWeight="800" color="#FFF">
           <div>a whole-person coaching program</div>
           <div>to cultivate well-being</div>
           <div>foster community</div>
