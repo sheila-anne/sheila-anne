@@ -90,7 +90,7 @@ The first point was definitely true for my client. In our session we learned tha
 
 This showed me that we cannot just cross our fingers and hope balance will find us. We have to define what is within our control and start practicing the work/life habits that will help us be refreshed and fulfilled. This is where boundaries become key.
 
-## Along with balances comes healthy boundaries!
+## Along with balance comes healthy boundaries!
 
 It’s not your fault you’re burning out from lack of balance if the people at the helm of your company are not practicing boundaries, if it’s a company culture norm to work overtime and weekends, and if your workspace is also your bedroom and your partner, kids, pets, etc. are integrated with the flow of your office. Don’t get me wrong – I love the flexibility of working from home and I do sometimes work odd hours and weekends – but I know that boundaries are an _essential_ piece of the puzzle if I want to build a sustainable business and lifestyle.
 
