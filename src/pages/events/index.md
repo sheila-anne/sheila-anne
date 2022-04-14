@@ -11,6 +11,7 @@ path: /events
 ## Blossom Into Spring
 
 _Thursday, May 12_
+
 _5 PM - 7 PM MT_
 
 Tap into the soil that you have nurtured this winter, water your seeds and BLOSSOM into the most vibrant version of you.
@@ -18,19 +19,24 @@ Tap into the soil that you have nurtured this winter, water your seeds and BLOSS
 Get psyched for…
 
 🌼 a grounding, twisting, blossoming yoga flow
+
 📘 reflection and deepening through journaling and community connection
+
 💛 integration coaching by yours truly
+
 🙏 guided spring visualization and reiki to restore energy blockages and create freedom and agency
 
-[Tickets HERE !](https://sheilaanne.us17.list-manage.com/track/click?u=50cd8d2646515331acfa0d482&id=80cccf7871&e=67b6a3512b)
+[Tickets HERE!](https://sheilaanne.us17.list-manage.com/track/click?u=50cd8d2646515331acfa0d482&id=80cccf7871&e=67b6a3512b)
 
 $40 for this uplifting 2 hour event!
+
 $35 per person if you bring a friend or if you’ve retreated with us previously!
 
 ## Free: Unlock your power by befriending your nervous system
 
 _Wednesday, June 1st_
-_5 PM Mountain Time_
+
+_5 PM - 6:15 PM MT_
 
 Are you ready to connect more authentically with yourself and show up better for your career and relationships? It’s time to find **freedom** from within by understanding and befriending your nervous system!
 

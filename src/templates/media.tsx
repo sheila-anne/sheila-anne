@@ -3,7 +3,7 @@ import React from "react";
 
 import { BaseTemplate, HTMLContent, Layout, SEO } from "../components";
 
-const Events = ({ data, location }: GatsbyPage) => {
+const Media = ({ data, location }: GatsbyPage) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -20,10 +20,10 @@ const Events = ({ data, location }: GatsbyPage) => {
   );
 };
 
-export default Events;
+export default Media;
 
 export const pageQuery = graphql`
-  query AppearancesPages($id: String!) {
+  query MediaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
