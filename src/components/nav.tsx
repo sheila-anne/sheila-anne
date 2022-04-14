@@ -175,6 +175,7 @@ const getNavLinkItems = (
     },
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
     { to: "#subscribeForm", text: "Subscribe", title: "Join the community!" },
+    { to: "/appearances/", text: "Appearances", title: "Media appearances" },
   ];
   !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (

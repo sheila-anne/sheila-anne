@@ -23,7 +23,7 @@ const Events = ({ data, location }: GatsbyPage) => {
 export default Events;
 
 export const pageQuery = graphql`
-  query EventsPage($id: String!) {
+  query AppearancesPages($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
