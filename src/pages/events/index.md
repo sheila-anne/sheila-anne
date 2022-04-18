@@ -3,7 +3,7 @@ templateKey: events
 pageTitle: Events | Sheila Anne
 pageDescription: >
   Book one of Sheila Anne's upcoming life-coaching events, and see the schedule for future programs being offered. Don't miss out!
-bannerImage: /img/sheila-anne-curate-wildly-beautiful-life.png
+bannerImage: /img/sheila-anne-events.png
 bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---

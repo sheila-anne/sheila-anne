@@ -3,7 +3,7 @@ templateKey: media
 pageTitle: Media | Sheila Anne
 pageDescription: >
   See where Sheila's been featured recently.
-bannerImage: /img/sheila-anne-curate-wildly-beautiful-life.png
+bannerImage: /img/nourish-side-by-side.png
 bannerImageHeadline: Media appearances with Sheila Anne
 path: /media
 ---
