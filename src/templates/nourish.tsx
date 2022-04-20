@@ -359,20 +359,18 @@ export const NourishTemplate = ({ frontmatter }) => {
       </ColorContainer>
       <div>
         <CenteredText>
-          <h2>Investment</h2>
+          <h2>Program Options</h2>
           <h3>NOURISH </h3>
           <SpacedOutText>
             All trainings, retreats, curriculum, community, meditations, notebook, and support:
           </SpacedOutText>
-          <SpacedOutText>$1300 or 3 monthly payments of $450</SpacedOutText>
           <h3>NOURISH+</h3>
           <SpacedOutText>
             <i>For the woman ready to be intimately supported and expedite her transformational growth.</i>
-            <div>Everything included in NOURISH:</div>
-            <SpacedOutText>+ One 1:1 call/ month with Sheila </SpacedOutText>
-            <SpacedOutText>+ Private messaging with Sheila </SpacedOutText>
+            <SpacedOutText>Everything included in NOURISH</SpacedOutText>
+            <SpacedOutText>One 1:1 call/ month with Sheila </SpacedOutText>
+            <SpacedOutText>Private messaging with Sheila </SpacedOutText>
           </SpacedOutText>
-          <SpacedOutText>$1700 or 3 monthly payments of $575</SpacedOutText>
           <SpacedOutText>
             <b>Exclusive pricing available for early enrollment applicants</b>
           </SpacedOutText>

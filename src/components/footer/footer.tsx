@@ -66,7 +66,7 @@ const StyledListItem = styled.li`
 
 const footerQuery = graphql`
   query footerInfo {
-    accImage: file(relativePath: { eq: "acc-logo.png" }) {
+    pccImage: file(relativePath: { eq: "pcc-logo.png" }) {
       childImageSharp {
         fixed(height: 75) {
           ...GatsbyImageSharpFixed
@@ -92,17 +92,17 @@ const footerQuery = graphql`
 `;
 
 export const Footer = () => {
-  const { accImage, wpccImage, ticImage } = useStaticQuery(footerQuery);
+  const { pccImage, wpccImage, ticImage } = useStaticQuery(footerQuery);
   return (
     <StyledFooter>
       <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
       <FlexFooter margin="0 0 .5rem 0">
         <FooterGatsbyImage
-          alt={"ICF Associate Certified Coach"}
-          fixed={accImage.childImageSharp.fixed}
+          alt={"ICF Professional Certified Coach"}
+          fixed={pccImage.childImageSharp.fixed}
           loading={"auto"}
           itemProp="image"
-          title={"ICF Associate Certified Coach"}
+          title={"ICF Professional Certified Coach"}
         />
         <FooterGatsbyImage
           alt={"Whole Person Certified Coach"}

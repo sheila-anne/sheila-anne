@@ -32,9 +32,9 @@ It all starts with a free exploration call - a 30 minute strategy session with y
 
 ## Street Cred
 
-### ICF Associate Certified Coach
+### ICF Professional Certified Coach
 
-Associate Certified Coach (ACC) Credential-holders are trained (60+ hours) and experienced (100+ hours) coaches. They have demonstrated knowledge and emerging proficiency in the application of the ICF Core Competencies, Code of Ethics, and definition of coaching. Earners show a commitment to high ethical standards and have demonstrated, through rigorous assessment, professional competence in their work with clients.
+Professional Certified Coach (PCC) Credential-holders are trained (125+ hours) and experienced (500+ hours) coaches. They have demonstrated knowledge and proficiency in the application of the ICF Core Competencies, Code of Ethics, and definition of coaching. Earners show a commitment to high ethical standards and have demonstrated, through rigorous assessment, professional competence in their work with clients.
 
 ### Whole Person Certified Coach
 
