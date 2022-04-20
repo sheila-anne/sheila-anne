@@ -3,7 +3,7 @@ templateKey: media
 pageTitle: Media | Sheila Anne
 pageDescription: >
   See where Sheila's been featured recently.
-bannerImage: /img/nourish-side-by-side.png
+bannerImage: /img/nourish-side-by-side.jpg
 bannerImageHeadline: Media appearances with Sheila Anne
 path: /media
 ---
