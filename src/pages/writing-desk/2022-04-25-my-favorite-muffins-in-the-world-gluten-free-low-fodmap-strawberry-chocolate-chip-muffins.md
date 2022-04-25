@@ -17,7 +17,7 @@ tags:
   - minimalism
   - its personal
 ---
-Introducing: Gluten Free Low FODMAP Strawberry Chocolate Chip Muffins!
+## Introducing: Gluten Free Low FODMAP Strawberry Chocolate Chip Muffins!
 
 After many requests, I've decided to share a few of my favorite recipes, and this is the first one! This is my absolute favorite muffin recipe in the world (seriously!) and it actually was born out of a time that was really challenging for me. 
 
