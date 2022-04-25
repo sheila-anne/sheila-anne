@@ -1,13 +1,14 @@
 ---
 templateKey: blog-post
-title: "My Favorite Muffins In The World : Gluten Free Low FODMAP Strawberry
-  Chocolate Chip Muffins!"
+title: My Favorite Muffins In The World
 date: 2022-04-25T21:16:52.806Z
-description: After many requests, I've decided to share a few of my favorite
+description: Introducing Gluten Free Low FODMAP Strawberry Chocolate Chip
+  Muffins! After many requests, I've decided to share a few of my favorite
   recipes, and this is the first one! This is my absolute favorite muffin recipe
   in the world (seriously!) and it actually was born out of a time that was
   really challenging for me.
 featuredpost: false
+featuredImage: /img/strawberry-gf-muffins.jpeg
 tags:
   - digestion
   - ritual
@@ -16,7 +17,7 @@ tags:
   - minimalism
   - its personal
 ---
-Here it is friends!
+Introducing: Gluten Free Low FODMAP Strawberry Chocolate Chip Muffins!
 
 After many requests, I've decided to share a few of my favorite recipes, and this is the first one! This is my absolute favorite muffin recipe in the world (seriously!) and it actually was born out of a time that was really challenging for me. 
 
