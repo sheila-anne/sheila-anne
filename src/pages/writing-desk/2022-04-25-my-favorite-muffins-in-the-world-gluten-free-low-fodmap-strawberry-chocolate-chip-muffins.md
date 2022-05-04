@@ -29,6 +29,10 @@ One day I was at a local place that sells smoothies, salads, and juices. I order
 
 Needless to say, I loved my new muffin routine, but I knew for the sake of my budget and DIY values, I’d have to try them at home! This recipe has gone through much testing & tasting and I’m very excited to present it to you. If you change up the ingredients or try new flavor profiles, please [let me know](https://www.sheilaanne.com/contact/)! Happy muffin making!
 
+
+
+![photo of gluten free low FODMAP muffins](/img/strawberry-gf-muffins.jpeg "Gluten Free Low FODMAP chocolate chip muffins")
+
 ## Ingredients
 
 * 1/2 cup coconut oil, melted
