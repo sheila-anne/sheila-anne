@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: "It's Personal: My Life Perspective"
+title: "It's Personal: 3 Tips For Life Perspective"
 date: 2022-05-04T17:50:43.985Z
 description: >-
   Don’t wait until “later in life” to take care of your body, prioritize
@@ -42,17 +42,17 @@ For me, perspective is noticing how **full** your life is, how quickly it moves,
 
 Whenever I feel stuck, I’m going to remember the version of me that could barely lift her feet up to the next step in the office building, weighed down by the grief that was leftover from my mom leaving the physical realm just a week prior. I’ll remember the version of me that went from a salaried and benefits job to an hourly one and was over the moon with happiness because she was treated with respect and loved what she was doing. And the 26 year old Sheila, who was paddling the The River Soča in Slovenia wondering “what am I going to do with my life?”. I’ll think of the jobless Sheila and James, sitting in a cafe in Boulder worried about health insurance because I didn’t have insurance at the moment, we didn’t have sustainable money coming in, and I had a slight headache. I’ll think about the version of me that so desperately wanted out of her corporate job but didn’t believe in herself enough to do so. Then I’ll remember the moment before telling the world about my coaching business, when I chose my desire to live big over my fear of judgment. We can learn so much by looking at our own histories of challenges and triumphs. 
 
-As we enter this new month, I invite in this:
+We will soon be entering the second half of 2022 (wild, right?) and I invite you to step back and integrate these 3 perspective tips. 
 
-### **Look back to look ahead.** 
+### **1. Look back to look ahead.** 
 
 When you are feeling off track, behind, stuck, or uncertain, remember a time when you felt this very same way. I assure you that you’ve felt this way before. What you will see is all the times you didn’t think you could go on but you did. Or you worried you would make the wrong choice and everything ended up okay. Or you were uncertain about your own ability to “go for it” but you did and you learned something. The truth is that we can always get further than we believe. We heal even when we think we can’t, even when we don’t want to. We find our power and resourcefulness in the moments of uncertainty and instability. Look back at your own stories, moments big and small, and let them open the door to possibilities of the future.
 
-### **Don’t be afraid to step outside of your comfort zone.**
+### **2. Don’t be afraid to step outside of your comfort zone.**
 
 Yes, I’m sure you’ve heard it before but have you really, really listened? The best choices I’ve ever made were the ones that felt a little scary: Dating the friend from work, moving from salary to hourly, starting my LLC, backpacking Europe without a fully fledged plan, moving to Denver jobless and without a place to live. Much like we underestimate our ability to get unstuck, we also underestimate our ability to figure things out. We cocoon ourselves in places that feel safe and by people that feel safe, even if we’ve outgrown both. Take a chance, trust, let yourself fly!
 
-### **Stop and be present with this moment you’re in.** 
+### **3. Stop and be present with this moment you’re in.** 
 
 I realize so much of my life was talked about as transitionary: High school classes to prepare for college applications; Junior varsity before varsity; College effort to prepare for future job applications. Not everything is a transition. There is meaning to be found in each moment. There are lessons in each rut. If you are always preparing for the future, you’re not able to be present and enjoy the heck out of the present - the very one you’ve worked so hard to create. Without even going into the science of why being present is beneficial, isn’t it more than enough to know that if you are present you are actually taking advantage of all your hard work and determination? Isn’t it enough to say “I’m going to be fully in this moment because I’m worth it and that’s that!”? Stop and be present with this moment - it will be perspective for later.
 
@@ -60,8 +60,8 @@ Don’t wait until “later in life” to take care of your body, prioritize you
 
 Instead, slow down and get to know your nervous system, take yourself on dates and get to know that person you’ll be with forever, tell your people you love them (so much!) , dance, sing, play, experiment, find joy, get weird, and nurture your soul
 
-Life moves fast and you get to live it. 
+Life moves fast, chose to experience every moment of it. 
 
 \---
 
-If this article speaks to you and you are ready to step into a next-level, more magnetic you, consider signing up for one of the [upcoming events](https://www.sheilaanne.com/events/)!
+If this article speaks to you and you are ready to step into a next-level, more magnetic you, consider signing up for a [life changing call](https://www.sheilaanne.com/book/exploration/) with Sheila. Your [first call](https://www.sheilaanne.com/book/exploration/) is free!
