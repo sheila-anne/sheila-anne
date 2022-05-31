@@ -11,25 +11,24 @@ const scrollOptions = {
 } as ScrollIntoViewOptions;
 
 const getHtmlCollection = (className: string) =>
-  (document.getElementsByClassName(className) as unknown) as HtmlElementOnClick[];
+  document.getElementsByClassName(className) as unknown as HtmlElementOnClick[];
 
-const genericScrollHandler = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-  const element = document.getElementById(event.currentTarget.hash);
-
+const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, element?: HTMLElement) => {
   if (element) {
     event.preventDefault();
     element.scrollIntoView(scrollOptions);
   }
 };
 
+const genericScrollHandler = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const element = document.getElementById(event.currentTarget.hash) ?? undefined;
+  handleScroll(event, element);
+};
+
 const scrollHandler = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
   const elementId = event.currentTarget.hash.slice(1, event.currentTarget.hash.length);
-  const element = document.getElementById(elementId);
-
-  if (element) {
-    event.preventDefault();
-    element.scrollIntoView(scrollOptions);
-  }
+  const element = document.getElementById(elementId) ?? undefined;
+  handleScroll(event, element);
 };
 
 const attachScrollHandler = (hash: string) => {
