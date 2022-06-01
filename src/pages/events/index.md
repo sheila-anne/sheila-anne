@@ -8,9 +8,7 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Reclaiming The Wild Woman IN-PERSON Day Retreat
-
-![](/img/sheila-anne-reclaim-wild-woman.jpg)
+![](/img/sheila-anne-reclaim-wild-woman.png)
 
 June 19th 10 AM - 1 PM
 
