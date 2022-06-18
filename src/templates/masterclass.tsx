@@ -1,5 +1,9 @@
 import { graphql } from "gatsby";
 import React, { Dispatch, MouseEvent, SetStateAction, useState } from "react";
+import styled from "styled-components";
+
+import { applyStyle } from "../utils";
+import { Constants } from "../constants";
 
 import {
   BaseTemplate,
@@ -23,6 +27,13 @@ const handleSubmit = (
   setShowMasterclassForm(!showMasterclassForm);
 };
 
+const ColorContainer = styled.div<{ backgroundColor?: string; marginBottom?: string }>`
+  ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
+  margin-top: 1rem;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1rem")};
+  padding: 1rem 2rem;
+`;
+
 const MasterclassSection = ({ setShowMasterclassForm, showMasterclassForm, setIsSubmitSuccess }) =>
   showMasterclassForm ? (
     <MasterclassForm isSubmitSuccess={setIsSubmitSuccess} />
@@ -35,7 +46,7 @@ const MasterclassSection = ({ setShowMasterclassForm, showMasterclassForm, setIs
   );
 
 const ConfirmationSection = () => (
-  <>
+  <ColorContainer backgroundColor={Constants.Colors.lightestBlue}>
     <div>You're in!</div>
     <br />
     <div> I just sent you an email with the masterclass video, "Your 5 Step Strategy For Finding Your Life Path".</div>
@@ -50,7 +61,7 @@ const ConfirmationSection = () => (
     </div>
     <br />
     <div>Cheering you on!</div>
-  </>
+  </ColorContainer>
 );
 
 const Masterclass = ({ data, location }: GatsbyPage) => {
