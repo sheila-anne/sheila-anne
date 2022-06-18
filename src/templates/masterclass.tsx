@@ -9,6 +9,7 @@ import {
   HTMLContent,
   Layout,
   PillButton,
+  PreviewCompatibleImage,
   SEO,
 } from "../components";
 
@@ -99,6 +100,13 @@ const Masterclass = ({ data, location }: GatsbyPage) => {
       <ContentBreak />
       <div>A little about the woman leading this class (me!):</div>
       <br />
+      <PreviewCompatibleImage
+        imageInfo={{
+          alt: "A little about Sheila Anne",
+          childImageSharp: data.aboutSheila.childImageSharp,
+        }}
+        title="A little about Sheila Anne"
+      />
       <div>
         Sheila Anne is a professional coach, business owner, and yoga instructor. She specializes in helping
         high-achieving women to thrive in their relationships, careers, and lifestyles. Are you ready to create a life
@@ -124,6 +132,13 @@ export default Masterclass;
 
 export const pageQuery = graphql`
   query MasterclassPage($id: String!) {
+    aboutSheila: file(relativePath: { eq: "a-little-about-sheila-anne.png" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
