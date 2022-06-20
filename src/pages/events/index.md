@@ -8,9 +8,26 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Reclaiming The Wild Woman IN-PERSON Day Retreat
+![](/img/sheila-anne-reclaim-wild-woman.png)
 
-June 19th 10 AM - 1 PM Keep an eye out for details for this event that will be dropping soon. Expect soulful connection, cacao ceremony, Qoya integration, and more. 🦁
+June 19th 10 AM - 1 PM
+
+[Half Moon Farm](https://www.halfmoonfarm.co/), 1660 Hoyt St, Lakewood, CO 80215
+
+[Tickets here!](https://www.eventbrite.com/e/reclaim-the-wild-woman-tickets-336659306047)
+
+Move, Sip, Connect, Reclaim. This soulful mini retreat will help you ignite an inner spark and reconnect with your powerful, wild nature.
+
+What you can expect:
+
+- Experience a heart opening cacao ceremony
+- Learn about the wild woman archetype
+- Move with Qoya
+- Release and reset with meditation and breathwork
+- Integrate learnings with journaling
+- Share and connect in community
+
+This event will be spicy, soothing, and support you in finding alignment in body, mind, and soul.
 
 ## _Catch the Replay!_ Spring Cleaning For Your Lifestyle
 

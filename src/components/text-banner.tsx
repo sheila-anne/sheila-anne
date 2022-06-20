@@ -68,11 +68,11 @@ const InnerBanner = ({ path }: TextBannerProps) => {
   const innerHandler = (_: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
   };
-  const bannerText = "Now accepting private clients!";
+  const bannerText = `Watch "5 Steps To Find Your Life Path" free video!`;
   return isShown ? (
     <BannerDiv>
       <Text>
-        <UnderlineLink aria-label={bannerText} onClick={innerHandler} to="/root-to-rise/" title={bannerText}>
+        <UnderlineLink aria-label={bannerText} onClick={innerHandler} to="/masterclass/" title={bannerText}>
           {bannerText}
         </UnderlineLink>
       </Text>

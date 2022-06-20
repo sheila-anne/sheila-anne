@@ -165,8 +165,11 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
           </ul>
         </FlexContainer>
         <CenteredText margin="0 0 2rem 0">
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/book/exploration/">
-            I got you, let's work together!
+          <div>
+            <strong>I created something just for you:</strong>
+          </div>
+          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/masterclass/">
+            Watch my free masterclass!
           </LinkButton>
         </CenteredText>
         <ContentBreak />
