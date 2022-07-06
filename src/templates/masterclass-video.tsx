@@ -16,7 +16,7 @@ const Masterclass = ({ data, location }: GatsbyPage) => {
         title={post.frontmatter.pageTitle}
       />
       <BaseTemplate contentComponent={HTMLContent} content={post.html} />
-      <Youtube url="Z1QRqbueDuo" />
+      <Youtube url="p40UJY-ii_U" />
       <CenteredText>
         <LinkButton to="https://calendly.com/sheila-anne/40-minute-free-life-path-consultation">
           Grab your free bonus call here!
