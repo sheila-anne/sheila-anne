@@ -45,11 +45,10 @@ export const WorkingTogetherTemplate = ({ faqs, frontmatter }) => {
       <CenteredText margin="2rem 0">
         <LinkButton to="/nourish/">Nourish Details!</LinkButton>
       </CenteredText>
-      <SpacedHeader id="root-to-rise">Private Coaching: Root To Rise Transformational Program</SpacedHeader>
+      <SpacedHeader id="root-to-rise">Private Coaching with Sheila</SpacedHeader>
       <Text>
-        My signature 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a
-        journey of courageous self discovery, mindfulness, and level up in your career path, relationships, and
-        lifestyle.
+        My 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey
+        of courageous self discovery, mindfulness, and level up in your career path, relationships, and lifestyle.
       </Text>
       <CenteredText margin="2rem 0">
         <LinkButton to="/root-to-rise/">Private Coaching Details!</LinkButton>

@@ -11,6 +11,7 @@ type BackgroundColorProps = {
 type FlexContainerProps = BackgroundColorProps & {
   margin?: string;
   justifyContent?: string;
+  padding?: string;
 };
 
 type FlexColumnProps = FlexContainerProps & {
@@ -27,6 +28,7 @@ export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
   ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
+  ${({ padding }) => applyStyle("padding", padding)}
 
   @media (max-width: ${Constants.mobileWidth}) {
     flex-flow: row wrap;

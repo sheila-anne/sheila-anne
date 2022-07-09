@@ -41,17 +41,17 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
 
   return (
     <section>
-      <h1>Root To Rise: Transformational Coaching Program</h1>
+      <h1>Private Coaching with Sheila Anne</h1>
       <FlexContainer justifyContent="center" margin="1rem 0">
         <HalfColumn>
           <FlexColSplitImage>
             <PreviewCompatibleImage
               imageInfo={{
-                alt: "Root To Rise with Sheila Anne",
+                alt: "Private Coaching with Sheila Anne",
                 childImageSharp: frontmatter.featuredImage.childImageSharp,
               }}
               loading="eager"
-              title="Sheila's signature Root To Rise transformational program has helped strong, powerful women create deep long-lasting change"
+              title="Sheila's private coaching program has helped strong, powerful women create deep long-lasting change"
             />
           </FlexColSplitImage>
         </HalfColumn>
@@ -92,20 +92,20 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       <CenteredButton text="Tap To Book Your Free Call!" />
       <PreviewCompatibleImage
         imageInfo={{
-          alt: "Root To Rise with Sheila Anne, shown writing in her office",
+          alt: "Sheila Anne, shown writing in her office",
           childImageSharp: frontmatter.secondImage.childImageSharp,
         }}
         title="Sheila using the power of reflection to gather her thoughts"
       />
       <br />
       <p>
-        I created the Root to Rise program because I know that you are ready for <i>real</i> change, which can only come
-        with sure-fire strategy and dedicated effort. Just like in a yoga sequence, each session will build upon the
-        previous — you will root down to establish a solid base of values & intentions, and rise up to make big waves in
-        your career, relationships, and lifestyle.
+        I created a private coaching program because I know that you are ready for <i>real</i> change, which can only
+        come with sure-fire strategy and dedicated effort. Just like in a yoga sequence, each session will build upon
+        the previous — you will root down to establish a solid base of values & intentions, and rise up to make big
+        waves in your career, relationships, and lifestyle.
       </p>
       <ColorContainer backgroundColor={Constants.Colors.lightestBlue}>
-        <h2>Root to Rise will enable you to:</h2>
+        <h2>Private Coaching with Sheila will enable you to:</h2>
         <ul>
           <li>
             <b>Root into your power of being present</b>. You may take your first deep breath in a while during our work
@@ -155,16 +155,16 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
 
         <CenteredButton text="Reserve your intro call now!" />
         <p>
-          The Root to Rise Program will give you the tools and support you need to radiate confidence, align with an
-          inspiring lifestyle and career, eliminate daily stress patterns, and take courageous action toward the future
-          you deserve.
+          Private coaching will give you the tools and support you need to radiate confidence, align with an inspiring
+          lifestyle and career, eliminate daily stress patterns, and take courageous action toward the future you
+          deserve.
         </p>
         <p>
           When you enroll in the program, you will gain access to on-demand support from me and the BLOSSOM resource
           pack, which is chock-full of practices and journaling prompts.
         </p>
         <p>
-          The benefit of working with me 1:1 is that YOU get to be in the driver’s seat, bringing to the table what
+          The benefit of working with me 1:1 is that you get to be in the driver’s seat, bringing to the table what
           feels most vital to explore and strategize. Be it taming the inner critic, designing your killer career plan,
           improving your money mindset, or spending half the session on a guided meditation -- BLOSSOM sessions offer
           the ultimate time to learn and grow in the way you need most!
@@ -172,20 +172,21 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         <h2>What's Included</h2>
         <ul>
           <li>
-            <b>A Certified Coach and unwavering supporter</b> who is not afraid to push you outside of your comfort
+            <b>A Professional Coach and unwavering supporter</b> who is not afraid to push you outside of your comfort
             zone, is passionate about your growth, and will cheer for you every single step of the way. That’s me 👋
           </li>
           <li>
             <b>Self-Discovery Assessment + Deep Dive</b>: When is the last time you took 90 minutes to take inventory of
             your life and set specific goals for yourself in areas like career, wellbeing, and enjoyment? You may not
-            have done this before but guess what - you deserve it! In your first BLOSSOM session we take a dive into
-            your Self Discovery Assessment. This session alone will provide you with “ah-ha”s and action steps to start
-            moving the needle in your life.
+            have done this before but guess what - you deserve it! In your first session we take a dive into your Self
+            Discovery Assessment. This session alone will provide you with “ah-ha”s and action steps to start moving the
+            needle in your life.
           </li>
           <li>
-            <b>3 BLOSSOM Sessions Each Month</b>: To support you in stepping purposefully into an aligned and inspiring
-            future, we’ll meet three times each month and make sure you’re always pushing yourself out of your comfort
-            zone and into the zone of courageous change and aligned living.
+            <b>1:1 BLOSSOM Sessions</b>: We'll personalize a meeting cadence (typically weekly or bi-weekly) that will
+            work best for your unique needs and vision. Each session will look different and you get to decide what
+            challenge we are workshopping or opportunity you want to create. I will consistently support you in stepping
+            purposefully into an aligned and inspiring future.
           </li>
           <li>
             <b>BLOSSOM Resources</b>: Strategic journaling prompts to unearth your purpose, behaviors, and desired life
@@ -196,7 +197,12 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             items, reflections, and strategy between sessions.
           </li>
           <li>
-            <b>An invitation</b>: to continue on with me following the initial four or six month commitment.
+            <b>Exclusive Rates</b>: You will recieve exclusive rates to events and retreats that I host while we are
+            working together.
+          </li>
+          <li>
+            <b>Welcome Gift</b>: The details are a surprise. Why? Because you deserve all that is good in this world,
+            love!
           </li>
         </ul>
         <ContentBreak />
@@ -208,17 +214,17 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       </ColorContainer>
       <PreviewCompatibleImage
         imageInfo={{
-          alt: "Sheila hard at work!",
+          alt: "Sheila sitting on a stool",
           childImageSharp: frontmatter.thirdImage.childImageSharp,
         }}
-        title="Sheila hard at work!"
+        title="Sheila is an ICF Professional Certified Coach, ready to help"
       />
       <h2>Why Work With Me?</h2>
       <p>
-        I am a Whole Person Certified & ICF Associate Certified Coach who has helped dozens of ambitious women to create
-        more success, flow, and change in their lives. I blend my professional coach training, yoga background, killer
-        focus to bring you into a space that you can feel grounded, safe, and totally resourced to step into the career,
-        relationships, and life you deserve.
+        I am an ICF Professional Certified Coach, Whole Person Certified Coach, Trauma-Informed Coach, and Yoga
+        Instructor who has helped dozens of ambitious women to create more success, flow, and change in their lives. I
+        blend my professional coach training, yoga background, embodiment expertise, and intuition to help you feel
+        grounded, safe, and totally resourced to step into the career, relationships, and life you deserve.
       </p>
       <p>
         This isn’t just a process I facilitate: this is personal, as I struggled for years feeling that life wasn’t

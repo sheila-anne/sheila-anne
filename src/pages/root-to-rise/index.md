@@ -7,7 +7,7 @@ pageDescription: >
 pageTitle: Root To Rise | Sheila Anne
 templateKey: "root-to-rise"
 secondImage: /img/sheila-anne-about.jpg
-thirdImage: /img/sheila-anne-root-to-rise-intro.jpg
+thirdImage: /img/sheila-why-work-with-me.jpg
 testimonials:
   - title: Taylor P.
     imageAlt: Client testimonial from Taylor

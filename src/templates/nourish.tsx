@@ -26,20 +26,6 @@ const ColorContainer = styled.div<{ backgroundColor?: string; marginBottom?: str
   padding: 1rem 2rem;
 `;
 
-const DesktopImage = styled(BreakOutImage)`
-  @media (max-width: ${Constants.mobileWidth}) {
-    display: none;
-  }
-`;
-
-const MobileImage = styled(BreakOutImage)`
-  display: none;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    display: inherit;
-  }
-`;
-
 const ColorContainerMobile = styled(ColorContainer)`
   margin-top: 0.25rem;
   display: none;
@@ -81,16 +67,16 @@ const faqs = [
   {
     question: "Will I get personal coaching from Sheila?",
     answer:
-      "There will be an opportunity for you to receive individual coaching during our bi-weekly group sessions. If you desire a more personalized experience, I encourage you to invest in NOURISH VIP. Each month we will have one 60 minute session, and you will have unlimited access to Sheila via voice and text support.",
+      "There will be an opportunity for you to receive individual coaching during our bi-weekly group sessions. If you desire a more personalized experience, I encourage you to invest in Nourish VIP. Each month we will have one 60 minute session, and you will have unlimited access to Sheila via voice and text support.",
   },
   {
-    question: "How do I know if I’m ready for NOURISH?",
+    question: "How do I know if I’m ready for Nourish?",
     answer:
       "If you read through and resonate with everything on this page - it’s likely that you are ready! Keep in mind that once you apply, we will hop on a call to confirm that it’s the right fit for you.Listen to your heart and see if this program is calling you.",
   },
-  { question: "What isn’t NOURISH?", answer: "NOURISH is not a replacement for mental health counseling" },
+  { question: "What isn’t Nourish?", answer: "Nourish is not a replacement for mental health counseling" },
   {
-    question: "What is the timeline for NOURISH?",
+    question: "What is the timeline for Nourish?",
     answer: "The program kicks off in mid-September 2021 and will run until mid-December 2021 (14 weeks)",
   },
 ];
@@ -98,7 +84,7 @@ const faqs = [
 const NourishApplyButton = () => (
   <CenteredText margin="2rem 0">
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Apply to the waitlist
+      Apply!
     </LinkButton>
   </CenteredText>
 );
@@ -106,82 +92,70 @@ const NourishApplyButton = () => (
 export const NourishTemplate = ({ frontmatter }) => {
   return (
     <section>
-      <DesktopImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
-      <MobileImage imageInfo={frontmatter.bannerImageMobile} title="Nourish whole person coaching program" />
+      <BreakOutImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
-      <ColorContainerMobile backgroundColor={Constants.Colors.nourishNeutral}>
-        <CenteredText fontWeight="800" color="#FFF">
-          <div>a whole-person coaching program</div>
-          <div>to cultivate well-being</div>
-          <div>foster community</div>
-          <div>
-            and let your natural self
-            <InlineBrownText> thrive</InlineBrownText>
-          </div>
-        </CenteredText>
-      </ColorContainerMobile>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
-        <h2>Blossom with NOURISH in Fall 2022</h2>
-        <div>Spots limited for this intimate experience, be sure to apply now.</div>
+        <h2>Apply for early enrollment</h2>
+        <div>
+          Apply for Early Enrollment right now and receive exclusive pricing + a private coaching session with Sheila
+          Anne. Applying for Nourish is not a commitment; once you apply you may be invited to connect on an enrollment
+          call, after which you may have the option to enroll. Early enrollment closes July 31st at midnight.
+        </div>
+        <NourishApplyButton />
         <StyledQuote>
           “<b>Nourish is a life-changing program</b> that provides a safe space for a supportive community filled with
-          mutual growth, experiential learning and emotional connection.” - Emma, NOURISH graduate
+          mutual growth, experiential learning and emotional connection.” - Emma, Nourish graduate
         </StyledQuote>
-        <NourishApplyButton />
       </ColorContainer>
       <CenteredText
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
         padding="1rem"
-        fontSize="2rem"
         margin="1rem 0"
       >
         <div>
-          FOR THE <b>AMBITIOUS WOMAN</b>
+          For the <b>ambitious woman</b>
         </div>
         <div>
-          WHO IS <b>READY</b>
+          who is <b>ready</b> to <b>nourish</b>
         </div>
+        <div>her body, mind, and soul</div>
         <div>
-          TO FULLY <b>NOURISH</b>
+          and say <b>yes</b> to the wildly beautiful
         </div>
+        <div>life, career, and relationships</div>
         <div>
-          HER <b>UNIQUE POWER</b>
-        </div>
-        <div>
-          AND SAY <b>YES</b> TO
-        </div>
-        <div>
-          THE <b>WILDLY BEAUTIFUL</b> LIFE
-        </div>
-        <div>
-          <b>SHE KNOWS</b> SHE IS
-        </div>
-        <div>
-          CAPABLE OF <b>CREATING</b>.
+          she knows she <b>deserves</b>
         </div>
       </CenteredText>
       <NourishApplyButton />
 
       <div>
         <h2>Are you ...</h2>
-        <SpacedOutText>SO OVER battling self doubt and your inner critic</SpacedOutText>
         <SpacedOutText>
-          TIRED of always hustling and never feeling like you’ll get to where you want to go
+          <b>So over</b> battling self doubt and your inner critic
         </SpacedOutText>
-        <SpacedOutText>CRAVING unwavering confidence and decisive action</SpacedOutText>
-        <SpacedOutText>SEEKING for the self connection and self love you know you're capable of</SpacedOutText>
-        <SpacedOutText>EXCITED to find what's next in your relationships, lifestyle, and career path</SpacedOutText>
         <SpacedOutText>
-          READY to stop trying to do it all on your own, and find a supportive and inspiring community
+          <b>Tired</b> of always hustling and never feeling like you’ll get to where you want to go
+        </SpacedOutText>
+        <SpacedOutText>
+          <b>Craving</b> unwavering confidence and decisive action
+        </SpacedOutText>
+        <SpacedOutText>
+          <b>Seeking</b> for the self connection and self love you know you're capable of
+        </SpacedOutText>
+        <SpacedOutText>
+          <b>Excited</b> to find what's <i>next</i> in your relationships, lifestyle, and career path
+        </SpacedOutText>
+        <SpacedOutText>
+          <b>Ready</b> to stop trying to do it all on your own, and find a supportive and inspiring community
         </SpacedOutText>
       </div>
       <div>
         <h2>What if ...</h2>
         <SpacedOutText>
-          You were able to <b>change</b> the behaviors and beliefs blocking you from playing bigger and bolder in your
-          life
+          You were able to <b>change</b> the behaviors blocking you from playing bigger and bolder in your life
         </SpacedOutText>
         <SpacedOutText>
           There was a <b>community</b> waiting to support you, grow with you, and inspire you to be 100% yourself
@@ -190,37 +164,45 @@ export const NourishTemplate = ({ frontmatter }) => {
           You could feel <b>present</b>, in <b>flow</b>, and an inner <b>glow</b> in your daily life
         </SpacedOutText>
         <SpacedOutText>
-          You were <b>confident</b> in your unique power, because you understood <b>exactly who you were</b> and how to
-          nourish your <b>body, mind, and soul</b>.
+          You were <b>confident</b> in yourself, because you understood <b>exactly who you were</b> and how to nourish
+          your <b>body, mind, and soul</b>.
         </SpacedOutText>
       </div>
       <div>
-        <h2>Welcome home to you. Welcome home to NOURISH</h2>
-        <PreviewCompatibleImage imageInfo={frontmatter.welcomeToNourish} title="Welcome home to NOURISH" />
+        <h2>Welcome home to you. Welcome home to Nourish</h2>
+        <PreviewCompatibleImage imageInfo={frontmatter.welcomeToNourish} title="Welcome home to Nourish" />
       </div>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
-        <CenteredText color={Constants.Colors.nourishBrown} fontSize="1.5rem">
+        <CenteredText color={Constants.Colors.nourishBrown}>
           <div>
-            NOURISH is a 14-week group coaching program for the <b>driven woman</b> who is <b>ready to thrive</b> in her
-            body, mind, and soul. You can expect transformational coaching, immersive training, community connection,
-            and get-out-of-your-comfort-zone experiences. This is unlike anything you’ve done before. This is what your
-            next-level self has been waiting for.
+            Nourish is a 12-week group coaching program for the <b>driven woman</b> who is <b>ready</b> for{" "}
+            <i>something more</i> in her life. You can expect transformational coaching, immersive training, community
+            connection, and get-out-of-your-comfort-zone experiences. This is unlike anything you’ve done before. This
+            is what your next-level self has been waiting for.
           </div>
         </CenteredText>
       </ColorContainer>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
-        <CenteredText color={Constants.Colors.nourishBrown} fontSize="1.5rem">
+        <CenteredText color={Constants.Colors.nourishBrown}>
           <div>
-            This program is thoughtfully designed to help you achieve your goals from a place of alignment and
-            abundance. The tools and learnings you acquire within the program are lifelong, whether you are chasing a
-            new career dream, craving self confidence, or looking for “what’s next” after burnout or grief or big life
-            changes.
+            The intentionally intimate community will foster your growth - be it personal or professional - and hold you
+            accountable to playing big in your life. What do you want to achieve by the end of 2022? What would it be
+            like to <i>finally</i>
+            prioritize yourself and actually make it happen, and make lifelong friendships along the way?
+          </div>
+        </CenteredText>
+      </ColorContainer>
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+        <CenteredText color={Constants.Colors.nourishBrown}>
+          <div>
+            The tools and learnings you acquire within the program are lifelong, whether you are chasing a new career
+            dream, craving self confidence, or looking for “what’s next” after burnout or grief or big life changes.
           </div>
         </CenteredText>
       </ColorContainer>
       <NourishApplyButton />
       <div>
-        <h2>The NOURISH transformation consists of three pillars: Body, Mind, Soul.</h2>
+        <h2>The Nourish program consists of three pillars: Body, Mind, Soul.</h2>
         <Timeline
           timelines={[
             { text: "Launch Party 🍾" },
@@ -231,32 +213,31 @@ export const NourishTemplate = ({ frontmatter }) => {
           ]}
         />
         <SpacedOutText>
-          Bi-weekly training & coaching calls will help you to hone-in, learn, practice, and transform. Between our
-          calls you will be working through the NOURISH Notebook, integrating learnings, and connecting with the NOURISH
-          community via our messaging platform. You’ll constantly be supported, held, and cheered on.
+          Training & coaching calls will help you to hone-in, learn, practice, and transform. Between our calls you will
+          be working through the Nourish Notebook, integrating learnings, and connecting with the Nourish community via
+          our messaging platform. You’ll constantly be supported, held, and cheered on.
         </SpacedOutText>
-
         <SpacedOutText>
           If you are an ambitious, adventurous woman who wants to be her own unique powerhouse, this program is for you!
         </SpacedOutText>
         <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
           <CenteredText>
-            <SmallerHeadline>The NOURISH Experience 🌼</SmallerHeadline>
+            <SmallerHeadline>The Nourish Experience 🌼</SmallerHeadline>
             <h3>2 Virtual Retreats</h3>
             <SpacedOutText>
               Including a kick-off party to build meaningful relationships, and a closing celebration to commemorate the
               incredible journey.{" "}
             </SpacedOutText>
-            <h3>Bi - Weekly Calls</h3>
+            <h3>Intentionally Paced Calls</h3>
             <SpacedOutText>
-              For intensive training and personalized support. Each call will have a specific focus, connected to that
-              month’s theme. A blend of learning, coaching, and community conversation. Each call will be recorded so
-              you can revisit it whenever you choose.
+              For intensive training and personalized support. We’ll take two consecutive weeks to cover each pillar,
+              with an integration / “off” week before moving to the next. Expect a blend of learning, coaching, and
+              community conversation. Each call will be recorded so you can revisit it whenever you choose.
             </SpacedOutText>
-            <h3>NOURISH Notebook</h3>
+            <h3>Nourish Notebook</h3>
             <SpacedOutText>
               A digital journal chock-full of journaling prompts and exercises. Delivered in three parts along the
-              NOURISH journey.
+              Nourish journey.
             </SpacedOutText>
             <h3>Community</h3>
             <SpacedOutText>
@@ -268,12 +249,22 @@ export const NourishTemplate = ({ frontmatter }) => {
             <SpacedOutText>
               A downloadable meditation related to Body, Mind, and Soul, that you can listen to wherever and whenever.
             </SpacedOutText>
-            <h3>Surprises!</h3>
+            <h3>Lifetime Access!</h3>
+            <SpacedOutText>
+              Like materials you can download, print, and replay? Me too! That’s why I will be giving you{" "}
+              <b>lifetime</b> access to the trainings, notebook, and call recordings. No anxiety about disappearing
+              resources here!
+            </SpacedOutText>
+            <h3>Surprises! 🎉</h3>
             <SpacedOutText>Obviously, ‘cause you deserve it!</SpacedOutText>
           </CenteredText>
         </ColorContainer>
-        <h2>I’m dedicated to helping you thrive</h2>
-        <FlexContainer justifyContent="center" margin="1rem 0" backgroundColor={Constants.Colors.nourishGray}>
+        <FlexContainer
+          backgroundColor={Constants.Colors.nourishGray}
+          justifyContent="center"
+          margin="1rem 0"
+          padding="1rem 0"
+        >
           <HalfColumn>
             <FlexColSplitImage>
               <RoundedImage
@@ -288,26 +279,33 @@ export const NourishTemplate = ({ frontmatter }) => {
           <HalfColumn>
             <h3>Hi. I'm Sheila.</h3>
             <SpacedOutText>
-              I am a recovering overachiever / perfectionist and I know what it’s like to be so busy checking all the
-              boxes, that you lose the magic of self-connection and empowered action. I created NOURISH because I
-              believe that when we come home to ourselves, we can transform our lives.
+              I know that you want to feel present, alive, and fulfilled each day, and that’s what I wanted too! I spent
+              years of my life focused on checking boxes, so sucked into the hyper achiever grind that I lost the magic
+              of connecting to myself and my purpose.
             </SpacedOutText>
           </HalfColumn>
           <FlexContainer justifyContent="center" backgroundColor={Constants.Colors.nourishGray}>
             <SpacedOutText padding="1rem">
-              I know that you want to feel present, alive, and fulfilled each day, and that’s what I wanted too! Through
-              the tragic loss of my mother, pivoting my career (again and again) , leaving the corporate world, falling
-              in love, and uprooting my life countless times, I’ve learned that our power and our adaptability don't
-              exist in isolation. This program is truly a work of my soul, and I am beyond grateful to be able to share
-              it with you.
+              Through the tragic loss of my mother, pivoting my career (again and again), leaving the corporate world,
+              falling in love, and uprooting my life countless times, I've learned that anything is possible when you
+              are connected to the pillars of body, mind, and soul. I created Nourish to support women like you to
+              integrate tools for life so that, no matter what season you're in, you can always come home to yourself
+              and cultivate a deeply meaningful life. Why a group coaching experience? Growing individually, within
+              community, is one of the best things we can do for ourselves. Imagine the positive impact of being seen,
+              heard, and celebrated by other ambitious women every step of your journey. I am a professionally certified
+              and trauma-informed coach with over 500 hours of coaching women to step into their desired lives. I am
+              also a yoga instructor and have expertise in embodiment, nervous system regulation, and mindfulness. This
+              program is a work of my soul and I am beyond grateful to be able to share it with you.
             </SpacedOutText>
           </FlexContainer>
         </FlexContainer>
       </div>
       <div>
-        <h2>NOURISH is for you if ...</h2>
+        <h2>Nourish is for you if ...</h2>
         <ul>
-          <li>You are the doing, planning, career-crushing friend that always tries to fill her life to the brim</li>
+          <li>
+            You are the <i>doing, planning, career-crushing</i> friend that always tries to fill her life to the brim
+          </li>
           <li>You have big dreams but often get stuck in the “how” and “what if” stage</li>
           <li>You appear confident but get stuck in loops of self doubt</li>
           <li>You are certain that you have unique power to share with the world</li>
@@ -330,44 +328,52 @@ export const NourishTemplate = ({ frontmatter }) => {
       <NourishApplyButton />
       <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
         <SmallerHeadline>A deeper look at what you’ll learn:</SmallerHeadline>
-        <h3>BODY</h3>
+        <h3>Body</h3>
         <div>
-          <b>Pause</b>: Get to know how to build somatic awareness and mindfulness to transform your life, and how to
-          disconnect from the constant need to “do” so you can commit to greater well-being
+          <b>Pause</b>: Let’s talk about the power of mindfulness, somatic awareness, and slowing down so you can commit
+          to greater well-being and a lifestyle that actually sticks. No more pendulum swings of burnout or not knowing
+          how to break the cycle of stress.
         </div>
         <div>
-          <b>Play</b>: Explore how you interact with the world, your career, your pleasure, your relationships
+          <b>Play</b>: Discover your wild woman self and explore how you interact with the world, your career, your
+          pleasure, your relationships.
         </div>
-        <h3>MIND</h3>
+        <h3>Mind</h3>
         <div>
-          <b>Inner Critic</b>: Develop a clear sense of who the inner critic is, what they are triggered by, what they
-          want, how to turn down the volume so that you can build resilience and take aligned action
-        </div>
-        <div>
-          <b>Inner Mentor</b>: Walk away with a killer resource to tune into when you need an extra boost of confidence,
-          to get in touch with your authenticity, or make tough decisions
-        </div>
-        <h3>SOUL</h3>
-        <div>
-          <b>Purpose</b>: Step into a deep knowing of how you can shine your light a killer mission statement, tools for
-          unwavering self belief
+          <b>Inner Critic</b>: We’ll tackle how to manage the thoughts that keep you up at night or fill you with dread
+          when you wake up in the morning. It’s time to overcome the stories about yourself that are keeping you stuck!
+          You will develop a clear sense of who the inner critic is, biggest triggers, and how to rewrite your stories
+          so you can experience more joy and fulfillment every day.
         </div>
         <div>
-          <b>Magnetize</b>: Manifest the life you desire, switch from scarcity to abundance, explore with energy tools,
-          and declare what you want to attract and be open to receiving it.
+          <b>Inner Mentor</b>: Get ready to leverage the power of a positive mindset and become the confident leader
+          you’re meant to be! You will create a unique-to-you resource to use whenever you need extra boost - be it
+          before leading an event, a tough decision in your life, effective communication with your partner, etc. We all
+          have the ability to empower ourselves, I’ll show you exactly how to do it!
+        </div>
+        <h3>Soul</h3>
+        <div>
+          <b>Purpose</b>: Find your life, career, and love direction and strengthen what makes you, you. No more feeling
+          like you don’t know “what’s next” or being unsure of your purpose. You’ll create a mission statement, so you
+          can step into action and positively impact communities around you along the way.
+        </div>
+        <div>
+          <b>Magnetize</b>: Let’s play with energy and neural manifestation, so you can create big results in your life,
+          career, and relationships! You’ll learn about the science behind intention-setting and manifestation and
+          integrate daily magnetic practices.
         </div>
       </ColorContainer>
       <div>
         <CenteredText>
           <h2>Program Options</h2>
-          <h3>NOURISH </h3>
+          <h3>Nourish </h3>
           <SpacedOutText>
             All trainings, retreats, curriculum, community, meditations, notebook, and support:
           </SpacedOutText>
-          <h3>NOURISH+</h3>
+          <h3>Nourish+</h3>
           <SpacedOutText>
             <i>For the woman ready to be intimately supported and expedite her transformational growth.</i>
-            <SpacedOutText>Everything included in NOURISH</SpacedOutText>
+            <SpacedOutText>Everything included in Nourish</SpacedOutText>
             <SpacedOutText>One 1:1 call/ month with Sheila </SpacedOutText>
             <SpacedOutText>Private messaging with Sheila </SpacedOutText>
           </SpacedOutText>
@@ -383,7 +389,7 @@ export const NourishTemplate = ({ frontmatter }) => {
       </div>
       <PreviewCompatibleImage imageInfo={frontmatter.coachingImage} title="Sheila coaching in person" />
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
-        <h2>What people are saying about the NOURISH experience</h2>
+        <h2>What people are saying about the Nourish experience</h2>
         <StyledQuote>
           “Nourish is a life changing program that provides a safe space for a supportive community filled with mutual
           growth, experiential learning and emotional connection. While the group functions well as a whole, the
@@ -453,13 +459,6 @@ export const pageQuery = graphql`
             }
           }
           publicURL
-        }
-        bannerImageMobile {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
         }
         montage {
           childImageSharp {
