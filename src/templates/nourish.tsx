@@ -187,7 +187,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           <div>
             The intentionally intimate community will foster your growth - be it personal or professional - and hold you
             accountable to playing big in your life. What do you want to achieve by the end of 2022? What would it be
-            like to <i>finally</i>
+            like to <i>finally</i>{" "}
             prioritize yourself and actually make it happen, and make lifelong friendships along the way?
           </div>
         </CenteredText>
