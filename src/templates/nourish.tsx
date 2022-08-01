@@ -26,21 +26,6 @@ const ColorContainer = styled.div<{ backgroundColor?: string; marginBottom?: str
   padding: 1rem 2rem;
 `;
 
-const ColorContainerMobile = styled(ColorContainer)`
-  margin-top: 0.25rem;
-  display: none;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    display: inherit;
-  }
-`;
-
-const InlineBrownText = styled.p`
-  color: ${Constants.Colors.nourishBrown};
-  display: inline;
-  margin-left: 2px;
-`;
-
 const RoundedImage = styled(PreviewCompatibleImage)`
   border-radius: 1rem;
 `;
@@ -55,7 +40,7 @@ const SmallerHeadline = styled.h2`
 `;
 
 const StyledQuote = styled.blockquote`
-  padding: 2rem;
+  padding: 1rem;
 `;
 
 const faqs = [
@@ -81,8 +66,8 @@ const faqs = [
   },
 ];
 
-const NourishApplyButton = () => (
-  <CenteredText margin="2rem 0">
+const NourishApplyButton = ({ margin = "2rem 0" }) => (
+  <CenteredText margin={margin}>
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
       Apply!
     </LinkButton>
@@ -95,14 +80,8 @@ export const NourishTemplate = ({ frontmatter }) => {
       <BreakOutImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray} marginBottom="0">
-        <h2>Apply for early enrollment</h2>
-        <div>
-          Apply for Early Enrollment right now and receive exclusive pricing + a private coaching session with Sheila
-          Anne. Applying for Nourish is not a commitment; once you apply you may be invited to connect on an enrollment
-          call, after which you may have the option to enroll. Early enrollment closes July 31st at midnight.
-        </div>
-        <NourishApplyButton />
+      <NourishApplyButton margin="0 0 2rem 0" />
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <StyledQuote>
           “<b>Nourish is a life-changing program</b> that provides a safe space for a supportive community filled with
           mutual growth, experiential learning and emotional connection.” - Emma, Nourish graduate
@@ -112,7 +91,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         backgroundColor={Constants.Colors.nourishNeutral}
         color={Constants.Colors.nourishBrown}
         padding="1rem"
-        margin="1rem 0"
+        margin="2rem 0"
       >
         <div>
           For the <b>ambitious woman</b>
@@ -187,8 +166,8 @@ export const NourishTemplate = ({ frontmatter }) => {
           <div>
             The intentionally intimate community will foster your growth - be it personal or professional - and hold you
             accountable to playing big in your life. What do you want to achieve by the end of 2022? What would it be
-            like to <i>finally</i>{" "}
-            prioritize yourself and actually make it happen, and make lifelong friendships along the way?
+            like to <i>finally</i> prioritize yourself and actually make it happen, and make lifelong friendships along
+            the way?
           </div>
         </CenteredText>
       </ColorContainer>
@@ -376,9 +355,6 @@ export const NourishTemplate = ({ frontmatter }) => {
             <SpacedOutText>Everything included in Nourish</SpacedOutText>
             <SpacedOutText>One 1:1 call/ month with Sheila </SpacedOutText>
             <SpacedOutText>Private messaging with Sheila </SpacedOutText>
-          </SpacedOutText>
-          <SpacedOutText>
-            <b>Exclusive pricing available for early enrollment applicants</b>
           </SpacedOutText>
           <NourishApplyButton />
           <SpacedOutText>
