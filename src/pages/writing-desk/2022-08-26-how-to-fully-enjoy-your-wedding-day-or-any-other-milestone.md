@@ -8,7 +8,7 @@ description: Everything about the wedding celebration weekend was magic, it
   fully enjoy our wedding celebration day. Many of these ideas were borrowed
   from friends, so I’m excited to continue passing the love along!
 featuredpost: true
-featuredImage: /img/sheila-james-wedding-sneaks-46.jpg
+featuredImage: /img/sheila-james-wedding-sneaks-16.jpg
 ---
 My husband and I eloped at sunrise in the summer of 2021 in Silverthorne, Colorado. It was just us, our photographer, and her husband (and our dog, Buckwheat, of course!). From the adventurous setting, to the pancakes that followed the ceremony, it felt exactly right for us. That said, we always dreamed of the day that we would ring in the celebration of our love with our friends and family. That day finally came in August of 2022! 
 
