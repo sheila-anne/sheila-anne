@@ -8,26 +8,19 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-![](/img/sheila-anne-reclaim-wild-woman.png)
+## Shift Wellness Workshop
 
-June 19th 10 AM - 1 PM
+_September 14th 5:30PM - 6:45PM MT_
 
-[Half Moon Farm](https://www.halfmoonfarm.co/), 1660 Hoyt St, Lakewood, CO 80215
+Join us for an epic evening of yoga, breathwork, and meditation. There will be an opportunity to connect in community following the event.
 
-[Tickets here!](https://www.eventbrite.com/e/reclaim-the-wild-woman-tickets-336659306047)
+[Sign up here!](https://calendly.com/worthitwellness/shift-wellness-workshop-at-nurture?month=2022-09)
 
-Move, Sip, Connect, Reclaim. This soulful mini retreat will help you ignite an inner spark and reconnect with your powerful, wild nature.
+$25 suggested donation to be paid at the event.
 
-What you can expect:
+Hosted at Nine at [Nurture](https://www.visitnurture.com/)
 
-- Experience a heart opening cacao ceremony
-- Learn about the wild woman archetype
-- Move with Qoya
-- Release and reset with meditation and breathwork
-- Integrate learnings with journaling
-- Share and connect in community
-
-This event will be spicy, soothing, and support you in finding alignment in body, mind, and soul.
+2949 Federal Blvd, Denver
 
 ## _Catch the Replay!_ Spring Cleaning For Your Lifestyle
 
