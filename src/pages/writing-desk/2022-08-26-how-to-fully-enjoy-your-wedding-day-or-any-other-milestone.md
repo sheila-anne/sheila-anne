@@ -10,6 +10,7 @@ description: Everything about the wedding celebration weekend was magic, it
 featuredpost: true
 featuredImage: /img/sheila-james-wedding-sneaks-16.jpg
 ---
+
 My husband and I eloped at sunrise in the summer of 2021 in Silverthorne, Colorado. It was just us, our photographer, and her husband (and our dog, Buckwheat, of course!). From the adventurous setting, to the pancakes that followed the ceremony, it felt exactly right for us. That said, we always dreamed of the day that we would ring in the celebration of our love with our friends and family. That day finally came in August of 2022! 
 
 Everything about the wedding celebration weekend was magic, it really was! In reflecting back on what made things so special, I realized that there are a specific few things that I am grateful I / we did so that we could fully enjoy our wedding celebration day. Many of these ideas were borrowed from friends, so I’m excited to continue passing the love along! I’m sure these tips can be transferred to virtually any milestone event in your life. Do you have your own tips? Send me a message and I’ll add it to this list!
@@ -38,7 +39,7 @@ Which friends or family members have a skill that could be perfect for your big 
 
 Whether you’re hosting a wedding day or a full weekend extravaganza, I promise that you will have a lot going on. There will be so many people to see, things to do, emotions to feel, and hugs to give. You will need time alone. Be honest with others about time you need alone, whether it’s just 5 minutes or 1 hour. You might even let a friend know you are turning your phone on Do Not Disturb and will be hiding away in the hotel room to restore.
 
-Even as an extrovert I hit a point that I needed time alone. I simply went to my room, layed down on the bed, and played a 10 minute meditation. I reminded myself that I would not miss anything and that I was helping my future self have an even better time because I took a pause to ground.
+Even as an extrovert I hit a point that I needed time alone. I simply went to my room, laid down on the bed, and played a 10 minute meditation. I reminded myself that I would not miss anything and that I was helping my future self have an even better time because I took a pause to ground.
 
 What can you do by yourself on your wedding day that would feel special and grounding?
 
@@ -68,7 +69,7 @@ What would you like your relationship with your phone to be on your big day?
 
 ![](/img/sheila-james-wedding-sneaks-46.jpg)
 
-\---
+---
 
 My final thought for you: Set an intention for how you want to **feel** on your big day. That way, no matter what comes your way, you can anchor back into your intention. Mine was "be where your feet are," as a reminder to be 100% present with each person and moment, and to feel back into my feet if I felt overwhelmed at any time. 
 
