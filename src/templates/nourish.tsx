@@ -69,7 +69,7 @@ const faqs = [
 const NourishApplyButton = ({ margin = "2rem 0" }) => (
   <CenteredText margin={margin}>
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Apply!
+      Put me on the waitlist!
     </LinkButton>
   </CenteredText>
 );
@@ -80,6 +80,9 @@ export const NourishTemplate = ({ frontmatter }) => {
       <BreakOutImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
+      <CenteredText margin="2rem 0">
+        Nourish is now in session, but you can still apply for next session's waitlist below!
+      </CenteredText>
       <NourishApplyButton margin="0 0 2rem 0" />
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <StyledQuote>

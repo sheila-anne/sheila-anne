@@ -8,15 +8,23 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
+## Costa Rica Pura Vida Retreat
+
+_February 6-11, 2023_
+
+Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, new friendships and perspectives, and a week being healed and rejuvenated by sun, sand, and movement.
+
+We can't wait to host 15 amazing women in Costa Rica next year!
+
+[Full details + signup here.](https://www.krysta-lyn.com/pura-vida)
+
 ## Shift Wellness Workshop
 
-_September 14th 5:30PM - 6:45PM MT_
+_November 13th 1PM - 2:15PM MT_
 
 Join us for an epic evening of yoga, breathwork, and meditation. There will be an opportunity to connect in community following the event.
 
-[Sign up here!](https://calendly.com/worthitwellness/shift-wellness-workshop-at-nurture?month=2022-09)
-
-$25 suggested donation to be paid at the event.
+[Sign up here!](https://calendly.com/worthitwellness/shift-wellness-workshop-at-nurture-november?month=2022-11&date=2022-11-13)
 
 Hosted at Nine at [Nurture](https://www.visitnurture.com/)
 
@@ -38,9 +46,5 @@ Walk away feeling refreshed and empowered to decisively make change in your life
 [Grab your replay here!](https://checkout.square.site/buy/37FRUYMUV42JSOLLJIRW2LOA)
 
 ## Yoga
-
-FREE outdoor yoga events! Come flow beside the mountains and hit the farmers market afterwards.
-
-- June 4 & June 18, 8 AM @ the Eddy Hotel & Taproom in Golden Colorado
 
 Catch Sheila's weekly classes on Thursdays at [Rise Yoga + Wellness](https://www.risegolden.com/) in Golden.
