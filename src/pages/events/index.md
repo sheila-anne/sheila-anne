@@ -8,6 +8,23 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
+## The Anti-Hustle
+
+![](./static/img/Hero-image-AH.png)
+
+A conscious rebellion against burnout. For women who love self-improvement and getting sh\*t done but are so over hustle culture.
+Kickstart 2023 with badass females who are creating an intentional, fulfilling, delicious year without getting burned like toast 🔥. Escape the nonsense of capitalist New Years Resolutions asking you to go-go-go, and instead build toward a kick-ass year that will feel good in body, mind, and soul. This isn't a cutesie event, this is a [conscious rebellion](https://www.eventbrite.com/e/the-anti-hustle-tickets-464689848847).
+
+**Dates:** Events + community occurring intermittently over three weeks, January 9 - 31
+
+**The Experience:** Generative coaching calls, pop up workshops lead by expert female entrepreneurs, on-demand support _off social media_.
+
+**Holy-Sh\*t-That's-A-No-Brainer-Investment:** $111 ($5/day)
+
+_All events will be virtual and recorded, so even the busiest of schedules can be accommodated._
+
+[Sign up and learn more about the workshops](https://www.eventbrite.com/e/the-anti-hustle-tickets-464689848847)
+
 ## Costa Rica Pura Vida Retreat
 
 _February 6-11, 2023_
@@ -17,18 +34,6 @@ Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, ne
 We can't wait to host 15 amazing women in Costa Rica next year!
 
 [Full details + signup here.](https://www.krysta-lyn.com/pura-vida)
-
-## Shift Wellness Workshop
-
-_November 13th 1PM - 2:15PM MT_
-
-Join us for an epic evening of yoga, breathwork, and meditation. There will be an opportunity to connect in community following the event.
-
-[Sign up here!](https://calendly.com/worthitwellness/shift-wellness-workshop-at-nurture-november?month=2022-11&date=2022-11-13)
-
-Hosted at Nine at [Nurture](https://www.visitnurture.com/)
-
-2949 Federal Blvd, Denver
 
 ## _Catch the Replay!_ Spring Cleaning For Your Lifestyle
 
