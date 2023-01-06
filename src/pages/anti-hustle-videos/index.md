@@ -12,6 +12,8 @@ pageDescription: >
 
 ![Replay library](./static/img/Hero-image-AH.png)
 
+[Link to join ALL live calls](https://us02web.zoom.us/j/4647885921)
+
 ## Welcome Video
 
 [Click here for a message from Sheila](https://www.youtube.com/watch?v=Z0AWTD6Ebr8)
