@@ -10,7 +10,7 @@ path: /events
 
 ## The Anti-Hustle
 
-![](./static/img/Hero-image-AH.png)
+![](./img/Hero-image-AH.png)
 
 A conscious rebellion against burnout. For women who love self-improvement and getting sh\*t done but are so over hustle culture.
 Kickstart 2023 with badass females who are creating an intentional, fulfilling, delicious year without getting burned like toast 🔥. Escape the nonsense of capitalist New Years Resolutions asking you to go-go-go, and instead build toward a kick-ass year that will feel good in body, mind, and soul. This isn't a cutesie event, this is a [conscious rebellion](https://www.eventbrite.com/e/the-anti-hustle-tickets-464689848847).
