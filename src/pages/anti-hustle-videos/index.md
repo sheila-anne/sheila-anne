@@ -21,3 +21,7 @@ pageDescription: >
 ## Goodie Bag
 
 <a href="https://sheilaanne.com/anti-hustle-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
+
+## Session Replays
+
+- [Become The Anti-Hustle CEO of Your Life](https://www.youtube.com/watch?v=TAe5oVCtxu8)
