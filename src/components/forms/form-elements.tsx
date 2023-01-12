@@ -61,7 +61,10 @@ export const Hidden = styled.span`
   width: 1px;
 `;
 
-function accessibleWrapper<T>(Component: ComponentType<T>, props: FormHTMLAttributes<HTMLElement>) {
+function accessibleWrapper<T extends FormHTMLAttributes<FormElement>>(
+  Component: ComponentType<T>,
+  props: FormHTMLAttributes<HTMLElement>
+) {
   /*
   have to cast the props here to keep everything happy because the typings
   for styled-components don't return the correct react typings (like HTMLInputElement)
