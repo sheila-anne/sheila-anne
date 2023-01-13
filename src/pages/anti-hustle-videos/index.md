@@ -18,10 +18,6 @@ pageDescription: >
 
 [Click here for a message from Sheila](https://www.youtube.com/watch?v=Z0AWTD6Ebr8)
 
-## Driven By Desire with Jaz Marfo
-
-[Click here to watch Jaz's video](https://www.youtube.com/watch?v=dKIpplicVa0)
-
 ## Goodie Bag
 
 <a href="https://sheilaanne.com/anti-hustle-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
@@ -29,3 +25,4 @@ pageDescription: >
 ## Session Replays
 
 - [Become The Anti-Hustle CEO of Your Life](https://www.youtube.com/watch?v=TAe5oVCtxu8)
+- [Driven By Desire with Jaz Marfo](https://www.youtube.com/watch?v=dKIpplicVa0)
