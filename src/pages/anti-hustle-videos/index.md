@@ -28,3 +28,4 @@ pageDescription: >
 - [Driven By Desire with Jaz Marfo](https://www.youtube.com/watch?v=dKIpplicVa0)
 - [Dress Like You Mean It With Nandi Camille](https://www.youtube.com/watch?v=pdji0shR8jY)
 - [Rhythms of the Body with Sydney Zwicker](https://www.youtube.com/watch?v=RTWcY-B9L_E)
+- [DIY Thirst Trap with Katie Karlberg](https://www.youtube.com/watch?v=BJr3k9TkWNM)
