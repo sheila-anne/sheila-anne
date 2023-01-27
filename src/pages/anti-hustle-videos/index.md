@@ -31,3 +31,4 @@ pageDescription: >
 - [DIY Thirst Trap with Katie Karlberg](https://www.youtube.com/watch?v=BJr3k9TkWNM)
 - [Group Coaching Call](https://www.youtube.com/watch?v=uwZfvTr9Iz4)
 - [Pilates is My Love Language with Annie King](https://youtu.be/Q0Br5OOkEnc)
+- [Chill the F Out Community Reiki with Krysta-Lyn](https://youtu.be/QLUsaa52EII)
