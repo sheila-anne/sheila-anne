@@ -33,3 +33,9 @@ pageDescription: >
 - [Pilates is My Love Language with Annie King](https://youtu.be/Q0Br5OOkEnc)
 - [Chill the F Out Community Reiki with Krysta-Lyn](https://youtu.be/QLUsaa52EII)
 - [Anti-Hustler Drop-in Coaching Call / Closing](https://youtu.be/0RJDYnG3erM)
+
+## Closing Video
+
+[A closing message from Sheila Anne](https://youtu.be/ve7DphT2FII)
+
+[Share your feedback!](https://forms.gle/4yxeptnPp9woXNP29)
