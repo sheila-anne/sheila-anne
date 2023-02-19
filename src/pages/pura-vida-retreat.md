@@ -13,7 +13,7 @@ path: /pura-vida-retreat
 
 In Tamarindo, Costa Rica
 
-- February 5 - 10 & February 12 - 17, 2024
+February 5 - 10 & February 12 - 17, 2024
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of bird and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
