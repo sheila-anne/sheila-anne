@@ -9,6 +9,8 @@ path: /pura-vida-retreat
 
 # Pura Vida Retreat
 
+![Pura Vida retreat hero image](./img/hero-image-costa-rica-retreat.png)
+
 In Tamarindo, Costa Rica
 
 - February 5 - 10 & February 12 - 17, 2024
@@ -23,10 +25,10 @@ We can’t wait to go back to Costa Rica and this time we are thrilled to offer 
 
 ## What's Included
 
-- 5 Nights/6 days of accommodations in a Pura Vida lifestyle cabin at El Sabanero Eco-Lodge
+- 5 Nights / 6 days of accommodations in a Pura Vida lifestyle cabin at El Sabanero Eco-Lodge
 - 3 Vegetarian meals each day
-- 2 Yoga classes/workshops each day
-- 2 - 3 Beach days (by shuttle) and/or hang by the pool
+- 2 Yoga classes / workshops each day
+- 2 - 3 Beach days (by shuttle) and / or hang by the pool
 - Group Reiki healing session
 - Virtual community sessions before and after the retreat
 - All tips for El Sabanero Staff
