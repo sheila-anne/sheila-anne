@@ -81,11 +81,13 @@ Then while away the evening talking with your new friends, journaling, or going 
 Reserve your spot now with a $300 **non-refundable + non-transferable** deposit
 
 - Reserve for week 1
-  - Preferred) Venmo/Paypal specify “week 1” + room type
+  - (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) specify “week 1” + room type
   - [Square pay](https://checkout.square.site/buy/XZKMQYEPI7VU53TUTDPPZPY7)
 - Reserve for week 2
-  - (Preferred) Venmo/Paypal specify “week 2” + room type
+  - (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) specify “week 2” + room type
   - [Square pay](https://checkout.square.site/buy/33TKPSO4C6KFWIFWD3MVYNN4)
+
+Final payments must be made by 11/1/23.
 
 _Disclosure: This is a Pura Vida Lifestyle Retreat and not a luxury accommodation retreat. There are bugs, bats, and creatures around. The beds are not luxe & plush but the cabinas are part of the cultural experience. This is an opportunity to fully immerse yourself into the pura vida mindset and lifestyle and we totally understand if that lifestyle doesn’t suit you._
 
