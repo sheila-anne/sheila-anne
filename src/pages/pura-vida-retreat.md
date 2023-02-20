@@ -23,6 +23,8 @@ Join us for an immersive experience in nature where we will vinyasa to the sound
 
 We can’t wait to go back to Costa Rica and this time we are thrilled to offer **TWO** retreat week options!
 
+![Group photo from 2023](./img/group-photo-pura-vida-retreat.jpg)
+
 ## What's Included
 
 - 5 Nights / 6 days of accommodations in a Pura Vida lifestyle cabin at El Sabanero Eco-Lodge
@@ -34,6 +36,7 @@ We can’t wait to go back to Costa Rica and this time we are thrilled to offer 
 - All tips for El Sabanero Staff
 - Krysta-Lyn and Sheila Anne’s support wherever you currently are in your journey
 - Lifelong community - Our favorite part!
+- Transportation to Tamarindo’s Nightmarket Thursday evening of retreat. Vendors, music, and dancing!
 - Transportation to/from Liberia airport (Provided you arrive/leave within the windows we specify. Please wait to book your air travel until we specify these times!)
 
 ## What's Not Included
@@ -41,7 +44,6 @@ We can’t wait to go back to Costa Rica and this time we are thrilled to offer 
 - Airfare
 - Optional excursions - Such as the Adventure Tour (zip lining, water rafting, mud baths/hot spring and horseback riding), the Catamaran tour, and Surf lessons
 - Optional massage that you can book once you arrive
-- Optional Night Market in Tamarindo - vendors, music, and dancing!
 
 ## Example day
 
@@ -56,23 +58,38 @@ We can’t wait to go back to Costa Rica and this time we are thrilled to offer 
 
 Then while away the evening talking with your new friends, journaling, or going for a night swim and go to bed with a full heart.
 
-## Meet your guides for the week!
-
-## Krysta-Lyn of [Radiate Wellness](https://www.radiatewellness.co/)
-
-(photo)
-
-Short bio
-
-## Sheila Anne of Sheila Anne Coaching + Wellness
-
-(photo)
-
-_Example bio I quickly drafted_ Sheila is a yoga instructor, Buti yoga instructor, Professional Certified Coach, corporate workshop provider, and lover of travel and making friends. She visited Costa Rica for the first time in 2014 (where she also connected with long lost family!) and each time she returns feels like a special homecoming. Her favorite part of the Pura Vida 2023 retreat was getting to know individuals on a deeper level and experiencing transformational practices together like those from guest yoga teachers and time spent out in nature!
-
 ## Investment
 
-Pricing options ...
+**Exclusive rate for return retreaters (must reserve by 2/27)**
+
+- Single - $1800
+- Double - $1450
+- Triple - $1350
+
+**Early bird rates**
+
+- Single - $1850
+- Double - $1500
+- Triple - $1400
+
+**Regular rates**
+
+- Single - $2050
+- Double - $1700
+- Triple - $1600
+
+Reserve your spot now with a $300 **non-refundable + non-transferable** deposit
+
+- Reserve for week 1
+  - Preferred) Venmo/Paypal specify “week 1” + room type
+  - [Square pay](https://checkout.square.site/buy/XZKMQYEPI7VU53TUTDPPZPY7)
+- Reserve for week 2
+  - (Preferred) Venmo/Paypal specify “week 2” + room type
+  - [Square pay](https://checkout.square.site/buy/33TKPSO4C6KFWIFWD3MVYNN4)
+
+_Disclosure: This is a Pura Vida Lifestyle Retreat and not a luxury accommodation retreat. There are bugs, bats, and creatures around. The beds are not luxe & plush but the cabinas are part of the cultural experience. This is an opportunity to fully immerse yourself into the pura vida mindset and lifestyle and we totally understand if that lifestyle doesn’t suit you._
+
+![View from the yoga shala from 2023's retreat](./img/yoga-shala-pura-vida-retreat.jpg)
 
 ## More Love From Past Retreaters
 
