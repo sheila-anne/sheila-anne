@@ -62,7 +62,7 @@ Then while away the evening talking with your new friends, journaling, or going 
 
 **Exclusive rate for return retreaters (must reserve by 2/27)**
 
-- Single - $1800
+- Single - $1800 (2 left!)
 - Double - $1450
 - Triple - $1350
 
