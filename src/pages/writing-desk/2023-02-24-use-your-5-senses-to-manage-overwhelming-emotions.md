@@ -19,11 +19,7 @@ tags:
 ---
 Cara works in a high-pressure sales environment for a technology company. She loves the work but has had trouble managing the expectations of new goals, social obligations, and general life responsibilities. Sometimes she finds herself barely able to catch her breath and ends the day by numbing with Netflix and social media. Cara had seen therapists in the past and had made major progress on healing her anxiety. Her therapist invited her to start working with a coach on her goals related to well-being, stress management, and confidence. 
 
-
-
-As I do with all of my clients, Cara and I spent our first 90 minute session together looking at all the different aspects of her life (from love life, to career, to wealth) and mapping out her micro and macro goals. Cara shared that one of the biggest challenges she faced was managing moments when she became so overwhelmed by her emotions that it completely took over her day and kept her from being present with her work and with her loved ones. She wanted to learn tools for managing these moments so she could feel more at peace and more in control. 
-
-
+As I do with [all of my clients](https://www.sheilaanne.com/working-together/), Cara and I spent our first 90 minute session together looking at all the different aspects of her life (from love life, to career, to wealth) and mapping out her micro and macro goals. Cara shared that one of the biggest challenges she faced was managing moments when she became so overwhelmed by her emotions that it completely took over her day and kept her from being present with her work and with her loved ones. She wanted to learn tools for managing these moments so she could feel more at peace and more in control. 
 
 Cara is not a unicorn, most of the clients I work with live in a state of [flight/fight](https://www.psychologytools.com/resource/fight-or-flight-response/#:~:text=The%20fight%20or%20flight%20response,body%20to%20fight%20or%20flee.) and seek tools for managing overwhelming emotions. Engaging the five senses is one of the easiest and most effective places to get started to practice self regulation and manage emotions. While I’ve been teaching these tools for a while for my private and group coaching    clients, I thought it was time to put it into blog form so it can be easily accessible by all! 
 
@@ -64,8 +60,6 @@ Cara is not a unicorn, most of the clients I work with live in a state of [fligh
 * Alternate with a warm and cool shower. If you are especially impacted by the sense of touch, this can be a fantastic tool to tap into! Next time you are feeling overwhelmed, hop in the shower and alternate temperatures, focusing on how it feels on your skin and in your body.
 * Hold ice / cup of ice water in your hands. Similar to the above but even easier, holding onto something cold can have the same effect. The biggest hurdle when working with emotions is typically getting your mind off the stressor, and holding ice can be just the thing to move your thoughts elsewhere! You might even try popping an ice cube in your mouth to experience a similar impact.
 
-
-
 Cara spent the two weeks between our sessions trying some of these practices. When we met up again she shared that engaging the  sense of **hearing** worked the best for her. She found success listening to noises around her during moments of anxiety and playing soothing music before bed. I invited her to create a playlist that she could easily tune in to every evening. She named it “Cara’s Calm Tunes”!
 
-If you’re like Cara, I invite you to try one or two of these practices for yourself and see what you learn! Have patience with yourself, as developing the ability to consciously respond to overwhelming emotions takes time. Could you benefit from personalized support with stress, burnout, and emotional overwhelm? I’d love to connect on a call and talk about how we could work together.
+If you’re like Cara, I invite you to try one or two of these practices for yourself and see what you learn! Have patience with yourself, as developing the ability to consciously respond to overwhelming emotions takes time. Could you benefit from personalized support with stress, burnout, and emotional overwhelm? I’d love to [connect on a call](https://www.sheilaanne.com/book/exploration/) and talk about how we could work together.
