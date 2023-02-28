@@ -25,8 +25,6 @@ Join us for an immersive experience in nature where we will vinyasa to the sound
 
 We can’t wait to go back to Costa Rica and this time we are thrilled to offer **TWO** retreat week options!
 
-![Sheila & Krysta-Lyn during the retreat](/img/sheila-and-krysta-lyn.jpg)
-
 ## What's Included
 
 - 5 Nights / 6 days of accommodations in a Pura Vida lifestyle cabin at El Sabanero Eco-Lodge
@@ -61,6 +59,18 @@ We can’t wait to go back to Costa Rica and this time we are thrilled to offer 
 - 6:30 PM - Group dinner
 
 Then while away the evening talking with your new friends, journaling, or going for a night swim and go to bed with a full heart.
+
+## Meet Your Guides For The Week
+
+![Sheila & Krysta-Lyn during the retreat](/img/sheila-and-krysta-lyn.jpg)
+
+**Krysta-Lyn** of [Radiate Wellness](https://www.radiatewellness.co/)
+
+Krysta-Lyn found refuge in the combination of yoga, counseling and community after the loss of her mother in 2013. Overcome by the immense sense of peace yoga could provide, she immersed herself in her practice learning that life truly exists between the inhale and exhale. Krysta-Lyn sought to share her passion and received her 200 hour yoga teacher certification from South Boston Yoga in 2018. In 2019 she left the world of finance to seek a healthy, balanced career and life of healing. She earned a Reiki Masters Certification and a Masters of Science in Mental Health Counseling in May 2022. Her dearest friends call her their sunshine and she hopes to help others find what makes them **radiate**!
+
+**Sheila Anne** of Sheila Anne Coaching + Wellness
+
+Sheila visited Costa Rica for the first time in 2014 (where she also connected with long lost family!) and each time she returns feels like a special homecoming. Her favorite part of the Pura Vida 2023 retreat was getting to know individuals on a deeper level and experiencing transformational practices together like those from guest yoga teachers and time spent out in nature! Sheila received her 200 hour yoga teacher certification with Krysta-Lyn at South Boston Yoga. She actually missed the first certification weekend for her mother’s funeral service, so the training came at a potent time of healing and self evolution. She and Krysta-Lyn were meant to connect and collaborate due to their shared pasts and future goals! Sheila became an ICF Professional Certified Coach and works with individuals, groups, and businesses. In the last year she added Buti Yoga and Reiki energy healing into her repertoire. She believes that when we come home to ourselves we transform our lives.
 
 ## Investment
 
