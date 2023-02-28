@@ -15,6 +15,8 @@ In Tamarindo, Costa Rica
 
 February 5 - 10 & February 12 - 17, 2024
 
+![Group photo from 2023](./img/group-photo-pura-vida-retreat.jpg)
+
 Join us for an immersive experience in nature where we will vinyasa to the sounds of bird and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
 ## What past retreaters are saying…
@@ -23,7 +25,7 @@ Join us for an immersive experience in nature where we will vinyasa to the sound
 
 We can’t wait to go back to Costa Rica and this time we are thrilled to offer **TWO** retreat week options!
 
-![Group photo from 2023](./img/group-photo-pura-vida-retreat.jpg)
+![Sheila & Krysta-Lyn during the retreat](/img/sheila-and-krysta-lyn.jpg)
 
 ## What's Included
 
@@ -45,6 +47,8 @@ We can’t wait to go back to Costa Rica and this time we are thrilled to offer 
 - Optional excursions - Such as the Adventure Tour (zip lining, water rafting, mud baths/hot spring and horseback riding), the Catamaran tour, and Surf lessons
 - Optional massage that you can book once you arrive
 
+![Enjoying a moment at the yoga shala](/img/yoga-shala-feet-up.jpg)
+
 ## Example day
 
 - 6:30 AM - wake up and enjoy coffee & fresh fruit
@@ -60,15 +64,9 @@ Then while away the evening talking with your new friends, journaling, or going 
 
 ## Investment
 
-**Exclusive rate for return retreaters (must reserve by 2/27)**
-
-- Single - $1800 (2 left!)
-- Double - $1450
-- Triple - $1350
-
 **Early bird rates**
 
-- Single - $1850
+- Single - $1850 (1 single left for week 1)
 - Double - $1500
 - Triple - $1400
 
@@ -106,3 +104,9 @@ _Disclosure: This is a Pura Vida Lifestyle Retreat and not a luxury accommodatio
 > “DO IT, YOU WILL NOT REGRET IT. I signed up for this retreat as a gift to myself to recenter myself and remind myself of what brings me joy. I was super nervous going into this retreat because I didn’t know anybody past our pre-retreat zoom, but I left with a whole new community, one that I can rely on and that made me feel pure joy for an entire week. I am in no way a professional or expert at Yoga, and you don’t need to be to attend this retreat! It is for anybody and everybody! You will feel safe, and you feel seen and heard. You will leave feeling all the emotions, but most importantly, you’ll leave feeling more confident in yourself and your yoga practice!”
 
 > "The week spent in Costa Rica was a dream. My goal was to truly disconnect from work and everything overwhelming me and to have the opportunity to slow down and find what brings me peace, and that’s exactly what happened. We had the most incredible group of people, led by two amazing women. Krysta-Lyn and Sheila provided an abundance of communication prior to the retreat, alleviating and potential anxiety and really fostering an environment of joy. The lodge was beautiful and maintained its authenticity to the surrounding environment. I can’t say enough good things and cannot wait to go again!! Pura Vida 🌊☀️"
+
+![Coffee during the retreat](/img/pura-vida-coffee.jpg)
+
+![Mangrove girls](/img/mangrove-girls.jpg)
+
+![Pura Vida on the boat](/img/pura-vida-boat-girls.jpg)
