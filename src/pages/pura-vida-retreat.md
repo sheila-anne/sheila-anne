@@ -76,7 +76,7 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 
 **Early bird rates**
 
-- Single - $1850 (1 single left for week 1)
+- Single - $1850 (sold out for week 1)
 - Double - $1500
 - Triple - $1400
 
