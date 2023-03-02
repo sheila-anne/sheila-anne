@@ -78,13 +78,13 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 
 - Single - $1850 (sold out for week 1)
 - Double - $1500
-- Triple - $1400
+- Triple - $1250 (1 room left for week 1, up to 3 people)
 
 **Regular rates**
 
 - Single - $2050
 - Double - $1700
-- Triple - $1600
+- Triple - $1450
 
 Reserve your spot now with a $300 **non-refundable + non-transferable** deposit
 
