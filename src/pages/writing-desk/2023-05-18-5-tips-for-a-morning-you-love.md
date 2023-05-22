@@ -21,7 +21,7 @@ More often than not, I hear from clients that are dissatisfied with their mornin
 
 The creation and implementation of a routine can be hazy at times so I’m sharing five key tips to build the routine you actually love.
 
-1. Get clear on your why
+## Get clear on your why
 
 I’ve shared a few reasons why I personally think morning routine matters but why does it matter to _you_? If you found your way to my blog, you’re likely not one for just following the crowd. Don’t create a routine just because everyone else is doing it - come up with your own reason! Here are some questions to consider:
 
@@ -33,7 +33,7 @@ I’ve shared a few reasons why I personally think morning routine matters but w
 
 Not only does getting clear on your reason for creating a morning routine make it more meaningful and personal, it will also help you stay committed to your routine if you ever fall off.
 
-2. Dreamstorm ideas
+## Dreamstorm ideas
 
 Let this morning routine be uniquely yours! There is a lot of inspiration out there ([see what I’ve been pinning lately](https://www.pinterest.com/sheflowsandgrows/morning-routine/)) but no one routine will work for every single individual and lifestyle. It’s time to let go of the “shoulds” and dream up what could be…
 
@@ -42,7 +42,7 @@ Let this morning routine be uniquely yours! There is a lot of inspiration out th
 - Look back at the things you want to feel - what actions could make you feel that way?
 - Without getting lost in the nitty gritty details, what's possible here?
 
-3. Add in one piece at a time
+## Add in one piece at a time
 
 Resist the temptation to max out your morning routine straight away! If you set goals that are too lofty or create lists that are too long, you are more likely to quit early. By adding one piece at a time, you’ll be able to notice what’s working for you and sustain your momentum. I often have my clients try one thing that feels different, such as...
 
@@ -53,7 +53,7 @@ Resist the temptation to max out your morning routine straight away! If you set 
 
 If it feels fun and is working for you, after a few days add another piece! Don't be afraid to test and tweak pieces along the way.
 
-4. Track how you’re feeling
+## Track how you’re feeling
 
 The best way to learn what works for you is doing "mesearch"! This means paying special attention to how you're feeling as you experiment with your morning routine. Remember that the goal is not to just “do” a morning routine but to achieve the outcome you discovered was important to you in Tip #1. By tracking your routine, you’ll continue with a meaningful process of self discovery and be able to achieve your desired results more quickly.
 
@@ -65,7 +65,7 @@ Ask yourself:
 - What would it be like to keep it simpler?
 - How am I doing toward my original goal of why I'm creating a morning routine?
 
-5. Keep it simple
+## Keep it simple
 
 There is a fine line between keeping it interesting and overdoing - don't let your morning routine turn into a chore that you resent! If you are going through a busier or more challenging time than usual, sustaining your morning routine will be vital but you’ll want to be gentle about it. If you are in a season of up-leveling, it’s a great time to experiment with your morning routine and create a process that feels easy and flowing.
 
