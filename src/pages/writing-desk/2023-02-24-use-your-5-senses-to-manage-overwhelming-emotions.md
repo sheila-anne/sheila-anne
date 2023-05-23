@@ -11,7 +11,6 @@ description: >
 featuredpost: true
 featuredImage: /img/nervous-system-tools.png
 tags:
-  - stress management
   - advice
   - stress management
   - self care
@@ -29,7 +28,7 @@ Cara is not a unicor;, most of the clients I work with live in a state of [fligh
 - Notice three things in your space. This is one of the quickest and easiest ways to engage your sense of sight to manage overwhelming emotions. Even right now, no matter where you are reading this blog, notice three things in your space. Perhaps you see a photo, a jar of pens, a carpet, or the light streaming in your window. Notice three things and bring your eyes to gaze at each one for a few seconds, then repeat.
 - Look at beautiful art, whether it’s art at your personal pace, you take time to travel to an art gallery, or you tour a “virtual gallery” like the [National Gallery](https://www.nationalgallery.org.uk/visiting/virtual-tours).
 - Mindfully watch nature. It’s no secret that nature [benefits our mental health](https://www.mentalhealth.org.uk/our-work/research/nature-how-connecting-nature-benefits-our-mental-health#:~:text=Nature%20can%20generate%20many%20positive,particularly%20lower%20depression%20and%20anxiety.) but you don’t necessarily need to fully immerse yourself to experience those benefits. Simply watching nature out a window can focus your attention away from your overwhelming emotional response and help your nervous system to regulate.
-- Gaze at the sky. If possible, lay on the earth and gaze up at clouds or stars. Not only will you be mindfully directing your sense of sight but you will also receive the benefits of “[earthing](https://www.sciencedirect.com/science/article/pii/S1550830719305476#:~:text=Earthing%20(also%20known%20as%20grounding,and%20generates%20greater%20well%2Dbeing.).”
+- Gaze at the sky. If possible, lay on the earth and gaze up at clouds or stars. Not only will you be mindfully directing your sense of sight but you will also receive the benefits of [earthing](https://www.sciencedirect.com/science/article/pii/S1550830719305476)
 - Look at a photo of a loved one. It can be really nice to have a photo that makes you happy close by. You can change your phone background to a photo of you and a loved one, your dog, or your friends. Next time you notice yourself feeling an intense emotion, rest your eyes on the photo for 30 - 60 seconds and notice how you feel.
 
 ## Smell
