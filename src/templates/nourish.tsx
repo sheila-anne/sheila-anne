@@ -80,7 +80,7 @@ export const NourishTemplate = ({ frontmatter }) => {
       <BreakOutImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
       <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
-      <CenteredText margin="2rem 0">
+      <CenteredText fontSize="2rem" fontWeight="800" margin="2rem 0">
         Doors opening soon for Nourish Fall 2023! Get on the waitlist now to receive exclusive pricing, an incredible
         bonus, and to make sure your spot is saved 🌼
       </CenteredText>
