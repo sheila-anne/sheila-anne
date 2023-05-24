@@ -81,13 +81,16 @@ export const NourishTemplate = ({ frontmatter }) => {
       <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <CenteredText margin="2rem 0">
-        Nourish is now in session, but you can still apply for next session's waitlist below!
+        Doors opening soon for Nourish Fall 2023! Get on the waitlist now to receive exclusive pricing, an incredible
+        bonus, and to make sure your spot is saved 🌼
       </CenteredText>
       <NourishApplyButton margin="0 0 2rem 0" />
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <StyledQuote>
-          “<b>Nourish is a life-changing program</b> that provides a safe space for a supportive community filled with
-          mutual growth, experiential learning and emotional connection.” - Emma, Nourish graduate
+          “I have tried out different therapists, read self-help books, signed up for online modules, in search of
+          something healing that was really worth investing time, energy and money into. Up until Nourish, most of these
+          endeavors fell somewhere between waste of time and pretty good. Nourish on the other hand surpassed all of my
+          expectations and added so much value in the dedicated 4 month timeframe.”
         </StyledQuote>
       </ColorContainer>
       <CenteredText
