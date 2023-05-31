@@ -22,4 +22,11 @@ We can't wait to host the next group of amazing people in Costa Rica next year! 
 
 ## Yoga
 
-Catch weekly classes on Thursdays & Sundays at [Ohana Yoga & Barre](https://ohanayoga.com/) in Denver. Would you like to book a private event? We've hosted everything from healing mini retreats to private yoga parties. Make a bachelorette, company off-site event, or birthday party extra special this year! Modalities offered: Yoga; Mediation; Reiki energy healing; Coaching; Mindfulness talks; Community building.
+Catch weekly classes on Thursdays & Sundays at [Ohana Yoga & Barre](https://ohanayoga.com/) in Denver. Would you like to book a private event? We've hosted everything from healing mini retreats to private yoga parties. Make a bachelorette, company off-site event, or birthday party extra special this year! Modalities offered:
+
+- Yoga
+- Mediation
+- Reiki energy healing
+- Coaching
+- Mindfulness talks
+- Community building

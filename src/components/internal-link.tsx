@@ -14,6 +14,7 @@ const InternalLink = styled(Link)<InternalLinkProps>`
   ${({ color }) => applyStyle("color", color)}
   ${({ display }) => applyStyle("display", display || "inline")};
   text-decoration: none;
+  white-space: nowrap;
 
   :hover {
     color: #000;
