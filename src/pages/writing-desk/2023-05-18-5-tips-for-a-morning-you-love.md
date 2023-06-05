@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 5 Tips For A Morning You Love
+title: 5 Tips For A Morning Routine You Love
 date: 2023-05-18T19:45:29.403Z
 description: >
   More often than not, I hear from clients that are dissatisfied with their morning routine. They’ve dabbled with creating a routine but have trouble getting excited about it and (the hardest part) staying committed to it. In my experience, this is a huge opportunity. If you are looking to up-level your life and career, morning routine is the first spot to look to!
