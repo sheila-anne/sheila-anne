@@ -96,7 +96,7 @@ const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
 const Headline = styled.h1`
   font-size: 45px;
   font-weight: 100;
-  margin: 5px 0;
+  margin: 5px 2rem 0 0;
 
   :hover {
     color: ${Constants.Colors.gray};
@@ -176,6 +176,7 @@ const getNavLinkItems = (
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
     { to: "#subscribeForm", text: "Subscribe", title: "Join the community!" },
     { to: "/media/", text: "Media", title: "Media appearances" },
+    { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
   ];
   !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
