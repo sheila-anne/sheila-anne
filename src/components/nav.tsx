@@ -81,7 +81,6 @@ const StyledNav = styled.nav.withConfig<OpenNavProps>({
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
-    height: 50px;
   }
 `;
 
@@ -95,7 +94,7 @@ const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
   padding: 0 0 0 15px;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    padding: 0 0 0 5px;
+    display: block;
   }
 `;
 
@@ -139,7 +138,7 @@ const NavListItem = styled.li`
   padding-top: 10px;
 `;
 
-const MobileMenu = styled.div<OpenNavProps>`
+const MobileMenu = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop => prop !== "isOpen" })`
   background: ${Constants.Colors.theGroveGreen};
   border: 1px solid ${Constants.Colors.theGroveGreen};
   height: 100vh;
@@ -165,7 +164,7 @@ const MobileMenu = styled.div<OpenNavProps>`
 
 const getNavLinkItems = (
   location: Location,
-  showHomeLink = false,
+  isOpen = false,
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const navLinks = [
@@ -183,10 +182,9 @@ const getNavLinkItems = (
     },
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
     { to: "#subscribeForm", text: "Subscribe", title: "Join the community!" },
-    { to: "/media/", text: "Media", title: "Media appearances" },
     { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
   ];
-  !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
+  !!isOpen && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
     <NavListItem
       key={navLink.to}
@@ -199,7 +197,7 @@ const getNavLinkItems = (
           // if you're in the mobile-menu, some links are links;
           // some are page references. close the menu if the setState handler
           // is passed in to show relative page refs
-          onClick={() => setIsOpen && setIsOpen(!showHomeLink)}
+          onClick={() => setIsOpen && setIsOpen(!isOpen)}
           aria-current={location && location.pathname === navLink.to}
           ariaLabel={navLink.title}
           role="menuitem"

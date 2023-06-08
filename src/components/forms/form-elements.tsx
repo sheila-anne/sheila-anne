@@ -85,7 +85,7 @@ export const Input = (props: InputProps) => accessibleWrapper(InputInner, props)
 
 export const TextArea = (props: TextareaHTMLAttributes<HTMLTextAreaElement>) => accessibleWrapper(TextAreaInner, props);
 
-const InputInner = styled.input<InputProps>`
+const InputInner = styled.input.withConfig<InputProps>({ shouldForwardProp: prop => prop !== "backgroundColor" })`
   ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}
   margin: 1rem 0;
 `;
@@ -102,7 +102,7 @@ const TextAreaInner = styled.textarea`
 `;
 
 export const FormWrapperSection = styled.section.withConfig<FormWrapperProps>({
-  shouldForwardProp: (prop, _) => false,
+  shouldForwardProp: (prop, _) => prop !== "alignItems" && prop !== "centerText",
 })`
   ${({ alignItems }) => applyStyle("align-items", !!alignItems ? alignItems : "center")}
   display: flex;

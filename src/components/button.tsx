@@ -50,7 +50,9 @@ export const PlainButton = styled.button.withConfig<ButtonProps>({
   ${FocusCss}
 `;
 
-export const LinkButton = styled(SmartLink)<ButtonProps>`
+export const LinkButton = styled(SmartLink).withConfig<ButtonProps>({
+  shouldForwardProp: prop => prop !== "backgroundColor",
+})`
   ${ButtonCss}
   ${FocusCss}
 `;

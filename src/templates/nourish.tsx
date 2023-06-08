@@ -19,7 +19,9 @@ import {
   Timeline,
 } from "../components";
 
-const ColorContainer = styled.div<{ backgroundColor?: string; marginBottom?: string }>`
+const ColorContainer = styled.div.withConfig<{ backgroundColor?: string; marginBottom?: string }>({
+  shouldForwardProp: prop => prop !== "backgroundColor" && prop !== "marginBottom",
+})`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
   margin-top: 1rem;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1rem")};
@@ -41,6 +43,10 @@ const SmallerHeadline = styled.h2`
 
 const StyledQuote = styled.blockquote`
   padding: 1rem;
+`;
+
+const BlockImage = styled(PreviewCompatibleImage)`
+  display: block;
 `;
 
 const faqs = [
@@ -81,7 +87,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         imageInfo={frontmatter.bannerImage.childImageSharp.gatsbyImageData}
         title="Nourish whole person coaching program"
       />
-      <PreviewCompatibleImage imageInfo={frontmatter.montage.childImageSharp.gatsbyImageData} title="Nourish montage" />
+      <BlockImage imageInfo={frontmatter.montage.childImageSharp.gatsbyImageData} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <CenteredText fontSize="2rem" fontWeight="800" margin="2rem 0">
         Doors opening soon for Nourish Fall 2023! Get on the waitlist now to receive exclusive pricing, an incredible

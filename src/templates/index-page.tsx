@@ -98,7 +98,7 @@ const Container = styled.div`
 `;
 
 const BannerHeadline = styled.h1.withConfig<HeadlineProps>({
-  shouldForwardProp: () => false,
+  shouldForwardProp: prop => prop !== "fontColor" && prop !== "lessMargin",
 })`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
   box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,

@@ -1,4 +1,4 @@
-import React, { Dispatch, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
+import React, { Dispatch, Reducer, useEffect, useLayoutEffect, useReducer, useRef, useState } from "react";
 import styled from "styled-components";
 
 import { BannerLink } from "./banner-link";
@@ -146,6 +146,11 @@ const MeasurableHeightText = ({ dispatch, isExpanded, text, title }: Expandable)
 export const Testimonial = ({ testimonials }: TestimonialProps) => {
   const initialState = getInitialState(testimonials);
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [showMeasurableHeight, setShowMeasurableHeight] = useState(false);
+
+  useEffect(() => {
+    setShowMeasurableHeight(true);
+  });
 
   return (
     <TestimonialSection id="testimonials">
@@ -159,12 +164,14 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
             />
           )}
           <TestimonialTitle>{testimonial.title}</TestimonialTitle>
-          <MeasurableHeightText
-            dispatch={dispatch}
-            isExpanded={state[testimonial.title]}
-            text={testimonial.text}
-            title={testimonial.title}
-          />
+          {showMeasurableHeight ? (
+            <MeasurableHeightText
+              dispatch={dispatch}
+              isExpanded={state[testimonial.title]}
+              text={testimonial.text}
+              title={testimonial.title}
+            />
+          ) : null}
         </TestimonialCallout>
       ))}
       <hr />

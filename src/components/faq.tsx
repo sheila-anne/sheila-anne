@@ -27,7 +27,7 @@ const Clickable = styled.div`
   margin: 2rem 0;
 `;
 
-const HiddenText = styled.p<{ isExpanded: boolean }>`
+const HiddenText = styled.p.withConfig<{ isExpanded: boolean }>({ shouldForwardProp: prop => prop !== "isExpanded" })`
   display: ${({ isExpanded }) => (!!isExpanded ? "block" : "none")};
   margin-top: 1rem;
 `;
@@ -38,7 +38,9 @@ const SmallHeadline = styled.h2`
   text-decoration: underline;
 `;
 
-const RotateOnOpen = styled.span<{ isExpanded: boolean }>`
+const RotateOnOpen = styled.span.withConfig<{ isExpanded: boolean }>({
+  shouldForwardProp: prop => prop !== "isExpanded",
+})`
   display: block;
   position: absolute;
   right: 100%;

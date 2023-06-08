@@ -148,6 +148,9 @@ export const Footer = () => {
             <StyledListItem>
               <FooterLink to="/about/">About</FooterLink>
             </StyledListItem>
+            <StyledListItem>
+              <FooterLink to="/media/">Media</FooterLink>
+            </StyledListItem>
           </FooterList>
         </FooterColumn>
         <FooterColumn>

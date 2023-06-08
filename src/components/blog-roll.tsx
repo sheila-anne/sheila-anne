@@ -12,12 +12,14 @@ type ArticleProps = {
   isFeatured: boolean;
 };
 
+const BlogRollFlexContainer = styled(FlexContainer)`
+  @media (max-width: ${Constants.mobileWidth}) {
+    flex-flow: column;
+  }
+`;
+
 const BlogRollFlexColumn = styled(FlexColumn)`
   flex-basis: 33%;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    flex-basis: 95%;
-  }
 `;
 
 const FlexTextContainer = styled.div`
@@ -27,7 +29,6 @@ const FlexTextContainer = styled.div`
   align-items: flex-start;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    display: block;
     text-align: center;
     max-width: 80vw;
   }
@@ -67,7 +68,6 @@ const Article = styled.article.withConfig<ArticleProps>({
   padding: 0 1rem 1rem 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    height: 100%;
     margin: 0;
   }
 `;
@@ -76,6 +76,7 @@ const Paragraph = styled.p`
   display: none;
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
+    padding: 0 1rem;
   }
 `;
 
@@ -102,7 +103,7 @@ const BlogRollInner = ({ post }) => (
 
 export const BlogRoll = ({ posts }) => {
   return (
-    <FlexContainer justifyContent="center">
+    <BlogRollFlexContainer justifyContent="center">
       {posts &&
         posts.map(({ node: post }) => (
           <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>
@@ -111,6 +112,6 @@ export const BlogRoll = ({ posts }) => {
             </SmartLink>
           </BlogRollFlexColumn>
         ))}
-    </FlexContainer>
+    </BlogRollFlexContainer>
   );
 };

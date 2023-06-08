@@ -13,7 +13,7 @@ mainpitch:
 
 intro:
   blurbs:
-    - href: /book/exploration/
+    - href: /book/exploration
       image: /img/sheila-anne-plant-feature.png
       imageAlt: Apply for a free Exploration Call.
       title: 30 Minute Exploration Call
@@ -25,7 +25,7 @@ intro:
       title: NOURISH
       text: >
         Join a community of ambitious women who are mindfully curating their wildly beautiful lives.
-    - href: /root-to-rise/
+    - href: /root-to-rise
       image: /img/sheila-anne-tree-feature.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
       title: 1:1 Coaching

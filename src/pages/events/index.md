@@ -18,7 +18,7 @@ We can't wait to host the next group of amazing people in Costa Rica next year! 
 
 [Full details + signup here.](/pura-vida-retreat/)
 
-![Group photo from 2023](./img/group-photo-pura-vida-retreat.jpg)
+![Group photo from 2023](/img/group-photo-pura-vida-retreat.jpg)
 
 ## Yoga
 
