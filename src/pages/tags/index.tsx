@@ -12,7 +12,7 @@ const TagsPage = ({
     },
   },
   location,
-}: GatsbyPage) => (
+}) => (
   <Layout location={location}>
     <SEO
       description={`Sheila Anne | Find blogs produced by Life Coach and writer Sheila Anne for the subject: ${title}`}
@@ -54,7 +54,7 @@ export const tagPageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 1000) {
-      tags: group(field: frontmatter___tags) {
+      tags: group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }

@@ -22,7 +22,7 @@ const MarginText = styled.div`
   margin-top: 1rem;
 `;
 
-export default ({ data, location }: GatsbyPage) => {
+export default ({ data, location }) => {
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false);
   return (
     <Layout location={location}>
@@ -36,10 +36,8 @@ export default ({ data, location }: GatsbyPage) => {
           <HalfColumn>
             <FlexColSplitImage>
               <PreviewCompatibleImage
-                imageInfo={{
-                  alt: "The Positivity Pack freebie",
-                  childImageSharp: data.freebieImage.childImageSharp,
-                }}
+                imageAlt="The Positivity Pack freebie"
+                imageInfo={data.freebieImage.childImageSharp.gatsbyImageData}
                 title="The Positivity Pack freebie"
               />
             </FlexColSplitImage>
@@ -73,10 +71,8 @@ export default ({ data, location }: GatsbyPage) => {
       )}
       <section>
         <PreviewCompatibleImage
-          imageInfo={{
-            alt: "Sheila smiling in nature",
-            childImageSharp: data.overlayPhoto.childImageSharp,
-          }}
+          imageAlt="Sheila smiling in nature"
+          imageInfo={data.overlayPhoto.childImageSharp.gatsbyImageData}
           title="Bring in the New Year with positivity"
         />
         <CenteredText margin="3rem 0 1rem 0">
@@ -109,10 +105,8 @@ export default ({ data, location }: GatsbyPage) => {
           free <b>Positivity Pack</b>!
         </MarginText>
         <PreviewCompatibleImage
-          imageInfo={{
-            alt: "Sheila breathing deep",
-            childImageSharp: data.third.childImageSharp,
-          }}
+          imageAlt="Sheila breathing deep"
+          imageInfo={data.third.childImageSharp.gatsbyImageData}
           title="Breathe easy with the Positivity Pack"
         />
       </section>
@@ -124,23 +118,17 @@ export const pageQuery = graphql`
   query FreebieQuery {
     freebieImage: file(relativePath: { eq: "positivity-pack-cropped.jpg" }) {
       childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [JPG])
       }
     }
     overlayPhoto: file(relativePath: { eq: "positivity-pack-cover.jpg" }) {
       childImageSharp {
-        fluid(quality: 90) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [JPG])
       }
     }
     third: file(relativePath: { eq: "positivity-pack-breathing-calming-stress-relief.jpg" }) {
       childImageSharp {
-        fluid(quality: 95) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [JPG])
       }
     }
   }

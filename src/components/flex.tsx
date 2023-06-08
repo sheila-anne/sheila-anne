@@ -1,4 +1,4 @@
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled, { css } from "styled-components";
 
 import { applyStyle } from "../utils";
@@ -23,7 +23,9 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
   ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}
 `;
 
-export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
+export const FlexContainer = styled(BackgroundColorDiv).withConfig<FlexContainerProps>({
+  shouldForwardProp: prop => prop !== "justifyContent",
+})`
   display: flex;
   flex-flow: row wrap;
   ${({ margin }) => applyStyle("margin", margin)}
@@ -86,6 +88,6 @@ export const FlexImageCSS = css`
   }
 `;
 
-export const FlexImage = styled(Image)`
+export const FlexImage = styled(GatsbyImage)`
   ${FlexImageCSS}
 `;

@@ -1,6 +1,6 @@
 import React from "react";
-import Img from "gatsby-image";
-import styled, {css } from "styled-components";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import styled, { css } from "styled-components";
 
 import { FlexImageCSS } from "./flex";
 
@@ -14,9 +14,9 @@ export const BreakOutCss = css`
 
 type PreviewCompatibleImageProps = {
   className?: string;
-  imageInfo: PreviewImage;
+  imageInfo: IGatsbyImageData | undefined;
   imageAlt?: string;
-  loading?: "eager" | "lazy" | "auto";
+  loading?: "eager" | "lazy" | undefined;
   title?: string;
 };
 
@@ -25,49 +25,27 @@ export const PreviewCompatibleImage = ({
   imageAlt,
   imageInfo,
   title,
-  loading = "auto",
+  loading,
 }: PreviewCompatibleImageProps) => {
   const imageStyle = {
     maxWidth: "inherit",
     maxHeight: "inherit",
   };
-  let { alt = "", childImageSharp, image } = imageInfo;
-  const altText = alt || imageAlt;
-  const potentialImage = image as NestedImage;
-  const loadType = loading || "auto";
+  const altText = imageAlt || "";
+  const loadType = loading;
 
-  if (!!image && !!potentialImage.childImageSharp) {
+  if (!!imageInfo) {
     return (
-      <Img
+      <GatsbyImage
         alt={altText}
         className={className}
-        fluid={potentialImage.childImageSharp.fluid}
+        image={imageInfo}
         loading={loadType}
         itemProp="image"
         style={imageStyle}
         title={title}
       />
     );
-  }
-
-  if (!!childImageSharp) {
-    return (
-      <Img
-        alt={altText}
-        className={className}
-        fluid={childImageSharp.fluid}
-        loading={loadType}
-        itemProp="image"
-        style={imageStyle}
-        title={title}
-      />
-    );
-  }
-
-  const rawImg = typeof imageInfo === "string" ? imageInfo : !!image && typeof image === "string" ? image : "";
-
-  if (!!rawImg) {
-    return <img alt={altText} className={className} style={imageStyle} src={rawImg} title={title} />;
   }
 
   return null;

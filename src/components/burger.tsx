@@ -9,7 +9,7 @@ type BurgerProps = {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const StyledBurger = styled.button<{ isOpen: boolean }>`
+const StyledBurger = styled.button.withConfig<{ isOpen: boolean }>({ shouldForwardProp: prop => prop !== "isOpen" })`
   align-items: center;
   background: transparent;
   border: none;

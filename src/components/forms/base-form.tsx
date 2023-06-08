@@ -11,6 +11,7 @@ import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
 export type BaseFormProps = {
   backgroundColor?: string;
   buttonColor?: string;
+  children?: React.ReactNode;
   formTitle?: string;
   formDescription?: string;
   formParagraph?: string;

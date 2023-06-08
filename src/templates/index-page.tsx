@@ -23,23 +23,24 @@ import {
 } from "../components";
 import { Constants } from "../constants";
 import { applyStyle } from "../utils";
+import { BaseFrontmatter, BlogPost, FeaturedGridItem, BlogPostsGraphql, BaseGatsbyPage } from "../types/global";
 
 type MainPitch = {
   description: string;
   title: string;
-  image: NestedImage;
+  image: any;
 };
 
 type IndexFrontmatterProps = BaseFrontmatter & {
   description: string;
   heading: string;
-  image: PreviewImage | string;
+  image: any;
   intro: {
     blurbs: FeaturedGridItem[];
     workWithMe: string[];
   };
   mainpitch: MainPitch;
-  freebie: NestedImage;
+  freebie: any;
   testimonials: any;
 };
 
@@ -96,7 +97,9 @@ const Container = styled.div`
   }
 `;
 
-const BannerHeadline = styled.h1<HeadlineProps>`
+const BannerHeadline = styled.h1.withConfig<HeadlineProps>({
+  shouldForwardProp: () => false,
+})`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
   box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
@@ -125,7 +128,9 @@ const FreebieHeading = styled.h2`
   text-align: center;
 `;
 
-const TestimonialContainer = styled(FlexContainer)`
+const TestimonialContainer = styled(FlexContainer).withConfig({
+  shouldForwardProp: prop => prop !== "backgroundColor",
+})`
   display: block;
   margin-bottom: 2rem;
 `;
@@ -134,14 +139,13 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
   const { description, image, mainpitch, freebie, testimonials } = frontmatter;
 
   const fullTestimonials = [...testimonials];
-  const safeImage = image as NestedImage;
 
   const descriptionParts = description.split(".");
 
   return (
     <section>
       <BannerImage
-        image={safeImage}
+        image={image.childImageSharp.gatsbyImageData}
         imageHeadline="Step Into The Best Version Of You"
         title="Sheila Anne Life Coaching cover photo"
       />
@@ -182,10 +186,8 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
           <ImageContainer>
             <PreviewCompatibleImage
               loading="lazy"
-              imageInfo={{
-                alt: "Sheila Anne on a brightly lit porch with a colorful rug",
-                childImageSharp: mainpitch.image.childImageSharp,
-              }}
+              imageAlt="Sheila Anne on a brightly lit porch with a colorful rug"
+              imageInfo={mainpitch.image.childImageSharp.gatsbyImageData}
               title="A warm welcome from Sheila Anne"
             />
           </ImageContainer>
@@ -207,10 +209,8 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
               <SmartLink to="/freebie/" title="Positivity Pack freebie">
                 <PreviewCompatibleImage
                   loading="lazy"
-                  imageInfo={{
-                    alt: "Preview of the Positivity Pack freebie",
-                    childImageSharp: freebie.childImageSharp,
-                  }}
+                  imageAlt="Preview of the Positivity Pack freebie"
+                  imageInfo={freebie.childImageSharp.gatsbyImageData}
                   title="Preview of the Positivity Pack freebie"
                 />
               </SmartLink>
@@ -270,16 +270,12 @@ export const pageQuery = graphql`
         description
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         freebie {
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         intro {
@@ -288,9 +284,7 @@ export const pageQuery = graphql`
             href
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 240, quality: 75, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
               }
             }
             imageAlt
@@ -302,9 +296,7 @@ export const pageQuery = graphql`
           title
           image {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
             }
           }
         }
@@ -315,24 +307,20 @@ export const pageQuery = graphql`
           imageAlt
           imageSrc {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 400, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
             }
           }
           text
         }
       }
     }
-
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 3
     ) {
       ...BlogPosts
     }
-
     site {
       siteMetadata {
         social {

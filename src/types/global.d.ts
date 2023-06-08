@@ -1,3 +1,5 @@
+import { IGatsbyImageData } from "gatsby-plugin-image";
+
 declare type BaseFrontmatter = {
   pageDescription: string;
   pageTitle: string;
@@ -18,7 +20,7 @@ declare type BlogPostFields = {
 
 declare type BlogPostFrontmatter = {
   date: string;
-  featuredImage?: NestedImage;
+  featuredImage?: IGatsbyImageData;
   featuredpost: boolean;
   title: string;
 };
@@ -74,6 +76,6 @@ type SharpImage = {
 };
 
 declare module "*.svg" {
-  const content: string;
+  const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   export default content;
 }

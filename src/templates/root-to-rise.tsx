@@ -46,10 +46,8 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         <HalfColumn>
           <FlexColSplitImage>
             <PreviewCompatibleImage
-              imageInfo={{
-                alt: "Private Coaching with Sheila Anne",
-                childImageSharp: frontmatter.featuredImage.childImageSharp,
-              }}
+              imageAlt="Private Coaching with Sheila Anne"
+              imageInfo={frontmatter.featuredImage.childImageSharp.gatsbyImageData}
               loading="eager"
               title="Sheila's private coaching program has helped strong, powerful women create deep long-lasting change"
             />
@@ -91,10 +89,8 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       </ColorContainer>
       <CenteredButton text="Tap To Book Your Free Call!" />
       <PreviewCompatibleImage
-        imageInfo={{
-          alt: "Sheila Anne, shown writing in her office",
-          childImageSharp: frontmatter.secondImage.childImageSharp,
-        }}
+        imageAlt="Sheila Anne, shown writing in her office"
+        imageInfo={frontmatter.secondImage.childImageSharp.gatsbyImageData}
         title="Sheila using the power of reflection to gather her thoughts"
       />
       <br />
@@ -213,10 +209,8 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         </p>
       </ColorContainer>
       <PreviewCompatibleImage
-        imageInfo={{
-          alt: "Sheila sitting on a stool",
-          childImageSharp: frontmatter.thirdImage.childImageSharp,
-        }}
+        imageAlt="Sheila sitting on a stool"
+        imageInfo={frontmatter.thirdImage.childImageSharp.gatsbyImageData}
         title="Sheila is an ICF Professional Certified Coach, ready to help"
       />
       <h2>Why Work With Me?</h2>
@@ -291,24 +285,18 @@ export const pageQuery = graphql`
         bannerImageHeadline
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
           publicURL
         }
         secondImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         thirdImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         pageDescription
@@ -318,9 +306,7 @@ export const pageQuery = graphql`
           imageAlt
           imageSrc {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 400, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
             }
           }
           text

@@ -1,8 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby";
-import Img, { GatsbyImageProps } from "gatsby-image";
+import { getImage, GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
 
+// @ts-ignore
 import sheilaLogo from "../../img/sheilaLogo.svg";
 
 import { Constants } from "../../constants";
@@ -16,7 +17,7 @@ const StyledFooter = styled.footer`
   text-align: center;
 `;
 
-const FooterGatsbyImage = styled(Img)<GatsbyImageProps>`
+const FooterGatsbyImage = styled(GatsbyImage)`
   margin-right: 1rem;
 `;
 
@@ -68,55 +69,71 @@ const footerQuery = graphql`
   query footerInfo {
     pccImage: file(relativePath: { eq: "pcc-logo.png" }) {
       childImageSharp {
-        fixed(height: 75) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(
+          height: 75
+          width: 75
+          quality: 100
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, JPG]
+          layout: FIXED
+        )
       }
     }
     wpccImage: file(relativePath: { eq: "whole-person-certified.png" }) {
       childImageSharp {
-        fixed(height: 75) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(
+          height: 75
+          width: 75
+          quality: 100
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, JPG]
+          layout: FIXED
+        )
       }
     }
 
     ticImage: file(relativePath: { eq: "trauma-informed-coach.png" }) {
       childImageSharp {
-        fixed(height: 75) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(
+          height: 75
+          width: 75
+          quality: 100
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, JPG]
+          layout: FIXED
+        )
       }
     }
   }
 `;
 
 export const Footer = () => {
-  const { pccImage, wpccImage, ticImage } = useStaticQuery(footerQuery);
+  const { pccImage, wpccImage, ticImage } = useStaticQuery<{
+    pccImage: IGatsbyImageData;
+    wpccImage: IGatsbyImageData;
+    ticImage: IGatsbyImageData;
+  }>(footerQuery);
   return (
     <StyledFooter>
       <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
       <FlexFooter margin="0 0 .5rem 0">
         <FooterGatsbyImage
-          alt={"ICF Professional Certified Coach"}
-          fixed={pccImage.childImageSharp.fixed}
-          loading={"auto"}
+          alt="ICF Professional Certified Coach"
+          image={getImage(pccImage) as IGatsbyImageData}
           itemProp="image"
-          title={"ICF Professional Certified Coach"}
+          title="ICF Professional Certified Coach"
         />
         <FooterGatsbyImage
-          alt={"Whole Person Certified Coach"}
-          fixed={wpccImage.childImageSharp.fixed}
-          loading={"auto"}
+          alt="Whole Person Certified Coach"
+          image={getImage(wpccImage) as IGatsbyImageData}
           itemProp="image"
-          title={"Whole Person Certified Coach"}
+          title="Whole Person Certified Coach"
         />
         <FooterGatsbyImage
-          alt={"Trauma Informed Coach"}
-          fixed={ticImage.childImageSharp.fixed}
-          loading={"auto"}
+          alt="Trauma Informed Coach"
+          image={getImage(ticImage) as IGatsbyImageData}
           itemProp="image"
-          title={"Trauma Informed Coach"}
+          title="Trauma Informed Coach"
         />
       </FlexFooter>
       <FlexFooter>

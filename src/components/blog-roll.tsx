@@ -6,6 +6,7 @@ import { Constants } from "../constants";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { SmartLink } from "./smart-link";
+import { getImage } from "gatsby-plugin-image";
 
 type ArticleProps = {
   isFeatured: boolean;
@@ -28,6 +29,7 @@ const FlexTextContainer = styled.div`
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
     text-align: center;
+    max-width: 80vw;
   }
 `;
 
@@ -50,7 +52,9 @@ const FeaturedThumbnail = styled.div`
   }
 `;
 
-const Article = styled.article<ArticleProps>`
+const Article = styled.article.withConfig<ArticleProps>({
+  shouldForwardProp: prop => prop !== "isFeatured",
+})`
   align-items: center;
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.theGroveGreenGray : Constants.Colors.theGroveLightGreen};
@@ -75,7 +79,7 @@ const Paragraph = styled.p`
   }
 `;
 
-const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
+const BlogRollInner = ({ post }) => (
   <Article isFeatured={post.frontmatter.featuredpost} itemType="https://schema.org/BlogPosting" itemScope={true}>
     <BlogPostMeta datePublished={post.frontmatter.date} featuredImage={post.frontmatter.featuredImage} />
     <meta itemProp="mainEntityOfPage" content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`} />
@@ -83,10 +87,8 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
       {post.frontmatter.featuredImage ? (
         <FeaturedThumbnail>
           <PreviewCompatibleImage
-            imageInfo={{
-              image: post.frontmatter.featuredImage,
-              alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-            }}
+            imageAlt={`featured image thumbnail for post ${post.frontmatter.title}`}
+            imageInfo={getImage(post.frontmatter.featuredImage)}
           />
         </FeaturedThumbnail>
       ) : null}
@@ -98,7 +100,7 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
   </Article>
 );
 
-export const BlogRoll = ({ posts }: BlogPosts) => {
+export const BlogRoll = ({ posts }) => {
   return (
     <FlexContainer justifyContent="center">
       {posts &&

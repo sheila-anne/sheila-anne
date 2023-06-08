@@ -101,7 +101,9 @@ const TextAreaInner = styled.textarea`
   }
 `;
 
-export const FormWrapperSection = styled.section<FormWrapperProps>`
+export const FormWrapperSection = styled.section.withConfig<FormWrapperProps>({
+  shouldForwardProp: (prop, _) => false,
+})`
   ${({ alignItems }) => applyStyle("align-items", !!alignItems ? alignItems : "center")}
   display: flex;
   flex-flow: column;

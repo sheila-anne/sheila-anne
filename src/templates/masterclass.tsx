@@ -64,7 +64,7 @@ const ConfirmationSection = () => (
   </ColorContainer>
 );
 
-const Masterclass = ({ data, location }: GatsbyPage) => {
+const Masterclass = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const [showFirstForm, setShowFirstForm] = useState(false);
   const [showSecondForm, setShowSecondForm] = useState(false);
@@ -112,10 +112,8 @@ const Masterclass = ({ data, location }: GatsbyPage) => {
       <div>A little about the woman leading this class (me!):</div>
       <br />
       <PreviewCompatibleImage
-        imageInfo={{
-          alt: "A little about Sheila Anne",
-          childImageSharp: data.aboutSheila.childImageSharp,
-        }}
+        imageAlt="A little about Sheila Anne"
+        imageInfo={data.aboutSheila.childImageSharp.gatsbyImageData}
         title="A little about Sheila Anne"
       />
       <div>
@@ -145,9 +143,7 @@ export const pageQuery = graphql`
   query MasterclassPage($id: String!) {
     aboutSheila: file(relativePath: { eq: "a-little-about-sheila-anne.png" }) {
       childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -156,9 +152,7 @@ export const pageQuery = graphql`
         bannerImage {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         bannerImageHeadline

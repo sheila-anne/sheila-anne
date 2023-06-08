@@ -30,7 +30,9 @@ const ColoredInternalLink = styled(SmartLink)<{
   ${props => !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
-const LogoText = styled.div<OpenAndMobile>`
+const LogoText = styled.div.withConfig<OpenAndMobile>({
+  shouldForwardProp: prop => prop !== "isOpen" && prop !== "isMobile",
+})`
   background: ${({ isOpen, isMobile }) => (!!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit")};
   flex-basis: 33%;
   padding-top: 5px;
@@ -43,7 +45,9 @@ const LogoText = styled.div<OpenAndMobile>`
   }
 `;
 
-const DesktopSocialWrapper = styled.div<OpenNavProps>`
+const DesktopSocialWrapper = styled.div.withConfig<OpenNavProps>({
+  shouldForwardProp: prop => prop !== "isOpen",
+})`
   display: flex;
   flex-basis: 33%;
   align-self: center;
@@ -54,7 +58,7 @@ const DesktopSocialWrapper = styled.div<OpenNavProps>`
   }
 `;
 
-const Header = styled.header<{ flipColors: boolean }>`
+const Header = styled.header.withConfig<{ flipColors: boolean }>({ shouldForwardProp: prop => prop !== "flipColors" })`
   left: 0;
   letter-spacing: 0.1em;
   position: sticky;
@@ -66,7 +70,9 @@ const Header = styled.header<{ flipColors: boolean }>`
   }
 `;
 
-const StyledNav = styled.nav<OpenNavProps>`
+const StyledNav = styled.nav.withConfig<OpenNavProps>({
+  shouldForwardProp: prop => prop !== "isOpen",
+})`
   align-items: center;
   background-color: ${({ isOpen }) => (!!isOpen ? Constants.Colors.theGroveGreen : "#FFF")};
   display: flex;
@@ -108,7 +114,9 @@ const Headline = styled.h1`
   }
 `;
 
-const NavLinkList = styled.ol<OpenNavProps>`
+const NavLinkList = styled.ol.withConfig<OpenNavProps>({
+  shouldForwardProp: prop => prop !== "isOpen",
+})`
   flex-basis: 33%;
   list-style-type: none;
   margin: 0;
@@ -119,7 +127,7 @@ const NavLinkList = styled.ol<OpenNavProps>`
   }
 `;
 
-const NavSocialList = styled.div<OpenNavProps>`
+const NavSocialList = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop => prop !== "isOpen" })`
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
   }

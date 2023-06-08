@@ -1,11 +1,12 @@
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import React, { FC, MouseEvent } from "react";
+import React, { FC, MouseEvent, ReactNode } from "react";
 
 import { InternalLink } from "./internal-link";
 import { linkClickHandler } from "../utils";
 
 type CustomLinkType = {
   ariaLabel?: string;
+  children?: ReactNode;
   className?: string;
   hideMetadata?: boolean;
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
