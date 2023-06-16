@@ -38,6 +38,7 @@ const Text = styled.div`
 
   @media (max-width: ${Constants.mobileWidth}) {
     flex: 80%;
+    overflow: hidden;
     padding: 0.5rem 3rem;
   }
 `;

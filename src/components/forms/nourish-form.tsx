@@ -115,6 +115,6 @@ export const NourishForm = ({
       is the right program for you. Will you schedule the call and show up?
     </label>
     <Select id="will-you-schedule-the-call" name="will-you-schedule-the-call" options={["Absolutely!", "No."]} />
-    <input style={{ display: "none" }} value="Nourish" id="tags" readOnly={true} name="tags" />
+    <input style={{ display: "none" }} value="Nourish" id="tags" readOnly name="tags" />
   </BaseForm>
 );

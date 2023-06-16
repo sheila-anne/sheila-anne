@@ -3,8 +3,10 @@ import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
+// @ts-ignore
 import facebookImg from "../img/social/facebook.svg";
 import { FocusCss } from "./button";
+// @ts-ignore
 import instagramImg from "../img/social/instagram.svg";
 import { SmartLink } from "./smart-link";
 

@@ -2,7 +2,6 @@ const kebabCase = require("lodash.kebabcase");
 const get = require("lodash.get");
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
-const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 const uniq = require("lodash.uniq");
 
 exports.createPages = ({ actions, graphql }) => {
@@ -38,12 +37,10 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`
-        ),
+        component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`),
         context: {
-          id
-        }
+          id,
+        },
       });
     });
 
@@ -62,8 +59,8 @@ exports.createPages = ({ actions, graphql }) => {
         path: tagPath,
         component: path.resolve(`src/templates/tags.tsx`),
         context: {
-          tag
-        }
+          tag,
+        },
       });
     });
   });
@@ -71,14 +68,24 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
-      value
+      value,
     });
   }
+};
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      // It's important to have 'node_modules' in resolve module,
+      // otherwise the webpack resolve won't be able to find dependencies
+      // correctly.
+      modules: ["node_modules"],
+    },
+  });
 };

@@ -3,7 +3,7 @@ import React from "react";
 
 import { BaseTemplate, HTMLContent, Layout, SEO } from "../components";
 
-const AntiHustleVideos = ({ data, location }: GatsbyPage) => {
+const AntiHustleVideos = ({ data, location }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -30,9 +30,7 @@ export const pageQuery = graphql`
         bannerImage {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG], width: 2048)
           }
         }
         bannerImageHeadline

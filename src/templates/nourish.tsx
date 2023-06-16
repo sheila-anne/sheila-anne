@@ -19,7 +19,9 @@ import {
   Timeline,
 } from "../components";
 
-const ColorContainer = styled.div<{ backgroundColor?: string; marginBottom?: string }>`
+const ColorContainer = styled.div.withConfig<{ backgroundColor?: string; marginBottom?: string }>({
+  shouldForwardProp: prop => prop !== "backgroundColor" && prop !== "marginBottom",
+})`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
   margin-top: 1rem;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1rem")};
@@ -41,6 +43,10 @@ const SmallerHeadline = styled.h2`
 
 const StyledQuote = styled.blockquote`
   padding: 1rem;
+`;
+
+const BlockImage = styled(PreviewCompatibleImage)`
+  display: block;
 `;
 
 const faqs = [
@@ -77,8 +83,11 @@ const NourishApplyButton = ({ margin = "2rem 0" }) => (
 export const NourishTemplate = ({ frontmatter }) => {
   return (
     <section>
-      <BreakOutImage imageInfo={frontmatter.bannerImage} title="Nourish whole person coaching program" />
-      <PreviewCompatibleImage imageInfo={frontmatter.montage} title="Nourish montage" />
+      <BreakOutImage
+        imageInfo={frontmatter.bannerImage.childImageSharp.gatsbyImageData}
+        title="Nourish whole person coaching program"
+      />
+      <BlockImage imageInfo={frontmatter.montage.childImageSharp.gatsbyImageData} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
       <CenteredText fontSize="2rem" fontWeight="800" margin="2rem 0">
         Doors opening soon for Nourish Fall 2023! Get on the waitlist now to receive exclusive pricing, an incredible
@@ -155,7 +164,10 @@ export const NourishTemplate = ({ frontmatter }) => {
       </div>
       <div>
         <h2>Welcome home to you. Welcome home to Nourish</h2>
-        <PreviewCompatibleImage imageInfo={frontmatter.welcomeToNourish} title="Welcome home to Nourish" />
+        <PreviewCompatibleImage
+          imageInfo={frontmatter.welcomeToNourish.childImageSharp.gatsbyImageData}
+          title="Welcome home to Nourish"
+        />
       </div>
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <CenteredText color={Constants.Colors.nourishBrown}>
@@ -253,10 +265,8 @@ export const NourishTemplate = ({ frontmatter }) => {
           <HalfColumn>
             <FlexColSplitImage>
               <RoundedImage
-                imageInfo={{
-                  alt: "Sheila smiling in a chair",
-                  childImageSharp: frontmatter.sideBySide.childImageSharp,
-                }}
+                imageAlt="Sheila smiling in a chair"
+                imageInfo={frontmatter.sideBySide.childImageSharp.gatsbyImageData}
                 title="Nourish details"
               />
             </FlexColSplitImage>
@@ -369,7 +379,10 @@ export const NourishTemplate = ({ frontmatter }) => {
           </SpacedOutText>
         </CenteredText>
       </div>
-      <PreviewCompatibleImage imageInfo={frontmatter.coachingImage} title="Sheila coaching in person" />
+      <PreviewCompatibleImage
+        imageInfo={frontmatter.coachingImage.childImageSharp.gatsbyImageData}
+        title="Sheila coaching in person"
+      />
       <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
         <h2>What people are saying about the Nourish experience</h2>
         <StyledQuote>
@@ -403,7 +416,10 @@ export const NourishTemplate = ({ frontmatter }) => {
       </ColorContainer>
       <ContentBreak />
       <FAQ faq={faqs}></FAQ>
-      <PreviewCompatibleImage imageInfo={frontmatter.thirdImage} title="Nourish teaser photo" />
+      <PreviewCompatibleImage
+        imageInfo={frontmatter.thirdImage.childImageSharp.gatsbyImageData}
+        title="Nourish teaser photo"
+      />
     </section>
   );
 };
@@ -436,52 +452,38 @@ export const pageQuery = graphql`
         bannerImageHeadline
         bannerImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
           publicURL
         }
         montage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         secondImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         thirdImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         sideBySide {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         coachingImage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         welcomeToNourish {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         pageDescription

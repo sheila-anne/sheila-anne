@@ -6,17 +6,20 @@ import { Constants } from "../constants";
 import { FlexContainer, FlexColumn, FlexHeader } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { SmartLink } from "./smart-link";
+import { getImage } from "gatsby-plugin-image";
 
 type ArticleProps = {
   isFeatured: boolean;
 };
 
+const BlogRollFlexContainer = styled(FlexContainer)`
+  @media (max-width: ${Constants.mobileWidth}) {
+    flex-flow: column;
+  }
+`;
+
 const BlogRollFlexColumn = styled(FlexColumn)`
   flex-basis: 33%;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    flex-basis: 95%;
-  }
 `;
 
 const FlexTextContainer = styled.div`
@@ -24,11 +27,6 @@ const FlexTextContainer = styled.div`
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    display: block;
-    text-align: center;
-  }
 `;
 
 const FlexTitle = styled.h3`
@@ -50,21 +48,22 @@ const FeaturedThumbnail = styled.div`
   }
 `;
 
-const Article = styled.article<ArticleProps>`
+const Article = styled.article.withConfig<ArticleProps>({
+  shouldForwardProp: prop => prop !== "isFeatured",
+})`
   align-items: center;
   background-color: ${({ isFeatured }) =>
     isFeatured ? Constants.Colors.theGroveGreenGray : Constants.Colors.theGroveLightGreen};
   border-radius: 1rem;
   color: #000;
   display: flex;
-  height: 200px;
+  height: max-content;
   margin: 1rem;
-  overflow: hidden;
   padding: 0 1rem 1rem 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    height: 100%;
     margin: 0;
+    height: unset;
   }
 `;
 
@@ -72,10 +71,11 @@ const Paragraph = styled.p`
   display: none;
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
+    padding: 0 1rem;
   }
 `;
 
-const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
+const BlogRollInner = ({ post }) => (
   <Article isFeatured={post.frontmatter.featuredpost} itemType="https://schema.org/BlogPosting" itemScope={true}>
     <BlogPostMeta datePublished={post.frontmatter.date} featuredImage={post.frontmatter.featuredImage} />
     <meta itemProp="mainEntityOfPage" content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`} />
@@ -83,10 +83,8 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
       {post.frontmatter.featuredImage ? (
         <FeaturedThumbnail>
           <PreviewCompatibleImage
-            imageInfo={{
-              image: post.frontmatter.featuredImage,
-              alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-            }}
+            imageAlt={`featured image thumbnail for post ${post.frontmatter.title}`}
+            imageInfo={getImage(post.frontmatter.featuredImage)}
           />
         </FeaturedThumbnail>
       ) : null}
@@ -98,9 +96,9 @@ const BlogRollInner = ({ post }: { post: BlogPostInner }) => (
   </Article>
 );
 
-export const BlogRoll = ({ posts }: BlogPosts) => {
+export const BlogRoll = ({ posts }) => {
   return (
-    <FlexContainer justifyContent="center">
+    <BlogRollFlexContainer justifyContent="center">
       {posts &&
         posts.map(({ node: post }) => (
           <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>
@@ -109,6 +107,6 @@ export const BlogRoll = ({ posts }: BlogPosts) => {
             </SmartLink>
           </BlogRollFlexColumn>
         ))}
-    </FlexContainer>
+    </BlogRollFlexContainer>
   );
 };

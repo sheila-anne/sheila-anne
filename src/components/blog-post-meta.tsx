@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
 import { Constants } from "../constants";
+import { NestedImage } from "../types/global";
 
 type BlogPostMetaProps = {
   datePublished: string;

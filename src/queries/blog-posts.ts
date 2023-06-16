@@ -17,8 +17,9 @@ export const logoQuery = graphql`
           featuredImage {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 120, quality: 100) {
-                ...GatsbyImageSharpFluid
+              gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG], width: 100, layout: FIXED)
+              original {
+                src
               }
             }
           }

@@ -50,9 +50,7 @@ const NonTreeListItem = styled.li`
 `;
 
 export const WorkingTogetherHeader = () => {
-  const data = useStaticQuery<{ markdownRemark: { frontmatter: { featuredImage: PreviewImage } } }>(
-    WorkingTogetherHeaderQuery
-  );
+  const data = useStaticQuery<{ markdownRemark: { frontmatter: { featuredImage } } }>(WorkingTogetherHeaderQuery);
 
   return (
     <>
@@ -79,7 +77,7 @@ export const WorkingTogetherHeader = () => {
         there is a way to make it happen.
       </p>
       <PreviewCompatibleImage
-        imageInfo={data.markdownRemark.frontmatter.featuredImage}
+        imageInfo={data.markdownRemark.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
         imageAlt="Working together with Sheila Anne"
         title="Work with me to achieve your dream life"
       />
@@ -93,9 +91,7 @@ const WorkingTogetherHeaderQuery = graphql`
       frontmatter {
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 1200, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 1200, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
       }

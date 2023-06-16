@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 import { Constants } from "../constants";
 import { BreakOutImage } from "./preview-compatible";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 type BannerImageProps = {
   color?: string;
-  image: NestedImage;
+  image: IGatsbyImageData;
   imageHeadline: string;
   title: string;
 };
@@ -45,7 +46,7 @@ export const BannerImage: FC<BannerImageProps> = ({ color, image, imageHeadline,
   const headlineColor = !!color ? color : Constants.Colors.theGroveLightGreen;
   return (
     <BannerImageWrapper>
-      <BreakOutImage imageAlt={title} imageInfo={{ image, alt: title }} title={title} />
+      <BreakOutImage imageAlt={title} imageInfo={image} title={title} />
       <ImageHeadlineContainer color={headlineColor}>{imageHeadline}</ImageHeadlineContainer>
     </BannerImageWrapper>
   );

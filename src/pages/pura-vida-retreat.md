@@ -9,13 +9,13 @@ path: /pura-vida-retreat
 
 # Pura Vida Retreat
 
-![Pura Vida retreat hero image](./img/hero-image-costa-rica-retreat.png)
+![Pura Vida retreat hero image](/img/hero-image-costa-rica-retreat.png)
 
 In Tamarindo, Costa Rica
 
 February 5 - 10 & February 12 - 17, 2024
 
-![Group photo from 2023](./img/group-photo-pura-vida-retreat.jpg)
+![Group photo from 2023](/img/group-photo-pura-vida-retreat.jpg)
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of bird and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 

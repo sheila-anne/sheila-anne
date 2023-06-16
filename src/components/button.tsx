@@ -1,4 +1,4 @@
-import React, { FC, MouseEvent } from "react";
+import React, { FC, MouseEvent, ReactNode } from "react";
 import styled, { css } from "styled-components";
 
 import { Constants } from "../constants";
@@ -6,6 +6,7 @@ import { SmartLink } from "./smart-link";
 
 type PillButtonProps = {
   color?: string;
+  children?: ReactNode;
   onClick?: (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => void;
   type?: "submit" | undefined;
 };
@@ -42,12 +43,16 @@ const ButtonCss = css<ButtonProps>`
   }
 `;
 
-export const PlainButton = styled.button<ButtonProps>`
+export const PlainButton = styled.button.withConfig<ButtonProps>({
+  shouldForwardProp: prop => prop !== "backgroundColor",
+})`
   ${ButtonCss}
   ${FocusCss}
 `;
 
-export const LinkButton = styled(SmartLink)<ButtonProps>`
+export const LinkButton = styled(SmartLink).withConfig<ButtonProps>({
+  shouldForwardProp: prop => prop !== "backgroundColor",
+})`
   ${ButtonCss}
   ${FocusCss}
 `;
@@ -65,7 +70,7 @@ const ButtonSpan = styled.span`
   }
 `;
 
-const StyledPillButton = styled.button<{color?: string}>`
+const StyledPillButton = styled.button<{ color?: string }>`
   background: transparent;
   border: none;
   color: #000;
@@ -81,7 +86,7 @@ const StyledPillButton = styled.button<{color?: string}>`
   text-transform: uppercase;
 
   &:before {
-    background:  ${({ color }) => !!color ? color : Constants.Colors.theGroveLightGreen};
+    background: ${({ color }) => (!!color ? color : Constants.Colors.theGroveLightGreen)};
     border-radius: 1rem;
     bottom: 0;
     content: "";

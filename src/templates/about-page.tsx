@@ -18,10 +18,8 @@ const AboutPage = ({ data, location }) => {
       <div>
         <BreakOutImage
           loading="eager"
-          imageInfo={{
-            alt: "Sheila running through a field",
-            childImageSharp: post.frontmatter.bannerImage.childImageSharp,
-          }}
+          imageAlt="Sheila running through a field"
+          imageInfo={post.frontmatter.bannerImage.childImageSharp.gatsbyImageData}
           title={post.frontmatter.bannerImageHeadline}
         />
       </div>
@@ -41,9 +39,7 @@ export const aboutPageQuery = graphql`
         bannerImage {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG], width: 2048)
           }
         }
         pageDescription

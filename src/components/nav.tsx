@@ -30,7 +30,9 @@ const ColoredInternalLink = styled(SmartLink)<{
   ${props => !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
-const LogoText = styled.div<OpenAndMobile>`
+const LogoText = styled.div.withConfig<OpenAndMobile>({
+  shouldForwardProp: prop => prop !== "isOpen" && prop !== "isMobile",
+})`
   background: ${({ isOpen, isMobile }) => (!!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit")};
   flex-basis: 33%;
   padding-top: 5px;
@@ -43,7 +45,9 @@ const LogoText = styled.div<OpenAndMobile>`
   }
 `;
 
-const DesktopSocialWrapper = styled.div<OpenNavProps>`
+const DesktopSocialWrapper = styled.div.withConfig<OpenNavProps>({
+  shouldForwardProp: prop => prop !== "isOpen",
+})`
   display: flex;
   flex-basis: 33%;
   align-self: center;
@@ -54,7 +58,7 @@ const DesktopSocialWrapper = styled.div<OpenNavProps>`
   }
 `;
 
-const Header = styled.header<{ flipColors: boolean }>`
+const Header = styled.header.withConfig<{ flipColors: boolean }>({ shouldForwardProp: prop => prop !== "flipColors" })`
   left: 0;
   letter-spacing: 0.1em;
   position: sticky;
@@ -66,7 +70,9 @@ const Header = styled.header<{ flipColors: boolean }>`
   }
 `;
 
-const StyledNav = styled.nav<OpenNavProps>`
+const StyledNav = styled.nav.withConfig<OpenNavProps>({
+  shouldForwardProp: prop => prop !== "isOpen",
+})`
   align-items: center;
   background-color: ${({ isOpen }) => (!!isOpen ? Constants.Colors.theGroveGreen : "#FFF")};
   display: flex;
@@ -75,7 +81,6 @@ const StyledNav = styled.nav<OpenNavProps>`
 
   @media (max-width: ${Constants.mobileWidth}) {
     display: block;
-    height: 50px;
   }
 `;
 
@@ -89,7 +94,7 @@ const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
   padding: 0 0 0 15px;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    padding: 0 0 0 5px;
+    display: block;
   }
 `;
 
@@ -108,7 +113,9 @@ const Headline = styled.h1`
   }
 `;
 
-const NavLinkList = styled.ol<OpenNavProps>`
+const NavLinkList = styled.ol.withConfig<OpenNavProps>({
+  shouldForwardProp: prop => prop !== "isOpen",
+})`
   flex-basis: 33%;
   list-style-type: none;
   margin: 0;
@@ -119,7 +126,7 @@ const NavLinkList = styled.ol<OpenNavProps>`
   }
 `;
 
-const NavSocialList = styled.div<OpenNavProps>`
+const NavSocialList = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop => prop !== "isOpen" })`
   @media (max-width: ${Constants.mobileWidth}) {
     ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
   }
@@ -131,7 +138,7 @@ const NavListItem = styled.li`
   padding-top: 10px;
 `;
 
-const MobileMenu = styled.div<OpenNavProps>`
+const MobileMenu = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop => prop !== "isOpen" })`
   background: ${Constants.Colors.theGroveGreen};
   border: 1px solid ${Constants.Colors.theGroveGreen};
   height: 100vh;
@@ -157,11 +164,10 @@ const MobileMenu = styled.div<OpenNavProps>`
 
 const getNavLinkItems = (
   location: Location,
-  showHomeLink = false,
+  isOpen = false,
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const navLinks = [
-    { to: "/about/", text: "About Me", title: "About Sheila Anne" },
     { to: "/nourish/", text: "Nourish", title: "A whole-person group coaching program" },
     {
       to: "/working-together/",
@@ -174,11 +180,9 @@ const getNavLinkItems = (
       title: "Writing samples from Sheila Anne",
     },
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
-    { to: "#subscribeForm", text: "Subscribe", title: "Join the community!" },
-    { to: "/media/", text: "Media", title: "Media appearances" },
     { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
   ];
-  !!showHomeLink && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
+  !!isOpen && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
     <NavListItem
       key={navLink.to}
@@ -191,12 +195,13 @@ const getNavLinkItems = (
           // if you're in the mobile-menu, some links are links;
           // some are page references. close the menu if the setState handler
           // is passed in to show relative page refs
-          onClick={() => setIsOpen && setIsOpen(!showHomeLink)}
+          onClick={() => setIsOpen && setIsOpen(!isOpen)}
           aria-current={location && location.pathname === navLink.to}
           ariaLabel={navLink.title}
           role="menuitem"
           title={navLink.title}
           to={navLink.to}
+          white-space="nowrap"
         >
           {navLink.text}
         </ColoredInternalLink>

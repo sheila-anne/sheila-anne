@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import { BlogPostMeta, Content, Layout, HTMLContent, SEO, Share, TagList } from "../components";
 import { Constants } from "../constants";
+import { getImage } from "gatsby-plugin-image";
 
 const Smalltext = styled.small`
   margin-bottom: 1rem;
@@ -71,7 +72,7 @@ const BlogPost = ({ data, location }) => {
         contentComponent={HTMLContent}
         datePublished={post.frontmatter.date}
         description={post.frontmatter.description}
-        featuredImage={post.frontmatter.featuredImage}
+        featuredImage={getImage(post.frontmatter.featuredImage)}
         location={location}
         ogImage={post.frontmatter.ogImage}
         tags={post.frontmatter.tags}
@@ -96,9 +97,7 @@ export const pageQuery = graphql`
         featuredImage {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 600, quality: 100, maxHeight: 200) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 600, height: 200, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         ogImage: featuredImage {

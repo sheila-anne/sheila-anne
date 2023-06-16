@@ -5,7 +5,7 @@ date: 2023-05-18T19:45:29.403Z
 description: >
   More often than not, I hear from clients that are dissatisfied with their morning routine. They’ve dabbled with creating a routine but have trouble getting excited about it and (the hardest part) staying committed to it. In my experience, this is a huge opportunity. If you are looking to up-level your life and career, morning routine is the first spot to look to!
 featuredpost: true
-featuredImage: /img/Tips-for-morning-routine-share.png
+featuredImage: /img/tips-for-morning-routine-share.png
 tags:
   - stress management
   - advice
@@ -13,7 +13,7 @@ tags:
   - anxiety
 ---
 
-![](./img/Tips-for-morning-routine-hero.png)
+![](./img/tips-for-morning-routine-hero.png)
 
 What is your morning routine like? Perhaps you snooze your alarm twice before groaning and rolling out of bed. Maybe your routine is scrolling your phone for 20 minutes to catch up on urgent emails and missed social media notifications. It could be that you hop out of bed, suit up, and go for a trail run.
 

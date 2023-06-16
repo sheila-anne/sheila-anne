@@ -115,9 +115,7 @@ export const pageQuery = graphql`
         bannerImageHeadline
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 300, quality: 95) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 300, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
           publicURL
         }
@@ -131,9 +129,7 @@ export const pageQuery = graphql`
           imageAlt
           imageSrc {
             childImageSharp {
-              fluid(maxWidth: 400, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 300, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
             }
           }
           text

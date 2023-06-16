@@ -7,6 +7,7 @@ type InternalLinkProps = {
   "aria-current"?: boolean;
   color?: string;
   display?: string;
+  "white-space"?: string;
 };
 
 const InternalLink = styled(Link)<InternalLinkProps>`
@@ -14,7 +15,7 @@ const InternalLink = styled(Link)<InternalLinkProps>`
   ${({ color }) => applyStyle("color", color)}
   ${({ display }) => applyStyle("display", display || "inline")};
   text-decoration: none;
-  white-space: nowrap;
+  ${props => applyStyle("white-space", props["white-space"])}
 
   :hover {
     color: #000;

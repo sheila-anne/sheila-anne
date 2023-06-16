@@ -1,17 +1,19 @@
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import React, { FC, MouseEvent } from "react";
+import React, { FC, MouseEvent, ReactNode } from "react";
 
 import { InternalLink } from "./internal-link";
 import { linkClickHandler } from "../utils";
 
 type CustomLinkType = {
   ariaLabel?: string;
+  children?: ReactNode;
   className?: string;
   hideMetadata?: boolean;
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
   role?: string;
   to: string;
   title?: string;
+  "white-space"?: string;
 };
 
 type LinkType = "External" | "Internal";
@@ -36,6 +38,7 @@ export const SmartLink: FC<CustomLinkType> = ({
   to,
   title,
   children,
+  ...rest
 }) => {
   const linkType = getLinkType(to);
   if (linkType === "Internal") {
@@ -48,6 +51,7 @@ export const SmartLink: FC<CustomLinkType> = ({
         role={!!role ? role : undefined}
         to={to}
         title={title}
+        white-space={rest["white-space"]}
       >
         {getInnerLink(children, hideMetadata)}
       </InternalLink>

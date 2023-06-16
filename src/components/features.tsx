@@ -6,10 +6,6 @@ import { FlexColumn, FlexContainer } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { Constants } from "../constants";
 
-type FeaturedProps = {
-  gridItems: FeaturedGridItem[];
-};
-
 type ColoredFlexColumnProps = {
   colorIndex: number;
 };
@@ -26,7 +22,9 @@ const ClickableCard = styled.a`
   text-decoration: none;
 `;
 
-const ColoredFlexColumn = styled(FlexColumn)<ColoredFlexColumnProps>`
+const ColoredFlexColumn = styled(FlexColumn).withConfig<any & ColoredFlexColumnProps>({
+  shouldForwardProp: prop => prop !== "colorIndex",
+})`
   background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
   border-radius: 1rem;
   flex-basis: 30%;
@@ -47,14 +45,14 @@ const SmallHeadline = styled.h3`
   margin-top: 0;
 `;
 
-export const Features = ({ gridItems }: FeaturedProps) => (
+export const Features = ({ gridItems }) => (
   <FlexContainer>
     {gridItems.map((item, index) => (
       <ColoredFlexColumn key={item.text} colorIndex={index}>
         {/* hack to fix trailing comma being purged when sourced from markdown */}
         <ClickableCard href={item.href + "/"}>
           <CenteredText>
-            <FlexImage imageInfo={item} imageAlt={item.imageAlt} />
+            <FlexImage imageInfo={item.image.childImageSharp.gatsbyImageData} imageAlt={item.imageAlt} />
             <SmallHeadline>{item.title}</SmallHeadline>
           </CenteredText>
           <p>{item.text}</p>

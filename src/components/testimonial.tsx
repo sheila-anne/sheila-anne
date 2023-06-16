@@ -1,9 +1,8 @@
-import React, { Dispatch, Reducer, useLayoutEffect, useReducer, useRef, useState } from "react";
+import React, { Dispatch, Reducer, useEffect, useLayoutEffect, useReducer, useRef, useState } from "react";
 import styled from "styled-components";
 
 import { BannerLink } from "./banner-link";
 import { CenteredText } from "./centered";
-import { ContentBreak } from "./content-break";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { PlainButton } from "./button";
 import { trackCustomEvent, trackFacebook } from "../utils";
@@ -19,7 +18,7 @@ type State = {
 
 type Testimonial = {
   imageAlt?: string;
-  imageSrc?: PreviewImage;
+  imageSrc?: any;
   text: string;
   title: string;
 };
@@ -45,7 +44,9 @@ const Clickable = styled.div`
   text-align: center;
 `;
 
-const ExpandableText = styled.p<{ isExpanded: boolean }>`
+const ExpandableText = styled.p.withConfig<{ isExpanded: boolean }>({
+  shouldForwardProp: prop => prop !== "isExpanded",
+})`
   height: auto;
   max-height: ${({ isExpanded }) => (!!isExpanded ? "1000px" : `${MIN_EXPANDABLE_HEIGHT}px`)};
   margin-top: 1rem;
@@ -145,6 +146,11 @@ const MeasurableHeightText = ({ dispatch, isExpanded, text, title }: Expandable)
 export const Testimonial = ({ testimonials }: TestimonialProps) => {
   const initialState = getInitialState(testimonials);
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [showMeasurableHeight, setShowMeasurableHeight] = useState(false);
+
+  useEffect(() => {
+    setShowMeasurableHeight(true);
+  });
 
   return (
     <TestimonialSection id="testimonials">
@@ -153,17 +159,19 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
           {testimonial.imageSrc && (
             <TestimonialImage
               imageAlt={testimonial.imageAlt}
-              imageInfo={testimonial.imageSrc}
+              imageInfo={testimonial.imageSrc.childImageSharp.gatsbyImageData}
               title={testimonial.title}
             />
           )}
           <TestimonialTitle>{testimonial.title}</TestimonialTitle>
-          <MeasurableHeightText
-            dispatch={dispatch}
-            isExpanded={state[testimonial.title]}
-            text={testimonial.text}
-            title={testimonial.title}
-          />
+          {showMeasurableHeight ? (
+            <MeasurableHeightText
+              dispatch={dispatch}
+              isExpanded={state[testimonial.title]}
+              text={testimonial.text}
+              title={testimonial.title}
+            />
+          ) : null}
         </TestimonialCallout>
       ))}
       <hr />

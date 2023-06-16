@@ -11,6 +11,7 @@ import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
 export type BaseFormProps = {
   backgroundColor?: string;
   buttonColor?: string;
+  children?: React.ReactNode;
   formTitle?: string;
   formDescription?: string;
   formParagraph?: string;
@@ -133,11 +134,9 @@ export const BaseForm: FC<BaseFormProps> = ({
         data-netlify={isNetlify}
         name={id}
       >
-        {isNetlify && <Hidden as="input" name="form-name" value={id} />}
+        {isNetlify && <Hidden as="input" name="form-name" value={id} readOnly />}
         {children}
-        {!!tags ? (
-          <Hidden as="input" style={{ display: "none" }} value={tags} id="tags" readOnly={true} name="tags" />
-        ) : null}
+        {!!tags ? <Hidden as="input" style={{ display: "none" }} value={tags} id="tags" readOnly name="tags" /> : null}
         <PillButton color={buttonColor} type="submit">
           {buttonText}
         </PillButton>

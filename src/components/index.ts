@@ -24,7 +24,6 @@ export { FAQ } from "./faq";
 export { Features } from "./features";
 export { FlexContainer, FlexColumn, FlexColSplitImage, FlexHeader, FlexImage, HalfColumn } from "./flex";
 export { Footer } from "./footer";
-export { Instagram } from "./instagram";
 export { Layout } from "./layout";
 export { Nav } from "./nav";
 export { OneTreePlanted } from "./one-tree-planted";

@@ -38,7 +38,7 @@ const WritingDeskPage = ({ location, data }) => {
     <Layout location={location}>
       <SEO
         description={frontmatter.pageDescription}
-        image={bannerImage.childImageSharp.fluid.src}
+        image={bannerImage.childImageSharp.gatsbyImageData.images.fallback.src}
         imageAlt="Notes from the Writing Desk"
         location={location}
         title={frontmatter.pageTitle}
@@ -60,9 +60,7 @@ export const pageQuery = graphql`
       frontmatter {
         bannerImage {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         bannerImageHeadline

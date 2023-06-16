@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import { Constants } from "../constants";
-import { applyStyle } from "../utils";
 
 const TimelineContainer = styled.div`
   display: flex;
@@ -85,7 +84,7 @@ const TimelineItemContent = styled.div`
 }
 `;
 
-const TimelineText = styled.p<{ isBold?: boolean }>`
+const TimelineText = styled.p.withConfig<{ isBold: boolean }>({ shouldForwardProp: prop => prop !== "isBold" })`
   ${({ isBold }) => (!!isBold ? "font-weight: 800;" : undefined)}
   font-size: 16px;
   line-height: 24px;
@@ -93,7 +92,7 @@ const TimelineText = styled.p<{ isBold?: boolean }>`
   max-width: 250px;
 `;
 
-const TimelineCircle = styled.span<{ tagLabel: string }>`
+const TimelineCircle = styled.span.withConfig<{ tagLabel: string }>({ shouldForwardProp: prop => prop !== "tagLabel" })`
   background-color: ${Constants.Colors.redRocksRed};
   border: 3px solid ${Constants.Colors.theGroveGreenGray};
   border-radius: 50%;
@@ -114,7 +113,7 @@ const TimelineItem = ({ timelineData }: { timelineData: TimelineType }) => {
   return timelineData.text && timelineData.text.length > 0 ? (
     <TimelineItemWrapper>
       <TimelineItemContent>
-        <TimelineText isBold={timelineData.isBold}>{timelineData.text}</TimelineText>
+        <TimelineText isBold={!!timelineData.isBold}>{timelineData.text}</TimelineText>
         <TimelineCircle tagLabel={timelineData.text} />
       </TimelineItemContent>
     </TimelineItemWrapper>

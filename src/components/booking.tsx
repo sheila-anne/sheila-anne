@@ -22,9 +22,9 @@ const PaddedParagraph = styled.p`
   padding: 5px;
 `;
 
-export const BookingIframe = styled.iframe<{
+export const BookingIframe = styled.iframe.withConfig<{
   showBookingSection: boolean;
-}>`
+}>({ shouldForwardProp: prop => prop !== "showBookingSection" })`
   border: none;
   display: ${({ showBookingSection }) => (showBookingSection ? "block" : "none")};
   height: 800px;
