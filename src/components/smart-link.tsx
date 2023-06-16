@@ -13,6 +13,7 @@ type CustomLinkType = {
   role?: string;
   to: string;
   title?: string;
+  "white-space"?: string;
 };
 
 type LinkType = "External" | "Internal";
@@ -37,6 +38,7 @@ export const SmartLink: FC<CustomLinkType> = ({
   to,
   title,
   children,
+  ...rest
 }) => {
   const linkType = getLinkType(to);
   if (linkType === "Internal") {
@@ -49,6 +51,7 @@ export const SmartLink: FC<CustomLinkType> = ({
         role={!!role ? role : undefined}
         to={to}
         title={title}
+        white-space={rest["white-space"]}
       >
         {getInnerLink(children, hideMetadata)}
       </InternalLink>

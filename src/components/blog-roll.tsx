@@ -27,11 +27,6 @@ const FlexTextContainer = styled.div`
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    text-align: center;
-    max-width: 80vw;
-  }
 `;
 
 const FlexTitle = styled.h3`
@@ -62,13 +57,13 @@ const Article = styled.article.withConfig<ArticleProps>({
   border-radius: 1rem;
   color: #000;
   display: flex;
-  height: 200px;
+  height: max-content;
   margin: 1rem;
-  overflow: hidden;
   padding: 0 1rem 1rem 1rem;
 
   @media (max-width: ${Constants.mobileWidth}) {
     margin: 0;
+    height: unset;
   }
 `;
 

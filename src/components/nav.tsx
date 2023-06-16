@@ -168,7 +168,6 @@ const getNavLinkItems = (
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const navLinks = [
-    { to: "/about/", text: "About Me", title: "About Sheila Anne" },
     { to: "/nourish/", text: "Nourish", title: "A whole-person group coaching program" },
     {
       to: "/working-together/",
@@ -181,7 +180,6 @@ const getNavLinkItems = (
       title: "Writing samples from Sheila Anne",
     },
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
-    { to: "#subscribeForm", text: "Subscribe", title: "Join the community!" },
     { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
   ];
   !!isOpen && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
@@ -203,6 +201,7 @@ const getNavLinkItems = (
           role="menuitem"
           title={navLink.title}
           to={navLink.to}
+          white-space="nowrap"
         >
           {navLink.text}
         </ColoredInternalLink>
