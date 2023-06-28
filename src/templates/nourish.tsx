@@ -51,24 +51,28 @@ const BlockImage = styled(PreviewCompatibleImage)`
 
 const faqs = [
   {
+    question: "Will I get access to all the material after the program?",
+    answer:
+      "Unlike most programs out there, you have lifetime access to all material. You'll be able to download all materials and calls right after they're posted",
+  },
+  {
+    question: "How much time will I need to dedicate for this?",
+    answer:
+      "We'll have one live 90 minute session together every other week (plus a few pop-up opportunities). You'll also be motivated to take time daily to practice nourishing rituals and journaling prompts. The amount of time you decide to take is up to you!",
+  },
+  {
+    question: "Will I get personal coaching from you?",
+    answer:
+      "Every group session I will offer an opportunity for hot seat coaching and community building. If you want to maximize your growth and this opportunity, I highly recommend Nourish +. Nourish + not only includes one private mindset session each month but also private messaging with me throughout the duration of the program. You'll have me in your back pocket at all times!",
+  },
+  {
     question: "What if I miss a session?",
     answer:
-      "We will miss having you but the calls are always recorded and will be available for you on-demand throughout the entirety of the program!",
+      "You won't want to and we also understand that life happens! We record every single call, so you'll be able to catch the replay. The on-demand community (off social media) will help hold you accountable",
   },
   {
-    question: "Will I get personal coaching from Sheila?",
-    answer:
-      "There will be an opportunity for you to receive individual coaching during our bi-weekly group sessions. If you desire a more personalized experience, I encourage you to invest in Nourish VIP. Each month we will have one 60 minute session, and you will have unlimited access to Sheila via voice and text support.",
-  },
-  {
-    question: "How do I know if I'm ready for Nourish?",
-    answer:
-      "If you read through and resonate with everything on this page - it's likely that you are ready! Keep in mind that once you apply, we will hop on a call to confirm that it’s the right fit for you.Listen to your heart and see if this program is calling you.",
-  },
-  { question: "What isn't Nourish?", answer: "Nourish is not a replacement for mental health counseling" },
-  {
-    question: "What is the timeline for Nourish?",
-    answer: "The program kicks off in mid-September 2023 and will run until mid-December 2023 (14 weeks)",
+    question: "When do we meet?",
+    answer: "Meetings will take place on Mondays, and the exact time will be set by group, depending on schedules",
   },
 ];
 
@@ -421,7 +425,7 @@ export const NourishTemplate = ({ frontmatter }) => {
             <ul>
               <li>Free admission to a live community class with a registered dietitian.</li>
               <li>Free pass to Wild Woman community movement class with Sheila Anne </li>
-              <li>On-demand values assessment video</li>
+              <li>On-demand values assessment workshop</li>
             </ul>
           </div>
         </div>
