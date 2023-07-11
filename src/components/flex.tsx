@@ -24,7 +24,7 @@ const BackgroundColorDiv = styled.div<BackgroundColorProps>`
 `;
 
 export const FlexContainer = styled(BackgroundColorDiv).withConfig<FlexContainerProps>({
-  shouldForwardProp: prop => prop !== "justifyContent",
+  shouldForwardProp: prop => prop !== "justifyContent" && prop !== "backgroundColor",
 })`
   display: flex;
   flex-flow: row wrap;

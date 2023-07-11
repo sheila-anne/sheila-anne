@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { Constants } from "../constants";
 import { applyStyle } from "../utils";
 
 export const CenteredText = styled.div.withConfig<{
@@ -17,4 +18,8 @@ export const CenteredText = styled.div.withConfig<{
   ${({ margin }) => applyStyle("margin", margin)}
   ${({ padding }) => applyStyle("padding", padding)}
   text-align: center;
+
+  @media (max-width: ${Constants.mobileWidth}) {
+    font-size: inherit;
+  }
 `;

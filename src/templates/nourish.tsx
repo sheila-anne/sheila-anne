@@ -19,13 +19,13 @@ import {
   Timeline,
 } from "../components";
 
-const ColorContainer = styled.div.withConfig<{ backgroundColor?: string; marginBottom?: string }>({
-  shouldForwardProp: prop => prop !== "backgroundColor" && prop !== "marginBottom",
+const ColorContainer = styled.div.withConfig<{ backgroundColor?: string; marginBottom?: string; padding?: string }>({
+  shouldForwardProp: prop => prop !== "backgroundColor" && prop !== "marginBottom" && prop !== "padding",
 })`
   ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
   margin-top: 1rem;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1rem")};
-  padding: 1rem 2rem;
+  padding: ${({ padding }) => (padding ? padding : "1rem 2rem")};
 `;
 
 const RoundedImage = styled(PreviewCompatibleImage)`
@@ -43,10 +43,6 @@ const SmallerHeadline = styled.h2`
 
 const StyledQuote = styled.blockquote`
   padding: 1rem;
-`;
-
-const BlockImage = styled(PreviewCompatibleImage)`
-  display: block;
 `;
 
 const faqs = [
@@ -79,7 +75,7 @@ const faqs = [
 const NourishApplyButton = ({ margin = "2rem 0" }) => (
   <CenteredText margin={margin}>
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Put me on the waitlist!
+      Apply now for early enrollment!
     </LinkButton>
   </CenteredText>
 );
@@ -91,44 +87,24 @@ export const NourishTemplate = ({ frontmatter }) => {
         imageInfo={frontmatter.bannerImage.childImageSharp.gatsbyImageData}
         title="Nourish whole person coaching program"
       />
-      <BlockImage imageInfo={frontmatter.montage.childImageSharp.gatsbyImageData} title="Nourish montage" />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
-      <CenteredText fontSize="2rem" fontWeight="800" margin="2rem 0">
-        Doors opening soon for Nourish Fall 2023! Get on the waitlist now to receive exclusive pricing, an incredible
-        bonus, and to make sure your spot is saved 🌼
+      <CenteredText fontSize="1.5rem" fontWeight="800" margin="2rem 0">
+        Apply now to receive $200 off and a free coaching call with Sheila 🌼
       </CenteredText>
-      <NourishApplyButton margin="0 0 2rem 0" />
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+      <NourishApplyButton margin="2rem 0" />
+      <PreviewCompatibleImage
+        imageInfo={frontmatter.subBanner.childImageSharp.gatsbyImageData}
+        title="Nourish montage image"
+      />
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray} padding="0 0 0 2rem">
         <StyledQuote>
           “I have tried out different therapists, read self-help books, signed up for online modules, in search of
           something healing that was really worth investing time, energy and money into. Up until Nourish, most of these
           endeavors fell somewhere between waste of time and pretty good. Nourish on the other hand surpassed all of my
-          expectations and added so much value in the dedicated 4 month timeframe.”
+          expectations and added so much value in the dedicated 4 month timeframe.” - Charlotte
         </StyledQuote>
       </ColorContainer>
-      <CenteredText
-        backgroundColor={Constants.Colors.nourishNeutral}
-        color={Constants.Colors.nourishBrown}
-        padding="1rem"
-        margin="2rem 0"
-      >
-        <div>
-          For the <strong>ambitious woman</strong>
-        </div>
-        <div>
-          who is <strong>ready</strong> to <strong>nourish</strong>
-        </div>
-        <div>her body, mind, and soul</div>
-        <div>
-          and say <strong>yes</strong> to the wildly beautiful
-        </div>
-        <div>life, career, and relationships</div>
-        <div>
-          she knows she <strong>deserves</strong>
-        </div>
-      </CenteredText>
       <NourishApplyButton />
-
       <div>
         <h2>Are you ...</h2>
         <SpacedOutText>
@@ -226,6 +202,13 @@ export const NourishTemplate = ({ frontmatter }) => {
         <SpacedOutText>
           If you are an ambitious, adventurous woman who wants to be her own unique powerhouse, this program is for you!
         </SpacedOutText>
+        <StyledQuote>
+          "Nourish transformed my life, in the way I speak, react and manifest. Coming into this program I was always
+          rushing myself to be the best and my internal voice was chaotic. I am now more still and savoring moments. I'm
+          creating clear boundaries, saying yes to only things that light me up, I'm decisive, more in control and
+          because I am now clear the world around me is clearer too. This program helped me develop a true sense of self
+          worth that I now get to shine as a light into the world around me." - Jordan
+        </StyledQuote>
         <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
           <CenteredText>
             <SmallerHeadline>The Nourish Experience 🌼</SmallerHeadline>
@@ -236,14 +219,17 @@ export const NourishTemplate = ({ frontmatter }) => {
             </SpacedOutText>
             <h3>Intentionally Paced Calls</h3>
             <SpacedOutText>
-              For intensive training and personalized support. We'll take two consecutive weeks to cover each pillar,
-              with an integration / “off” week before moving to the next. Expect a blend of learning, coaching, and
-              community conversation. Each call will be recorded so you can revisit it whenever you choose.
+              90 minute sessions every other week for intensive training and personalized support. We meet bi-weekly
+              with an integration / "off" week before moving to the next module. Expect a blend of learning, coaching,
+              and community conversation. Each call will be recorded so you can revisit it whenever you choose.{" "}
+              <strong>Nourish +</strong> women will meet with me once per month during an integration week.
             </SpacedOutText>
             <h3>Nourish Notebook</h3>
             <SpacedOutText>
-              A digital journal chock-full of journaling prompts and exercises. Delivered in three parts along the
-              Nourish journey.
+              Meet the digital notebook that you'll be referring to for years to come - just ask the Nourish alumni! The
+              Nourish Notebook is chock-full of resources, journaling prompts, and exercises that will support your
+              Body, Mind, and Soul. Delivered to you in parts along the Nourish journey, so you know exactly what to
+              focus on to be successful.
             </SpacedOutText>
             <h3>Community</h3>
             <SpacedOutText>
@@ -272,7 +258,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           <HalfColumn>
             <FlexColSplitImage>
               <RoundedImage
-                imageAlt="Sheila smiling in a chair"
+                imageAlt="Sheila holding her yoga mat"
                 imageInfo={frontmatter.sideBySide.childImageSharp.gatsbyImageData}
                 title="Nourish details"
               />
@@ -433,7 +419,9 @@ export const NourishTemplate = ({ frontmatter }) => {
       <div>
         <CenteredText>
           <h2>Program Options</h2>
+          <SpacedOutText>Early Enrollment investment starting at $1,300 🎉</SpacedOutText>
           <h3>Nourish </h3>
+          <SpacedOutText>Payments plans available, from 3 months to 12 months</SpacedOutText>
           <SpacedOutText>
             All trainings, retreats, curriculum, community, meditations, notebook, and support:
           </SpacedOutText>
@@ -445,17 +433,13 @@ export const NourishTemplate = ({ frontmatter }) => {
             <SpacedOutText>Private messaging with Sheila </SpacedOutText>
           </SpacedOutText>
           <NourishApplyButton />
-          <SpacedOutText>
-            Sheila is committed to program accessibility, so please contact her for more information on customized
-            payment options.
-          </SpacedOutText>
         </CenteredText>
       </div>
       <PreviewCompatibleImage
         imageInfo={frontmatter.coachingImage.childImageSharp.gatsbyImageData}
         title="Sheila coaching in person"
       />
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+      <ColorContainer backgroundColor={Constants.Colors.nourishGray} padding="0 0 0 2rem">
         <h2>What people are saying about the Nourish experience</h2>
         <StyledQuote>
           “Nourish is a life changing program that provides a safe space for a supportive community filled with mutual
@@ -549,6 +533,11 @@ export const pageQuery = graphql`
           }
         }
         coachingImage {
+          childImageSharp {
+            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
+          }
+        }
+        subBanner {
           childImageSharp {
             gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
