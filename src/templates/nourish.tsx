@@ -75,7 +75,7 @@ const faqs = [
 const NourishApplyButton = ({ margin = "2rem 0" }) => (
   <CenteredText margin={margin}>
     <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Apply now!
+      Sign up for the waitlist!
     </LinkButton>
   </CenteredText>
 );
@@ -88,6 +88,9 @@ export const NourishTemplate = ({ frontmatter }) => {
         title="Nourish whole person coaching program"
       />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
+      <CenteredText fontSize="1.5rem" fontWeight="800" margin="2rem 0">
+        Nourish is currently in session! Sign up for the waitlist to be the first to know about next round details.
+      </CenteredText>
       <NourishApplyButton margin="2rem 0" />
       <PreviewCompatibleImage
         imageInfo={frontmatter.subBanner.childImageSharp.gatsbyImageData}

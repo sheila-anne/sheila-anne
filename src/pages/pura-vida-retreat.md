@@ -13,7 +13,7 @@ path: /pura-vida-retreat
 
 In Tamarindo, Costa Rica
 
-February 5 - 10 & February 12 - 17, 2024
+February 5 - 10 (SOLD OUT) & February 12 - 17, 2024 (4 cabins left)
 
 ![Group photo from 2023](/img/group-photo-pura-vida-retreat.jpg)
 
@@ -74,23 +74,14 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 
 ## Investment
 
-**Early bird rates**
-
-- Single - $1850 (sold out for week 1)
-- Double - $1500
-- Triple - $1250 (1 room left for week 1, up to 3 people)
-
 **Regular rates**
 
 - Single - $2050
 - Double - $1700
 - Triple - $1450
 
-Reserve your spot now with a $300 **non-refundable + non-transferable** deposit
+Reserve your spot now with a $300 **non-refundable + non-transferable** deposit:
 
-- Reserve for week 1
-  - (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) specify “week 1” + room type
-  - [Square pay](https://checkout.square.site/buy/XZKMQYEPI7VU53TUTDPPZPY7)
 - Reserve for week 2
   - (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) specify “week 2” + room type
   - [Square pay](https://checkout.square.site/buy/33TKPSO4C6KFWIFWD3MVYNN4)
