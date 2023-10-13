@@ -20,9 +20,19 @@ We can't wait to host the next group of amazing people in Costa Rica next year! 
 
 ![Group photo from 2023](/img/group-photo-pura-vida-retreat.jpg)
 
+## Nourish Your Body: An Introduction To Intuitive Eating
+
+![Nourish Your Body](/img/intuitive-eating-seminar.png)
+
+_Thursday, November 2, 2023_
+
+Sheila Anne Coaching + Wellness brings you this opportunity to learn about how to Nourish your Body with guest expert Kristen Jimenez!
+
+[Details and sign up!](https://nourish-your-body-intuitive-eating.eventbrite.com/)
+
 ## Yoga
 
-Catch weekly classes on Thursdays & Sundays at [Ohana Yoga & Barre](https://ohanayoga.com/) in Denver. Would you like to book a private event? We've hosted everything from healing mini retreats to private yoga parties. Make a bachelorette, company off-site event, or birthday party extra special this year! Modalities offered:
+Catch weekly classes on Thursdays at [Three Bridges](https://www.3bridgesyoga.com/) in Portsmouth. Would you like to book a private event? We've hosted everything from healing mini retreats to private yoga parties. Make a bachelorette, company off-site event, or birthday party extra special this year! Modalities offered:
 
 - Yoga
 - Mediation
