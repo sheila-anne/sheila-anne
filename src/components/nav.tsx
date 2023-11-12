@@ -168,7 +168,6 @@ const getNavLinkItems = (
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const navLinks = [
-    { to: "/nourish/", text: "Nourish", title: "A whole-person group coaching program" },
     {
       to: "/working-together/",
       text: "Working Together",
