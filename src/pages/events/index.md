@@ -8,6 +8,22 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
+## Glimmer: A New Year's Anti-Hustle Movement
+
+![Glimmer - the Anti-Hustle movement](/img/glimmer.png)
+
+It's time to reignite your inner spark. Together we'll rebel against hustle culture & burnout and step into our **glimmer**.
+
+The Experience: Pop up live & recorded workshops lead by expert female entrepreneurs + on-demand support off social media.
+
+Dates: Events + community occurring intermittently over the month of January.
+
+Holy-Sh*t-That's-A-No-Brainer-Investment: $111 (less than $4/day)
+
+One 🌲planted for every ticket purchased 💓 [Learn More](https://onetreeplanted.org/)
+
+All events will be virtual and recorded, so even the busiest of schedules can be accommodated.
+
 ## Costa Rica Pura Vida Retreat
 
 _February 5-10 & 12-17 2024_
