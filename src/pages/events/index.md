@@ -12,6 +12,8 @@ path: /events
 
 ![Glimmer - the Anti-Hustle movement](/img/glimmer.png)
 
+[Sign up here](https://www.eventbrite.com/e/glimmer-a-new-years-anti-hustle-movement-tickets-742882861637)
+
 It's time to reignite your inner spark. Together we'll rebel against hustle culture & burnout and step into our **glimmer**.
 
 The Experience: Pop up live & recorded workshops lead by expert female entrepreneurs + on-demand support off social media.
