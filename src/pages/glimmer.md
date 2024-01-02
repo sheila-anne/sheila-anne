@@ -9,7 +9,7 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 
 # Glimmer Replay Library
 
-![Replay library](./img/glimmer-hero.png)
+![Replay library](/img/glimmer-hero.png)
 
 [Link to join ALL live calls](https://us02web.zoom.us/j/4647885921)
 

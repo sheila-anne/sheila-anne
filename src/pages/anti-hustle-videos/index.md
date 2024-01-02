@@ -10,7 +10,7 @@ pageDescription: >
 
 # Anti-Hustle Replay Library
 
-![Replay library](./img/Hero-image-AH.png)
+![Replay library](/img/Hero-image-AH.png)
 
 [Link to join ALL live calls](https://us02web.zoom.us/j/4647885921)
 
