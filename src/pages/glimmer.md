@@ -16,3 +16,7 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 ## Welcome Video
 
 [Click here for a message from Sheila](https://www.youtube.com/watch?v=1HE_9BR_MbQ)
+
+## Goodie Bag
+
+<a href="/glimmer-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
