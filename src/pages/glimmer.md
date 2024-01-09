@@ -20,3 +20,7 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 ## Goodie Bag
 
 <a href="/glimmer-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
+
+## Replays
+
+- [Your Glimmer Era + Welcome Circle](https://youtu.be/oQd0ly-YI8U)
