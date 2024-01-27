@@ -29,3 +29,4 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 - [Reclaiming Your Health AND Your Wealth](https://youtu.be/7-uj2ri6eNU)
 - [DIY Thirst Trap](https://youtu.be/yoS9Emqi3Ys)
 - [Breathing Into Frequency](https://youtu.be/n3FG3TbR_Vk)
+- [Glimmer Community Coaching & Connection Call](https://youtu.be/zHlcAna-5AA)
