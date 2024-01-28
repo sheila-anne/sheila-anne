@@ -30,3 +30,4 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 - [DIY Thirst Trap](https://youtu.be/yoS9Emqi3Ys)
 - [Breathing Into Frequency](https://youtu.be/n3FG3TbR_Vk)
 - [Glimmer Community Coaching & Connection Call](https://youtu.be/zHlcAna-5AA)
+- [The Witching Hour](https://youtu.be/59R7wYfG_m4)
