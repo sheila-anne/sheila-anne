@@ -17,6 +17,9 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 
 [Click here for a message from Sheila](https://www.youtube.com/watch?v=1HE_9BR_MbQ)
 
+## Closing Message
+[Watch Sheila's closing message](https://www.youtube.com/watch?v=DWSAyw6uRDs)
+
 ## Goodie Bag
 
 <a href="/glimmer-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
@@ -31,3 +34,4 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 - [Breathing Into Frequency](https://youtu.be/n3FG3TbR_Vk)
 - [Glimmer Community Coaching & Connection Call](https://youtu.be/zHlcAna-5AA)
 - [The Witching Hour](https://youtu.be/59R7wYfG_m4)
+- [Closing Ceremony](https://youtu.be/VrgS1KqFMFc)
