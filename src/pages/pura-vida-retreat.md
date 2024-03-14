@@ -11,13 +11,11 @@ path: /pura-vida-retreat
 
 ![Pura Vida retreat hero image](/img/pura-vida-hero.jpg)
 
+## The Epic Experience
+
 In Tamarindo, Costa Rica
 
 - SUNDAY, FEBRUARY 2, 2025 1:00 PM - SATURDAY, FEBRUARY 8, 2025 11:00 AM
-
-![Group photo from 2024](/img/pura-vida-group.jpg)
-
-## The Epic Experience
 
 A one-of-a-kind pura vida retreat! You can expect 2025 to offer the same soul-fueling fun but enhancements to keep it fresh!
 
@@ -105,7 +103,7 @@ Krysta-Lyn found refuge in the combination of yoga, counseling and community aft
 
 **Sheila Anne** of Sheila Anne Coaching + Wellness
 
-Sheila visited Costa Rica for the first time in 2014 (where she also connected with long lost family!) and each time she returns feels like a special homecoming. Her favorite part of the Pura Vida 2023 retreat was getting to know individuals on a deeper level and experiencing transformational practices together like those from guest yoga teachers and time spent out in nature! Sheila received her 200 hour yoga teacher certification with Krysta-Lyn at South Boston Yoga. She actually missed the first certification weekend for her mother’s funeral service, so the training came at a potent time of healing and self evolution. She and Krysta-Lyn were meant to connect and collaborate due to their shared pasts and future goals! Sheila became an ICF Professional Certified Coach and works with individuals, groups, and businesses. In the last year she added Buti Yoga and Reiki energy healing into her repertoire. She believes that when we come home to ourselves we transform our lives.
+Sheila visited Costa Rica for the first time in 2014 (where she also connected with long lost family!) and each time she returns feels like a special homecoming. Her favorite part of the annual retreat is getting to know individuals on a deeper level and experiencing transformational practices together like those from guest yoga teachers and time spent out in nature! Sheila received her 200 hour yoga teacher certification with Krysta-Lyn at South Boston Yoga. She actually missed the first certification weekend for her mother's funeral service, so the training came at a potent time of healing and self evolution. She and Krysta-Lyn were meant to connect and collaborate due to their shared pasts and future goals! Sheila became an ICF Professional Certified Coach and works with individuals, groups, and businesses. In the last few years, she has added Buti Yoga and Reiki energy healing into her repertoire. She believes that when we come home to ourselves we transform our lives.
 
 ## Investment
 
@@ -134,6 +132,8 @@ When paying, note which Cabina option you prefer. The remainder of your balance 
 
 All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays.
 
+![Group photo from 2024](/img/pura-vida-group.jpg)
+
 ![Coffee during the retreat](/img/pura-vida-coffee.jpg)
 
 ![Pura Vida shot from 2024 1](/img/pura-vida-1.jpg)
@@ -150,7 +150,7 @@ All deposits and payments are non-refundable and non-transferable. Unexpected ev
 
 ## Land Acknowledgement
 
-Per Smithsonian:
+Per the Smithsonian:
 
 > "Land acknowledgment is a traditional custom that dates back centuries in many Native nations and communities. Today, land acknowledgments are used by Native Peoples and non-Natives to recognize Indigenous Peoples who are the original stewards of the lands on which we now live."
 

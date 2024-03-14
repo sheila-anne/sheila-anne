@@ -20,7 +20,7 @@ SUNDAY, FEBRUARY 2, 2025 - SATURDAY, FEBRUARY 8, 2025
 
 **Week 2 - 6 days/5 nights**
 SUNDAY, FEBRUARY 9, 2025 - FRI, FEBRUARY 14, 2025
-[Details & Join Waitlist](/pura-vida-retreat/)
+[Join Waitlist](/pura-vida-retreat/)
 
 ![Group photo from 2024](/img/pura-vida-retreat-welcome.jpg)
 
