@@ -1,64 +1,99 @@
 ---
 templateKey: pura-vida-retreat
-pageTitle: Pura Vida Retreat, 2024 | Sheila Anne
-pageDescription: Don't miss out on the next Sheila Anne yoga retreat in February, 2024
-bannerImage: /img/hero-image-costa-rica-retreat.png
-bannerImageHeadline: Pura Vida retreat in Costa Rica, Feb 2024
+pageTitle: Pura Vida Retreat, 2025 | Sheila Anne
+pageDescription: Don't miss out on the next Sheila Anne yoga retreat in February, 2025
+bannerImage: /img/pura-vida-hero.jpg
+bannerImageHeadline: Pura Vida retreat in Costa Rica, Feb 2025
 path: /pura-vida-retreat
 ---
 
 # Pura Vida Retreat
 
-![Pura Vida retreat hero image](/img/hero-image-costa-rica-retreat.png)
+![Pura Vida retreat hero image](/img/pura-vida-hero.jpg)
 
 In Tamarindo, Costa Rica
 
-February 5 - 10 (SOLD OUT) & February 12 - 17, 2024 (4 cabins left)
+- SUNDAY, FEBRUARY 2, 2025 1:00 PM - SATURDAY, FEBRUARY 8, 2025 11:00 AM
 
-![Group photo from 2023](/img/group-photo-pura-vida-retreat.jpg)
+![Group photo from 2024](/img/pura-vida-group.jpg)
 
-Join us for an immersive experience in nature where we will vinyasa to the sounds of bird and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
+## The Epic Experience
 
-## What past retreaters are saying…
+A one-of-a-kind pura vida retreat! You can expect 2025 to offer the same soul-fueling fun but enhancements to keep it fresh!
 
-> "I came for the yoga and stayed for the incredible community, delicious food, and furry friends at El Sabanero! Thanks Krysta-Lyn and Sheila - your leadership, unmatched shared energy, and complementary strengths that made for a fun, challenging, and energizing week of yoga, adventures, and new friends. I can’t wait for next year!"
+Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It's time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
-We can’t wait to go back to Costa Rica and this time we are thrilled to offer **TWO** retreat week options!
+We'sve added an extra day & night as well as a cultural experience, sunset meditation, sunrise hike & more!
+
+## What past retreaters are saying...
+
+> "When I booked my spot for the Costa Rica Pura Vida Retreat, I was looking for a reset and a way to get away from the city and come home feeling healthy, refreshed & restored! This retreat did all that AND MUCH MORE. I instantly felt a sense of community and connection to the other participants and left with new friends and a love for a country (and its people) that I had never visited before! Couldn't recommend enough - I will also say that the quality and instruction of yoga is top tier!!"
 
 ## What's Included
 
-- 5 Nights / 6 days of accommodations in a Pura Vida lifestyle cabin at El Sabanero Eco-Lodge
-- 3 Vegetarian meals each day
-- 2 Yoga classes / workshops each day
-- 2 - 3 Beach days (by shuttle) and / or hang by the pool
-- Group Reiki healing session
+- 6 Nights/7 days (you heard that right, we've added a day for more fun!) of accommodations in a Pura Vida lifestyle cabina at El Sabanero with air conditioning and hot water
+- 2-3 Vegetarian meals each day and a morning snack & coffee before yoga
+- 1-2 Yoga classes/workshops per day with Krysta-Lyn and Sheila Anne. Some offerings include:
+- Sacral awakening Buti yoga class
+- Ocean of Love Group Reiki healing session
+- Backbend and/or arm balance workshop
+- Sunrise hike
+- Daily journal prompts
+- Beach sunset guided meditation
+- Fire ceremony
+- 1 Cultural experience (think dance class or local farm tour, you just never know!)
+- 2 - 3 Beach days (by shuttle) and/or hang by the pool
 - Virtual community sessions before and after the retreat
+- Krysta-Lyn and Sheila Anne's dedicated hearts, ears, and arms (hugs) to guide and support you wherever you are in your journey
+- LIFE LONG COMMUNITY & FRIENDSHIP - there is a reason why our retreaters come back year after year!
+- Transportation to/from Liberia airport (if you arrive within a window/time frame that will be provided closer to trip for group transport)
+- Transportation to Tamarindo's Local Night Market (food, art and dancing!)
 - All tips for El Sabanero Staff
-- Krysta-Lyn and Sheila Anne’s support wherever you currently are in your journey
-- Lifelong community - Our favorite part!
-- Transportation to Tamarindo’s Nightmarket Thursday evening of retreat. Vendors, music, and dancing!
-- Transportation to/from Liberia airport (Provided you arrive/leave within the windows we specify. Please wait to book your air travel until we specify these times!)
+- Access to private yoga shala to use own your own as you wish
 
 ## What's Not Included
 
 - Airfare
-- Optional excursions - Such as the Adventure Tour (zip lining, water rafting, mud baths/hot spring and horseback riding), the Catamaran tour, and Surf lessons
-- Optional massage that you can book once you arrive
+- Optional excursions - Such as the Adventure Tour (zip lining, water rafting, mud baths/hot spring and horseback riding), Catamaran tour, surf lessons, cacao farm tour, poolside boudoir with the one and only Renaissance Room Katie Karlberg.
+- Optional massage and other healing services that you can book once you arrive
+- Community Sunset Dinner
 
 ![Enjoying a moment at the yoga shala](/img/yoga-shala-feet-up.jpg)
 
 ## Example day
 
-- 6:30 AM - wake up and enjoy coffee & fresh fruit
-- 7:30 AM - morning yoga class in the beautiful yoga shala (see the photo)
-- 8:30 AM - full Costa Rican breakfast
-- 10 AM - Shuttle to the beach or hang by the pool
+- 6:30 AM - Wake up and enjoy coffee & fresh fruit
+- 7:30 AM - Morning yoga class in the beautiful yoga shala & guided journaling
+- 8:30 AM - Full Costa Rican breakfast
+- 10:00 AM - Shuttle to the beach or hang by the pool
 - 1:30 PM - Return back to the retreat center and have lunch
 - 2:30 PM - Enjoy the pool, go for a walk, get a massage on site
-- 5 PM - Evening yoga class
+- 5:00 PM - Evening yoga class
 - 6:30 PM - Group dinner
 
-Then while away the evening talking with your new friends, journaling, or going for a night swim and go to bed with a full heart.
+Spend the evening talking with your new friends, journaling, or going for a night swim and go to bed with a full heart.
+
+_Disclosure: this is a Pura Vida Lifestyle Retreat and we are staying in the jungle in Costa Rica - there are bugs, creatures, & the beds aren't luxe & plush, but the cabinas are part of the cultural experience. This is a full immersion into the lifestyle. If that lifestyle doesn't suit you, we get it and want to be fully transparent!_
+
+## More Love From Past Retreaters
+
+> "Transformative. Magical. Extraordinary. These are just a few of the words that come to mind when I think of the truly one-of-a-kind week I spent with Sheila, Krysta-Lyn and all my new friends at the Pura Vida Retreat. Whether you're looking for a yoga retreat to deepen your practice, a place to heal and grow, an opportunity to make new connections and relationships, or soak up the sunshine - this retreat is for you. You'll do all of that and BEYOND. You'll discover new parts of yourself, you'll experience the people, food and Pura Vida lifestyle of Costa Rica and you'll be enchanted by the coastline and sunrises/sunsets. It was such a life-changing experience for myself and many others - I can't wait to join this retreat again in 2025!!!!"
+
+> "I was a return retreater and the experience felt just as magical! The trip is flexible so that you are able to make it exactly what you need/want it to be."
+
+> "Don't hesitate, just do it! Do it for yourself; Trust me, you won't regret it. I've gone on the Pura Vida retreat twice now and have loved every second of both years. Not only do I get to check in with myself and fill my cup, but I also get to connect with amazing people and build my community. The best way to explain it was my first year at the retreat helped me figure out where I want to be and what path(s) I need to begin to get there, and year 2 allowed me to stop from the craziness and check in with myself; make sure I was still on the path I wanted and was doing the right things for myself and my journey. Can't forget the amazing leaders Sheila and Krysta-Lyn! They have created an amazing, fun, warming and welcoming safe space for us to all enjoy and be comfortable with getting vulnerable together."
+
+> "When I booked my spot for the Costa Rica Pura Vida Retreat, I was looking for a reset and a a way to get away from the city and come home feeling healthy, refreshed & restored! This retreat did all that AND MUCH MORE. I instantly felt a sense of community and connection to the other participants and left with new friends and a love for a country (and its people) that I had never visited before! Couldn't recommend enough - I will also say that the quality and instruction of yoga is top tier!!"
+
+> "This retreat was incredible. I got more than I could have possibly imagined from it - physically, mentally, spiritually. Just go it's the best way to pause, reset & focus."
+
+## El Sabanero Eco-Lodge & Costa Rica
+
+El Sabanero Eco-Lodge is located within the Nicoya Peninsula, a Blue Zone! A Blue Zone is a place where the number of people that live to 100 is up to 10 times higher than the rest of the world. Other Blue Zones include places like Okinawa, Japan and Ikaria, Greece. El Sabanero is a 10 min drive to Tamarindo Beach Resort and only 15 min from world-class surf spots such as Avellanas Beach, Playa Negra and Playa Grande.
+
+Krysta-Lyn arrived to El Sabanero in 2019 as a student and returned in 2020 as a yoga instructor being able to live and breathe its magic for an entire month. El Sabanero is a family, a safe space and a home for yogis around the world. It's a true honor to share this special place with our community members.
+
+This will be our third time hosting a retreat at El Sabanero and over the past couple of years it's become home. We ask you to treat the staff, animals, and property with respect, and that it becomes a home for you too.
 
 ## Meet Your Guides For The Week
 
@@ -74,40 +109,49 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 
 ## Investment
 
+**Early Bird Pricing** (includes $250 off standard prices, while spaces last)
+
+- Single Cabina: $2350 per person (or 2 payments of $1025 after deposit)
+- Double Cabina: $1950 per person (or 2 payments of $725 after deposit) - bring friends or meet a new life long friend
+- Triple Cabina: $1800 per person (or 2 payments of $650 after deposit)
+
+Pay $300 non refundable/non transferable deposit to secure a VIP spot and early bird pricing!
+
 **Regular rates**
 
-- Single - $2050
-- Double - $1700
-- Triple - $1450
+- Single Cabina: $2600 (or 2 payments of $1150 after deposit)
+- Double Cabina: $2200 (or 2 payments of $950 after deposit) - bring friends or meet a new life long friend
+- Triple Cabina: $2050 (or 2 payments of $875 after deposit)
 
-Reserve your spot now with a $300 **non-refundable + non-transferable** deposit:
+All options are non refundable and non transferable.
 
-- Reserve for week 2
-  - (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) specify “week 2” + room type
-  - [Square pay](https://checkout.square.site/buy/33TKPSO4C6KFWIFWD3MVYNN4)
+## How do I get one of those spots right now?
 
-Final payments must be made by 11/1/23.
+- (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) your $300 non-refundable and non-transferable security deposit
+- [Square pay](https://square.link/u/nw0VkHL4) to pay with credit card +$9 fee
 
-_Disclosure: This is a Pura Vida Lifestyle Retreat and not a luxury accommodation retreat. There are bugs, bats, and creatures around. The beds are not luxe & plush but the cabinas are part of the cultural experience. This is an opportunity to fully immerse yourself into the pura vida mindset and lifestyle and we totally understand if that lifestyle doesn’t suit you._
+When paying, note which Cabina option you prefer. The remainder of your balance will be due no later than November 1, 2024, we will send out payment details over time. Balances are to be paid via Venmo/Paypal and/or with credit card via Square Pay +3% fee.
 
-![View from the yoga shala from 2023's retreat](./img/yoga-shala-pura-vida-retreat.jpg)
-
-## More Love From Past Retreaters
-
-> “El Sabanero is heaven on earth. The perfect place to unwind and reset. Krysta and Sheila were great as well as other guest instructors that taught. Overall great experience!”
-
-> “This trip is life changing if you allow it to be. If you are looking for a space to reflect, heal, and truly listen to yourself away from the daily grind, this is the retreat for you. It is well organized and there are no pressures to follow any schedule. It is led by two informative and positive ladies who will share their knowledge with you and support you wherever you are in your journey!”
-
-> “This retreat was more than I could’ve hoped for. I was given the option to participate in as little or as much as I want and encouraged to really listen to my needs. Sheila and Krysta-Lyn were warm, friendly hosts and really did a great job keeping us organized. There was a variety of yoga practices, delicious food, and such an amazing community built while we were there. I’d do it again in a heartbeat.”
-
-> “A wonderful group, a wonderful location, what more can be asked for.”
-
-> “DO IT, YOU WILL NOT REGRET IT. I signed up for this retreat as a gift to myself to recenter myself and remind myself of what brings me joy. I was super nervous going into this retreat because I didn’t know anybody past our pre-retreat zoom, but I left with a whole new community, one that I can rely on and that made me feel pure joy for an entire week. I am in no way a professional or expert at Yoga, and you don’t need to be to attend this retreat! It is for anybody and everybody! You will feel safe, and you feel seen and heard. You will leave feeling all the emotions, but most importantly, you’ll leave feeling more confident in yourself and your yoga practice!”
-
-> "The week spent in Costa Rica was a dream. My goal was to truly disconnect from work and everything overwhelming me and to have the opportunity to slow down and find what brings me peace, and that’s exactly what happened. We had the most incredible group of people, led by two amazing women. Krysta-Lyn and Sheila provided an abundance of communication prior to the retreat, alleviating and potential anxiety and really fostering an environment of joy. The lodge was beautiful and maintained its authenticity to the surrounding environment. I can’t say enough good things and cannot wait to go again!! Pura Vida 🌊☀️"
+All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays.
 
 ![Coffee during the retreat](/img/pura-vida-coffee.jpg)
 
-![Mangrove girls](/img/mangrove-girls.jpg)
+![Pura Vida shot from 2024 1](/img/pura-vida-1.jpg)
 
-![Pura Vida on the boat](/img/pura-vida-boat-girls.jpg)
+![Pura Vida from 2024 2](/img/pura-vida-2.jpg)
+
+![Pura Vida shot from 2024 3](/img/pura-vida-3.jpg)
+
+![Pura Vida from 2024 4](/img/pura-vida-4.jpg)
+
+## Week 2 Waitlist
+
+[Waitlist form](https://docs.google.com/forms/d/e/1FAIpQLScn1COIzH77mhA6a1zlikUICvrFu-tMJHPBVSbU72HfwnJiwA/viewform?usp=sf_link)
+
+## Land Acknowledgement
+
+Per Smithsonian:
+
+> "Land acknowledgment is a traditional custom that dates back centuries in many Native nations and communities. Today, land acknowledgments are used by Native Peoples and non-Natives to recognize Indigenous Peoples who are the original stewards of the lands on which we now live."
+
+This retreat takes place in the Guanacaste province of Costa Rica, the unceded territory called Matambú of the Chorotega people. Chorotega translates to "The Fleeing People," representing the history of Chorotegas fleeing Mexico for Costa Rica in AD 500 to escape slavery. [You can learn more here](https://www.fairtourism.nl/en/tribal-tourism-series-chorotega/).
