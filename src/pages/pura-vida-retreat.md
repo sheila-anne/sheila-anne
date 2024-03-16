@@ -15,13 +15,13 @@ path: /pura-vida-retreat
 
 In Tamarindo, Costa Rica
 
-- SUNDAY, FEBRUARY 2, 2025 1:00 PM - SATURDAY, FEBRUARY 8, 2025 11:00 AM
+- SUNDAY, FEBRUARY 2, 2025 - SATURDAY, FEBRUARY 8, 2025
 
 A one-of-a-kind pura vida retreat! You can expect 2025 to offer the same soul-fueling fun but enhancements to keep it fresh!
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It's time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
-We'sve added an extra day & night as well as a cultural experience, sunset meditation, sunrise hike & more!
+We've added an extra day & night as well as a cultural experience, sunset meditation, sunrise hike & more!
 
 ## What past retreaters are saying...
 
@@ -42,7 +42,7 @@ We'sve added an extra day & night as well as a cultural experience, sunset medit
 - 1 Cultural experience (think dance class or local farm tour, you just never know!)
 - 2 - 3 Beach days (by shuttle) and/or hang by the pool
 - Virtual community sessions before and after the retreat
-- Krysta-Lyn and Sheila Anne's dedicated hearts, ears, and arms (hugs) to guide and support you wherever you are in your journey
+- Expert, heart-felt facilitation from Krysta-Lyn and Sheila Anne, supporting you wherever you are in your journey
 - LIFE LONG COMMUNITY & FRIENDSHIP - there is a reason why our retreaters come back year after year!
 - Transportation to/from Liberia airport (if you arrive within a window/time frame that will be provided closer to trip for group transport)
 - Transportation to Tamarindo's Local Night Market (food, art and dancing!)
@@ -52,7 +52,7 @@ We'sve added an extra day & night as well as a cultural experience, sunset medit
 ## What's Not Included
 
 - Airfare
-- Optional excursions - Such as the Adventure Tour (zip lining, water rafting, mud baths/hot spring and horseback riding), Catamaran tour, surf lessons, cacao farm tour, poolside boudoir with the one and only Renaissance Room Katie Karlberg.
+- Optional excursions - Such as the Adventure Tour (zip lining, water rafting, mud baths/hot spring and horseback riding), Catamaran tour, surf lessons, cacao farm tour, poolside boudoir with the one and only [Katie Karlberg](https://www.renaissanceroomboudoir.com/).
 - Optional massage and other healing services that you can book once you arrive
 - Community Sunset Dinner
 
