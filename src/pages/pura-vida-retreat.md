@@ -123,9 +123,9 @@ Pay $300 non refundable/non transferable deposit to secure a VIP spot and early 
 
 All options are non refundable and non transferable.
 
-## How do I get one of those spots right now?
+## Reserve Your Spot
 
-- (Preferred) [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) your $300 non-refundable and non-transferable security deposit
+- [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) your $300 non-refundable and non-transferable security deposit
 - [Square pay](https://square.link/u/nw0VkHL4) to pay with credit card +$9 fee
 
 When paying, note which Cabina option you prefer. The remainder of your balance will be due no later than November 1, 2024, we will send out payment details over time. Balances are to be paid via Venmo/Paypal and/or with credit card via Square Pay +3% fee.
