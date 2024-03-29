@@ -1,6 +1,8 @@
 import colors from "../config/colors.json";
 
 type Colors = {
+  bodyCopy: string;
+  buttonFallback: string;
   lightestBlue: string;
   lighterBlue: string;
   blue: string;

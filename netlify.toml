@@ -1,10 +1,10 @@
 [build]
   publish = "public"
-  command = "yarn build"
+  command = "npm run build"
   functions = "src/lambda/dist/lambda"
 
 [dev]
-  command = "yarn dev"
+  command = "npm run dev"
   port = 34567
 
 [[plugins]]

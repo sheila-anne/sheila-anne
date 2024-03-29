@@ -51,8 +51,9 @@ const FooterLink = styled(SmartLink)`
   padding: 5px;
   :hover {
     border-radius: 1rem;
-    background-color: #fafafa;
+    background-color: #fff;
     color: #2b2523;
+    padding: 15px;
   }
 `;
 

@@ -133,7 +133,7 @@ const MeasurableHeightText = ({ dispatch, isExpanded, text, title }: Expandable)
     >
       <Text isExpanded={isExpanded} text={text} />
       <CenteredText>
-        <PlainButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000">
+        <PlainButton backgroundColor={Constants.Colors.theGroveLightGreen}>
           {isExpanded ? "Show Less" : "Show More"}
         </PlainButton>
       </CenteredText>

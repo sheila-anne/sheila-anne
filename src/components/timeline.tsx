@@ -10,7 +10,7 @@ const TimelineContainer = styled.div`
   position: relative;
 
   &::after {
-    background-color: #000;
+    background-color: ${Constants.Colors.bodyCopy};
     content: "";
     height: 100%;
     left: calc(50% - 2px);

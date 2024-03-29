@@ -12,9 +12,9 @@ type ColoredFlexColumnProps = {
 
 const ColorsMap = {
   0: Constants.Colors.theGroveGreenGray,
-  1: Constants.Colors.theGroveLightGreen,
-  2: Constants.Colors.theGroveTeal,
-  3: Constants.Colors.theGroveGreen,
+  1: Constants.Colors.theGroveTeal,
+  2: Constants.Colors.theGroveLightGreen,
+  3: Constants.Colors.theGroveTeal,
 };
 
 const ClickableCard = styled.a`

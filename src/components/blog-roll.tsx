@@ -53,9 +53,9 @@ const Article = styled.article.withConfig<ArticleProps>({
 })`
   align-items: center;
   background-color: ${({ isFeatured }) =>
-    isFeatured ? Constants.Colors.theGroveGreenGray : Constants.Colors.theGroveLightGreen};
+    isFeatured ? Constants.Colors.theGroveTeal : Constants.Colors.theGroveLightGreen};
   border-radius: 1rem;
-  color: #000;
+  color: ${Constants.Colors.bodyCopy};
   display: flex;
   height: max-content;
   margin: 1rem;
