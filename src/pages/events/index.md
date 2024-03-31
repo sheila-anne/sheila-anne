@@ -2,11 +2,23 @@
 templateKey: events
 pageTitle: Events | Sheila Anne
 pageDescription: >
-  Book one of Sheila Anne's upcoming life-coaching events, and see the schedule for future programs being offered. Don't miss out!
+  Book one of Sheila Anne's upcoming retreats, and see the schedule for future programs being offered. Don't miss out!
 bannerImage: /img/sheila-anne-events.png
 bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
+
+## Fembodied Mini Retreat
+
+April 27 - Pawtucket, RI
+
+Join us for an alchemic women's mini retreat focused on how to heal your heart, awaken the sacred feminine within, & deepen self love - [details & signup here](https://www.eventbrite.com/e/fembodied-mini-retreat-to-celebrate-the-sacred-feminine-tickets-867579332137?aff=oddtdtcreator)
+
+## Summer SOULstice Women's Wellness Retreat
+
+June 20 - June 23 Breckenridge, CO
+
+This summer, escape the stresses of daily life and embark on a transformative self care journey during our all-inclusive retreat nestled in the majestic Rocky Mountains - [details & signup here](https://shop.headstandsandheels.com/collections/summer-soulstice-wellness-retreat)
 
 ## Costa Rica Pura Vida Retreat
 
