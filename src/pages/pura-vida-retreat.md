@@ -110,8 +110,8 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 **Early Bird Pricing** (includes $250 off standard prices, while spaces last)
 
 - Single Cabina: $2350 per person (or 2 payments of $1025 after deposit)
-- Double Cabina: $1950 per person (or 2 payments of $725 after deposit) - bring friends or meet a new life long friend
-- Triple Cabina: $1800 per person (or 2 payments of $650 after deposit)
+- Double Cabina: $1950 per person (or 2 payments of $825 after deposit) - bring friends or meet a new life long friend
+- Triple Cabina: $1800 per person (or 2 payments of $750 after deposit)
 
 Pay $300 non refundable/non transferable deposit to secure a VIP spot and early bird pricing!
 
