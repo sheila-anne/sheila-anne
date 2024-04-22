@@ -180,6 +180,7 @@ const getNavLinkItems = (
     },
     { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
     { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
+    { to: "/reiki/", text: "Reiki", title: "Reiki Energy Healing in Portsmouth" },
   ];
   !!isOpen && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
