@@ -7,7 +7,7 @@ bannerImageHeadline: Sheila practicing Reiki on a client in Portsmouth
 path: /portsmouth-reiki
 ---
 
-# Portsmouth Reiki Energy Healing
+# Reiki Energy Healing
 
 !["Sheila practicing Reiki on a client in Portsmouth"](/img/reiki-crown.jpg)
 
