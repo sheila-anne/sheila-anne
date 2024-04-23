@@ -6,6 +6,7 @@ static/admin/*.bundle.*
 yarn-error.log
 .env
 **/dist/**
+.sfdx
 
 # Local Netlify folder
 .netlify
