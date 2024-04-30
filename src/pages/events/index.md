@@ -8,12 +8,6 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Fembodied Mini Retreat
-
-April 27 - Pawtucket, RI
-
-Join us for an alchemic women's mini retreat focused on how to heal your heart, awaken the sacred feminine within, & deepen self love - [details & signup here](https://www.eventbrite.com/e/fembodied-mini-retreat-to-celebrate-the-sacred-feminine-tickets-867579332137?aff=oddtdtcreator)
-
 ## Summer SOULstice Women's Wellness Retreat
 
 June 20 - June 23 Breckenridge, CO

@@ -40,15 +40,13 @@ During your Reiki session with Sheila, you can expect:
 
 ## Investment In Your Well-being
 
-- 30-Minute Session: $75
 - 60-Minute Session: $115
-- 75-Minute Session: $150
+
+Payment can be made in cash, Venmo, or Paypal on the day of your appointment or using a credit card (3% fee). 24 hour cancellation required or full fee will be collected
 
 **Grand Opening new client special**:
 
-- 30-Minute Session: $50
 - 60-Minute Session: $80
-- 75-Minute Session: $125
 
 Option to purchase up to 10 sessions at this rate (to be used by end of calendar year 2024).
 
