@@ -8,11 +8,21 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Summer SOULstice Women's Wellness Retreat
+## Summer SOULstice Women's Wellness Retreat - SOLD OUT
 
 June 20 - June 23 Breckenridge, CO
 
 This summer, escape the stresses of daily life and embark on a transformative self care journey during our all-inclusive retreat nestled in the majestic Rocky Mountains - [details & signup here](https://shop.headstandsandheels.com/collections/summer-soulstice-wellness-retreat)
+
+## Summer Camp
+
+July 6th Gelinas Farm, Pembroke, NH
+
+Join us for a women's new moon wellness retreat where you'll awaken your inner child, connect to simplicity and nature, and inspire unbridled joy with community. This is a one-of-a-kind experience and we cannot wait to welcome the campers!
+
+[Full Details Here](https://drive.google.com/file/d/1xGHoCUG6247PhcFrOPGRfdg-7V9TwK9K/view)
+
+[Book Here](https://docs.google.com/forms/d/e/1FAIpQLSdKRtmO64XSnL8ni6lKon2psSMle499s182u2PIDhWvXz_6ow/viewform?usp=sharing)
 
 ## Costa Rica Pura Vida Retreat
 
