@@ -18,16 +18,18 @@ type ButtonProps = {
 
 export const FocusCss = css`
   :focus {
-    border: 0.5px solid #000;
+    border: 0.5px solid ${Constants.Colors.bodyCopy};
     border-radius: 1rem;
   }
 `;
 
 const ButtonCss = css<ButtonProps>`
-  background-color: ${({ backgroundColor }) => (!!backgroundColor ? backgroundColor : Constants.Colors.theGroveGreen)};
+  background-color: ${({ backgroundColor }) =>
+    !!backgroundColor ? Constants.Colors.buttonFallback : Constants.Colors.buttonFallback};
   border: none;
   border-radius: 1rem;
   color: ${({ color }) => (!!color ? color : "#FFF")};
+  cursor: pointer;
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
@@ -73,7 +75,7 @@ const ButtonSpan = styled.span`
 const StyledPillButton = styled.button<{ color?: string }>`
   background: transparent;
   border: none;
-  color: #000;
+  color: ${Constants.Colors.bodyCopy};
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;

@@ -14,10 +14,6 @@ type BannerImageProps = {
 
 const BannerImageWrapper = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  margin-top: 0;
-  margin-bottom: 1rem;
-
   @media (max-width: ${Constants.mobileWidth}) {
     flex-flow: column wrap;
   }

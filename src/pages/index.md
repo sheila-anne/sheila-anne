@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-pageTitle: Sheila Anne | Transformational Life Coaching
+pageTitle: Sheila Anne | Coaching & Wellness
 pageDescription: >
-  ICF Associate Certified Coach & Trauma Informed Coach Sheila Anne Murray welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
+  ICF Professional Certified Coach & Trauma Informed Coach Sheila Anne welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
 image: /img/sheila-anne-logo.jpg
 description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
@@ -16,21 +16,27 @@ intro:
     - href: /book/exploration
       image: /img/sheila-anne-plant-feature.png
       imageAlt: Apply for a free Exploration Call.
-      title: 30 Minute Exploration Call
+      title: Experiences & Retreats
       text: >
-        Not sure where to start or have questions about my offerings? Apply for a free Exploration Call. We'll get to know each other, talk about your goals, and strategize next steps.
+        Lorum ipsum
     - href: /nourish
       image: /img/sheila-anne-blossom-feature.png
       imageAlt: Group coaching program
-      title: NOURISH
+      title: Coaching
       text: >
-        Join a community of ambitious women who are mindfully curating their wildly beautiful lives.
+        Lorum ipsum
     - href: /root-to-rise
       image: /img/sheila-anne-tree-feature.png
       imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: 1:1 Coaching
+      title: Wellness Programming
       text: >
-        My signature coaching program is for the woman who is ready create massive changes across her lifestyle, career, and relationships.
+        Lorum ipsum
+    - href: /events
+      image: /img/sheila-anne-tree-feature.png
+      imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
+      title: Yoga & Reiki
+      text: >
+        Lorum ipsum
   workWithMe:
     - a chronic goal-setter and to-do list maker
     - always the one who goes the extra mile in your work
