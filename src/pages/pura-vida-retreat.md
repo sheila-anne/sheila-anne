@@ -7,7 +7,7 @@ bannerImageHeadline: Pura Vida retreat in Costa Rica, Feb 2025
 path: /pura-vida-retreat
 ---
 
-# Pura Vida Retreat
+# Pura Vida Retreat - Week 1 - Women's Retreat
 
 ![Pura Vida retreat hero image](/img/pura-vida-hero.jpg)
 
@@ -21,7 +21,7 @@ A one-of-a-kind pura vida retreat! You can expect 2025 to offer the same soul-fu
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It's time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
-We've added an extra day & night as well as a cultural experience, sunset meditation, sunrise hike & more!
+We've added an extra day & night as well as a cultural experience, sunset meditation, sunrise hike & more! Week 1 is reserved exclusively for women-identifying folks. Week 2 will be open for all genders. [You can join the waitlist here!](https://docs.google.com/forms/d/e/1FAIpQLScn1COIzH77mhA6a1zlikUICvrFu-tMJHPBVSbU72HfwnJiwA/viewform?usp=sf_link)
 
 ## What past retreaters are saying...
 
