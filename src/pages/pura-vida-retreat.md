@@ -107,8 +107,8 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 
 ## Investment
 
-- Single Cabina (1 room left): $2600 (or 2 payments of $1150 after deposit) - room has one queen bed
-- Double Cabina: $2200 (or 2 payments of $950 after deposit) - bring friends or meet a new life long friend. Room has one queen bed and one twin bed.
+- SOLD OUT Single Cabina (1 room left): $2600 (or 2 payments of $1150 after deposit) - room has one queen bed
+- SOLD OUT Double Cabina: $2200 (or 2 payments of $950 after deposit) - bring friends or meet a new life long friend. Room has one queen bed and one twin bed.
 - Triple Cabina (2 rooms left): $2050 (or 2 payments of $875 after deposit) - room has three twin beds.
 
 All options are non refundable and non transferable.
