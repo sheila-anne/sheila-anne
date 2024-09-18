@@ -8,14 +8,14 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 ## Costa Rica Pura Vida Retreat
+SUNDAY, FEBRUARY 2, 2025 - SATURDAY, FEBRUARY 8, 2025
 
 Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, new friendships and perspectives, and a week being healed and rejuvenated by sun, sand, and movement.
 
 We can't wait to host the next group of amazing people in Costa Rica next year!
 
-**Costa Rica Retreat 7 days/6 nights**
-SUNDAY, FEBRUARY 2, 2025 - SATURDAY, FEBRUARY 8, 2025
-[Details & Sign Up](/pura-vida-retreat/)
+**[Details & Sign Up](/pura-vida-retreat/)**
+
 
 ![Group photo from 2024](/img/pura-vida-retreat-welcome.jpg)
 
