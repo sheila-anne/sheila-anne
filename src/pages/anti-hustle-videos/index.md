@@ -20,7 +20,7 @@ pageDescription: >
 
 ## Goodie Bag
 
-<a href="https://sheilaanne.com/anti-hustle-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
+[Claim your digital goodie bag here!](/anti-hustle-goodie-bag.pdf)
 
 ## Session Replays
 
