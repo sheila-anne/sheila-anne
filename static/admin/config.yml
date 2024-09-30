@@ -93,7 +93,7 @@ collections:
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
 
       - file: "src/pages/working-together/index.md"
-        label: "Working Together"
+        label: "Coachingr"
         name: "working-together"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "working-together" }

@@ -18,7 +18,7 @@ const theme: TypographyOptions = {
     },
     blockquote: {
       ...scale(1 / 5),
-      color: `#000`,
+      color: Constants.Colors.bodyCopy,
       fontStyle: "italic",
       paddingLeft: rhythm(3 / 4),
       marginLeft: rhythm(-1),

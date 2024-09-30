@@ -146,33 +146,23 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
     <section>
       <BannerImage
         image={image.childImageSharp.gatsbyImageData}
-        imageHeadline="Step Into The Best Version Of You"
-        title="Sheila Anne Life Coaching cover photo"
+        imageHeadline="Flowing Forward Together: Align, Inspire, Transform"
+        title="Sheila Anne sitting on a yoga mat smiling"
       />
       <Container>
         <CenteredText>
-          {descriptionParts.map((descrip, index) => {
-            return (
-              <Subheadline key={index}>{descrip + (index === descriptionParts.length - 1 ? "" : ".")}</Subheadline>
-            );
-          })}
+          <h3>Here's How We Can Work Together:</h3>
+          <div>Click / tap on each of the sections for more info!</div>
         </CenteredText>
-        <ContentBreak />
-        <CenteredText>
-          <h3>Are you:</h3>
-        </CenteredText>
-        <FlexContainer>
-          <ul>
-            {frontmatter.intro.workWithMe.map(reason => (
-              <li key={reason}>{reason}</li>
-            ))}
-          </ul>
+        <FlexContainer margin="1rem 0">
+          <Features gridItems={frontmatter.intro.blurbs} />
         </FlexContainer>
+        <ContentBreak />
         <CenteredText margin="0 0 2rem 0">
-          <div>
+          <FlexContainer justifyContent="center" margin="1rem">
             <strong>I created something just for you:</strong>
-          </div>
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/masterclass/">
+          </FlexContainer>
+          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} to="/masterclass/">
             Watch my free masterclass!
           </LinkButton>
         </CenteredText>
@@ -195,14 +185,6 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
             {mainpitch.title} <SmartLink to="/book/exploration/">Book your first call already!</SmartLink>
           </div>
         </FlexContainer>
-        <CenteredText>
-          <h3>Here's How We Can Work Together:</h3>
-          <div>Click / tap on each of the sections for more info!</div>
-        </CenteredText>
-        <FlexContainer margin="1rem 0">
-          <Features gridItems={frontmatter.intro.blurbs} />
-        </FlexContainer>
-        <ContentBreak />
         <FlexContainer justifyContent="center" margin="2rem 0">
           <HalfColumn>
             <FlexColSplitImage>
@@ -233,13 +215,13 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
           <Testimonial testimonials={fullTestimonials} />
         </TestimonialContainer>
         <CenteredText>
-          <BannerHeadline as="h2" color="#FFF" fontColor="#000" lessMargin={true}>
+          <BannerHeadline as="h2" color="#FFF" fontColor={Constants.Colors.bodyCopy} lessMargin={true}>
             Latest From The Blog
           </BannerHeadline>
         </CenteredText>
         <BlogRoll posts={posts} />
         <CenteredText>
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} color="#000" to="/writing-desk/">
+          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} to="/writing-desk/">
             Read more @ the blog!
           </LinkButton>
         </CenteredText>
@@ -270,7 +252,7 @@ export const pageQuery = graphql`
         description
         image {
           childImageSharp {
-            gatsbyImageData(width: 2048, quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
+            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
         }
         freebie {
@@ -284,7 +266,7 @@ export const pageQuery = graphql`
             href
             image {
               childImageSharp {
-                gatsbyImageData(width: 240, quality: 75, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
+                gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
               }
             }
             imageAlt

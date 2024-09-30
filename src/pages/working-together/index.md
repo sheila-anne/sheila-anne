@@ -1,5 +1,5 @@
 ---
-bannerImageHeadline: "Life Coaching | Working Together"
+bannerImageHeadline: "Life Coaching | Coaching"
 featuredImage: /img/sheila-anne-working-together.jpg
 formHeadline: "Let's get started!"
 formParagraph: "This 30-minute complimentary call is an opportunity to ask questions and learn how Sheila Anne can help you transform your life:"
@@ -7,7 +7,7 @@ formSubHeadline: "Setup your free exploration call."
 path: /working-together
 pageDescription: >
   Discover how to supercharge your life, focus your mental clarity, and balance your ambitions with the ability to be present with Sheila Anne Life Coaching
-pageTitle: Working Together | Sheila Anne
+pageTitle: Coaching | Sheila Anne
 templateKey: "working-together"
 
 testimonials:

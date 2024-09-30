@@ -66,7 +66,7 @@ export const WorkingTogetherHeader = () => {
           </ListContainer>
         </nav>
       </header>
-      <Heading>Working Together</Heading>
+      <Heading>Coaching</Heading>
       <Subheading>
         Work with me if you’d like to create a life that is inspiring, energizing, and aligned. I’m here to support you
         to confidently step into your next-level self and thrive in your body, mind, and soul.

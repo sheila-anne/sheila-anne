@@ -23,7 +23,7 @@ const SocialImage = styled.img`
 `;
 
 const SocialLink = styled(SmartLink)`
-  color: #000;
+  color: ${Constants.Colors.bodyCopy};
   cursor: pointer;
   display: block;
   padding: 0.75rem;

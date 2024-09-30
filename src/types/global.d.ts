@@ -53,7 +53,7 @@ type FeaturedGridItem = PreviewImage & {
   title: string;
 };
 
-declare type GatsbyPage = GatsbyComponent & BaseGatsbyPage;
+declare type GatsbyPage = GatsbyComponent & BaseGatsbyPage & { children?: React.ReactNode[] };
 
 declare type GatsbyComponent = {
   data?: any;

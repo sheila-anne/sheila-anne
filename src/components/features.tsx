@@ -6,26 +6,16 @@ import { FlexColumn, FlexContainer } from "./flex";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { Constants } from "../constants";
 
-type ColoredFlexColumnProps = {
-  colorIndex: number;
-};
-
-const ColorsMap = {
-  0: Constants.Colors.theGroveGreenGray,
-  1: Constants.Colors.theGroveLightGreen,
-  2: Constants.Colors.theGroveTeal,
-  3: Constants.Colors.theGroveGreen,
-};
 
 const ClickableCard = styled.a`
   color: inherit;
   text-decoration: none;
 `;
 
-const ColoredFlexColumn = styled(FlexColumn).withConfig<any & ColoredFlexColumnProps>({
+const ColoredFlexColumn = styled(FlexColumn).withConfig({
   shouldForwardProp: prop => prop !== "colorIndex",
 })`
-  background-color: ${({ colorIndex }) => ColorsMap[colorIndex]};
+  background-color: ${Constants.Colors.theGroveGreenGray};
   border-radius: 1rem;
   flex-basis: 30%;
   padding: 10px;
@@ -37,6 +27,7 @@ const FlexImage = styled(PreviewCompatibleImage)`
   display: inline-block;
   max-height: 240px;
   max-width: 240px;
+  margin-bottom: 15px;
   width: 240px;
 `;
 
@@ -47,8 +38,8 @@ const SmallHeadline = styled.h3`
 
 export const Features = ({ gridItems }) => (
   <FlexContainer>
-    {gridItems.map((item, index) => (
-      <ColoredFlexColumn key={item.text} colorIndex={index}>
+    {gridItems.map((item) => (
+      <ColoredFlexColumn key={item.text}>
         {/* hack to fix trailing comma being purged when sourced from markdown */}
         <ClickableCard href={item.href + "/"}>
           <CenteredText>

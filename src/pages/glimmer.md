@@ -1,15 +1,16 @@
 ---
 bannerImage: /img/glimmer-hero.png
 bannerImageHeadline: Glimmer, brought to you by Sheila Anne
-templateKey: "anti-hustle-videos"
-path: /glimmer-videos-2024
+templateKey: "pura-vida-retreat"
+path: /glimmer
 pageTitle: Glimmer Replay Library
-pageDescription: All of the videos for January 2024's Glimmer program will be hosted here.
+pageDescription: >
+  All of the videos for January 2024's Glimmer program will be hosted here.
 ---
 
-# Glimmer Replay Library
-
 ![Replay library](/img/glimmer-hero.png)
+
+# Glimmer Replay Library
 
 [Link to join ALL live calls](https://us02web.zoom.us/j/4647885921)
 
@@ -18,11 +19,12 @@ pageDescription: All of the videos for January 2024's Glimmer program will be ho
 [Click here for a message from Sheila](https://www.youtube.com/watch?v=1HE_9BR_MbQ)
 
 ## Closing Message
+
 [Watch Sheila's closing message](https://www.youtube.com/watch?v=DWSAyw6uRDs)
 
 ## Goodie Bag
 
-<a href="/glimmer-goodie-bag.pdf" target="_blank">Claim your digital goodie bag here!</a>
+[Claim your digital goodie bag here!](/glimmer-goodie-bag.pdf)
 
 ## Replays
 
