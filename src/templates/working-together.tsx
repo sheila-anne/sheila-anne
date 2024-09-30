@@ -61,7 +61,7 @@ export const WorkingTogetherTemplate = ({ faqs, frontmatter }) => {
       </Text>
       <hr />
       <BookingSection
-        page="Working Together"
+        page="Coaching"
         backgroundColor={Constants.Colors.theGroveLightGreen}
         formTitle={frontmatter.formHeadline}
         formDescription={frontmatter.formSubHeadline}

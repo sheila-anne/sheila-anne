@@ -49,13 +49,13 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
               imageAlt="Private Coaching with Sheila Anne"
               imageInfo={frontmatter.featuredImage.childImageSharp.gatsbyImageData}
               loading="eager"
-              title="Sheila's private coaching program has helped strong, powerful women create deep long-lasting change"
+              title="Sheila's private coaching program will help you awaken your joy, self-worth, and bold aspirations"
             />
           </FlexColSplitImage>
         </HalfColumn>
         <HalfColumn>
-          <SmallSecondHeader>Root into your power</SmallSecondHeader>
-          <SmallSecondHeader>Rise into the most badass version of you</SmallSecondHeader>
+          <SmallSecondHeader>Take a deep breath</SmallSecondHeader>
+          <SmallSecondHeader>You’re ready for your next uplevel</SmallSecondHeader>
           <SmallSecondHeader>You know you're made for more & I'm going to help you make it happen</SmallSecondHeader>
         </HalfColumn>
       </FlexContainer>
@@ -104,17 +104,17 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         <h2>Private Coaching with Sheila will enable you to:</h2>
         <ul>
           <li>
-            <b>Root into your power of being present</b>. You may take your first deep breath in a while during our work
+            <b>Reclaim a sense of presence</b>. You may take your first deep breath in a while during our work
             together. We’ll dive into what helps to stay rooted and mindful amidst the obligations and activities of
             your fast-paced life.
           </li>
           <li>
-            <b>Step into the driver’s seat of your life</b>. Clarify your values, goals, and obstacles so you can make
-            big, intentional changes.
+            <b>Intentionally Illuminate Your Path </b>. Clarify your values, goals, and obstacles so you can make
+            big, aligned changes.
           </li>
           <li>
             <b>Holistically care for your well-being</b>. We’re talkin’ less stress, more flow. Nourish your inner fire,
-            introduce healthy habits, and let go of things that are inhibiting your growth.
+            introduce healthy rituals, and let go of beliefs and habits that are inhibiting your growth.
           </li>
           <li>
             <b>Realign with what makes you, you</b>. Feel more yourself and show up more authentically, courageously,
@@ -129,8 +129,8 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             write a book - all of this is possible for you.
           </li>
           <li>
-            <b>Rise into the most badass version of you</b>. Bringing your A game to each adventure you tackle... but in
-            a cool and confident way.
+            <b>Rise into the best version of you</b>. Walk forward with a clear sense of direction, vibrant energy, and the tools to live a life that truly reflects your aspirations. 
+      
           </li>
         </ul>
       </ColorContainer>
@@ -156,13 +156,12 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           deserve.
         </p>
         <p>
-          When you enroll in the program, you will gain access to on-demand support from me and the BLOSSOM resource
-          pack, which is chock-full of practices and journaling prompts.
+          When you enroll in the program, you will gain access to on-demand support from me and a coaching workbook, which is chock-full of practices and journaling prompts.
         </p>
         <p>
           The benefit of working with me 1:1 is that you get to be in the driver’s seat, bringing to the table what
           feels most vital to explore and strategize. Be it taming the inner critic, designing your killer career plan,
-          improving your money mindset, or spending half the session on a guided meditation -- BLOSSOM sessions offer
+          improving your mindset, or spending half the session on a guided meditation -- private coaching sessions offer
           the ultimate time to learn and grow in the way you need most!
         </p>
         <h2>What's Included</h2>
@@ -179,13 +178,13 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             needle in your life.
           </li>
           <li>
-            <b>1:1 BLOSSOM Sessions</b>: We'll personalize a meeting cadence (typically weekly or bi-weekly) that will
+            <b>1:1 Coaching Sessions</b>: We'll personalize a meeting cadence (typically weekly or bi-weekly) that will
             work best for your unique needs and vision. Each session will look different and you get to decide what
             challenge we are workshopping or opportunity you want to create. I will consistently support you in stepping
             purposefully into an aligned and inspiring future.
           </li>
           <li>
-            <b>BLOSSOM Resources</b>: Strategic journaling prompts to unearth your purpose, behaviors, and desired life
+            <b>Coaching Workbook</b>: Strategic journaling prompts to unearth your purpose, behaviors, and desired life
             path.
           </li>
           <li>
@@ -215,7 +214,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       />
       <h2>Why Work With Me?</h2>
       <p>
-        I am an ICF Professional Certified Coach, Whole Person Certified Coach, Trauma-Informed Coach, and Yoga
+        I am an ICF Professional Certified Coach, Whole Person Certified Coach, Trauma-Informed Coach, Reiki Practioner, and Yoga
         Instructor who has helped dozens of ambitious women to create more success, flow, and change in their lives. I
         blend my professional coach training, yoga background, embodiment expertise, and intuition to help you feel
         grounded, safe, and totally resourced to step into the career, relationships, and life you deserve.
@@ -225,7 +224,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         exactly how I wanted it to be, but when it came to making a shift, I didn’t know where to start.
       </p>
       <p>
-        It wasn’t until my mom passed that I set myself free. Inspired by her radiant energy, I started digging deeper
+        It wasn’t until my mom passed that I set myself free. Inspired by her magnetic energy, I started digging deeper
         into discovering who “Sheila” really was, what she truly wanted, and what I needed to do to make it happen. My
         world exploded with opportunity.
       </p>
@@ -236,7 +235,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       <h2>Here’s how much I believe in us …</h2>
       <p>
         I offer a <b>money-back guarantee!</b> If after our initial Self-Discovery Deep Dive, if you are totally{" "}
-        <i>not</i> vibing with the energy, I’ll cancel your spot and return your investment.
+        <i>not</i> vibing with the energy, I’ll cancel your spot and return your monthly investment.
       </p>
       <h2>Let’s go!</h2>
       <p>Ok — enough chit chat — jump into action & apply below!</p>

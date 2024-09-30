@@ -170,7 +170,7 @@ const getNavLinkItems = (
   const navLinks = [
     {
       to: "/working-together/",
-      text: "Working Together",
+      text: "Coaching",
       title: "Life coaching help from Sheila Anne",
     },
     {

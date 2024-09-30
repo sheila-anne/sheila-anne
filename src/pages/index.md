@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-pageTitle: Sheila Anne | Transformational Life Coaching
+pageTitle: Sheila Anne | Coaching & Wellness
 pageDescription: >
-  ICF Associate Certified Coach & Trauma Informed Coach Sheila Anne Murray welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
+  ICF Professional Certified Coach & Trauma Informed Coach Sheila Anne welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
 image: /img/sheila-anne-logo.jpg
 description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
@@ -13,24 +13,36 @@ mainpitch:
 
 intro:
   blurbs:
-    - href: /book/exploration
-      image: /img/sheila-anne-plant-feature.png
-      imageAlt: Apply for a free Exploration Call.
-      title: 30 Minute Exploration Call
-      text: >
-        Not sure where to start or have questions about my offerings? Apply for a free Exploration Call. We'll get to know each other, talk about your goals, and strategize next steps.
-    - href: /nourish
-      image: /img/sheila-anne-blossom-feature.png
-      imageAlt: Group coaching program
-      title: NOURISH
-      text: >
-        Join a community of ambitious women who are mindfully curating their wildly beautiful lives.
     - href: /root-to-rise
-      image: /img/sheila-anne-tree-feature.png
-      imageAlt: Sheila Anne is the life coach that provides you with the chance for transformative positive change.
-      title: 1:1 Coaching
+      image: /img/She-flows-icon-sun-blue.png
+      imageAlt: She flows sun
+      title: Coaching
       text: >
-        My signature coaching program is for the woman who is ready create massive changes across her lifestyle, career, and relationships.
+        Gain clarity, build confidence, and develop practical strategies to create a fulfilling life and career path aligned with your values and goals
+    - href: /events
+      image: /img/She-flows-icon-mountains-blue.png
+      imageAlt: She flows waves
+      title: Experiences & Retreats
+      text: >
+        Nourish your mind, body, and soul through immersive workshops and international retreats
+    - href: /pura-vida-retreat
+      image: /img/She-flows-icon-waves-blue.png
+      imageAlt: She flows ocean waves graphic
+      title: Yoga
+      text: >
+        Move, breathe, and flow individually or in community
+    - href: /portsmouth-reiki
+      image: /img/She-flows-icon-reiki-blue.png
+      imageAlt: She flows moon graphic
+      title: Reiki
+      text: >
+        Harmonize your energy, alleviate anxiety, and promote well-being through this healing practice
+    - href: /corporate-wellness
+      image: /img/She-flows-icon-lines-blue.png
+      imageAlt: She flows blue earthen graphic
+      title: Corporate Wellness
+      text: >
+        Cultivate a culture of well-being and create a productive atmosphere within your organization with my wellness programming
   workWithMe:
     - a chronic goal-setter and to-do list maker
     - always the one who goes the extra mile in your work

@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
+import { GatsbyPage } from "../types/global";
 import { Footer } from "./footer";
 import { Nav } from "./nav";
 import { maxPageWidth, rhythm } from "../utils/";
