@@ -1,5 +1,5 @@
 import { graphql } from "gatsby";
-import React, { useState } from "react";
+import React from "react";
 
 import { BaseTemplate, BookingIframe, BookingScript, HTMLContent, Layout, SEO } from "../components";
 import { Constants } from "../constants";
@@ -24,7 +24,13 @@ const BookPage = ({ data, location }: { data: any; location: Location }) => {
   return (
     <Layout location={location}>
       <BookingScript />
-      <SEO description={post.frontmatter.pageDescription} location={location} title={post.frontmatter.pageTitle} />
+      <SEO
+        description={post.frontmatter.pageDescription}
+        image={post.frontmatter.bannerImage.publicURL}
+        imageAlt={post.frontmatter.bannerImageHeadline}
+        location={location}
+        title={post.frontmatter.pageTitle}
+      />
       <BaseTemplate contentComponent={HTMLContent} content={post.html} />
       <BookingIframe height="800px" showBookingSection={true} src={bookingUrl} />
     </Layout>
@@ -38,6 +44,10 @@ export const bookPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        bannerImage {
+          publicURL
+        }
+        bannerImageHeadline
         pageDescription
         pageTitle
       }
