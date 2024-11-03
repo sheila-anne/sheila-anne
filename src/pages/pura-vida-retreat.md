@@ -107,18 +107,18 @@ Sheila visited Costa Rica for the first time in 2014 (where she also connected w
 
 ## Investment
 
-- Single Cabina (1 room left): $2600 (or 2 payments of $1150 after deposit) - room has one queen bed
+- SOLD OUT Single Cabina: $2600 (or 2 payments of $1150 after deposit) - room has one queen bed
 - SOLD OUT Double Cabina: $2200 (or 2 payments of $950 after deposit) - bring friends or meet a new life long friend. Room has one queen bed and one twin bed.
 - Triple Cabina (2 rooms left): $2050 (or 2 payments of $875 after deposit) - room has three twin beds.
 
 All options are non refundable and non transferable.
 
-## Reserve Your Spot With A $300 Deposit
+## Reserve Your Spot With A $500 Deposit
 
 - [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1)/[Paypal](https://paypal.me/sheilaannemurray) after making your payment, [click here](https://docs.google.com/forms/d/e/1FAIpQLScH_soqexX2Th9AdffPcjJdsVy6Fg0vniTNzAmbFRoftPGwmw/viewform?usp=sf_link) so we can capture your information
 - [Square pay](https://square.link/u/nw0VkHL4) to pay with credit card +$9 fee
 
-When paying, note which Cabina option you prefer. The remainder of your balance will be due no later than November 1, 2024, we will send out payment details over time. Balances are to be paid via Venmo/Paypal and/or with credit card via Square Pay +3% fee.
+When paying, note which Cabina option you prefer. The remainder of your balance will be due no later than December 1, 2024, we will send out payment details over time. Balances are to be paid via Venmo/Paypal and/or with credit card via Square Pay +3% fee.
 
 All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays.
 
