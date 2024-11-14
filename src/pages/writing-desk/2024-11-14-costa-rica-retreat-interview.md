@@ -14,6 +14,7 @@ tags:
 ---
 
 ![](/img/pura-vida-hero.JPG]
+
 Have you ever been to a place where, upon arrival, all your worries seemingly melted away? A place where you were able to lay down your rigid self expectations, judgment, and urge to prove yourself and simply be? 
 
 This is the magic of what happens on retreat.And, though I’m always thrilled to share about retreating to anyone that will listen, it’s not quite as captivating as hearing a first-hand account from a retreater. 
