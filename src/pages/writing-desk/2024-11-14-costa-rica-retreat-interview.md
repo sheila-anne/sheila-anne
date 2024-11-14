@@ -35,7 +35,7 @@ When I returned home my therapist immediately said wow it's like you made a year
 
 During this retreat I learned what it feels like to be at peace, It was the first time in years that I felt zero stress and I was able to discover who I am when I'm at peace, and it's a person I really like. I now recognize the importance of taking care of my mental wellbeing. I've felt a lot less guilty about taking the time to practice yoga, journal and meditate. 
 
-![](/img/pura-vida-group.JPG]
+
 
 ## What advice would you give to someone who is considering attending this retreat, but may be feeling hesitant?
 I would tell them that they should absolutely go, that they deserve a week to be fully mentally, emotionally & physically present. You will come back to your day to day life completely refreshed and forever changed. I would tell them that you can take what you need from this retreat and leave the rest. There is no pressure to attend every yoga class or activity. There is no pressure to share your deepest fear- although I highly suggest it. 
