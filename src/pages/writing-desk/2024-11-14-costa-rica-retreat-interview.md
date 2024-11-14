@@ -24,14 +24,18 @@ That’s why I’m excited to share with you this written interview with Sarah, 
 ## What initially inspired you to sign up for the Costa Rica retreat? 
 One of my favorite people posted on instagram that she was going and I reacted to her story and she immediately asked me to join her. I had been feeling very burnt out and had just recently restarted my yoga practice in an attempt to take better care of my emotional wellbeing so it seemed like the stars had aligned. I wasn't searching out yoga retreats at all, it just sort of found me and I'm so happy it did. 
 
-
+![](/img/pura-vida-group.JPG]
 ## What were some of the most meaningful activities or workshops you participated in during the retreat? How did they impact you on a personal level?
 There was one particular yoga/Reiki practice where we were broken into small groups and we had to share with each other our worst fear. I immediately wanted to say something silly like snakes (because I am truly terrified of them) but I challenged myself to go deeper and be honest with myself. I shared with my small group that I was afraid to start the process of mourning my fathers death. The thought of processing that grief was too much for me and I felt like there had to be a big decision to start that process and taking that step terrified me. I was afraid that it would temporarily destroy my mental health and my ability to be present with my children - I really thought it had to be a big intentional step and I had been avoiding it for years. In this small group session the person next to me turned to me and said "Maybe it doesn't have to be a big decision, maybe it's small things everyday, I think you have already started - you are already doing it & not giving yourself credit for it." No one had ever said anything like that to me- probably because I'd never truly expressed my fear. That moment was truly life changing and I'm forever grateful that once again the stars aligned and I ended up in that group with those women.  
+
+![](/img/pura-vida-group.JPG]
 
 ## In what ways has the Costa Rica retreat continued to influence your life since returning home? What lasting changes have you noticed in yourself?
 When I returned home my therapist immediately said wow it's like you made a year's worth of progress in just one week. I think that I am no longer afraid to truly admit to myself what I'm feeling and that has been a really big step for me. I've been able to be a bit more vulnerable and open. 
 
 During this retreat I learned what it feels like to be at peace, It was the first time in years that I felt zero stress and I was able to discover who I am when I'm at peace, and it's a person I really like. I now recognize the importance of taking care of my mental wellbeing. I've felt a lot less guilty about taking the time to practice yoga, journal and meditate. 
+
+![](/img/pura-vida-group.JPG]
 
 ## What advice would you give to someone who is considering attending this retreat, but may be feeling hesitant?
 I would tell them that they should absolutely go, that they deserve a week to be fully mentally, emotionally & physically present. You will come back to your day to day life completely refreshed and forever changed. I would tell them that you can take what you need from this retreat and leave the rest. There is no pressure to attend every yoga class or activity. There is no pressure to share your deepest fear- although I highly suggest it. 
