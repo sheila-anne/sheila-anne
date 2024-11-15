@@ -7,10 +7,7 @@ description: >
 featuredpost: true
 featuredImage: /img/pura-vida-hero.jpg
 tags:
-  - stress management
-  - advice
-  - self care
-  - anxiety
+  - yoga
 ---
 
 ![](/img/pura-vida-hero.jpg]
