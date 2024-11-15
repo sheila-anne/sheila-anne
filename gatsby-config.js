@@ -170,19 +170,6 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          "/*.woff2": ["Cache-Control:  max-age=31536000"],
-          "/*.png": ["Cache-Control:  max-age=31536000"],
-          "/*.svg": ["Cache-Control:  max-age=31536000"],
-          "/*.jpg": ["Cache-Control:  max-age=31536000"],
-          "/*.webp": ["Cache-Control:  max-age=31536000"],
-        },
-        mergeCachingHeaders: true,
-      },
-    },
   ],
   developMiddleware: app => {
     app.use(
