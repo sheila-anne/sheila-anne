@@ -10,7 +10,7 @@ tags:
   - yoga
 ---
 
-![](/img/pura-vida-hero.jpg]
+![](/img/pura-vida-hero.jpg)
 
 Have you ever been to a place where, upon arrival, all your worries seemingly melted away? A place where you were able to lay down your rigid self expectations, judgment, and urge to prove yourself and simply be? 
 
@@ -21,12 +21,12 @@ That’s why I’m excited to share with you this written interview with Sarah, 
 ## What initially inspired you to sign up for the Costa Rica retreat? 
 One of my favorite people posted on instagram that she was going and I reacted to her story and she immediately asked me to join her. I had been feeling very burnt out and had just recently restarted my yoga practice in an attempt to take better care of my emotional wellbeing so it seemed like the stars had aligned. I wasn't searching out yoga retreats at all, it just sort of found me and I'm so happy it did. 
 
-![](/img/pura-vida-1.jpg]
+![](/img/pura-vida-1.jpg)
 
 ## What were some of the most meaningful activities or workshops you participated in during the retreat? How did they impact you on a personal level?
 There was one particular yoga/Reiki practice where we were broken into small groups and we had to share with each other our worst fear. I immediately wanted to say something silly like snakes (because I am truly terrified of them) but I challenged myself to go deeper and be honest with myself. I shared with my small group that I was afraid to start the process of mourning my fathers death. The thought of processing that grief was too much for me and I felt like there had to be a big decision to start that process and taking that step terrified me. I was afraid that it would temporarily destroy my mental health and my ability to be present with my children - I really thought it had to be a big intentional step and I had been avoiding it for years. In this small group session the person next to me turned to me and said "Maybe it doesn't have to be a big decision, maybe it's small things everyday, I think you have already started - you are already doing it & not giving yourself credit for it." No one had ever said anything like that to me- probably because I'd never truly expressed my fear. That moment was truly life changing and I'm forever grateful that once again the stars aligned and I ended up in that group with those women.  
 
-![](/img/pura-vida-3.jpg]
+![](/img/pura-vida-3.jpg)
 
 ## In what ways has the Costa Rica retreat continued to influence your life since returning home? What lasting changes have you noticed in yourself?
 When I returned home my therapist immediately said wow it's like you made a year's worth of progress in just one week. I think that I am no longer afraid to truly admit to myself what I'm feeling and that has been a really big step for me. I've been able to be a bit more vulnerable and open. 
