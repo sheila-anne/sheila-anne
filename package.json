@@ -5,7 +5,7 @@
   "author": "James Simone",
   "dependencies": {
     "babel-plugin-styled-components": "2.1.4",
-    "gatsby": "5.13.7",
+    "gatsby": "5.14.0",
     "gatsby-plugin-catch-links": "5.13.1",
     "gatsby-plugin-facebook-pixel": "1.0.8",
     "gatsby-plugin-feed": "5.13.1",
