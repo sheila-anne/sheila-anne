@@ -69,11 +69,16 @@ const InnerBanner = ({ path }: TextBannerProps) => {
   const innerHandler = (_: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
   };
-  const bannerText = `Watch "5 Steps To Find Your Life Path" free video!`;
+  const bannerText = `Flow State | 4 Weeks of fluid transformation | Early bird pricing available until 12.12.24 | Join Now!`;
   return isShown ? (
     <BannerDiv>
       <Text>
-        <UnderlineLink aria-label={bannerText} onClick={innerHandler} to="/masterclass/" title={bannerText}>
+        <UnderlineLink
+          aria-label={bannerText}
+          onClick={innerHandler}
+          to="https://sheila-anne.mykajabi.com/flow-state"
+          title={bannerText}
+        >
           {bannerText}
         </UnderlineLink>
       </Text>
