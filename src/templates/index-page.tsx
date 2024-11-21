@@ -33,6 +33,10 @@ type MainPitch = {
 
 type IndexFrontmatterProps = BaseFrontmatter & {
   description: string;
+  bannerImage: {
+    publicURL: string;
+  };
+  bannerImageHeadline: string;
   heading: string;
   image: any;
   intro: {
@@ -136,11 +140,9 @@ const TestimonialContainer = styled(FlexContainer).withConfig({
 `;
 
 export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateProps) => {
-  const { description, image, mainpitch, freebie, testimonials } = frontmatter;
+  const { image, mainpitch, freebie, testimonials } = frontmatter;
 
   const fullTestimonials = [...testimonials];
-
-  const descriptionParts = description.split(".");
 
   return (
     <section>
@@ -236,7 +238,13 @@ const IndexPage = ({ data, location }: IndexPageProps) => {
 
   return (
     <Layout location={location}>
-      <SEO description={frontmatter.pageDescription} location={location} title={frontmatter.pageTitle} />
+      <SEO
+        description={frontmatter.pageDescription}
+        location={location}
+        title={frontmatter.pageTitle}
+        image={frontmatter.bannerImage.publicURL}
+        imageAlt={frontmatter.bannerImageHeadline}
+      />
       <IndexPageTemplate frontmatter={frontmatter} html={html} posts={data.allMarkdownRemark.posts} />
     </Layout>
   );
@@ -250,6 +258,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         description
+        bannerImage {
+          publicURL
+        }
+        bannerImageHeadline
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])

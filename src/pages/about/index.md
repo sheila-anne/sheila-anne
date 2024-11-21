@@ -21,16 +21,7 @@ Now I coach others to come home to themselves and transform their lives. I’ve 
 
 My superpower is my ability to help you slow down, connect with your body, and achieve from a place of alignment and powerful confidence. The integration of mindfulness and meditation is what helps you step off the hamster wheel, reflect on what you truly desire, and rise into the most badass version of you.
 
-To suit every need, I have two ways you can work with me:
-
-- [NOURISH Group Coaching](/nourish/) - 14 weeks of community and whole-person change
-- [Private Coaching](/root-to-rise/) - Three month transformation to help you root and rise into the best version of you
-
-It all starts with a free exploration call - a 30 minute strategy session with yours truly.
-
-[Book a free exploration call](/book/exploration/) today, and come home to yourself!
-
-## Street Cred
+## Professional Credentials
 
 ### ICF Professional Certified Coach
 

@@ -29,9 +29,6 @@ export const pageQuery = graphql`
       frontmatter {
         bannerImage {
           publicURL
-          childImageSharp {
-            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG], width: 2048)
-          }
         }
         bannerImageHeadline
         pageDescription

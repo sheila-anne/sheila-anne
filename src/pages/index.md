@@ -1,6 +1,8 @@
 ---
 templateKey: index-page
 pageTitle: Sheila Anne | Coaching & Wellness
+bannerImage: /img/sheila-anne-preview-image.jpg
+bannerImageHeadline: Sheila Anne | Coaching & Wellness
 pageDescription: >
   ICF Professional Certified Coach & Trauma Informed Coach Sheila Anne welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
 image: /img/sheila-anne-logo.jpg
@@ -8,7 +10,7 @@ description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
 freebie: /img/positivity-pack-cropped.jpg
 mainpitch:
-  title: Hi, I’m Sheila! I’m a Whole Person Certified Coach, ICF Professional Certified Coach, Trauma-Informed Coach, and yoga instructor. I specialize in helping high-achieving women to thrive in their relationships, careers, and lifestyles. Why? Because I used to rely on checking boxes (helloooo fellow achievers 👋), fulfilling the requests of others, and racing forward in life to feel complete. I was so busy trying to do things "right", I didn't realize I had outgrown the path I was on and wasn’t aligned with who I wanted to be. Sound familiar? I discovered how to connect back to my core self, redesign my path forward, and leap into a life I was made for. This led me to quit my comfortable job, find love, travel the world, and build a life where I make my own schedule. I mustered the courage to lead my life my way and start playing big, and now I'm fluffing passionate about helping others to do the same! Don’t be shy -
+  title: Hi, I'm Sheila! I’m committed to helping individuals and groups to become more resourced, resilient, and effective in their lives and careers.  Through working with me, clients find they can breathe deeper, trust themselves to take action, and confidently follow their purpose. I blend mindfulness and embodiment techniques with proven coaching tools to bring you a process that's uniquely empowering. This “slow down to speed up” approach is what helps clients pause, reflect on what they truly desire, and rise into the best version of themselves. Book your first call with me here.
   image: /img/welcome-home-to-nourish.jpg
 
 intro:
