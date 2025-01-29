@@ -8,14 +8,6 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Flow & Envision
-
-Sunday December 15th 12PM - 2PM | [3 Bridges Yoga](https://www.3bridgesyoga.com/)
-
-Transform your aspirations into action with this dynamic full moon workshop. Engage in a powerful vinyasa flow to center your mind and nourish your body, then channel that energy into creating a vision board that reflects your ambitions. Come ready to sweat, dream big, and leave with a tangible vision for your unique path.
-
-[Learn more & sign up](https://www.3bridgesyoga.com/events-workshops/yoganidra-reiki-dtx7h-m5t9t-twjxe-cbl73-ma958-bk2wa-h6jc6-9nwmf-jcsbt-86p2p-et5r9-zr4ws-dyely-ctpjn-2dkhm)
-
 ## Flow State
 
 ![Flow State with Sheila Anne](/img/sheila-anne-flow-state.jpg)
@@ -24,7 +16,7 @@ Transform your aspirations into action with this dynamic full moon workshop. Eng
 
 A metamorphic process of mindfulness, movement, and community
 
-Beginning January 2025
+Ongoing in January 2025
 
 [Let's Flow!](https://sheila-anne.mykajabi.com/flow-state)
 

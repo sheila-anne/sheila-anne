@@ -69,7 +69,7 @@ const InnerBanner = ({ path }: TextBannerProps) => {
   const innerHandler = (_: MouseEvent<HTMLAnchorElement | HTMLButtonElement, globalThis.MouseEvent>) => {
     clickHandler(setIsShown);
   };
-  const bannerText = `Flow State | 4 Weeks of fluid transformation | Early bird pricing available until 12.12.24 | Join Now!`;
+  const bannerText = `Flow State | 4 Weeks of fluid transformation | Join Now!`;
   return isShown ? (
     <BannerDiv>
       <Text>
