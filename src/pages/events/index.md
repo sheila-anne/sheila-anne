@@ -8,21 +8,9 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Flow State
-
-![Flow State with Sheila Anne](/img/sheila-anne-flow-state.jpg)
-
-4 weeks of fluid transformation
-
-A metamorphic process of mindfulness, movement, and community
-
-Ongoing in January 2025
-
-[Let's Flow!](https://sheila-anne.mykajabi.com/flow-state)
-
 ## Costa Rica Pura Vida Retreat
 
-SUNDAY, FEBRUARY 2, 2025 - SATURDAY, FEBRUARY 8, 2025
+SUNDAY, FEBRUARY 1, 2026 - SATURDAY, FEBRUARY 7, 2026
 
 Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, new friendships and perspectives, and a week being healed and rejuvenated by sun, sand, and movement.
 
@@ -30,7 +18,7 @@ We can't wait to host the next group of amazing people in Costa Rica next year!
 
 **[Details & Sign Up](/pura-vida-retreat/)**
 
-![Group photo from 2024](/img/pura-vida-retreat-welcome.jpg)
+![Group photo from 2025](/img/pura-vida-2025-group.jpg "Group photo from 2025")
 
 ## Yoga
 
