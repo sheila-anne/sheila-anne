@@ -70,13 +70,11 @@ This is a women’s retreat. Our retreat creates a supportive environment where 
 
 ## Meet Your Hosts
 
-![](/img/sheila-sol.jpg)
+![](/img/meet-the-hosts.png)
 
 **Sheila Anne** of Sheila Anne Coaching + Wellness
 
 Sheila visited Costa Rica for the first time in 2014 (where she also connected with long lost family!) and each time she returns feels like a special homecoming. Her favorite part of the annual retreat is getting to know individuals on a deeper level and experiencing transformational practices together like those from guest yoga teachers and time spent out in nature! Sheila received her 200 hour yoga teacher certification with Krysta-Lyn at South Boston Yoga. She actually missed the first certification weekend for her mother's funeral service, so the training came at a potent time of healing and self evolution. She and Krysta-Lyn were meant to connect and collaborate due to their shared pasts and future goals! Sheila became an ICF Professional Certified Coach and works with individuals, groups, and businesses. In the last few years, she has added She Flows Movement and Reiki energy healing into her repertoire. She believes that when we come home to ourselves we transform our lives.
-
-![](/img/krysta-lyn-sol.jpg)
 
 **Krysta-Lyn** of [Radiate Wellness](https://www.radiatewellness.co/)
 
