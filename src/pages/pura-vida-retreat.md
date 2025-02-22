@@ -231,7 +231,7 @@ This vibrant coastal town is renowned for its pristine beaches, and consistent s
 
 Beyond its waves, Playa Grande is also home to incredible wildlife. Situated adjacent to Las Baulas National Marine Park, it offers the unique opportunity to witness the nesting ritual of leatherback turtles. From October to March they come ashore to lay their eggs.
 
-![](/img/beach-sol-santuary.jpg)
+![](/img/beach-sol-sanctuary.jpg)
 
 ## More Love From Past Retreaters
 
