@@ -19,20 +19,25 @@ In Playa Grande, Costa Rica
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
-2026 will be our 5th Pura Vida Costa Rica Retreat and will feature a brand new location that will inspire connection with nature and grant you tranquility - Sol Sanctuary.
+2026 will be our 5th Pura Vida Costa Rica Retreat and will feature a brand new location that will inspire connection with nature and grant you tranquility - [Sol Sanctuary](https://www.sol-sanctuary.com/).
 
 This is a women’s retreat. Our retreat creates a supportive environment where all participants can feel safe, respected, and empowered to be their authentic selves. As one participant from 2025 said, “I expand in sisterhood!” We are committed to fostering meaningful connections and shared experiences that honor the full spectrum of women's lives and identities.
 
 ## What past retreaters are saying...
 
-> I left with a full heart, memories for a lifetime and peace inside.
-> best thing I’ve ever done for myself
-> Book immediately, do not hesitate!
-> Truly feel that the woman I arrived as was so different than the woman I left as
+> "I left with a full heart, memories for a lifetime and peace inside."
+
+> "Best thing I’ve ever done for myself."
+
+> "Book immediately, do not hesitate!"
+
+> "Truly feel that the woman I arrived as was so different than the woman I left as."
+
+![2025 Group photo!](/img/pura-vida-2025-group.jpg "2025 group photo")
 
 ## What's Included
 
-- 6 Nights/7 days of accommodations in Eco-Luxe Bungalows, which feature hot showers, air conditioning, a TV, a mosquito net, and private front and back patios with hammocks and seating
+- 6 Nights/7 days of accommodations in Eco-Luxe Bungalows, which feature hot showers, air conditioning, a mosquito net, and private front and back patios with hammocks and seating
 - 2-3 Vegetarian meals each day
 - Daily morning coffee & fruit
 - 1-2 yoga classes per day with Krysta-Lyn and Sheila Anne
@@ -42,7 +47,7 @@ This is a women’s retreat. Our retreat creates a supportive environment where 
 - Daily journal prompts
 - Fire ceremony
 - Human Design Workshop
-- Wildlife excursion (think estuary tour, turtles, or a guided jungle walk)
+
 - Cultural experience (think salsa class or cacao experience)
 - Transportation for a day at another local beautiful beach
 - Daily access to Playa Grande through a short 10 minute jungle walk
@@ -58,11 +63,177 @@ This is a women’s retreat. Our retreat creates a supportive environment where 
 ## What's Not Included
 
 - Airfare to / from Daniel Oduber Quirós International Airport (LIR)
-- Optional excursions - Such as zip lining, Catamaran tour, surf lessons, cacao farm tour, poolside or beach boudoir with the one and only [Katie Karlberg](https://www.renaissanceroomboudoir.com/).
+- Optional excursions - Such as zip lining, catamaran tour, wildlife excursion, surf lessons, cacao farm tour
+- Optional poolside or beach boudoir with the one and only [Katie Karlberg](https://www.renaissanceroomboudoir.com/).
 - Optional massage and other healing services that you can book once you arrive
 - Meals when we are off-site as a group (1-3 lunches / dinners)
 
-![2025 Group photo!](/img/pura-vida-2025-group.jpg "2025 group photo")
+## Meet Your Hosts
+
+![](/img/sheila-sol.jpg)
+
+**Sheila Anne** of Sheila Anne Coaching + Wellness
+
+Sheila visited Costa Rica for the first time in 2014 (where she also connected with long lost family!) and each time she returns feels like a special homecoming. Her favorite part of the annual retreat is getting to know individuals on a deeper level and experiencing transformational practices together like those from guest yoga teachers and time spent out in nature! Sheila received her 200 hour yoga teacher certification with Krysta-Lyn at South Boston Yoga. She actually missed the first certification weekend for her mother's funeral service, so the training came at a potent time of healing and self evolution. She and Krysta-Lyn were meant to connect and collaborate due to their shared pasts and future goals! Sheila became an ICF Professional Certified Coach and works with individuals, groups, and businesses. In the last few years, she has added She Flows Movement and Reiki energy healing into her repertoire. She believes that when we come home to ourselves we transform our lives.
+
+![](/img/krysta-lyn-sol.jpg)
+
+**Krysta-Lyn** of [Radiate Wellness](https://www.radiatewellness.co/)
+
+Krysta-Lyn found refuge in the combination of yoga, counseling and community after the loss of her mother in 2013. Overcome by the immense sense of peace yoga could provide, she immersed herself in her practice learning that life truly exists between the inhale and exhale. Krysta-Lyn sought to share her passion and received her 200 hour yoga teacher certification from South Boston Yoga in 2018. In 2019 she left the world of finance to seek a healthy, balanced career and life of healing. She earned a Reiki Masters Certification and a Masters of Science in Mental Health Counseling in May 2022. Her dearest friends call her their sunshine and she hopes to help others find what makes them **radiate**!
+
+## Booking Your Spot
+
+Accommodations are a mix of studios and two bedroom suites. Each eco bungalow has a different theme!
+
+We offer various ways to pay, to make it easy and accessible for our retreaters
+
+1. [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1) or [Paypal](https://paypal.me/sheilaannemurray) Sheila $300 non-refundable and non-transferable security deposit
+
+OR
+
+2. CLICK [HERE](https://square.link/u/5zlukK9F) to pay with credit card + fee
+
+Then, fill out [this form](https://docs.google.com/forms/d/1aO3yMZbvAhbc6YSZ8Xf4txEb_tKT111HShLpDZ-h_TY/edit?ts=67b35b6c) to finish reserving your spot! Beds & rooms are filled on a first come first serve basis. You may copy + paste your top preferences into the form.
+
+The remainder of your balance will be due no later than November 1, 2025 and we will send out payment details over time. Balances are to be paid via Venmo/Paypal and/or with credit card +3% fee. We offer booking this retreat early in the year so that our retreaters have as much time as possible to save & pay over time. We cannot wait to welcome you to our immersive and transformative retreat!
+
+**Early Bird Pricing\*** (includes $200 off standard prices through 5/31)
+
+**Scarlet Bungalow**
+
+- Room 1
+  - Twin - $2000
+  - Twin - $2000
+- Room 2
+  - Twin Private - $2200
+
+**Manta Ray**
+
+- Room 1
+  - Twin - $2000
+  - Twin - $2000
+- Room 2
+  - Twin Private - $2200
+
+**Hummingbird**
+
+- Room 1
+  - Private King - $2600 or share with a friend for $4000
+- Room 2
+  - Bunkbed 1 - $1800
+  - Bunkbed 2 - $1800
+
+**Butterfly**
+
+- Room 1
+  - ~~Twin~~ - SOLD
+- Room 2
+  - Twin - $2000 OR if you’d like a private room - take this room for $3200
+
+**Toucan**
+
+- Room 1
+  - ~~Twin~~ - SOLD
+- Room 2
+  - ~~Twin~~ - SOLD
+
+**Turtle**
+
+- Room 1
+  - Twin - $2000
+- Room 2
+  - Twin - $2000 OR if you’d like a private room - take this room for $3200
+
+**Sloth**
+
+- Room 1
+  - Twin - $2000
+- Room 2
+  - Twin - $2000 OR if you’d like a private room - take this room for $3200
+
+**Standard Pricing\*** (post 5/31/25)
+
+**Scarlet Bungalow**
+
+- Room 1
+  - Twin - $2200
+  - Twin - $2200
+- Room 2
+  - Twin Private - $2400
+
+**Manta Ray**
+
+- Room 1
+  - Twin - $2200
+  - Twin - $2200
+- Room 2
+  - Twin Private - $2400
+
+**Hummingbird**
+
+- Room 1
+  - Private King - $2800 or share with a friend for $4200
+- Room 2
+  - Bunkbed 1 - $2000
+  - Bunkbed 2 - $2000
+
+**Butterfly**
+
+- Room 1
+  - ~~Twin~~ - SOLD
+- Room 2
+  - Twin - $2200 OR if you’d like a private room - take this room for $3400
+
+**Toucan**
+
+- Room 1
+  - ~~Twin~~ - SOLD
+- Room 2
+  - ~~Twin~~ - SOLD
+
+**Turtle**
+
+- Room 1
+  - Twin - $2200
+- Room 2
+  - Twin - $2200 OR if you’d like a private room - take this room for $3400
+
+**Sloth**
+
+- Room 1
+  - Twin - $2200
+- Room 2
+  - Twin - $2200 OR if you’d like a private room - take this room for $3400
+
+* _All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays._
+
+!["Sample bedroom"](/img/sol-sanctuary-bed.jpg "Sample bedroom")
+!["Sample suite"](/img/sol-sanctuary-suite.jpg "Sample suite")
+!["Sample sitting area"](/img/sol-sanctuary-sittingarea.jpg "Sample sitting area")
+!["Sample bathroom"](/img/sol-sanctuary-bathroom.jpg "Sample bathroom")
+
+## Sol Sanctuary & Playa Grande
+
+Sol Sanctuary is more than just a retreat center; it's a mission-driven sanctuary dedicated to healing humans, animals, and the environment together.
+
+Their Threefold Mission:
+
+1. Deepen Your Connection with the Earth: Immerse yourself in the heart of Costa Rican nature. Our jungle and nearby Playa Grande beach location provides a chance to reconnect with wildlife, all while practicing yoga, meditation, and other transformative activities.
+
+2. Embrace Eco-Conscious Practices: Sustainability is at our core. We use a recycled water system, source local produce, and offer eco-friendly amenities, ensuring your stay minimizes environmental impact.
+
+3. Protect Wildlife and the Future:
+
+The profits from our retreats goes to the Wildlife Protection Alliance, our non-profit organization.
+
+Nestled along the Pacific coast of Costa Rica, and a short distance from Tamarindo, Playa Grande is a hidden gem that offers an unforgettable experience for surfers and wildlife enthusiasts alike.
+
+This vibrant coastal town is renowned for its pristine beaches, and consistent surf breaks, it attracts surfers from all skill levels. Whether you are a beginner looking to catch your first wave or an experienced rider seeking a challenge, Playa Grande has it all.
+
+Beyond its waves, Playa Grande is also home to incredible wildlife. Situated adjacent to Las Baulas National Marine Park, it offers the unique opportunity to witness the nesting ritual of leatherback turtles. From October to March they come ashore to lay their eggs.
+
+![](/img/beach-sol-santuary.jpg)
 
 ## More Love From Past Retreaters
 
