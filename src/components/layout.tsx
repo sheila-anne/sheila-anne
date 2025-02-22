@@ -41,6 +41,10 @@ const MainWrapper = styled.main`
       margin-right: 0.5rem;
     }
   }
+
+  & > * li p {
+    display: inline;
+  }
 `;
 
 const Layout: FC<GatsbyPage> = ({ children, location, itemType }) => {
