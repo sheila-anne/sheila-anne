@@ -19,7 +19,7 @@ In Playa Grande, Costa Rica
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
-2026 will be our 5th Pura Vida Costa Rica Retreat and will feature a brand new location that will inspire connection with nature and grant you tranquility - [Sol Sanctuary](https://www.sol-sanctuary.com/).
+2026 will be our 5th Pura Vida Costa Rica Retreat and will feature a brand new location that will inspire connection with nature and grant you tranquility - [Sol Sanctuary](https://www.sol-sanctuary.com/). Our favorite thing about this new location is that it is just a ten minute walk through the jungle to Playa Grande!
 
 This is a women’s retreat. Our retreat creates a supportive environment where all participants can feel safe, respected, and empowered to be their authentic selves. As one participant from 2025 said, “I expand in sisterhood!” We are committed to fostering meaningful connections and shared experiences that honor the full spectrum of women's lives and identities.
 
@@ -47,7 +47,6 @@ This is a women’s retreat. Our retreat creates a supportive environment where 
 - Daily journal prompts
 - Fire ceremony
 - Human Design Workshop
-
 - Cultural experience (think salsa class or cacao experience)
 - Transportation for a day at another local beautiful beach
 - Daily access to Playa Grande through a short 10 minute jungle walk
@@ -204,7 +203,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 - Room 2
   - Twin - $2200 OR if you’d like a private room - take this room for $3400
 
-* _All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays._
+\* _All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays._
 
 !["Sample bedroom"](/img/sol-sanctuary-bed.jpg "Sample bedroom")
 !["Sample suite"](/img/sol-sanctuary-suite.jpg "Sample suite")
