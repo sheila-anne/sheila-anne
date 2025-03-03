@@ -192,10 +192,6 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             items, reflections, and strategy between sessions.
           </li>
           <li>
-            <b>Exclusive Rates</b>: You will recieve exclusive rates to events and retreats that I host while we are
-            working together.
-          </li>
-          <li>
             <b>Welcome Gift</b>: The details are a surprise. Why? Because you deserve all that is good in this world,
             love!
           </li>

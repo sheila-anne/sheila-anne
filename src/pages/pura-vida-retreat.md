@@ -57,7 +57,7 @@ This is a women’s retreat. Our retreat creates a supportive environment where 
 - Transportation to/from Liberia airport (if you arrive within a window/time frame that will be provided closer to trip for group transport)
 - Playa Grande Local Night Market
 - All tips for Sol Sanctuary Staff
-- Access to private yoga shala to use own your own as you wish
+- Access to private yoga shala to use on your own as you wish
 
 ## What's Not Included
 
@@ -103,7 +103,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
   - Twin - $2000
   - Twin - $2000
 - Room 2
-  - Twin Private - $2200
+  - ~~Twin Private - $2200~~ - SOLD
 
 **Manta Ray**
 
@@ -157,7 +157,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
   - Twin - $2200
   - Twin - $2200
 - Room 2
-  - Twin Private - $2400
+  - ~~Twin Private - $2400~~ - SOLD
 
 **Manta Ray**
 

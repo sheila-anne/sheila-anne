@@ -25,7 +25,7 @@ module.exports = {
       {
         question: "Where are the coaching sessions held?",
         answer:
-          "We can meet virtually, in-person, or a hybrid! I host in-person sessions in a private office at Nurture in Denver, CO.  If we meet virtually I use a platform that allows us to meet in a private room and communicate in real time with clear video and sound. I send a meeting link prior to our scheduled appointment.",
+          "I offer the opportunity to meet using Zoom or Google Meet. I send a meeting link prior to our scheduled appointment.",
       },
       {
         question: "What can I expect to get out of coaching with Sheila Anne?",
