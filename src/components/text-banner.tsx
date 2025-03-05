@@ -95,5 +95,5 @@ export const BannerText = ({ path }: TextBannerProps) => {
     setIsShown(true);
   }, []);
 
-  return isShown ? <InnerBanner path={path} /> : null;
+  return false ? <InnerBanner path={path} /> : null;
 };

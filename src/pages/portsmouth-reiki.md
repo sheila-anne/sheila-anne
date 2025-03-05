@@ -11,9 +11,9 @@ path: /portsmouth-reiki
 
 !["Sheila practicing Reiki on a client in Portsmouth"](/img/reiki-crown.jpg)
 
-Sheila invites you to experience the transformative healing energy of Reiki in the charming coastal city of Portsmouth, New Hampshire. Perfect for women looking for a nurturing space to release anxiety and fear, connect with their confidence, and receive clarity in their lives. Come for one session and see why other women prioritize Reiki as a must-have in their wellness rituals.
+Experience the transformative healing energy of Reiki. Sheila will help you restore balance to your energy systems, accelerate healing, reclaim your mind-body connection and promote joy and clarity. Come for one session and see why others prioritize Reiki as a must-have in their wellness rituals. 
 
-[Book Now](https://calendly.com/sheila-anne/reiki-healing-session)
+For your convenience, sessions are available in-person (in the charming coastal city of Portsmouth, New Hampshire), virtually via online meeting platform, or Sheila can travel to you!
 
 ## About Reiki
 
@@ -34,28 +34,62 @@ During your Reiki session with Sheila, you can expect:
 3.  **Energetic Balance**: Through the gentle touch of Reiki, Sheila works to harmonize your energy centers (chakras), creating balance and lightness throughout your entire being.
 4.  **Emotional Release**: Reiki often facilitates emotional release, allowing you to let go of stored emotions and find greater clarity, peace, and inner strength. Everything is normal here: crying, laughing, smiling.
 
-[Book Now](https://calendly.com/sheila-anne/reiki-healing-session)
-
 !["Sage during a Reiki session with Sheila"](/img/reiki-sage.jpg)
 
-## Investment In Your Well-being
+## Private Healing Options
 
-- 60-Minute Session: $115
+### In-Person Sessions
 
-Payment can be made in cash, Venmo, or Paypal on the day of your appointment or using a credit card (3% fee). 24 hour cancellation required or full fee will be collected
+In-person sessions at her Portsmouth, New Hampshire location. Specific location shared upon confirmation of appointment. 
 
-**Grand Opening new client special**:
+* Investment - $115 for 60 minute appointment .
 
-- 60-Minute Session: $80
+[Book Portsmouth location here](https://calendly.com/sheila-anne/reiki-healing-session)
 
-Option to purchase up to 10 sessions at this rate (to be used by end of calendar year 2024).
+### Distance Reiki sessions conducted remotely
 
-[Book Now](https://calendly.com/sheila-anne/reiki-healing-session)
+Sheila currently serves clients worldwide via Zoom and Google Meet and, yes, you can expect the same amazing benefits!
+
+* Investment - $95 for 45 minute appointment 
+
+[Book distance Reiki](https://calendly.com/sheila-anne/reiki-healing-session-distance)
+
+### Traveling Reiki Sessions
+
+Sheila can travel to your home, vacation rental, or preferred location. Please [contact me to learn more](mailto:sheila@sheilaanne.com)
 
 !["Sheila practicing Reiki"](/img/reiki-shoulders.jpg)
 
-## Location
+## Custom Reiki Energy Healing
 
-Sessions are hosted in Sheila's home in Portsmouth and parking is available onsite.
+I love working with clients to create custom, meaningful events with Reiki healing, including:
 
-Contact us if you would like to have your Reiki session elsewhere. Sheila has hosted sessions at wedding venues (for the bride-to-be), backyard gardens, and in the comfort of client's homes.
+* Special event support, including morning-of wedding sessions to create calm and centeredness
+* Group sessions combining Reiki, meditation, and yoga for retreats, team building, or celebrations
+* Custom packages for regular clients seeking ongoing support
+
+Please [contact me](mailto:sheila@sheilaanne.com) with your needs and dates.
+
+### Custom event example
+
+**Complete Body & Soul Alignment**
+
+*Perfect for your corporate wellness retreat, bachelorette, or reunion.*
+
+* **What to expect**: This session will blend dynamic vinyasa flow with transformative energy healing to create profound harmony within. Feel renewed as you move through invigorating yoga sequences that awaken your body, followed by a blissful reiki session that dissolves tension and restores your natural energetic balance. This powerful combination creates an uplifting sense of wholeness that stays with you long after the session ends. Includes a guided journaling experience that captures your insights and amplifies your newfound clarity.
+* **Duration**: 90 minutes
+* **Price**: $125 per person (5 person minimum)
+
+## Reviews
+
+> Sheila provided the most special reiki experience for a friend and I. She customized the session for our wants/needs and it was more than we could ask for! We pulled cards, did a letting go exercise, and ended with a joint reiki. Sheila does an amazing job making you feel comfortable and explaining the process. Highly recommend working with her and experiencing the magic for yourself!
+
+> Sheila is amazing! She did the most incredible Reiki session with me the weekend of my wedding. I was recovering from a concussion and knew I wanted to be extra grounded and present to enjoy the weekend with the people I love — and that doing so would be a challenge with a still sometimes foggy brain! She guided me so expertly and compassionately through setting an intention and the whole process felt like magic. It was my first experience with Reiki and Sheila was the perfect guide! On top of that, I didn’t have any concussion symptoms for the rest of the day. I still think this session was a big part of why I felt so good for my wedding! A true gift. Sheila is simply the best!
+
+> My experience receiving reiki from Sheila was my best to date. She was loving, welcoming, and made space for any feelings that I came in with or that came up in the session. She was insightful with her findings and gave me all the information I needed to interpret my experience. She followed up with aftercare tips and checked in regarding any emotions that may have surfaced after our time together. I would recommend her to anyone with any level of experience.
+
+> Before my wedding, I had the ultimate pleasure of experiencing a Reiki session with Sheila. It was a perfect self-care moment that centered me before the big day. Sheila’s healing touch and intention created a sense of calm and balance. Throughout my wedding, that oasis of calm stayed with me amidst the flurry of activity—it made all the difference.
+
+!["Reiki at the June Soulsice in June 2024"](/img/reiki-june-soulstice.jpg "Reiki at the June Soulsice in June 2024")
+
+!["Reiki during the Pura Vida Costa Rica retreat"](/img/reiki-pura-vida.jpg "Reiki during the Pura Vida retreat in Costa Rica")
