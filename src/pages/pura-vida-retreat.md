@@ -122,32 +122,21 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
   - Bunkbed 2 - $1800
 
 **Butterfly**
-
-- Room 1
-  - ~~Twin~~ - SOLD
-- Room 2
-  - Twin - $2000 OR if you’d like a private room - take this room for $3200
+- ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
 
 **Toucan**
-
-- Room 1
-  - ~~Twin~~ - SOLD
-- Room 2
-  - ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
 
 **Turtle**
-
-- Room 1
-  - Twin - $2000
-- Room 2
-  - Twin - $2000 OR if you’d like a private room - take this room for $3200
-
+- ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
+    
 **Sloth**
-
-- Room 1
-  - Twin - $2000
-- Room 2
-  - Twin - $2000 OR if you’d like a private room - take this room for $3200
+- ~~Twin 1~~ - SOLD
+- Twin 2 - $2000
+OR if you’d like a private room - take this room for $3200
 
 **Standard Pricing\*** (post 5/31/25)
 
@@ -177,31 +166,24 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 
 **Butterfly**
 
-- Room 1
-  - ~~Twin~~ - SOLD
-- Room 2
-  - Twin - $2200 OR if you’d like a private room - take this room for $3400
+- ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
 
 **Toucan**
 
-- Room 1
-  - ~~Twin~~ - SOLD
-- Room 2
-  - ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
 
 **Turtle**
 
-- Room 1
-  - Twin - $2200
-- Room 2
-  - Twin - $2200 OR if you’d like a private room - take this room for $3400
+- ~~Twin~~ - SOLD
+- ~~Twin~~ - SOLD
 
 **Sloth**
 
-- Room 1
-  - Twin - $2200
-- Room 2
-  - Twin - $2200 OR if you’d like a private room - take this room for $3400
+- ~~Twin 1~~ - SOLD
+- Twin 2 - $2200
+OR if you’d like a private room - take this room for $3400
 
 \* _All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays._
 
