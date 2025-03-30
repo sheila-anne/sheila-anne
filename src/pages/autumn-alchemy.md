@@ -110,7 +110,7 @@ Or share with friend - $1500 each
 ![](/img/queen-suite-alpine.webp)
 Queen suite - $1950
 
-[](/img/lux-bunk.webp)
+![](/img/lux-bunk.webp)
 Lux bunk - $1200
 
 Note: Flights and ground transportation to the retreat location are not included. We're happy to assist with carpooling connections and provide detailed location information upon registration.
