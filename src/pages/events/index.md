@@ -8,6 +8,16 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
+## Autumn Alchemy
+
+THURSDAY OCTOBER 16 - SUNDAY OCTOBER 19
+
+Bethel, Maine
+
+Join us for this epic Fall women’s retreat. Nestled in Maine's breathtaking mountains, Autumn Alchemy offers a cocoon where healing, introspection, and radical self-care converge.
+
+[Full Details & Booking](/autumn-alchemy/)
+
 ## Costa Rica Pura Vida Retreat
 
 SUNDAY, FEBRUARY 1, 2026 - SATURDAY, FEBRUARY 7, 2026
@@ -22,10 +32,13 @@ We can't wait to host the next group of amazing people in Costa Rica next year!
 
 ## Yoga
 
-Catch weekly classes at [Three Bridges](https://www.3bridgesyoga.com/) in Portsmouth:
+Catch weekly classes in-person and streamed virtually at [Three Bridges](https://www.3bridgesyoga.com/) in Portsmouth:
 
-- Tuesdays 7AM
-- Wednesdays 6PM
+- Tuesdays 7AM Flow
+- Wednesdays 4:30PM Flow
+- Wednesdays 6PM Mindful Strength
+
+## Ongoing
 
 Would you like to book a private event?
 

@@ -116,7 +116,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 **Hummingbird**
 
 - Room 1
-  - Private King - $2600 or share with a friend for $4000
+  - ~~Private King ~~- SOLD
 - Room 2
   - Bunkbed 1 - $1800
   - Bunkbed 2 - $1800
@@ -139,8 +139,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 **Sloth**
 
 - ~~Twin 1~~ - SOLD
-- Twin 2 - $2000
-  OR if you’d like a private room - take this room for $3200
+- ~~Twin 2 - $2000~~ - SOLD
 
 **Standard Pricing\*** (post 5/31/25)
 
@@ -163,7 +162,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 **Hummingbird**
 
 - Room 1
-  - Private King - $2800 or share with a friend for $4200
+  - ~~Private King~~ - SOLD
 - Room 2
   - Bunkbed 1 - $2000
   - Bunkbed 2 - $2000
@@ -186,8 +185,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 **Sloth**
 
 - ~~Twin 1~~ - SOLD
-- Twin 2 - $2200
-  OR if you’d like a private room - take this room for $3400
+- ~~Twin 2~~ -SOLD
 
 \* _All deposits and payments are non-refundable and non-transferable. Unexpected events do occur, so please consider purchasing travel insurance. It is your responsibility to read and understand our cancellation policies. Exceptions cannot be made for any reason, including weather, injury/illness, or personal emergencies. No refunds or credits for failure to attend or failure to complete the retreat, or for arriving late or leaving early. We reserve the right to cancel retreats with inadequate participant interest, in which case all money paid will be refunded. Please also consider: all itineraries are subject to change due to weather, excursions and delays._
 
