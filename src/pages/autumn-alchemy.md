@@ -118,6 +118,8 @@ Note: Flights and ground transportation to the retreat location are not included
 
 [BOOK NOW](https://square.link/u/1sax9yLH)
 
+_Group special: Book this retreat with 2+ other women and you each will recieve $100 off._
+
 ## Photos from the last cozy mountain retreat, held during winter
 
 ![](/img/Winter-Camp-2023.jpg)
