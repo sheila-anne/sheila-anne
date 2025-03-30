@@ -7,7 +7,7 @@ bannerImageHeadline: Autumn Alchemy
 path: /portsmouth-reiki
 ---
 
-# Autumn Alchemy: Women's Retreat
+# Autumn Alchemy: A Fall Women's Retreat
 
 ![](/img/hero-image-wellness-retreat.png)
 
