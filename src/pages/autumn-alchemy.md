@@ -7,7 +7,7 @@ bannerImageHeadline: Autumn Alchemy
 path: /portsmouth-reiki
 ---
 
-# Autumn Alchemy: A transformative retreat for the body, mind, soul
+# Autumn Alchemy: Women's Retreat
 
 ![](/img/hero-image-wellness-retreat.png)
 
@@ -26,12 +26,13 @@ Imagine a space where ancient wisdom meets modern wellness, where each moment is
 Get ready to:
 
 - Connect deeply with like-hearted souls in a nurturing community
-- Align with the transformative energy of the autumn season
+- Align with the transformative energy of the Fall season
 - Enjoy drool-worthy autumnal views from our gorgeous home
 - Stargaze from our forest-side hot tub
 - Shake off the weight of the world through movement practices
 - Embrace your full, multidimensional self
 - Rediscover your innate capacity for healing and wholeness
+- Indulge in the delicious meals by our private chef
 
 Whether you're burning out, feeling stuck, or simply craving a joyful adventure, Autumn Alchemy offers a compassionate container for your transformation.
 
@@ -93,15 +94,15 @@ One key aspect of this retreat is designated free time. We are all overscheduled
 
 ![](/img/alpine-photo.jpeg)
 
-Daydreaming while taking in the breathtaking mountain views
+Get ready to daydream while taking in the breathtaking mountain views
 
 ![](/img/living-room-fire.jpeg)
 
-Imagine soulful chats by the fireplace
+We'll enjoy soulful chats by the fireplace
 
 ![](/img/hot-tub.jpeg)
 
-Hot tub after a group nature walk or stargazing at night
+Take time in the hot tub after a group nature walk or stargazing at night
 
 ![](/img/king-suite-1.webp)
 King suite - $2300
