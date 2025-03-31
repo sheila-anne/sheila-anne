@@ -144,7 +144,7 @@ _Group special: Book this retreat with 2+ other women and you each will receive 
 
 Not at all! Our retreat welcomes participants of all experience levels, from complete beginners to advanced practitioners. Our instructors provide modifications for every pose to accommodate different abilities and comfort levels. The focus is on your personal journey and connecting with your body, not achieving perfect poses. Many guests try yoga for the very first time at our retreat and leave with a newfound appreciation for the practice.
 
-#### I get anxious in groups, is this for me?
+### I get anxious in groups, is this for me?
 
 We keep our retreat intentionally intimate (~8-12 women) to foster a supportive, judgment-free environment. You're welcome to participate at your own comfort level - whether that means sharing your unique insight or listening and taking personal time when needed. Past participants who experience social anxiety have found our retreat to be a gentle way to connect with others at their own pace. This retreat in particular builds in free time to recharge on your own if you find value in that!
 
