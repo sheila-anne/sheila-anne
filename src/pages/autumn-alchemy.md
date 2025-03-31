@@ -21,7 +21,7 @@ Imagine a space where ancient wisdom meets modern wellness, where each moment is
 
 **When**: Thursday, October 16 - Sunday, October 19
 
-**Who**: 8-12 women max, to maximize the impact and intimacy of this retreat
+**Who**: Women craving an immersive weekend getaway that will leave them feeling loved, connected, and transformed. We are committed to fostering meaningful connections and shared experiences that honor the full spectrum of women’s lives and identities. We 8-12 women max, to maximize the impact and intimacy of this retreat.
 
 Get ready to:
 
@@ -118,7 +118,7 @@ Note: Flights and ground transportation to the retreat location are not included
 
 [BOOK NOW](https://square.link/u/1sax9yLH)
 
-_Group special: Book this retreat with 2+ other women and you each will recieve $100 off._
+_Group special: Book this retreat with 2+ other women and you each will receive $100 off._
 
 ## Photos from the last cozy mountain retreat, held during winter
 
