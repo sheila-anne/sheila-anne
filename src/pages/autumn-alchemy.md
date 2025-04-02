@@ -58,6 +58,8 @@ Move. Breathe. Alchemize. Become.
 - Group Reiki healing ceremony
 - Nature & hiking in Maine's stunning autumn landscape
 - She Flows joyful movement practice
+- Human Design Workshop
+- Group craft
 
 ### Culinary & Wellness Nourishment
 
@@ -72,6 +74,7 @@ Move. Breathe. Alchemize. Become.
 - Post-retreat digital workbook for integration and continued growth
 - Personalized welcome gift
 - Heart-centered facilitation by Sheila
+- Option to add on other supportive services such as 1:1 coaching before/after the retreat
 
 ## Arrival & Logistics: We've Got You Covered
 
@@ -146,7 +149,7 @@ Not at all! Our retreat welcomes participants of all experience levels, from com
 
 ### I work a 9-5, do I need to take off Thursday and Friday?
 
-For those with flexibilty and vacation time, we recommend taking off the latter half of Thursday (or the whole day if you'd like or are traveling from out of town!). That said, we want this retreat to be as accessible as possible, and you are welcome to travel up Friday morning for the retreat as well.
+For those with flexibilty and vacation time, we recommend taking off the latter half of Thursday (or the whole day if you'd like or are flying in!). That said, we want this retreat to be as accessible as possible, and you are welcome to travel up Friday morning for the retreat as well.
 
 ### I get anxious in groups, is this for me?
 
