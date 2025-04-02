@@ -19,7 +19,7 @@ Imagine a space where ancient wisdom meets modern wellness, where each moment is
 
 **Where**: Bethel, Maine
 
-**When**: Thursday, October 16 - Sunday, October 19
+**When**: Thursday, October 16 - Sunday, October 19 (Arrival: 5 PM onwards, see FAQs below for more. Departure: after breakfast on Sunday)
 
 **Who**: Women craving an immersive weekend getaway that will leave them feeling loved, connected, and transformed. We are committed to fostering meaningful connections and shared experiences that honor the full spectrum of women’s lives and identities. We 8-12 women max, to maximize the impact and intimacy of this retreat.
 
@@ -143,6 +143,10 @@ _Group special: Book this retreat with 2+ other women and you each will receive 
 ### Do I need to be good at yoga?
 
 Not at all! Our retreat welcomes participants of all experience levels, from complete beginners to advanced practitioners. Our instructors provide modifications for every pose to accommodate different abilities and comfort levels. The focus is on your personal journey and connecting with your body, not achieving perfect poses. Many guests try yoga for the very first time at our retreat and leave with a newfound appreciation for the practice.
+
+### I work a 9-5, do I need to take off Thursday and Friday?
+
+For those with flexibilty and vacation time, we recommend taking off the latter half of Thursday (or the whole day if you'd like or are traveling from out of town!). That said, we want this retreat to be as accessible as possible, and you are welcome to travel up Friday morning for the retreat as well.
 
 ### I get anxious in groups, is this for me?
 
