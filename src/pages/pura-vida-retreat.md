@@ -101,7 +101,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 
 - Room 1
   - ~~Twin - $2000~~ - SOLD
-  - Twin - $2000
+  - ~~Twin - $2000~~ - SOLD
 - Room 2
   - ~~Twin Private - $2200~~ - SOLD
 
@@ -116,7 +116,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 **Hummingbird**
 
 - Room 1
-  - ~~Private King ~~- SOLD
+  - ~~Private King~~- SOLD
 - Room 2
   - Bunkbed 1 - $1800
   - Bunkbed 2 - $1800
@@ -147,7 +147,7 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 
 - Room 1
   - ~~Twin - $2200~~ - SOLD
-  - Twin - $2200
+  - ~~Twin - $2200~~ - SOLD
 - Room 2
   - ~~Twin Private - $2400~~ - SOLD
 
