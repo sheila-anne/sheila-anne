@@ -32,7 +32,7 @@ Get ready to:
 - Shake off the weight of the world through movement practices
 - Embrace your full, multidimensional self
 - Rediscover your innate capacity for healing and wholeness
-- Indulge in the delicious meals by our private chef
+- Indulge in delicious, seasonal meals
 
 Whether you're burning out, feeling stuck, or simply craving a joyful adventure, Autumn Alchemy offers a compassionate container for your transformation.
 
@@ -60,13 +60,16 @@ Move. Breathe. Alchemize. Become.
 - She Flows joyful movement practice
 - Human Design Workshop
 - Group craft
+- Free time to nap, craft, and exhale
 
 ### Culinary & Wellness Nourishment
 
-- All chef-curated meals from Thursday dinner through Sunday breakfast
+- All thoughtfully curated meals from Thursday dinner through Sunday breakfast
 - Daily coffee/tea
 - Attentiveness to dietary and allergy needs
 - Opportunity to cook and make snacks together if you so desire
+
+![](/img/kristina-kravings-example.jpg)
 
 ### Comprehensive Support
 
@@ -108,14 +111,21 @@ We'll enjoy soulful chats by the fireplace
 Take time in the hot tub after a group nature walk or stargazing at night
 
 ![](/img/king-suite-1.webp)
-King suite - $2300
-Or share with friend - $1500 each
+King suite (two available)
+
+- $2,150 to have this all to yourself
+- Share with friend/ mom/ sister for $1,500 each
 
 ![](/img/queen-suite-alpine.webp)
-Queen suite - $1950
+Queen suite (one available)
+
+- $1,950 to have this all to yourself
+- Share with friend/ mom/ sister - $1,200 each
 
 ![](/img/lux-bunk.webp)
-Lux bunk - $1200
+Lux bunk (eight available)
+
+- $1,200 to reserve!
 
 Note: Flights and ground transportation to the retreat location are not included. We're happy to assist with carpooling connections and provide detailed location information upon registration.
 
