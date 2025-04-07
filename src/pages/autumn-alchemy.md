@@ -40,6 +40,8 @@ Move. Breathe. Alchemize. Become.
 
 [BOOK NOW](https://square.link/u/1sax9yLH)
 
+![](/img/girls-on-retreat.jpg)
+
 ## Words from past retreaters
 
 > “The freedom and lightness each and every woman felt by the end of the weekend was astounding. Sheila created such a beautiful safe place for each of us to share and shine and I can't wait for her next event!!”
@@ -62,6 +64,8 @@ Move. Breathe. Alchemize. Become.
 - Group craft
 - Free time to nap, craft, and exhale
 
+![](/img/healing-experiences.jpg)
+
 ### Culinary & Wellness Nourishment
 
 - All thoughtfully curated meals from Thursday dinner through Sunday breakfast
@@ -78,6 +82,8 @@ Move. Breathe. Alchemize. Become.
 - Personalized welcome gift
 - Heart-centered facilitation by Sheila
 - Option to add on other supportive services such as 1:1 coaching before/after the retreat
+
+![](/img/comprehensive-support.jpg)
 
 ## Arrival & Logistics: We've Got You Covered
 
