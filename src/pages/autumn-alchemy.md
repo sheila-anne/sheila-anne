@@ -119,8 +119,8 @@ Take time in the hot tub after a group nature walk or stargazing at night
 ![](/img/king-suite-1.webp)
 King suite (two available)
 
-- $2,150 to have this all to yourself
-- Share with friend/ mom/ sister for $1,500 each
+- $2,200 to have this all to yourself
+- Share with friend/ mom/ sister - $1,500 each
 
 ![](/img/queen-suite-alpine.webp)
 Queen suite (one available)
@@ -131,7 +131,7 @@ Queen suite (one available)
 ![](/img/lux-bunk.webp)
 Lux bunk (eight available)
 
-- $1,200 to reserve!
+- $1,200 per person
 
 Note: Flights and ground transportation to the retreat location are not included. We're happy to assist with carpooling connections and provide detailed location information upon registration.
 
