@@ -123,10 +123,10 @@ King suite (two available)
 - Share with friend/ mom/ sister - $1,500 each
 
 ![](/img/queen-suite-alpine.webp)
-Queen suite (one available)
+Queen suite (SOLD OUT)
 
-- $1,950 to have this all to yourself
-- Share with friend/ mom/ sister - $1,200 each
+- ~~$1,950 to have this all to yourself~~
+- ~~Share with friend/ mom/ sister - $1,200 each~~
 
 ![](/img/lux-bunk.webp)
 Lux bunk (eight available)
