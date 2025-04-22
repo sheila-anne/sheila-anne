@@ -1,13 +1,13 @@
 ---
 templateKey: "book-page"
 path: "/book/root-to-rise/"
-pageTitle: Root To Rise Intro Call
+pageTitle: Private Coaching Intro Call
 pageDescription: >
-  There's just one more step necessary -- choose a time to speak with me! Once you've selected your time on my calendar, I'll be in touch so that we can get started helping you level up your life.
+  There's just one more step necessary -- I'm looking forward to learning more about you and co-creating a plan for your ambitious and aligned future.
 bannerImage: /img/book-with-sheila-anne.png
 bannerImageHeadline: Sheila Anne running on the beach with the caption Book with Sheila Anne
 ---
 
-# Root To Rise Intro Call
+# Private Coaching Intro Call
 
-There's just one more step necessary -- choose a time to speak with me! Once you've selected your time on my calendar, I'll be in touch so that we can get started helping you level up your life.
+I'm looking forward to learning more about you and co-creating a plan for your ambitious and aligned future.
