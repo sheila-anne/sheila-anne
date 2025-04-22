@@ -37,14 +37,6 @@ export const WorkingTogetherTemplate = ({ faqs, frontmatter }) => {
       <CenteredText margin="2rem 0">
         <LinkButton to="/book/exploration/">Book Your Exploration Call Today!</LinkButton>
       </CenteredText>
-      <SpacedHeader id="nourish">Group Coaching: NOURISH 🌼</SpacedHeader>
-      <Text>
-        A one-of-a-kind 14 week group coaching program. For ambitious women who are ready to fully nourish their unique
-        power and say "YES" to the wildly beautiful life they know they are capable of creating.
-      </Text>
-      <CenteredText margin="2rem 0">
-        <LinkButton to="/nourish/">Nourish Details!</LinkButton>
-      </CenteredText>
       <SpacedHeader id="root-to-rise">Private Coaching with Sheila</SpacedHeader>
       <Text>
         My 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey
