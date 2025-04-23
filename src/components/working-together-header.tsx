@@ -7,7 +7,6 @@ import { PreviewCompatibleImage } from "../components";
 
 const WorkingTogetherSections = [
   { name: "Exploration Call", href: "exploration-call" },
-  { name: "Group Coaching Program", href: "nourish" },
   { name: "Private Coaching", href: "root-to-rise" },
 ];
 

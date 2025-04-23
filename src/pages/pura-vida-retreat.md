@@ -16,6 +16,7 @@ path: /pura-vida-retreat
 In Playa Grande, Costa Rica
 
 - SUNDAY, FEBRUARY 1, 2026 - SATURDAY, FEBRUARY 7, 2026
+SOLD OUT! Join the waitlist and be first to know if a spot opens up.
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 
@@ -118,8 +119,8 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 - Room 1
   - ~~Private King~~- SOLD
 - Room 2
-  - Bunkbed 1 - $1800
-  - Bunkbed 2 - $1800
+  - ~~Bunkbed $1800~~-SOLD
+  - ~~Bunkbed $1800~~-SOLD
 
 **Butterfly**
 
@@ -164,8 +165,8 @@ The remainder of your balance will be due no later than November 1, 2025 and we 
 - Room 1
   - ~~Private King~~ - SOLD
 - Room 2
-  - Bunkbed 1 - $2000
-  - Bunkbed 2 - $2000
+  - ~~Bunkbed $2000~~-SOLD
+  - ~~Bunkbed $2000~~-SOLD
 
 **Butterfly**
 

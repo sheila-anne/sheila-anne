@@ -129,7 +129,7 @@ Queen suite (SOLD OUT)
 - ~~Share with friend/ mom/ sister - $1,200 each~~
 
 ![](/img/lux-bunk.webp)
-Lux bunk (eight available)
+Lux bunk (eight available, across two rooms)
 
 - $1,200 per person
 
