@@ -16,7 +16,7 @@ path: /pura-vida-retreat
 In Playa Grande, Costa Rica
 
 - SUNDAY, FEBRUARY 1, 2026 - SATURDAY, FEBRUARY 7, 2026
-SOLD OUT! Join the waitlist and be first to know if a spot opens up.
+  SOLD OUT! [Join the waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdbr0Q6XEKYicsZw5Qk0eJ8B6BP5Ukm0IDtuQBcWVG_Qc910A/viewform?usp=sharing) and be first to know if a spot opens up.
 
 Join us for an immersive experience in nature where we will vinyasa to the sounds of birds and monkeys, create new friendships and perspectives, and be healed and rejuvenated by sun, sand, and movement. It’s time to unplug, lean into community, and treat yourself to an unforgettable experience.
 

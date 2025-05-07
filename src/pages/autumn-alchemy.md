@@ -60,7 +60,7 @@ Move. Breathe. Alchemize. Become.
 - Group Reiki healing ceremony
 - Nature & hiking in Maine's stunning autumn landscape
 - She Flows joyful movement practice
-- Human Design Workshop
+- Sound Healing Ceremony with [Sarah](https://www.instagram.com/soundhealingsarah/)
 - Group craft
 - Free time to nap, craft, and exhale
 
