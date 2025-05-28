@@ -8,6 +8,28 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
+## Summer Soulstice Flow & Celebration
+
+SATURDAY JUNE 21 8AM - 10AM
+
+Creek Farm in Portsmouth, NH
+
+Join [She Flows Collective](https://www.instagram.com/sheflowscollective/) for a celebration of summer, sun, and Internation Day of Yoga. This event promises to uplift, illuminate, and inspire you.
+
+[Reserve your ticket now!](https://www.eventbrite.com/e/summer-solstice-flow-celebration-tickets-1364994357869)
+
+## Pura Vida One Day Retreat
+
+SATURDAY JUNE 28 12PM - 5PM
+
+South Boston, MA
+
+Calling all Pura Vida Costa Rica Retreat alumni and anyone who’s been dreaming of the magic! Join us for a beautiful day of movement, connection, and pura vida living. Whether you’re rekindling the vibe or getting a taste for the first time, this half-day retreat will ground you in community and lift you into joy.
+
+Limited to 20 participants.
+
+Grab your Early Bird ticket for the unreal price of $111 [right here](https://sheilaanne.us17.list-manage.com/track/click?u=50cd8d2646515331acfa0d482&id=a80cbde4ff&e=cbb8b83e28).
+
 ## Autumn Alchemy
 
 THURSDAY OCTOBER 16 - SUNDAY OCTOBER 19

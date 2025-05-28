@@ -66,10 +66,6 @@ const ButtonSpan = styled.span`
   background-size: 100% 200%;
   background-position: top;
   border-radius: 1rem;
-
-  @media (max-width: ${Constants.mobileWidth}) {
-    background-color: ${Constants.Colors.redRocksRed};
-  }
 `;
 
 const StyledPillButton = styled.button<{ color?: string }>`
