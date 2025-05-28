@@ -10,7 +10,7 @@ thirdImage: /img/nourish-teaser-photo.png
 montage: /img/sheila-anne-nourish-montage.png
 coachingImage: /img/sheila-coaching.png
 sideBySide: /img/nourish-about-me.jpg
-welcomeToNourish: /img/welcome-home-to-nourish.jpg
+welcomeToNourish: /img/welcome-sheila-anne-main.jpg
 subBanner: /img/nourish-subbanner.png
 path: /nourish
 ---

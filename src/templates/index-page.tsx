@@ -105,7 +105,8 @@ const BannerHeadline = styled.h1.withConfig<HeadlineProps>({
   shouldForwardProp: prop => prop !== "fontColor" && prop !== "lessMargin",
 })`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
-  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
+  box-shadow:
+    ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
   color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
   font-size: 1.5rem;
@@ -162,11 +163,15 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
         <ContentBreak />
         <CenteredText margin="0 0 2rem 0">
           <FlexContainer justifyContent="center" margin="1rem">
-            <strong>I created something just for you:</strong>
+            <strong>Free masterclass with Sheila:</strong>
           </FlexContainer>
           <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} to="/masterclass/">
-            Watch my free masterclass!
+            Learn more!
           </LinkButton>
+          <FlexContainer margin="1rem">
+            In this video, you will learn the 5 step strategy that will help you shift from anxious & overwhelmed to
+            aligned & purposeful living.
+          </FlexContainer>
         </CenteredText>
         <ContentBreak />
         <CenteredText>
