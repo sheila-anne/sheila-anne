@@ -6,6 +6,3 @@
 [dev]
   command = "npm run dev"
   port = 34567
-
-[[plugins]]
-package = "netlify-plugin-gatsby-cache"
