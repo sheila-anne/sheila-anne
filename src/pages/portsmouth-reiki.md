@@ -11,7 +11,7 @@ path: /portsmouth-reiki
 
 !["Sheila practicing Reiki on a client in Portsmouth"](/img/reiki-crown.jpg)
 
-Experience the transformative healing energy of Reiki. Sheila will help you restore balance to your energy systems, accelerate healing, reclaim your mind-body connection and promote joy and clarity. Come for one session and see why others prioritize Reiki as a must-have in their wellness rituals. 
+Experience the transformative healing energy of Reiki. Sheila will help you restore balance to your energy systems, accelerate healing, reclaim your mind-body connection and promote joy and clarity. Come for one session and see why others prioritize Reiki as a must-have in their wellness rituals.
 
 For your convenience, sessions are available in-person (in the charming coastal city of Portsmouth, New Hampshire), virtually via online meeting platform, or Sheila can travel to you!
 
@@ -40,23 +40,21 @@ During your Reiki session with Sheila, you can expect:
 
 ### In-Person Sessions
 
-In-person sessions at her Portsmouth, New Hampshire location. Specific location shared upon confirmation of appointment. 
+Sheila can travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area.
 
-* Investment - $115 for 60 minute appointment .
+- Investment - $115 for 60 minute appointment.
 
-[Book Portsmouth location here](https://calendly.com/sheila-anne/reiki-healing-session)
+[Book in-person Reiki here](https://calendly.com/sheila-anne/reiki-healing-session)
+
+Need Sheila to travel further? Please [contact me to learn more](mailto:sheila@sheilaanne.com).
 
 ### Distance Reiki sessions conducted remotely
 
 Sheila currently serves clients worldwide via Zoom and Google Meet and, yes, you can expect the same amazing benefits!
 
-* Investment - $95 for 45 minute appointment 
+- Investment - $95 for 45 minute appointment
 
 [Book distance Reiki](https://calendly.com/sheila-anne/reiki-healing-session-distance)
-
-### Traveling Reiki Sessions
-
-Sheila can travel to your home, vacation rental, or preferred location. Please [contact me to learn more](mailto:sheila@sheilaanne.com)
 
 !["Sheila practicing Reiki"](/img/reiki-shoulders.jpg)
 
@@ -64,9 +62,9 @@ Sheila can travel to your home, vacation rental, or preferred location. Please [
 
 I love working with clients to create custom, meaningful events with Reiki healing, including:
 
-* Special event support, including morning-of wedding sessions to create calm and centeredness
-* Group sessions combining Reiki, meditation, and yoga for retreats, team building, or celebrations
-* Custom packages for regular clients seeking ongoing support
+- Special event support, including morning-of wedding sessions to create calm and centeredness
+- Group sessions combining Reiki, meditation, and yoga for retreats, team building, or celebrations
+- Custom packages for regular clients seeking ongoing support
 
 Please [contact me](mailto:sheila@sheilaanne.com) with your needs and dates.
 
@@ -74,11 +72,11 @@ Please [contact me](mailto:sheila@sheilaanne.com) with your needs and dates.
 
 **Complete Body & Soul Alignment**
 
-*Perfect for your corporate wellness retreat, bachelorette, or reunion.*
+_Perfect for your corporate wellness retreat, bachelorette, or reunion._
 
-* **What to expect**: This session will blend dynamic vinyasa flow with transformative energy healing to create profound harmony within. Feel renewed as you move through invigorating yoga sequences that awaken your body, followed by a blissful reiki session that dissolves tension and restores your natural energetic balance. This powerful combination creates an uplifting sense of wholeness that stays with you long after the session ends. Includes a guided journaling experience that captures your insights and amplifies your newfound clarity.
-* **Duration**: 90 minutes
-* **Price**: $125 per person (5 person minimum)
+- **What to expect**: This session will blend dynamic vinyasa flow with transformative energy healing to create profound harmony within. Feel renewed as you move through invigorating yoga sequences that awaken your body, followed by a blissful reiki session that dissolves tension and restores your natural energetic balance. This powerful combination creates an uplifting sense of wholeness that stays with you long after the session ends. Includes a guided journaling experience that captures your insights and amplifies your newfound clarity.
+- **Duration**: 90 minutes
+- **Price**: $125 per person (5 person minimum)
 
 ## Reviews
 
