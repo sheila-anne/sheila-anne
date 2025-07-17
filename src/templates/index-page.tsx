@@ -112,8 +112,6 @@ const BannerHeadline = styled.h1<HeadlineProps>`
   padding: 0.5rem;
 `;
 
-const BannerH2 = styled(BannerHeadline).attrs({ as: "h2" });
-
 const ImageContainer = styled.div`
   flex: 100%;
   margin-bottom: 1rem;

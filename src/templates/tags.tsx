@@ -33,7 +33,6 @@ const TagRoute = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location}>
-      {/* @ts-ignore */}
       <section>
         <Helmet title={`Tags for "${tag}" | ${title}`} />
         <Headline>{tagHeader}</Headline>

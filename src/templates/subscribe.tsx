@@ -4,7 +4,7 @@ import React from "react";
 import { BaseTemplate, FlexImage, HTMLContent, Layout, SEO, SubscribeForm } from "../components";
 import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
 
-const Media = ({ data, location }) => {
+const SubscribePage = ({ data, location }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -27,7 +27,7 @@ const Media = ({ data, location }) => {
   );
 };
 
-export default Media;
+export default SubscribePage;
 
 export const pageQuery = graphql`
   query Subscribe($id: String!) {
