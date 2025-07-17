@@ -13,7 +13,7 @@ type EventProperties = {
 exports.handler = async function (event: APIGatewayEvent, context: Context): Promise<OuterHandlerReturn> {
   bodyGuardian(event);
 
-  const eventProperties = JSON.parse(event.body) as EventProperties;
+  const eventProperties = JSON.parse(event.body ?? "{}") as EventProperties;
   const isMatch = eventProperties.code === FREEBIE_SECRET;
 
   return {

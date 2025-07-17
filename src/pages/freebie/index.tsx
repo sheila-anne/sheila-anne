@@ -32,7 +32,7 @@ export default ({ data, location }) => {
         title="Positivity Pack | Sheila Anne"
       />
       {!isSubmitSuccess ? (
-        <FlexContainer justifyContent="center" margin="1rem 0">
+        <FlexContainer $justifyContent="center" $margin="1rem 0">
           <HalfColumn>
             <FlexColSplitImage>
               <PreviewCompatibleImage
@@ -75,7 +75,7 @@ export default ({ data, location }) => {
           imageInfo={data.overlayPhoto.childImageSharp.gatsbyImageData}
           title="Bring in the New Year with positivity"
         />
-        <CenteredText margin="3rem 0 1rem 0">
+        <CenteredText $margin="3rem 0 1rem 0">
           <h2>Here's What's Included In Your Positivity Pack</h2>
         </CenteredText>
 
@@ -85,7 +85,7 @@ export default ({ data, location }) => {
           <li>Link to a guided meditation by me!</li>
         </ul>
 
-        <CenteredText margin="3rem 0 1rem 0">
+        <CenteredText $margin="3rem 0 1rem 0">
           <h2>These are the same affirmations that I personally use to</h2>
         </CenteredText>
 

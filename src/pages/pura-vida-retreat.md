@@ -70,7 +70,7 @@ This is a women’s retreat. Our retreat creates a supportive environment where 
 
 ## Meet Your Hosts
 
-![](/img/meet-the-hosts.png)
+![](/img/meet-the-hosts.png "Meet your hosts")
 
 **Sheila Anne** of Sheila Anne Coaching + Wellness
 

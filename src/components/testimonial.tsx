@@ -6,7 +6,6 @@ import { CenteredText } from "./centered";
 import { PreviewCompatibleImage } from "./preview-compatible";
 import { PlainButton } from "./button";
 import { trackCustomEvent, trackFacebook } from "../utils";
-import { Constants } from "../constants";
 
 type Action = {
   type: string;
@@ -44,11 +43,9 @@ const Clickable = styled.div`
   text-align: center;
 `;
 
-const ExpandableText = styled.p.withConfig<{ isExpanded: boolean }>({
-  shouldForwardProp: prop => prop !== "isExpanded",
-})`
+const ExpandableText = styled.p<{ $isExpanded: boolean }>`
   height: auto;
-  max-height: ${({ isExpanded }) => (!!isExpanded ? "1000px" : `${MIN_EXPANDABLE_HEIGHT}px`)};
+  max-height: ${({ $isExpanded }) => (!!$isExpanded ? "1000px" : `${MIN_EXPANDABLE_HEIGHT}px`)};
   margin-top: 1rem;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out 0s;
@@ -118,7 +115,7 @@ const MeasurableHeightText = ({ dispatch, isExpanded, text, title }: Expandable)
   }, []);
 
   const Text = ({ isExpanded, text }: { isExpanded: boolean; text: string }) => (
-    <ExpandableText isExpanded={isExpanded} ref={ref}>
+    <ExpandableText $isExpanded={isExpanded} ref={ref}>
       "{text}"
     </ExpandableText>
   );
@@ -133,9 +130,7 @@ const MeasurableHeightText = ({ dispatch, isExpanded, text, title }: Expandable)
     >
       <Text isExpanded={isExpanded} text={text} />
       <CenteredText>
-        <PlainButton backgroundColor={Constants.Colors.theGroveLightGreen}>
-          {isExpanded ? "Show Less" : "Show More"}
-        </PlainButton>
+        <PlainButton>{isExpanded ? "Show Less" : "Show More"}</PlainButton>
       </CenteredText>
     </Clickable>
   ) : (
@@ -175,7 +170,7 @@ export const Testimonial = ({ testimonials }: TestimonialProps) => {
         </TestimonialCallout>
       ))}
       <hr />
-      <CenteredText margin="1rem 0">
+      <CenteredText $margin="1rem 0">
         Care to share? Write a review about your experience{" "}
         <BannerLink to="https://forms.gle/U4LwVirKiBMKWEAt5">here</BannerLink>!
       </CenteredText>

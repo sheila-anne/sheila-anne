@@ -67,6 +67,7 @@ const BlogPost = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      {/* @ts-ignore */}
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}

@@ -4,9 +4,9 @@ import styled from "styled-components";
 import { applyStyle } from "../utils/";
 
 type ContentContainerProps = {
-  backgroundColor?: string;
-  margin?: string;
-  padding?: string;
+  $backgroundColor?: string;
+  $margin?: string;
+  $padding?: string;
 };
 
 type ContentProps = ContentContainerProps & {
@@ -15,18 +15,18 @@ type ContentProps = ContentContainerProps & {
 };
 
 const ContentContainer = styled.div<ContentContainerProps>`
-  ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
-  ${({ margin }) => applyStyle("margin", margin)}
-  ${({ padding }) => applyStyle("padding", padding)}
+  ${({ $backgroundColor }) => applyStyle("background-color", $backgroundColor)}
+  ${({ $margin }) => applyStyle("margin", $margin)}
+  ${({ $padding }) => applyStyle("padding", $padding)}
 `;
 
-export const HTMLContent = ({ backgroundColor, content, itemProp, margin, padding }: ContentProps) => (
+export const HTMLContent = ({ $backgroundColor, content, itemProp, $margin, $padding }: ContentProps) => (
   <ContentContainer
-    backgroundColor={backgroundColor}
+    $backgroundColor={$backgroundColor}
     dangerouslySetInnerHTML={{ __html: content }}
-    margin={margin}
+    $margin={$margin}
     itemProp={itemProp}
-    padding={padding}
+    $padding={$padding}
   />
 );
 

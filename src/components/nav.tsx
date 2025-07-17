@@ -9,17 +9,17 @@ import { SmartLink } from "./smart-link";
 import { useWindow } from "../hooks/useWindow";
 
 type NavProps = {
-  location: Location;
+  $location: Location;
 };
 
 type NavHeaderProps = NavProps & MobileNavProps;
 
 type OpenNavProps = {
-  isOpen?: boolean;
+  $isOpen?: boolean;
 };
 
 type MobileNavProps = {
-  isMobile: boolean;
+  $isMobile: boolean;
 };
 
 type OpenAndMobile = OpenNavProps & MobileNavProps;
@@ -30,10 +30,8 @@ const ColoredInternalLink = styled(SmartLink)<{
   ${props => !!props["aria-current"] && "border: 1px solid #fff; border-radius: 5rem;"}
 `;
 
-const LogoText = styled.div.withConfig<OpenAndMobile>({
-  shouldForwardProp: prop => prop !== "isOpen" && prop !== "isMobile",
-})`
-  background: ${({ isOpen, isMobile }) => (!!isOpen && !!isMobile ? Constants.Colors.theGroveGreen : "inherit")};
+const LogoText = styled.div<OpenAndMobile>`
+  background: ${({ $isOpen, $isMobile }) => (!!$isOpen && !!$isMobile ? Constants.Colors.theGroveGreen : "inherit")};
   flex-basis: 33%;
   padding-top: 5px;
   margin: 0 -2rem 0 2rem;
@@ -45,20 +43,18 @@ const LogoText = styled.div.withConfig<OpenAndMobile>({
   }
 `;
 
-const DesktopSocialWrapper = styled.div.withConfig<OpenNavProps>({
-  shouldForwardProp: prop => prop !== "isOpen",
-})`
+const DesktopSocialWrapper = styled.div<OpenNavProps>`
   display: flex;
   flex-basis: 33%;
   align-self: center;
   justify-content: flex-end;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+    ${({ $isOpen }) => applyStyle("display", !!$isOpen ? "block" : "none")}
   }
 `;
 
-const Header = styled.header.withConfig<{ flipColors: boolean }>({ shouldForwardProp: prop => prop !== "flipColors" })`
+const Header = styled.header<{ $flipColors: boolean }>`
   left: 0;
   letter-spacing: 0.1em;
   position: sticky;
@@ -66,15 +62,13 @@ const Header = styled.header.withConfig<{ flipColors: boolean }>({ shouldForward
   z-index: 1000;
 
   ${ColoredInternalLink} {
-    ${({ flipColors }) => applyStyle("color", !!flipColors ? "#FFF" : "inherit")}
+    ${({ $flipColors }) => applyStyle("color", !!$flipColors ? "#FFF" : "inherit")}
   }
 `;
 
-const StyledNav = styled.nav.withConfig<OpenNavProps>({
-  shouldForwardProp: prop => prop !== "isOpen",
-})`
+const StyledNav = styled.nav<OpenNavProps>`
   align-items: center;
-  background-color: ${({ isOpen }) => (!!isOpen ? Constants.Colors.theGroveGreen : "#FFF")};
+  background-color: ${({ $isOpen }) => (!!$isOpen ? Constants.Colors.theGroveGreen : "#FFF")};
   display: flex;
   height: 75px;
   justify-content: center;
@@ -84,8 +78,8 @@ const StyledNav = styled.nav.withConfig<OpenNavProps>({
   }
 `;
 
-const SideLinkWrapper = styled.div<{ location: Location; to: string }>`
-  ${({ location, to }) => (location && location.pathname === to ? `color: ${Constants.Colors.theGroveGreen};` : "")}
+const SideLinkWrapper = styled.div<{ $location: Location; to: string }>`
+  ${({ $location, to }) => ($location && $location.pathname === to ? `color: ${Constants.Colors.theGroveGreen};` : "")}
   display: inline;
   font-family: Inria Serif;
   font-weight: 500;
@@ -113,22 +107,20 @@ const Headline = styled.h1`
   }
 `;
 
-const NavLinkList = styled.ol.withConfig<OpenNavProps>({
-  shouldForwardProp: prop => prop !== "isOpen",
-})`
+const NavLinkList = styled.ol<OpenNavProps>`
   flex-basis: 33%;
   list-style-type: none;
   margin: 0;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+    ${({ $isOpen }) => applyStyle("display", !!$isOpen ? "block" : "none")}
     flex-basis: 100%;
   }
 `;
 
-const NavSocialList = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop => prop !== "isOpen" })`
+const NavSocialList = styled.div<OpenNavProps>`
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ isOpen }) => applyStyle("display", !!isOpen ? "block" : "none")}
+    ${({ $isOpen }) => applyStyle("display", !!$isOpen ? "block" : "none")}
   }
 `;
 
@@ -138,7 +130,7 @@ const NavListItem = styled.li`
   padding-top: 10px;
 `;
 
-const MobileMenu = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop => prop !== "isOpen" })`
+const MobileMenu = styled.div<OpenNavProps>`
   background: ${Constants.Colors.theGroveGreen};
   border: 1px solid ${Constants.Colors.theGroveGreen};
   height: 100vh;
@@ -146,7 +138,7 @@ const MobileMenu = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop
   position: relative;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ isOpen }) => (isOpen ? "translate(0,0)" : "translate(0, -150%)")};
+  transform: ${({ $isOpen }) => ($isOpen ? "translate(0,0)" : "translate(0, -150%)")};
 
   ${ColoredInternalLink} {
     display: block;
@@ -164,7 +156,7 @@ const MobileMenu = styled.div.withConfig<OpenNavProps>({ shouldForwardProp: prop
 
 const getNavLinkItems = (
   location: Location,
-  isOpen = false,
+  $isOpen = false,
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const navLinks = [
@@ -182,7 +174,7 @@ const getNavLinkItems = (
     { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
     { to: "/portsmouth-reiki/", text: "Reiki", title: "Reiki Energy Healing in Portsmouth" },
   ];
-  !!isOpen && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
+  !!$isOpen && location.pathname !== "/" && navLinks.push({ to: "/", text: "Home", title: "Sheila Anne" });
   return navLinks.map(navLink => (
     <NavListItem
       key={navLink.to}
@@ -190,12 +182,12 @@ const getNavLinkItems = (
       itemScope={true}
       role="presentation"
     >
-      <SideLinkWrapper location={location} to={navLink.to}>
+      <SideLinkWrapper $location={location} to={navLink.to}>
         <ColoredInternalLink
           // if you're in the mobile-menu, some links are links;
           // some are page references. close the menu if the setState handler
           // is passed in to show relative page refs
-          onClick={() => setIsOpen && setIsOpen(!isOpen)}
+          onClick={() => setIsOpen && setIsOpen(!$isOpen)}
           aria-current={location && location.pathname === navLink.to}
           ariaLabel={navLink.title}
           role="menuitem"
@@ -210,13 +202,13 @@ const getNavLinkItems = (
   ));
 };
 
-const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
+const NavHeader = ({ $location, $isMobile }: NavHeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Header flipColors={!!isOpen && !!isMobile}>
-      <StyledNav isOpen={isOpen} role="navigation">
-        <LogoText isMobile={isMobile} isOpen={isOpen}>
+    <Header $flipColors={!!isOpen && !!$isMobile}>
+      <StyledNav $isOpen={isOpen} role="navigation">
+        <LogoText $isMobile={$isMobile} $isOpen={isOpen}>
           <Headline itemType="https://schema.org/SiteNavigationElement" itemScope={true}>
             <ColoredInternalLink
               ariaLabel="Sheila Anne logo, click to visit homepage"
@@ -227,22 +219,22 @@ const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
             </ColoredInternalLink>
           </Headline>
         </LogoText>
-        {!!isMobile ? (
+        {!!$isMobile ? (
           <>
             <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
-            <MobileMenu aria-expanded={!!isOpen ? true : undefined} aria-hidden={!isOpen} isOpen={isOpen}>
-              <NavLinkList aria-current={isOpen} isOpen={isOpen} role="menubar">
-                {getNavLinkItems(location, isMobile && isOpen, setIsOpen)}
+            <MobileMenu aria-expanded={!!isOpen ? true : undefined} aria-hidden={!isOpen} $isOpen={isOpen}>
+              <NavLinkList aria-current={isOpen} $isOpen={isOpen} role="menubar">
+                {getNavLinkItems($location, $isMobile && isOpen, setIsOpen)}
               </NavLinkList>
-              <NavSocialList isOpen={isOpen}>
+              <NavSocialList $isOpen={isOpen}>
                 <Social />
               </NavSocialList>
             </MobileMenu>
           </>
         ) : (
           <>
-            <NavLinkList role="menubar">{getNavLinkItems(location)}</NavLinkList>
-            <DesktopSocialWrapper isOpen={isMobile}>
+            <NavLinkList role="menubar">{getNavLinkItems($location)}</NavLinkList>
+            <DesktopSocialWrapper $isOpen={$isMobile}>
               <Social />
             </DesktopSocialWrapper>
           </>
@@ -252,7 +244,7 @@ const NavHeader = ({ location, isMobile }: NavHeaderProps) => {
   );
 };
 
-export const Nav = ({ location }: NavProps) => {
+export const Nav = ({ $location }: NavProps) => {
   const { isMobile } = useWindow();
-  return <NavHeader location={location} isMobile={isMobile} />;
+  return <NavHeader $location={$location} $isMobile={isMobile} />;
 };

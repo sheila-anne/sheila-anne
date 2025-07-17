@@ -18,16 +18,19 @@ import {
   FAQ,
 } from "../components";
 
-const ColorContainer = styled.div<{ backgroundColor?: string }>`
-  ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
+const ColorContainer = styled.div<{ $backgroundColor?: string }>`
+  ${({ $backgroundColor }) => applyStyle("background-color", $backgroundColor)}
   border-radius: 1rem;
   margin-bottom: 1rem;
   padding: 1rem 2rem;
 `;
 
 const CenteredButton = ({ text }: { text: string }) => (
-  <CenteredText margin="1rem 0">
-    <PillButton onClick={() => navigate("/book/root-to-rise/")}>{text}</PillButton>
+  <CenteredText $margin="1rem 0">
+    <PillButton title={text} onClick={() => navigate("/book/root-to-rise/")}>
+      <a href="/book/root-to-rise/"></a>
+      {text}
+    </PillButton>
   </CenteredText>
 );
 
@@ -42,7 +45,7 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
   return (
     <section>
       <h1>Private Coaching with Sheila Anne</h1>
-      <FlexContainer justifyContent="center" margin="1rem 0">
+      <FlexContainer $justifyContent="center" $margin="1rem 0">
         <HalfColumn>
           <FlexColSplitImage>
             <PreviewCompatibleImage
@@ -55,13 +58,13 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         </HalfColumn>
         <HalfColumn>
           <SmallSecondHeader>Take a deep breath</SmallSecondHeader>
-          <SmallSecondHeader>You’re ready for your next uplevel</SmallSecondHeader>
+          <SmallSecondHeader>You're ready for your next uplevel</SmallSecondHeader>
           <SmallSecondHeader>You know you're made for more & I'm going to help you make it happen</SmallSecondHeader>
         </HalfColumn>
       </FlexContainer>
       <CenteredButton text="Book your free intro call with Sheila" />
 
-      <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
+      <ColorContainer $backgroundColor={Constants.Colors.theGroveGreenGray}>
         <p>
           Are you a high-achiever that consistently hustles, builds connections, and accomplishes goals but you still
           feel like something is missing? Do you daydream about taking bigger risks, racing toward new heights, while
@@ -100,17 +103,17 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
         the previous — you will root down to establish a solid base of values & intentions, and rise up to make big
         waves in your career, relationships, and lifestyle.
       </p>
-      <ColorContainer backgroundColor={Constants.Colors.lightestBlue}>
+      <ColorContainer $backgroundColor={Constants.Colors.lightestBlue}>
         <h2>Private Coaching with Sheila will enable you to:</h2>
         <ul>
           <li>
-            <b>Reclaim a sense of presence</b>. You may take your first deep breath in a while during our work
-            together. We’ll dive into what helps to stay rooted and mindful amidst the obligations and activities of
-            your fast-paced life.
+            <b>Reclaim a sense of presence</b>. You may take your first deep breath in a while during our work together.
+            We’ll dive into what helps to stay rooted and mindful amidst the obligations and activities of your
+            fast-paced life.
           </li>
           <li>
-            <b>Intentionally Illuminate Your Path </b>. Clarify your values, goals, and obstacles so you can make
-            big, aligned changes.
+            <b>Intentionally Illuminate Your Path </b>. Clarify your values, goals, and obstacles so you can make big,
+            aligned changes.
           </li>
           <li>
             <b>Holistically care for your well-being</b>. We’re talkin’ less stress, more flow. Nourish your inner fire,
@@ -129,13 +132,13 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
             write a book - all of this is possible for you.
           </li>
           <li>
-            <b>Rise into the best version of you</b>. Walk forward with a clear sense of direction, vibrant energy, and the tools to live a life that truly reflects your aspirations. 
-      
+            <b>Rise into the best version of you</b>. Walk forward with a clear sense of direction, vibrant energy, and
+            the tools to live a life that truly reflects your aspirations.
           </li>
         </ul>
       </ColorContainer>
       <Testimonial testimonials={[firstTestimonial]} />
-      <ColorContainer backgroundColor={Constants.Colors.theGroveGreenGray}>
+      <ColorContainer $backgroundColor={Constants.Colors.theGroveGreenGray}>
         <h2>What To Expect:</h2>
         <ul>
           <li>
@@ -156,7 +159,8 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
           deserve.
         </p>
         <p>
-          When you enroll in the program, you will gain access to on-demand support from me and a coaching workbook, which is chock-full of practices and journaling prompts.
+          When you enroll in the program, you will gain access to on-demand support from me and a coaching workbook,
+          which is chock-full of practices and journaling prompts.
         </p>
         <p>
           The benefit of working with me 1:1 is that you get to be in the driver’s seat, bringing to the table what
@@ -210,10 +214,10 @@ export const RootToRiseTemplate = ({ faqs, frontmatter }) => {
       />
       <h2>Why Work With Me?</h2>
       <p>
-        I am an ICF Professional Certified Coach, Whole Person Certified Coach, Trauma-Informed Coach, Reiki Practioner, and Yoga
-        Instructor who has helped dozens of ambitious women to create more success, flow, and change in their lives. I
-        blend my professional coach training, yoga background, embodiment expertise, and intuition to help you feel
-        grounded, safe, and totally resourced to step into the career, relationships, and life you deserve.
+        I am an ICF Professional Certified Coach, Whole Person Certified Coach, Trauma-Informed Coach, Reiki Practioner,
+        and Yoga Instructor who has helped dozens of ambitious women to create more success, flow, and change in their
+        lives. I blend my professional coach training, yoga background, embodiment expertise, and intuition to help you
+        feel grounded, safe, and totally resourced to step into the career, relationships, and life you deserve.
       </p>
       <p>
         This isn’t just a process I facilitate: this is personal, as I struggled for years feeling that life wasn’t

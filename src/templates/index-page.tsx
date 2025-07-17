@@ -77,8 +77,7 @@ type IndexPageProps = {
 
 type HeadlineProps = {
   color?: string;
-  fontColor?: string;
-  lessMargin?: boolean;
+  $fontColor?: string;
   margin?: string;
 };
 
@@ -101,19 +100,19 @@ const Container = styled.div`
   }
 `;
 
-const BannerHeadline = styled.h1.withConfig<HeadlineProps>({
-  shouldForwardProp: prop => prop !== "fontColor" && prop !== "lessMargin",
-})`
+const BannerHeadline = styled.h1<HeadlineProps>`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
   box-shadow:
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
-  color: ${({ fontColor }) => (!!fontColor ? fontColor : "#FFF")};
+  color: ${({ $fontColor }) => (!!$fontColor ? $fontColor : "#FFF")};
   font-size: 1.5rem;
   margin-top: 0;
   ${({ margin }) => applyStyle("margin", margin)};
   padding: 0.5rem;
 `;
+
+const BannerH2 = styled(BannerHeadline).attrs({ as: "h2" });
 
 const ImageContainer = styled.div`
   flex: 100%;
@@ -157,18 +156,16 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
           <h3>Here's How We Can Work Together:</h3>
           <div>Click / tap on each of the sections for more info!</div>
         </CenteredText>
-        <FlexContainer margin="1rem 0">
+        <FlexContainer $margin="1rem 0">
           <Features gridItems={frontmatter.intro.blurbs} />
         </FlexContainer>
         <ContentBreak />
-        <CenteredText margin="0 0 2rem 0">
-          <FlexContainer justifyContent="center" margin="1rem">
+        <CenteredText $margin="0 0 2rem 0">
+          <FlexContainer $justifyContent="center" $margin="1rem">
             <strong>Free masterclass with Sheila:</strong>
           </FlexContainer>
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} to="/masterclass/">
-            Learn more!
-          </LinkButton>
-          <FlexContainer margin="1rem">
+          <LinkButton to="/masterclass/">Learn more!</LinkButton>
+          <FlexContainer $margin="1rem">
             In this video, you will learn the 5 step strategy that will help you shift from anxious & overwhelmed to
             aligned & purposeful living.
           </FlexContainer>
@@ -179,7 +176,7 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
         </CenteredText>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <ContentBreak />
-        <FlexContainer margin="1rem 0 0 0">
+        <FlexContainer $margin="1rem 0 0 0">
           <ImageContainer>
             <PreviewCompatibleImage
               loading="lazy"
@@ -192,7 +189,7 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
             {mainpitch.title} <SmartLink to="/book/exploration/">Book your first call with me here.</SmartLink>
           </div>
         </FlexContainer>
-        <FlexContainer justifyContent="center" margin="2rem 0">
+        <FlexContainer $justifyContent="center" $margin="2rem 0">
           <HalfColumn>
             <FlexColSplitImage>
               <SmartLink to="/freebie/" title="Positivity Pack freebie">
@@ -218,19 +215,17 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
         </FlexContainer>
         <ContentBreak />
         <Youtube url="7jTx1xMKI_Q" />
-        <TestimonialContainer backgroundColor={Constants.Colors.theGroveGreenGray} margin="0 0 1rem 0">
+        <TestimonialContainer $margin="0 0 1rem 0">
           <Testimonial testimonials={fullTestimonials} />
         </TestimonialContainer>
         <CenteredText>
-          <BannerHeadline as="h2" color="#FFF" fontColor={Constants.Colors.bodyCopy} lessMargin={true}>
+          <BannerHeadline as="h2" color="#FFF" $fontColor={Constants.Colors.bodyCopy}>
             Latest From The Blog
           </BannerHeadline>
         </CenteredText>
         <BlogRoll posts={posts} />
         <CenteredText>
-          <LinkButton backgroundColor={Constants.Colors.theGroveLightGreen} to="/writing-desk/">
-            Read more @ the blog!
-          </LinkButton>
+          <LinkButton to="/writing-desk/">Read more @ the blog!</LinkButton>
         </CenteredText>
         <OneTreePlanted />
       </Container>

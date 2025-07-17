@@ -9,7 +9,7 @@ import { SmartLink } from "./smart-link";
 import { getImage } from "gatsby-plugin-image";
 
 type ArticleProps = {
-  isFeatured: boolean;
+  $isFeatured: boolean;
 };
 
 const BlogRollFlexContainer = styled(FlexContainer)`
@@ -48,12 +48,10 @@ const FeaturedThumbnail = styled.div`
   }
 `;
 
-const Article = styled.article.withConfig<ArticleProps>({
-  shouldForwardProp: prop => prop !== "isFeatured",
-})`
+const Article = styled.article<ArticleProps>`
   align-items: center;
-  background-color: ${({ isFeatured }) =>
-    isFeatured ? Constants.Colors.theGroveTeal : Constants.Colors.theGroveLightGreen};
+  background-color: ${({ $isFeatured }) =>
+    $isFeatured ? Constants.Colors.theGroveTeal : Constants.Colors.theGroveLightGreen};
   border-radius: 1rem;
   color: ${Constants.Colors.bodyCopy};
   display: flex;
@@ -76,7 +74,7 @@ const Paragraph = styled.p`
 `;
 
 const BlogRollInner = ({ post }) => (
-  <Article isFeatured={post.frontmatter.featuredpost} itemType="https://schema.org/BlogPosting" itemScope={true}>
+  <Article $isFeatured={post.frontmatter.featuredpost} itemType="https://schema.org/BlogPosting" itemScope={true}>
     <BlogPostMeta datePublished={post.frontmatter.date} featuredImage={post.frontmatter.featuredImage} />
     <meta itemProp="mainEntityOfPage" content={`${Constants.baseUrl}/writing-desk${post.fields.slug}`} />
     <FlexHeader>
@@ -98,10 +96,10 @@ const BlogRollInner = ({ post }) => (
 
 export const BlogRoll = ({ posts }) => {
   return (
-    <BlogRollFlexContainer justifyContent="center">
+    <BlogRollFlexContainer $justifyContent="center">
       {posts &&
         posts.map(({ node: post }) => (
-          <BlogRollFlexColumn margin="0 0 1rem 0" key={post.id}>
+          <BlogRollFlexColumn $margin="0 0 1rem 0" key={post.id}>
             <SmartLink hideMetadata={true} to={post.fields.slug} title={post.frontmatter.title}>
               <BlogRollInner post={post} />
             </SmartLink>
