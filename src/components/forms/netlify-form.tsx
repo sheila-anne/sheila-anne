@@ -8,7 +8,7 @@ const Honeypot = styled.p`
   display: none;
 `;
 
-type NetylifyFormProps = {
+type NetlifyFormProps = {
   actionRoute: string;
   children?: React.ReactNode;
   formName: string;
@@ -20,12 +20,12 @@ const ClickableButton = styled(PlainButton)`
   margin-top: 1rem;
 `;
 
-export const NetlifyForm: FC<NetylifyFormProps> = ({ actionRoute, formName, submitButtonText, children }) => (
+export const NetlifyForm: FC<NetlifyFormProps> = ({ actionRoute, formName, submitButtonText, children }) => (
   <FormWrapperSection>
     <form id={`#${formName}`} name={formName} data-netlify="true" action={actionRoute}>
       <Honeypot>
         <label>
-          Don’t fill this out if you expect to hear from us!
+          Don't fill this out if you expect to hear from us!
           <Input name="bot-field" value="" readOnly />
         </label>
       </Honeypot>
