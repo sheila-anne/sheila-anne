@@ -34,7 +34,7 @@ export const OptInForm = ({
   >
     <Input
       autoComplete="name"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="text"
       id="name"
       name="name"
@@ -44,7 +44,7 @@ export const OptInForm = ({
     />
     <Input
       autoComplete="email"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="email"
       id="email"
       inputMode="email"
@@ -55,7 +55,7 @@ export const OptInForm = ({
     />
     <Input
       autoComplete="tel"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="text"
       id="tel"
       name="tel"

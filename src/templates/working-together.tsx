@@ -34,7 +34,7 @@ export const WorkingTogetherTemplate = ({ faqs, frontmatter }) => {
         to tell me your story & learn strategies for moving forward. You can ask all the questions & learn which
         offering best suits your needs.
       </Text>
-      <CenteredText margin="2rem 0">
+      <CenteredText $margin="2rem 0">
         <LinkButton to="/book/exploration/">Book Your Exploration Call Today!</LinkButton>
       </CenteredText>
       <SpacedHeader id="root-to-rise">Private Coaching with Sheila</SpacedHeader>
@@ -42,7 +42,7 @@ export const WorkingTogetherTemplate = ({ faqs, frontmatter }) => {
         My 1:1 coaching program is for high-achievers who are ready to create long-lasting change. Embark on a journey
         of courageous self discovery, mindfulness, and level up in your career path, relationships, and lifestyle.
       </Text>
-      <CenteredText margin="2rem 0">
+      <CenteredText $margin="2rem 0">
         <LinkButton to="/root-to-rise/">Private Coaching Details!</LinkButton>
       </CenteredText>
       <ContentBreak />

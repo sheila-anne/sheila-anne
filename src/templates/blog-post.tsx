@@ -18,29 +18,15 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   datePublished,
-  description,
   featuredImage,
-  location,
-  ogImage,
   tags,
   title,
   isPreview = false,
 }) => {
   const PostContent = contentComponent || Content;
 
-  const navTitle = `${title} | The Writing Desk | Sheila Anne`;
-
   return (
     <article itemType="https://schema.org/BlogPosting" itemScope={true}>
-      <SEO
-        description={description}
-        isPreview={isPreview}
-        image={ogImage?.publicURL}
-        imageAlt={title}
-        location={location}
-        title={navTitle}
-        type="article"
-      />
       <BlogPostMeta datePublished={datePublished} featuredImage={featuredImage} isPreview={isPreview} />
       <h1 itemProp="name headline">{title}</h1>
       <Smalltext>Published {datePublished} by Sheila Anne Murray</Smalltext>
@@ -59,7 +45,7 @@ export const BlogPostTemplate = ({
         </div>
       ) : null}
     </article>
-  );
+  ) as React.JSX.Element;
 };
 
 const BlogPost = ({ data, location }) => {
@@ -67,14 +53,20 @@ const BlogPost = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      <SEO
+        description={post.frontmatter.description}
+        isPreview={false}
+        image={post.frontmatter.ogImage?.publicURL}
+        imageAlt={post.frontmatter.title}
+        location={location}
+        title={`${post.frontmatter.title} | The Writing Desk | Sheila Anne`}
+        type="article"
+      />
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         datePublished={post.frontmatter.date}
-        description={post.frontmatter.description}
         featuredImage={getImage(post.frontmatter.featuredImage)}
-        location={location}
-        ogImage={post.frontmatter.ogImage}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

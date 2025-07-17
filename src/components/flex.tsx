@@ -5,46 +5,44 @@ import { applyStyle } from "../utils";
 import { Constants } from "../constants";
 
 type BackgroundColorProps = {
-  backgroundColor?: string;
+  $backgroundColor?: string;
 };
 
 type FlexContainerProps = BackgroundColorProps & {
-  margin?: string;
-  justifyContent?: string;
-  padding?: string;
+  $margin?: string;
+  $justifyContent?: string;
+  $padding?: string;
 };
 
 type FlexColumnProps = FlexContainerProps & {
-  padding?: string;
-  alignSelf?: string;
+  $padding?: string;
+  $alignSelf?: string;
 };
 
 const BackgroundColorDiv = styled.div<BackgroundColorProps>`
-  ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}
+  ${({ $backgroundColor }) => !!$backgroundColor && `background-color: ${$backgroundColor};`}
 `;
 
-export const FlexContainer = styled(BackgroundColorDiv).withConfig<FlexContainerProps>({
-  shouldForwardProp: prop => prop !== "justifyContent" && prop !== "backgroundColor",
-})`
+export const FlexContainer = styled(BackgroundColorDiv)<FlexContainerProps>`
   display: flex;
   flex-flow: row wrap;
-  ${({ margin }) => applyStyle("margin", margin)}
-  ${({ justifyContent }) => applyStyle("justify-content", justifyContent)}
-  ${({ padding }) => applyStyle("padding", padding)}
+  ${({ $margin }) => applyStyle("margin", $margin)}
+  ${({ $justifyContent }) => applyStyle("justify-content", $justifyContent)}
+  ${({ $padding }) => applyStyle("padding", $padding)}
 
   @media (max-width: ${Constants.mobileWidth}) {
     flex-flow: row wrap;
-    ${({ margin }) => applyStyle("margin", margin || "0")};
+    ${({ $margin }) => applyStyle("margin", $margin || "0")};
   }
 `;
 
 export const FlexColumn = styled(BackgroundColorDiv)<FlexColumnProps>`
-  ${({ alignSelf }) => applyStyle("align-self", alignSelf)}
-  ${({ padding }) => applyStyle("padding", padding)}
+  ${({ $alignSelf }) => applyStyle("align-self", $alignSelf)}
+  ${({ $padding }) => applyStyle("padding", $padding)}
   flex-basis: 50%;
 
   @media (max-width: ${Constants.mobileWidth}) {
-    ${({ margin }) => applyStyle("margin", margin)}
+    ${({ $margin }) => applyStyle("margin", $margin)}
     flex-basis: 100%;
   }
 `;

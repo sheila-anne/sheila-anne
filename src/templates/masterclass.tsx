@@ -38,7 +38,7 @@ const MasterclassSection = ({ setShowMasterclassForm, showMasterclassForm, setIs
   showMasterclassForm ? (
     <MasterclassForm isSubmitSuccess={setIsSubmitSuccess} />
   ) : (
-    <CenteredText margin="2rem 0">
+    <CenteredText $margin="2rem 0">
       <PillButton onClick={e => handleSubmit(e, setShowMasterclassForm, showMasterclassForm)}>
         Enroll for the masterclass!
       </PillButton>

@@ -14,13 +14,13 @@ import { Constants } from "../../constants";
 import { applyStyle } from "../../utils";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
-  backgroundColor?: string;
-  display?: string;
+  $backgroundColor?: string;
+  $display?: string;
 };
 
 type FormWrapperProps = {
-  alignItems?: string;
-  centerText?: boolean;
+  $alignItems?: string;
+  $centerText?: boolean;
 };
 
 /*
@@ -85,8 +85,8 @@ export const Input = (props: InputProps) => accessibleWrapper(InputInner, props)
 
 export const TextArea = (props: TextareaHTMLAttributes<HTMLTextAreaElement>) => accessibleWrapper(TextAreaInner, props);
 
-const InputInner = styled.input.withConfig<InputProps>({ shouldForwardProp: prop => prop !== "backgroundColor" })`
-  ${({ backgroundColor }) => !!backgroundColor && `background-color: ${backgroundColor};`}
+const InputInner = styled.input<InputProps>`
+  ${({ $backgroundColor }) => !!$backgroundColor && `background-color: ${$backgroundColor};`}
   margin: 1rem 0;
 `;
 
@@ -101,14 +101,12 @@ const TextAreaInner = styled.textarea`
   }
 `;
 
-export const FormWrapperSection = styled.section.withConfig<FormWrapperProps>({
-  shouldForwardProp: (prop, _) => prop !== "alignItems" && prop !== "centerText",
-})`
-  ${({ alignItems }) => applyStyle("align-items", !!alignItems ? alignItems : "center")}
+export const FormWrapperSection = styled.section<FormWrapperProps>`
+  ${({ $alignItems }) => applyStyle("align-items", !!$alignItems ? $alignItems : "center")}
   display: flex;
   flex-flow: column;
   margin: 1rem auto;
-  ${({ centerText }) => !!centerText && `text-align: center;`}
+  ${({ $centerText }) => !!$centerText && `text-align: center;`}
 
   & > * ${InputInner}, ${TextAreaInner} {
     display: block;

@@ -6,7 +6,7 @@ import { Constants } from "../constants";
 import { PillButton } from "./button";
 import { maxPageWidth, trackCustomEvent, trackFacebook } from "../utils";
 
-type PageNames = "Working Together" | "Homepage";
+type PageNames = "Working Together" | "Homepage" | "Coaching";
 
 type BookingSectionProps = {
   backgroundColor?: string;
@@ -18,15 +18,17 @@ type BookingSectionProps = {
   page: PageNames;
 };
 
+type BookingFrame = {
+  $showBookingSection: boolean;
+};
+
 const PaddedParagraph = styled.p`
   padding: 5px;
 `;
 
-export const BookingIframe = styled.iframe.withConfig<{
-  showBookingSection: boolean;
-}>({ shouldForwardProp: prop => prop !== "showBookingSection" })`
+export const BookingIframe = styled.iframe<BookingFrame>`
   border: none;
-  display: ${({ showBookingSection }) => (showBookingSection ? "block" : "none")};
+  display: ${({ $showBookingSection }) => ($showBookingSection ? "block" : "none")};
   height: 800px;
   width: ${maxPageWidth};
 
@@ -78,8 +80,8 @@ export const BookingSection = ({
     <section>
       <BookingScript />
       <CenteredText
-        backgroundColor={!!backgroundColor && !showBookingSection ? backgroundColor : "#FFF"}
-        padding="1rem"
+        $backgroundColor={!!backgroundColor && !showBookingSection ? backgroundColor : "#FFF"}
+        $padding="1rem"
       >
         {!showBookingSection && <h1>{formTitle}</h1>}
         {!showBookingSection && <h2>{formDescription}</h2>}
@@ -91,7 +93,7 @@ export const BookingSection = ({
           {showBookingSection ? "Hide Scheduling Section" : "Tap To Schedule With Sheila Anne"}
         </PillButton>
       </CenteredText>
-      <BookingIframe showBookingSection={showBookingSection} src={bookingUrl} />
+      <BookingIframe $showBookingSection={showBookingSection} src={bookingUrl} />
     </section>
   );
 };

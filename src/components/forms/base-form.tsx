@@ -113,7 +113,7 @@ export const BaseForm: FC<BaseFormProps> = ({
   };
 
   return (
-    <FormWrapperSection centerText={true} itemProp="mainContentOfPage">
+    <FormWrapperSection $centerText={true} itemProp="mainContentOfPage">
       <h1>{formTitle}</h1>
       <p>{formDescription}</p>
       {!!formParagraph && <PaddedParagraph>{formParagraph}</PaddedParagraph>}

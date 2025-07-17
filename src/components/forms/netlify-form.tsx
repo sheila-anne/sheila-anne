@@ -10,6 +10,7 @@ const Honeypot = styled.p`
 
 type NetylifyFormProps = {
   actionRoute: string;
+  children?: React.ReactNode;
   formName: string;
   submitButtonText: string;
 };

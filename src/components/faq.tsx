@@ -20,6 +20,10 @@ type State = {
   [key in string]: boolean;
 };
 
+type IsExpandedProps = {
+  $isExpanded: boolean;
+};
+
 const Clickable = styled.div`
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -27,8 +31,8 @@ const Clickable = styled.div`
   margin: 2rem 0;
 `;
 
-const HiddenText = styled.p.withConfig<{ isExpanded: boolean }>({ shouldForwardProp: prop => prop !== "isExpanded" })`
-  display: ${({ isExpanded }) => (!!isExpanded ? "block" : "none")};
+const HiddenText = styled.p<IsExpandedProps>`
+  display: ${({ $isExpanded }) => (!!$isExpanded ? "block" : "none")};
   margin-top: 1rem;
 `;
 
@@ -38,14 +42,12 @@ const SmallHeadline = styled.h2`
   text-decoration: underline;
 `;
 
-const RotateOnOpen = styled.span.withConfig<{ isExpanded: boolean }>({
-  shouldForwardProp: prop => prop !== "isExpanded",
-})`
+const RotateOnOpen = styled.span<IsExpandedProps>`
   display: block;
   position: absolute;
   right: 100%;
   top: 0;
-  transform: rotate(${({ isExpanded }) => (!!isExpanded ? 90 : 0)}deg);
+  transform: rotate(${({ $isExpanded }) => (!!$isExpanded ? 90 : 0)}deg);
   transition: ease 0.3s;
 `;
 
@@ -94,9 +96,9 @@ export const FAQ = ({ faq }: FAQProps) => {
           }
         >
           <SmallHeadline>
-            {frequentlyAsked.question} <RotateOnOpen isExpanded={state[frequentlyAsked.question]}>→</RotateOnOpen>
+            {frequentlyAsked.question} <RotateOnOpen $isExpanded={state[frequentlyAsked.question]}>→</RotateOnOpen>
           </SmallHeadline>
-          <HiddenText isExpanded={state[frequentlyAsked.question]}>{frequentlyAsked.answer}</HiddenText>
+          <HiddenText $isExpanded={state[frequentlyAsked.question]}>{frequentlyAsked.answer}</HiddenText>
         </Clickable>
       ))}
     </section>

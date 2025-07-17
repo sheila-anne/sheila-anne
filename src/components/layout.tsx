@@ -11,13 +11,17 @@ const MainWrapper = styled.main`
   @font-face {
     font-family: "Inria Serif";
     font-display: fallback;
-    src: local("InriaSerif"), url("/Fonts/InriaSerif/InriaSerif.woff2") format("woff2");
+    src:
+      local("InriaSerif"),
+      url("/Fonts/InriaSerif/InriaSerif.woff2") format("woff2");
   }
 
   @font-face {
     font-family: "Montserrat";
     font-display: fallback;
-    src: local("Montserrat"), url("/Fonts/Montserrat/Montserrat.woff2") format("woff2");
+    src:
+      local("Montserrat"),
+      url("/Fonts/Montserrat/Montserrat.woff2") format("woff2");
     font-weight: 400;
   }
 
@@ -47,15 +51,15 @@ const MainWrapper = styled.main`
   }
 `;
 
-const Layout: FC<GatsbyPage> = ({ children, location, itemType }) => {
+const Layout: FC<GatsbyPage> = ({ children, location, itemType, shouldShowFooterSubscribe }) => {
   useScrollHandler(location);
   return (
     <>
-      <Nav location={location} />
+      <Nav $location={location} />
       <MainWrapper itemType={itemType} itemScope={!!itemType ? true : undefined}>
         {children}
       </MainWrapper>
-      <Footer />
+      <Footer shouldShowFooterSubscribe={shouldShowFooterSubscribe} />
     </>
   );
 };

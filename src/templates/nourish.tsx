@@ -19,13 +19,11 @@ import {
   Timeline,
 } from "../components";
 
-const ColorContainer = styled.div.withConfig<{ backgroundColor?: string; marginBottom?: string; padding?: string }>({
-  shouldForwardProp: prop => prop !== "backgroundColor" && prop !== "marginBottom" && prop !== "padding",
-})`
-  ${({ backgroundColor }) => applyStyle("background-color", backgroundColor)}
+const ColorContainer = styled.div<{ $backgroundColor?: string; $marginBottom?: string; $padding?: string }>`
+  ${({ $backgroundColor }) => applyStyle("background-color", $backgroundColor)}
   margin-top: 1rem;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1rem")};
-  padding: ${({ padding }) => (padding ? padding : "1rem 2rem")};
+  margin-bottom: ${({ $marginBottom }) => ($marginBottom ? $marginBottom : "1rem")};
+  padding: ${({ $padding }) => $padding ?? "1rem 2rem"};
 `;
 
 const RoundedImage = styled(PreviewCompatibleImage)`
@@ -73,10 +71,8 @@ const faqs = [
 ];
 
 const NourishApplyButton = ({ margin = "2rem 0" }) => (
-  <CenteredText margin={margin}>
-    <LinkButton backgroundColor={Constants.Colors.redRocksRed} to="/nourish-form">
-      Sign up for the waitlist!
-    </LinkButton>
+  <CenteredText $margin={margin}>
+    <LinkButton to="/nourish-form">Sign up for the waitlist!</LinkButton>
   </CenteredText>
 );
 
@@ -88,7 +84,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         title="Nourish whole person coaching program"
       />
       <h1 style={{ display: "none" }}>Nourish: A Whole-Person Coaching Program</h1>
-      <CenteredText fontSize="1.5rem" fontWeight="800" margin="2rem 0">
+      <CenteredText $fontSize="1.5rem" $fontWeight="800" $margin="2rem 0">
         Nourish is currently in session! Sign up for the waitlist to be the first to know about next round details.
       </CenteredText>
       <NourishApplyButton margin="2rem 0" />
@@ -96,7 +92,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         imageInfo={frontmatter.subBanner.childImageSharp.gatsbyImageData}
         title="Nourish montage image"
       />
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray} padding="0 0 0 2rem">
+      <ColorContainer $backgroundColor={Constants.Colors.nourishGray} $padding="0 0 0 2rem">
         <StyledQuote>
           “I have tried out different therapists, read self-help books, signed up for online modules, in search of
           something healing that was really worth investing time, energy and money into. Up until Nourish, most of these
@@ -152,7 +148,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           title="Welcome home to Nourish"
         />
       </div>
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+      <ColorContainer $backgroundColor={Constants.Colors.nourishGray}>
         <CenteredText color={Constants.Colors.nourishBrown}>
           <div>
             Nourish is a <strong>14-week group coaching program</strong> that will give you the key building blocks,
@@ -163,7 +159,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           </div>
         </CenteredText>
       </ColorContainer>
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+      <ColorContainer $backgroundColor={Constants.Colors.nourishGray}>
         <CenteredText color={Constants.Colors.nourishBrown}>
           <div>
             The intentionally intimate community will foster your growth - be it personal or professional - and hold you
@@ -173,7 +169,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           </div>
         </CenteredText>
       </ColorContainer>
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray}>
+      <ColorContainer $backgroundColor={Constants.Colors.nourishGray}>
         <CenteredText color={Constants.Colors.nourishBrown}>
           <div>
             The tools and learnings you acquire within the program are lifelong (just ask the alumni who are still
@@ -209,7 +205,7 @@ export const NourishTemplate = ({ frontmatter }) => {
           because I am now clear the world around me is clearer too. This program helped me develop a true sense of self
           worth that I now get to shine as a light into the world around me." - Jordan
         </StyledQuote>
-        <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
+        <ColorContainer $backgroundColor={Constants.Colors.nourishNeutral}>
           <CenteredText>
             <SmallerHeadline>The Nourish Experience 🌼</SmallerHeadline>
             <h3>2 Virtual Retreats</h3>
@@ -250,10 +246,10 @@ export const NourishTemplate = ({ frontmatter }) => {
           </CenteredText>
         </ColorContainer>
         <FlexContainer
-          backgroundColor={Constants.Colors.nourishGray}
-          justifyContent="center"
-          margin="1rem 0"
-          padding="1rem 0"
+          $backgroundColor={Constants.Colors.nourishGray}
+          $justifyContent="center"
+          $margin="1rem 0"
+          $padding="1rem 0"
         >
           <HalfColumn>
             <FlexColSplitImage>
@@ -272,7 +268,7 @@ export const NourishTemplate = ({ frontmatter }) => {
               of connecting to myself and my purpose.
             </SpacedOutText>
           </HalfColumn>
-          <FlexContainer justifyContent="center" backgroundColor={Constants.Colors.nourishGray}>
+          <FlexContainer $justifyContent="center" $backgroundColor={Constants.Colors.nourishGray}>
             <SpacedOutText padding="1rem">
               Through the tragic loss of my mother, pivoting my career (again and again), leaving the corporate world,
               falling in love, and uprooting my life countless times, I've learned that anything is possible when you
@@ -313,7 +309,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         </ul>
       </div>
       <NourishApplyButton />
-      <ColorContainer backgroundColor={Constants.Colors.nourishNeutral}>
+      <ColorContainer $backgroundColor={Constants.Colors.nourishNeutral}>
         {/* SmallerHeadline is an h2.. */}
         <SmallerHeadline>A deeper look at what you'll learn:</SmallerHeadline>
         <h3>Body</h3>
@@ -439,7 +435,7 @@ export const NourishTemplate = ({ frontmatter }) => {
         imageInfo={frontmatter.coachingImage.childImageSharp.gatsbyImageData}
         title="Sheila coaching in person"
       />
-      <ColorContainer backgroundColor={Constants.Colors.nourishGray} padding="0 0 0 2rem">
+      <ColorContainer $backgroundColor={Constants.Colors.nourishGray} $padding="0 0 0 2rem">
         <h2>What people are saying about the Nourish experience</h2>
         <StyledQuote>
           “Nourish is a life changing program that provides a safe space for a supportive community filled with mutual

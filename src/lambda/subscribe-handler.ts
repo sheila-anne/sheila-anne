@@ -27,11 +27,11 @@ type EventBody = {
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
   bodyGuardian(event);
 
-  const eventProperties = JSON.parse(event.body) as EventBody;
-  if(!eventProperties.tags) {
-    eventProperties.tags = '';
+  const eventProperties = JSON.parse(event.body ?? "{}") as EventBody;
+  if (!eventProperties.tags) {
+    eventProperties.tags = "";
   }
-  console.log('Received the following event:' + event.body);
+  console.log("Received the following event:" + event.body);
 
   let namesTuple = ["", ""];
   if (eventProperties.name && eventProperties.name.length > 0) {
@@ -61,7 +61,7 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
     "Content-Type": "application/json;charset=utf-8",
   };
 
-  return fetchResponse<MailchimpResponse>(process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI, data, headers).then(res => {
+  return fetchResponse<MailchimpResponse>(process.env.MAILCHIMP_MEMBER_SUBSCRIBE_URI ?? "", data, headers).then(res => {
     const responseData = res as MailchimpResponse;
     if (responseData.status) {
       const memberExists = responseData.title === "Member Exists";

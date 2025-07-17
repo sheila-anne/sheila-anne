@@ -9,7 +9,7 @@ type BurgerProps = {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const StyledBurger = styled.button.withConfig<{ isOpen: boolean }>({ shouldForwardProp: prop => prop !== "isOpen" })`
+const StyledBurger = styled.button<{ $isOpen: boolean }>`
   align-items: center;
   background: transparent;
   border: none;
@@ -29,24 +29,24 @@ const StyledBurger = styled.button.withConfig<{ isOpen: boolean }>({ shouldForwa
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ isOpen }) => (!!isOpen ? "#FFF" : Constants.Colors.navLinkText)};
+    background: ${({ $isOpen }) => (!!$isOpen ? "#FFF" : Constants.Colors.navLinkText)};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ isOpen }) => (isOpen ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ $isOpen }) => ($isOpen ? "rotate(45deg)" : "rotate(0)")};
     }
 
     :nth-child(2) {
-      opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
-      height: ${({ isOpen }) => !!isOpen && "0"};
-      transform: ${({ isOpen }) => (isOpen ? "translateX(20px)" : "translateX(0)")};
+      opacity: ${({ $isOpen }) => ($isOpen ? "0" : "1")};
+      height: ${({ $isOpen }) => !!$isOpen && "0"};
+      transform: ${({ $isOpen }) => ($isOpen ? "translateX(20px)" : "translateX(0)")};
     }
 
     :nth-child(3) {
-      transform: ${({ isOpen }) => (isOpen ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ $isOpen }) => ($isOpen ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
 `;
@@ -71,7 +71,7 @@ const onClick = (isOpen: boolean, setIsOpen: Dispatch<SetStateAction<boolean>>) 
 };
 
 export const Burger = ({ isOpen, setIsOpen }: BurgerProps) => (
-  <StyledBurger aria-haspopup={true} isOpen={isOpen} onClick={() => onClick(isOpen, setIsOpen)}>
+  <StyledBurger aria-haspopup={true} $isOpen={isOpen} onClick={() => onClick(isOpen, setIsOpen)}>
     <div />
     <div />
     <div />

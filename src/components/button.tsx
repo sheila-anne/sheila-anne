@@ -8,11 +8,11 @@ type PillButtonProps = {
   color?: string;
   children?: ReactNode;
   onClick?: (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => void;
+  title?: string;
   type?: "submit" | undefined;
 };
 
 type ButtonProps = {
-  backgroundColor?: string;
   color?: string;
 };
 
@@ -24,8 +24,7 @@ export const FocusCss = css`
 `;
 
 const ButtonCss = css<ButtonProps>`
-  background-color: ${({ backgroundColor }) =>
-    !!backgroundColor ? Constants.Colors.buttonFallback : Constants.Colors.buttonFallback};
+  background-color: ${Constants.Colors.buttonFallback};
   border: none;
   border-radius: 1rem;
   color: ${({ color }) => (!!color ? color : "#FFF")};
@@ -45,16 +44,12 @@ const ButtonCss = css<ButtonProps>`
   }
 `;
 
-export const PlainButton = styled.button.withConfig<ButtonProps>({
-  shouldForwardProp: prop => prop !== "backgroundColor",
-})`
+export const PlainButton = styled.button<ButtonProps>`
   ${ButtonCss}
   ${FocusCss}
 `;
 
-export const LinkButton = styled(SmartLink).withConfig<ButtonProps>({
-  shouldForwardProp: prop => prop !== "backgroundColor",
-})`
+export const LinkButton = styled(SmartLink)<ButtonProps>`
   ${ButtonCss}
   ${FocusCss}
 `;
@@ -120,8 +115,8 @@ const StyledPillButton = styled.button<{ color?: string }>`
   }
 `;
 
-export const PillButton: FC<PillButtonProps> = ({ color, children, onClick, type }) => (
-  <StyledPillButton color={color} onClick={e => onClick && onClick(e)} type={type}>
+export const PillButton: FC<PillButtonProps> = ({ color, children, onClick, title, type }) => (
+  <StyledPillButton title={title} color={color} onClick={e => onClick && onClick(e)} type={type}>
     <ButtonSpan>{children}</ButtonSpan>
   </StyledPillButton>
 );

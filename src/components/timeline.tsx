@@ -84,15 +84,15 @@ const TimelineItemContent = styled.div`
 }
 `;
 
-const TimelineText = styled.p.withConfig<{ isBold: boolean }>({ shouldForwardProp: prop => prop !== "isBold" })`
-  ${({ isBold }) => (!!isBold ? "font-weight: 800;" : undefined)}
+const TimelineText = styled.p<{ $isBold: boolean }>`
+  ${({ $isBold }) => (!!$isBold ? "font-weight: 800;" : undefined)}
   font-size: 16px;
   line-height: 24px;
   margin: 15px 0;
   max-width: 250px;
 `;
 
-const TimelineCircle = styled.span.withConfig<{ tagLabel: string }>({ shouldForwardProp: prop => prop !== "tagLabel" })`
+const TimelineCircle = styled.span`
   background-color: ${Constants.Colors.redRocksRed};
   border: 3px solid ${Constants.Colors.theGroveGreenGray};
   border-radius: 50%;
@@ -113,8 +113,8 @@ const TimelineItem = ({ timelineData }: { timelineData: TimelineType }) => {
   return timelineData.text && timelineData.text.length > 0 ? (
     <TimelineItemWrapper>
       <TimelineItemContent>
-        <TimelineText isBold={!!timelineData.isBold}>{timelineData.text}</TimelineText>
-        <TimelineCircle tagLabel={timelineData.text} />
+        <TimelineText $isBold={!!timelineData.isBold}>{timelineData.text}</TimelineText>
+        <TimelineCircle />
       </TimelineItemContent>
     </TimelineItemWrapper>
   ) : null;

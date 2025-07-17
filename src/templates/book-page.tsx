@@ -32,7 +32,7 @@ const BookPage = ({ data, location }: { data: any; location: Location }) => {
         title={post.frontmatter.pageTitle}
       />
       <BaseTemplate contentComponent={HTMLContent} content={post.html} />
-      <BookingIframe height="800px" showBookingSection={true} src={bookingUrl} />
+      <BookingIframe height="800px" $showBookingSection={true} src={bookingUrl} />
     </Layout>
   );
 };

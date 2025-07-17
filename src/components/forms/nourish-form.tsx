@@ -52,7 +52,7 @@ export const NourishForm = ({
   >
     <Input
       autoComplete="given-name"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="text"
       id="name"
       name="name"
@@ -62,7 +62,7 @@ export const NourishForm = ({
     />
     <Input
       autoComplete="email"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="email"
       id="email"
       inputMode="email"

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { GatsbyPage } from "../types/global";
 import { Layout, SEO } from "../components";
 
 const NotFoundPage = ({ location }: GatsbyPage) => (

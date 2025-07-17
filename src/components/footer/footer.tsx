@@ -21,11 +21,11 @@ const FooterGatsbyImage = styled(GatsbyImage)`
   margin-right: 1rem;
 `;
 
-const FlexFooter = styled.div<{ margin?: string }>`
+const FlexFooter = styled.div<{ $margin?: string }>`
   align-items: center;
   display: flex;
   justify-content: center;
-  ${({ margin }) => !!margin && `margin: ${margin};`}
+  ${({ $margin }) => !!$margin && `margin: ${$margin};`}
 `;
 
 const FooterColumn = styled.div`
@@ -108,7 +108,7 @@ const footerQuery = graphql`
   }
 `;
 
-export const Footer = () => {
+export const Footer = ({ shouldShowFooterSubscribe = true }) => {
   const { pccImage, wpccImage, ticImage } = useStaticQuery<{
     pccImage: IGatsbyImageData;
     wpccImage: IGatsbyImageData;
@@ -117,7 +117,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <FooterImage src={sheilaLogo} alt="Sheila Anne" style={{ width: "14em", height: "10em" }} />
-      <FlexFooter margin="0 0 .5rem 0">
+      <FlexFooter $margin="0 0 .5rem 0">
         <FooterGatsbyImage
           alt="ICF Professional Certified Coach"
           image={getImage(pccImage) as IGatsbyImageData}
@@ -137,9 +137,7 @@ export const Footer = () => {
           title="Trauma Informed Coach"
         />
       </FlexFooter>
-      <FlexFooter>
-        <SubscribeForm />
-      </FlexFooter>
+      <FlexFooter>{shouldShowFooterSubscribe && <SubscribeForm page="footer" />}</FlexFooter>
       <FlexFooter>
         <FooterColumn>
           <FooterList>

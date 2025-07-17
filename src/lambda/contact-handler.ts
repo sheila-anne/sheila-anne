@@ -29,7 +29,7 @@ type HubspotResponse = {
 exports.handler = async function (event: APIGatewayEvent, context: Context) {
   bodyGuardian(event);
 
-  const eventProperties = JSON.parse(event.body) as EventProperties;
+  const eventProperties = JSON.parse(event.body ?? "{}") as EventProperties;
 
   const data = {
     submittedAt: new Date().getTime(),

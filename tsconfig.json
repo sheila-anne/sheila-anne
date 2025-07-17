@@ -10,7 +10,8 @@
     "esModuleInterop": true,
     "noUnusedLocals": false,
     "noImplicitAny": false,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules", "public", ".cache"]
 }

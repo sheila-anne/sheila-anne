@@ -3,20 +3,13 @@ import React from "react";
 import { NetlifyForm } from "./";
 import { Input, TextArea } from "./form-elements";
 
-export const ContactForm = ({
-  backgroundColor,
-  submitText,
-}) => (
-  <NetlifyForm
-    actionRoute="/thank-you"
-    formName={"contact-us"}
-    submitButtonText={submitText}
-  >
+export const ContactForm = ({ backgroundColor, submitText }) => (
+  <NetlifyForm actionRoute="/thank-you" formName={"contact-us"} submitButtonText={submitText}>
     <h2>Let's get in touch</h2>
     <div>Have further questions for me? Don't hesitate to reach out, let's get to know one another:</div>
     <Input
       autoComplete="name"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="text"
       id="name"
       name="name"
@@ -26,7 +19,7 @@ export const ContactForm = ({
     />
     <Input
       autoComplete="email"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       type="email"
       id="email"
       inputMode="email"
@@ -37,7 +30,7 @@ export const ContactForm = ({
     />
     <Input
       autoComplete="tel"
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       id="phone"
       inputMode="tel"
       maxLength={11}
