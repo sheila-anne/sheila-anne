@@ -14,9 +14,7 @@ type BannerImageProps = {
 
 const BannerImageWrapper = styled.div`
   display: flex;
-  @media (max-width: ${Constants.mobileWidth}) {
-    flex-flow: column wrap;
-  }
+  flex-flow: column wrap;
 `;
 
 export const ImageHeadlineContainer = styled.h1<{

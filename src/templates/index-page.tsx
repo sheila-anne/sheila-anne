@@ -147,7 +147,7 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
       <BannerImage
         image={image.childImageSharp.gatsbyImageData}
         imageHeadline="Flowing Forward Together: Align, Inspire, Transform"
-        title="Sheila Anne sitting on a yoga mat smiling"
+        title="Sheila giving herself a hug"
       />
       <Container>
         <CenteredText>
