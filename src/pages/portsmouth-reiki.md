@@ -40,13 +40,14 @@ During your Reiki session with Sheila, you can expect:
 
 ### In-Person Sessions
 
-Sheila can travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area.
+Sheila now offers Reiki healing at a beautiful, sun-soaked office in the Carey Cottage in Portsmouth, NH. You may schedule with her on Fridays or by appointment on weekends.
 
-- Investment - $115 for 60 minute appointment.
+- Investment - $125 for 60 minute appointment.
 
-[Book in-person Reiki here](https://calendly.com/sheila-anne/reiki-healing-session)
+[Contact Sheila to book!](mailto:sheila@sheilaanne.com)
 
-Need Sheila to travel further? Please [contact me to learn more](mailto:sheila@sheilaanne.com).
+Sheila can also travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area. You may reach out using the same contact link above.
+
 
 ### Distance Reiki sessions conducted remotely
 
