@@ -117,10 +117,10 @@ We'll enjoy soulful chats by the fireplace
 Take time in the hot tub after a group nature walk or stargazing at night
 
 ![](/img/king-suite-1.webp)
-King suite (SOLD OUT)
+King suite (1 left)
 
-- ~~$2,200 to have this all to yourself~~
-- ~~Share with friend/ mom/ sister - $1,500 each~~
+- $2,200 to have this all to yourself
+- Share with friend/ mom/ sister - $1,500 each
 
 ![](/img/queen-suite-alpine.webp)
 Queen suite (SOLD OUT)
@@ -129,7 +129,7 @@ Queen suite (SOLD OUT)
 - ~~Share with friend/ mom/ sister - $1,200 each~~
 
 ![](/img/lux-bunk.webp)
-Lux bunk (eight available, across two rooms) ONLY TWO LEFT
+Lux bunk (1 left)
 
 - $1,200 per person
 - If you would prefer a king suite all to yourself, please reach out! We may be able to accommodate you.
