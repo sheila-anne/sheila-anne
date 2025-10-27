@@ -8,16 +8,6 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Autumn Alchemy
-
-THURSDAY OCTOBER 16 - SUNDAY OCTOBER 19
-
-Bethel, Maine
-
-Join us for this epic Fall women’s retreat. Nestled in Maine's breathtaking mountains, Autumn Alchemy offers a cocoon where healing, introspection, and radical self-care converge.
-
-[Full Details & Booking](/autumn-alchemy/)
-
 ## Costa Rica Pura Vida Retreat
 
 SUNDAY, FEBRUARY 1, 2026 - SATURDAY, FEBRUARY 7, 2026
@@ -37,6 +27,18 @@ FRIDAY, MAY 1, 2026 - MONDAY, MAY 4, 2026
 It's time to escape to a gorgeous sun-soaked oasis awaiting you in the magic of the high desert. This long weekend retreat includes two yoga classes per day, optional hikes/day trips, star gazing, epic food cooked by our private in-house chef, and more. Just 3 rooms left [BOOK NOW!](https://www.saraholesonyoga.com/joshuatree-retreat)
 
 ![Joshua Tree 2026 retreat photo](/img/joshua-tree-2026-retreat.jpg "Imagine relaxing by the fire in Joshua Tree with us!")
+
+## Art of Being Retreat
+
+OCTOBER 11 - OCTOBER 17 2026
+
+Tuscany/Umbria , Italy
+
+Imagine retreating to a gorgeous old Italian estate for yoga, adventure, and spending time with women who feel like home. In this sacred container of sisterhood and Italian beauty, you’ll explore charming Tuscan towns, mindfully move your body, and reconnect with the masterpiece you’ve always been.
+
+[Details and book](https://www.renaissanceroomboudoir.com/the-art-of-being-retreat/)
+
+![Tuscany 2026 retreat photo](/img/Tuscany-retreat.jpg "Join us for a dream experience in Tuscany!")
 
 ## Yoga
 
