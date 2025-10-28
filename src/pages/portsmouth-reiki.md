@@ -1,5 +1,5 @@
 ---
-templateKey: pura-vida-retreat
+templateKey: reiki
 pageTitle: Portsmouth Reiki | Sheila Anne
 pageDescription: Sheila invites you to experience the transformative healing energy of Reiki in the charming coastal city of Portsmouth, New Hampshire. Perfect for women looking for a nurturing space to release anxiety and fear, connect with their confidence, and receive clarity in their lives. Come for one session and see why other women prioritize Reiki as a must-have in their wellness rituals.
 bannerImage: /img/reiki-crown.jpg
@@ -44,10 +44,9 @@ Sheila now offers Reiki healing at a beautiful, sun-soaked office in the Carey C
 
 - Investment - $125 for 60 minute appointment.
 
-[Contact Sheila to book!](mailto:sheila@sheilaanne.com)
+[Book now!](#book)
 
-Sheila can also travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area. You may reach out using the same contact link above.
-
+Sheila can also travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area. [Contact Sheila to learn more and book](mailto:sheila@sheilaanne.com).
 
 ### Distance Reiki sessions conducted remotely
 

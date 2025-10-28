@@ -32,6 +32,7 @@ export const Constants = {
   booking: {
     allServicesUrl: getBookingAppointmentUrl(),
     explorationUrl: getBookingAppointmentUrl("exploration-call"),
+    reikiUrl: getBookingAppointmentUrl("reiki-healing-session"),
     rootToRiseUrl: getBookingAppointmentUrl("root-to-rise-intro-call"),
   },
   textBannerKey: "hide-banner",
