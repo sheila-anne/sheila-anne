@@ -46,7 +46,9 @@ Sheila now offers Reiki healing at a beautiful, sun-soaked office in the Carey C
 
 [Book now!](#book)
 
-Sheila can also travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area. [Contact Sheila to learn more and book](mailto:sheila@sheilaanne.com).
+Sheila can also travel to your home, vacation rental, or preferred location within the greater Portsmouth, NH area.
+
+[Contact Sheila to learn more and book](mailto:sheila@sheilaanne.com).
 
 ### Distance Reiki sessions conducted remotely
 
