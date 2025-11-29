@@ -54,7 +54,7 @@ Sheila can also travel to your home, vacation rental, or preferred location with
 
 Sheila currently serves clients worldwide via Zoom and Google Meet and, yes, you can expect the same amazing benefits!
 
-- Investment - $95 for 45 minute appointment
+- Investment - $115 for 60 minute appointment
 
 [Book distance Reiki](https://calendly.com/sheila-anne/reiki-healing-session-distance)
 
