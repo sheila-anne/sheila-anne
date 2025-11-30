@@ -9,6 +9,16 @@ path: /portsmouth-reiki
 
 # Reiki Energy Healing
 
+## Self-Care Sale! Only until 12/5
+
+20% off 5-pack of sessions with code **CELEBRATE20**
+In-person Reiki in Portsmouth, NH [buy 5-pack](https://buy.stripe.com/5kQeVc5SxbHCfjZaygc3m06)
+Distance Reiki, anywhere in the world [buy 5-pack](https://buy.stripe.com/14A8wOgxbh1W9ZFgWEc3m05)
+
+15% off single session with code **CELEBRATE15**
+In-Person in Portsmouth, NH [buy single session](https://buy.stripe.com/14A3cucgV12Y2xdbCkc3m04)
+Distance Reiki, anywhere in the world [single session](https://buy.stripe.com/3cIbJ05Sx7rmefVbCkc3m03)
+
 !["Sheila practicing Reiki on a client in Portsmouth"](/img/reiki-crown.jpg)
 
 Experience the transformative healing energy of Reiki. Sheila will help you restore balance to your energy systems, accelerate healing, reclaim your mind-body connection and promote joy and clarity. Come for one session and see why others prioritize Reiki as a must-have in their wellness rituals.
