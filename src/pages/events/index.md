@@ -22,7 +22,7 @@ We can't wait to host the next group of amazing people in Costa Rica next year!
 
 ## Joshua Tree Yoga & Adventure Retreat
 
-FRIDAY, MAY 1, 2026 - MONDAY, MAY 4, 2026
+FRIDAY, MAY 1, 2026 - MONDAY, MAY 4, 2026 (SOLD OUT!)
 
 It's time to escape to a gorgeous sun-soaked oasis awaiting you in the magic of the high desert. This long weekend retreat includes two yoga classes per day, optional hikes/day trips, star gazing, epic food cooked by our private in-house chef, and more. Just 3 rooms left [BOOK NOW!](https://www.saraholesonyoga.com/joshuatree-retreat)
 
