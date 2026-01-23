@@ -170,7 +170,7 @@ const getNavLinkItems = (
       text: "Blog",
       title: "Writing samples from Sheila Anne",
     },
-    { to: "/events/", text: "Events", title: "Upcoming events with Sheila Anne" },
+    { to: "/events/", text: "Retreats", title: "Upcoming events & retreats with Sheila Anne" },
     { to: "/corporate-wellness/", text: "Corporate Wellness", title: "Corporate Wellness offerings" },
     { to: "/portsmouth-reiki/", text: "Reiki", title: "Reiki Energy Healing in Portsmouth" },
   ];
