@@ -1,9 +1,1 @@
-export type FormPage =
-  | "contact"
-  | "opt-in"
-  | "freebie"
-  | "footer"
-  | "nourish"
-  | "renewal"
-  | "masterclass"
-  | "subscribe";
+export type FormPage = "contact" | "footer" | "nourish" | "renewal" | "subscribe";

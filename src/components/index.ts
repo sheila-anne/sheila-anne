@@ -8,16 +8,7 @@ export { BookingIframe, BookingSection, BookingScript } from "./booking";
 export { BreakOutCss, BreakOutImage, PreviewCompatibleFlexImage, PreviewCompatibleImage } from "./preview-compatible";
 export { ContentBreak } from "./content-break";
 export { LinkButton, PlainButton, PillButton } from "./button";
-export {
-  ContactForm,
-  FreebieForm,
-  MasterclassForm,
-  NetlifyForm,
-  NourishForm,
-  OptInForm,
-  RenewalForm,
-  SubscribeForm,
-} from "./forms/";
+export { ContactForm, NetlifyForm, SubscribeForm } from "./forms/";
 export { Content, HTMLContent } from "./content";
 export { CenteredText } from "./centered";
 export { FAQ } from "./faq";

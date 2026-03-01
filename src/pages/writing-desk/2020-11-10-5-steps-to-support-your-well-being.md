@@ -27,7 +27,7 @@ _Deep breath in. Deep breath out._
 
 The heightened energy around the country was palpable, catalyzed mostly by things out of our control. The overused word of 2020 — uncertainty — seemed exactly fitting for the time.
 
-In the wake of this, I was inspired to create a series of posts on [my Instagram](https://www.instagram.com/sheflowsandgrows/), focused on promoting individual well-being. With so much out of our control, it is absolutely essential to take care of ourselves and our environment. I am re-sharing and elaborating on those 5 ideas for you, so that you may come back to this page whenever you like, and find something that aligns with what you need.
+In the wake of this, I was inspired to create a series of posts on [my Instagram](https://www.instagram.com/sheilaanne__/), focused on promoting individual well-being. With so much out of our control, it is absolutely essential to take care of ourselves and our environment. I am re-sharing and elaborating on those 5 ideas for you, so that you may come back to this page whenever you like, and find something that aligns with what you need.
 
 ## 1. Create your sanctuary
 

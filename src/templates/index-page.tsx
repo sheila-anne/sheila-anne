@@ -3,15 +3,12 @@ import React from "react";
 import styled from "styled-components";
 
 import {
-  BannerLink,
   BannerImage,
   BlogRoll,
   CenteredText,
   ContentBreak,
   Features,
   FlexContainer,
-  FlexColSplitImage,
-  HalfColumn,
   Layout,
   LinkButton,
   OneTreePlanted,
@@ -19,7 +16,6 @@ import {
   SEO,
   SmartLink,
   Testimonial,
-  Youtube,
 } from "../components";
 import { Constants } from "../constants";
 import { applyStyle } from "../utils";
@@ -102,8 +98,7 @@ const Container = styled.div`
 
 const BannerHeadline = styled.h1<HeadlineProps>`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
-  box-shadow:
-    ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
+  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
   color: ${({ $fontColor }) => (!!$fontColor ? $fontColor : "#FFF")};
   font-size: 1.5rem;
@@ -158,17 +153,7 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
           <Features gridItems={frontmatter.intro.blurbs} />
         </FlexContainer>
         <ContentBreak />
-        <CenteredText $margin="0 0 2rem 0">
-          <FlexContainer $justifyContent="center" $margin="1rem">
-            <strong>Free masterclass with Sheila:</strong>
-          </FlexContainer>
-          <LinkButton to="/masterclass/">Learn more!</LinkButton>
-          <FlexContainer $margin="1rem">
-            In this video, you will learn the 5 step strategy that will help you shift from anxious & overwhelmed to
-            aligned & purposeful living.
-          </FlexContainer>
-        </CenteredText>
-        <ContentBreak />
+
         <CenteredText>
           <h3>What people are saying:</h3>
         </CenteredText>
@@ -187,32 +172,7 @@ export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateP
             {mainpitch.title} <SmartLink to="/book/exploration/">Book your first call with me here.</SmartLink>
           </div>
         </FlexContainer>
-        <FlexContainer $justifyContent="center" $margin="2rem 0">
-          <HalfColumn>
-            <FlexColSplitImage>
-              <SmartLink to="/freebie/" title="Positivity Pack freebie">
-                <PreviewCompatibleImage
-                  loading="lazy"
-                  imageAlt="Preview of the Positivity Pack freebie"
-                  imageInfo={freebie.childImageSharp.gatsbyImageData}
-                  title="Preview of the Positivity Pack freebie"
-                />
-              </SmartLink>
-            </FlexColSplitImage>
-          </HalfColumn>
-          <HalfColumn>
-            <FreebieHeading>Free Download!</FreebieHeading>
-            <div>
-              Find focus, be magnetic and create change from within with the{" "}
-              <BannerLink to="/freebie/" title="Positivity Pack freebie">
-                Positivity Pack
-              </BannerLink>
-              !
-            </div>
-          </HalfColumn>
-        </FlexContainer>
         <ContentBreak />
-        <Youtube url="7jTx1xMKI_Q" />
         <TestimonialContainer $margin="0 0 1rem 0">
           <Testimonial testimonials={fullTestimonials} />
         </TestimonialContainer>

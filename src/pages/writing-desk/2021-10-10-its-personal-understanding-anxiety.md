@@ -16,13 +16,14 @@ tags:
   - mindfulness
   - stress management
 ---
-*October 10th is World Mental Health Day. I thought this might be a good time to share my experience of identifying with anxiety and common misconceptions. This blog is purely for educational purposes and is not a replacement for mental health counseling. If you have questions don’t hesitate to reach out or connect.*
+
+_October 10th is World Mental Health Day. I thought this might be a good time to share my experience of identifying with anxiety and common misconceptions. This blog is purely for educational purposes and is not a replacement for mental health counseling. If you have questions don’t hesitate to reach out or connect._
 
 “I think I have … anxiety,” I said with an exhale, looking anywhere but at my therapist.
 
 Finally, I looked up. Her expression was open and neutral, as if I told her the sky was blue. As I was preparing for this conversation, I had imagined she would gasp and either tell me that I was wrong or that I needed to go on medication straight away.
 
-Neither of those things happened. 
+Neither of those things happened.
 
 Instead, we began to discuss what the sensations were in my body when I felt anxious, what I needed during times of high anxiety, and in what ways I was judging or criticizing my anxiety.
 
@@ -34,7 +35,7 @@ As it turns out, I’m not alone here. Amy Cuddy and Jill Ellyn Riley came up wi
 
 Even as a coach that has worked with over a hundred clients on promoting well-being and finding alignment in their lives and careers, I’m still learning all the time. I’ve come to understand that living in this place of “not-knowing-always-learning” is key for helping professionals to serve their clients at a high level.
 
-While growing my own relationship with anxiety, I’ve been able to help my clients get to know theirs. Like me, many of my clients experience varying levels of anxiety, but have been told most of their lives to “keep going,” “stay positive,” “just relax,” or “chill out.” Statements like these undermine our lived experience and keep us from fully stepping into our best selves.  I recently started a program to become a certified trauma-informed coach and I'm looking forward to the tools and understanding it will provide me with, so I can more powerfully help my clients.
+While growing my own relationship with anxiety, I’ve been able to help my clients get to know theirs. Like me, many of my clients experience varying levels of anxiety, but have been told most of their lives to “keep going,” “stay positive,” “just relax,” or “chill out.” Statements like these undermine our lived experience and keep us from fully stepping into our best selves. I recently started a program to become a certified trauma-informed coach and I'm looking forward to the tools and understanding it will provide me with, so I can more powerfully help my clients.
 
 In this article, I am busting a handful of myths that I used to believe about anxiety.
 
@@ -46,7 +47,7 @@ Like all emotions, anxiety has a purpose. It can boost blood flow, motivate us t
 
 ### People with anxiety should stop worrying
 
-\*sigh\* ... It's a shame that this idea is actually still circulating. While stress and worry can be symptoms or triggers for anxiety, it’s not the full picture. While worry relates to what is occurring for us cognitively, anxiety can be a full-body experience and does not need to be triggered by a worry. People experiencing anxiety might experience pain in a certain area of the body, forgetfulness and confusion, and hypo or hyper arousal. 
+\*sigh\* ... It's a shame that this idea is actually still circulating. While stress and worry can be symptoms or triggers for anxiety, it’s not the full picture. While worry relates to what is occurring for us cognitively, anxiety can be a full-body experience and does not need to be triggered by a worry. People experiencing anxiety might experience pain in a certain area of the body, forgetfulness and confusion, and hypo or hyper arousal.
 
 ### If you live a healthy lifestyle by eating right, sleeping, and exercising, you shouldn’t have anxiety
 
@@ -68,7 +69,7 @@ Throughout the pandemic, I’ve noticed periods of the month and hours of the da
 
 ### Communication
 
-On the note of asking for support, I’ve found honest communication to be key in managing anxiety and deepening my relationships. I do my best to ask others how they are feeling before I bring up something heavy, and I appreciate it when others do the same for me. When living with anxiety, it can be helpful to take time to get in touch with what you need, alone time, connection, movement, conversation, etc ... and to communicate that to others in your close circle, like a partner. No one is a mind reader, so I’ve made an effort to be responsible for myself and ask for what I need. 
+On the note of asking for support, I’ve found honest communication to be key in managing anxiety and deepening my relationships. I do my best to ask others how they are feeling before I bring up something heavy, and I appreciate it when others do the same for me. When living with anxiety, it can be helpful to take time to get in touch with what you need, alone time, connection, movement, conversation, etc ... and to communicate that to others in your close circle, like a partner. No one is a mind reader, so I’ve made an effort to be responsible for myself and ask for what I need.
 
 ### Breathing
 
@@ -80,19 +81,13 @@ Sometimes feeling stressed or anxious can make us want to stay put when it can a
 
 ### Guided Meditation 
 
-Whenever I start working with a new client I introduce them to meditation apps! Using an app not only gives them access to a wealth of on-demand guided meditations but can help them chart their progress. My favorite of the moment is Insight Timer but there are so many out there. These days some companies will pay for their employees to have premium meditation app subscriptions. I totally love this. A favorite meditation of mine during stressful times is the RAIN meditation by Tara Brach. If you’re curious about meditation I’d recommend reading 10% Happier by Dan Harris. 
+Whenever I start working with a new client I introduce them to meditation apps! Using an app not only gives them access to a wealth of on-demand guided meditations but can help them chart their progress. My favorite of the moment is Insight Timer but there are so many out there. These days some companies will pay for their employees to have premium meditation app subscriptions. I totally love this. A favorite meditation of mine during stressful times is the RAIN meditation by Tara Brach. If you’re curious about meditation I’d recommend reading 10% Happier by Dan Harris.
 
-
-
-
-
-Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to [drop me a note here](/contact/) or [message me on Instagram](https://www.instagram.com/sheflowsandgrows/).
+Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to [drop me a note here](/contact/) or [message me on Instagram](https://www.instagram.com/sheilaanne__/).
 
 ![](/img/understanding-anxiety.jpg)
 
-
-
-Further reading: 
+Further reading:
 
 [Recognizing and easing the physical symptoms of anxiety](https://www.health.harvard.edu/mind-and-mood/recognizing-and-easing-the-physical-symptoms-of-anxiety)
 

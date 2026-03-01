@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://www.sheilaanne.com`,
     social: {
       facebook: "https://facebook.com/sheilaannecoaching",
-      instagram: `https://instagram.com/sheflowsandgrows`,
+      instagram: `https://instagram.com/sheilaanne__`,
     },
     faqs: [
       {
@@ -163,7 +163,7 @@ module.exports = {
       options: {
         pixelId: process.env.FACEBOOK_PIXEL_ID,
       },
-    }
+    },
   ],
   developMiddleware: app => {
     app.use(
