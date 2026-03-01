@@ -71,19 +71,23 @@ const handleSubmit = async (
     }).catch(console.error);
   };
 
+  let buttonText = "Success!";
   const res = await fetch(formRoute, {
     method: "POST",
     body: JSON.stringify(formValues),
   })
     .then(res => res.json() as Promise<InnerHandlerReturn>)
-    .catch((err: Error) => ({
-      success: false,
-      error: err,
-    }));
+    .catch((err: Error) => {
+      buttonText = "Error";
+      console.error(err);
+      return {
+        success: false,
+        error: err,
+      };
+    });
 
-  const success = !!res?.success;
-
-  setButtonText(success ? "Success!" : "Error");
+  setButtonText(buttonText);
+  const success = buttonText === "Success!";
   isSubmitSuccess && isSubmitSuccess(success);
   if (success) {
     additionalSubmitHandler && additionalSubmitHandler(e);

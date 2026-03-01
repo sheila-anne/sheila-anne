@@ -12,7 +12,7 @@ path: /events
 
 FRIDAY, MAY 1, 2026 - MONDAY, MAY 4, 2026 (SOLD OUT!)
 
-It's time to escape to a gorgeous sun-soaked oasis awaiting you in the magic of the high desert. This long weekend retreat includes two yoga classes per day, optional hikes/day trips, star gazing, epic food cooked by our private in-house chef, and more. Just 3 rooms left [BOOK NOW!](https://www.saraholesonyoga.com/joshuatree-retreat)
+It's time to escape to a gorgeous sun-soaked oasis awaiting you in the magic of the high desert. This long weekend retreat includes two yoga classes per day, optional hikes/day trips, star gazing, epic food cooked by our private in-house chef, and more. [Learn more and join the waitlist!](https://www.saraholesonyoga.com/joshuatree-retreat)
 
 ![Joshua Tree 2026 retreat photo](/img/joshua-tree-2026-retreat.jpg "Imagine relaxing by the fire in Joshua Tree with us!")
 
@@ -23,6 +23,8 @@ OCTOBER 11 - OCTOBER 17 2026
 Tuscany/Umbria , Italy
 
 Imagine retreating to a gorgeous old Italian estate for yoga, adventure, and spending time with women who feel like home. In this sacred container of sisterhood and Italian beauty, you’ll explore charming Tuscan towns, mindfully move your body, and reconnect with the masterpiece you’ve always been.
+
+Post-Olympics special: join by March 31st and you will receive a free Human Design session ($250 value!). Book with a friend and you each earn $100 off your entire investment.
 
 [Details and book](https://www.renaissanceroomboudoir.com/the-art-of-being-retreat/)
 

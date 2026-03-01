@@ -13,7 +13,6 @@ type SubscribeResponse = {
     created_at: string;
     fields: object;
   };
-  success: boolean;
 };
 
 type EventBody = {
@@ -22,7 +21,7 @@ type EventBody = {
   email: string;
 };
 
-exports.handler = async function (event: APIGatewayEvent, context: Context) {
+exports.handler = async (event: APIGatewayEvent, context: Context) => {
   bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body ?? "{}") as EventBody;
@@ -43,10 +42,5 @@ exports.handler = async function (event: APIGatewayEvent, context: Context) {
     "Content-Type": "application/json",
   };
 
-  return fetchResponse<SubscribeResponse>(process.env.SUBSCRIBE_API_URL ?? "", data, headers).then(res => {
-    const responseData = res as SubscribeResponse;
-    responseData.success = true;
-    console.log(`Member added successfully!\n${JSON.stringify(responseData)}`);
-    return responseData;
-  });
+  return fetchResponse<SubscribeResponse>(process.env.SUBSCRIBE_API_URL ?? "", data, headers);
 };
