@@ -8,18 +8,6 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Costa Rica Pura Vida Retreat
-
-SUNDAY, FEBRUARY 1, 2026 - SATURDAY, FEBRUARY 7, 2026
-
-Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, new friendships and perspectives, and a week being healed and rejuvenated by sun, sand, and movement.
-
-We can't wait to host the next group of amazing people in Costa Rica next year!
-
-**[Details & Sign Up](/pura-vida-retreat/)**
-
-![Group photo from 2025](/img/pura-vida-2025-group.jpg "Group photo from 2025")
-
 ## Joshua Tree Yoga & Adventure Retreat
 
 FRIDAY, MAY 1, 2026 - MONDAY, MAY 4, 2026 (SOLD OUT!)
@@ -40,6 +28,14 @@ Imagine retreating to a gorgeous old Italian estate for yoga, adventure, and spe
 
 ![Tuscany 2026 retreat photo](/img/Tuscany-retreat.jpg "Join us for a dream experience in Tuscany!")
 
+## She Flows Collective
+
+We're building a movement that connects, empowers, and celebrates women through wellness, community, and local collaboration. We believe that when women feel welcome to show up exactly as they are, we create positive waves of change. Let’s flow forward together. Based in Seacoast, NH.
+
+- [Follow for the latest events](https://www.eventbrite.com/o/she-flows-collective-111274318691)
+
+- [Instagram](https://instagram.com/sheflowscollective)
+
 ## Yoga
 
 Catch weekly classes in-person and streamed virtually at [Three Bridges](https://www.3bridgesyoga.com/) in Portsmouth:
@@ -48,7 +44,7 @@ Catch weekly classes in-person and streamed virtually at [Three Bridges](https:/
 - Wednesdays 4:30PM Flow
 - Wednesdays 6PM Mindful Strength
 
-## Ongoing
+## Private Events
 
 Would you like to book a private event?
 
@@ -60,3 +56,13 @@ We've hosted everything from healing mini retreats to private yoga parties. Make
 - Coaching
 - Mindfulness talks
 - Community building
+
+## Costa Rica Pura Vida Retreat
+
+DETAILS COMING SOON FOR 2027
+
+Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, new friendships and perspectives, and a week being healed and rejuvenated by sun, sand, and movement.
+
+We can't wait to host the next group of amazing people in Costa Rica next year!
+
+![Group photo from 2025](/img/pura-vida-2025-group.jpg "Group photo from 2025")

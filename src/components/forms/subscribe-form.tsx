@@ -4,11 +4,9 @@ import { FormPage } from "../../types/forms";
 import { BaseForm } from "./base-form";
 import { Input } from "./form-elements";
 
-import { Constants } from "../../constants";
-
 export const SubscribeForm = ({ page, submitText = "Join" }: { page: FormPage; submitText?: string }) => (
   <BaseForm
-    buttonColor={Constants.Colors.redRocksRed}
+    buttonColor="#bad4e2"
     id="subscribeForm"
     formDescription="Stay in the loop on updates, events, and thoughtful musings from Sheila Anne"
     formRoute="/.netlify/functions/subscribe-handler"

@@ -66,7 +66,7 @@ const ButtonSpan = styled.span`
 const StyledPillButton = styled.button<{ color?: string }>`
   background: transparent;
   border: none;
-  color: ${Constants.Colors.bodyCopy};
+  color: #fff;
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
