@@ -72,7 +72,7 @@ const handleSubmit = async (
   };
 
   let buttonText = "Success!";
-  const res = await fetch(formRoute, {
+  await fetch(formRoute, {
     method: "POST",
     body: JSON.stringify(formValues),
   })

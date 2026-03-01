@@ -46,7 +46,7 @@ export async function fetchResponse<T>(
     })
     .then(data => {
       console.log("Response: ", data);
-      return data;
+      return getHandlerReturn(200, { success: true, response: data });
     })
     .catch(err => {
       console.error(err);
