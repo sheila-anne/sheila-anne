@@ -96,4 +96,4 @@ When we decide to live bigger, more aligned and inspiring lives, we must practic
 
 If you’ve ever taken a life-changing trip or had an immersive experience, you know that the effects continue to pulse and ripple long after the experience has culminated. This trip is one of those for me -- continuing to send me lessons, remind me what’s important, and motivate me to stay focused on the present path while being curious about where it may lead.
 
-If you enjoyed this blog and would like to continue the conversation, head over to my [contact page](/contact/) or [send me a DM on Instagram](https://www.instagram.com/sheilaanne__). If you’d like to learn more about how I’m helping women to transform their lives, visit my [Working Together](/working-together/) page for more!
+If you enjoyed this blog and would like to continue the conversation, head over to my [contact page](/contact/) or [send me a DM on Instagram](https://www.instagram.com/sheilaanne___). If you’d like to learn more about how I’m helping women to transform their lives, visit my [Working Together](/working-together/) page for more!

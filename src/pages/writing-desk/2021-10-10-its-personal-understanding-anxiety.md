@@ -83,7 +83,7 @@ Sometimes feeling stressed or anxious can make us want to stay put when it can a
 
 Whenever I start working with a new client I introduce them to meditation apps! Using an app not only gives them access to a wealth of on-demand guided meditations but can help them chart their progress. My favorite of the moment is Insight Timer but there are so many out there. These days some companies will pay for their employees to have premium meditation app subscriptions. I totally love this. A favorite meditation of mine during stressful times is the RAIN meditation by Tara Brach. If you’re curious about meditation I’d recommend reading 10% Happier by Dan Harris.
 
-Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to [drop me a note here](/contact/) or [message me on Instagram](https://www.instagram.com/sheilaanne__/).
+Thank you for taking the time to read this blog and I hope you walk away with something, either for yourself or someone you love. If you want to continue the conversation, feel free to [drop me a note here](/contact/) or [message me on Instagram](https://www.instagram.com/sheilaanne___/).
 
 ![](/img/understanding-anxiety.jpg)
 

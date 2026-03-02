@@ -12,7 +12,7 @@ tags:
   - productivity
 ---
 
-If you [follow along on social](https://www.instagram.com/sheilaanne__/) or subscribe to the [blog that I run with my fiancé](https://www.sheandjim.com/), you probably know that we recently moved into our own apartment! After a year on the road, living with friends, living with family, and a month and a half of apartment hunting in Colorado, we are committed to a home!😄
+If you [follow along on social](https://www.instagram.com/sheilaanne___/) or subscribe to the [blog that I run with my fiancé](https://www.sheandjim.com/), you probably know that we recently moved into our own apartment! After a year on the road, living with friends, living with family, and a month and a half of apartment hunting in Colorado, we are committed to a home!😄
 
 The prospect of filling an apartment is exciting but, to get it done right, you have to be strategic 😏. As we’ve gone through the process of furnishing our new place, I’ve realized that you can use the same strategy to plan your most productive and b e a u t i f u l weeks! Perhaps at this moment you think this is a stretch but I promise that this article will give you some **killer** tips and, once you start integrating them into your life, you’ll find yourself less overwhelmed, more productive, and with more room to breathe and enjoy.
 

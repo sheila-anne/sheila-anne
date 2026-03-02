@@ -35,7 +35,7 @@ Not only does getting clear on your reason for creating a morning routine make i
 
 ## Dreamstorm ideas
 
-Let this morning routine be uniquely yours! There is a lot of inspiration out there ([see what I’ve been pinning lately](https://www.pinterest.com/sheilaanne__/morning-routine/)) but no one routine will work for every single individual and lifestyle. It’s time to let go of the “shoulds” and dream up what could be…
+Let this morning routine be uniquely yours! There is a lot of inspiration out there ([see what I’ve been pinning lately](https://www.pinterest.com/sheilaanne___/morning-routine/)) but no one routine will work for every single individual and lifestyle. It’s time to let go of the “shoulds” and dream up what could be…
 
 - What are some things I've always wanted to try incorporating into my morning routine?
 - What actions have I tried before that have worked for me?

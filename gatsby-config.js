@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://www.sheilaanne.com`,
     social: {
       facebook: "https://facebook.com/sheilaannecoaching",
-      instagram: `https://instagram.com/sheilaanne__`,
+      instagram: `https://instagram.com/sheilaanne___`,
     },
     faqs: [
       {

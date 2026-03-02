@@ -90,4 +90,4 @@ I could spend all day looking at other coaches social media feeds, websites, and
 
 _\---_
 
-_I thank you so much for taking the time to read about my journey and learnings from year one as a solopreneur! I had such a blast creating this list and I already know that there is so much more to share with you on these topics!  I would love to hear if you related to any pieces of this or if it inspired any action. Continue the conversation by [emailing me](https://www.sheilaanne.com/contact/) or sending me a [direct message on Instagram!](https://www.instagram.com/sheilaanne__/)_
+\_I thank you so much for taking the time to read about my journey and learnings from year one as a solopreneur! I had such a blast creating this list and I already know that there is so much more to share with you on these topics!  I would love to hear if you related to any pieces of this or if it inspired any action. Continue the conversation by [emailing me](https://www.sheilaanne.com/contact/) or sending me a [direct message on Instagram!](https://www.instagram.com/sheilaanne___/)\_
