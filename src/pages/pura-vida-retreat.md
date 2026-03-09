@@ -1,9 +1,9 @@
 ---
 templateKey: pura-vida-retreat
-pageTitle: Pura Vida Retreat, 2026 | Sheila Anne
-pageDescription: Don't miss out on the next Sheila Anne yoga retreat in February, 2026
-bannerImage: /img/pura-vida-hero.png
-bannerImageHeadline: Pura Vida retreat in Costa Rica, Feb 2026
+pageTitle: Pura Vida Retreat, 2027 | Sheila Anne
+pageDescription: Don't miss out on the next Sheila Anne yoga retreat in February, 2027
+bannerImage: /img/cartwheel.jpg
+bannerImageHeadline: Some of the 2026 retreaters cartwheeling in Costa Rica
 path: /pura-vida-retreat
 ---
 
