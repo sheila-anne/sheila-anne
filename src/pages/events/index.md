@@ -38,6 +38,18 @@ We're building a movement that connects, empowers, and celebrates women through 
 
 - [Instagram](https://instagram.com/sheflowscollective)
 
+## Costa Rica Pura Vida Retreat
+
+SUNDAY, JANUARY 31, 2027 - SATURDAY, FEBRUARY 6, 2027
+
+Imagine an immersive experience in nature, vinyasas to the sounds of monkeys, new friendships and perspectives, and a week being healed and rejuvenated by sun, sand, and movement.
+
+We can't wait to host the next group of amazing people in Costa Rica next year!
+
+**[Details & Sign Up](/pura-vida-retreat/)**
+
+![Group photo from 2026](/img/cartwheel.jpg "Group photo from 2026")
+
 ## Yoga
 
 Catch weekly classes in-person and streamed virtually at [Three Bridges](https://www.3bridgesyoga.com/) in Portsmouth:
