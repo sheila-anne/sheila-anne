@@ -94,7 +94,7 @@ Early Bird: $3,300
 
 **Family Bungalow — Shared Bungalow (Private Bedroom)**
 Shared bungalow with separate private bedrooms featuring a double bed. A great option for those wanting both community and personal space.
-3 Available
+3 Bungalows Available / 6 Rooms (5 rooms left!)
 Standard Price: $3,100
 Early Bird: $2,900
 
@@ -102,7 +102,7 @@ Early Bird: $2,900
 
 **Classic Bungalow — Shared Room**
 Shared bungalow room with two double beds. Perfect for guests comfortable sharing a room and wanting a more budget-friendly option.
-2 out of 5 still available
+5 Available (2 left!)
 Standard Price: $2,700
 Early Bird: $2,500
 
