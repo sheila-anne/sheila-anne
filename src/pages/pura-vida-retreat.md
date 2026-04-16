@@ -86,7 +86,7 @@ Early Birds get $200 off standard prices through 5/31!
 
 **King Bungalow — Solo Accommodation**
 Private bungalow with a king bed. Ideal for guests wanting a quiet, personal sanctuary.
-ONLY 2 Available (1 left!)
+ONLY 2 Available
 Standard Price: $3,500
 Early Bird: $3,300
 
@@ -94,15 +94,15 @@ Early Bird: $3,300
 
 **Family Bungalow — Shared Bungalow (Private Bedroom)**
 Shared bungalow with separate private bedrooms featuring a double bed. A great option for those wanting both community and personal space.
-3 Bungalows Available / 6 Rooms (5 rooms left!)
+3 Bungalows Available / 6 Rooms (2 rooms left!)
 Standard Price: $3,100
 Early Bird: $2,900
 
 ![](/img/family-bungalow.png)
 
-**Classic Bungalow — Shared Room**
+**Classic Bungalow — Shared Room (SOLD OUT)**
 Shared bungalow room with two double beds. Perfect for guests comfortable sharing a room and wanting a more budget-friendly option.
-5 Available (2 left!)
+~~5 Available~~ (SOLD OUT)
 Standard Price: $2,700
 Early Bird: $2,500
 
