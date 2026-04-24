@@ -16,6 +16,14 @@ It's time to escape to a gorgeous sun-soaked oasis awaiting you in the magic of 
 
 ![Joshua Tree 2026 retreat photo](/img/joshua-tree-2026-retreat.jpg "Imagine relaxing by the fire in Joshua Tree with us!")
 
+## She Flows Camp
+
+SEPTEMBER 25th - 27th 2026
+
+She Flows Collective is leaving the Seacoast for a summer-camp-vibe weekend retreat that will leave you with a full cup, restored energy, and lifelong community.
+
+[Learn more!](/she-flows-camp/)
+
 ## Art of Being Retreat
 
 OCTOBER 11 - OCTOBER 17 2026
