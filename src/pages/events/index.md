@@ -8,13 +8,17 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Joshua Tree Yoga & Adventure Retreat
+## Mental Health Mini Retreat
 
-FRIDAY, MAY 1, 2026 - MONDAY, MAY 4, 2026 (SOLD OUT!)
+MAY 15th 6:30PM - 8:30PM
 
-It's time to escape to a gorgeous sun-soaked oasis awaiting you in the magic of the high desert. This long weekend retreat includes two yoga classes per day, optional hikes/day trips, star gazing, epic food cooked by our private in-house chef, and more. [Learn more and join the waitlist!](https://www.saraholesonyoga.com/joshuatree-retreat)
+Reedmor Books & Brews , Portsmouth, NH
 
-![Joshua Tree 2026 retreat photo](/img/joshua-tree-2026-retreat.jpg "Imagine relaxing by the fire in Joshua Tree with us!")
+Join **She Flows Collective** at a mini retreat that will leave you feeling grounded and glowing. This experience includes a mental health walk, expert-led grounding practice, private book fair, libation of choice, community connection time and journal with prompts.
+
+[Sign up here!](https://may-mini-retreat.eventbrite.com/)
+
+![](/img/she-flows-mental-health-mini-retreat.png "Join this grounding mini retreat!")
 
 ## She Flows Camp
 

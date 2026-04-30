@@ -4,7 +4,7 @@ pageTitle: Sheila Anne | Coaching & Wellness
 bannerImage: /img/sheila-anne-preview-image.jpg
 bannerImageHeadline: Sheila Anne | Coaching & Wellness
 pageDescription: >
-  ICF Professional Certified Coach & Trauma Informed Coach Sheila Anne welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
+  Your corporate wellness provider in the seacoast & beyond. ICF Professional Certified Coach & Trauma Informed Coach Sheila Anne welcomes those looking to step into the best version of themselves. Are you ready to ditch expectations, realign to who you are at your core, and achieve from a place of effortless-flow? She'll help you thrive in your relationships, career, and lifestyle without stress and burnout.
 image: /img/sheila-anne-logo.jpg
 description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
@@ -27,7 +27,7 @@ intro:
       title: Experiences & Retreats
       text: >
         Nourish your mind, body, and soul through immersive workshops and international retreats
-    - href: /pura-vida-retreat
+    - href: /yoga
       image: /img/She-flows-icon-waves-blue.png
       imageAlt: She flows ocean waves graphic
       title: Yoga
