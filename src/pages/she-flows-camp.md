@@ -61,7 +61,7 @@ We welcome all generations of women - **you’re not too old to go to camp** - a
 
 You don’t need to bring a group. You don’t need to know anyone. You don’t need to be at a certain place in your life. You’re not too old to come to camp!
 
-This space is designed for real connection, the kind that happens when women gather with open hearts, zero expectations, and a backpack of responsibilities to untether from for the weekend.
+This space is designed for real connection, the kind that happens when women gather with open hearts, zero expectations, and a backpack of responsibilities to untether from for the weekend. Spots are limited to keep camp intimate and make connection even more effortless.
 
 You’ll be met exactly where you are.
 
@@ -93,7 +93,7 @@ $925 per person (come with a friend or we will pair you)
 **Collective Suites**
 4-8 beds, slumber party camp vibes.
 
-$815
+$815 per person
 
 **<u>Nature-immersion accommodations </u>**
 
@@ -102,12 +102,12 @@ _Access to outhouses, outdoor shower, and main house amenities too._
 **Cozy Cabin**
 Two beds, wood stove as needed
 
-$797
+$797 per person
 
 **Canvas Sanctuary / BYO Tent**
 Sleep in a tent already set up for you and bring your own bedding (limited spots) _or_ bring your own tent and bedding, platform provided
 
-$625
+$625 per person
 
 ## Become a Camper! 🏕 🥾🍫
 
