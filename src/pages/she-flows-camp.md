@@ -14,15 +14,15 @@ path: /she-flows-camp
 September 25th - 27th
 Bethel Farm, Hillsborough NH
 
-**Just imagine**
+**Just imagine...**
 
 You turn onto a quiet road, trees stretching overhead, and your shoulders are already starting to drop. You arrive not knowing exactly what to expect but within minutes, you're connecting with other women and feel right at home. Soon enough, you’re jumping in the pond, warming up in the sauna, wandering to a waterfall, moving your body, and telling stories by the fire with s’mores.
 
 You’re resting when you need to, playing when you want to, and realizing how good it feels to be. Somewhere between the movement, the stillness, and the in-between moments, you feel like yourself again. You belong to the earth, to this community, to yourself. And it’s everything.
 
-Welcome to Camp She Flows. ✨
+Welcome to Camp She Flows ✨
 
-[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5)
+[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5).
 
 ![](/img/camp-she-flows-top-image.jpg)
 
@@ -53,6 +53,8 @@ We welcome all generations of women - **you’re not too old to go to camp** - a
 - Pre-retreat + post-retreat community meetup
 - Additional camp-style activities TBA
 
+[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5).
+
 ![](/img/candles-she-flows.jpg)
 
 **You belong**
@@ -63,11 +65,11 @@ This space is designed for real connection, the kind that happens when women gat
 
 You’ll be met exactly where you are.
 
-[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5)
+[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5).
 
 ### Home for the weekend
 
-![](/img/yoga-castle.jpg)
+![](/img/retreat-grounds.jpg)
 
 Bethel Farm 📍
 
@@ -83,55 +85,33 @@ Various options to suit any experience you desire! Bathrooms are shared and thou
 
 The main house has various rooms as well as the beautiful yoga studio. There is a small kitchen where we can enjoy snacks and sips outside of mealtimes, along with areas to gather, read, and journal.
 
-![](/img/double-room.jpg)
-
 **Double Room**
 Two twin beds
 
-$975
+$925 per person (come with a friend or we will pair you)
 
-_Reserve this room all for yourself for $1225. Limited availability._
-
-![](/img/the-collective-suite.jpg)
-
-**The Collective Suite**
-8 beds, high ceilings, camp vibes.
+**Collective Suites**
+4-8 beds, slumber party camp vibes.
 
 $815
 
-![](/img/bunkhouse.jpg)
-
-**The Bunkhouse**
-Four twin beds
-
-$775
-
 **<u>Nature-immersion accommodations </u>**
 
-![](/img/connors-cabin.jpg)
+_Access to outhouses, outdoor shower, and main house amenities too._
 
 **Cozy Cabin**
-Two beds, one is lofted
+Two beds, wood stove as needed
 
 $797
 
-![](/img/canvas-tent.jpg)
-
-**Canvas Sanctuary**
-Sleep in a tent already set up for you, bring your own bedding
+**Canvas Sanctuary / BYO Tent**
+Sleep in a tent already set up for you and bring your own bedding (limited spots) _or_ bring your own tent and bedding, platform provided
 
 $625
 
-![](/img/tent-platform.jpg)
-
-**BYO Tent**
-Bring your own tent and bedding, platform provided for ease
-
-$597
-
 ## Become a Camper! 🏕 🥾🍫
 
-Rooms are filled on a first-come-first-served basis. To claim your spot now and join the best camp ever imagined...
+Rooms are filled on a first-come-first-served basis and there are **only 15 spots available**. To claim your spot now and join the best camp ever imagined...
 
 - Make your deposit of $200
   - [Venmo](https://venmo.com/code?user_id=1589188717707264545&created=1676908773.516399&printed=1) or [Paypal ](https://paypal.me/sheilaannemurray)
@@ -165,4 +145,4 @@ You’re ready to prioritize yourself (without guilt)
 
 You want to feel part of something real
 
-[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5)
+[Reserve your spot with a $200 deposit](https://account.venmo.com/u/SheilaAnneMoney) and fill out the [camper enrollment form](https://forms.gle/yBFZW2hZx8WqPoCq5).
