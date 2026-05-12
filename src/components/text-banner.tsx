@@ -95,5 +95,6 @@ export const BannerText = ({ path }: TextBannerProps) => {
     setIsShown(true);
   }, []);
 
+  // TODO remove/restore updated banner text
   return false ? <InnerBanner path={path} /> : null;
 };

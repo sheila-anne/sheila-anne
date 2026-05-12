@@ -74,7 +74,7 @@ Please [contact me](mailto:sheila@sheilaanne.com) with your needs and dates.
 
 **Complete Body & Soul Alignment**
 
-_Perfect for your corporate wellness retreat, bachelorette, or reunion._
+_Perfect for your [corporate wellness retreat](/corporate-wellness/), bachelorette, or reunion._
 
 - **What to expect**: This session will blend dynamic vinyasa flow with transformative energy healing to create profound harmony within. Feel renewed as you move through invigorating yoga sequences that awaken your body, followed by a blissful reiki session that dissolves tension and restores your natural energetic balance. This powerful combination creates an uplifting sense of wholeness that stays with you long after the session ends. Includes a guided journaling experience that captures your insights and amplifies your newfound clarity.
 - **Duration**: 90 minutes

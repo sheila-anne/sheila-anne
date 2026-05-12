@@ -8,7 +8,6 @@ pageDescription: >
 image: /img/sheila-anne-logo.jpg
 description: >
   You've outgrown your career, relationship, or lifestyle. You're ready for something new. Take the leap!
-freebie: /img/positivity-pack-cropped.jpg
 mainpitch:
   title: Hi, I'm Sheila! I’m committed to helping individuals and groups to become more resourced, resilient, and effective in their lives and careers.  Through working with me, clients find they can breathe deeper, trust themselves to take action, and confidently follow their purpose. I blend mindfulness and embodiment techniques with proven coaching tools to bring you a process that's uniquely empowering. This “slow down to speed up” approach is what helps clients pause, reflect on what they truly desire, and rise into the best version of themselves.
   image: /img/welcome-sheila-anne-main.jpg

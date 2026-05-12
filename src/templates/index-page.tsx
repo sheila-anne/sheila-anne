@@ -40,7 +40,6 @@ type IndexFrontmatterProps = BaseFrontmatter & {
     workWithMe: string[];
   };
   mainpitch: MainPitch;
-  freebie: any;
   testimonials: any;
 };
 
@@ -98,7 +97,8 @@ const Container = styled.div`
 
 const BannerHeadline = styled.h1<HeadlineProps>`
   background-color: ${({ color }) => (!!color ? color : Constants.Colors.blue)};
-  box-shadow: ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
+  box-shadow:
+    ${({ color }) => (!!color ? color : Constants.Colors.blue)} 0.5rem 0px 0px,
     ${({ color }) => (!!color ? color : Constants.Colors.blue)} -0.5rem 0px 0px;
   color: ${({ $fontColor }) => (!!$fontColor ? $fontColor : "#FFF")};
   font-size: 1.5rem;
@@ -112,19 +112,6 @@ const ImageContainer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const Subheadline = styled.h2`
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin: 1rem;
-  padding: 0 1rem 1rem 1rem;
-`;
-
-const FreebieHeading = styled.h2`
-  margin: 0 0.5rem;
-  padding: 0 1rem 1rem 1rem;
-  text-align: center;
-`;
-
 const TestimonialContainer = styled(FlexContainer).withConfig({
   shouldForwardProp: prop => prop !== "backgroundColor",
 })`
@@ -133,7 +120,7 @@ const TestimonialContainer = styled(FlexContainer).withConfig({
 `;
 
 export const IndexPageTemplate = ({ frontmatter, html, posts }: PreviewTemplateProps) => {
-  const { image, mainpitch, freebie, testimonials } = frontmatter;
+  const { image, mainpitch, testimonials } = frontmatter;
 
   const fullTestimonials = [...testimonials];
 
@@ -221,11 +208,6 @@ export const pageQuery = graphql`
         }
         bannerImageHeadline
         image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
-          }
-        }
-        freebie {
           childImageSharp {
             gatsbyImageData(quality: 100, placeholder: BLURRED, formats: [AUTO, WEBP, JPG])
           }
