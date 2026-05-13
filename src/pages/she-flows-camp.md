@@ -12,11 +12,12 @@ path: /she-flows-camp
 ## Details
 
 September 25th - 27th
+Starting at 4 PM on the 25th, ending 2 PM on the 27th
 Bethel Farm, Hillsborough NH
 
 **Just imagine...**
 
-You turn onto a quiet road, trees stretching overhead, and your shoulders are already starting to drop. You arrive not knowing exactly what to expect but within minutes, you're connecting with other women and feel right at home. Soon enough, you’re jumping in the pond, warming up in the sauna, wandering to a waterfall, moving your body, and telling stories by the fire with s’mores.
+You turn onto a quiet road, trees stretching overhead, and your shoulders are already starting to drop. You arrive not knowing exactly what to expect but within minutes, you're connecting with other women and feel right at home. Soon enough, you’re jumping in the pond, warming up in the sauna, dancing under the full harvest moon, wandering to a waterfall, moving your body, and telling stories by the fire with s’mores.
 
 You’re resting when you need to, playing when you want to, and realizing how good it feels to be. Somewhere between the movement, the stillness, and the in-between moments, you feel like yourself again. You belong to the earth, to this community, to yourself. And it’s everything.
 
@@ -48,6 +49,7 @@ We welcome all generations of women - **you’re not too old to go to camp** - a
 - Campfire night with s’mores
 - Group Reiki healing
 - Daily journal prompts
+- Full moon ceremony
 - Unbothered time to rest, read, explore, and play
 - Curated welcome bag featuring Seacoast goodies
 - Pre-retreat + post-retreat community meetup
@@ -99,10 +101,12 @@ $815 per person
 
 _Access to outhouses, outdoor shower, and main house amenities too._
 
-**Cozy Cabin**
-Two beds, wood stove as needed
+**Cozy Cabin (SOLD OUT)**
+~~Two beds, wood stove as needed~~
 
-$797 per person
+~~$797 per person~~
+
+Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in case this opens back up.
 
 **Canvas Sanctuary / BYO Tent**
 Sleep in a tent already set up for you and bring your own bedding (limited spots) _or_ bring your own tent and bedding, platform provided
