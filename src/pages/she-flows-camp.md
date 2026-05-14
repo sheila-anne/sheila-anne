@@ -108,10 +108,10 @@ _Access to outhouses, outdoor shower, and main house amenities too._
 
 Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in case this opens back up.
 
-**Canvas Sanctuary / BYO Tent**
-Sleep in a tent already set up for you and bring your own bedding (limited spots) _or_ bring your own tent and bedding, platform provided
+**Outdoor Sanctuary Stay $625 per person**
 
-$625 per person
+- ~~Canvas tent already set up for you. 2 available~~ - SOLD OUT
+- BYO Tent: bring your own tent and bedding. A platform is provided - 4 available
 
 ## Become a Camper! 🏕 🥾🍫
 
