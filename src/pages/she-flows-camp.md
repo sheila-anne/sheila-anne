@@ -113,6 +113,8 @@ Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in ca
 - ~~Canvas tent already set up for you. 2 available~~ - SOLD OUT
 - BYO Tent: bring your own tent and bedding. A platform is provided - 4 available
 
+_Bethel has a few tents that can be borrowed as well, please let us know if you would like to borrow a tent._
+
 ## Become a Camper! 🏕 🥾🍫
 
 Rooms are filled on a first-come-first-served basis and there are **only 15 spots available**. To claim your spot now and join the best camp ever imagined...
