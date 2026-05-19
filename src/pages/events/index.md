@@ -8,18 +8,6 @@ bannerImageHeadline: Upcoming events with Sheila Anne
 path: /events
 ---
 
-## Mental Health Mini Retreat
-
-MAY 15th 6:30PM - 8:30PM
-
-Reedmor Books & Brews , Portsmouth, NH
-
-Join **She Flows Collective** at a mini retreat that will leave you feeling grounded and glowing. This experience includes a mental health walk, expert-led grounding practice, private book fair, libation of choice, community connection time and journal with prompts.
-
-[Sign up here!](https://may-mini-retreat.eventbrite.com/)
-
-![](/img/she-flows-mental-health-mini-retreat.png "Join this grounding mini retreat!")
-
 ## She Flows Camp
 
 SEPTEMBER 25th - 27th 2026
