@@ -34,7 +34,7 @@ Post-Olympics special: join by March 31st and you will receive a free Human Desi
 
 We're building a movement that connects, empowers, and celebrates women through wellness, community, and local collaboration. We believe that when women feel welcome to show up exactly as they are, we create positive waves of change. Let’s flow forward together. Based in Seacoast, NH.
 
-- [Follow for the latest events](https://www.eventbrite.com/o/she-flows-collective-111274318691)
+- [Follow for the latest events](https://www.sheflowscollective.com/)
 
 - [Instagram](https://instagram.com/sheflowscollective)
 

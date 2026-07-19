@@ -82,13 +82,12 @@ Krysta-Lyn found refuge in the combination of yoga, counseling and community aft
 
 Choose the space that feels most supportive for your retreat experience. All pricing is per person.
 
-Early Birds get $200 off standard prices through 5/31!
+All rooms are currently sold out. You can still fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSda0lMRgmH0x8zkwU76x2dpR1WxmbfgTdxOapSY6I8Y-BFvCQ/viewform) to indicate waitlist rooming preferences; if spots open up, we will contact you on a first-come, first-serve basis.
 
-**King Bungalow — Solo Accommodation**
+**King Bungalow — Solo Accommodation (SOLD OUT)**
 Private bungalow with a king bed. Ideal for guests wanting a quiet, personal sanctuary.
-ONLY 2 Available (1 left!)
+~~ONLY 2 Available (1 left!)~~
 Standard Price: $3,500
-Early Bird: $3,300
 
 ![](/img/king-room.jpg)
 
@@ -96,7 +95,6 @@ Early Bird: $3,300
 Shared bungalow with separate private bedrooms featuring a double bed. A great option for those wanting both community and personal space.
 ~~3 Bungalows Available / 6 Rooms~~
 Standard Price: $3,100
-Early Bird: $2,900
 
 ![](/img/family-bungalow.png)
 
@@ -104,7 +102,6 @@ Early Bird: $2,900
 Shared bungalow room with two double beds. Perfect for guests comfortable sharing a room and wanting a more budget-friendly option.
 ~~5 Available~~ (SOLD OUT)
 Standard Price: $2,700
-Early Bird: $2,500
 
 ![](/img/classic-room.jpg)
 

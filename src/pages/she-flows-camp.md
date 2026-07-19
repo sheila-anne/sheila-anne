@@ -111,7 +111,9 @@ Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in ca
 **Outdoor Sanctuary Stay $625 per person**
 
 - ~~Canvas tent already set up for you. 2 available~~ - SOLD OUT
-- BYO Tent: bring your own tent and bedding. A platform is provided - 4 available
+- ~~BYO Tent: bring your own tent and bedding. A platform is provided~~ - SOLD OUT
+
+Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in case this opens back up.
 
 _Bethel has a few tents that can be borrowed as well, please let us know if you would like to borrow a tent._
 
