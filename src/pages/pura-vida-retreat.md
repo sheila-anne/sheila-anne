@@ -11,6 +11,8 @@ path: /pura-vida-retreat
 
 ![Pura Vida retreat hero image](/img/pura-vida-hero.png)
 
+[Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
+
 ## The Epic Experience
 
 In Guanacaste, Costa Rica
@@ -84,21 +86,21 @@ Choose the space that feels most supportive for your retreat experience. All pri
 
 All rooms are currently sold out. You can still fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSda0lMRgmH0x8zkwU76x2dpR1WxmbfgTdxOapSY6I8Y-BFvCQ/viewform) to indicate waitlist rooming preferences; if spots open up, we will contact you on a first-come, first-serve basis.
 
-**King Bungalow — Solo Accommodation (SOLD OUT)**
+**King Bungalow — Solo Accommodation (SOLD OUT)** [Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
 Private bungalow with a king bed. Ideal for guests wanting a quiet, personal sanctuary.
 ~~ONLY 2 Available (1 left!)~~
 Standard Price: $3,500
 
 ![](/img/king-room.jpg)
 
-**Family Bungalow — Shared Bungalow (Private Bedroom) (SOLD OUT)**
+**Family Bungalow — Shared Bungalow (Private Bedroom) (SOLD OUT)** [Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
 Shared bungalow with separate private bedrooms featuring a double bed. A great option for those wanting both community and personal space.
 ~~3 Bungalows Available / 6 Rooms~~
 Standard Price: $3,100
 
 ![](/img/family-bungalow.png)
 
-**Classic Bungalow — Shared Room (SOLD OUT)**
+**Classic Bungalow — Shared Room (SOLD OUT)** [Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
 Shared bungalow room with two double beds. Perfect for guests comfortable sharing a room and wanting a more budget-friendly option.
 ~~5 Available~~ (SOLD OUT)
 Standard Price: $2,700
@@ -108,6 +110,8 @@ Standard Price: $2,700
 \* All options are non refundable and non transferable.
 
 **Reserve Your Spot**
+
+[Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
 
 We offer various ways to pay, to make it easy and accessible for our retreaters:
 
