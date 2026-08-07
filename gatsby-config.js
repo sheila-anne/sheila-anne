@@ -113,7 +113,6 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-react-helmet-async",
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
