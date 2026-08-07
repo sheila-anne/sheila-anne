@@ -1,5 +1,4 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { Helmet } from "react-helmet-async";
 import React from "react";
 
 type SEOProps = {
@@ -86,7 +85,8 @@ export const SEO = ({ description, image, imageAlt, isPreview, location, title, 
   };
 
   return (
-    <Helmet htmlAttributes={{ lang: `en` }} title={title}>
+    <>
+      <title>{title}</title>
       <meta property="theme-color" content="#fff" />
       <meta property="og:image" content={ogImage} />
       <meta
@@ -106,6 +106,6 @@ export const SEO = ({ description, image, imageAlt, isPreview, location, title, 
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
       <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>
-    </Helmet>
+    </>
   );
 };

@@ -1,5 +1,4 @@
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet-async";
 import React from "react";
 import styled from "styled-components";
 
@@ -33,8 +32,8 @@ const TagRoute = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location}>
+      <title title={`Tags for "${tag}" | ${title}`} />
       <section>
-        <Helmet title={`Tags for "${tag}" | ${title}`} />
         <Headline>{tagHeader}</Headline>
         <TagList>{postLinks}</TagList>
         <hr />
