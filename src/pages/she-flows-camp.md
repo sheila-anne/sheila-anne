@@ -87,6 +87,10 @@ Various options to suit any experience you desire! Bathrooms are shared and thou
 
 The main house has various rooms as well as the beautiful yoga studio. There is a small kitchen where we can enjoy snacks and sips outside of mealtimes, along with areas to gather, read, and journal.
 
+**Private Room**
+
+_Limited availability based on by request. Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request.
+
 **Double Room**
 Two twin beds
 
@@ -111,7 +115,7 @@ Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in ca
 **Outdoor Sanctuary Stay $625 per person**
 
 - ~~Canvas tent already set up for you. 2 available~~ - SOLD OUT
-- ~~BYO Tent: bring your own tent and bedding. A platform is provided~~ - SOLD OUT
+- BYO Tent: bring your own tent and bedding. A platform is provided - ONE LEFT
 
 Use [camper form](https://forms.gle/yBFZW2hZx8WqPoCq5) to request waitlist in case this opens back up.
 
