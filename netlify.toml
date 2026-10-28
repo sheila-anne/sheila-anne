@@ -1,7 +1,6 @@
 [build]
   publish = "public"
   command = "npm run build"
-  functions = "src/lambda/dist/lambda"
 
 [dev]
   command = "npm run dev"
