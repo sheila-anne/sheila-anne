@@ -1,7 +1,7 @@
 import { APIGatewayEvent } from "aws-lambda";
 import fetch, { HeadersInit } from "node-fetch";
 
-import { InnerHandlerReturn, OuterHandlerReturn } from "../types/lambda";
+import type { InnerHandlerReturn, OuterHandlerReturn } from "../types/lambda";
 
 const getErrorObject = (errVal: Error): InnerHandlerReturn => ({
   success: false,

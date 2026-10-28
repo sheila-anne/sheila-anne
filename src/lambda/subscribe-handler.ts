@@ -21,7 +21,7 @@ type EventBody = {
   email: string;
 };
 
-exports.handler = async (event: APIGatewayEvent, context: Context) => {
+const handler = async (event: APIGatewayEvent, context: Context) => {
   bodyGuardian(event);
 
   const eventProperties = JSON.parse(event.body ?? "{}") as EventBody;
@@ -35,12 +35,23 @@ exports.handler = async (event: APIGatewayEvent, context: Context) => {
   const data = {
     email_address: eventProperties.email,
     first_name: namesTuple[0],
-  };
+  } as { email_address: string; first_name?: string };
 
   const headers = {
     "X-Kit-Api-Key": process.env.SUBSCRIBE_API_KEY,
     "Content-Type": "application/json",
-  };
+  } as Record<string, string>;
 
-  return fetchResponse<SubscribeResponse>(process.env.SUBSCRIBE_API_URL ?? "", data, headers);
+  await fetchResponse<SubscribeResponse>(`${process.env.SUBSCRIBE_API_URL ?? ""}/subscribers`, data, headers);
+
+  delete data.first_name;
+
+  // once subscribers have been created, tag them properly
+  return fetchResponse<SubscribeResponse>(
+    `${process.env.SUBSCRIBE_API_URL ?? ""}/tags/16402121/subscribers`,
+    data,
+    headers
+  );
 };
+
+export { handler };
