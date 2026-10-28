@@ -1,9 +1,17 @@
-import { APIGatewayEvent } from "aws-lambda";
 import fetch, { HeadersInit } from "node-fetch";
 
-import type { InnerHandlerReturn, OuterHandlerReturn } from "../types/lambda";
+type InnerHandlerReturn = {
+  success: boolean;
+  error?: Error;
+  [key: string]: any;
+};
 
-const getErrorObject = (errVal: Error): InnerHandlerReturn => ({
+type OuterHandlerReturn = {
+  statusCode: number;
+  body: string;
+};
+
+const getErrorObject = (errVal: Error) => ({
   success: false,
   error: errVal,
 });
@@ -19,11 +27,7 @@ type FetchArgs = {
   body?: any;
 };
 
-export async function fetchResponse<T>(
-  url: string,
-  data?: any,
-  headers?: HeadersInit
-): Promise<T | OuterHandlerReturn> {
+export async function fetchResponse<T>(url: string, data?: any, headers?: HeadersInit): Promise<OuterHandlerReturn> {
   const fetchArgs = {
     method: "POST",
     headers: headers
@@ -41,7 +45,7 @@ export async function fetchResponse<T>(
         return response.json() as Promise<T>;
       } catch (ex) {
         console.log("There was an error converting to JSON: " + ex);
-        return Promise.resolve<T>("{}" as unknown as T);
+        throw ex;
       }
     })
     .then(data => {
@@ -50,12 +54,6 @@ export async function fetchResponse<T>(
     })
     .catch(err => {
       console.error(err);
-      return getHandlerReturn(422, getErrorObject(err));
+      return getHandlerReturn(500, getErrorObject(err));
     });
-}
-
-export function bodyGuardian(event: APIGatewayEvent) {
-  if (!event.body) {
-    return getHandlerReturn(500, getErrorObject(new Error("No body was sent with submission")));
-  }
 }

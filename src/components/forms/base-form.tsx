@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { FormWrapperSection, Hidden } from "./form-elements";
 import { FormPage } from "../../types/forms";
 import { getFormattedFormElements } from "./form-utils";
-import { InnerHandlerReturn } from "../../types/lambda";
 import { PillButton } from "../button";
 import { trackCustomEvent, trackFacebook, TrackArgs } from "../../utils";
 
@@ -75,16 +74,14 @@ const handleSubmit = async (
   await fetch(formRoute, {
     method: "POST",
     body: JSON.stringify(formValues),
-  })
-    .then(res => res.json() as Promise<InnerHandlerReturn>)
-    .catch((err: Error) => {
-      buttonText = "Error";
-      console.error(err);
-      return {
-        success: false,
-        error: err,
-      };
-    });
+  }).catch((err: Error) => {
+    buttonText = "Error";
+    console.error(err);
+    return {
+      success: false,
+      error: err,
+    };
+  });
 
   setButtonText(buttonText);
   const success = buttonText === "Success!";

@@ -1,8 +1,8 @@
 import "dotenv/config";
-import { APIGatewayEvent, Context } from "aws-lambda";
+import type { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 
-import { bodyGuardian, fetchResponse } from "./utils";
-import { FormPage } from "../types/forms";
+import { fetchResponse } from "./utils";
+import { FormPage } from "../../src/types/forms";
 
 type SubscribeResponse = {
   subscriber: {
@@ -21,9 +21,7 @@ type EventBody = {
   email: string;
 };
 
-const handler = async (event: APIGatewayEvent, context: Context) => {
-  bodyGuardian(event);
-
+const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
   const eventProperties = JSON.parse(event.body ?? "{}") as EventBody;
   console.log("Received the following event:" + event.body);
 
@@ -47,11 +45,7 @@ const handler = async (event: APIGatewayEvent, context: Context) => {
   delete data.first_name;
 
   // once subscribers have been created, tag them properly
-  return fetchResponse<SubscribeResponse>(
-    `${process.env.SUBSCRIBE_API_URL ?? ""}/tags/16402121/subscribers`,
-    data,
-    headers
-  );
+  return fetchResponse(`${process.env.SUBSCRIBE_API_URL ?? ""}/tags/16402121/subscribers`, data, headers);
 };
 
 export { handler };
