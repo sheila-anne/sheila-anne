@@ -48,10 +48,8 @@
     "clean": "gatsby clean",
     "dev": "run-p dev:**",
     "dev:app": "gatsby develop",
-    "dev:functions": "tsc -p src/lambda/tsconfig.json -w",
     "serve": "gatsby serve",
     "build": "run-p build:**",
-    "build:lambda": "tsc -p src/lambda/tsconfig.json",
     "build:site": "gatsby build"
   },
   "devDependencies": {
