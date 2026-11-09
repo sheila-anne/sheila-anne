@@ -9,7 +9,7 @@ path: /pura-vida-retreat
 
 # Pura Vida Retreat
 
-ONE family bungalow left!
+ONE room left!
 
 ![Pura Vida retreat hero image](/img/pura-vida-hero.png)
 
@@ -97,7 +97,7 @@ Standard Price: $3,500
 
 **Family Bungalow — Shared Bungalow (Private Bedroom)** Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSda0lMRgmH0x8zkwU76x2dpR1WxmbfgTdxOapSY6I8Y-BFvCQ/viewform) to finish reserving your spot!
 Shared bungalow with separate private bedrooms featuring a double bed. A great option for those wanting both community and personal space.
-1 Bungalow left Available / 6 Rooms (2 rooms left)
+1 room in 1 Bungalow available
 Standard Price: $3,100
 
 ![](/img/family-bungalow.png)
