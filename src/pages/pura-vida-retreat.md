@@ -9,6 +9,8 @@ path: /pura-vida-retreat
 
 # Pura Vida Retreat
 
+ONE family bungalow left!
+
 ![Pura Vida retreat hero image](/img/pura-vida-hero.png)
 
 [Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
@@ -84,7 +86,7 @@ Krysta-Lyn found refuge in the combination of yoga, counseling and community aft
 
 Choose the space that feels most supportive for your retreat experience. All pricing is per person.
 
-All rooms are currently sold out. You can still fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSda0lMRgmH0x8zkwU76x2dpR1WxmbfgTdxOapSY6I8Y-BFvCQ/viewform) to indicate waitlist rooming preferences; if spots open up, we will contact you on a first-come, first-serve basis.
+There is currently 1 Family Bungalow left. You can still fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSda0lMRgmH0x8zkwU76x2dpR1WxmbfgTdxOapSY6I8Y-BFvCQ/viewform) to indicate waitlist rooming preferences; if spots open up, we will contact you on a first-come, first-serve basis.
 
 **King Bungalow — Solo Accommodation (SOLD OUT)** [Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
 Private bungalow with a king bed. Ideal for guests wanting a quiet, personal sanctuary.
@@ -93,9 +95,9 @@ Standard Price: $3,500
 
 ![](/img/king-room.jpg)
 
-**Family Bungalow — Shared Bungalow (Private Bedroom) (SOLD OUT)** [Join the waitlist!](https://docs.google.com/forms/d/e/1FAIpQLScEkeGkqY7PgH5PqoFNBnJVDWGo9HDuxEu3_kjlJAgZFKau8A/viewform?usp=sharing&ouid=116392247362950483709)
+**Family Bungalow — Shared Bungalow (Private Bedroom)** Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSda0lMRgmH0x8zkwU76x2dpR1WxmbfgTdxOapSY6I8Y-BFvCQ/viewform) to finish reserving your spot!
 Shared bungalow with separate private bedrooms featuring a double bed. A great option for those wanting both community and personal space.
-~~3 Bungalows Available / 6 Rooms~~
+1 Bungalow left Available / 6 Rooms (2 rooms left)
 Standard Price: $3,100
 
 ![](/img/family-bungalow.png)
